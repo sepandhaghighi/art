@@ -38,8 +38,12 @@ def art(artname,number=1,text=""):
         print("[Error] Invalid Art Name")
     except Exception:
         print("[Error] Return Faild!")
-
 def tprint(text):
+    split_list=text.split("\n")
+    for item in split_list:
+        if len(item)!=0:
+            text2art(item)
+def text2art(text):
     '''
     Text Print
     This function print art text
