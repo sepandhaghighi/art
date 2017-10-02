@@ -3,6 +3,7 @@ from .art_dic import *
 from .text_dic import *
 def aprint(artname,number=1,text=""):
     '''
+    Art Print
     This function print ascii art
     :param artname: artname
     :type artname : str
@@ -39,6 +40,13 @@ def art(artname,number=1,text=""):
         print("[Error] Return Faild!")
 
 def tprint(text):
+    '''
+    Text Print
+    This function print art text
+    :param text: input text
+    :type text:str
+    :return: None
+    '''
     try:
         split_list=[]
         result_list=[]
