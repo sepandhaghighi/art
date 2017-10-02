@@ -39,13 +39,18 @@ def art(artname,number=1,text=""):
     except Exception:
         print("[Error] Return Faild!")
 def tprint(text):
+    '''
+    This function split function by \n then call text2art function
+    :param text: input text
+    :type text:str
+    :return: None
+    '''
     split_list=text.split("\n")
     for item in split_list:
         if len(item)!=0:
             text2art(item)
 def text2art(text):
     '''
-    Text Print
     This function print art text
     :param text: input text
     :type text:str
