@@ -13,19 +13,15 @@ if __name__=="__main__":
             for line in list(art_dic.keys()):
                 print(line)
                 aprint(line)
+        elif len(args)>2:
+            if args[1]=="text":
+                tprint(args[2])
+            else:
+                help()
         else:
-            aprint("glasses", 5)
-            print("")
-            print("Help : ")
-            print("     - list (list of arts)\n")
-            print("     - test (run tests)\n")
-            aprint("coffee", 5)
+            help()
     else:
-        aprint("glasses",5)
-        print("")
-        print("Help : ")
-        print("     - list (list of arts)\n")
-        print("     - test (run tests)\n")
-        aprint("coffee",5)
+        help()
+
 
 

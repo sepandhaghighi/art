@@ -1,6 +1,18 @@
 # -*- coding: utf-8 -*-
 from .art_dic import *
 from .text_dic import *
+version="0.1"
+def help():
+    '''
+    Print Help Page
+    :return: None
+    '''
+    tprint("art")
+    tprint("v"+version)
+    print("Help : \n")
+    print("     - list (list of arts)\n")
+    print("     - test (run tests)\n")
+    print("     - text 'yourtext' (text art) Example : 'python -m art exampletext'\n")
 def aprint(artname,number=1,text=""):
     '''
     Art Print
