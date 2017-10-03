@@ -1,7 +1,19 @@
 # -*- coding: utf-8 -*-
 from .art_dic import *
 from .text_dic import *
+import string
 version="0.1"
+def line(char="*",number=30):
+    print(char*number)
+def tprint_test():
+    inp=string.ascii_lowercase+string.digits+'%&\'()*+,-./:;<=>?@[\\]^_`{|}~!"#'
+    for i in inp:
+        tprint(i)
+def aprint_test():
+    for i in sorted(list(art_dic.keys())):
+        print(i)
+        aprint(i)
+        line()
 def help():
     '''
     Print Help Page
