@@ -24,7 +24,8 @@ def help():
     print("Help : \n")
     print("     - list (list of arts)\n")
     print("     - test (run tests)\n")
-    print("     - text 'yourtext' (text art) Example : 'python -m art exampletext'\n")
+    print("     - text 'yourtext' (text art) Example : 'python -m art text exampletext'\n")
+    print("     - shape 'shapename' (shape art) Example : 'python -m art shape butterfly'\n")
 def aprint(artname,number=1,text=""):
     '''
     Art Print

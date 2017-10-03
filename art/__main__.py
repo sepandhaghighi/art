@@ -10,12 +10,12 @@ if __name__=="__main__":
         if args[1].upper()=="TEST":
             doctest.testfile("test.py", verbose=True)
         elif args[1].upper()=="LIST":
-            for line in list(art_dic.keys()):
-                print(line)
-                aprint(line)
+            aprint_test()
         elif len(args)>2:
             if args[1]=="text":
                 tprint(args[2])
+            elif args[1]=="shape":
+                aprint(args[2])
             else:
                 help()
         else:
