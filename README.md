@@ -81,7 +81,10 @@ Remember to write a few tests for your code before sending pull requests.
 
 <a href="https://github.com/sepandhaghighi/pyrgg/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"/></a>
 
+## Reference    
 
+1. [1 Line Art](http://1lineart.kulaone.com/#/)
+2. [Text To ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
 
 ## Donate to our project
 								
