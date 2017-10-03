@@ -60,6 +60,9 @@ Simple ASCII Art Library For Python
 - List of arts :  `python -m art list`
 - Test : `python -m art test`
 - Text : `python -m art text yourtext`
+- Shape : `python -m art shape art_name`
+
+* [View Full Art List](list.md "Full Art List")
 ## Issues & Bug Reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
