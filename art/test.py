@@ -7,8 +7,6 @@ This function get a string as input if input is one digit add a zero
 >>> import coverage
 >>> cov=coverage.Coverage()
 >>> cov.start()
->>> cov.stop()
->>> cov.save()
 >>> from art import *
 >>> tprint_test()
 <BLANKLINE>
