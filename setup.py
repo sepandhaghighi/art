@@ -10,6 +10,9 @@ setup(
   url = 'https://github.com/sepandhaghighi/art',
   download_url = 'https://github.com/sepandhaghighi/art/tarball/v0.1',
   keywords = ['ascii', 'art', 'python3','python','text'],
+  install_requires=[
+	  'codecov',
+      ],
   classifiers = [],
   license='MIT',
 )
