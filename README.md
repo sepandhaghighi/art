@@ -19,6 +19,8 @@
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
+
+<a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 </div>
 
 ----------
