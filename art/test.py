@@ -1236,6 +1236,8 @@ Help :
 [Error] Invalid Char!
 >>> art('assdsds')
 [Error] Invalid Art Name
+>>> art("coffee")
+'c[_] '
 >>> cov.stop()
 >>> cov.save()
 
