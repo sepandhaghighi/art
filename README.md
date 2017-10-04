@@ -15,6 +15,10 @@
 </pre>
 <a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a>
 <a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a>
+
+<a href="https://codecov.io/gh/sepandhaghighi/art">
+  <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
+</a>
 </div>
 
 ----------
@@ -43,6 +47,9 @@ Simple ASCII Art Library For Python
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy")
  ۜ\(סּںסּَ` )/ۜ 
+>>> art_1=art("coffee")
+>>> print(art_1)
+c[_] 
 >>> tprint("art")
 
  .----------------.  .----------------.  .----------------.
