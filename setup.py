@@ -9,7 +9,7 @@ setup(
   author_email = 'sepand@qpage.ir',
   url = 'https://github.com/sepandhaghighi/art',
   download_url = 'https://github.com/sepandhaghighi/art/tarball/v0.1',
-  keywords = ['ascii', 'art', 'python3','python'],
+  keywords = ['ascii', 'art', 'python3','python','text'],
   classifiers = [],
   license='MIT',
 )

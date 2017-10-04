@@ -12,9 +12,9 @@ if __name__=="__main__":
         elif args[1].upper()=="LIST":
             aprint_test()
         elif len(args)>2:
-            if args[1]=="text":
+            if args[1].upper()=="TEXT":
                 tprint(args[2])
-            elif args[1]=="shape":
+            elif args[1].upper()=="SHAPE":
                 aprint(args[2])
             else:
                 help()
