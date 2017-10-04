@@ -1,0 +1,15 @@
+sudo: true
+
+language: python
+
+python:
+  - 3.5
+
+install:
+  - pip3 install codecov
+  - python3 setup.py install
+
+script:
+  - python3 -m art test
+after_success:
+  - codecov
