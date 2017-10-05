@@ -72,7 +72,10 @@ c[_]
 - Test : `python -m art test`
 - Text : `python -m art text yourtext`
 - Shape : `python -m art shape art_name`
-
+<div align="center">
+<a href="https://asciinema.org/a/141042" target="_blank"><img src="https://asciinema.org/a/141042.png" /></a>
+<p>Screen Record</p>
+</div>
 * [View Full Art List](list.md "Full Art List")
 ## Issues & Bug Reports			
 
