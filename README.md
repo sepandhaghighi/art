@@ -76,7 +76,10 @@ c[_]
 <a href="https://asciinema.org/a/141042" target="_blank"><img src="https://asciinema.org/a/141042.png" /></a>
 <p>Screen Record</p>
 </div>
-* [View Full Art List](list.md "Full Art List")
+
+* [View Full Art List](list.md "Full Art List")					
+
+
 ## Issues & Bug Reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
