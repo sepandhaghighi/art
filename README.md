@@ -14,7 +14,7 @@
 
 </pre>
 <a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a>
-<a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a>
+
 
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
@@ -23,6 +23,23 @@
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 </div>
 
+<div align="center">
+<table style="border:1px solid black">
+<tr>
+<th>Linux</th>
+<th>Windows</th>
+
+</tr>
+
+<tr>
+<td><a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a></td>
+<td> <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	</td>
+
+</tr>	
+
+</table>
+
+</div>	
 ----------
 
 ## Overview			
