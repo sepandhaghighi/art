@@ -24,6 +24,7 @@
 </div>
 
 <div align="center">
+<center>
 <table style="border:1px solid black;margin:auto;text-align:center;">
 <tr>
 <th>Linux</th>
@@ -37,7 +38,7 @@
 
 </tr>	
 
-</table>
+</table></center>
 
 </div>	
 
