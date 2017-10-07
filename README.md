@@ -24,7 +24,7 @@
 </div>
 
 <div align="center">
-<table style="border:1px solid black">
+<table style="border:1px solid black;margin:auto;text-align:center;">
 <tr>
 <th>Linux</th>
 <th>Windows</th>
@@ -40,6 +40,8 @@
 </table>
 
 </div>	
+
+
 ----------
 
 ## Overview			
