@@ -2,6 +2,10 @@ build: false
 
 environment:
   matrix:
+  
+    - PYTHON: "C:\\Python27"
+      PYTHON_VERSION: "2.7.2"
+      PYTHON_ARCH: "32" 
 
     - PYTHON: "C:\\Python35"
       PYTHON_VERSION: "3.5.2"
@@ -10,9 +14,6 @@ environment:
     - PYTHON: "C:\\Python35"
       PYTHON_VERSION: "3.5.2"
       PYTHON_ARCH: "64"
-
-
-
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
