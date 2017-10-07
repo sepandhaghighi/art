@@ -4,6 +4,7 @@ language: python
 
 python:
   - 3.5
+  - 2.7
 
 install:
   - pip3 install codecov
