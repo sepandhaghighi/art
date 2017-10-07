@@ -19,30 +19,12 @@
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
+<a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a>
+<a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 </div>
-
-<div align="center">
-<center>
-<table style="border:1px solid black;margin:auto;text-align:center;">
-<tr>
-<th>Linux</th>
-<th>Windows</th>
-
-</tr>
-
-<tr>
-<td><a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a></td>
-<td> <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	</td>
-
-</tr>	
-
-</table></center>
-
-</div>	
-
-
+	
 ----------
 
 ## Overview			
