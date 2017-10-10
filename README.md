@@ -84,7 +84,7 @@ c[_]
 - Text : `python -m art text yourtext block(optional)`
 - Shape : `python -m art shape art_name`
 <div align="center">
-<a href="https://asciinema.org/a/141042" target="_blank"><img src="https://asciinema.org/a/141042.png" /></a>
+<a href="https://asciinema.org/a/141739" target="_blank"><img src="https://asciinema.org/a/141739.png" /></a>
 <p>Screen Record</p>
 </div>
 
