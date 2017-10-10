@@ -13,15 +13,18 @@ if __name__=="__main__":
             aprint_test()
         elif len(args)>2:
             if args[1].upper()=="TEXT":
-                tprint(args[2])
+                if len(args)>3:
+                    tprint(args[2],dic=args[3])
+                else:
+                    tprint(args[2])
             elif args[1].upper()=="SHAPE":
                 aprint(args[2])
             else:
-                help()
+                help_func()
         else:
-            help()
+            help_func()
     else:
-        help()
+        help_func()
 
 
 

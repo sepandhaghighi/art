@@ -33,7 +33,7 @@ Simple ASCII Art Library For Python
 ## Installation		
 
 ### Source Code
-- Download [Version 0.1](https://github.com/sepandhaghighi/art/archive/v0.1.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
+- Download [Version 0.2](https://github.com/sepandhaghighi/art/archive/v0.2.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
@@ -55,6 +55,14 @@ Simple ASCII Art Library For Python
 >>> print(art_1)
 c[_] 
 >>> tprint("art")
+              _   
+  __ _  _ __ | |_ 
+ / _` || '__|| __|
+| (_| || |   | |_ 
+ \__,_||_|    \__|
+                  
+
+>>> tprint("art","block")
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -73,7 +81,7 @@ c[_]
 ### CLI			
 - List of arts :  `python -m art list`
 - Test : `python -m art test`
-- Text : `python -m art text yourtext`
+- Text : `python -m art text yourtext block(optional)`
 - Shape : `python -m art shape art_name`
 <div align="center">
 <a href="https://asciinema.org/a/141042" target="_blank"><img src="https://asciinema.org/a/141042.png" /></a>

@@ -2,19 +2,19 @@
 from .art_dic import *
 from .text_dic import *
 import string
-version="0.1"
+version="0.2"
 def line(char="*",number=30):
     print(char*number)
-def tprint_test():
-    inp=string.ascii_lowercase+string.digits+'%&\'()*+,-./:;<=>?@[\\]^_`{|}~!"#'
+def tprint_test(dic="standard"):
+    inp=string.ascii_letters+string.digits+'%&\'()*+,-./:;<=>?@[\\]^_`{|}~!"#'
     for i in inp:
-        tprint(i)
+        tprint(i,dic=dic)
 def aprint_test():
     for i in sorted(list(art_dic.keys())):
         print(i)
         aprint(i)
         line()
-def help():
+def help_func():
     '''
     Print Help Page
     :return: None
@@ -22,10 +22,10 @@ def help():
     tprint("art")
     tprint("v"+version)
     print("Help : \n")
-    print("     - list (list of arts)\n")
-    print("     - test (run tests)\n")
-    print("     - text 'yourtext' (text art) Example : 'python -m art text exampletext'\n")
-    print("     - shape 'shapename' (shape art) Example : 'python -m art shape butterfly'\n")
+    print("     - list --> (list of arts)\n")
+    print("     - test --> (run tests)\n")
+    print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext'\n")
+    print("     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'\n")
 def aprint(artname,number=1,text=""):
     '''
     Art Print
@@ -63,7 +63,7 @@ def art(artname,number=1,text=""):
         print("[Error] Invalid Art Name")
     except Exception:
         print("[Error] Return Faild!")
-def tprint(text):
+def tprint(text,dic="standard"):
     '''
     This function split function by \n then call text2art function
     :param text: input text
@@ -73,8 +73,8 @@ def tprint(text):
     split_list=text.split("\n")
     for item in split_list:
         if len(item)!=0:
-            text2art(item)
-def text2art(text):
+            text2art(item,dic=dic)
+def text2art(text,dic="standard"):
     '''
     This function print art text
     :param text: input text
@@ -84,12 +84,17 @@ def text2art(text):
     try:
         split_list=[]
         result_list=[]
-        for i in text.lower():
-            split_list.append(text_dic[i].split("\n"))
+        letters=standard_dic
+        text_temp=text
+        if dic=="block":
+            letters=block_dic
+            text_temp=text.lower()
+        for i in text_temp:
+            split_list.append(letters[i].split("\n"))
         for i in range(len(split_list[0])):
             temp=""
             for j in range(len(split_list)):
-                if j>0 and (i==1 or i==len(split_list[0])-2):
+                if j>0 and (i==1 or i==len(split_list[0])-2) and dic=="block":
                     temp=temp+" "
                 temp=temp+split_list[j][i]
             result_list.append(temp)
