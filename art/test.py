@@ -2184,7 +2184,6 @@ zombie
 'º_º'
 ******************************
 >>> help_func()
-<BLANKLINE>
                _
   __ _  _ __ | |_
  / _` || '__|| __|
@@ -2205,7 +2204,7 @@ Help :
 <BLANKLINE>
      - test --> (run tests)
 <BLANKLINE>
-     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext'
+     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'
 <BLANKLINE>
      - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'
 <BLANKLINE>
