@@ -90,6 +90,8 @@ def text2art(text,dic="standard"):
             letters=block_dic
             text_temp=text.lower()
         for i in text_temp:
+            if (ord(i)==9) or (ord(i)==32 and dic=="block"):
+                continue
             split_list.append(letters[i].split("\n"))
         for i in range(len(split_list[0])):
             temp=""
