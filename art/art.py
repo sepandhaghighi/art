@@ -63,7 +63,7 @@ def art(artname,number=1,text=""):
         print("[Error] Invalid Art Name")
     except Exception:
         print("[Error] Return Faild!")
-def tprint(text,dic="standard"):
+def tprint(text,dic="standard",chr_ignore=False):
     '''
     This function split function by \n then call text2art function
     :param text: input text
@@ -73,8 +73,8 @@ def tprint(text,dic="standard"):
     split_list=text.split("\n")
     for item in split_list:
         if len(item)!=0:
-            text2art(item,dic=dic)
-def text2art(text,dic="standard"):
+            text2art(item,dic=dic,chr_ignore=chr_ignore)
+def text2art(text,dic="standard",chr_ignore=False):
     '''
     This function print art text
     :param text: input text
@@ -91,6 +91,8 @@ def text2art(text,dic="standard"):
             text_temp=text.lower()
         for i in text_temp:
             if (ord(i)==9) or (ord(i)==32 and dic=="block"):
+                continue
+            if (i not in letters.keys()) and (chr_ignore==True):
                 continue
             split_list.append(letters[i].split("\n"))
         for i in range(len(split_list[0])):
