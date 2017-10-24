@@ -68,18 +68,41 @@ def tprint(text,dic="standard",chr_ignore=False):
     This function split function by \n then call text2art function
     :param text: input text
     :type text:str
+    :param dic: input font
+    :type dic:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
     :return: None
     '''
     split_list=text.split("\n")
     for item in split_list:
         if len(item)!=0:
-            text2art(item,dic=dic,chr_ignore=chr_ignore)
+            print(text2art(item,dic=dic,chr_ignore=chr_ignore))
+def tsave(text,dic="standard",filename="art",chr_ignore=False):
+    '''
+
+    :param text: input text
+    :param dic: input font
+    :type dic:str
+    :type text:str
+    :param filename: output file name
+    :type filename:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :return: None
+    '''
+    split_list = text.split("\n")
+    file=open(filename+".txt","w")
+    for item in split_list:
+        if len(item) != 0:
+            file.write(text2art(item, dic=dic, chr_ignore=chr_ignore))
+    file.close()
 def text2art(text,dic="standard",chr_ignore=False):
     '''
     This function print art text
     :param text: input text
     :type text:str
-    :return: None
+    :return: artText as str
     '''
     try:
         split_list=[]
@@ -102,7 +125,7 @@ def text2art(text,dic="standard",chr_ignore=False):
                     temp=temp+" "
                 temp=temp+split_list[j][i]
             result_list.append(temp)
-        print(("\n").join(result_list))
+        return(("\n").join(result_list))
 
     except KeyError:
         print("[Error] Invalid Char!")

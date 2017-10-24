@@ -2232,6 +2232,9 @@ Help :
  \__,_| \__,_||___/ \__,_| \__,_||___/ \__,_|
 <BLANKLINE>
 <BLANKLINE>
+>>> tsave("test file\nk",filename="test")
+>>> file=open("test.txt","r")
+>>> file.close()
 >>> cov.stop()
 >>> cov.save()
 
