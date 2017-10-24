@@ -3,6 +3,7 @@ from .art import *
 from .art_dic import *
 import sys
 import doctest
+import getopt
 
 if __name__=="__main__":
     args=sys.argv
@@ -17,6 +18,11 @@ if __name__=="__main__":
                     tprint(args[2],dic=args[3])
                 else:
                     tprint(args[2])
+            elif args[1].upper()=="SAVE":
+                if len(args)>3:
+                    tsave(args[2], dic=args[3])
+                else:
+                    tsave(args[2])
             elif args[1].upper()=="SHAPE":
                 aprint(args[2])
             else:

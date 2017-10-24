@@ -2233,7 +2233,17 @@ Help :
 <BLANKLINE>
 <BLANKLINE>
 >>> tsave("test file\nk",filename="test")
+>>> tsave("test art")
+>>> tsave("test art2")
 >>> file=open("test.txt","r")
+>>> print(len(file.read()))
+282
+>>> file=open("art.txt","r")
+>>> print(len(file.read()))
+246
+>>> file=open("art2.txt","r")
+>>> print(len(file.read()))
+288
 >>> file.close()
 >>> cov.stop()
 >>> cov.save()

@@ -2,7 +2,11 @@
 from .art_dic import *
 from .text_dic import *
 import string
+import os
+
 version="0.2"
+
+
 def line(char="*",number=30):
     print(char*number)
 def tprint_test(dic="standard"):
@@ -26,6 +30,7 @@ def help_func():
     print("     - test --> (run tests)\n")
     print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'\n")
     print("     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'\n")
+    print("     - save 'yourtext  'font(optional)  -->  Example : 'python -m art save exampletext  block")
 def aprint(artname,number=1,text=""):
     '''
     Art Print
@@ -63,6 +68,7 @@ def art(artname,number=1,text=""):
         print("[Error] Invalid Art Name")
     except Exception:
         print("[Error] Return Faild!")
+
 def tprint(text,dic="standard",chr_ignore=False):
     '''
     This function split function by \n then call text2art function
@@ -74,10 +80,17 @@ def tprint(text,dic="standard",chr_ignore=False):
     :type chr_ignore:bool
     :return: None
     '''
-    split_list=text.split("\n")
-    for item in split_list:
-        if len(item)!=0:
-            print(text2art(item,dic=dic,chr_ignore=chr_ignore))
+    try:
+        split_list=text.split("\n")
+        result=""
+        for item in split_list:
+            if len(item)!=0:
+                result=result+text2art(item,dic=dic,chr_ignore=chr_ignore)
+        print(result)
+    except Exception:
+        pass
+
+
 def tsave(text,dic="standard",filename="art",chr_ignore=False):
     '''
 
@@ -91,17 +104,38 @@ def tsave(text,dic="standard",filename="art",chr_ignore=False):
     :type chr_ignore:bool
     :return: None
     '''
-    split_list = text.split("\n")
-    file=open(filename+".txt","w")
-    for item in split_list:
-        if len(item) != 0:
-            file.write(text2art(item, dic=dic, chr_ignore=chr_ignore))
-    file.close()
+    try:
+        split_list = text.split("\n")
+        files_list=os.listdir()
+        splited_filename=filename.split(".")[0]
+        index = 2
+        test_name = splited_filename
+        while(True):
+            if test_name+".txt" in files_list:
+                test_name=splited_filename+str(index)
+                index=index+1
+            else:
+                break
+        file=open(test_name+".txt","w")
+        result=""
+        for item in split_list:
+            if len(item) != 0:
+                result=result+text2art(item, dic=dic, chr_ignore=chr_ignore)
+        file.write(result)
+        file.close()
+        print("Saved! \nFilename: "+test_name+".txt")
+    except Exception:
+        pass
+
 def text2art(text,dic="standard",chr_ignore=False):
     '''
     This function print art text
     :param text: input text
     :type text:str
+    :param dic: input font
+    :type dic:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
     :return: artText as str
     '''
     try:
