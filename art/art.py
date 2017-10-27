@@ -6,6 +6,7 @@ import os
 
 version="0.2"
 
+font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],"basic":[basic_dic,True]}
 
 def line(char="*",number=30):
     print(char*number)
@@ -127,7 +128,7 @@ def tsave(text,dic="standard",filename="art",chr_ignore=False):
     except Exception:
         pass
 
-def text2art(text,dic="standard",chr_ignore=False):
+def text2art(text,dic="standard",chr_ignore=True):
     '''
     This function print art text
     :param text: input text
@@ -143,9 +144,10 @@ def text2art(text,dic="standard",chr_ignore=False):
         result_list=[]
         letters=standard_dic
         text_temp=text
-        if dic=="block":
-            letters=block_dic
-            text_temp=text.lower()
+        if dic.lower() in font_map.keys():
+            letters=font_map[dic.lower()][0]
+            if font_map[dic.lower()][1]==True:
+                text_temp=text.lower()
         for i in text_temp:
             if (ord(i)==9) or (ord(i)==32 and dic=="block"):
                 continue
