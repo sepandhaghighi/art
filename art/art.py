@@ -22,12 +22,9 @@ def line(char="*",number=30):
 
 
 def font_list():
-    for item in font_map.keys():
+    for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
         tprint("test", str(item))
-def tprint_test(dic="standard"):
-    for item in font_map.keys():
-        tprint("test",item)
 def aprint_test():
     for i in sorted(list(art_dic.keys())):
         print(i)
