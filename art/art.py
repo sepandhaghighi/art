@@ -15,7 +15,10 @@ font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[stand
           "nancyj":[nancyj_dic,False],"ogre":[ogre_dic,False],"rectangles":[rectangles_dic,False],"roman":[roman_dic,False],
           "rounded":[rounded_dic,False],"rowancap":[rowancap_dic,True],"script":[script_dic,False],
           "serifcap":[serifcap_dic,True],"shadow":[shadow_dic,False],"slant":[slant_dic,False],"speed":[speed_dic,False],
-          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False]}
+          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False],"standard":[standard_dic,False]}
+
+
+DEFAULT_FONT="standard"
 
 def line(char="*",number=30):
     print(char*number)
@@ -90,13 +93,13 @@ def art(artname,number=1,text=""):
     except Exception:
         print("[Error] Return Faild!")
 
-def tprint(text,dic="standard",chr_ignore=False):
+def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
     This function split function by \n then call text2art function
     :param text: input text
     :type text:str
-    :param dic: input font
-    :type dic:str
+    :param font: input font
+    :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :return: None
@@ -106,18 +109,18 @@ def tprint(text,dic="standard",chr_ignore=False):
         result=""
         for item in split_list:
             if len(item)!=0:
-                result=result+text2art(item,dic=dic,chr_ignore=chr_ignore)
+                result=result+text2art(item,font=font,chr_ignore=chr_ignore)
         print(result)
     except Exception:
         pass
 
 
-def tsave(text,dic="standard",filename="art",chr_ignore=False,print_status=True):
+def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True):
     '''
 
     :param text: input text
-    :param dic: input font
-    :type dic:str
+    :param font: input font
+    :type font:str
     :type text:str
     :param filename: output file name
     :type filename:str
@@ -143,7 +146,7 @@ def tsave(text,dic="standard",filename="art",chr_ignore=False,print_status=True)
         result=""
         for item in split_list:
             if len(item) != 0:
-                result=result+text2art(item, dic=dic, chr_ignore=chr_ignore)
+                result=result+text2art(item, font=font, chr_ignore=chr_ignore)
         file.write(result)
         file.close()
         if print_status==True:
@@ -151,13 +154,13 @@ def tsave(text,dic="standard",filename="art",chr_ignore=False,print_status=True)
     except Exception:
         pass
 
-def text2art(text,dic="standard",chr_ignore=True):
+def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
     This function print art text
     :param text: input text
     :type text:str
-    :param dic: input font
-    :type dic:str
+    :param font: input font
+    :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :return: artText as str
@@ -167,12 +170,12 @@ def text2art(text,dic="standard",chr_ignore=True):
         result_list=[]
         letters=standard_dic
         text_temp=text
-        if dic.lower() in font_map.keys():
-            letters=font_map[dic.lower()][0]
-            if font_map[dic.lower()][1]==True:
+        if font.lower() in font_map.keys():
+            letters=font_map[font.lower()][0]
+            if font_map[font.lower()][1]==True:
                 text_temp=text.lower()
         for i in text_temp:
-            if (ord(i)==9) or (ord(i)==32 and dic=="block"):
+            if (ord(i)==9) or (ord(i)==32 and font=="block"):
                 continue
             if (i not in letters.keys()) and (chr_ignore==True):
                 continue
@@ -182,7 +185,7 @@ def text2art(text,dic="standard",chr_ignore=True):
         for i in range(len(split_list[0])):
             temp=""
             for j in range(len(split_list)):
-                if j>0 and (i==1 or i==len(split_list[0])-2) and dic=="block":
+                if j>0 and (i==1 or i==len(split_list[0])-2) and font=="block":
                     temp=temp+" "
                 temp=temp+split_list[j][i]
             result_list.append(temp)

@@ -33,7 +33,7 @@ Simple ASCII Art Library For Python
 ## Installation		
 
 ### Source Code
-- Download [Version 0.2](https://github.com/sepandhaghighi/art/archive/v0.2.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
+- Download [Version 0.3](https://github.com/sepandhaghighi/art/archive/v0.3.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
@@ -46,15 +46,15 @@ Simple ASCII Art Library For Python
 
 ### Library			
 <pre>
->>> from art import *
->>> aprint("butterfly")
+>>> from art import *  #import art library
+>>> aprint("butterfly") # print 1-line art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy")
  ۜ\(סּںסּَ` )/ۜ 
->>> art_1=art("coffee")
+>>> art_1=art("coffee") # return 1-line art
 >>> print(art_1)
 c[_] 
->>> tprint("art")
+>>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
  / _` || '__|| __|
@@ -62,7 +62,7 @@ c[_]
  \__,_||_|    \__|
                   
 
->>> tprint("art","block")
+>>> tprint("art",font="block") # print ascii text (block font)
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -75,12 +75,26 @@ c[_]
 | |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
->>> tsave("art",filename="test.txt")
+>>> tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True)
+Saved!
+Filename: test.txt
+>>> tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
+>>> tsave("art") # save ascii text in art.txt
 Saved!
 Filename: art.txt
->>> tprint('''Lorem 
+>>> tprint('testسس')  # chr_ignore flag ==True (Default)
+ _               _   
+| |_   ___  ___ | |_ 
+| __| / _ \/ __|| __|
+| |_ |  __/\__ \| |_ 
+ \__| \___||___/ \__|
+                     
+
+>>> tprint('testسس',chr_ignore=False) # chr_ignore flag == False
+[Error] Invalid Char!
+>>> tprint('''Lorem  # Multi-line print
 ipsum 
-dolor''', "cybermedium")
+dolor''', font="cybermedium")
 _    ____ ____ ____ _  _    
 |    |  | |__/ |___ |\/|    
 |___ |__| |  \ |___ |  |    
@@ -93,7 +107,6 @@ ___  ____ _    ____ ____
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
                          
-
 </pre>
 
 ### CLI			

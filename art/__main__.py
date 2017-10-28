@@ -17,12 +17,12 @@ if __name__=="__main__":
         elif len(args)>2:
             if args[1].upper()=="TEXT":
                 if len(args)>3:
-                    tprint(args[2],dic=args[3])
+                    tprint(args[2],font=args[3])
                 else:
                     tprint(args[2])
             elif args[1].upper()=="SAVE":
                 if len(args)>3:
-                    tsave(args[2], dic=args[3])
+                    tsave(args[2], font=args[3])
                 else:
                     tsave(args[2])
             elif args[1].upper()=="SHAPE":
