@@ -22,10 +22,18 @@ def line(char="*",number=30):
 
 
 def font_list():
+    '''
+    This Function Print All Of Fonts
+    :return: None
+    '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
         tprint("test", str(item))
 def aprint_test():
+    '''
+    This Function Print All Of 1Line Arts
+    :return: None
+    '''
     for i in sorted(list(art_dic.keys())):
         print(i)
         aprint(i)
@@ -115,6 +123,8 @@ def tsave(text,dic="standard",filename="art",chr_ignore=False,print_status=True)
     :type filename:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
+    :param print_status : Save message print flag
+    :type print_status:bool
     :return: None
     '''
     try:
