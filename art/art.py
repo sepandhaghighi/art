@@ -151,8 +151,8 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
         file.close()
         if print_status==True:
             print("Saved! \nFilename: "+test_name+".txt")
-    except Exception:
-        pass
+    except Exception as e:
+        print(str(e))
 
 def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
