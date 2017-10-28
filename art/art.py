@@ -182,6 +182,8 @@ def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
             if len(letters[i])==0:
                 continue
             split_list.append(letters[i].split("\n"))
+        if len(split_list)==0:
+            return ""
         for i in range(len(split_list[0])):
             temp=""
             for j in range(len(split_list)):

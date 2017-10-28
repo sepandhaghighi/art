@@ -691,7 +691,7 @@ Help :
 >>> aprint('sss')
 [Error] Invalid Art Name
 >>> tprint('طط')
-[Error] Invalid Char!
+<BLANKLINE>
 >>> art('assdsds')
 [Error] Invalid Art Name
 >>> art("coffee")
