@@ -111,6 +111,7 @@ ___  ____ _    ____ ____
 
 ### CLI			
 - List of arts :  `python -m art list`
+- List of fonts : `python -m art fonts`
 - Test : `python -m art test`
 - Text : `python -m art text yourtext fontname(optional)`
 - Shape : `python -m art shape art_name`
