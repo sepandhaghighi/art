@@ -4,7 +4,7 @@ from .text_dic import *
 import string
 import os
 
-version="0.2"
+version="0.3"
 
 font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],
           "basic":[basic_dic,True],"bulbhead":[bulbhead_dic,True],"chunky":[chunky_dic,False],"coinstak":[coinstak_dic,False],
@@ -19,10 +19,15 @@ font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[stand
 
 def line(char="*",number=30):
     print(char*number)
+
+
+def font_list():
+    for item in font_map.keys():
+        print(str(item) + " : ")
+        tprint("test", str(item))
 def tprint_test(dic="standard"):
-    inp=string.ascii_letters+string.digits+'%&\'()*+,-./:;<=>?@[\\]^_`{|}~!"#'
-    for i in inp:
-        tprint(i,dic=dic)
+    for item in font_map.keys():
+        tprint("test",item)
 def aprint_test():
     for i in sorted(list(art_dic.keys())):
         print(i)
@@ -37,6 +42,7 @@ def help_func():
     tprint("v"+version)
     print("Help : \n")
     print("     - list --> (list of arts)\n")
+    print("     - fonts --> (list of fonts)\n")
     print("     - test --> (run tests)\n")
     print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'\n")
     print("     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'\n")
@@ -101,7 +107,7 @@ def tprint(text,dic="standard",chr_ignore=False):
         pass
 
 
-def tsave(text,dic="standard",filename="art",chr_ignore=False):
+def tsave(text,dic="standard",filename="art",chr_ignore=False,print_status=True):
     '''
 
     :param text: input text
@@ -133,7 +139,8 @@ def tsave(text,dic="standard",filename="art",chr_ignore=False):
                 result=result+text2art(item, dic=dic, chr_ignore=chr_ignore)
         file.write(result)
         file.close()
-        print("Saved! \nFilename: "+test_name+".txt")
+        if print_status==True:
+            print("Saved! \nFilename: "+test_name+".txt")
     except Exception:
         pass
 
@@ -161,6 +168,8 @@ def text2art(text,dic="standard",chr_ignore=True):
             if (ord(i)==9) or (ord(i)==32 and dic=="block"):
                 continue
             if (i not in letters.keys()) and (chr_ignore==True):
+                continue
+            if len(letters[i])==0:
                 continue
             split_list.append(letters[i].split("\n"))
         for i in range(len(split_list[0])):

@@ -9,9 +9,11 @@ if __name__=="__main__":
     args=sys.argv
     if len(args)>1:
         if args[1].upper()=="TEST":
-            doctest.testfile("test.py", verbose=True)
+            doctest.testfile("test.py",optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
         elif args[1].upper()=="LIST":
             aprint_test()
+        elif args[1].upper()=="FONTS":
+            font_list()
         elif len(args)>2:
             if args[1].upper()=="TEXT":
                 if len(args)>3:

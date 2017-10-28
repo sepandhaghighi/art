@@ -78,14 +78,30 @@ c[_]
 >>> tsave("art",filename="test.txt")
 Saved!
 Filename: art.txt
+>>> tprint('''Lorem 
+ipsum 
+dolor''', "cybermedium")
+_    ____ ____ ____ _  _    
+|    |  | |__/ |___ |\/|    
+|___ |__| |  \ |___ |  |    
+                            
+_ ___  ____ _  _ _  _    
+| |__] [__  |  | |\/|    
+| |    ___] |__| |  |    
+                         
+___  ____ _    ____ ____ 
+|  \ |  | |    |  | |__/ 
+|__/ |__| |___ |__| |  \ 
+                         
+
 </pre>
 
 ### CLI			
 - List of arts :  `python -m art list`
 - Test : `python -m art test`
-- Text : `python -m art text yourtext block(optional)`
+- Text : `python -m art text yourtext fontname(optional)`
 - Shape : `python -m art shape art_name`
-- Save :  `python -m art save yourtext block(optional)`
+- Save :  `python -m art save yourtext fontname(optional)`
 <div align="center">
 <a href="https://asciinema.org/a/141739" target="_blank"><img src="https://asciinema.org/a/141739.png" /></a>
 <p>Screen Record</p>
