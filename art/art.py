@@ -132,7 +132,7 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
     '''
     try:
         split_list = text.split("\n")
-        files_list=os.listdir()
+        files_list=os.listdir(os.getcwd())
         splited_filename=filename.split(".")[0]
         index = 2
         test_name = splited_filename
