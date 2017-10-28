@@ -6,7 +6,16 @@ import os
 
 version="0.2"
 
-font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],"basic":[basic_dic,True]}
+font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],
+          "basic":[basic_dic,True],"bulbhead":[bulbhead_dic,True],"chunky":[chunky_dic,False],"coinstak":[coinstak_dic,False],
+          "contessa":[contessa_dic,False],"contrast":[contrast_dic,True],"cyberlarge":[cyberlarge_dic,True],"cybermedium":[cybermedium_dic,True],
+          "doom":[doom_dic,False],"dotmatrix":[dotmatrix_dic,False],"drpepper":[drpepper_dic,False],
+          "epic":[epic_dic,True],"fuzzy":[fuzzy_dic,False],"isometric1":[isometric1_dic,True],"isometric2":[isometric2_dic,True],
+          "isometric3":[isometric3_dic,True],"isometric4":[isometric4_dic,True],"larry3d":[larry3d_dic,False],
+          "nancyj":[nancyj_dic,False],"ogre":[ogre_dic,False],"rectangles":[rectangles_dic,False],"roman":[roman_dic,False],
+          "rounded":[rounded_dic,False],"rowancap":[rowancap_dic,True],"script":[script_dic,False],
+          "serifcap":[serifcap_dic,True],"shadow":[shadow_dic,False],"slant":[slant_dic,False],"speed":[speed_dic,False],
+          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False]}
 
 def line(char="*",number=30):
     print(char*number)
