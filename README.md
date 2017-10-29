@@ -117,7 +117,7 @@ ___  ____ _    ____ ____
 - Shape : `python -m art shape art_name`
 - Save :  `python -m art save yourtext fontname(optional)`
 <div align="center">
-<a href="https://asciinema.org/a/141739" target="_blank"><img src="https://asciinema.org/a/141739.png" /></a>
+<a href="https://asciinema.org/a/144767" target="_blank"><img src="https://asciinema.org/a/144767.png" /></a>
 <p>Screen Record</p>
 </div>
 
