@@ -1,6 +1,6 @@
 @font-face {
     font-family: "baloo";
-    src: url("../fonts/Baloo.ttf");
+    src: url("fonts/Baloo.ttf");
 }
 
 
@@ -130,6 +130,7 @@ body{
     z-index: 2;
     
 }
+
 
 
 
