@@ -147,6 +147,7 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
         for item in split_list:
             if len(item) != 0:
                 result=result+text2art(item, font=font, chr_ignore=chr_ignore)
+        result=resuly.replace("\n","\r\n")
         file.write(result)
         file.close()
         if print_status==True:
