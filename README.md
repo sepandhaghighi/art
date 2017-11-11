@@ -25,6 +25,8 @@
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 <a href="list.md#fonts"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
 <a href="list.md#1-line-art"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
+<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
+
 </div>
 	
 ----------
@@ -118,6 +120,10 @@ ___  ____ _    ____ ____
 - Text : `python -m art text yourtext fontname(optional)`
 - Shape : `python -m art shape art_name`
 - Save :  `python -m art save yourtext fontname(optional)`
+
+### Telegram Bot
+<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
+
 <div align="center">
 <a href="https://asciinema.org/a/144767" target="_blank"><img src="https://asciinema.org/a/144767.png" /></a>
 <p>Screen Record</p>
