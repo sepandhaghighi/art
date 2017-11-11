@@ -35,7 +35,7 @@ Simple ASCII Art Library For Python
 ## Installation		
 
 ### Source Code
-- Download [Version 0.3](https://github.com/sepandhaghighi/art/archive/v0.3.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
+- Download [Version 0.4](https://github.com/sepandhaghighi/art/archive/v0.4.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI

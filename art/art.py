@@ -4,7 +4,7 @@ from .text_dic import *
 import string
 import os
 
-version="0.3"
+version="0.4"
 
 font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],
           "basic":[basic_dic,True],"bulbhead":[bulbhead_dic,True],"chunky":[chunky_dic,False],"coinstak":[coinstak_dic,False],
