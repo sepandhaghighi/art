@@ -15,7 +15,9 @@ font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[stand
           "nancyj":[nancyj_dic,False],"ogre":[ogre_dic,False],"rectangles":[rectangles_dic,False],"roman":[roman_dic,False],
           "rounded":[rounded_dic,False],"rowancap":[rowancap_dic,True],"script":[script_dic,False],
           "serifcap":[serifcap_dic,True],"shadow":[shadow_dic,False],"slant":[slant_dic,False],"speed":[speed_dic,False],
-          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False],"standard":[standard_dic,False]}
+          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False],"standard":[standard_dic,False],
+          "3-d":[dic_3d,False],"3x5":[dic_3x5,False],"5lineoblique":[dic_5lineoblique,False],"alphabet":[alphabet_dic,False],"banner3-D":[banner3d_dic,True],
+          "banner3":[banner3_dic,True],"banner4":[banner4_dic,True],"bell":[bell_dic,False],"catwalk":[catwalk_dic,False],"colossal":[colossal_dic,False]}
 
 
 DEFAULT_FONT="standard"
