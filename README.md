@@ -1,4 +1,4 @@
-<div align="center">
+0<div align="center">
 <pre>
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -37,7 +37,7 @@ Simple ASCII Art Library For Python
 ## Installation		
 
 ### Source Code
-- Download [Version 0.4](https://github.com/sepandhaghighi/art/archive/v0.4.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
+- Download [Version 0.5](https://github.com/sepandhaghighi/art/archive/v0.5.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
@@ -159,7 +159,7 @@ Remember to write a few tests for your code before sending pull requests.
 								
 <h3>Bitcoin :</h3>					
 
-```1XGr9qbZjBpUQJJSB6WtgBQbDTgrhPLPA```			
+```12Xm1qL4MXYWiY9sRMoa3VpfTfw6su3vNq```			
 
 
 
