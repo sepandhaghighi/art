@@ -4,6 +4,8 @@ from .art_dic import *
 import sys
 import doctest
 import getopt
+import os
+import zipfile
 
 if __name__=="__main__":
     args=sys.argv
@@ -15,7 +17,18 @@ if __name__=="__main__":
         elif args[1].upper()=="FONTS":
             font_list()
         elif len(args)>2:
-            if args[1].upper()=="TEXT":
+            if args[1].upper()=="ALL":
+                if "ARTFonts" not in os.listdir(os.getcwd()):
+                    os.mkdir("ARTFonts")
+                zipf = zipfile.ZipFile(os.path.join("ARTFonts", "ALL_FONT" + '.zip'), 'w', zipfile.ZIP_DEFLATED)
+                print("Generating . . . ")
+                for font in font_map.keys():
+                    tsave(args[2], filename=os.path.join("ARTFonts", font + ".txt"), print_status=False,
+                          font=font)
+                    zipf.write(os.path.join("ARTFonts", font + ".txt"), font + ".txt")
+                zipf.close()
+                print("File -- > "+str(os.path.join("ARTFonts", "ALL_FONT" + '.zip')))
+            elif args[1].upper()=="TEXT":
                 if len(args)>3:
                     tprint(args[2],font=args[3])
                 else:
