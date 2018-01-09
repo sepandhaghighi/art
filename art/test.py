@@ -761,11 +761,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-         ___      ____
-__   __ / _ \    | ___|
-\ \ / /| | | |   |___ \
- \ V / | |_| | _  ___) |
-  \_/   \___/ (_)|____/
+         ___       __
+__   __ / _ \     / /_
+\ \ / /| | | |   | '_ \
+ \ V / | |_| | _ | (_) |
+  \_/   \___/ (_) \___/
 <BLANKLINE>
 <BLANKLINE>
 Help :
@@ -780,13 +780,15 @@ Help :
 <BLANKLINE>
      - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'
 <BLANKLINE>
-     - save 'yourtext  'font(optional)  -->  Example : 'python -m art save exampletext  block
+     - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'
+<BLANKLINE>
+     - all 'yourtext'  -->  Example : 'python -m art all exampletext'
 >>> aprint('sss')
 [Error] Invalid Art Name
 >>> tprint('طط')
 <BLANKLINE>
 >>> art('assdsds')
-[Error] Invalid Art Name
+[Error] Invalid Art Name!
 >>> art("coffee")
 'c[_] '
 >>> tprint("test 2")
@@ -825,6 +827,18 @@ Filename: art2.txt
 >>> print(len(file.read()))
 288
 >>> file.close()
+>>> text2art(222)
+[Error] Print Faild!
+>>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
+[Error] Invalid Char!
+>>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+>>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
+>>> art(22,number=1,text="")
+[Error] Invalid Input!
+>>> aprint("woman",number="22",text="")
+[Error] Print Faild!
+>>> aprint("love_you",number=1,text="")
+»-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> cov.stop()
 >>> cov.save()
 

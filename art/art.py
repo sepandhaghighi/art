@@ -92,9 +92,9 @@ def art(artname,number=1,text=""):
         else:
             return (art_value[0]+text+art_value[1]+" ")*number
     except KeyError:
-        print("[Error] Invalid Art Name")
+        print("[Error] Invalid Art Name!")
     except Exception:
-        print("[Error] Return Faild!")
+        print("[Error] Invalid Input!")
 
 def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
