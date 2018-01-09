@@ -3,7 +3,6 @@ from .art import *
 from .art_dic import *
 import sys
 import doctest
-import getopt
 import os
 import zipfile
 

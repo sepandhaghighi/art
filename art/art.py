@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from .art_dic import *
 from .text_dic import *
-import string
 import os
 
 version="0.6"
