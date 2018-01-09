@@ -4,7 +4,7 @@ from .text_dic import *
 import string
 import os
 
-version="0.5"
+version="0.6"
 
 font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],
           "basic":[basic_dic,True],"bulbhead":[bulbhead_dic,True],"chunky":[chunky_dic,False],"coinstak":[coinstak_dic,False],
@@ -15,7 +15,7 @@ font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[stand
           "nancyj":[nancyj_dic,False],"ogre":[ogre_dic,False],"rectangles":[rectangles_dic,False],"roman":[roman_dic,False],
           "rounded":[rounded_dic,False],"rowancap":[rowancap_dic,True],"script":[script_dic,False],
           "serifcap":[serifcap_dic,True],"shadow":[shadow_dic,False],"slant":[slant_dic,False],"speed":[speed_dic,False],
-          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False],"standard":[standard_dic,False],
+          "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False],
           "3-d":[dic_3d,False],"3x5":[dic_3x5,False],"5lineoblique":[dic_5lineoblique,False],"alphabet":[alphabet_dic,False],"banner3-D":[banner3d_dic,True],
           "banner3":[banner3_dic,True],"banner4":[banner4_dic,True],"bell":[bell_dic,False],"catwalk":[catwalk_dic,False],"colossal":[colossal_dic,False]}
 
@@ -56,7 +56,8 @@ def help_func():
     print("     - test --> (run tests)\n")
     print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'\n")
     print("     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'\n")
-    print("     - save 'yourtext  'font(optional)  -->  Example : 'python -m art save exampletext  block")
+    print("     - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'\n")
+    print("     - all 'yourtext'  -->  Example : 'python -m art all exampletext'")
 def aprint(artname,number=1,text=""):
     '''
     Art Print

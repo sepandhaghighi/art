@@ -37,7 +37,7 @@ Simple ASCII Art Library For Python
 ## Installation		
 
 ### Source Code
-- Download [Version 0.5](https://github.com/sepandhaghighi/art/archive/v0.5.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
+- Download [Version 0.6](https://github.com/sepandhaghighi/art/archive/v0.6.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
@@ -120,6 +120,7 @@ ___  ____ _    ____ ____
 - Text : `python -m art text yourtext fontname(optional)`
 - Shape : `python -m art shape art_name`
 - Save :  `python -m art save yourtext fontname(optional)`
+- All  :  `python -m art all yourtext`
 
 ### Telegram Bot
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>

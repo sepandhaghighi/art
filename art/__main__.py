@@ -27,6 +27,7 @@ if __name__=="__main__":
                           font=font)
                     zipf.write(os.path.join("ARTFonts", font + ".txt"), font + ".txt")
                 zipf.close()
+                print("Done!")
                 print("File -- > "+str(os.path.join("ARTFonts", "ALL_FONT" + '.zip')))
             elif args[1].upper()=="TEXT":
                 if len(args)>3:
