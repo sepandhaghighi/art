@@ -23,8 +23,8 @@
 <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="list.md#fonts"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
-<a href="list.md#1-line-art"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
+<a href="FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
+<a href="ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 
 </div>
