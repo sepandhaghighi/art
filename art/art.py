@@ -51,6 +51,7 @@ def help_func():
     '''
     tprint("art")
     tprint("v"+version)
+    print("Webpage : http://art.shaghighi.ir")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
     print("     - fonts --> (list of fonts)\n")
