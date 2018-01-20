@@ -3,7 +3,7 @@ from .art_dic import *
 from .text_dic import *
 import os
 
-version="0.6"
+version="0.7"
 
 font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],
           "basic":[basic_dic,True],"bulbhead":[bulbhead_dic,True],"chunky":[chunky_dic,False],"coinstak":[coinstak_dic,False],
@@ -16,8 +16,10 @@ font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[stand
           "serifcap":[serifcap_dic,True],"shadow":[shadow_dic,False],"slant":[slant_dic,False],"speed":[speed_dic,False],
           "starwars":[starwars_dic,False],"stop":[stop_dic,False],"thin":[thin_dic,False],"usaflag":[usaflag_dic,False],
           "3-d":[dic_3d,False],"3x5":[dic_3x5,False],"5lineoblique":[dic_5lineoblique,False],"alphabet":[alphabet_dic,False],"banner3-D":[banner3d_dic,True],
-          "banner3":[banner3_dic,True],"banner4":[banner4_dic,True],"bell":[bell_dic,False],"catwalk":[catwalk_dic,False],"colossal":[colossal_dic,False]}
-
+          "banner3":[banner3_dic,True],"banner4":[banner4_dic,True],"bell":[bell_dic,False],"catwalk":[catwalk_dic,False],"colossal":[colossal_dic,False],
+          "acrobatic":[acrobatic_dic,True],"alligator":[alligator_dic,False],"alligator2":[alligator2_dic,False],"block2":[block2_dic,True],
+          "caligraphy":[caligraphy_dic,True],"computer":[computer_dic,True],"digital":[digital_dic,True],"doh":[doh_dic,True],
+          "eftirobot":[eftirobot_dic,True],"graffiti":[graffiti_dic,True]}
 
 DEFAULT_FONT="standard"
 

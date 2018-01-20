@@ -36,6 +36,38 @@ This function get a string as input if input is one digit add a zero
  / /      //           \ \      / /
 / /      ((____     //   ) )   / /
 <BLANKLINE>
+acrobatic :
+  o                               o
+ <|>                             <|>
+ < >                             < >
+  |        o__  __o       __o__   |
+  o__/_   /v      |>     />  \    o__/_
+  |      />      //      \o       |
+  |      \o    o/         v\      |
+  o       v\  /v __o       <\     o
+  <\__     <\/> __/>  _\o__</     <\__
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+alligator :
+  :::::::::::       ::::::::::       ::::::::   :::::::::::
+     :+:           :+:             :+:    :+:      :+:
+    +:+           +:+             +:+             +:+
+   +#+           +#++:++#        +#++:++#++      +#+
+  +#+           +#+                    +#+      +#+
+ #+#           #+#             #+#    #+#      #+#
+###           ##########       ########       ###
+<BLANKLINE>
+alligator2 :
+::::::::::: ::::::::::  ::::::::  :::::::::::
+    :+:     :+:        :+:    :+:     :+:
+    +:+     +:+        +:+            +:+
+    +#+     +#++:++#   +#++:++#++     +#+
+    +#+     +#+               +#+     +#+
+    #+#     #+#        #+#    #+#     #+#
+    ###     ##########  ########      ###
+<BLANKLINE>
 alphabet :
  t           t
  t           t
@@ -121,11 +153,44 @@ block :
 | '--------------' || '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'  '----------------'
 <BLANKLINE>
+block2 :
+<BLANKLINE>
+  _|                            _|
+_|_|_|_|    _|_|      _|_|_|  _|_|_|_|
+  _|      _|_|_|_|  _|_|        _|
+  _|      _|            _|_|    _|
+    _|_|    _|_|_|  _|_|_|        _|_|
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 bulbhead :
  ____  ____  ___  ____
 (_  _)( ___)/ __)(_  _)
   )(   )__) \__ \  )(
  (__) (____)(___/ (__)
+<BLANKLINE>
+caligraphy :
+<BLANKLINE>
+<BLANKLINE>
+    *                              *
+   **                             **
+   **                             **
+ ********              ****     ********
+********     ***      * **** * ********
+   **       * ***    **  ****     **
+   **      *   ***  ****          **
+   **     **    ***   ***         **
+   **     ********      ***       **
+   **     *******         ***     **
+   **     **         ****  **     **
+   **     ****    * * **** *      **
+    **     *******     ****        **
+            *****
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 catwalk :
   _//                     _//
@@ -167,6 +232,15 @@ Y88b.  Y8b.          X88 Y88b.
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+computer :
+<BLANKLINE>
+eeeee eeee eeeee eeeee
+  8   8    8   "   8
+  8e  8eee 8eeee   8e
+  88  88      88   88
+  88  88ee 8ee88   88
+<BLANKLINE>
+<BLANKLINE>
 contessa :
  ,        ,
 -+- _  __-+-
@@ -191,6 +265,38 @@ cybermedium :
 ___ ____ ____ ___
  |  |___ [__   |
  |  |___ ___]  |
+<BLANKLINE>
+<BLANKLINE>
+digital :
++-++-++-++-+
+|t||e||s||t|
++-++-++-++-+
+<BLANKLINE>
+doh :
+<BLANKLINE>
+<BLANKLINE>
+         tttt                                                        tttt
+      ttt:::t                                                     ttt:::t
+      t:::::t                                                     t:::::t
+      t:::::t                                                     t:::::t
+ttttttt:::::ttttttt        eeeeeeeeeeee        ssssssssss   ttttttt:::::ttttttt
+t:::::::::::::::::t      ee::::::::::::ee    ss::::::::::s  t:::::::::::::::::t
+t:::::::::::::::::t     e::::::eeeee:::::eess:::::::::::::s t:::::::::::::::::t
+tttttt:::::::tttttt    e::::::e     e:::::es::::::ssss:::::stttttt:::::::tttttt
+      t:::::t          e:::::::eeeee::::::e s:::::s  ssssss       t:::::t
+      t:::::t          e:::::::::::::::::e    s::::::s            t:::::t
+      t:::::t          e::::::eeeeeeeeeee        s::::::s         t:::::t
+      t:::::t    tttttte:::::::e           ssssss   s:::::s       t:::::t    tttttt
+      t::::::tttt:::::te::::::::e          s:::::ssss::::::s      t::::::tttt:::::t
+      tt::::::::::::::t e::::::::eeeeeeee  s::::::::::::::s       tt::::::::::::::t
+        tt:::::::::::tt  ee:::::::::::::e   s:::::::::::ss          tt:::::::::::tt
+          ttttttttttt      eeeeeeeeeeeeee    sssssssssss              ttttttttttt
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 doom :
@@ -222,6 +328,14 @@ drpepper :
   |_|  \___./__/  |_|
 <BLANKLINE>
 <BLANKLINE>
+eftirobot :
+ _            _
+( )          ( )
+| |  ___  __ | |
+( _)( o_)(_' ( _)
+/_\  \(  /__)/_\
+<BLANKLINE>
+<BLANKLINE>
 epic :
 _________ _______  _______ _________
 \__   __/(  ____ \(  ____ \\__   __/
@@ -241,6 +355,14 @@ fuzzy :
  :_; `.__.'`.__.' :_;
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+graffiti :
+  __                     __
+_/  |_   ____    _______/  |_
+\   __\_/ __ \  /  ___/\   __\
+ |  |  \  ___/  \___ \  |  |
+ |__|   \___  >/____  > |__|
+            \/      \/
 <BLANKLINE>
 isometric1 :
       ___           ___           ___           ___
@@ -761,11 +883,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-         ___       __
-__   __ / _ \     / /_
-\ \ / /| | | |   | '_ \
- \ V / | |_| | _ | (_) |
-  \_/   \___/ (_) \___/
+         ___      _____
+__   __ / _ \    |___  |
+\ \ / /| | | |      / /
+ \ V / | |_| | _   / /
+  \_/   \___/ (_) /_/
 <BLANKLINE>
 <BLANKLINE>
 Help :
