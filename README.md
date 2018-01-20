@@ -130,8 +130,8 @@ ___  ____ _    ____ ____
 <p>Screen Record</p>
 </div>
 
-* [View Full Art List](list.md "Full Art List")					
-
+* [View Full Font List](FontList.ipynb "Full Font List")					
+* [View Full Art List](ArtList.ipynb "Full Art List")
 
 ## Issues & Bug Reports			
 
