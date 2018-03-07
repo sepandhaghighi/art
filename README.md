@@ -65,6 +65,16 @@ c[_]
 </pre>
 ### ASCII Text
 <pre>	
+>>> Art=text2art("test",font='standard',chr_ignore=True)
+>>> Art
+>>> print(Art)
+ _               _   
+| |_   ___  ___ | |_ 
+| __| / _ \/ __|| __|
+| |_ |  __/\__ \| |_ 
+ \__| \___||___/ \__|
+                     
+
 >>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
@@ -73,7 +83,7 @@ c[_]
  \__,_||_|    \__|
                   
 
->>> tprint("art",font="block") # print ascii text (block font)
+>>> tprint("art",font="block",chr_ignore=True) # print ascii text (block font)
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -91,7 +101,6 @@ Saved!
 Filename: test.txt
 >>> Response["Message"]
 'OK'
->>> tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
 >>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
 >>> Response["Message"]
 'OK'
@@ -125,7 +134,40 @@ ___  ____ _    ____ ____
 |__/ |__| |___ |__| |  \ 
                          
 </pre>
-* Note : Functions error response updated in `Version 0.8`				
+* Note : Functions error response updated in `Version 0.8`
+	<table>
+			<tr>
+				<td align="center">Function</td>
+				<td align="center">Normal</td>
+				<td align="center">Error</td>
+			</tr>
+			<tr>
+				<td align="center">art</td>
+				<td align="center">str</td>
+				<td align="center">dict({"Status":bool,"Message":str})</td>
+			</tr>
+			<tr>
+				<td align="center">aprint</td>
+				<td align="center">None</td>
+				<td align="center">dict({"Status":bool,"Message":str})</td>
+			</tr>
+			<tr>
+				<td align="center">tprint</td>
+				<td align="center">None</td>
+				<td align="center">dict({"Status":bool,"Message":str})</td>
+			</tr>
+			<tr>
+				<td align="center">tsave</td>
+				<td align="center">dict({"Status":bool,"Message":str})</td>
+				<td align="center">dict({"Status":bool,"Message":str})</td>
+			</tr>
+			<tr>
+				<td align="center">text2art</td>
+				<td align="center">str</td>
+				<td align="center">dict({"Status":bool,"Message":str})</td>
+			</tr>
+				
+		</table> 			
 
 ### CLI			
 - List of arts :  `python -m art list`
