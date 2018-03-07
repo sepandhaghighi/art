@@ -159,7 +159,7 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
         file.close()
         if print_status==True:
             print("Saved! \nFilename: "+test_name+extension)
-        return {"Status": True,"Message":"Saved! \nFilename: "+test_name+extension}
+        return {"Status": True,"Message":"OK"}
     except Exception as e :
         return {"Status": False, "Message": str(e)}
 

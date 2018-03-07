@@ -906,12 +906,22 @@ Help :
      - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'
 <BLANKLINE>
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
->>> aprint('sss')
-[Error] Invalid Art Name
+>>> Data=aprint('sss')
+>>> type(Data)
+<class 'dict'>
+>>> Data["Message"]
+'Invalid Art Name'
+>>> Data["Status"]
+False
 >>> tprint('طط')
 <BLANKLINE>
->>> art('assdsds')
-[Error] Invalid Art Name!
+>>> Data=art('assdsds')
+>>> type(Data)
+<class 'dict'>
+>>> Data["Message"]
+'Invalid Art Name'
+>>> Data["Status"]
+False
 >>> art("coffee")
 'c[_] '
 >>> tprint("test 2")
@@ -930,17 +940,39 @@ Help :
  \__,_| \__,_||___/ \__,_| \__,_||___/ \__,_|
 <BLANKLINE>
 <BLANKLINE>
->>> tsave("test file\nk",filename="test")
+>>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
->>> tsave("test file\nk",filename="test.bw")
->>> tsave("test art")
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data=tsave("test file\nk",filename="test.bw")
+Saved!
+Filename: test.bw
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data=tsave("test art")
 Saved!
 Filename: art.txt
->>> tsave("test art2")
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data=tsave("test art2")
 Saved!
 Filename: art2.txt
->>> tsave("test art3",print_status=False)
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data=tsave("test art3",print_status=False)
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
 >>> file=open("test.txt","r")
 >>> print(len(file.read()))
 282
@@ -951,16 +983,30 @@ Filename: art2.txt
 >>> print(len(file.read()))
 288
 >>> file.close()
->>> text2art(222)
-[Error] Print Faild!
->>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
-[Error] Invalid Char!
+>>> Data=text2art(222)
+>>> Data["Message"]
+"'int' object is not iterable"
+>>> Data["Status"]
+False
+>>> Data=text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
+>>> Data["Message"]
+'Invalid Char!'
+>>> Data["Status"]
+False
 >>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+{'Status': False, 'Message': "'int' object has no attribute 'split'"}
 >>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
->>> art(22,number=1,text="")
-[Error] Invalid Input!
->>> aprint("woman",number="22",text="")
-[Error] Print Faild!
+{'Status': False, 'Message': "'int' object has no attribute 'split'"}
+>>> Data=art(22,number=1,text="")
+>>> Data["Message"]
+"'int' object has no attribute 'lower'"
+>>> Data["Status"]
+False
+>>> Data=aprint("woman",number="22",text="")
+>>> Data["Message"]
+"can't multiply sequence by non-int of type 'str'"
+>>> Data["Status"]
+False
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> cov.stop()
