@@ -157,8 +157,6 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
         for item in split_list:
             if len(item) != 0:
                 result=result+text2art(item, font=font, chr_ignore=chr_ignore)
-        if "win" not in sys.platform:
-            result=result.replace("\n","\r\n")
         file.write(result)
         file.close()
         if print_status==True:
@@ -182,6 +180,7 @@ def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
         result_list=[]
         letters=standard_dic
         text_temp=text
+        spliter="\n"
         if font.lower() in font_map.keys():
             letters=font_map[font.lower()][0]
             if font_map[font.lower()][1]==True:
@@ -203,7 +202,9 @@ def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
                     temp=temp+" "
                 temp=temp+split_list[j][i]
             result_list.append(temp)
-        return(("\n").join(result_list))
+        if "win" not in sys.platform:
+            spliter="\r\n"
+        return((spliter).join(result_list))
 
     except KeyError:
         print("[Error] Invalid Char!")
