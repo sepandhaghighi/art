@@ -49,7 +49,7 @@ Simple ASCII Art Library For Python
 ## Usage
 
 ### 1-Line Art			
-```python
+<pre>
 >>> from art import *
 >>> aprint("butterfly")
 Ƹ̵̡Ӝ̵̨̄Ʒ 
@@ -62,9 +62,9 @@ c[_]
 >>> Data
 {'Message': "'int' object has no attribute 'lower'", 'Status': False} 
 
-```
+</pre>
 ### ASCII Text
-```python	
+<pre>	
 >>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
@@ -124,7 +124,7 @@ ___  ____ _    ____ ____
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
                          
-```
+</pre>
 * Note : Functions error response updated in `Version 0.8`				
 
 ### CLI			
