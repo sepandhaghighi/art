@@ -76,9 +76,9 @@ def aprint(artname,number=1,text=""):
         else:
             print((art_value[0]+text+art_value[1]+" ")*number)
     except KeyError:
-        print("[Error] Invalid Art Name")
-    except Exception:
-        print("[Error] Print Faild!")
+        return {"Status": False, "Message": "Invalid Art Name"}
+    except Exception as e:
+        return {"Status": False, "Message": str(e)}
 
 
 def art(artname,number=1,text=""):
@@ -95,9 +95,9 @@ def art(artname,number=1,text=""):
         else:
             return (art_value[0]+text+art_value[1]+" ")*number
     except KeyError:
-        print("[Error] Invalid Art Name!")
-    except Exception:
-        print("[Error] Invalid Input!")
+        return {"Status": False, "Message": "Invalid Art Name"}
+    except Exception as e:
+        return {"Status": False, "Message": str(e)}
 
 def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
@@ -117,10 +117,8 @@ def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
             if len(item)!=0:
                 result=result+text2art(item,font=font,chr_ignore=chr_ignore)
         print(result)
-    except Exception:
-        pass
-
-
+    except Exception as e:
+        return {"Status": False, "Message": str(e)}
 def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True):
     '''
 
@@ -161,8 +159,9 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
         file.close()
         if print_status==True:
             print("Saved! \nFilename: "+test_name+extension)
-    except Exception :
-        pass
+        return {"Status": True,"Message":"Saved! \nFilename: "+test_name+extension}
+    except Exception as e :
+        return {"Status": False, "Message": str(e)}
 
 def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
@@ -207,7 +206,7 @@ def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
         return((spliter).join(result_list))
 
     except KeyError:
-        print("[Error] Invalid Char!")
-    except Exception:
-        print("[Error] Print Faild!")
+        return {"Status": False, "Message": "Invalid Char!"}
+    except Exception as e:
+        return {"Status": False, "Message": str(e)}
 
