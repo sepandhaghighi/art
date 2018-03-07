@@ -139,39 +139,41 @@ ___  ____ _    ____ ____
                          
 </pre>
 * Note : Functions error response updated in `Version 0.8`
-	<table>
-			<tr>
-				<td align="center">Function</td>
-				<td align="center">Normal</td>
-				<td align="center">Error</td>
-			</tr>
-			<tr>
-				<td align="center">art</td>
-				<td align="center">str</td>
-				<td align="center">dict({"Status":bool,"Message":str})</td>
-			</tr>
-			<tr>
-				<td align="center">aprint</td>
-				<td align="center">None</td>
-				<td align="center">dict({"Status":bool,"Message":str})</td>
-			</tr>
-			<tr>
-				<td align="center">tprint</td>
-				<td align="center">None</td>
-				<td align="center">dict({"Status":bool,"Message":str})</td>
-			</tr>
-			<tr>
-				<td align="center">tsave</td>
-				<td align="center">dict({"Status":bool,"Message":str})</td>
-				<td align="center">dict({"Status":bool,"Message":str})</td>
-			</tr>
-			<tr>
-				<td align="center">text2art</td>
-				<td align="center">str</td>
-				<td align="center">dict({"Status":bool,"Message":str})</td>
-			</tr>
-				
-		</table> 			
+
+<html>
+<table>
+	<tr>
+		<td align="center">Function</td>
+		<td align="center">Normal</td>
+		<td align="center">Error</td>
+	</tr>
+	<tr>
+		<td align="center">art</td>
+		<td align="center">str</td>
+		<td align="center">dict({"Status":bool,"Message":str})</td>
+	</tr>
+	<tr>
+		<td align="center">aprint</td>
+		<td align="center">None</td>
+		<td align="center">dict({"Status":bool,"Message":str})</td>
+	</tr>
+	<tr>
+		<td align="center">tprint</td>
+		<td align="center">None</td>
+		<td align="center">dict({"Status":bool,"Message":str})</td>
+	</tr>
+	<tr>
+		<td align="center">tsave</td>
+		<td align="center">dict({"Status":bool,"Message":str})</td>
+		<td align="center">dict({"Status":bool,"Message":str})</td>
+	</tr>
+	<tr>
+		<td align="center">text2art</td>
+		<td align="center">str</td>
+		<td align="center">dict({"Status":bool,"Message":str})</td>
+	</tr>		
+</table> 
+</html>			
 
 ### CLI			
 - List of arts :  `python -m art list`
