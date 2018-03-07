@@ -50,14 +50,17 @@ Simple ASCII Art Library For Python
 
 ### 1-Line Art			
 ```python
->>> from art import *  #import art library
->>> aprint("butterfly") # print 1-line art
+>>> from art import *
+>>> aprint("butterfly")
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy")
  ۜ\(סּںסּَ` )/ۜ 
->>> art_1=art("coffee") # return 1-line art
+>>> art_1=art("coffee") # return art as str in normal mode
 >>> print(art_1)
-c[_] 
+c[_]
+>>> Data=art(22,number=1,text="") # Return dict in exception
+>>> Data
+{'Message': "'int' object has no attribute 'lower'", 'Status': False} 
 
 ```
 ### ASCII Text
@@ -83,7 +86,7 @@ c[_]
 | |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
->>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True)
+>>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
 Saved! 
 Filename: test.txt
 >>> Response["Message"]
@@ -94,6 +97,8 @@ Filename: test.txt
 'OK'
 >>> Response["Status"]
 True
+>>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+{'Status': False, 'Message': "'int' object has no attribute 'split'"}
 >>> tprint('testسس')  # chr_ignore flag ==True (Default)
  _               _   
 | |_   ___  ___ | |_ 
@@ -102,7 +107,7 @@ True
  \__| \___||___/ \__|
                      
 
->>> tprint('testسس',chr_ignore=False) # chr_ignore flag == False
+>>> tprint('testسس',chr_ignore=False) # Return dict in exception 
 {'Message': "Can't convert 'dict' object to str implicitly", 'Status': False}
 >>> tprint('''Lorem  # Multi-line print
 ipsum 
@@ -120,6 +125,7 @@ ___  ____ _    ____ ____
 |__/ |__| |___ |__| |  \ 
                          
 ```
+* Note : Functions error response updated in `Version 0.8`				
 
 ### CLI			
 - List of arts :  `python -m art list`
