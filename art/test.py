@@ -933,6 +933,7 @@ Help :
 >>> tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
+>>> tsave("test file\nk",filename="test.bw")
 >>> tsave("test art")
 Saved!
 Filename: art.txt

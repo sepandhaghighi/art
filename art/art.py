@@ -2,6 +2,7 @@
 from .art_dic import *
 from .text_dic import *
 import os
+import sys
 
 version="0.7"
 
@@ -138,25 +139,30 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
     try:
         split_list = text.split("\n")
         files_list=os.listdir(os.getcwd())
-        splited_filename=filename.split(".")[0]
+        extension=".txt"
+        splited_filename=filename.split(".")
+        name=splited_filename[0]
+        if len(splited_filename)>1:
+            extension="."+splited_filename[1]
         index = 2
-        test_name = splited_filename
+        test_name = name
         while(True):
-            if test_name+".txt" in files_list:
-                test_name=splited_filename+str(index)
+            if test_name+extension in files_list:
+                test_name=name+str(index)
                 index=index+1
             else:
                 break
-        file=open(test_name+".txt","w")
+        file=open(test_name+extension,"w")
         result=""
         for item in split_list:
             if len(item) != 0:
                 result=result+text2art(item, font=font, chr_ignore=chr_ignore)
-        result=result.replace("\n","\r\n")
+        if "win" not in sys.platform:
+            result=result.replace("\n","\r\n")
         file.write(result)
         file.close()
         if print_status==True:
-            print("Saved! \nFilename: "+test_name+".txt")
+            print("Saved! \nFilename: "+test_name+extension)
     except Exception :
         pass
 
