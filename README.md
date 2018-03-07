@@ -46,6 +46,10 @@ Simple ASCII Art Library For Python
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
 - `pip install art` or `pip3 install art` (Need root access)
 
+### Easy Install
+
+- Run `easy_install --upgrade art` (Need root access)
+
 ## Usage
 
 ### 1-Line Art			
