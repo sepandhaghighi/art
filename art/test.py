@@ -906,8 +906,6 @@ Help :
      - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'
 <BLANKLINE>
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
->>> Data=aprint('sss')
->>> type(Data)
 <class 'dict'>
 >>> Data["Message"]
 'Invalid Art Name'
@@ -916,8 +914,6 @@ False
 >>> tprint('طط')
 <BLANKLINE>
 >>> Data=art('assdsds')
->>> type(Data)
-<class 'dict'>
 >>> Data["Message"]
 'Invalid Art Name'
 >>> Data["Status"]
