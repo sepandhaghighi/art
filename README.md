@@ -48,8 +48,8 @@ Simple ASCII Art Library For Python
 
 ## Usage
 
-### Library			
-<pre>
+### 1-Line Art			
+```python
 >>> from art import *  #import art library
 >>> aprint("butterfly") # print 1-line art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
@@ -58,6 +58,10 @@ Simple ASCII Art Library For Python
 >>> art_1=art("coffee") # return 1-line art
 >>> print(art_1)
 c[_] 
+
+```
+### ASCII Text
+```python	
 >>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
@@ -79,13 +83,17 @@ c[_]
 | |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
->>> tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True)
-Saved!
+>>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True)
+Saved! 
 Filename: test.txt
+>>> Response["Message"]
+'OK'
 >>> tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
->>> tsave("art") # save ascii text in art.txt
-Saved!
-Filename: art.txt
+>>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
+>>> Response["Message"]
+'OK'
+>>> Response["Status"]
+True
 >>> tprint('testسس')  # chr_ignore flag ==True (Default)
  _               _   
 | |_   ___  ___ | |_ 
@@ -95,7 +103,7 @@ Filename: art.txt
                      
 
 >>> tprint('testسس',chr_ignore=False) # chr_ignore flag == False
-[Error] Invalid Char!
+{'Message': "Can't convert 'dict' object to str implicitly", 'Status': False}
 >>> tprint('''Lorem  # Multi-line print
 ipsum 
 dolor''', font="cybermedium")
@@ -111,7 +119,7 @@ ___  ____ _    ____ ____
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
                          
-</pre>
+```
 
 ### CLI			
 - List of arts :  `python -m art list`
