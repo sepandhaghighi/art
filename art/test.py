@@ -883,11 +883,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-         ___      _____
-__   __ / _ \    |___  |
-\ \ / /| | | |      / /
- \ V / | |_| | _   / /
-  \_/   \___/ (_) /_/
+         ___       ___
+__   __ / _ \     ( _ )
+\ \ / /| | | |    / _ \
+ \ V / | |_| | _ | (_) |
+  \_/   \___/ (_) \___/
 <BLANKLINE>
 <BLANKLINE>
 Webpage : http://art.shaghighi.ir
@@ -993,10 +993,16 @@ False
 'Invalid Char!'
 >>> Data["Status"]
 False
->>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
-{'Status': False, 'Message': "'int' object has no attribute 'split'"}
->>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
-{'Status': False, 'Message': "'int' object has no attribute 'split'"}
+>>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+>>> Data["Message"]
+"'int' object has no attribute 'split'"
+>>> Data["Status"]
+False
+>>> Data=tprint(22,font=DEFAULT_FONT,chr_ignore=True)
+>>> Data["Message"]
+"'int' object has no attribute 'split'"
+>>> Data["Status"]
+False
 >>> Data=art(22,number=1,text="")
 >>> Data["Message"]
 "'int' object has no attribute 'lower'"
