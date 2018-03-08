@@ -52,33 +52,81 @@ Simple ASCII Art Library For Python
 
 ## Usage
 
-### 1-Line Art			
+### 1-Line Art
+1. art					
+
+This function return 1-line art as `str` in normal mode and `dict` in exception 			
 <pre>
 >>> from art import *
->>> aprint("butterfly")
-Ƹ̵̡Ӝ̵̨̄Ʒ 
->>> aprint("happy")
- ۜ\(סּںסּَ` )/ۜ 
 >>> art_1=art("coffee") # return art as str in normal mode
 >>> print(art_1)
 c[_]
+>>> Data=art("woman",number=2) # return multiple art as str
+>>> print(Data)
+▓⚗_⚗▓ ▓⚗_⚗▓ 
+>>> Data=art("love_you",number=1,text="test") # 2-part art
+>>> print(Data)
+»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
 >>> Data=art(22,number=1,text="") # Return dict in exception
 >>> Data
 {'Message': "'int' object has no attribute 'lower'", 'Status': False} 
+</pre>
+2. aprint				
 
+This function print 1-line art in normal mode (return `None`) and return `dict` in exception
+<pre>
+>>> aprint("butterfly") # print art
+Ƹ̵̡Ӝ̵̨̄Ʒ 
+>>> aprint("happy") # print art
+ ۜ\(סּںסּَ` )/ۜ
+>>> aprint("love_you",number=1,text="test")  # 2-part art
+»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> Data=aprint("woman",number="22",text="") # Return dict in exception
+>>> Data["Message"]
+"can't multiply sequence by non-int of type 'str'"
+>>> Data["Status"]
+False
 </pre>
 ### ASCII Text
-<pre>	
->>> Art=text2art("test",font='standard',chr_ignore=True)
->>> Art
->>> print(Art)
- _               _   
-| |_   ___  ___ | |_ 
-| __| / _ \/ __|| __|
-| |_ |  __/\__ \| |_ 
- \__| \___||___/ \__|
-                     
+1. text2art				
 
+This function return ascii text as `str` in normal mode and `dict` in exception
+<pre>	
+>>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
+>>> print(Art)
+              _   
+  __ _  _ __ | |_ 
+ / _` || '__|| __|
+| (_| || |   | |_ 
+ \__,_||_|    \__|
+                  
+                     
+>>> Art=text2art("art",font='block',chr_ignore=True) # Return ascii text with block font
+>>> print(Art)
+
+
+ .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. |
+| |      __      | || |  _______     | || |  _________   | |
+| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |
+| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |
+| |   / ____ \   | || |   |  __ /    | || |     | |      | |
+| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |
+| ||____|  |____|| || | |____| |___| | || |   |_____|    | |
+| |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'
+
+>>> Data=text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # Return dict in exception
+>>> Data["Message"]
+'Invalid Char!'
+>>> Data["Status"]
+False                   
+</pre>
+2. tprint				
+
+This function print ascii text in normal mode (return `None`) and return `dict` in exception
+<pre>
 >>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
@@ -100,18 +148,7 @@ c[_]
 | |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
->>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
-Saved! 
-Filename: test.txt
->>> Response["Message"]
-'OK'
->>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
->>> Response["Message"]
-'OK'
->>> Response["Status"]
-True
->>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
-{'Status': False, 'Message': "'int' object has no attribute 'split'"}
+
 >>> tprint('testسس')  # chr_ignore flag ==True (Default)
  _               _   
 | |_   ___  ___ | |_ 
@@ -136,7 +173,25 @@ _ ___  ____ _  _ _  _
 ___  ____ _    ____ ____ 
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
-                         
+
+</pre>
+3. tsave				
+
+This function return `dict` in normal and exception mode
+<pre>
+>>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
+Saved! 
+Filename: test.txt
+>>> Response["Message"]
+'OK'
+>>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
+>>> Response["Message"]
+'OK'
+>>> Response["Status"]
+True
+>>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+{'Status': False, 'Message': "'int' object has no attribute 'split'"}
+                        
 </pre>
 * Note : Functions error response updated in `Version 0.8`
 
