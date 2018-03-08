@@ -41,6 +41,7 @@
    * [Authors](AUTHORS.md)
    * [License](#license)
    * [Donate](#donate-to-our-project)
+   * [Changelog](CHANGELOG.md)
 
 ## Overview			
 Simple ASCII Art Library For Python
