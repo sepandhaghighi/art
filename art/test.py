@@ -906,11 +906,6 @@ Help :
      - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'
 <BLANKLINE>
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
-<class 'dict'>
->>> Data["Message"]
-'Invalid Art Name'
->>> Data["Status"]
-False
 >>> tprint('طط')
 <BLANKLINE>
 >>> Data=art('assdsds')
@@ -920,6 +915,8 @@ False
 False
 >>> art("coffee")
 'c[_] '
+>>> art("love_you",number=2,text="test")
+'»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« '
 >>> tprint("test 2")
  _               _     ____
 | |_   ___  ___ | |_  |___ \
