@@ -31,24 +31,19 @@
 	
 ----------
 
+## Table of contents					
+   * [Overview](#overview)
+   * [Installation](INSTALL.md)
+   * [Usage](#usage)
+   * [Issues & Bug Reports](#issues--bug-reports)
+   * [Contribution](CONTRIBUTING.md)
+   * [Reference](#reference)
+   * [Authors](AUTHORS.md)
+   * [License](#license)
+   * [Donate](#donate-to-our-project)
+
 ## Overview			
 Simple ASCII Art Library For Python
-
-## Installation		
-
-### Source Code
-- Download [Version 0.8](https://github.com/sepandhaghighi/art/archive/v0.8.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/master.zip)
-- `python3 setup.py install` or `python setup.py install` (Need root access)				
-
-### PyPI
-
-
-- Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art` or `pip3 install art` (Need root access)
-
-### Easy Install
-
-- Run `easy_install --upgrade art` (Need root access)
 
 ## Usage
 
@@ -254,15 +249,6 @@ True
 
 Just fill an issue and describe it. I'll check it ASAP!							
 or send an email to [sepand@qpage.ir](mailto:sepand@qpage.ir "sepand@qpage.ir"). 
-
-
-## Contribution			
-
-You can fork the repository, improve or fix some part of it and then send the pull requests back if you want to see them here. I really appreciate that. ❤️			
-
-Remember to write a few tests for your code before sending pull requests. 
-
-
 
 ## License
 
