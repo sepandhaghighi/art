@@ -31,4 +31,5 @@ setup(
       'Topic :: Text Processing :: Fonts',
     ],
   license='MIT',
+  include_package_data=True
 )
