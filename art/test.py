@@ -909,10 +909,9 @@ Help :
 >>> tprint('طط')
 <BLANKLINE>
 >>> Data=art('assdsds')
->>> Data["Message"]
-'Invalid Art Name'
->>> Data["Status"]
-False
+Traceback (most recent call last):
+        ...
+art.art.artError: Invalid art name
 >>> art("coffee")
 'c[_] '
 >>> art("love_you",number=2,text="test")
@@ -977,35 +976,28 @@ True
 288
 >>> file.close()
 >>> Data=text2art(222)
->>> Data["Message"]
-"'int' object is not iterable"
->>> Data["Status"]
-False
->>> Data=text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
->>> Data["Message"]
-'Invalid Char!'
->>> Data["Status"]
-False
+Traceback (most recent call last):
+        ...
+art.art.artError: text should have str type
+>>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
+art.art.artError: س is invalid
 >>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
 "'int' object has no attribute 'split'"
 >>> Data["Status"]
 False
->>> Data=tprint(22,font=DEFAULT_FONT,chr_ignore=True)
->>> Data["Message"]
-"'int' object has no attribute 'split'"
->>> Data["Status"]
-False
->>> Data=art(22,number=1,text="")
->>> Data["Message"]
-"'int' object has no attribute 'lower'"
->>> Data["Status"]
-False
->>> Data=aprint("woman",number="22",text="")
->>> Data["Message"]
-"can't multiply sequence by non-int of type 'str'"
->>> Data["Status"]
-False
+>>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
+Traceback (most recent call last):
+        ...
+art.art.artError: text should have str type
+>>> art(22,number=1,text="")
+Traceback (most recent call last):
+        ...
+art.art.artError: artname shoud have str type
+>>> aprint("woman",number="22",text="")
+Traceback (most recent call last):
+        ...
+art.art.artError: number should have int type
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> cov.stop()

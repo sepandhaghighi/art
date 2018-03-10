@@ -70,11 +70,7 @@ def aprint(artname,number=1,text=""):
     :type artname : str
     :return: None
     '''
-    art_value=art_dic[artname.lower()]
-    if isinstance(art_value,str):
-        print((art_value+" ")*number)
-    else:
-        print((art_value[0]+text+art_value[1]+" ")*number)
+    print(art(artname=artname,number=number,text=text))
 
 def art(artname,number=1,text=""):
     '''
@@ -84,17 +80,17 @@ def art(artname,number=1,text=""):
     :return: ascii art as str
     '''
     if isinstance(artname,str)==False:
-        raise artError("Invalid art name")
+        raise artError("artname shoud have str type")
     if artname.lower() not in art_dic.keys():
         raise artError("Invalid art name")
     art_value=art_dic[artname.lower()]
     if isinstance(number, int) == False:
-        raise artError("Number should be integer")
+        raise artError("number should have int type")
     if isinstance(art_value,str):
         return (art_value+" ")*number
     else:
         if isinstance(text,str)==False:
-            raise artError("text should be string")
+            raise artError("text should have str type")
         return (art_value[0]+text+art_value[1]+" ")*number
 
 def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
@@ -108,6 +104,8 @@ def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     '''
+    if isinstance(text,str)==False:
+        raise artError("text should have str type")
     split_list=text.split("\n")
     result=""
     for item in split_list:
@@ -176,9 +174,9 @@ def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
     text_temp=text
     spliter="\n"
     if isinstance(text,str)==False:
-        raise artError("text should be string")
+        raise artError("text should have str type")
     if isinstance(font,str)==False:
-        raise artError("Invalid font")
+        raise artError("font should have str type")
     if font.lower() in font_map.keys():
         letters=font_map[font.lower()][0]
         if font_map[font.lower()][1]==True:
