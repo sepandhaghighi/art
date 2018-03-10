@@ -39,7 +39,12 @@ if __name__=="__main__":
                 else:
                     tsave(args[2])
             elif args[1].upper()=="SHAPE":
-                aprint(args[2])
+                try:
+                    aprint(args[2])
+                except artError as e:
+                    print(str(e))
+                except UnicodeEncodeError:
+                    print("[Warning] This art is not printable in this environment")
             else:
                 help_func()
         else:

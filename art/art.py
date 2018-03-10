@@ -43,9 +43,13 @@ def aprint_test():
     :return: None
     '''
     for i in sorted(list(art_dic.keys())):
-        print(i)
-        aprint(i)
-        line()
+        try:
+            print(i)
+            aprint(i)
+            line()
+        except :
+            print("[Waning] This art is not printable in this environment")
+            line()
 def help_func():
     '''
     Print Help Page
