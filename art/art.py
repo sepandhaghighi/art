@@ -5,7 +5,8 @@ import os
 import sys
 
 version="0.8"
-
+class artError(Exception):
+    pass
 font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[standard_dic,False],"avatar":[avatar_dic,True],
           "basic":[basic_dic,True],"bulbhead":[bulbhead_dic,True],"chunky":[chunky_dic,False],"coinstak":[coinstak_dic,False],
           "contessa":[contessa_dic,False],"contrast":[contrast_dic,True],"cyberlarge":[cyberlarge_dic,True],"cybermedium":[cybermedium_dic,True],
@@ -69,17 +70,11 @@ def aprint(artname,number=1,text=""):
     :type artname : str
     :return: None
     '''
-    try:
-        art_value=art_dic[artname.lower()]
-        if isinstance(art_value,str):
-            print((art_value+" ")*number)
-        else:
-            print((art_value[0]+text+art_value[1]+" ")*number)
-    except KeyError:
-        return {"Status": False, "Message": "Invalid Art Name"}
-    except Exception as e:
-        return {"Status": False, "Message": str(e)}
-
+    art_value=art_dic[artname.lower()]
+    if isinstance(art_value,str):
+        print((art_value+" ")*number)
+    else:
+        print((art_value[0]+text+art_value[1]+" ")*number)
 
 def art(artname,number=1,text=""):
     '''
@@ -88,16 +83,19 @@ def art(artname,number=1,text=""):
     :type artname : str
     :return: ascii art as str
     '''
-    try:
-        art_value=art_dic[artname.lower()]
-        if isinstance(art_value,str):
-            return (art_value+" ")*number
-        else:
-            return (art_value[0]+text+art_value[1]+" ")*number
-    except KeyError:
-        return {"Status": False, "Message": "Invalid Art Name"}
-    except Exception as e:
-        return {"Status": False, "Message": str(e)}
+    if isinstance(artname,str)==False:
+        raise artError("Invalid art name")
+    if artname.lower() not in art_dic.keys():
+        raise artError("Invalid art name")
+    art_value=art_dic[artname.lower()]
+    if isinstance(number, int) == False:
+        raise artError("Number should be integer")
+    if isinstance(art_value,str):
+        return (art_value+" ")*number
+    else:
+        if isinstance(text,str)==False:
+            raise artError("text should be string")
+        return (art_value[0]+text+art_value[1]+" ")*number
 
 def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
     '''
@@ -110,15 +108,13 @@ def tprint(text,font=DEFAULT_FONT,chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     '''
-    try:
-        split_list=text.split("\n")
-        result=""
-        for item in split_list:
-            if len(item)!=0:
-                result=result+text2art(item,font=font,chr_ignore=chr_ignore)
-        print(result)
-    except Exception as e:
-        return {"Status": False, "Message": str(e)}
+    split_list=text.split("\n")
+    result=""
+    for item in split_list:
+        if len(item)!=0:
+            result=result+text2art(item,font=font,chr_ignore=chr_ignore)
+    print(result)
+
 def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True):
     '''
 
@@ -160,7 +156,7 @@ def tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=Tru
         if print_status==True:
             print("Saved! \nFilename: "+test_name+extension)
         return {"Status": True,"Message":"OK"}
-    except Exception as e :
+    except Exception as e:
         return {"Status": False, "Message": str(e)}
 
 def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
@@ -174,39 +170,40 @@ def text2art(text,font=DEFAULT_FONT,chr_ignore=True):
     :type chr_ignore:bool
     :return: artText as str
     '''
-    try:
-        split_list=[]
-        result_list=[]
-        letters=standard_dic
-        text_temp=text
-        spliter="\n"
-        if font.lower() in font_map.keys():
-            letters=font_map[font.lower()][0]
-            if font_map[font.lower()][1]==True:
-                text_temp=text.lower()
-        for i in text_temp:
-            if (ord(i)==9) or (ord(i)==32 and font=="block"):
+    split_list=[]
+    result_list=[]
+    letters=standard_dic
+    text_temp=text
+    spliter="\n"
+    if isinstance(text,str)==False:
+        raise artError("text should be string")
+    if isinstance(font,str)==False:
+        raise artError("Invalid font")
+    if font.lower() in font_map.keys():
+        letters=font_map[font.lower()][0]
+        if font_map[font.lower()][1]==True:
+            text_temp=text.lower()
+    for i in text_temp:
+        if (ord(i)==9) or (ord(i)==32 and font=="block"):
+            continue
+        if (i not in letters.keys()):
+            if (chr_ignore==True):
                 continue
-            if (i not in letters.keys()) and (chr_ignore==True):
-                continue
-            if len(letters[i])==0:
-                continue
-            split_list.append(letters[i].split("\n"))
-        if len(split_list)==0:
-            return ""
-        for i in range(len(split_list[0])):
-            temp=""
-            for j in range(len(split_list)):
-                if j>0 and (i==1 or i==len(split_list[0])-2) and font=="block":
-                    temp=temp+" "
-                temp=temp+split_list[j][i]
-            result_list.append(temp)
-        if "win" not in sys.platform:
-            spliter="\r\n"
-        return((spliter).join(result_list))
-
-    except KeyError:
-        return {"Status": False, "Message": "Invalid Char!"}
-    except Exception as e:
-        return {"Status": False, "Message": str(e)}
+            else:
+                raise artError(str(i)+" is invalid")
+        if len(letters[i])==0:
+            continue
+        split_list.append(letters[i].split("\n"))
+    if len(split_list)==0:
+        return ""
+    for i in range(len(split_list[0])):
+        temp=""
+        for j in range(len(split_list)):
+            if j>0 and (i==1 or i==len(split_list[0])-2) and font=="block":
+                temp=temp+" "
+            temp=temp+split_list[j][i]
+        result_list.append(temp)
+    if "win" not in sys.platform:
+        spliter="\r\n"
+    return((spliter).join(result_list))
 
