@@ -980,6 +980,8 @@ Traceback (most recent call last):
         ...
 art.art.artError: text should have str type
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
+Traceback (most recent call last):
+        ...
 art.art.artError: س is invalid
 >>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
