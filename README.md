@@ -51,25 +51,26 @@ Simple ASCII Art Library For Python
 ### 1-Line Art
 1. art					
 
-This function return 1-line art as `str` in normal mode and `dict` in exception 			
+This function return 1-line art as `str` in normal mode and raise `artError` in exception	
 <pre>
 >>> from art import *
 >>> art_1=art("coffee") # return art as str in normal mode
 >>> print(art_1)
 c[_]
->>> Data=art("woman",number=2) # return multiple art as str
->>> print(Data)
+>>> art_2=art("woman",number=2) # return multiple art as str
+>>> print(art_2)
 ▓⚗_⚗▓ ▓⚗_⚗▓ 
->>> Data=art("love_you",number=1,text="test") # 2-part art
->>> print(Data)
+>>> art_3=art("love_you",number=1,text="test") # 2-part art
+>>> print(art_3)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> Data=art(22,number=1,text="") # Return dict in exception
->>> Data
-{'Message': "'int' object has no attribute 'lower'", 'Status': False} 
+>>> art(22,number=1,text="") # raise artError
+Traceback (most recent call last):
+        ...
+art.art.artError: artname shoud have str type
 </pre>
 2. aprint				
 
-This function print 1-line art in normal mode (return `None`) and return `dict` in exception
+This function print 1-line art in normal mode (return None) and raise artError in exception
 <pre>
 >>> aprint("butterfly") # print art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
@@ -77,16 +78,15 @@ This function print 1-line art in normal mode (return `None`) and return `dict` 
  ۜ\(סּںסּَ` )/ۜ
 >>> aprint("love_you",number=1,text="test")  # 2-part art
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> Data=aprint("woman",number="22",text="") # Return dict in exception
->>> Data["Message"]
-"can't multiply sequence by non-int of type 'str'"
->>> Data["Status"]
-False
+>>> aprint("woman",number="22",text="") # raise artError
+Traceback (most recent call last):
+        ...
+art.art.artError: number should have int type
 </pre>
 ### ASCII Text
 1. text2art				
 
-This function return ascii text as `str` in normal mode and `dict` in exception
+This function return ascii text as `str` in normal mode and raise artError in exception
 <pre>	
 >>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
 >>> print(Art)
@@ -113,15 +113,14 @@ This function return ascii text as `str` in normal mode and `dict` in exception
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
 
->>> Data=text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # Return dict in exception
->>> Data["Message"]
-'Invalid Char!'
->>> Data["Status"]
-False                   
+>>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
+Traceback (most recent call last):
+        ...
+art.art.artError: س is invalid                   
 </pre>
 2. tprint				
 
-This function print ascii text in normal mode (return `None`) and return `dict` in exception
+This function print ascii text in normal mode (return None) and raise artError in exception
 <pre>
 >>> tprint("art") # print ascii text (default font) 
               _   
@@ -153,8 +152,10 @@ This function print ascii text in normal mode (return `None`) and return `dict` 
  \__| \___||___/ \__|
                      
 
->>> tprint('testسس',chr_ignore=False) # Return dict in exception 
-{'Message': "Can't convert 'dict' object to str implicitly", 'Status': False}
+>>> tprint('testسس',chr_ignore=False) # raise artError in exception 
+Traceback (most recent call last):
+       ...
+art.art.artError: س is invalid
 >>> tprint('''Lorem  # Multi-line print
 ipsum 
 dolor''', font="cybermedium")
@@ -201,17 +202,17 @@ True
 	<tr>
 		<td align="center">art</td>
 		<td align="center">str</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
+		<td align="center">raise artError</td>
 	</tr>
 	<tr>
 		<td align="center">aprint</td>
 		<td align="center">None</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
+		<td align="center">raise artError</td>
 	</tr>
 	<tr>
 		<td align="center">tprint</td>
 		<td align="center">None</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
+		<td align="center">raise artError</td>
 	</tr>
 	<tr>
 		<td align="center">tsave</td>
@@ -221,7 +222,7 @@ True
 	<tr>
 		<td align="center">text2art</td>
 		<td align="center">str</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
+		<td align="center">raise artError</td>
 	</tr>		
 </table> 
 </html>			
