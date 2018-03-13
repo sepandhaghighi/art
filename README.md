@@ -240,7 +240,7 @@ True
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 
 <div align="center">
-<a href="https://asciinema.org/a/156239" target="_blank"><img src="https://asciinema.org/a/156239.png" /></a>
+<a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
 <p>Screen Record</p>
 </div>
 
