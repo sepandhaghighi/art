@@ -65,6 +65,8 @@ pre{
 body{
     overflow-x: hidden;
     background-color: bisque;
+    width: 100%;
+    margin: 0px;
 }
 
 #login-footer p{
@@ -72,6 +74,7 @@ body{
     vertical-align: center;
     margin:auto;
     color: #fafafa;
+    width: 100%;
 }
 #login-footer{
     color: white;
@@ -123,8 +126,7 @@ body{
 
 
 .siteWrapper {
-    position: fixed;
-    overflow: auto;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: 2;

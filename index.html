@@ -34,9 +34,9 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
                                                                                  
 
  _  _  ____  ____  ___  ____  _____  _  _     ___     ___ 
-( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )   / _ \   (__ )
- \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (   ( (_) )   / / 
-  \/  (____)(_)\_)(___/(____)(_____)(_)\_)   \___/ ()(_/  
+( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )   / _ \   ( _ )
+ \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (   ( (_) )  / _ \
+  \/  (____)(_)\_)(___/(____)(_____)(_)\_)   \___/ ()\___/
 
 
 
@@ -55,7 +55,7 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
         <hr/> 
     <h2>Source Code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v0.7.zip">Version 0.7</a> or <a href="https://github.com/sepandhaghighi/art/archive/master.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v0.8.zip">Version 0.8</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -66,30 +66,67 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
     <li>Check <a href="https://packaging.python.org/installing/">Python Packaging User Guide</a></li>
     <li><code>pip install art</code> or <code>pip3 install art</code> <span class="red"> Need root access </span></li>
 </ul>
+<h2>Easy Install</h2>
+<ul>
+    <li>Run <code>easy_install --upgrade art</code> <span class="red"> Need root access </span></li>
+</ul>
 </div>
 <div class="usage">
    
 <h1>Usage</h1>
             <hr/> 
-<h2>Library</h2>
+<h2>1-Line Art</h2>
+<ol>
+    <li>art</li>
+    <p>This function return 1-line art as `str` in normal mode and raise `artError` in exception</p>
 <pre class="library">
->>> from art import *  #import art library
->>> aprint("butterfly") # print 1-line art
-Ƹ̵̡Ӝ̵̨̄Ʒ 
->>> aprint("happy")
- ۜ\(סּںסּَ` )/ۜ 
->>> art_1=art("coffee") # return 1-line art
+>>> from art import *
+>>> art_1=art("coffee") # return art as str in normal mode
 >>> print(art_1)
-c[_] 
->>> tprint("art") # print ascii text (default font) 
+c[_]
+>>> art_2=art("woman",number=2) # return multiple art as str
+>>> print(art_2)
+▓⚗_⚗▓ ▓⚗_⚗▓ 
+>>> art_3=art("love_you",number=1,text="test") # 2-part art
+>>> print(art_3)
+»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> art(22,number=1,text="") # raise artError
+Traceback (most recent call last):
+...
+art.art.artError: artname shoud have str type
+</pre>
+<li>aprint</li> 
+<p>This function print 1-line art in normal mode (return None) and raise `artError` in exception</p>
+<pre class="library">
+>>> aprint("butterfly") # print art
+Ƹ̵̡Ӝ̵̨̄Ʒ 
+>>> aprint("happy") # print art
+ ۜ\(סּںסּَ` )/ۜ
+>>> aprint("love_you",number=1,text="test")  # 2-part art
+»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> aprint("woman",number="22",text="") # raise artError
+Traceback (most recent call last):
+        ...
+art.art.artError: number should have int type
+</pre>
+</ol>
+<h2>ASCII Text</h2>
+<ol>
+<li>text2art</li>
+<p>This function return ascii text as `str` in normal mode and raise `artError` in exception</p>
+<pre class="library">
+>>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
+>>> print(Art)
               _   
   __ _  _ __ | |_ 
  / _` || '__|| __|
 | (_| || |   | |_ 
  \__,_||_|    \__|
                   
+                     
+>>> Art=text2art("art",font='block',chr_ignore=True) # Return ascii text with block font
+>>> print(Art)
 
->>> tprint("art",font="block") # print ascii text (block font)
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -102,13 +139,37 @@ c[_]
 | |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
->>> tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True)
-Saved!
-Filename: test.txt
->>> tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
->>> tsave("art") # save ascii text in art.txt
-Saved!
-Filename: art.txt
+
+>>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
+Traceback (most recent call last):
+        ...
+art.art.artError: س is invalid           
+</pre>
+<li>tprint</li>
+<p>This function print ascii text in normal mode (return None) and raise `artError` in exception</p>
+<pre class="library">
+>>> tprint("art") # print ascii text (default font) 
+              _   
+  __ _  _ __ | |_ 
+ / _` || '__|| __|
+| (_| || |   | |_ 
+ \__,_||_|    \__|
+                  
+
+>>> tprint("art",font="block",chr_ignore=True) # print ascii text (block font)
+
+ .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. |
+| |      __      | || |  _______     | || |  _________   | |
+| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |
+| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |
+| |   / ____ \   | || |   |  __ /    | || |     | |      | |
+| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |
+| ||____|  |____|| || | |____| |___| | || |   |_____|    | |
+| |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'
+
 >>> tprint('testسس')  # chr_ignore flag ==True (Default)
  _               _   
 | |_   ___  ___ | |_ 
@@ -117,8 +178,10 @@ Filename: art.txt
  \__| \___||___/ \__|
                      
 
->>> tprint('testسس',chr_ignore=False) # chr_ignore flag == False
-[Error] Invalid Char!
+>>> tprint('testسس',chr_ignore=False) # raise artError in exception 
+Traceback (most recent call last):
+       ...
+art.art.artError: س is invalid
 >>> tprint('''Lorem  # Multi-line print
 ipsum 
 dolor''', font="cybermedium")
@@ -133,8 +196,58 @@ _ ___  ____ _  _ _  _
 ___  ____ _    ____ ____ 
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
-                         
+
 </pre>
+<li>tsave</li>
+<p>This function return `dict` in normal and exception mode</p>
+<pre class="library">
+>>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
+Saved! 
+Filename: test.txt
+>>> Response["Message"]
+'OK'
+>>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
+>>> Response["Message"]
+'OK'
+>>> Response["Status"]
+True
+>>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+{'Status': False, 'Message': "'int' object has no attribute 'split'"}
+</pre>
+<p class="red">* Functions error response updated in Version 0.8</p>
+<table style="border:1px solid black;border-collapse: separate;">
+	<tr>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">Function</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">Normal</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">Error</td>
+	</tr>
+	<tr>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">art</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">str</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">aprint</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">None</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">tprint</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">None</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">tsave</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">{"Status":bool,"Message":str}</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">{"Status":bool,"Message":str}</td>
+	</tr>
+	<tr>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">text2art</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">str</td>
+		<td align="center" style="border:1px solid black;border-collapse: separate;">raise artError</td>
+	</tr>		
+</table> 
+</ol>
     <h2>CLI</h2>
     <ul>
         <li>List of arts :  <code>python -m art list</code></li>
@@ -146,12 +259,12 @@ ___  ____ _    ____ ____
         <li>All  :  <code>python -m art all yourtext</code></li>
     </ul>
 <div class="preview">
-<a href="https://asciinema.org/a/156239" target="_blank"><img src="https://asciinema.org/a/156239.png" /></a>
+<a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
 <p>Screen Record</p>
   </div> 
             </div>
             <div id="login-footer" class="abs">
-                <p> Copyright (c) 2017 <a href="http://www.moduland.ir" target="_blank">Moduland Co</a></p>
+                <p> Copyright (c) 2018 <a href="http://www.moduland.ir" target="_blank">Moduland Co</a></p>
     </div>
             </div>
      
