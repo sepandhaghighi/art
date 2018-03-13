@@ -26,6 +26,13 @@ font_map={"block":[block_dic,True],"banner":[banner_dic,False],"standard":[stand
 DEFAULT_FONT="standard"
 
 def line(char="*",number=30):
+    '''
+    This function print line of chars
+    :param char: character
+    :type char:str
+    :param number: number of character
+    :return: None
+    '''
     print(char*number)
 
 
@@ -47,7 +54,7 @@ def aprint_test():
             print(i)
             aprint(i)
             line()
-        except :
+        except Exception:
             print("[Waning] This art is not printable in this environment")
             line()
 def help_func():

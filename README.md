@@ -70,7 +70,7 @@ art.art.artError: artname shoud have str type
 </pre>
 2. aprint				
 
-This function print 1-line art in normal mode (return None) and raise artError in exception
+This function print 1-line art in normal mode (return None) and raise `artError` in exception
 <pre>
 >>> aprint("butterfly") # print art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
@@ -86,7 +86,7 @@ art.art.artError: number should have int type
 ### ASCII Text
 1. text2art				
 
-This function return ascii text as `str` in normal mode and raise artError in exception
+This function return ascii text as `str` in normal mode and raise `artError` in exception
 <pre>	
 >>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
 >>> print(Art)
@@ -120,7 +120,7 @@ art.art.artError: س is invalid
 </pre>
 2. tprint				
 
-This function print ascii text in normal mode (return None) and raise artError in exception
+This function print ascii text in normal mode (return None) and raise `artError` in exception
 <pre>
 >>> tprint("art") # print ascii text (default font) 
               _   
