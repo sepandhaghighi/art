@@ -20,7 +20,8 @@
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
 <a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a>
-<a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
+<a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=shield"/></a>
+
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 <a href="FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
@@ -42,6 +43,9 @@
    * [License](#license)
    * [Donate](#donate-to-our-project)
    * [Changelog](CHANGELOG.md)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_large)
 
 ## Overview			
 Simple ASCII Art Library For Python
