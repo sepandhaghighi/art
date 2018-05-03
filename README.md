@@ -254,7 +254,7 @@ or send an email to [sepand@qpage.ir](mailto:sepand@qpage.ir "sepand@qpage.ir").
 
 ## License
 
-<a href="https://github.com/sepandhaghighi/art/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"/></a>
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_large)
 
 ## Reference    
 
