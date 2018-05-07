@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - 10 new fonts
 
+### Changed
+- MANIFEST.in modified
+
 ## [0.8] - 2018-03-13
 ### Added
 - CHANGELOG
