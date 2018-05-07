@@ -1,4 +1,8 @@
 from setuptools import setup
+def get_requires():
+    requirements = open("requirements.txt", "r").read()
+    return list(filter(lambda x: x != "", requirements.split()))
+
 setup(
     name='art',
     packages=['art'],
@@ -14,9 +18,7 @@ setup(
         'Webpage': 'http://pycm.shaghighi.ir',
         'Source': 'https://github.com/sepandhaghighi/pycm',
     },
-    install_requires=[
-        'codecov',
-    ],
+    install_requires=get_requires(),
     python_requires='>=2.7',
     classifiers=[
         'Development Status :: 4 - Beta',
