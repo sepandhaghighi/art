@@ -537,6 +537,16 @@ starwars :
     |__|     |_______||_______/        |__|
 <BLANKLINE>
 <BLANKLINE>
+stellar :
+  `..                     `..
+  `..                     `..
+`.`. `.   `..     `.... `.`. `.
+  `..   `.   `.. `..      `..
+  `..  `..... `..  `...   `..
+  `..  `.            `..  `..
+   `..   `....   `.. `..   `..
+<BLANKLINE>
+<BLANKLINE>
 stop :
 <BLANKLINE>
  _                  _
@@ -544,6 +554,34 @@ stop :
 |  _)  / _  ) /___)|  _)
 | |__ ( (/ / |___ || |__
  \___) \____)(___/  \___)
+<BLANKLINE>
+<BLANKLINE>
+swan :
+<BLANKLINE>
+<BLANKLINE>
+ .            .
+_|_          _|_
+ |   .-. .--. |
+ |  (.-' `--. |
+ `-' `--'`--' `-'
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+tanja :
+  t)                     t)
+t)tTTT                 t)tTTT
+  t)   e)EEEEE  s)SSSS   t)
+  t)   e)EEEE  s)SSSS    t)
+  t)   e)           s)   t)
+  t)T   e)EEEE s)SSSS    t)T
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+thick :
+ w               w
+w8ww .d88b d88b w8ww
+ 8   8.dP' `Yb.  8
+ Y8P `Y88P Y88P  Y8P
 <BLANKLINE>
 <BLANKLINE>
 thin :
@@ -554,12 +592,57 @@ thin :
 `---'`---'`---'`---'
 <BLANKLINE>
 <BLANKLINE>
+threepoint :
+_|_ _  __|_
+ | (/__\ |
+<BLANKLINE>
+<BLANKLINE>
+tombstone :
+ ___ __,  _, ___
+  |  |_  (_   |
+  |  |   , )  |
+  ~  ~~~  ~   ~
+<BLANKLINE>
+<BLANKLINE>
+trek :
+  dBBBBBBP     dBBBP   .dBBBBP  dBBBBBBP
+                       BP
+   dBP       dBBP      `BBBBb    dBP
+  dBP       dBP           dBP   dBP
+ dBP       dBBBBP    dBBBBP'   dBP
+<BLANKLINE>
+<BLANKLINE>
+twopoint :
+_|_ _ __|_
+ | }__\ |
+<BLANKLINE>
+univers :
+<BLANKLINE>
+<BLANKLINE>
+  ,d                              ,d
+  88                              88
+MM88MMM   ,adPPYba,  ,adPPYba,  MM88MMM
+  88     a8P_____88  I8[    ""    88
+  88     8PP"""""""   `"Y8ba,     88
+  88,    "8b,   ,aa  aa    ]8I    88,
+  "Y888   `"Ybbd8"'  `"YbbdP"'    "Y888
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 usaflag :
  :::==== :::===== :::===  :::====
  :::==== :::      :::     :::====
    ===   ======    =====    ===
    ===   ===          ===   ===
    ===   ======== ======    ===
+<BLANKLINE>
+<BLANKLINE>
+weird :
+<BLANKLINE>
+ /              /
+(___  ___  ___ (___
+|    |___)|___ |
+|__  |__   __/ |__
 <BLANKLINE>
 <BLANKLINE>
 >>> aprint_test()

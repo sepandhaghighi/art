@@ -25,12 +25,11 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
             "banner3": [banner3_dic, True], "banner4": [banner4_dic, True], "bell": [bell_dic, False], "catwalk": [catwalk_dic, False], "colossal": [colossal_dic, False],
             "acrobatic": [acrobatic_dic, True], "alligator": [alligator_dic, False], "alligator2": [alligator2_dic, False], "block2": [block2_dic, True],
             "caligraphy": [caligraphy_dic, True], "computer": [computer_dic, True], "digital": [digital_dic, True], "doh": [doh_dic, True],
-            "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic,
-                                                             True],
-            "stellar":stellar_dic,"swan":swan_dic,"tanja":tanja_dic,
-            "thick":thick_dic,"threepoint":threepoint_dic,
-            "tombstone":tombstone_dic,"trek":trek_dic,
-            "twopoint":twopoint_dic,"univers":univers_dic,"weird":weird_dic}
+            "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic,True],
+            "stellar":[stellar_dic,False],"swan":[swan_dic,False],"tanja":[tanja_dic,False],
+            "thick":[thick_dic,False],"threepoint":[threepoint_dic,False],
+            "tombstone":[tombstone_dic,True],"trek":[trek_dic,True],
+            "twopoint":[twopoint_dic,False],"univers":[univers_dic,False],"weird":[weird_dic,False]}
 
 DEFAULT_FONT = "standard"
 
