@@ -8,7 +8,7 @@
 
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art` or `pip3 install art` (Need root access)
+- `pip install art --upgrade` or `pip3 install art --upgrade` (Need root access)
 
 ### Easy Install
 
