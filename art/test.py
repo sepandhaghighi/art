@@ -967,10 +967,10 @@ zombie
 <BLANKLINE>
 <BLANKLINE>
          ___       ___
-__   __ / _ \     ( _ )
-\ \ / /| | | |    / _ \
- \ V / | |_| | _ | (_) |
-  \_/   \___/ (_) \___/
+__   __ / _ \     / _ \
+\ \ / /| | | |   | (_) |
+ \ V / | |_| | _  \__, |
+  \_/   \___/ (_)   /_/
 <BLANKLINE>
 <BLANKLINE>
 Webpage : http://art.shaghighi.ir

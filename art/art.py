@@ -4,7 +4,7 @@ from .text_dic import *
 import os
 import sys
 
-version = "0.8"
+version = "0.9"
 
 
 class artError(Exception):
