@@ -6,39 +6,57 @@ import doctest
 import os
 import zipfile
 
-if __name__=="__main__":
-    args=sys.argv
-    if len(args)>1:
-        if args[1].upper()=="TEST":
-            doctest.testfile("test.py",optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=False)
-        elif args[1].upper()=="LIST":
+if __name__ == "__main__":
+    args = sys.argv
+    if len(args) > 1:
+        if args[1].upper() == "TEST":
+            doctest.testfile(
+                "test.py",
+                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS,
+                verbose=False)
+        elif args[1].upper() == "LIST":
             aprint_test()
-        elif args[1].upper()=="FONTS":
+        elif args[1].upper() == "FONTS":
             font_list()
-        elif len(args)>2:
-            if args[1].upper()=="ALL":
+        elif len(args) > 2:
+            if args[1].upper() == "ALL":
                 if "ARTFonts" not in os.listdir(os.getcwd()):
                     os.mkdir("ARTFonts")
-                zipf = zipfile.ZipFile(os.path.join("ARTFonts", "ALL_FONT" + '.zip'), 'w', zipfile.ZIP_DEFLATED)
+                zipf = zipfile.ZipFile(
+                    os.path.join(
+                        "ARTFonts",
+                        "ALL_FONT" + '.zip'),
+                    'w',
+                    zipfile.ZIP_DEFLATED)
                 print("Generating . . . ")
                 for font in font_map.keys():
-                    tsave(args[2], filename=os.path.join("ARTFonts", font + ".txt"), print_status=False,
-                          font=font)
-                    zipf.write(os.path.join("ARTFonts", font + ".txt"), font + ".txt")
+                    tsave(
+                        args[2],
+                        filename=os.path.join(
+                            "ARTFonts",
+                            font + ".txt"),
+                        print_status=False,
+                        font=font)
+                    zipf.write(
+                        os.path.join(
+                            "ARTFonts",
+                            font + ".txt"),
+                        font + ".txt")
                 zipf.close()
                 print("Done!")
-                print("File -- > "+str(os.path.join("ARTFonts", "ALL_FONT" + '.zip')))
-            elif args[1].upper()=="TEXT":
-                if len(args)>3:
-                    tprint(args[2],font=args[3])
+                print("File -- > " +
+                      str(os.path.join("ARTFonts", "ALL_FONT" + '.zip')))
+            elif args[1].upper() == "TEXT":
+                if len(args) > 3:
+                    tprint(args[2], font=args[3])
                 else:
                     tprint(args[2])
-            elif args[1].upper()=="SAVE":
-                if len(args)>3:
+            elif args[1].upper() == "SAVE":
+                if len(args) > 3:
                     tsave(args[2], font=args[3])
                 else:
                     tsave(args[2])
-            elif args[1].upper()=="SHAPE":
+            elif args[1].upper() == "SHAPE":
                 try:
                     aprint(args[2])
                 except artError as e:
@@ -51,6 +69,3 @@ if __name__=="__main__":
             help_func()
     else:
         help_func()
-
-
-
