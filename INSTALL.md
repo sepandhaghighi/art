@@ -1,7 +1,7 @@
 ## Installation		
 
 ### Source Code
-- Download [Version 0.8](https://github.com/sepandhaghighi/art/archive/v0.8.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 0.9](https://github.com/sepandhaghighi/art/archive/v0.9.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI

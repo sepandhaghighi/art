@@ -2,13 +2,13 @@ from setuptools import setup
 setup(
     name='art',
     packages=['art'],
-    version='0.8',
+    version='0.9',
     description='ASCII Art Collection In Python',
     long_description='ASCII Art Collection In Python',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
-    download_url='https://github.com/sepandhaghighi/art/tarball/v0.8',
+    download_url='https://github.com/sepandhaghighi/art/tarball/v0.9',
     keywords="ascii art python3 python text font",
     project_urls={
         'Webpage': 'http://pycm.shaghighi.ir',
