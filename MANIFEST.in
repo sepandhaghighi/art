@@ -1,1 +1,4 @@
 include LICENSE
+include *.md
+include *.yml
+include *.ipynb
