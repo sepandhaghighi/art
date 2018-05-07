@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup
 def get_requires():
     requirements = open("requirements.txt", "r").read()
