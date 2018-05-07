@@ -25,7 +25,12 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
             "banner3": [banner3_dic, True], "banner4": [banner4_dic, True], "bell": [bell_dic, False], "catwalk": [catwalk_dic, False], "colossal": [colossal_dic, False],
             "acrobatic": [acrobatic_dic, True], "alligator": [alligator_dic, False], "alligator2": [alligator2_dic, False], "block2": [block2_dic, True],
             "caligraphy": [caligraphy_dic, True], "computer": [computer_dic, True], "digital": [digital_dic, True], "doh": [doh_dic, True],
-            "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic, True]}
+            "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic,
+                                                             True],
+            "stellar":stellar_dic,"swan":swan_dic,"tanja":tanja_dic,
+            "thick":thick_dic,"threepoint":threepoint_dic,
+            "tombstone":tombstone_dic,"trek":trek_dic,
+            "twopoint":twopoint_dic,"univers":univers_dic,"weird":weird_dic}
 
 DEFAULT_FONT = "standard"
 
