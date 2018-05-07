@@ -1003,6 +1003,7 @@ art.art.artError: number should have int type
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> cov.stop()
+>>> cov.report()
 >>> cov.save()
 
 '''
