@@ -2,6 +2,7 @@
 
 ### Source Code
 - Download [Version 0.9](https://github.com/sepandhaghighi/art/archive/v0.9.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Run `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
