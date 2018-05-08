@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - MANIFEST.in modified
+- INSTALL.md modified
 
 ## [0.8] - 2018-03-13
 ### Added
