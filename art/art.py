@@ -29,7 +29,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
             "stellar":[stellar_dic,False],"swan":[swan_dic,False],"tanja":[tanja_dic,False],
             "thick":[thick_dic,False],"threepoint":[threepoint_dic,False],
             "tombstone":[tombstone_dic,True],"trek":[trek_dic,True],
-            "twopoint":[twopoint_dic,False],"univers":[univers_dic,False],"weird":[weird_dic,False]}
+            "twopoint":[twopoint_dic,False],"univers":[univers_dic,False],
+            "weird":[weird_dic,False],"pebbles":[pebbles_dic,False],
+            "puffy":[puffy_dic,False],"tinker-toy":[tinker_toy_dic,False],
+            "straight":[straight_dic,False],"stampatello":[stampatello_dic,
+                                                           False],
+            "smslant":[smslant_dic,False],"smshadow":[smshadow_dic,False],
+            "smscript":[smscript_dic,False],"smkeyboard":[smkeyboard_dic,
+                                                          False],
+            "smisome1":[smisome1_dic,True],"slscript":[slscript_dic,False],
+            "slide":[slide_dic,False],"sblood":[sblood_dic,True],
+            "rozzo":[rozzo_dic,False],"pyramid":[pyramid_dic,False]}
 
 DEFAULT_FONT = "standard"
 
