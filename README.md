@@ -49,6 +49,7 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
+[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)
 ## Usage
 
 ### 1-Line Art
