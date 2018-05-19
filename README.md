@@ -235,7 +235,7 @@ True
 </html>				
 
 ### Typo-Tolerance			
-<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project.
+<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
 
 <pre>
 >>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
