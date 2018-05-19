@@ -766,6 +766,16 @@ weird :
 |__  |__   __/ |__
 <BLANKLINE>
 <BLANKLINE>
+>>> tprint("test",font = font_name)
+<BLANKLINE>
+  _|                            _|
+_|_|_|_|    _|_|      _|_|_|  _|_|_|_|
+  _|      _|_|_|_|  _|_|        _|
+  _|      _|            _|_|    _|
+    _|_|    _|_|_|  _|_|_|        _|_|
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 >>> aprint_test()
 100$
 [̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]
@@ -1079,6 +1089,8 @@ _/\__/\__0>
 zombie
 'º_º'
 ******************************
+>>> aprint(artname = "awesame")
+<:3 )~~~
 >>> help_func()
               _
   __ _  _ __ | |_
