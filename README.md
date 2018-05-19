@@ -26,6 +26,7 @@
 <a href="FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
 <a href="ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
+<a href="http://pepy.tech/badge/art"><img src="http://pepy.tech/count/art"></a>
 
 </div>
 	
