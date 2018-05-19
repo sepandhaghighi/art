@@ -67,6 +67,7 @@ c[_]
 Traceback (most recent call last):
         ...
 art.art.artError: artname shoud have str type
+
 </pre>
 2. aprint				
 
@@ -116,7 +117,8 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
-art.art.artError: س is invalid                   
+art.art.artError: س is invalid 
+             
 </pre>
 2. tprint				
 
@@ -170,6 +172,7 @@ _ ___  ____ _  _ _  _
 ___  ____ _    ____ ____ 
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
+
 
 </pre>
 3. tsave				
@@ -225,8 +228,50 @@ True
 		<td align="center">raise artError</td>
 	</tr>		
 </table> 
-</html>			
+</html>				
 
+### Typo-Tolerance			
+<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project.
+
+<pre>
+>>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
+>>> print(Art)
+»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> aprint("happi")  # correct --> aprint("happy") (distance < 3)
+ ۜ\(סּںסּَ` )/ۜ 
+>>> Art=art("birds2222",number=1) # correct --> Art=art("birds",number=1) (distance > 3)
+>>> print(Art)
+Traceback (most recent call last):
+	...
+art.art.artError: Invalid art name
+>>> aprint("happi231")  # correct --> aprint("happy") (distance > 3)
+Traceback (most recent call last):
+	...
+art.art.artError: Invalid art name
+>>> Art=text2art("test",font="black") # correct --> Art=text2art("test",font="block")
+>>> print(Art)
+
+ .----------------.  .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. || .--------------. |
+| |  _________   | || |  _________   | || |    _______   | || |  _________   | |
+| | |  _   _  |  | || | |_   ___  |  | || |   /  ___  |  | || | |  _   _  |  | |
+| | |_/ | | \_|  | || |   | |_  \_|  | || |  |  (__ \_|  | || | |_/ | | \_|  | |
+| |     | |      | || |   |  _|  _   | || |   '.___`-.   | || |     | |      | |
+| |    _| |_     | || |  _| |___/ |  | || |  |`\____) |  | || |    _| |_     | |
+| |   |_____|    | || | |_________|  | || |  |_______.'  | || |   |_____|    | |
+| |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'
+
+>>> tprint("test",font="cybermedum")   # correct --> tprint("test",font="cybermedium")
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  |  
+                  
+   
+</pre>
+
+ 
 ### CLI			
 - List of arts :  `python -m art list`
 - List of fonts : `python -m art fonts`
