@@ -202,7 +202,20 @@ def tsave(
     except Exception as e:
         return {"Status": False, "Message": str(e)}
 
+def distance_calc(s1, s2):
+    if len(s1) > len(s2):
+        s1, s2 = s2, s1
 
+    distances = range(len(s1) + 1)
+    for i2, c2 in enumerate(s2):
+        distances_ = [i2+1]
+        for i1, c1 in enumerate(s1):
+            if c1 == c2:
+                distances_.append(distances[i1])
+            else:
+                distances_.append(1 + min((distances[i1], distances[i1 + 1], distances_[-1])))
+        distances = distances_
+    return distances[-1]
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     '''
     This function print art text
@@ -223,10 +236,14 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("text should have str type")
     if isinstance(font, str) == False:
         raise artError("font should have str type")
-    if font.lower() in font_map.keys():
-        letters = font_map[font.lower()][0]
-        if font_map[font.lower()][1]:
-            text_temp = text.lower()
+    if font.lower() not in font_map.keys():
+        fonts = list(font_map.keys())
+        fonts.sort()
+        distance_list = list(map(lambda x : distance_calc(font,x),fonts))
+        font = fonts[distance_list.index(min(distance_list))]
+    letters = font_map[font.lower()][0]
+    if font_map[font.lower()][1]:
+        text_temp = text.lower()
     for i in text_temp:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
             continue
