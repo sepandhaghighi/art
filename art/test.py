@@ -5,6 +5,7 @@ This function get a string as input if input is one digit add a zero
 :type input_string:str
 :return: modified output as str
 >>> import coverage
+>>> import os
 >>> cov=coverage.Coverage()
 >>> cov.start()
 >>> from art import *
@@ -1158,7 +1159,7 @@ Filename: art.txt
 True
 >>> Data=tsave("test art2")
 Saved!
-Filename: art2.txt
+Filename: art(2).txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
@@ -1174,7 +1175,7 @@ True
 >>> file=open("art.txt","r")
 >>> print(len(file.read()))
 246
->>> file=open("art2.txt","r")
+>>> file=open("art(2).txt","r")
 >>> print(len(file.read()))
 288
 >>> file.close()
@@ -1207,5 +1208,10 @@ art.art.artError: number should have int type
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> cov.stop()
 >>> cov.save()
+>>> os.remove("art.txt")
+>>> os.remove("art(2).txt")
+>>> os.remove("art(3).txt")
+>>> os.remove("test.bw")
+>>> os.remove("test.txt")
 
 '''

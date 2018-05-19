@@ -185,7 +185,7 @@ def tsave(
         test_name = name
         while(True):
             if test_name + extension in files_list:
-                test_name = name + str(index)
+                test_name = name + "("+str(index)+")"
                 index = index + 1
             else:
                 break
