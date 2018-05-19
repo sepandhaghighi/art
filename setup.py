@@ -7,13 +7,13 @@ def get_requires():
 setup(
     name='art',
     packages=['art'],
-    version='0.9',
+    version='1.0',
     description='ASCII Art Collection In Python',
     long_description='ASCII Art Collection In Python',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
-    download_url='https://github.com/sepandhaghighi/art/tarball/v0.9',
+    download_url='https://github.com/sepandhaghighi/art/tarball/v1.0',
     keywords="ascii art python3 python text font",
     project_urls={
         'Webpage': 'http://pycm.shaghighi.ir',
