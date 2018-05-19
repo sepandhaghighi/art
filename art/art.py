@@ -203,6 +203,18 @@ def tsave(
         return {"Status": False, "Message": str(e)}
 
 def distance_calc(s1, s2):
+    '''
+    This function calculate Levenshtein distance between two words
+    :param s1: first word
+    :type s1 : str
+    :param s2: second word
+    :type s2 : str
+    :return: distance between two word
+
+    References :
+    1- https://stackoverflow.com/questions/2460177/edit-distance-in-python
+    2- https://en.wikipedia.org/wiki/Levenshtein_distance
+    '''
     if len(s1) > len(s2):
         s1, s2 = s2, s1
 
