@@ -236,13 +236,14 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("text should have str type")
     if isinstance(font, str) == False:
         raise artError("font should have str type")
-    if font.lower() not in font_map.keys():
+    font = font.lower()
+    if font not in font_map.keys():
         fonts = list(font_map.keys())
         fonts.sort()
         distance_list = list(map(lambda x : distance_calc(font,x),fonts))
         font = fonts[distance_list.index(min(distance_list))]
-    letters = font_map[font.lower()][0]
-    if font_map[font.lower()][1]:
+    letters = font_map[font][0]
+    if font_map[font][1]:
         text_temp = text.lower()
     for i in text_temp:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
