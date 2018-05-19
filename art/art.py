@@ -119,9 +119,19 @@ def art(artname, number=1, text=""):
     '''
     if isinstance(artname, str) == False:
         raise artError("artname shoud have str type")
-    if artname.lower() not in art_dic.keys():
-        raise artError("Invalid art name")
-    art_value = art_dic[artname.lower()]
+    artname = artname.lower()
+    if artname not in art_dic.keys():
+        suggest_message = ""
+        arts = list(art_dic.keys())
+        arts.sort()
+        distance_list = list(map(lambda x: distance_calc(artname, x),
+                                 arts))
+        min_distance = min(distance_list)
+        if min_distance<3:
+            suggest_message = "Did you mean this?\n"+arts[
+                distance_list.index(min_distance)]
+        raise artError("Invalid art name"+suggest_message)
+    art_value = art_dic[artname]
     if isinstance(number, int) == False:
         raise artError("number should have int type")
     if isinstance(art_value, str):
