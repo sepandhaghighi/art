@@ -104,13 +104,15 @@ banner3 :
    ##    ##       ##    ##    ##
    ##    ########  ######     ##
 <BLANKLINE>
-banner3-D :
- _               _
-| |_   ___  ___ | |_
-| __| / _ \/ __|| __|
-| |_ |  __/\__ \| |_
- \__| \___||___/ \__|
-<BLANKLINE>
+banner3-d :
+'########:'########::'######::'########:
+... ##..:: ##.....::'##... ##:... ##..::
+::: ##:::: ##::::::: ##:::..::::: ##::::
+::: ##:::: ######:::. ######::::: ##::::
+::: ##:::: ##...:::::..... ##:::: ##::::
+::: ##:::: ##:::::::'##::: ##:::: ##::::
+::: ##:::: ########:. ######::::: ##::::
+:::..:::::........:::......::::::..:::::
 <BLANKLINE>
 banner4 :
 .########.########..######..########
@@ -445,6 +447,33 @@ ogre :
  \__| \___||___/ \__|
 <BLANKLINE>
 <BLANKLINE>
+pebbles :
+<BLANKLINE>
+<BLANKLINE>
+  O                 O
+ oOo               oOo
+  o   .oOo. .oOo    o
+  O   OooO' `Ooo.   O
+  o   O         O   o
+  `oO `OoO' `OoO'   `oO
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+puffy :
+ _                 _
+( )_              ( )_
+| ,_)   __    ___ | ,_)
+| |   /'__`\/',__)| |
+| |_ (  ___/\__, \| |_
+`\__)`\____)(____/`\__)
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+pyramid :
+  ^    ^    ^    ^
+ /t\  /e\  /s\  /t\
+<___><___><___><___>
+<BLANKLINE>
 rectangles :
 <BLANKLINE>
  _              _
@@ -482,6 +511,23 @@ rowancap :
 dMP       dMMMMMP     VMMMP"    dMP
 <BLANKLINE>
 <BLANKLINE>
+rozzo :
+  d8                   d8
+ d88    ,e e,   dP"Y  d88
+d88888 d88 88b C88b  d88888
+ 888   888   ,  Y88D  888
+ 888    "YeeP" d,dP   888
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+sblood :
+ @@@@@@@ @@@@@@@@  @@@@@@ @@@@@@@
+   @@!   @@!      !@@       @@!
+   @!!   @!!!:!    !@@!!    @!!
+   !!:   !!:          !:!   !!:
+    :    : :: ::: ::.: :     :
+<BLANKLINE>
+<BLANKLINE>
 script :
 <BLANKLINE>
 <BLANKLINE>
@@ -512,12 +558,71 @@ slant :
 \__/  \___/ /____/  \__/
 <BLANKLINE>
 <BLANKLINE>
+slide :
+ #|                #|
+##HH|  #H|   #HH| ##HH|
+ #|   ##HH| ##H|   #|
+ #|   ##       H|  #|
+ #H|   #HH| ##H|   #H|
+<BLANKLINE>
+<BLANKLINE>
+slscript :
+<BLANKLINE>
+ _/_        _/_
+ /   _  _   /
+<__ </_/_)_<__
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+smisome1 :
+    ___       ___       ___       ___
+   /\  \     /\  \     /\  \     /\  \
+   \:\  \   /::\  \   /::\  \    \:\  \
+   /::\__\ /::\:\__\ /\:\:\__\   /::\__\
+  /:/\/__/ \:\:\/  / \:\:\/__/  /:/\/__/
+  \/__/     \:\/  /   \::/  /   \/__/
+             \/__/     \/__/
+<BLANKLINE>
+smkeyboard :
+ ____  ____  ____  ____
+||t ||||e ||||s ||||t ||
+||__||||__||||__||||__||
+|/__\||/__\||/__\||/__\|
+<BLANKLINE>
+smscript :
+<BLANKLINE>
+_|_  _  ,  _|_
+ |  |/ / \_ |
+ |_/|_/ \/  |_/
+<BLANKLINE>
+<BLANKLINE>
+smshadow :
+ |               |
+  _|   -_) (_-<   _|
+\__| \___| ___/ \__|
+<BLANKLINE>
+<BLANKLINE>
+smslant :
+  __             __
+ / /_ ___   ___ / /_
+/ __// -_) (_-</ __/
+\__/ \__/ /___/\__/
+<BLANKLINE>
+<BLANKLINE>
 speed :
 _____               _____
 __  /______ __________  /_
 _  __/_  _ \__  ___/_  __/
 / /_  /  __/_(__  ) / /_
 \__/  \___/ /____/  \__/
+<BLANKLINE>
+<BLANKLINE>
+stampatello :
+.          .
+|- ,-. ,-. |-
+|  |-' `-. |
+`' `-' `-' `'
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 standard :
@@ -554,6 +659,12 @@ stop :
 |  _)  / _  ) /___)|  _)
 | |__ ( (/ / |___ || |__
  \___) \____)(___/  \___)
+<BLANKLINE>
+<BLANKLINE>
+straight :
+<BLANKLINE>
+|_  _  _ |_
+|_ (- _) |_
 <BLANKLINE>
 <BLANKLINE>
 swan :
@@ -595,6 +706,15 @@ thin :
 threepoint :
 _|_ _  __|_
  | (/__\ |
+<BLANKLINE>
+<BLANKLINE>
+tinker-toy :
+ o           o
+ |           |
+-o- o-o o-o -o-
+ |  |-'  \   |
+ o  o-o o-o  o
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 tombstone :
