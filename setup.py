@@ -8,11 +8,8 @@ def get_requires():
 
 
 def read_description():
-    with open("README.md") as r :
-        description = "\n"
-        description += r.read()
     with open("CHANGELOG.md") as c:
-        description += "\n"
+        description = "\n"
         description += c.read()
     return description
 
