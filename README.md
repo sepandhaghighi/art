@@ -23,8 +23,8 @@
 <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
-<a href="ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 
 </div>
@@ -32,20 +32,30 @@
 ----------
 
 ## Table of contents					
-   * [Overview](#overview)
-   * [Installation](INSTALL.md)
-   * [Usage](#usage)
-   * [Issues & Bug Reports](#issues--bug-reports)
-   * [Contribution](CONTRIBUTING.md)
-   * [Reference](#reference)
-   * [Authors](AUTHORS.md)
-   * [License](#license)
-   * [Donate](#donate-to-our-project)
-   * [Changelog](CHANGELOG.md)
+   * [Overview](https://github.com/sepandhaghighi/art#overview)
+   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
+   * [Usage](https://github.com/sepandhaghighi/art#usage)
+   		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
+   		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
+   		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
+   		* [CLI](https://github.com/sepandhaghighi/art#cli)
+   		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
+   		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
+   * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
+   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/CONTRIBUTING.md)
+   * [Reference](https://github.com/sepandhaghighi/art#reference)
+   * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
+   * [License](https://github.com/sepandhaghighi/art#license)
+   * [Donate](https://github.com/sepandhaghighi/art#donate-to-our-project)
+   * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
 
-## Overview			
-Simple ASCII Art Library For Python
+## Overview	
+ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
+letters to make a visual shape that is spread over multiple lines of text.
+	
+Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
+[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)
 ## Usage
 
 ### 1-Line Art
@@ -67,6 +77,7 @@ c[_]
 Traceback (most recent call last):
         ...
 art.art.artError: artname shoud have str type
+
 </pre>
 2. aprint				
 
@@ -116,7 +127,8 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
-art.art.artError: س is invalid                   
+art.art.artError: س is invalid 
+             
 </pre>
 2. tprint				
 
@@ -170,6 +182,7 @@ _ ___  ____ _  _ _  _
 ___  ____ _    ____ ____ 
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
+
 
 </pre>
 3. tsave				
@@ -225,8 +238,50 @@ True
 		<td align="center">raise artError</td>
 	</tr>		
 </table> 
-</html>			
+</html>				
 
+### Typo-Tolerance			
+<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
+
+<pre>
+>>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
+>>> print(Art)
+»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> aprint("happi")  # correct --> aprint("happy") (distance < 3)
+ ۜ\(סּںסּَ` )/ۜ 
+>>> Art=art("birds2222",number=1) # correct --> Art=art("birds",number=1) (distance > 3)
+>>> print(Art)
+Traceback (most recent call last):
+	...
+art.art.artError: Invalid art name
+>>> aprint("happi231")  # correct --> aprint("happy") (distance > 3)
+Traceback (most recent call last):
+	...
+art.art.artError: Invalid art name
+>>> Art=text2art("test",font="black") # correct --> Art=text2art("test",font="block")
+>>> print(Art)
+
+ .----------------.  .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. || .--------------. |
+| |  _________   | || |  _________   | || |    _______   | || |  _________   | |
+| | |  _   _  |  | || | |_   ___  |  | || |   /  ___  |  | || | |  _   _  |  | |
+| | |_/ | | \_|  | || |   | |_  \_|  | || |  |  (__ \_|  | || | |_/ | | \_|  | |
+| |     | |      | || |   |  _|  _   | || |   '.___`-.   | || |     | |      | |
+| |    _| |_     | || |  _| |___/ |  | || |  |`\____) |  | || |    _| |_     | |
+| |   |_____|    | || | |_________|  | || |  |_______.'  | || |   |_____|    | |
+| |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'
+
+>>> tprint("test",font="cybermedum")   # correct --> tprint("test",font="cybermedium")
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  |  
+                  
+   
+</pre>
+
+ 
 ### CLI			
 - List of arts :  `python -m art list`
 - List of fonts : `python -m art fonts`
@@ -236,16 +291,24 @@ True
 - Save :  `python -m art save yourtext fontname(optional)`
 - All  :  `python -m art all yourtext`
 
-### Telegram Bot
-<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
+### Telegram Bot			
+
+Just send your text to one of these bots. 👇👇👇👇		
+
+<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot1-red.svg"></a>			
+
+<a href="https://t.me/textart_robot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot2-blue.svg"></a>
+
+### Screen Record		
+
 
 <div align="center">
 <a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
 <p>Screen Record</p>
 </div>
 
-* [View Full Font List](FontList.ipynb "Full Font List")					
-* [View Full Art List](ArtList.ipynb "Full Art List")
+* [View Full Font List](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List")					
+* [View Full Art List](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List")
 
 ## Issues & Bug Reports			
 

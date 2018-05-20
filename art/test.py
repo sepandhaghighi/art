@@ -5,6 +5,7 @@ This function get a string as input if input is one digit add a zero
 :type input_string:str
 :return: modified output as str
 >>> import coverage
+>>> import os
 >>> cov=coverage.Coverage()
 >>> cov.start()
 >>> from art import *
@@ -104,13 +105,15 @@ banner3 :
    ##    ##       ##    ##    ##
    ##    ########  ######     ##
 <BLANKLINE>
-banner3-D :
- _               _
-| |_   ___  ___ | |_
-| __| / _ \/ __|| __|
-| |_ |  __/\__ \| |_
- \__| \___||___/ \__|
-<BLANKLINE>
+banner3-d :
+'########:'########::'######::'########:
+... ##..:: ##.....::'##... ##:... ##..::
+::: ##:::: ##::::::: ##:::..::::: ##::::
+::: ##:::: ######:::. ######::::: ##::::
+::: ##:::: ##...:::::..... ##:::: ##::::
+::: ##:::: ##:::::::'##::: ##:::: ##::::
+::: ##:::: ########:. ######::::: ##::::
+:::..:::::........:::......::::::..:::::
 <BLANKLINE>
 banner4 :
 .########.########..######..########
@@ -445,6 +448,33 @@ ogre :
  \__| \___||___/ \__|
 <BLANKLINE>
 <BLANKLINE>
+pebbles :
+<BLANKLINE>
+<BLANKLINE>
+  O                 O
+ oOo               oOo
+  o   .oOo. .oOo    o
+  O   OooO' `Ooo.   O
+  o   O         O   o
+  `oO `OoO' `OoO'   `oO
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+puffy :
+ _                 _
+( )_              ( )_
+| ,_)   __    ___ | ,_)
+| |   /'__`\/',__)| |
+| |_ (  ___/\__, \| |_
+`\__)`\____)(____/`\__)
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+pyramid :
+  ^    ^    ^    ^
+ /t\  /e\  /s\  /t\
+<___><___><___><___>
+<BLANKLINE>
 rectangles :
 <BLANKLINE>
  _              _
@@ -482,6 +512,23 @@ rowancap :
 dMP       dMMMMMP     VMMMP"    dMP
 <BLANKLINE>
 <BLANKLINE>
+rozzo :
+  d8                   d8
+ d88    ,e e,   dP"Y  d88
+d88888 d88 88b C88b  d88888
+ 888   888   ,  Y88D  888
+ 888    "YeeP" d,dP   888
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+sblood :
+ @@@@@@@ @@@@@@@@  @@@@@@ @@@@@@@
+   @@!   @@!      !@@       @@!
+   @!!   @!!!:!    !@@!!    @!!
+   !!:   !!:          !:!   !!:
+    :    : :: ::: ::.: :     :
+<BLANKLINE>
+<BLANKLINE>
 script :
 <BLANKLINE>
 <BLANKLINE>
@@ -512,12 +559,71 @@ slant :
 \__/  \___/ /____/  \__/
 <BLANKLINE>
 <BLANKLINE>
+slide :
+ #|                #|
+##HH|  #H|   #HH| ##HH|
+ #|   ##HH| ##H|   #|
+ #|   ##       H|  #|
+ #H|   #HH| ##H|   #H|
+<BLANKLINE>
+<BLANKLINE>
+slscript :
+<BLANKLINE>
+ _/_        _/_
+ /   _  _   /
+<__ </_/_)_<__
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+smisome1 :
+    ___       ___       ___       ___
+   /\  \     /\  \     /\  \     /\  \
+   \:\  \   /::\  \   /::\  \    \:\  \
+   /::\__\ /::\:\__\ /\:\:\__\   /::\__\
+  /:/\/__/ \:\:\/  / \:\:\/__/  /:/\/__/
+  \/__/     \:\/  /   \::/  /   \/__/
+             \/__/     \/__/
+<BLANKLINE>
+smkeyboard :
+ ____  ____  ____  ____
+||t ||||e ||||s ||||t ||
+||__||||__||||__||||__||
+|/__\||/__\||/__\||/__\|
+<BLANKLINE>
+smscript :
+<BLANKLINE>
+_|_  _  ,  _|_
+ |  |/ / \_ |
+ |_/|_/ \/  |_/
+<BLANKLINE>
+<BLANKLINE>
+smshadow :
+ |               |
+  _|   -_) (_-<   _|
+\__| \___| ___/ \__|
+<BLANKLINE>
+<BLANKLINE>
+smslant :
+  __             __
+ / /_ ___   ___ / /_
+/ __// -_) (_-</ __/
+\__/ \__/ /___/\__/
+<BLANKLINE>
+<BLANKLINE>
 speed :
 _____               _____
 __  /______ __________  /_
 _  __/_  _ \__  ___/_  __/
 / /_  /  __/_(__  ) / /_
 \__/  \___/ /____/  \__/
+<BLANKLINE>
+<BLANKLINE>
+stampatello :
+.          .
+|- ,-. ,-. |-
+|  |-' `-. |
+`' `-' `-' `'
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 standard :
@@ -554,6 +660,12 @@ stop :
 |  _)  / _  ) /___)|  _)
 | |__ ( (/ / |___ || |__
  \___) \____)(___/  \___)
+<BLANKLINE>
+<BLANKLINE>
+straight :
+<BLANKLINE>
+|_  _  _ |_
+|_ (- _) |_
 <BLANKLINE>
 <BLANKLINE>
 swan :
@@ -595,6 +707,15 @@ thin :
 threepoint :
 _|_ _  __|_
  | (/__\ |
+<BLANKLINE>
+<BLANKLINE>
+tinker-toy :
+ o           o
+ |           |
+-o- o-o o-o -o-
+ |  |-'  \   |
+ o  o-o o-o  o
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 tombstone :
@@ -643,6 +764,16 @@ weird :
 (___  ___  ___ (___
 |    |___)|___ |
 |__  |__   __/ |__
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("test",font = "block243")
+<BLANKLINE>
+  _|                            _|
+_|_|_|_|    _|_|      _|_|_|  _|_|_|_|
+  _|      _|_|_|_|  _|_|        _|
+  _|      _|            _|_|    _|
+    _|_|    _|_|_|  _|_|_|        _|_|
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 >>> aprint_test()
@@ -958,6 +1089,8 @@ _/\__/\__0>
 zombie
 'º_º'
 ******************************
+>>> aprint(artname = "awesame")
+<:3 )~~~
 >>> help_func()
               _
   __ _  _ __ | |_
@@ -966,11 +1099,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-         ___       ___
-__   __ / _ \     / _ \
-\ \ / /| | | |   | (_) |
- \ V / | |_| | _  \__, |
-  \_/   \___/ (_)   /_/
+        _      ___
+__   __/ |    / _ \
+\ \ / /| |   | | | |
+ \ V / | | _ | |_| |
+  \_/  |_|(_) \___/
 <BLANKLINE>
 <BLANKLINE>
 Webpage : http://art.shaghighi.ir
@@ -1038,7 +1171,7 @@ Filename: art.txt
 True
 >>> Data=tsave("test art2")
 Saved!
-Filename: art2.txt
+Filename: art(2).txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
@@ -1054,7 +1187,7 @@ True
 >>> file=open("art.txt","r")
 >>> print(len(file.read()))
 246
->>> file=open("art2.txt","r")
+>>> file=open("art(2).txt","r")
 >>> print(len(file.read()))
 288
 >>> file.close()
@@ -1087,5 +1220,10 @@ art.art.artError: number should have int type
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> cov.stop()
 >>> cov.save()
+>>> os.remove("art.txt")
+>>> os.remove("art(2).txt")
+>>> os.remove("art(3).txt")
+>>> os.remove("test.bw")
+>>> os.remove("test.txt")
 
 '''
