@@ -7,9 +7,12 @@ def get_requires():
     return list(filter(lambda x: x != "", requirements.split()))
 
 
-def read_changelog():
-    with open("CHANGELOG.md") as c:
+def read_description():
+    with open("README.md") as r :
         description = "\n"
+        description += r.read()
+    with open("CHANGELOG.md") as c:
+        description += "\n"
         description += c.read()
     return description
 
@@ -23,7 +26,7 @@ setup(
     It involves the smart placement of typed special characters or
     letters to make a visual shape that is spread over multiple lines of text.
     Art is a Python lib for text converting to ASCII ART fancy.'''
-                     + read_changelog(),
+                     + read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
