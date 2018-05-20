@@ -285,8 +285,16 @@ ___ ____ ____ ___
 - Save :  `python -m art save yourtext fontname(optional)`
 - All  :  `python -m art all yourtext`
 
-### Telegram Bot
-<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
+### Telegram Bot			
+
+Just send your text to one of these bots. 👇👇👇👇		
+
+<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot1-red.svg"></a>			
+
+<a href="https://t.me/textart_robot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot2-blue.svg"></a>
+
+### Screen Record		
+
 
 <div align="center">
 <a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
