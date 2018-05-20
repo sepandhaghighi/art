@@ -766,7 +766,7 @@ weird :
 |__  |__   __/ |__
 <BLANKLINE>
 <BLANKLINE>
->>> tprint("test",font = font_name)
+>>> tprint("test",font = "block243")
 <BLANKLINE>
   _|                            _|
 _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
