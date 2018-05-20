@@ -32,21 +32,21 @@
 ----------
 
 ## Table of contents					
-   * [Overview](#overview)
+   * [Overview](https://github.com/sepandhaghighi/art/tree/dev#overview)
    * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
-   * [Usage](#usage)
-   		* [1-Line Art](#1-line-art)
-   		* [ASCII Text](#ascii-text)
-   		* [Typo-Tolerance](#typo-tolerance)
-   		* [CLI](#cli)
-   		* [Telegram Bot](#telegram-bot)
-   		* [Screen Record](#screen-record)
-   * [Issues & Bug Reports](#issues--bug-reports)
+   * [Usage](https://github.com/sepandhaghighi/art#usage)
+   		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
+   		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
+   		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
+   		* [CLI](https://github.com/sepandhaghighi/art#cli)
+   		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
+   		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
+   * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/CONTRIBUTING.md)
-   * [Reference](#reference)
+   * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
-   * [License](#license)
-   * [Donate](#donate-to-our-project)
+   * [License](https://github.com/sepandhaghighi/art#license)
+   * [Donate](https://github.com/sepandhaghighi/art#donate-to-our-project)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
 
 ## Overview	
