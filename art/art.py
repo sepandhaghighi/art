@@ -26,21 +26,21 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
             "banner3": [banner3_dic, True], "banner4": [banner4_dic, True], "bell": [bell_dic, False], "catwalk": [catwalk_dic, False], "colossal": [colossal_dic, False],
             "acrobatic": [acrobatic_dic, True], "alligator": [alligator_dic, False], "alligator2": [alligator2_dic, False], "block2": [block2_dic, True],
             "caligraphy": [caligraphy_dic, True], "computer": [computer_dic, True], "digital": [digital_dic, True], "doh": [doh_dic, True],
-            "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic,True],
-            "stellar":[stellar_dic,False],"swan":[swan_dic,False],"tanja":[tanja_dic,False],
-            "thick":[thick_dic,False],"threepoint":[threepoint_dic,False],
-            "tombstone":[tombstone_dic,True],"trek":[trek_dic,True],
-            "twopoint":[twopoint_dic,False],"univers":[univers_dic,False],
-            "weird":[weird_dic,False],"pebbles":[pebbles_dic,False],
-            "puffy":[puffy_dic,False],"tinker-toy":[tinker_toy_dic,False],
-            "straight":[straight_dic,False],"stampatello":[stampatello_dic,
-                                                           False],
-            "smslant":[smslant_dic,False],"smshadow":[smshadow_dic,False],
-            "smscript":[smscript_dic,False],"smkeyboard":[smkeyboard_dic,
-                                                          False],
-            "smisome1":[smisome1_dic,True],"slscript":[slscript_dic,False],
-            "slide":[slide_dic,False],"sblood":[sblood_dic,True],
-            "rozzo":[rozzo_dic,False],"pyramid":[pyramid_dic,False]}
+            "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic, True],
+            "stellar": [stellar_dic, False], "swan": [swan_dic, False], "tanja": [tanja_dic, False],
+            "thick": [thick_dic, False], "threepoint": [threepoint_dic, False],
+            "tombstone": [tombstone_dic, True], "trek": [trek_dic, True],
+            "twopoint": [twopoint_dic, False], "univers": [univers_dic, False],
+            "weird": [weird_dic, False], "pebbles": [pebbles_dic, False],
+            "puffy": [puffy_dic, False], "tinker-toy": [tinker_toy_dic, False],
+            "straight": [straight_dic, False], "stampatello": [stampatello_dic,
+                                                               False],
+            "smslant": [smslant_dic, False], "smshadow": [smshadow_dic, False],
+            "smscript": [smscript_dic, False], "smkeyboard": [smkeyboard_dic,
+                                                              False],
+            "smisome1": [smisome1_dic, True], "slscript": [slscript_dic, False],
+            "slide": [slide_dic, False], "sblood": [sblood_dic, True],
+            "rozzo": [rozzo_dic, False], "pyramid": [pyramid_dic, False]}
 
 DEFAULT_FONT = "standard"
 
@@ -121,12 +121,11 @@ def art(artname, number=1, text=""):
         raise artError("artname shoud have str type")
     artname = artname.lower()
     if artname not in art_dic.keys():
-        arts = list(art_dic.keys())
-        arts.sort()
+        arts = sorted(art_dic.keys())
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
-        if min_distance<3:
+        if min_distance < 3:
             artname = arts[distance_list.index(min_distance)]
         else:
             raise artError("Invalid art name")
@@ -194,7 +193,7 @@ def tsave(
         test_name = name
         while(True):
             if test_name + extension in files_list:
-                test_name = name + "("+str(index)+")"
+                test_name = name + "(" + str(index) + ")"
                 index = index + 1
             else:
                 break
@@ -211,6 +210,7 @@ def tsave(
         return {"Status": True, "Message": "OK"}
     except Exception as e:
         return {"Status": False, "Message": str(e)}
+
 
 def distance_calc(s1, s2):
     '''
@@ -230,14 +230,17 @@ def distance_calc(s1, s2):
 
     distances = range(len(s1) + 1)
     for i2, c2 in enumerate(s2):
-        distances_ = [i2+1]
+        distances_ = [i2 + 1]
         for i1, c1 in enumerate(s1):
             if c1 == c2:
                 distances_.append(distances[i1])
             else:
-                distances_.append(1 + min((distances[i1], distances[i1 + 1], distances_[-1])))
+                distances_.append(
+                    1 + min((distances[i1], distances[i1 + 1], distances_[-1])))
         distances = distances_
     return distances[-1]
+
+
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     '''
     This function print art text
@@ -260,9 +263,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     if font not in font_map.keys():
-        fonts = list(font_map.keys())
-        fonts.sort()
-        distance_list = list(map(lambda x : distance_calc(font,x),fonts))
+        fonts = sorted(font_map.keys())
+        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     letters = font_map[font][0]
     if font_map[font][1]:
