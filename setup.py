@@ -8,13 +8,16 @@ def get_requires():
 
 
 def read_description():
-    with open("README.md",encoding="utf-8") as r :
-        description = "\n"
-        description += r.read()
-    with open("CHANGELOG.md",encoding="utf-8") as c:
-        description += "\n"
-        description += c.read()
-    return description
+    try:
+        with open("README.md") as r :
+            description = "\n"
+            description += r.read()
+        with open("CHANGELOG.md") as c:
+            description += "\n"
+            description += c.read()
+        return description
+    except Exception:
+        return ""
 
 
 setup(
