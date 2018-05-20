@@ -24,6 +24,7 @@ setup(
     letters to make a visual shape that is spread over multiple lines of text.
     Art is a Python lib for text converting to ASCII ART fancy.'''
                      + read_changelog(),
+    long_description_content_type='text/markdown',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
