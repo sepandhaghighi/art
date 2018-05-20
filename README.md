@@ -23,8 +23,8 @@
 <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
-<a href="ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 
 </div>
@@ -33,7 +33,7 @@
 
 ## Table of contents					
    * [Overview](#overview)
-   * [Installation](INSTALL.md)
+   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
    * [Usage](#usage)
    		* [1-Line Art](#1-line-art)
    		* [ASCII Text](#ascii-text)
@@ -42,12 +42,12 @@
    		* [Telegram Bot](#telegram-bot)
    		* [Screen Record](#screen-record)
    * [Issues & Bug Reports](#issues--bug-reports)
-   * [Contribution](CONTRIBUTING.md)
+   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/CONTRIBUTING.md)
    * [Reference](#reference)
-   * [Authors](AUTHORS.md)
+   * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
    * [License](#license)
    * [Donate](#donate-to-our-project)
-   * [Changelog](CHANGELOG.md)
+   * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
 
 ## Overview	
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
@@ -307,8 +307,8 @@ Just send your text to one of these bots. 👇👇👇👇
 <p>Screen Record</p>
 </div>
 
-* [View Full Font List](FontList.ipynb "Full Font List")					
-* [View Full Art List](ArtList.ipynb "Full Art List")
+* [View Full Font List](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List")					
+* [View Full Art List](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List")
 
 ## Issues & Bug Reports			
 
