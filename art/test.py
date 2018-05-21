@@ -1175,8 +1175,6 @@ Traceback (most recent call last):
 art.art.artError: Invalid art name
 >>> art("coffee")
 'c[_] '
->>> art("love_you",number=2,text="test")
-'»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« '
 >>> tprint("test 2")
  _               _     ____
 | |_   ___  ___ | |_  |___ \
