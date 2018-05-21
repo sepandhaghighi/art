@@ -1216,7 +1216,7 @@ Filename: art.txt
 True
 >>> Data=tsave("test art2")
 Saved!
-Filename: art(2).txt
+Filename: art2.txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
@@ -1232,7 +1232,7 @@ True
 >>> file=open("art.txt","r")
 >>> print(len(file.read()))
 246
->>> file=open("art(2).txt","r")
+>>> file=open("art2.txt","r")
 >>> print(len(file.read()))
 288
 >>> file.close()
@@ -1266,8 +1266,8 @@ art.art.artError: number should have int type
 >>> cov.stop()
 >>> cov.save()
 >>> os.remove("art.txt")
->>> os.remove("art(2).txt")
->>> os.remove("art(3).txt")
+>>> os.remove("art2.txt")
+>>> os.remove("art3.txt")
 >>> os.remove("test.bw")
 >>> os.remove("test.txt")
 
