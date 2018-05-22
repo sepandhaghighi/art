@@ -7,6 +7,10 @@ import sys
 version = "1.1"
 
 
+description = '''ASCII art is also known as "computer text art".
+It involves the smart placement of typed special characters or
+letters to make a visual shape that is spread over multiple lines of text.
+Art is a Python lib for text converting to ASCII ART fancy.'''
 class artError(Exception):
     pass
 
@@ -91,7 +95,8 @@ def help_func():
     '''
     tprint("art")
     tprint("v" + version)
-    print("Webpage : http://art.shaghighi.ir")
+    print(description+"\n")
+    print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
     print("     - fonts --> (list of fonts)\n")
