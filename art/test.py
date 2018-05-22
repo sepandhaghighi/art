@@ -1189,11 +1189,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _      ___
-__   __/ |    / _ \
-\ \ / /| |   | | | |
- \ V / | | _ | |_| |
-  \_/  |_|(_) \___/
+        _     _
+__   __/ |   / |
+\ \ / /| |   | |
+ \ V / | | _ | |
+  \_/  |_|(_)|_|
 <BLANKLINE>
 <BLANKLINE>
 Webpage : http://art.shaghighi.ir
