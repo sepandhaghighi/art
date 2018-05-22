@@ -13,7 +13,7 @@ if __name__ == "__main__":
             doctest.testfile(
                 "test.py",
                 optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
-                            | doctest.IGNORE_EXCEPTION_DETAIL,
+                | doctest.IGNORE_EXCEPTION_DETAIL,
                 verbose=False)
         elif args[1].upper() == "LIST":
             aprint_test()

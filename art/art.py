@@ -41,9 +41,9 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
             "smisome1": [smisome1_dic, True], "slscript": [slscript_dic, False],
             "slide": [slide_dic, False], "sblood": [sblood_dic, True],
             "rozzo": [rozzo_dic, False], "pyramid": [pyramid_dic, False],
-            "maxfour":[maxfour_dic,False],"nipples":[nipples_dic,False],
-            "o8":[o8_dic,False],"peaks":[peaks_dic,False],"pawp":[pawp_dic,
-                                                                  False]}
+            "maxfour": [maxfour_dic, False], "nipples": [nipples_dic, False],
+            "o8": [o8_dic, False], "peaks": [peaks_dic, False], "pawp": [pawp_dic,
+                                                                         False]}
 
 DEFAULT_FONT = "standard"
 
