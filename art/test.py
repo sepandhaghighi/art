@@ -430,6 +430,12 @@ larry3d :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+maxfour :
+ |       |
+~|~/~/(~~|~
+ | \/__) |
+<BLANKLINE>
+<BLANKLINE>
 nancyj :
   dP                       dP
   88                       88
@@ -440,12 +446,51 @@ d8888P .d8888b. .d8888b. d8888P
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+nipples :
+  {__                     {__
+  {__                     {__
+{_{_ {_   {__     {____ {_{_ {_
+  {__   {_   {__ {__      {__
+  {__  {_____ {__  {___   {__
+  {__  {_            {__  {__
+   {__   {____   {__ {__   {__
+<BLANKLINE>
+<BLANKLINE>
+o8 :
+  o8                             o8
+o888oo  ooooooooo8  oooooooo8  o888oo
+ 888   888oooooo8  888ooooooo   888
+ 888   888                 888  888
+  888o   88oooo888 88oooooo88    888o
+<BLANKLINE>
+<BLANKLINE>
 ogre :
  _               _
 | |_   ___  ___ | |_
 | __| / _ \/ __|| __|
 | |_ |  __/\__ \| |_
  \__| \___||___/ \__|
+<BLANKLINE>
+<BLANKLINE>
+pawp :
+<BLANKLINE>
+ _                 _
+(_)_   ____  ____ (_)_
+(___) (____)(____)(___)
+(_)  (_)_(_)(_)__ (_)
+(_)_ (__)__  _(__)(_)_
+ (__) (____)(____) (__)
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+peaks :
+  /^^                     /^^
+  /^^                     /^^
+/^/^ /^   /^^     /^^^^ /^/^ /^
+  /^^   /^   /^^ /^^      /^^
+  /^^  /^^^^^ /^^  /^^^   /^^
+  /^^  /^            /^^  /^^
+   /^^   /^^^^   /^^ /^^   /^^
 <BLANKLINE>
 <BLANKLINE>
 pebbles :
