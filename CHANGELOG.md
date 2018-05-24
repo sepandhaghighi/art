@@ -17,7 +17,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0] - 2018-05-20
 ### Added
-- 15 new fonts				
+- 15 new fonts						
+
 1-tinker-toy
 2- straight
 3- stampatello
