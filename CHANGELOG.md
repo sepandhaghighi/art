@@ -17,22 +17,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0] - 2018-05-20
 ### Added
-- 15 new fonts
-1-tinker-toy
-2- straight
-3- stampatello
-4- smslant
-5- smshadow
-6- smscript
-7- smkeyboard
-8- smisome1
-9- slscript
-10- slide
-11- sblood
-12- rozzo
-13- pyramid
-14- puffy
-15- pebbles
+- 15 new fonts								
+	1-tinker-toy
+	2- straight
+	3- stampatello
+	4- smslant
+	5- smshadow
+	6- smscript
+	7- smkeyboard
+	8- smisome1
+	9- slscript
+	10- slide
+	11- sblood
+	12- rozzo
+	13- pyramid
+	14- puffy
+	15- pebbles
 - Typo-Tolerance system
 ### Changed
 - README.md modified
@@ -41,6 +41,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.9] - 2018-05-08
 ### Added
 - 10 new fonts
+	1- weird
+	2- univers
+	3- twopoint
+	4- trek
+	5- tombstone
+	6- threepoint
+	7- thick
+	8- tanja
+	9- swan
+	10- stellar 
 
 ### Changed
 - MANIFEST.in modified
@@ -60,6 +70,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.7] - 2018-01-20
 ### Added
 - 10 new fonts
+	1- acrobatic
+	2- alligator
+	3- alligator2
+	4- block2
+	5- caligraphy
+	6- computer
+	7- digital
+	8- doh
+	9- eftirobot
+	10- graffiti
 
 ## [0.6] - 	2018-01-09
 ### Added
