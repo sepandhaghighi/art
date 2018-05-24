@@ -5,15 +5,36 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [1.1] - 2018-05-23
+## [1.1] - 2018-05-24
 ### Added
 - 5 new fonts
+	1. peaks
+	2. pawp
+	3. o8
+	4. nipples
+	5. maxfour
 - 15 new 1-line art
-- Description
+	1. guitar
+	2. rocket
+	3. ghost
+	4. hal
+	5. cthulhu
+	6. sat
+	7. what
+	8. king
+	9. tron
+	10. homer
+	11. fox
+	12. singing
+	13. atish
+	14. zable
+	15. trumpet
+- CLI description
 ### Changed
 - README.md modified
 - Test cases modified
 - File name bug in UNIX fixed
+- CHANGELOG.md modified
 
 ## [1.0] - 2018-05-20
 ### Added
