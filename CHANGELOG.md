@@ -18,6 +18,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0] - 2018-05-20
 ### Added
 - 15 new fonts
+1-tinker-toy
+2- straight
+3- stampatello
+4- smslant
+5- smshadow
+6- smscript
+7- smkeyboard
+8- smisome1
+9- slscript
+10- slide
+11- sblood
+12- rozzo
+13- pyramid
+14- puffy
+15- pebbles
 - Typo-Tolerance system
 ### Changed
 - README.md modified
