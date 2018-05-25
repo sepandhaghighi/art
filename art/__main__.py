@@ -12,7 +12,8 @@ if __name__ == "__main__":
         if args[1].upper() == "TEST":
             doctest.testfile(
                 "test.py",
-                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS,
+                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
+                | doctest.IGNORE_EXCEPTION_DETAIL,
                 verbose=False)
         elif args[1].upper() == "LIST":
             aprint_test()

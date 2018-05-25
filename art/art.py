@@ -4,9 +4,13 @@ from .text_dic import *
 import os
 import sys
 
-version = "1.0"
+version = "1.1"
 
 
+description = '''ASCII art is also known as "computer text art".
+It involves the smart placement of typed special characters or
+letters to make a visual shape that is spread over multiple lines of text.
+Art is a Python lib for text converting to ASCII ART fancy.'''
 class artError(Exception):
     pass
 
@@ -40,7 +44,10 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
                                                               False],
             "smisome1": [smisome1_dic, True], "slscript": [slscript_dic, False],
             "slide": [slide_dic, False], "sblood": [sblood_dic, True],
-            "rozzo": [rozzo_dic, False], "pyramid": [pyramid_dic, False]}
+            "rozzo": [rozzo_dic, False], "pyramid": [pyramid_dic, False],
+            "maxfour": [maxfour_dic, False], "nipples": [nipples_dic, False],
+            "o8": [o8_dic, False], "peaks": [peaks_dic, False], "pawp": [pawp_dic,
+                                                                         False]}
 
 DEFAULT_FONT = "standard"
 
@@ -88,7 +95,8 @@ def help_func():
     '''
     tprint("art")
     tprint("v" + version)
-    print("Webpage : http://art.shaghighi.ir")
+    print(description+"\n")
+    print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
     print("     - fonts --> (list of fonts)\n")
@@ -193,7 +201,7 @@ def tsave(
         test_name = name
         while(True):
             if test_name + extension in files_list:
-                test_name = name + "(" + str(index) + ")"
+                test_name = name + str(index)
                 index = index + 1
             else:
                 break

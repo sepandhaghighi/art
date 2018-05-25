@@ -430,6 +430,12 @@ larry3d :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+maxfour :
+ |       |
+~|~/~/(~~|~
+ | \/__) |
+<BLANKLINE>
+<BLANKLINE>
 nancyj :
   dP                       dP
   88                       88
@@ -440,12 +446,51 @@ d8888P .d8888b. .d8888b. d8888P
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+nipples :
+  {__                     {__
+  {__                     {__
+{_{_ {_   {__     {____ {_{_ {_
+  {__   {_   {__ {__      {__
+  {__  {_____ {__  {___   {__
+  {__  {_            {__  {__
+   {__   {____   {__ {__   {__
+<BLANKLINE>
+<BLANKLINE>
+o8 :
+  o8                             o8
+o888oo  ooooooooo8  oooooooo8  o888oo
+ 888   888oooooo8  888ooooooo   888
+ 888   888                 888  888
+  888o   88oooo888 88oooooo88    888o
+<BLANKLINE>
+<BLANKLINE>
 ogre :
  _               _
 | |_   ___  ___ | |_
 | __| / _ \/ __|| __|
 | |_ |  __/\__ \| |_
  \__| \___||___/ \__|
+<BLANKLINE>
+<BLANKLINE>
+pawp :
+<BLANKLINE>
+ _                 _
+(_)_   ____  ____ (_)_
+(___) (____)(____)(___)
+(_)  (_)_(_)(_)__ (_)
+(_)_ (__)__  _(__)(_)_
+ (__) (____)(____) (__)
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+peaks :
+  /^^                     /^^
+  /^^                     /^^
+/^/^ /^   /^^     /^^^^ /^/^ /^
+  /^^   /^   /^^ /^^      /^^
+  /^^  /^^^^^ /^^  /^^^   /^^
+  /^^  /^            /^^  /^^
+   /^^   /^^^^   /^^ /^^   /^^
 <BLANKLINE>
 <BLANKLINE>
 pebbles :
@@ -792,6 +837,9 @@ angry_face
 arrow
 »»---------------------►
 ******************************
+atish
+(| - _ - |)
+******************************
 awesome
 <:3 )~~~
 ******************************
@@ -861,6 +909,9 @@ c[_]
 cry
  (╯︵╰,)
 ******************************
+cthulhu
+^(;,;)^
+******************************
 cute_cat
 ^⨀ᴥ⨀^
 ******************************
@@ -897,14 +948,26 @@ fish2
 fish_swim
 ¸.·´¯`·.´¯`·.¸¸.·´¯`·.¸><(((º>
 ******************************
+fox
+-^^,--,~
+******************************
+ghost
+‹’’›(Ͼ˳Ͽ)‹’’›
+******************************
 glasses
 -@-@-
+******************************
+guitar
+c====(=#O| ) ~~ ♬·¯·♩¸¸♪·¯·♫¸
 ******************************
 gun
 ︻╦╤─
 ******************************
 hairstyle
 ⨌⨀_⨀⨌
+******************************
+hal
+@_'-'
 ******************************
 happy
  ۜ\(סּںסּَ` )/ۜ
@@ -924,6 +987,9 @@ heart2
 help
 ٩(͡๏̯͡๏)۶
 ******************************
+homer
+(_8(|)
+******************************
 house
 __̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___
 ******************************
@@ -938,6 +1004,9 @@ hybrix
 ******************************
 inlove
 (✿ ♥‿♥)
+******************************
+king
+-_-
 ******************************
 knife
 )xxxxx[;;;;;;;;;>
@@ -1026,6 +1095,9 @@ robot2
 rock_on
 \,,/(^_^)\,,/
 ******************************
+rocket
+∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===>
+******************************
 rose1
 --------{---(@
 ******************************
@@ -1038,8 +1110,14 @@ sad1
 sad2
 (✖╭╮✖)
 ******************************
+sat
+'(◣_◢)'
+******************************
 scissors
 ✄
+******************************
+singing
+d(^o^)b¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 ******************************
 sleeping
 (-.-)Zzz...
@@ -1071,6 +1149,12 @@ sword4
 table_flip
 (╯°□°）╯︵ ┻━┻
 ******************************
+tron
+(\/)(;,,;)(\/)
+******************************
+trumpet
+-=iii=<()
+******************************
 umadbro
 ¯\_(ツ)_/¯
 ******************************
@@ -1080,11 +1164,17 @@ up
 waves
 °º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸
 ******************************
+what?
+ة_ة
+******************************
 woman
 ▓⚗_⚗▓
 ******************************
 worm
 _/\__/\__0>
+******************************
+zable
+ಠ_ರೃ
 ******************************
 zombie
 'º_º'
@@ -1099,14 +1189,20 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _      ___
-__   __/ |    / _ \
-\ \ / /| |   | | | |
- \ V / | | _ | |_| |
-  \_/  |_|(_) \___/
+        _     _
+__   __/ |   / |
+\ \ / /| |   | |
+ \ V / | | _ | |
+  \_/  |_|(_)|_|
 <BLANKLINE>
+<BLANKLINE>
+ASCII art is also known as "computer text art".
+It involves the smart placement of typed special characters or
+letters to make a visual shape that is spread over multiple lines of text.
+Art is a Python lib for text converting to ASCII ART fancy.
 <BLANKLINE>
 Webpage : http://art.shaghighi.ir
+<BLANKLINE>
 Help :
 <BLANKLINE>
      - list --> (list of arts)
@@ -1130,8 +1226,6 @@ Traceback (most recent call last):
 art.art.artError: Invalid art name
 >>> art("coffee")
 'c[_] '
->>> art("love_you",number=2,text="test")
-'»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« '
 >>> tprint("test 2")
  _               _     ____
 | |_   ___  ___ | |_  |___ \
@@ -1171,7 +1265,7 @@ Filename: art.txt
 True
 >>> Data=tsave("test art2")
 Saved!
-Filename: art(2).txt
+Filename: art2.txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
@@ -1187,7 +1281,7 @@ True
 >>> file=open("art.txt","r")
 >>> print(len(file.read()))
 246
->>> file=open("art(2).txt","r")
+>>> file=open("art2.txt","r")
 >>> print(len(file.read()))
 288
 >>> file.close()
@@ -1221,8 +1315,8 @@ art.art.artError: number should have int type
 >>> cov.stop()
 >>> cov.save()
 >>> os.remove("art.txt")
->>> os.remove("art(2).txt")
->>> os.remove("art(3).txt")
+>>> os.remove("art2.txt")
+>>> os.remove("art3.txt")
 >>> os.remove("test.bw")
 >>> os.remove("test.txt")
 
