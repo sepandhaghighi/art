@@ -65,9 +65,9 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "pawp": [pawp_dic,False],
             "barbwire":[barbwire_dic,False],"bigchief":[bigchief_dic,False],
             "binary":[binary_dic,False],"bubble":[bubble_dic,False],
-            "calgphy2":[calgphy2_dic,False],"cosmic":[cosmic_dic,True],
+            "calgphy2":[calgphy2_dic,False],
             "cygnet":[cygnet_dic,False],"diamond":[diamond_dic,False],
-            "eftifont":[eftifont_dic,False],"fender":[fender_dic,False]}
+            "eftifont":[eftifont_dic,False]}
 
 DEFAULT_FONT = "standard"
 
