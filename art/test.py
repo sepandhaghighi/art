@@ -4,10 +4,7 @@ This function get a string as input if input is one digit add a zero
 :param input_string: input digit az string
 :type input_string:str
 :return: modified output as str
->>> import coverage
 >>> import os
->>> cov=coverage.Coverage()
->>> cov.start()
 >>> from art import *
 >>> font_list()
 3-d :
@@ -1315,8 +1312,6 @@ Traceback (most recent call last):
 art.art.artError: number should have int type
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
->>> cov.stop()
->>> cov.save()
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
