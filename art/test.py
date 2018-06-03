@@ -1276,14 +1276,17 @@ True
 >>> Data["Status"]
 True
 >>> file=open("test.txt","r")
->>> print(len(file.read()))
-282
+>>> data = file.read()
+>>> (len(data)==282) or (len(data)==294)
+True
 >>> file=open("art.txt","r")
->>> print(len(file.read()))
-246
+>>> data = file.read()
+>>> (len(data)==246) or (len(data)==252)
+True
 >>> file=open("art2.txt","r")
->>> print(len(file.read()))
-288
+>>> data = file.read()
+>>> (len(data)==288) or (len(data)==294)
+True
 >>> file.close()
 >>> Data=text2art(222)
 Traceback (most recent call last):
