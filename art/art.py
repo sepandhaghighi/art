@@ -4,32 +4,49 @@ from .text_dic import *
 import os
 import sys
 
-version = "1.1"
+version = "1.2"
 
 
 description = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 Art is a Python lib for text converting to ASCII ART fancy.'''
+
+
 class artError(Exception):
     pass
 
 
-font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard": [standard_dic, False], "avatar": [avatar_dic, True],
-            "basic": [basic_dic, True], "bulbhead": [bulbhead_dic, True], "chunky": [chunky_dic, False], "coinstak": [coinstak_dic, False],
-            "contessa": [contessa_dic, False], "contrast": [contrast_dic, True], "cyberlarge": [cyberlarge_dic, True], "cybermedium": [cybermedium_dic, True],
-            "doom": [doom_dic, False], "dotmatrix": [dotmatrix_dic, False], "drpepper": [drpepper_dic, False],
-            "epic": [epic_dic, True], "fuzzy": [fuzzy_dic, False], "isometric1": [isometric1_dic, True], "isometric2": [isometric2_dic, True],
-            "isometric3": [isometric3_dic, True], "isometric4": [isometric4_dic, True], "larry3d": [larry3d_dic, False],
-            "nancyj": [nancyj_dic, False], "ogre": [ogre_dic, False], "rectangles": [rectangles_dic, False], "roman": [roman_dic, False],
-            "rounded": [rounded_dic, False], "rowancap": [rowancap_dic, True], "script": [script_dic, False],
-            "serifcap": [serifcap_dic, True], "shadow": [shadow_dic, False], "slant": [slant_dic, False], "speed": [speed_dic, False],
-            "starwars": [starwars_dic, False], "stop": [stop_dic, False], "thin": [thin_dic, False], "usaflag": [usaflag_dic, False],
+font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
+            "standard": [standard_dic, False], "avatar": [avatar_dic, True],
+            "basic": [basic_dic, True], "bulbhead": [bulbhead_dic, True],
+            "chunky": [chunky_dic, False], "coinstak": [coinstak_dic, False],
+            "contessa": [contessa_dic, False], "contrast": [contrast_dic, True],
+            "cyberlarge": [cyberlarge_dic, True], "cybermedium": [cybermedium_dic, True],
+            "doom": [doom_dic, False], "dotmatrix": [dotmatrix_dic, False],
+            "drpepper": [drpepper_dic, False],
+            "epic": [epic_dic, True], "fuzzy": [fuzzy_dic, False],
+            "isometric1": [isometric1_dic, True], "isometric2": [isometric2_dic, True],
+            "isometric3": [isometric3_dic, True], "isometric4": [isometric4_dic, True],
+            "larry3d": [larry3d_dic, False],
+            "nancyj": [nancyj_dic, False], "ogre": [ogre_dic, False],
+            "rectangles": [rectangles_dic, False], "roman": [roman_dic, False],
+            "rounded": [rounded_dic, False], "rowancap": [rowancap_dic, True],
+            "script": [script_dic, False],
+            "serifcap": [serifcap_dic, True], "shadow": [shadow_dic, False],
+            "slant": [slant_dic, False], "speed": [speed_dic, False],
+            "starwars": [starwars_dic, False], "stop": [stop_dic, False],
+            "thin": [thin_dic, False], "usaflag": [usaflag_dic, False],
             "3-d": [dic_3d, False], "3x5": [dic_3x5, False], "5lineoblique":
-                [dic_5lineoblique, False], "alphabet": [alphabet_dic, False], "banner3-d": [banner3d_dic, True],
-            "banner3": [banner3_dic, True], "banner4": [banner4_dic, True], "bell": [bell_dic, False], "catwalk": [catwalk_dic, False], "colossal": [colossal_dic, False],
-            "acrobatic": [acrobatic_dic, True], "alligator": [alligator_dic, False], "alligator2": [alligator2_dic, False], "block2": [block2_dic, True],
-            "caligraphy": [caligraphy_dic, True], "computer": [computer_dic, True], "digital": [digital_dic, True], "doh": [doh_dic, True],
+                [dic_5lineoblique, False], "alphabet": [alphabet_dic, False],
+            "banner3-d": [banner3d_dic, True],
+            "banner3": [banner3_dic, True], "banner4": [banner4_dic, True],
+            "bell": [bell_dic, False], "catwalk": [catwalk_dic, False], "colossal": [colossal_dic, False],
+            "acrobatic": [acrobatic_dic, True], "alligator": [alligator_dic, False],
+            "alligator2": [alligator2_dic, False], "block2": [block2_dic, True],
+            "caligraphy": [caligraphy_dic, True],
+            "computer": [computer_dic, True], "digital": [digital_dic, True],
+            "doh": [doh_dic, True],
             "eftirobot": [eftirobot_dic, True], "graffiti": [graffiti_dic, True],
             "stellar": [stellar_dic, False], "swan": [swan_dic, False], "tanja": [tanja_dic, False],
             "thick": [thick_dic, False], "threepoint": [threepoint_dic, False],
@@ -46,8 +63,13 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], "standard
             "slide": [slide_dic, False], "sblood": [sblood_dic, True],
             "rozzo": [rozzo_dic, False], "pyramid": [pyramid_dic, False],
             "maxfour": [maxfour_dic, False], "nipples": [nipples_dic, False],
-            "o8": [o8_dic, False], "peaks": [peaks_dic, False], "pawp": [pawp_dic,
-                                                                         False]}
+            "o8": [o8_dic, False], "peaks": [peaks_dic, False],
+            "pawp": [pawp_dic, False],
+            "barbwire": [barbwire_dic, False], "bigchief": [bigchief_dic, False],
+            "binary": [binary_dic, False], "bubble": [bubble_dic, False],
+            "calgphy2": [calgphy2_dic, False],
+            "cygnet": [cygnet_dic, False], "diamond": [diamond_dic, False],
+            "eftifont": [eftifont_dic, False]}
 
 DEFAULT_FONT = "standard"
 
@@ -95,7 +117,7 @@ def help_func():
     '''
     tprint("art")
     tprint("v" + version)
-    print(description+"\n")
+    print(description + "\n")
     print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")

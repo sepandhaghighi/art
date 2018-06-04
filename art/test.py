@@ -4,10 +4,7 @@ This function get a string as input if input is one digit add a zero
 :param input_string: input digit az string
 :type input_string:str
 :return: modified output as str
->>> import coverage
 >>> import os
->>> cov=coverage.Coverage()
->>> cov.start()
 >>> from art import *
 >>> font_list()
 3-d :
@@ -124,6 +121,16 @@ banner4 :
 ....##....##.......##....##....##...
 ....##....########..######.....##...
 <BLANKLINE>
+barbwire :
+  ><<                     ><<
+  ><<                     ><<
+><>< ><   ><<     ><<<< ><>< ><
+  ><<   ><   ><< ><<      ><<
+  ><<  ><<<<< ><<  ><<<   ><<
+  ><<  ><            ><<  ><<
+   ><<   ><<<<   ><< ><<   ><<
+<BLANKLINE>
+<BLANKLINE>
 basic :
 d888888b d88888b .d8888. d888888b
 `~~88~~' 88'     88'  YP `~~88~~'
@@ -141,6 +148,19 @@ bell :
   |    |----'  `--.   |
   \__/ `.___, \___.'  \__/
 <BLANKLINE>
+<BLANKLINE>
+bigchief :
+_________________________
+<BLANKLINE>
+<BLANKLINE>
+--_/_-----__----__---_/_-
+  /     /___)  (_ `  /
+_(_ ___(___ __(__)__(_ __
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+binary :
+01110100 01100101 01110011 01110100
 <BLANKLINE>
 block :
 <BLANKLINE>
@@ -166,11 +186,39 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+bubble :
+  _    _    _    _
+ / \  / \  / \  / \
+( t )( e )( s )( t )
+ \_/  \_/  \_/  \_/
+<BLANKLINE>
 bulbhead :
  ____  ____  ___  ____
 (_  _)( ___)/ __)(_  _)
   )(   )__) \__ \  )(
  (__) (____)(___/ (__)
+<BLANKLINE>
+calgphy2 :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+    #                              #
+   ##                             ##
+   ##                             ##
+ ########    /##       /###     ########
+########    / ###     / #### / ########
+   ##      /   ###   ##  ###/     ##
+   ##     ##    ### ####          ##
+   ##     ########    ###         ##
+   ##     #######       ###       ##
+   ##     ##              ###     ##
+   ##     ####    /  /###  ##     ##
+   ##      ######/  / #### /      ##
+    ##      #####      ###/        ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 caligraphy :
 <BLANKLINE>
@@ -270,6 +318,23 @@ ___ ____ ____ ___
  |  |___ ___]  |
 <BLANKLINE>
 <BLANKLINE>
+cygnet :
+<BLANKLINE>
+ .       .
+-|-.-,.--|-
+ '-`'--' '-
+<BLANKLINE>
+<BLANKLINE>
+diamond :
+  /\\                     /\\
+  /\\                     /\\
+/\/\ /\   /\\     /\\\\ /\/\ /\
+  /\\   /\   /\\ /\\      /\\
+  /\\  /\\\\\ /\\  /\\\   /\\
+  /\\  /\            /\\  /\\
+   /\\   /\\\\   /\\ /\\   /\\
+<BLANKLINE>
+<BLANKLINE>
 digital :
 +-++-++-++-+
 |t||e||s||t|
@@ -329,6 +394,13 @@ drpepper :
  _| |_  ___  ___ _| |_
   | |  / ._><_-<  | |
   |_|  \___./__/  |_|
+<BLANKLINE>
+<BLANKLINE>
+eftifont :
+<BLANKLINE>
+||  _  _ ||
+| ]/o\(c'| ]
+L| \( \_)L|
 <BLANKLINE>
 <BLANKLINE>
 eftirobot :
@@ -1189,11 +1261,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _     _
-__   __/ |   / |
-\ \ / /| |   | |
- \ V / | | _ | |
-  \_/  |_|(_)|_|
+        _     ____
+__   __/ |   |___ \
+\ \ / /| |     __) |
+ \ V / | | _  / __/
+  \_/  |_|(_)|_____|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -1242,6 +1314,14 @@ art.art.artError: Invalid art name
  \__,_| \__,_||___/ \__,_| \__,_||___/ \__,_|
 <BLANKLINE>
 <BLANKLINE>
+>>> text2art("test",font = 2)
+Traceback (most recent call last):
+        ...
+art.art.artError: font should have str type
+>>> art("love_you",number=2,text=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: text should have str type
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
@@ -1276,14 +1356,17 @@ True
 >>> Data["Status"]
 True
 >>> file=open("test.txt","r")
->>> print(len(file.read()))
-282
+>>> data = file.read()
+>>> (len(data)==282) or (len(data)==294)
+True
 >>> file=open("art.txt","r")
->>> print(len(file.read()))
-246
+>>> data = file.read()
+>>> (len(data)==246) or (len(data)==252)
+True
 >>> file=open("art2.txt","r")
->>> print(len(file.read()))
-288
+>>> data = file.read()
+>>> (len(data)==288) or (len(data)==294)
+True
 >>> file.close()
 >>> Data=text2art(222)
 Traceback (most recent call last):
@@ -1312,8 +1395,6 @@ Traceback (most recent call last):
 art.art.artError: number should have int type
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
->>> cov.stop()
->>> cov.save()
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")

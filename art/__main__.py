@@ -5,16 +5,22 @@ import sys
 import doctest
 import os
 import zipfile
+import coverage
 
 if __name__ == "__main__":
     args = sys.argv
     if len(args) > 1:
         if args[1].upper() == "TEST":
+            cov = coverage.Coverage()
+            cov.start()
             doctest.testfile(
                 "test.py",
                 optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
                 | doctest.IGNORE_EXCEPTION_DETAIL,
                 verbose=False)
+            cov.stop()
+            cov.report()
+            cov.save()
         elif args[1].upper() == "LIST":
             aprint_test()
         elif args[1].upper() == "FONTS":

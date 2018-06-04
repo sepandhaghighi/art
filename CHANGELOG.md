@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.2] - 2018-06-04
+### Added
+- 8 new fonts
+	1. barbwire
+	2. bigchief
+	3. binary
+	4. bubble
+	5. calgphy2
+	6. cygnet
+	7. diamond
+	8. eftifont
+### Changed
+- Test cases modified
+
 ## [1.1] - 2018-05-25
 ### Added
 - 5 new fonts
@@ -193,7 +207,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.1...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.2...HEAD
+[1.2]: https://github.com/sepandhaghighi/art/compare/v1.1...v1.2
 [1.1]: https://github.com/sepandhaghighi/art/compare/v1.0...v1.1
 [1.0]: https://github.com/sepandhaghighi/art/compare/v0.9...v1.0
 [0.9]: https://github.com/sepandhaghighi/art/compare/v0.8...v0.9
