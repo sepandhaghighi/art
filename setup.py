@@ -23,7 +23,7 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='1.1',
+    version='1.2',
     description='ASCII Art Library For Python',
     long_description='''ASCII art is also known as "computer text art".
     It involves the smart placement of typed special characters or
@@ -34,7 +34,7 @@ setup(
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
-    download_url='https://github.com/sepandhaghighi/art/tarball/v1.1',
+    download_url='https://github.com/sepandhaghighi/art/tarball/v1.2',
     keywords="ascii art python3 python text font",
     project_urls={
         'Webpage': 'http://art.shaghighi.ir',
@@ -45,6 +45,9 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
+        'Intended Audience :: Education',
+        'Intended Audience :: End Users/Desktop',
+        'Intended Audience :: Science/Research',
         'Natural Language :: English',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
@@ -53,6 +56,11 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Text Processing :: Fonts',
+        'Topic :: Text Editors',
+        'Topic :: Text Processing :: General',
+        'Topic :: Utilities',
+        'Topic :: Multimedia',
+        'Topic :: Printing',
     ],
     license='MIT',
     include_package_data=True
