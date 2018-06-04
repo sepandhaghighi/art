@@ -11,6 +11,8 @@ description = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 Art is a Python lib for text converting to ASCII ART fancy.'''
+
+
 class artError(Exception):
     pass
 
@@ -62,12 +64,12 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "rozzo": [rozzo_dic, False], "pyramid": [pyramid_dic, False],
             "maxfour": [maxfour_dic, False], "nipples": [nipples_dic, False],
             "o8": [o8_dic, False], "peaks": [peaks_dic, False],
-            "pawp": [pawp_dic,False],
-            "barbwire":[barbwire_dic,False],"bigchief":[bigchief_dic,False],
-            "binary":[binary_dic,False],"bubble":[bubble_dic,False],
-            "calgphy2":[calgphy2_dic,False],
-            "cygnet":[cygnet_dic,False],"diamond":[diamond_dic,False],
-            "eftifont":[eftifont_dic,False]}
+            "pawp": [pawp_dic, False],
+            "barbwire": [barbwire_dic, False], "bigchief": [bigchief_dic, False],
+            "binary": [binary_dic, False], "bubble": [bubble_dic, False],
+            "calgphy2": [calgphy2_dic, False],
+            "cygnet": [cygnet_dic, False], "diamond": [diamond_dic, False],
+            "eftifont": [eftifont_dic, False]}
 
 DEFAULT_FONT = "standard"
 
@@ -115,7 +117,7 @@ def help_func():
     '''
     tprint("art")
     tprint("v" + version)
-    print(description+"\n")
+    print(description + "\n")
     print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
