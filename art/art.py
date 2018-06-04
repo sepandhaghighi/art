@@ -4,7 +4,7 @@ from .text_dic import *
 import os
 import sys
 
-version = "1.1"
+version = "1.2"
 
 
 description = '''ASCII art is also known as "computer text art".
