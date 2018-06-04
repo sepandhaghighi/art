@@ -1314,6 +1314,13 @@ art.art.artError: Invalid art name
  \__,_| \__,_||___/ \__,_| \__,_||___/ \__,_|
 <BLANKLINE>
 <BLANKLINE>
+>>> text2art("test",font = 2)
+Traceback (most recent call last):
+        ...
+art.art.artError: font should have str type
+>>> art("love_you",number=2,text=2)
+        ...
+art.art.artError: text should have str type
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
