@@ -1405,6 +1405,28 @@ art.art.artError: Invalid art name
  \__,_| \__,_||___/ \__,_| \__,_||___/ \__,_|
 <BLANKLINE>
 <BLANKLINE>
+>>> tprint("$2","block")
+<BLANKLINE>
+ .----------------.
+| .--------------. |
+| |    _____     | |
+| |   / ___ `.   | |
+| |  |_/___) |   | |
+| |   .'____.'   | |
+| |  / /____     | |
+| |  |_______|   | |
+| |              | |
+| '--------------' |
+ '----------------'
+<BLANKLINE>
+>>> tprint("salam\t","lcd")
+<BLANKLINE>
+              |
+   -   -      +    -    |- -
+   \  | |     |   | |   | | |
+   -   --     -    --
+<BLANKLINE>
+<BLANKLINE>
 >>> text2art("test",font = 2)
 Traceback (most recent call last):
         ...
