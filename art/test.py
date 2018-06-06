@@ -6,6 +6,7 @@ This function get a string as input if input is one digit add a zero
 :return: modified output as str
 >>> import os
 >>> import random
+>>> import sys
 >>> from art import *
 >>> font_list()
 3-d :
@@ -1377,14 +1378,9 @@ Help :
 >>> tprint('طط')
 <BLANKLINE>
 >>> random.seed(2)
->>> tprint("test","random")
- _____  _____ ____  _____
-/__ __\/  __// ___\/__ __\
-  / \  |  \  |    \  / \
-  | |  |  /_ \___ |  | |
-  \_/  \____\\____/  \_/
-<BLANKLINE>
-<BLANKLINE>
+>>> Art = text2art("test","random")
+>>> len(Art)
+162
 >>> Data=art('assdsds')
 Traceback (most recent call last):
         ...
