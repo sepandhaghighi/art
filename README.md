@@ -125,6 +125,18 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
 
+>>> Art=text2art("test","random") # random mode
+>>> print(Art)
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+           
+>>> Art=text2art("test","random") # random mode
+>>> print(Art)
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  | 
+
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -164,6 +176,16 @@ This function print ascii text in normal mode (return None) and raise `artError`
 | |_ |  __/\__ \| |_ 
  \__| \___||___/ \__|
                      
+>>> tprint("test","random") # random mode
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+           
+>>> tprint("test","random") # random mode
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  |  
+                  
 
 >>> tprint('testسس',chr_ignore=False) # raise artError in exception 
 Traceback (most recent call last):
