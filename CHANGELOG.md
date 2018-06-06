@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. jazmine
 	9. lcd
 	10. lean
-- random font mode added
+- random font mode
 
 ## [1.2] - 2018-06-04
 ### Added
