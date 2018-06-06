@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.3] - 2018-06-07
+### Added
+- 10 new fonts
+	1. eftitalic
+	2. eftiwater
+	3. fourtops
+	4. goofy
+	5. hollywood
+	6. invita
+	7. italic
+	8. jazmine
+	9. lcd
+	10. lean
+- random font mode added
+
 ## [1.2] - 2018-06-04
 ### Added
 - 8 new fonts
@@ -207,7 +222,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.2...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.3...HEAD
+[1.3]: https://github.com/sepandhaghighi/art/compare/v1.2...v1.3
 [1.2]: https://github.com/sepandhaghighi/art/compare/v1.1...v1.2
 [1.1]: https://github.com/sepandhaghighi/art/compare/v1.0...v1.1
 [1.0]: https://github.com/sepandhaghighi/art/compare/v0.9...v1.0
