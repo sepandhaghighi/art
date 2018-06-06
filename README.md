@@ -34,7 +34,7 @@
 
 ## Table of contents					
    * [Overview](https://github.com/sepandhaghighi/art#overview)
-   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)ra
+   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
    * [Usage](https://github.com/sepandhaghighi/art#usage)
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
