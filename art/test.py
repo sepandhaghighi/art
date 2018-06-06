@@ -1379,6 +1379,7 @@ Help :
 <BLANKLINE>
 >>> random.seed(2)
 >>> Art = text2art("test","random")
+>>> random.seed(5)
 >>> Art2= text2art("test","random")
 >>> len(Art)!=len(Art2)
 True
