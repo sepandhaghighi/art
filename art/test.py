@@ -1379,8 +1379,9 @@ Help :
 <BLANKLINE>
 >>> random.seed(2)
 >>> Art = text2art("test","random")
->>> len(Art)
-162
+>>> Art2= text2art("test","random")
+>>> len(Art)!=len(Art2)
+True
 >>> Data=art('assdsds')
 Traceback (most recent call last):
         ...
