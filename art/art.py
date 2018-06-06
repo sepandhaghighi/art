@@ -3,6 +3,7 @@ from .art_dic import *
 from .text_dic import *
 import os
 import sys
+import random
 
 version = "1.2"
 
@@ -298,8 +299,11 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if isinstance(font, str) == False:
         raise artError("font should have str type")
     font = font.lower()
-    if font not in font_map.keys():
-        fonts = sorted(font_map.keys())
+    fonts = sorted(font_map.keys())
+    if font=="random":
+        random_index = random.randint(0,len(font_map.keys()))
+        font = fonts[random_index]
+    elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     letters = font_map[font][0]
