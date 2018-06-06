@@ -300,7 +300,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    if font == "random":
+    if font == "random" or font == "rand":
         random_index = random.randint(0, len(font_map.keys()))
         font = fonts[random_index]
     elif font not in font_map.keys():
