@@ -69,7 +69,13 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "binary": [binary_dic, False], "bubble": [bubble_dic, False],
             "calgphy2": [calgphy2_dic, False],
             "cygnet": [cygnet_dic, False], "diamond": [diamond_dic, False],
-            "eftifont": [eftifont_dic, False]}
+            "eftifont": [eftifont_dic, False],"eftitalic":[eftitalic_dic,
+                                                           False],
+            "eftiwater":[eftiwater_dic,False],"fourtops":[fourtops_dic,False],
+            "goofy":[goofy_dic,True],"hollywood":[hollywood_dic,False],
+            "invita":[invita_dic,False],"italic":[italic_dic,False],
+            "jazmine":[jazmine_dic,False],"lcd":[lcd_dic,False],"lean":[
+        lean_dic,False]}
 
 DEFAULT_FONT = "standard"
 
