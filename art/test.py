@@ -411,6 +411,18 @@ eftirobot :
 /_\  \(  /__)/_\
 <BLANKLINE>
 <BLANKLINE>
+eftitalic :
+<BLANKLINE>
+  /7  __  __  /7
+ /_7,'o/ (c' /_7
+//  |_( /__)//
+<BLANKLINE>
+<BLANKLINE>
+eftiwater :
+ _        _
+ )L __ __ )L
+(( (('_))((
+<BLANKLINE>
 epic :
 _________ _______  _______ _________
 \__   __/(  ____ \(  ____ \\__   __/
@@ -422,6 +434,12 @@ _________ _______  _______ _________
    )_(   (_______/\_______)   )_(
 <BLANKLINE>
 <BLANKLINE>
+fourtops :
+ |       |
+~|~/~/(~~|~
+ | \/__) |
+<BLANKLINE>
+<BLANKLINE>
 fuzzy :
  .-.              .-.
 .' `.            .' `.
@@ -431,6 +449,15 @@ fuzzy :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+goofy :
+_        __        ___       ___        __
+(__    __) \    ___)  )  ____) (__    __)
+   |  |     |  (__   (  (___      |  |
+   |  |     |   __)   \___  \     |  |
+   |  |     |  (___   ____)  )    |  |
+___|  |____/       )_(      (_____|  |____
+<BLANKLINE>
+<BLANKLINE>
 graffiti :
   __                     __
 _/  |_   ____    _______/  |_
@@ -438,6 +465,26 @@ _/  |_   ____    _______/  |_
  |  |  \  ___/  \___ \  |  |
  |__|   \___  >/____  > |__|
             \/      \/
+<BLANKLINE>
+hollywood :
+<BLANKLINE>
+         /'                               /'
+     --/'--                           --/'--
+     /'         ____      ____        /'
+   /'         /'    )   /'    )--   /'
+ /'         /(___,/'   '---,      /'
+(__        (________ (___,/      (__
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+invita :
+<BLANKLINE>
+<BLANKLINE>
+_/_   _  _  _/_
+(__ _(/_/_)_(__
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 isometric1 :
       ___           ___           ___           ___
@@ -491,6 +538,24 @@ isometric4 :
    \__\/          \  \:\        \  \::/      \__\/
                    \__\/         \__\/
 <BLANKLINE>
+italic :
+<BLANKLINE>
+_/  _   _ _/
+/  (- _)  /
+<BLANKLINE>
+<BLANKLINE>
+jazmine :
+<BLANKLINE>
+  o                  o
+  8                  8
+ o8P .oPYo. .oPYo.  o8P
+  8  8oooo8 Yb..     8
+  8  8.       'Yb.   8
+  8  `Yooo' `YooP'   8
+::..::.....::.....:::..:
+::::::::::::::::::::::::
+::::::::::::::::::::::::
+<BLANKLINE>
 larry3d :
  __                       __
 /\ \__                   /\ \__
@@ -499,6 +564,24 @@ larry3d :
   \ \ \_ /\  __/ /\__, `\  \ \ \_
    \ \__\\ \____\\/\____/   \ \__\
     \/__/ \/____/ \/___/     \/__/
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+lcd :
+<BLANKLINE>
+  |                 |
+ -+-   -       -   -+-
+  |   |/       \    |
+   -   --      -     -
+<BLANKLINE>
+<BLANKLINE>
+lean :
+<BLANKLINE>
+   _/                                   _/
+_/_/_/_/       _/_/         _/_/_/   _/_/_/_/
+ _/         _/_/_/_/     _/_/         _/
+_/         _/               _/_/     _/
+ _/_/       _/_/_/     _/_/_/         _/_/
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
