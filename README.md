@@ -34,7 +34,7 @@
 
 ## Table of contents					
    * [Overview](https://github.com/sepandhaghighi/art#overview)
-   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
+   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)ra
    * [Usage](https://github.com/sepandhaghighi/art#usage)
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
@@ -131,7 +131,7 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
 ~|~/~/(~~|~
  | \/__) | 
            
->>> Art=text2art("test","random") # random font mode
+>>> Art=text2art("test","rand") # random font mode
 >>> print(Art)
 ___ ____ ____ ___ 
  |  |___ [__   |  
@@ -181,7 +181,7 @@ This function print ascii text in normal mode (return None) and raise `artError`
 ~|~/~/(~~|~
  | \/__) | 
            
->>> tprint("test","random") # random font mode
+>>> tprint("test","rand") # random font mode
 ___ ____ ____ ___ 
  |  |___ [__   |  
  |  |___ ___]  |  
