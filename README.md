@@ -56,7 +56,8 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
-[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)
+[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)						
+
 [![GitHub stars](https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars)](https://github.com/sepandhaghighi/art)		
 
 ## Usage
