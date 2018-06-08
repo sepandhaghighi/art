@@ -5,6 +5,25 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.4] - 2018-06-12
+### Added
+- 15 new fonts
+	1. letters
+	2. lockergnome
+	3. madrid
+	4. marquee
+	5. mike
+	6. mini
+	7. nancyj-fancy
+	8. nancyj-underlined
+	9. pepper
+	10. poison
+	11. rot13
+	12. short
+	13. small
+	14. tengwar
+	15. big
+
 ## [1.3] - 2018-06-08
 ### Added
 - 10 new fonts
@@ -222,7 +241,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.3...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.4...HEAD
+[1.4]: https://github.com/sepandhaghighi/art/compare/v1.3...v1.4
 [1.3]: https://github.com/sepandhaghighi/art/compare/v1.2...v1.3
 [1.2]: https://github.com/sepandhaghighi/art/compare/v1.1...v1.2
 [1.1]: https://github.com/sepandhaghighi/art/compare/v1.0...v1.1
