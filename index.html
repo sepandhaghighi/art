@@ -38,10 +38,11 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
 |__]   |      ___] |___ |    |  | | \| |__/    |  | |  | |__] |  | | |__] |  | | 
                                                                                  
 
- _  _  ____  ____  ___  ____  _____  _  _    __    ___  
-( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  /  )  (__ \ 
- \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    )(    / _/ 
-  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (__)()(____)
+ _  _  ____  ____  ___  ____  _____  _  _    __    ___ 
+( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  /  )  (__ )
+ \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    )(    (_ \
+  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (__)()(___/
+
 
 
         </pre>
@@ -64,7 +65,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)</p>
         <hr/> 
     <h2>Source Code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v1.2.zip">Version 1.2</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v1.3.zip">Version 1.3</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -154,6 +155,18 @@ art.art.artError: number should have int type
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
 
+>>> Art=text2art("test","random") # random font mode
+>>> print(Art)
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+           
+>>> Art=text2art("test","rand") # random font mode
+>>> print(Art)
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  | 
+ 
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -191,7 +204,17 @@ art.art.artError: س is invalid
 | |_ |  __/\__ \| |_ 
  \__| \___||___/ \__|
                      
-
+>>> tprint("test","random") # random font mode
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+           
+>>> tprint("test","rand") # random font mode
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  | 
+ 
+ 
 >>> tprint('testسس',chr_ignore=False) # raise artError in exception 
 Traceback (most recent call last):
        ...
