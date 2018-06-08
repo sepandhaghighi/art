@@ -151,6 +151,16 @@ bell :
   \__/ `.___, \___.'  \__/
 <BLANKLINE>
 <BLANKLINE>
+big :
+ _               _
+| |             | |
+| |_   ___  ___ | |_
+| __| / _ \/ __|| __|
+| |_ |  __/\__ \| |_
+ \__| \___||___/ \__|
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 bigchief :
 _________________________
 <BLANKLINE>

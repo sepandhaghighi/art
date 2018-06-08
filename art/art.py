@@ -84,7 +84,8 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "nancyj-underlined":[nancyj_underlined_dic,False],
             "pepper":[pepper_dic,False],"poison":[poison_dic,True],
             "rot13":[rot13_dic,False],"short":[short_dic,False],
-            "small":[small_dic,False],"tengwar":[tengwar_dic,True]}
+            "small":[small_dic,False],"tengwar":[tengwar_dic,True],
+            "big":[big_dic,False]}
 
 DEFAULT_FONT = "standard"
 
