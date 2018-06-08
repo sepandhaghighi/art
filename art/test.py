@@ -587,10 +587,50 @@ _/         _/               _/_/     _/
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+letters :
+tt                 tt
+tt      eee   sss  tt
+tttt  ee   e s     tttt
+tt    eeeee   sss  tt
+ tttt  eeeee     s  tttt
+              sss
+<BLANKLINE>
+lockergnome :
+ :|             :|
+:::| :~~/ <::< :::|
+ :|  :::, >::>  :|
+<BLANKLINE>
+madrid :
+|-         |-
+|  /=\ /== |
+\= \=  ==/ \=
+<BLANKLINE>
+<BLANKLINE>
+marquee :
+  .::                     .::
+  .::                     .::
+.:.: .:   .::     .:::: .:.: .:
+  .::   .:   .:: .::      .::
+  .::  .::::: .::  .:::   .::
+  .::  .:            .::  .::
+   .::   .::::   .:: .::   .::
+<BLANKLINE>
+<BLANKLINE>
 maxfour :
  |       |
 ~|~/~/(~~|~
  | \/__) |
+<BLANKLINE>
+<BLANKLINE>
+mike :
+  _   _     _
+   | |/ //   |
+<BLANKLINE>
+<BLANKLINE>
+mini :
+<BLANKLINE>
+_|_  _   _ _|_
+ |_ (/_ _>  |_
 <BLANKLINE>
 <BLANKLINE>
 nancyj :
@@ -601,6 +641,25 @@ d8888P .d8888b. .d8888b. d8888P
   88   88.  ...       88   88
   dP   `88888P' `88888P'   dP
 <BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+nancyj-fancy :
+  dP                       dP
+  88                       88
+d8888P .d8888b. .d8888b. d8888P
+  88   88ooood8 Y8ooooo.   88
+  88   88.  ...       88   88
+  dP   `88888P' `88888P'   dP
+<BLANKLINE>
+<BLANKLINE>
+nancyj-underlined :
+  dP                       dP
+  88                       88
+d8888P .d8888b. .d8888b. d8888P
+  88   88ooood8 Y8ooooo.   88
+  88   88.  ...       88   88
+  dP   `88888P' `88888P'   dP
+oooooooooooooooooooooooooooooooo
 <BLANKLINE>
 <BLANKLINE>
 nipples :
@@ -662,6 +721,26 @@ pebbles :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+pepper :
+<BLANKLINE>
+_/_ _   __/_
+/  /_'_\ /
+<BLANKLINE>
+<BLANKLINE>
+poison :
+<BLANKLINE>
+@@@@@@@  @@@@@@@@   @@@@@@   @@@@@@@
+@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@
+  @@!    @@!       !@@         @@!
+  !@!    !@!       !@!         !@!
+  @!!    @!!!:!    !!@@!!      @!!
+  !!!    !!!!!:     !!@!!!     !!!
+  !!:    !!:            !:!    !!:
+  :!:    :!:           !:!     :!:
+   ::     :: ::::  :::: ::      ::
+   :     : :: ::   :: : :       :
+<BLANKLINE>
+<BLANKLINE>
 puffy :
  _                 _
 ( )_              ( )_
@@ -697,6 +776,8 @@ roman :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+rot13 :
+grfg
 rounded :
 <BLANKLINE>
    _                   _
@@ -753,6 +834,11 @@ shadow :
 \__| \___| ____/ \__|
 <BLANKLINE>
 <BLANKLINE>
+short :
+|- _  _|-
+|_(/__\|_
+<BLANKLINE>
+<BLANKLINE>
 slant :
    __                  __
   / /_  ___    _____  / /_
@@ -776,6 +862,12 @@ slscript :
 <__ </_/_)_<__
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+small :
+ _             _
+| |_  ___  ___| |_
+|  _|/ -_)(_-<|  _|
+ \__|\___|/__/ \__|
 <BLANKLINE>
 smisome1 :
     ___       ___       ___       ___
@@ -890,6 +982,18 @@ t)tTTT                 t)tTTT
   t)T   e)EEEE s)SSSS    t)T
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+tengwar :
+             .dP'
+           dP'
+<BLANKLINE>
+`Yb.d888b   'Yb   .d888b.  `Yb.d888b
+ 88'    8Y   88   8'   `Yb  88'    8Y
+ 88     8P   88   Yb.   88  88     8P
+ 88   ,dP   .8P       .dP   88   ,dP
+ 88                 .dP'    88
+ 88               .dP'      88
+.8P                        .8P
 <BLANKLINE>
 thick :
  w               w
@@ -1379,7 +1483,7 @@ Help :
 <BLANKLINE>
 >>> random.seed(2)
 >>> Art = text2art("test","random")
->>> random.seed(5)
+>>> random.seed(9)
 >>> Art2= text2art("test","random")
 >>> len(Art)!=len(Art2)
 True
