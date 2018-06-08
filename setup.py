@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
+
+MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
+    It involves the smart placement of typed special characters or
+    letters to make a visual shape that is spread over multiple lines of text.
+    Art is a Python lib for text converting to ASCII ART fancy.'''
 
 def get_requires():
     requirements = open("requirements.txt", "r").read()
@@ -17,7 +25,7 @@ def read_description():
             description += c.read()
         return description
     except Exception:
-        return ""
+        return MINIMAL_DESCRIPTION
 
 
 setup(
@@ -25,11 +33,7 @@ setup(
     packages=['art'],
     version='1.3',
     description='ASCII Art Library For Python',
-    long_description='''ASCII art is also known as "computer text art".
-    It involves the smart placement of typed special characters or
-    letters to make a visual shape that is spread over multiple lines of text.
-    Art is a Python lib for text converting to ASCII ART fancy.'''
-                     + read_description(),
+    long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
