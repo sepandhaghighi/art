@@ -31,14 +31,14 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='1.3',
+    version='1.4',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
-    download_url='https://github.com/sepandhaghighi/art/tarball/v1.3',
+    download_url='https://github.com/sepandhaghighi/art/tarball/v1.4',
     keywords="ascii art python3 python text font",
     project_urls={
         'Webpage': 'http://art.shaghighi.ir',
