@@ -56,7 +56,10 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
-[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)
+[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)						
+
+[![GitHub stars](https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars)](https://github.com/sepandhaghighi/art)		
+
 ## Usage
 
 ### 1-Line Art
@@ -125,6 +128,18 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
 
+>>> Art=text2art("test","random") # random font mode
+>>> print(Art)
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+           
+>>> Art=text2art("test","rand") # random font mode
+>>> print(Art)
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  | 
+
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -164,6 +179,16 @@ This function print ascii text in normal mode (return None) and raise `artError`
 | |_ |  __/\__ \| |_ 
  \__| \___||___/ \__|
                      
+>>> tprint("test","random") # random font mode
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+           
+>>> tprint("test","rand") # random font mode
+___ ____ ____ ___ 
+ |  |___ [__   |  
+ |  |___ ___]  |  
+                  
 
 >>> tprint('testسس',chr_ignore=False) # raise artError in exception 
 Traceback (most recent call last):

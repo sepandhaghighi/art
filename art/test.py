@@ -5,6 +5,8 @@ This function get a string as input if input is one digit add a zero
 :type input_string:str
 :return: modified output as str
 >>> import os
+>>> import random
+>>> import sys
 >>> from art import *
 >>> font_list()
 3-d :
@@ -411,6 +413,18 @@ eftirobot :
 /_\  \(  /__)/_\
 <BLANKLINE>
 <BLANKLINE>
+eftitalic :
+<BLANKLINE>
+  /7  __  __  /7
+ /_7,'o/ (c' /_7
+//  |_( /__)//
+<BLANKLINE>
+<BLANKLINE>
+eftiwater :
+ _        _
+ )L __ __ )L
+(( (('_))((
+<BLANKLINE>
 epic :
 _________ _______  _______ _________
 \__   __/(  ____ \(  ____ \\__   __/
@@ -422,6 +436,12 @@ _________ _______  _______ _________
    )_(   (_______/\_______)   )_(
 <BLANKLINE>
 <BLANKLINE>
+fourtops :
+ |       |
+~|~/~/(~~|~
+ | \/__) |
+<BLANKLINE>
+<BLANKLINE>
 fuzzy :
  .-.              .-.
 .' `.            .' `.
@@ -431,6 +451,15 @@ fuzzy :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+goofy :
+_        __        ___       ___        __
+(__    __) \    ___)  )  ____) (__    __)
+   |  |     |  (__   (  (___      |  |
+   |  |     |   __)   \___  \     |  |
+   |  |     |  (___   ____)  )    |  |
+___|  |____/       )_(      (_____|  |____
+<BLANKLINE>
+<BLANKLINE>
 graffiti :
   __                     __
 _/  |_   ____    _______/  |_
@@ -438,6 +467,26 @@ _/  |_   ____    _______/  |_
  |  |  \  ___/  \___ \  |  |
  |__|   \___  >/____  > |__|
             \/      \/
+<BLANKLINE>
+hollywood :
+<BLANKLINE>
+         /'                               /'
+     --/'--                           --/'--
+     /'         ____      ____        /'
+   /'         /'    )   /'    )--   /'
+ /'         /(___,/'   '---,      /'
+(__        (________ (___,/      (__
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+invita :
+<BLANKLINE>
+<BLANKLINE>
+_/_   _  _  _/_
+(__ _(/_/_)_(__
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 isometric1 :
       ___           ___           ___           ___
@@ -491,6 +540,24 @@ isometric4 :
    \__\/          \  \:\        \  \::/      \__\/
                    \__\/         \__\/
 <BLANKLINE>
+italic :
+<BLANKLINE>
+_/  _   _ _/
+/  (- _)  /
+<BLANKLINE>
+<BLANKLINE>
+jazmine :
+<BLANKLINE>
+  o                  o
+  8                  8
+ o8P .oPYo. .oPYo.  o8P
+  8  8oooo8 Yb..     8
+  8  8.       'Yb.   8
+  8  `Yooo' `YooP'   8
+::..::.....::.....:::..:
+::::::::::::::::::::::::
+::::::::::::::::::::::::
+<BLANKLINE>
 larry3d :
  __                       __
 /\ \__                   /\ \__
@@ -499,6 +566,24 @@ larry3d :
   \ \ \_ /\  __/ /\__, `\  \ \ \_
    \ \__\\ \____\\/\____/   \ \__\
     \/__/ \/____/ \/___/     \/__/
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+lcd :
+<BLANKLINE>
+  |                 |
+ -+-   -       -   -+-
+  |   |/       \    |
+   -   --      -     -
+<BLANKLINE>
+<BLANKLINE>
+lean :
+<BLANKLINE>
+   _/                                   _/
+_/_/_/_/       _/_/         _/_/_/   _/_/_/_/
+ _/         _/_/_/_/     _/_/         _/
+_/         _/               _/_/     _/
+ _/_/       _/_/_/     _/_/_/         _/_/
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
@@ -1261,11 +1346,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _     ____
-__   __/ |   |___ \
-\ \ / /| |     __) |
- \ V / | | _  / __/
-  \_/  |_|(_)|_____|
+        _     _____
+__   __/ |   |___ /
+\ \ / /| |     |_ \
+ \ V / | | _  ___) |
+  \_/  |_|(_)|____/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -1292,6 +1377,12 @@ Help :
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
 >>> tprint('طط')
 <BLANKLINE>
+>>> random.seed(2)
+>>> Art = text2art("test","random")
+>>> random.seed(5)
+>>> Art2= text2art("test","random")
+>>> len(Art)!=len(Art2)
+True
 >>> Data=art('assdsds')
 Traceback (most recent call last):
         ...
@@ -1312,6 +1403,28 @@ art.art.artError: Invalid art name
  / _` | / _` |/ __| / _` | / _` |/ __| / _` |
 | (_| || (_| |\__ \| (_| || (_| |\__ \| (_| |
  \__,_| \__,_||___/ \__,_| \__,_||___/ \__,_|
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("$2","block")
+<BLANKLINE>
+ .----------------.
+| .--------------. |
+| |    _____     | |
+| |   / ___ `.   | |
+| |  |_/___) |   | |
+| |   .'____.'   | |
+| |  / /____     | |
+| |  |_______|   | |
+| |              | |
+| '--------------' |
+ '----------------'
+<BLANKLINE>
+>>> tprint("salam\t","lcd")
+<BLANKLINE>
+              |
+   -   -      +    -    |- -
+   \  | |     |   | |   | | |
+   -   --     -    --
 <BLANKLINE>
 <BLANKLINE>
 >>> text2art("test",font = 2)

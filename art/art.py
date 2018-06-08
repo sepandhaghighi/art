@@ -3,8 +3,9 @@ from .art_dic import *
 from .text_dic import *
 import os
 import sys
+import random
 
-version = "1.2"
+version = "1.3"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -69,7 +70,13 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "binary": [binary_dic, False], "bubble": [bubble_dic, False],
             "calgphy2": [calgphy2_dic, False],
             "cygnet": [cygnet_dic, False], "diamond": [diamond_dic, False],
-            "eftifont": [eftifont_dic, False]}
+            "eftifont": [eftifont_dic, False], "eftitalic": [eftitalic_dic,
+                                                             False],
+            "eftiwater": [eftiwater_dic, False], "fourtops": [fourtops_dic, False],
+            "goofy": [goofy_dic, True], "hollywood": [hollywood_dic, False],
+            "invita": [invita_dic, False], "italic": [italic_dic, False],
+            "jazmine": [jazmine_dic, False], "lcd": [lcd_dic, False], "lean": [
+    lean_dic, False]}
 
 DEFAULT_FONT = "standard"
 
@@ -292,8 +299,11 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if isinstance(font, str) == False:
         raise artError("font should have str type")
     font = font.lower()
-    if font not in font_map.keys():
-        fonts = sorted(font_map.keys())
+    fonts = sorted(font_map.keys())
+    if font == "random" or font == "rand":
+        random_index = random.randint(0, len(font_map.keys()))
+        font = fonts[random_index]
+    elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     letters = font_map[font][0]
