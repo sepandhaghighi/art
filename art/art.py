@@ -75,8 +75,16 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "eftiwater": [eftiwater_dic, False], "fourtops": [fourtops_dic, False],
             "goofy": [goofy_dic, True], "hollywood": [hollywood_dic, False],
             "invita": [invita_dic, False], "italic": [italic_dic, False],
-            "jazmine": [jazmine_dic, False], "lcd": [lcd_dic, False], "lean": [
-    lean_dic, False]}
+            "jazmine": [jazmine_dic, False], "lcd": [lcd_dic, False],
+            "lean": [lean_dic, False],"letters":[letters_dic,False],
+            "lockergnome":[lockergnome_dic,False],"madrid":[madrid_dic,False],
+            "marquee":[marquee_dic,False],"mike":[mike_dic,True],
+            "mini":[mini_dic,False],"mirror":[mirror_dic,False],
+            "nancyj-fancy":[nancyj_fancy_dic,False],
+            "nancyj-underlined":[nancyj_underlined_dic,False],
+            "pepper":[pepper_dic,False],"poison":[poison_dic,True],
+            "rot13":[rot13_dic,False],"short":[short_dic,False],
+            "small":[small_dic,False],"tengwar":[tengwar_dic,True]}
 
 DEFAULT_FONT = "standard"
 
