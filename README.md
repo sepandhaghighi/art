@@ -65,12 +65,10 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 		<td align="center">PyPI Counter</td>
 		<td align="center"><a href="http://pepy.tech/count/art"><img src="http://pepy.tech/badge/art"></a></td>
 	</tr>
-
 	<tr>
 		<td align="center">Github Stars</td>
 		<td align="center"><a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars"></a></td>
 	</tr>
-
 	<tr>
 		<td align="center">Font Counter</td>
 		<td align="center">120</td>
