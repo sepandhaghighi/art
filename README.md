@@ -350,7 +350,7 @@ Just send your text to one of these bots. 👇👇👇👇
 
 
 <div align="center">
-<a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
+<a href="https://asciinema.org/a/186368" target="_blank"><img src="https://asciinema.org/a/186368.png" /></a>
 <p>Screen Record</p>
 </div>
 
