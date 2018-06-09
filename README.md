@@ -55,11 +55,38 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
-[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)						
 
-[![GitHub stars](https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars)](https://github.com/sepandhaghighi/art)	
+<table>
+	<tr> 
+		<td align="center">Open Hub</td>
+		<td align="center"><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>
+		
+	</tr>
+	<tr>
+		<td align="center">PyPI Counter</td>
+		<td align="center"><a href="http://pepy.tech/count/art"><img src="http://pepy.tech/badge/art"></a></td>
+	</tr>
 
-[![OPEN HUB](https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif)](https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif)
+	<tr>
+		<td align="center">Github Stars</td>
+		<td align="center"><a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars"></a></td>
+	</tr>
+
+	<tr>
+		<td align="center">Font Counter</td>
+		<td align="center">120</td>
+	</tr>
+
+	<tr>
+		<td align="center">1-Line Art Counter</td>
+		<td align="center">120</td>
+	</tr>
+
+	
+
+
+</table>
+    
 
 ## Usage
 
