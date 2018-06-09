@@ -55,12 +55,11 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
-
+<html>
 <table>
 	<tr> 
 		<td align="center">Open Hub</td>
-		<td align="center"><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>
-		
+		<td align="center"><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>	
 	</tr>
 	<tr>
 		<td align="center">PyPI Counter</td>
@@ -81,11 +80,8 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 		<td align="center">1-Line Art Counter</td>
 		<td align="center">120</td>
 	</tr>
-
-	
-
-
 </table>
+</html>
     
 
 ## Usage
