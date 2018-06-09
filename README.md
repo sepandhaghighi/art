@@ -27,7 +27,6 @@
 <a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
-
 </div>
 	
 ----------
@@ -58,7 +57,9 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
 [![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)						
 
-[![GitHub stars](https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars)](https://github.com/sepandhaghighi/art)		
+[![GitHub stars](https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars)](https://github.com/sepandhaghighi/art)	
+
+[![OPEN HUB](https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif)](https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif)
 
 ## Usage
 
