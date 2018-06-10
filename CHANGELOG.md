@@ -37,9 +37,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	11. kiss
 - random 1-line art mode
 ### Changed
-- Minor bug in text2art random range fixed
-- README.md modified
-- aprint_test function renamed to art_list
+- Minor bug in `text2art` random range fixed
+- `README.md` modified
+- `aprint_test` function renamed to `art_list`
 
 ## [1.3] - 2018-06-08
 ### Added
@@ -96,10 +96,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	15. trumpet
 - CLI description
 ### Changed
-- README.md modified
+- `README.md` modified
 - Test cases modified
 - File name bug in UNIX fixed
-- CHANGELOG.md modified
+- `CHANGELOG.md` modified
 
 ## [1.0] - 2018-05-20
 ### Added
@@ -121,7 +121,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	15. pebbles
 - Typo-Tolerance system
 ### Changed
-- README.md modified
+- `README.md` modified
 - Test cases modified
 
 ## [0.9] - 2018-05-08
@@ -139,18 +139,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	10. stellar 
 
 ### Changed
-- MANIFEST.in modified
-- INSTALL.md modified
+- `MANIFEST.in` modified
+- `INSTALL.md` modified
 
 ## [0.8] - 2018-03-13
 ### Added
-- CHANGELOG
+- `CHANGELOG.md`
 
 ### Changed
 - Functions error response
-- README.md modified
-- tsave function extension bug fixed
-- text2art response bug fixed ("\r\n")
+- `README.md` modified
+- `tsave` function extension bug fixed
+- `text2art` response bug fixed ("\r\n")
 - setup file modified
 
 ## [0.7] - 2018-01-20
