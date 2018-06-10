@@ -313,7 +313,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     font = font.lower()
     fonts = sorted(font_map.keys())
     if font == "random" or font == "rand":
-        random_index = random.randint(0, len(font_map.keys()))
+        random_index = random.randint(0, len(fonts)-1)
         font = fonts[random_index]
     elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
