@@ -1491,11 +1491,15 @@ Help :
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
 >>> tprint('طط')
 <BLANKLINE>
->>> random.seed(2)
->>> Art = text2art("test","random")
+>>> random.seed(3)
+>>> Art = art("random")
+>>> Text = text2art("test","random")
 >>> random.seed(9)
->>> Art2= text2art("test","random")
+>>> Text2 = text2art("test","random")
+>>> Art2 =  art("random")
 >>> len(Art)!=len(Art2)
+True
+>>> len(Text)!=len(Text2)
 True
 >>> Data=art('assdsds')
 Traceback (most recent call last):
