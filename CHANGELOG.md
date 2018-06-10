@@ -39,6 +39,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Minor bug in text2art random range fixed
 - README.md modified
+- aprint_test function renamed to art_list
 
 ## [1.3] - 2018-06-08
 ### Added

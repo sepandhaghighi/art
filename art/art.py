@@ -111,7 +111,7 @@ def font_list():
         tprint("test", str(item))
 
 
-def aprint_test():
+def art_list():
     '''
     This Function Print All Of 1Line Arts
     :return: None

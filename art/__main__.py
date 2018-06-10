@@ -22,7 +22,7 @@ if __name__ == "__main__":
             cov.report()
             cov.save()
         elif args[1].upper() == "LIST":
-            aprint_test()
+            art_list()
         elif args[1].upper() == "FONTS":
             font_list()
         elif len(args) > 2:
