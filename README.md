@@ -98,6 +98,10 @@ c[_]
 >>> art_3=art("love_you",number=1,text="test") # 2-part art
 >>> print(art_3)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> art("random") # random 1-line art mode
+'(っ◕‿◕)っ '
+>>> art("rand")   # random 1-line art mode
+'t(-_-t) '
 >>> art(22,number=1,text="") # raise artError
 Traceback (most recent call last):
         ...
@@ -114,6 +118,10 @@ This function print 1-line art in normal mode (return None) and raise `artError`
  ۜ\(סּںסּَ` )/ۜ
 >>> aprint("love_you",number=1,text="test")  # 2-part art
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> aprint("random") # random 1-line art mode
+'(っ◕‿◕)っ '
+>>> aprint("rand")   # random 1-line art mode
+'t(-_-t) '
 >>> aprint("woman",number="22",text="") # raise artError
 Traceback (most recent call last):
         ...
