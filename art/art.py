@@ -166,8 +166,11 @@ def art(artname, number=1, text=""):
     if isinstance(artname, str) == False:
         raise artError("artname shoud have str type")
     artname = artname.lower()
-    if artname not in art_dic.keys():
-        arts = sorted(art_dic.keys())
+    arts = sorted(art_dic.keys())
+    if artname == "random" or artname =="rand":
+        random_index = random.randint(0, len(arts)-1)
+        artname = arts[random_index]
+    elif artname not in art_dic.keys():
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
