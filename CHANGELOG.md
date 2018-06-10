@@ -23,6 +23,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. small
 	14. tengwar
 	15. big
+- 11 new 1-line art
+	1. teddy
+	2. dice
+	3. bee
+	4. ukulele
+	5. perky
+	6. snail
+	7. decorate
+	8. kirby
+	9. mango
+	10. bunny
+	11. kiss
 - random 1-line art mode
 ### Changed
 - Minor bug in text2art random range fixed
