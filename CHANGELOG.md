@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - random 1-line art mode
 ### Changed
 - Minor bug in text2art random range fixed
+- README.md modified
 
 ## [1.3] - 2018-06-08
 ### Added
