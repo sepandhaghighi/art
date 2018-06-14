@@ -16,7 +16,7 @@
         <link href="images/favicon/3.png" rel="apple-touch-icon" sizes="114x114">
     </head>
     <body>
-     <div id="particles-js" itemprop="particleSection"> </div>
+     <div id="particles-js" itemprop="particleSection"> 
         <div class="siteWrapper" id="siteWrapper" itemprop="mainContentOfPage">
         <div class="title">
         <pre>
@@ -38,10 +38,11 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
 |__]   |      ___] |___ |    |  | | \| |__/    |  | |  | |__] |  | | |__] |  | | 
                                                                                  
 
- _  _  ____  ____  ___  ____  _____  _  _    __    ___ 
-( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  /  )  (__ )
- \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    )(    (_ \
-  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (__)()(___/
+ _  _  ____  ____  ___  ____  _____  _  _    __     __  
+( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  /  )   /. | 
+ \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    )(   (_  _)
+  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (__)()  (_) 
+
 
 
 
@@ -49,8 +50,8 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
         <div style="margin-bottom:10px;">
         <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
         <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-        <a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
-        <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
+        <a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-120-blue.svg"></a>
+        <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-130-orange.svg"></a>
         <a href="http://github.com/sepandhaghighi/art"><img src="https://img.shields.io/badge/Github-Repo-green.svg"></a>
         <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
         <a href="https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md"><img src="https://img.shields.io/badge/Change-log-lightgrey.svg"></a>
@@ -62,11 +63,29 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
     <p>ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or letters to make a visual shape that is spread over multiple lines of text.
 
 Art is a Python lib for text converting to ASCII ART fancy. ;-)</p>
+<table style="border:1px solid black;">
+	<tr > 
+		<td align="center" style="border:1px solid black;">Open Hub</td>
+		<td align="center"><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>	
+	</tr>
+	<tr>
+		<td align="center">PyPI Counter</td>
+		<td align="center"><a href="http://pepy.tech/count/art"><img src="http://pepy.tech/badge/art"></a></td>
+	</tr>
+	<tr>
+		<td align="center">Font Counter</td>
+		<td align="center">120</td>
+	</tr>
+	<tr>
+		<td align="center">1-Line-Art Counter</td>
+		<td align="center">130</td>
+	</tr>
+</table>
     <h1>Install</h1>
         <hr/> 
     <h2>Source Code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v1.3.zip">Version 1.3</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v1.4.zip">Version 1.4</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -106,6 +125,10 @@ c[_]
 >>> art_3=art("love_you",number=1,text="test") # 2-part art
 >>> print(art_3)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> art("random") # random 1-line art mode
+'(っ◕‿◕)っ '
+>>> art("rand")   # random 1-line art mode
+'t(-_-t) '
 >>> art(22,number=1,text="") # raise artError
 Traceback (most recent call last):
 ...
@@ -120,6 +143,10 @@ art.art.artError: artname shoud have str type
  ۜ\(סּںסּَ` )/ۜ
 >>> aprint("love_you",number=1,text="test")  # 2-part art
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> aprint("random") # random 1-line art mode
+'(っ◕‿◕)っ '
+>>> aprint("rand")   # random 1-line art mode
+'t(-_-t) '
 >>> aprint("woman",number="22",text="") # raise artError
 Traceback (most recent call last):
         ...
@@ -336,8 +363,9 @@ ___ ____ ____ ___
         <li>Save :  <code>python -m art save yourtext fontname(optional)</code></li>
         <li>All  :  <code>python -m art all yourtext</code></li>
     </ul>
+<h2>Screen Record</h2>
 <div class="preview">
-<a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
+<a href="https://asciinema.org/a/186368" target="_blank"><img src="https://asciinema.org/a/186368.png" /></a>
 <p>Screen Record</p>
   </div> 
             </div>
@@ -345,6 +373,7 @@ ___ ____ ____ ___
                 <p> Copyright (c) 2018 <a href="http://www.moduland.ir" target="_blank">Moduland Co</a></p>
     </div>
             </div>
+    </div>
      
     <script src="particles.min.js"></script>
     <script src="app.js"></script>

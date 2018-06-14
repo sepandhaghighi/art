@@ -3,7 +3,17 @@
     src: url("fonts/Baloo.ttf");
 }
 
+table {
+    border-collapse: collapse;
+}
 
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 7px;
+}
 .title{
     text-align: center;
 }
@@ -115,7 +125,7 @@ body{
     color:yellow;
 }
 #particles-js{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: bisque;
@@ -126,10 +136,11 @@ body{
 
 
 .siteWrapper {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 2;
+    overflow: auto;
     
 }
 
