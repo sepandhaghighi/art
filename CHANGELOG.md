@@ -5,6 +5,43 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.4] - 2018-06-14
+### Added
+- 15 new fonts
+	1. letters
+	2. lockergnome
+	3. madrid
+	4. marquee
+	5. mike
+	6. mini
+	7. nancyj-fancy
+	8. nancyj-underlined
+	9. pepper
+	10. poison
+	11. rot13
+	12. short
+	13. small
+	14. tengwar
+	15. big
+- 11 new 1-line art
+	1. teddy
+	2. dice
+	3. bee
+	4. ukulele
+	5. perky
+	6. snail
+	7. decorate
+	8. kirby
+	9. mango
+	10. bunny
+	11. kiss
+- random 1-line art mode
+### Changed
+- Minor bug in `text2art` random range fixed
+- `README.md` modified
+- `aprint_test` function renamed to `art_list`
+- `setup.py` modified
+
 ## [1.3] - 2018-06-08
 ### Added
 - 10 new fonts
@@ -60,10 +97,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	15. trumpet
 - CLI description
 ### Changed
-- README.md modified
+- `README.md` modified
 - Test cases modified
 - File name bug in UNIX fixed
-- CHANGELOG.md modified
+- `CHANGELOG.md` modified
 
 ## [1.0] - 2018-05-20
 ### Added
@@ -85,7 +122,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	15. pebbles
 - Typo-Tolerance system
 ### Changed
-- README.md modified
+- `README.md` modified
 - Test cases modified
 
 ## [0.9] - 2018-05-08
@@ -103,19 +140,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	10. stellar 
 
 ### Changed
-- MANIFEST.in modified
-- INSTALL.md modified
+- `MANIFEST.in` modified
+- `INSTALL.md` modified
 
 ## [0.8] - 2018-03-13
 ### Added
-- CHANGELOG
+- `CHANGELOG.md`
 
 ### Changed
 - Functions error response
-- README.md modified
-- tsave function extension bug fixed
-- text2art response bug fixed ("\r\n")
-- setup file modified
+- `README.md` modified
+- `tsave` function extension bug fixed
+- `text2art` response bug fixed ("\r\n")
+- `setup.py` modified
 
 ## [0.7] - 2018-01-20
 ### Added
@@ -222,7 +259,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.3...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.4...HEAD
+[1.4]: https://github.com/sepandhaghighi/art/compare/v1.3...v1.4
 [1.3]: https://github.com/sepandhaghighi/art/compare/v1.2...v1.3
 [1.2]: https://github.com/sepandhaghighi/art/compare/v1.1...v1.2
 [1.1]: https://github.com/sepandhaghighi/art/compare/v1.0...v1.1

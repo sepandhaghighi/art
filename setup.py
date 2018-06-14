@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
+
+MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
+    It involves the smart placement of typed special characters or
+    letters to make a visual shape that is spread over multiple lines of text.
+    Art is a Python lib for text converting to ASCII ART fancy.'''
 
 def get_requires():
     requirements = open("requirements.txt", "r").read()
@@ -17,28 +25,24 @@ def read_description():
             description += c.read()
         return description
     except Exception:
-        return ""
+        return MINIMAL_DESCRIPTION
 
 
 setup(
     name='art',
     packages=['art'],
-    version='1.3',
+    version='1.4',
     description='ASCII Art Library For Python',
-    long_description='''ASCII art is also known as "computer text art".
-    It involves the smart placement of typed special characters or
-    letters to make a visual shape that is spread over multiple lines of text.
-    Art is a Python lib for text converting to ASCII ART fancy.'''
-                     + read_description(),
+    long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
-    download_url='https://github.com/sepandhaghighi/art/tarball/v1.3',
     keywords="ascii art python3 python text font",
     project_urls={
         'Webpage': 'http://art.shaghighi.ir',
         'Source': 'https://github.com/sepandhaghighi/art',
+        'Tracker': 'https://github.com/sepandhaghighi/art/issues',
     },
     install_requires=get_requires(),
     python_requires='>=2.7',

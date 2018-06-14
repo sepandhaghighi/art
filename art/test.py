@@ -151,6 +151,16 @@ bell :
   \__/ `.___, \___.'  \__/
 <BLANKLINE>
 <BLANKLINE>
+big :
+ _               _
+| |             | |
+| |_   ___  ___ | |_
+| __| / _ \/ __|| __|
+| |_ |  __/\__ \| |_
+ \__| \___||___/ \__|
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 bigchief :
 _________________________
 <BLANKLINE>
@@ -587,10 +597,50 @@ _/         _/               _/_/     _/
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+letters :
+tt                 tt
+tt      eee   sss  tt
+tttt  ee   e s     tttt
+tt    eeeee   sss  tt
+ tttt  eeeee     s  tttt
+              sss
+<BLANKLINE>
+lockergnome :
+ :|             :|
+:::| :~~/ <::< :::|
+ :|  :::, >::>  :|
+<BLANKLINE>
+madrid :
+|-         |-
+|  /=\ /== |
+\= \=  ==/ \=
+<BLANKLINE>
+<BLANKLINE>
+marquee :
+  .::                     .::
+  .::                     .::
+.:.: .:   .::     .:::: .:.: .:
+  .::   .:   .:: .::      .::
+  .::  .::::: .::  .:::   .::
+  .::  .:            .::  .::
+   .::   .::::   .:: .::   .::
+<BLANKLINE>
+<BLANKLINE>
 maxfour :
  |       |
 ~|~/~/(~~|~
  | \/__) |
+<BLANKLINE>
+<BLANKLINE>
+mike :
+  _   _     _
+   | |/ //   |
+<BLANKLINE>
+<BLANKLINE>
+mini :
+<BLANKLINE>
+_|_  _   _ _|_
+ |_ (/_ _>  |_
 <BLANKLINE>
 <BLANKLINE>
 nancyj :
@@ -601,6 +651,25 @@ d8888P .d8888b. .d8888b. d8888P
   88   88.  ...       88   88
   dP   `88888P' `88888P'   dP
 <BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+nancyj-fancy :
+  dP                       dP
+  88                       88
+d8888P .d8888b. .d8888b. d8888P
+  88   88ooood8 Y8ooooo.   88
+  88   88.  ...       88   88
+  dP   `88888P' `88888P'   dP
+<BLANKLINE>
+<BLANKLINE>
+nancyj-underlined :
+  dP                       dP
+  88                       88
+d8888P .d8888b. .d8888b. d8888P
+  88   88ooood8 Y8ooooo.   88
+  88   88.  ...       88   88
+  dP   `88888P' `88888P'   dP
+oooooooooooooooooooooooooooooooo
 <BLANKLINE>
 <BLANKLINE>
 nipples :
@@ -662,6 +731,26 @@ pebbles :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+pepper :
+<BLANKLINE>
+_/_ _   __/_
+/  /_'_\ /
+<BLANKLINE>
+<BLANKLINE>
+poison :
+<BLANKLINE>
+@@@@@@@  @@@@@@@@   @@@@@@   @@@@@@@
+@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@
+  @@!    @@!       !@@         @@!
+  !@!    !@!       !@!         !@!
+  @!!    @!!!:!    !!@@!!      @!!
+  !!!    !!!!!:     !!@!!!     !!!
+  !!:    !!:            !:!    !!:
+  :!:    :!:           !:!     :!:
+   ::     :: ::::  :::: ::      ::
+   :     : :: ::   :: : :       :
+<BLANKLINE>
+<BLANKLINE>
 puffy :
  _                 _
 ( )_              ( )_
@@ -697,6 +786,8 @@ roman :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+rot13 :
+grfg
 rounded :
 <BLANKLINE>
    _                   _
@@ -753,6 +844,11 @@ shadow :
 \__| \___| ____/ \__|
 <BLANKLINE>
 <BLANKLINE>
+short :
+|- _  _|-
+|_(/__\|_
+<BLANKLINE>
+<BLANKLINE>
 slant :
    __                  __
   / /_  ___    _____  / /_
@@ -776,6 +872,12 @@ slscript :
 <__ </_/_)_<__
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+small :
+ _             _
+| |_  ___  ___| |_
+|  _|/ -_)(_-<|  _|
+ \__|\___|/__/ \__|
 <BLANKLINE>
 smisome1 :
     ___       ___       ___       ___
@@ -891,6 +993,18 @@ t)tTTT                 t)tTTT
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+tengwar :
+             .dP'
+           dP'
+<BLANKLINE>
+`Yb.d888b   'Yb   .d888b.  `Yb.d888b
+ 88'    8Y   88   8'   `Yb  88'    8Y
+ 88     8P   88   Yb.   88  88     8P
+ 88   ,dP   .8P       .dP   88   ,dP
+ 88                 .dP'    88
+ 88               .dP'      88
+.8P                        .8P
+<BLANKLINE>
 thick :
  w               w
 w8ww .d88b d88b w8ww
@@ -978,7 +1092,7 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
->>> aprint_test()
+>>> art_list()
 100$
 [̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]
 ******************************
@@ -1003,6 +1117,9 @@ awesome
 bear
 ʕ•ᴥ•ʔ
 ******************************
+bee
+¸.·´¯`·¸¸.·´¯`·.¸.-<\^}0=:
+******************************
 big_eyes
 ⺌∅‿∅⺌
 ******************************
@@ -1023,6 +1140,9 @@ boom_box
 ******************************
 bullshit
 |3ᵕᶦᶦᶳᶣᶨᶵ
+******************************
+bunny
+(\_/)
 ******************************
 butterfly
 Ƹ̵̡Ӝ̵̨̄Ʒ
@@ -1074,6 +1194,12 @@ cute_cat
 ******************************
 dagger
 cxxx|;:;:;:;:;:;:;:;>
+******************************
+decorate
+▂▃▅▇█▓▒░۩۞۩        ۩۞۩░▒▓█▇▅▃▂
+******************************
+dice
+[: :]
 ******************************
 dog
 ˁ˚ᴥ˚ˀ
@@ -1165,6 +1291,12 @@ inlove
 king
 -_-
 ******************************
+kirby
+(つ -‘ _ ‘- )つ
+******************************
+kiss
+(o'3'o)
+******************************
 knife
 )xxxxx[;;;;;;;;;>
 ******************************
@@ -1182,6 +1314,9 @@ love_in_my_eye
 ******************************
 love_you
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
+******************************
+mango
+) _ _ __/°°¬
 ******************************
 message1
 (¯`·._.·(¯`·._.·  ·._.·´¯)·._.·´¯)
@@ -1215,6 +1350,9 @@ nose
 ******************************
 panda
 ヽ(￣(ｴ)￣)ﾉ
+******************************
+perky
+( ๏ Y ๏ )
 ******************************
 pig1
 ^(*(oo)*)^
@@ -1282,6 +1420,9 @@ sleeping
 sleeping_baby
 [{-_-}] ZZZzz zz z...
 ******************************
+snail
+'-'_@_
+******************************
 sperm
 ~~o
 ******************************
@@ -1306,11 +1447,17 @@ sword4
 table_flip
 (╯°□°）╯︵ ┻━┻
 ******************************
+teddy
+ˁ(⦿ᴥ⦿)ˀ
+******************************
 tron
 (\/)(;,,;)(\/)
 ******************************
 trumpet
 -=iii=<()
+******************************
+ukulele
+{ o }==(::)
 ******************************
 umadbro
 ¯\_(ツ)_/¯
@@ -1346,11 +1493,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _     _____
-__   __/ |   |___ /
-\ \ / /| |     |_ \
- \ V / | | _  ___) |
-  \_/  |_|(_)|____/
+        _     _  _
+__   __/ |   | || |
+\ \ / /| |   | || |_
+ \ V / | | _ |__   _|
+  \_/  |_|(_)   |_|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -1377,11 +1524,15 @@ Help :
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
 >>> tprint('طط')
 <BLANKLINE>
->>> random.seed(2)
->>> Art = text2art("test","random")
->>> random.seed(5)
->>> Art2= text2art("test","random")
+>>> random.seed(3)
+>>> Art = art("random")
+>>> Text = text2art("test","random")
+>>> random.seed(9)
+>>> Text2 = text2art("test","random")
+>>> Art2 =  art("random")
 >>> len(Art)!=len(Art2)
+True
+>>> len(Text)!=len(Text2)
 True
 >>> Data=art('assdsds')
 Traceback (most recent call last):

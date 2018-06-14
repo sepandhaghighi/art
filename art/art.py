@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "1.3"
+version = "1.4"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -75,8 +75,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "eftiwater": [eftiwater_dic, False], "fourtops": [fourtops_dic, False],
             "goofy": [goofy_dic, True], "hollywood": [hollywood_dic, False],
             "invita": [invita_dic, False], "italic": [italic_dic, False],
-            "jazmine": [jazmine_dic, False], "lcd": [lcd_dic, False], "lean": [
-    lean_dic, False]}
+            "jazmine": [jazmine_dic, False], "lcd": [lcd_dic, False],
+            "lean": [lean_dic, False], "letters": [letters_dic, False],
+            "lockergnome": [lockergnome_dic, False], "madrid": [madrid_dic, False],
+            "marquee": [marquee_dic, False], "mike": [mike_dic, True],
+            "mini": [mini_dic, False],
+            "nancyj-fancy": [nancyj_fancy_dic, False],
+            "nancyj-underlined": [nancyj_underlined_dic, False],
+            "pepper": [pepper_dic, False], "poison": [poison_dic, True],
+            "rot13": [rot13_dic, False], "short": [short_dic, False],
+            "small": [small_dic, False], "tengwar": [tengwar_dic, True],
+            "big": [big_dic, False]}
 
 DEFAULT_FONT = "standard"
 
@@ -102,7 +111,7 @@ def font_list():
         tprint("test", str(item))
 
 
-def aprint_test():
+def art_list():
     '''
     This Function Print All Of 1Line Arts
     :return: None
@@ -157,8 +166,11 @@ def art(artname, number=1, text=""):
     if isinstance(artname, str) == False:
         raise artError("artname shoud have str type")
     artname = artname.lower()
-    if artname not in art_dic.keys():
-        arts = sorted(art_dic.keys())
+    arts = sorted(art_dic.keys())
+    if artname == "random" or artname =="rand":
+        random_index = random.randint(0, len(arts)-1)
+        artname = arts[random_index]
+    elif artname not in art_dic.keys():
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
@@ -301,7 +313,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     font = font.lower()
     fonts = sorted(font_map.keys())
     if font == "random" or font == "rand":
-        random_index = random.randint(0, len(font_map.keys()))
+        random_index = random.randint(0, len(fonts)-1)
         font = fonts[random_index]
     elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))

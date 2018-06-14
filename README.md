@@ -1,16 +1,16 @@
 <div align="center">
 <pre>
-      ___           ___                 
-     /  /\         /  /\          ___   
-    /  /::\       /  /::\        /  /\  
-   /  /:/\:\     /  /:/\:\      /  /:/  
-  /  /:/~/::\   /  /:/~/:/     /  /:/   
- /__/:/ /:/\:\ /__/:/ /:/___  /  /::\   
- \  \:\/:/__\/ \  \:\/:::::/ /__/:/\:\  
-  \  \::/       \  \::/~~~~  \__\/  \:\ 
-   \  \:\        \  \:\           \  \:\
-    \  \:\        \  \:\           \__\/
-     \__\/         \__\/                
+      ___           ___                   
+     /\  \         /\  \                  
+    /::\  \       /::\  \         ___     
+   /:/\:\  \     /:/\:\__\       /\__\    
+  /:/ /::\  \   /:/ /:/  /      /:/  /    
+ /:/_/:/\:\__\ /:/_/:/__/___   /:/__/     
+ \:\/:/  \/__/ \:\/:::::/  /  /::\  \     
+  \::/__/       \::/~~/~~~~  /:/\:\  \    
+   \:\  \        \:\~~\      \/__\:\  \   
+    \:\__\        \:\__\          \:\__\  
+     \/__/         \/__/           \/__/  
 
 
 </pre>
@@ -24,10 +24,9 @@
 <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font-List-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art-List-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-120-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-130-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
-
 </div>
 	
 ----------
@@ -56,9 +55,31 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
-[![Downloads](http://pepy.tech/badge/art)](http://pepy.tech/count/art)						
-
-[![GitHub stars](https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars)](https://github.com/sepandhaghighi/art)		
+<html>
+<table>
+	<tr> 
+		<td align="center">Open Hub</td>
+		<td align="center"><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>	
+	</tr>
+	<tr>
+		<td align="center">PyPI Counter</td>
+		<td align="center"><a href="http://pepy.tech/count/art"><img src="http://pepy.tech/badge/art"></a></td>
+	</tr>
+	<tr>
+		<td align="center">Github Stars</td>
+		<td align="center"><a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars"></a></td>
+	</tr>
+	<tr>
+		<td align="center">Font Counter</td>
+		<td align="center">120</td>
+	</tr>
+	<tr>
+		<td align="center">1-Line-Art Counter</td>
+		<td align="center">130</td>
+	</tr>
+</table>
+</html>
+    
 
 ## Usage
 
@@ -77,6 +98,10 @@ c[_]
 >>> art_3=art("love_you",number=1,text="test") # 2-part art
 >>> print(art_3)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> art("random") # random 1-line art mode
+'(っ◕‿◕)っ '
+>>> art("rand")   # random 1-line art mode
+'t(-_-t) '
 >>> art(22,number=1,text="") # raise artError
 Traceback (most recent call last):
         ...
@@ -93,6 +118,10 @@ This function print 1-line art in normal mode (return None) and raise `artError`
  ۜ\(סּںסּَ` )/ۜ
 >>> aprint("love_you",number=1,text="test")  # 2-part art
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
+>>> aprint("random") # random 1-line art mode
+'(っ◕‿◕)っ '
+>>> aprint("rand")   # random 1-line art mode
+'t(-_-t) '
 >>> aprint("woman",number="22",text="") # raise artError
 Traceback (most recent call last):
         ...
@@ -329,7 +358,7 @@ Just send your text to one of these bots. 👇👇👇👇
 
 
 <div align="center">
-<a href="https://asciinema.org/a/169325" target="_blank"><img src="https://asciinema.org/a/169325.png" /></a>
+<a href="https://asciinema.org/a/186368" target="_blank"><img src="https://asciinema.org/a/186368.png" /></a>
 <p>Screen Record</p>
 </div>
 
