@@ -38,11 +38,11 @@ setup(
     author='Sepand Haghighi',
     author_email='sepand@qpage.ir',
     url='https://github.com/sepandhaghighi/art',
-    download_url='https://github.com/sepandhaghighi/art/tarball/v1.4',
     keywords="ascii art python3 python text font",
     project_urls={
         'Webpage': 'http://art.shaghighi.ir',
         'Source': 'https://github.com/sepandhaghighi/art',
+        'Tracker': 'https://github.com/sepandhaghighi/art/issues',
     },
     install_requires=get_requires(),
     python_requires='>=2.7',
