@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [1.4] - 2018-06-12
+## [1.4] - 2018-06-14
 ### Added
 - 15 new fonts
 	1. letters
@@ -40,6 +40,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Minor bug in `text2art` random range fixed
 - `README.md` modified
 - `aprint_test` function renamed to `art_list`
+- `setup.py` modified
 
 ## [1.3] - 2018-06-08
 ### Added
@@ -151,7 +152,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `README.md` modified
 - `tsave` function extension bug fixed
 - `text2art` response bug fixed ("\r\n")
-- setup file modified
+- `setup.py` modified
 
 ## [0.7] - 2018-01-20
 ### Added
