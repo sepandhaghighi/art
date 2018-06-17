@@ -10,6 +10,7 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
     letters to make a visual shape that is spread over multiple lines of text.
     Art is a Python lib for text converting to ASCII ART fancy.'''
 
+
 def get_requires():
     requirements = open("requirements.txt", "r").read()
     return list(filter(lambda x: x != "", requirements.split()))

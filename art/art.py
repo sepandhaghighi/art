@@ -167,8 +167,8 @@ def art(artname, number=1, text=""):
         raise artError("artname shoud have str type")
     artname = artname.lower()
     arts = sorted(art_dic.keys())
-    if artname == "random" or artname =="rand":
-        random_index = random.randint(0, len(arts)-1)
+    if artname == "random" or artname == "rand":
+        random_index = random.randint(0, len(arts) - 1)
         artname = arts[random_index]
     elif artname not in art_dic.keys():
         distance_list = list(map(lambda x: distance_calc(artname, x),
@@ -313,7 +313,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     font = font.lower()
     fonts = sorted(font_map.keys())
     if font == "random" or font == "rand":
-        random_index = random.randint(0, len(fonts)-1)
+        random_index = random.randint(0, len(fonts) - 1)
         font = fonts[random_index]
     elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
