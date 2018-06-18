@@ -338,11 +338,11 @@ ___ ____ ____ ___
 
  
 ### CLI			
-- List of arts :  `python -m art list`
+- List of arts :  `python -m art list` or `python -m art arts`
 - List of fonts : `python -m art fonts`
 - Test : `python -m art test`
 - Text : `python -m art text yourtext fontname(optional)`
-- Shape : `python -m art shape art_name`
+- Shape or Art : `python -m art shape art_name` or `python -m art art art_name`
 - Save :  `python -m art save yourtext fontname(optional)`
 - All  :  `python -m art all yourtext`
 
