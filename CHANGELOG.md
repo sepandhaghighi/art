@@ -5,6 +5,42 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.5] - 2018-06-18
+### Added
+- 30 new 1-line art
+	1. sorreh bro
+	2. yolo
+	3. formula 1 car
+	4. dummy
+	5. rope
+	6. rare
+	7. chess pieces
+	8. sparkling heart
+	9. weather
+	10. stars2
+	11. upsidedown
+	12. nathan
+	13. cat smile
+	14. old lady boobs
+	15. glasses2
+	16. religious
+	17. sniperstars
+	18. kokain
+	19. bagel
+	20. crying
+	21. angry2
+	22. 3
+	23. 5
+	24. fuck you
+	25. head shot
+	26. metal
+	27. killer
+	28. fu
+	29. ankush
+	30. owlkin
+### Changed
+- CLI `art` flag
+- CLI `list` flag
 ## [1.4] - 2018-06-14
 ### Added
 - 15 new fonts
@@ -259,7 +295,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.4...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.5...HEAD
+[1.5]: https://github.com/sepandhaghighi/art/compare/v1.4...v1.5
 [1.4]: https://github.com/sepandhaghighi/art/compare/v1.3...v1.4
 [1.3]: https://github.com/sepandhaghighi/art/compare/v1.2...v1.3
 [1.2]: https://github.com/sepandhaghighi/art/compare/v1.1...v1.2
