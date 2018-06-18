@@ -38,7 +38,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	28. fu
 	29. ankush
 	30. owlkin
-
+### Changed
+- CLI `art` flag
+- CLI `list` flag
 ## [1.4] - 2018-06-14
 ### Added
 - 15 new fonts
