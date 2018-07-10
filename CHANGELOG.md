@@ -5,6 +5,40 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.6] - 2018-07-10
+### Added
+- 30 new 1-line art
+	1. sexy symbol
+	2. barbell
+	3. sniper rifle
+	4. being draged
+	5. possessed
+	6. jokeranonimous
+	7. epic gun
+	8. love
+	9. love2
+	10. eric
+	11. puls
+	12. sky free
+	13. smug bastard
+	14. tie-fighter
+	15. kyubey
+	16. dancee
+	17. mtmtika
+	18. ak-47
+	19. eaten apple
+	20. huhu
+	21. faydre
+	22. domino
+	23. honeycute
+	24. superman
+	25. worm2
+	26. jokeranonimous2
+	27. kyubey2
+	28. nose2
+	29. hell yeah
+	30. roke
+
 ## [1.5] - 2018-06-18
 ### Added
 - 30 new 1-line art
@@ -295,7 +329,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.5...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.6...HEAD
+[1.6]: https://github.com/sepandhaghighi/art/compare/v1.5...v1.6
 [1.5]: https://github.com/sepandhaghighi/art/compare/v1.4...v1.5
 [1.4]: https://github.com/sepandhaghighi/art/compare/v1.3...v1.4
 [1.3]: https://github.com/sepandhaghighi/art/compare/v1.2...v1.3

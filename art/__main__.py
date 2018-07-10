@@ -21,7 +21,7 @@ if __name__ == "__main__":
             cov.stop()
             cov.report()
             cov.save()
-        elif args[1].upper() in ["LIST","ARTS"]:
+        elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":
             font_list()
@@ -63,7 +63,7 @@ if __name__ == "__main__":
                     tsave(args[2], font=args[3])
                 else:
                     tsave(args[2])
-            elif args[1].upper() in ["SHAPE","ART"]:
+            elif args[1].upper() in ["SHAPE", "ART"]:
                 try:
                     aprint(args[2])
                 except artError as e:
