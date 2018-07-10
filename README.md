@@ -264,7 +264,7 @@ True
 <table>
 	<tr>
 		<td align="center">Function</td>
-		<td align="center">Normal</td>
+		<td align="center">Normal Output</td>
 		<td align="center">Error</td>
 	</tr>
 	<tr>
