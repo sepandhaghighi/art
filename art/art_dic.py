@@ -194,6 +194,10 @@ art_dic = {
     "faydre":"(U) [^_^] (U) ",
     "domino":"[: :|:::]",
     "honeycute":"❤◦.¸¸.  ◦✿",
-    "superman":"-^mOm^-"
+    "superman":"-^mOm^-",
+    "nose2":"|'L'|",
+    "hell yeah":"(òÓ,)_\,,/",
+    "roke":"_\m/"
+
 
 }
