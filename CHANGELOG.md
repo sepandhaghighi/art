@@ -5,6 +5,42 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.7] - 2018-08-01
+### Added
+- 30 new 1-line art
+	1. crayons
+	2. stars in my eyes
+	3. fish invasion
+	4. bender
+	5. musical
+	6. sunny day
+	7. happy birthday 1
+	8. line brack
+	9. med
+	10. melp1
+	11. happy3
+	12. happy square
+	13. snowman
+	14. melp2
+	15. i kill you
+	16. jaymz
+	17. text decoration
+	18. long rose
+	19. kirbay dance
+	20. death star defense team
+	21. chainsword
+	22. boobies
+	23. dancing people
+	24. dance
+	25. pictou
+	26. polar bear
+	27. go away bear
+	28. charly
+	29. train
+	30. spot
+### Changed
+- car race 1-line art fixed
+
 ## [1.6] - 2018-07-10
 ### Added
 - 30 new 1-line art
@@ -329,7 +365,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.6...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.7...HEAD
+[1.7]: https://github.com/sepandhaghighi/art/compare/v1.6...v1.7
 [1.6]: https://github.com/sepandhaghighi/art/compare/v1.5...v1.6
 [1.5]: https://github.com/sepandhaghighi/art/compare/v1.4...v1.5
 [1.4]: https://github.com/sepandhaghighi/art/compare/v1.3...v1.4
