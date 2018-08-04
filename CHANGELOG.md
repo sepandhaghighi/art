@@ -5,6 +5,40 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.8] - 2018-08-04
+### Added
+- 30 new 1-line art
+	1. westbound fish
+	2. telephone
+	3. 9/11 truth
+	4. spear
+	5. srs face
+	6. this is areku
+	7. robot boy
+	8. med man
+	9. angry
+	10. badass
+	11. zoidberg
+	12. eastbound fish
+	13. kilroy was here
+	14. gtalk fit
+	15. thanks
+	16. dalek
+	17. sean the sheep
+	18. kablewee
+	19. i dont care
+	20. slenderman
+	21. john lennon
+	22. peace yo
+	23. punch
+	24. russian boobs
+	25. fuck off
+	26. man tears
+	27. robber
+	28. facepalm
+	29. yo
+	30. party time
+
 ## [1.7] - 2018-08-01
 ### Added
 - 30 new 1-line art
@@ -365,7 +399,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.7...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.8...HEAD
+[1.8]: https://github.com/sepandhaghighi/art/compare/v1.7...v1.8
 [1.7]: https://github.com/sepandhaghighi/art/compare/v1.6...v1.7
 [1.6]: https://github.com/sepandhaghighi/art/compare/v1.5...v1.6
 [1.5]: https://github.com/sepandhaghighi/art/compare/v1.4...v1.5
