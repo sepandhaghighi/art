@@ -111,6 +111,46 @@ amc3line :
  '  `-' `-'  '
 <BLANKLINE>
 <BLANKLINE>
+amcaaa01 :
+sdSS_SSSSSSbs    sSSs    sSSs  sdSS_SSSSSSbs
+YSSS~S%SSSSSP   d%%SP   d%%SP  YSSS~S%SSSSSP
+     S%S       d%S'    d%S'         S%S
+     S%S       S%S     S%|          S%S
+     S&S       S&S     S&S          S&S
+     S&S       S&S_Ss  Y&Ss         S&S
+     S&S       S&S~SP  `S&&S        S&S
+     S&S       S&S       `S*S       S&S
+     S*S       S*b        l*S       S*S
+     S*S       S*S.      .S*P       S*S
+     S*S        SSSbs  sSS*S        S*S
+     S*S         YSSP  YSS'         S*S
+     SP                             SP
+     Y                              Y
+<BLANKLINE>
+<BLANKLINE>
+amcneko :
+<BLANKLINE>
+.sSSSSSSSSSSSSSs. .sSSSSs.    .sSSSSSSSs. .sSSSSSSSSSSSSSs.
+SSSSS S SSS SSSSS S SSSSSSSs. S SSS SSSS' SSSSS S SSS SSSSS
+SSSSS S  SS SSSSS S  SS SSSS' S  SS       SSSSS S  SS SSSSS
+`:S:' S..SS `:S:' S..SS       `SSSSsSSSa. `:S:' S..SS `:S:'
+      S:::S       S:::SSSS    .sSSS SSSSS       S:::S
+      S;;;S       S;;;S       S;;;S SSSSS       S;;;S
+      S%%%S       S%%%S SSSSS S%%%S SSSSS       S%%%S
+      SSSSS       SSSSSsSS;:' SSSSSsSSSSS       SSSSS
+<BLANKLINE>
+<BLANKLINE>
+amcrazo2 :
+   . .    .       . .       . .       . .    .
+.+'|=|`+.=|`+. .+'|=|`+. .+'|=|`+. .+'|=|`+.=|`+.
+|.+' |  | `+.| |  | `+.| |  | `+.| |.+' |  | `+.|
+     |  |      |  |=|`.  |  | .         |  |
+     |  |      |  | `.|  `+.|=|`+.      |  |
+     |  |      |  |    . .    |  |      |  |
+     |  |      |  | .+'| |`+. |  |      |  |
+     |.+'      `+.|=|.+' `+.|=|.+'      |.+'
+<BLANKLINE>
+<BLANKLINE>
 amcrazor :
  ___  ___   ___        ___  ___   ___  ___  ___   ___
 `._|=|   |=|_.'   .'|=|_.' |   |=|_.' `._|=|   |=|_.'
@@ -118,6 +158,57 @@ amcrazor :
      |   |      |   |=|_.'   `.|=|`.       |   |
      `.  |      |   |  ___  ___  |  `.     `.  |
        `.|      |___|=|_.'  `._|=|___|       `.|
+<BLANKLINE>
+<BLANKLINE>
+amcslash :
+<BLANKLINE>
+.s5SSSSs. .s5SSSs.  .s5SSSs.  .s5SSSSs.
+   SSS          SS.       SS.    SSS
+   S%S    sS    `:; sS    `:;    S%S
+   S%S    SSSs.     `:;;;;.      S%S
+   S%S    SS              ;;.    S%S
+   `:;    SS              `:;    `:;
+   ;,.    SS    ;,. .,;   ;,.    ;,.
+   ;:'    `:;;;;;:' `:;;;;;:'    ;:'
+<BLANKLINE>
+<BLANKLINE>
+amcthin :
+.-..-..-. .-..--. .-..-. .-..-..-.
+ ~ | | ~  | | ~~  | | ~   ~ | | ~
+   | |    | | _    \|       | |
+   | |    | |`-'     |\     | |
+   | |    | | __   _ | |    | |
+   `-'    `-'`--' `-'`-'    `-'
+<BLANKLINE>
+<BLANKLINE>
+amctubes :
+sss sssss d sss     sss. sss sssss
+    S     S       d          S
+    S     S       Y          S
+    S     S sSSs    ss.      S
+    S     S            b     S
+    S     S            P     S
+    P     P sSSss ` ss'      P
+<BLANKLINE>
+<BLANKLINE>
+amcun1 :
+<BLANKLINE>
+<BLANKLINE>
+,'',,'',,'', ,'',,'', ,'',,'', ,'',,'',,'',
+',,';  ;',,' ;  ;',,' ;  ;',,' ',,';  ;',,'
+    ;  ;     ;  ;',,' ',,','',     ;  ;
+    ;  ;     ;  ; ,,  ,'',;  ;     ;  ;
+    ',,'     ',,'',,' ',,'',,'     ',,'
+<BLANKLINE>
+<BLANKLINE>
+arrows :
+  >=>                       >=>
+  >=>                       >=>
+>=>>==>   >==>     >===>  >=>>==>
+  >=>   >>   >=>  >=>       >=>
+  >=>   >>===>>=>   >==>    >=>
+  >=>   >>            >=>   >=>
+   >=>   >====>   >=> >=>    >=>
 <BLANKLINE>
 <BLANKLINE>
 avatar :
@@ -185,6 +276,17 @@ d888888b d88888b .d8888. d888888b
    YP    Y88888P `8888Y'    YP
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+bear :
+   _     _      _     _      _     _      _     _
+  (c).-.(c)    (c).-.(c)    (c).-.(c)    (c).-.(c)
+   / ._. \      / ._. \      / ._. \      / ._. \
+ __\( Y )/__  __\( Y )/__  __\( Y )/__  __\( Y )/__
+(_.-/'-'\-._)(_.-/'-'\-._)(_.-/'-'\-._)(_.-/'-'\-._)
+   || T ||      || E ||      || S ||      || T ||
+ _.' `-' '._  _.' `-' '._  _.' `-' '._  _.' `-' '._
+(.-./`-'\.-.)(.-./`-'\.-.)(.-./`-`\.-.)(.-./`-'\.-.)
+ `-'     `-'  `-'     `-'  `-'     `-'  `-'     `-'
 <BLANKLINE>
 bell :
   .                   .
