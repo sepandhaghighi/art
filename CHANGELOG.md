@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ## [1.9] - 2018-08-20
 ### Added
-- 10 new fonts
+- 20 new fonts
 	1. cybersmall
 	2. gothic
 	3. rev
@@ -18,6 +18,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. 4max
 	9. amc3line
 	10. amcrazor
+	11. amcaaa01
+	12. amcneko
+	13. amcrrazo2
+	14. amcslash
+	15. amcthin
+	16. amctubes
+	17. amcun1
+	18. arrows
+	19. bear
+	20. benjamin
 
 ## [1.8] - 2018-08-06
 ### Added
