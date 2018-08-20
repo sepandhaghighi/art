@@ -103,7 +103,8 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "amctubes": [amctubes_dic,True],
             "amcun1": [amcun1_dic,False],
             "arrows": [arrows_dic,False],
-            "bear": [bear_dic,True]
+            "bear": [bear_dic,True],
+            "benjamin": [benjamin_dic,True]
             }
 
 DEFAULT_FONT = "standard"

@@ -296,6 +296,9 @@ bell :
   \__/ `.___, \___.'  \__/
 <BLANKLINE>
 <BLANKLINE>
+benjamin :
+"|"[-_\""|"
+<BLANKLINE>
 big :
  _               _
 | |             | |
