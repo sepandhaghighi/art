@@ -95,16 +95,16 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "smtengwar": [smtengwar_dic, False],
             "term": [term_dic, False],
             "amcrazor": [amcrazor_dic, True],
-            "amcaaa01":[amcaaa01_dic,True],
-            "amcneko":[amcneko_dic,False],
-            "amcrazo2":[amcrazo2_dic,True],
-            "amcslash": [amcslash_dic,False],
-            "amcthin": [amcthin_dic,True],
-            "amctubes": [amctubes_dic,True],
-            "amcun1": [amcun1_dic,False],
-            "arrows": [arrows_dic,False],
-            "bear": [bear_dic,True],
-            "benjamin": [benjamin_dic,True]
+            "amcaaa01": [amcaaa01_dic, True],
+            "amcneko": [amcneko_dic, False],
+            "amcrazo2": [amcrazo2_dic, True],
+            "amcslash": [amcslash_dic, False],
+            "amcthin": [amcthin_dic, True],
+            "amctubes": [amctubes_dic, True],
+            "amcun1": [amcun1_dic, False],
+            "arrows": [arrows_dic, False],
+            "bear": [bear_dic, True],
+            "benjamin": [benjamin_dic, True]
             }
 
 DEFAULT_FONT = "standard"
