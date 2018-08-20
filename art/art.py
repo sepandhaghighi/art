@@ -85,7 +85,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "pepper": [pepper_dic, False], "poison": [poison_dic, True],
             "rot13": [rot13_dic, False], "short": [short_dic, False],
             "small": [small_dic, False], "tengwar": [tengwar_dic, True],
-            "big": [big_dic, False]}
+            "big": [big_dic, False],"1row":[dic_1row,True],
+            "3d_diagonal":[dic_3d_diagonal,False],
+            "4max":[dic_4max,True],
+            "amc3line":[amc3line_dic,True],
+            "cybersmall":[cybersmall_dic,True],
+            "gothic":[gothic_dic,False],
+            "rev":[rev_dic,False],
+            "smtengwar":[smtengwar_dic,False],
+            "term":[term_dic,False],
+            "amcrazor":[amcrazor_dic,True]
+            }
 
 DEFAULT_FONT = "standard"
 

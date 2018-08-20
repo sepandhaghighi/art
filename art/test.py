@@ -9,6 +9,10 @@ This function get a string as input if input is one digit add a zero
 >>> import sys
 >>> from art import *
 >>> font_list()
+1row :
+~|~ [- _\~ ~|~
+<BLANKLINE>
+<BLANKLINE>
 3-d :
    **                     **
   /**                    /**
@@ -19,6 +23,24 @@ This function get a string as input if input is one digit add a zero
   //** //****** ******   //**
    //   ////// //////     //
 <BLANKLINE>
+3d_diagonal :
+<BLANKLINE>
+<BLANKLINE>
+    ___                                 ___
+  ,--.'|_                             ,--.'|_
+  |  | :,'                            |  | :,'
+  :  : ' :               .--.--.      :  : ' :
+.;__,'  /      ,---.    /  /    '   .;__,'  /
+|  |   |      /     \  |  :  /`./   |  |   |
+:__,'| :     /    /  | |  :  ;_     :__,'| :
+  '  : |__  .    ' / |  \  \    `.    '  : |__
+  |  | '.'| '   ;   /|   `----.   \   |  | '.'|
+  ;  :    ; '   |  / |  /  /`--'  /   ;  :    ;
+  |  ,   /  |   :    | '--'.     /    |  ,   /
+   ---`-'    \   \  /    `--'---'      ---`-'
+              `----'
+<BLANKLINE>
+<BLANKLINE>
 3x5 :
 <BLANKLINE>
  #           #
@@ -26,6 +48,12 @@ This function get a string as input if input is one digit add a zero
  #  ##   #   #
  ## ### ##   ##
 <BLANKLINE>
+<BLANKLINE>
+4max :
+888888 888888 .dP"Y8 888888
+  88   88__   `Ybo."   88
+  88   88""   o.`Y8b   88
+  88   888888 8bodP'   88
 <BLANKLINE>
 5lineoblique :
 <BLANKLINE>
@@ -75,6 +103,21 @@ ttt eee  ss ttt
  t  e e  s   t
  tt ee  ss   tt
 <BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+amc3line :
+.-. .-. .-. .-.
+ |  |-  `-.  |
+ '  `-' `-'  '
+<BLANKLINE>
+<BLANKLINE>
+amcrazor :
+ ___  ___   ___        ___  ___   ___  ___  ___   ___
+`._|=|   |=|_.'   .'|=|_.' |   |=|_.' `._|=|   |=|_.'
+     |   |      .'  |  ___ `.  |           |   |
+     |   |      |   |=|_.'   `.|=|`.       |   |
+     `.  |      |   |  ___  ___  |  `.     `.  |
+       `.|      |___|=|_.'  `._|=|___|       `.|
 <BLANKLINE>
 <BLANKLINE>
 avatar :
@@ -330,6 +373,10 @@ ___ ____ ____ ___
  |  |___ ___]  |
 <BLANKLINE>
 <BLANKLINE>
+cybersmall :
+ ___ ____ ____ ___
+  |  |=== ====  |
+<BLANKLINE>
 cygnet :
 <BLANKLINE>
  .       .
@@ -468,6 +515,17 @@ _        __        ___       ___        __
    |  |     |   __)   \___  \     |  |
    |  |     |  (___   ____)  )    |  |
 ___|  |____/       )_(      (_____|  |____
+<BLANKLINE>
+<BLANKLINE>
+gothic :
+<BLANKLINE>
+  ,                ,
+ ||               ||
+=||=  _-_   _-_, =||=
+ ||  || \\ ||_.   ||
+ ||  ||/    ~ ||  ||
+ \\, \\,/  ,-_-   \\,
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 graffiti :
@@ -774,6 +832,19 @@ rectangles :
 |_|  |___||___||_|
 <BLANKLINE>
 <BLANKLINE>
+rev :
+==========================
+==========================
+==========================
+==  ==================  ==
+=    ===   ====   ===    =
+==  ===  =  ==  =  ===  ==
+==  ===     ===  =====  ==
+==  ===  =======  ====  ==
+==  ===  =  ==  =  ===  ==
+==   ===   ====   ====   =
+==========================
+<BLANKLINE>
 roman :
     .                          .
   .o8                        .o8
@@ -914,6 +985,11 @@ smslant :
 \__/ \__/ /___/\__/
 <BLANKLINE>
 <BLANKLINE>
+smtengwar :
+    ,'
+|~)  | (~) |~)
+|       /  |
+<BLANKLINE>
 speed :
 _____               _____
 __  /______ __________  /_
@@ -1005,6 +1081,8 @@ tengwar :
  88               .dP'      88
 .8P                        .8P
 <BLANKLINE>
+term :
+test
 thick :
  w               w
 w8ww .d88b d88b w8ww
