@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.9] - 2018-08-20
+### Added
+- 10 new fonts
+	1. cybersmall
+	2. gothic
+	3. rev
+	4. smtengwar
+	5. term
+	6. 1row
+	7. 3d_diagonal
+	8. 4max
+	9. amc3line
+	10. amcrazor
+
 ## [1.8] - 2018-08-06
 ### Added
 - 30 new 1-line art
@@ -399,7 +413,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.8...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v1.9...HEAD
+[1.9]: https://github.com/sepandhaghighi/art/compare/v1.8...v1.9
 [1.8]: https://github.com/sepandhaghighi/art/compare/v1.7...v1.8
 [1.7]: https://github.com/sepandhaghighi/art/compare/v1.6...v1.7
 [1.6]: https://github.com/sepandhaghighi/art/compare/v1.5...v1.6
