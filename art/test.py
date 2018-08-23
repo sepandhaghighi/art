@@ -9,6 +9,10 @@ This function get a string as input if input is one digit add a zero
 >>> import sys
 >>> from art import *
 >>> font_list()
+1row :
+~|~ [- _\~ ~|~
+<BLANKLINE>
+<BLANKLINE>
 3-d :
    **                     **
   /**                    /**
@@ -19,6 +23,24 @@ This function get a string as input if input is one digit add a zero
   //** //****** ******   //**
    //   ////// //////     //
 <BLANKLINE>
+3d_diagonal :
+<BLANKLINE>
+<BLANKLINE>
+    ___                                 ___
+  ,--.'|_                             ,--.'|_
+  |  | :,'                            |  | :,'
+  :  : ' :               .--.--.      :  : ' :
+.;__,'  /      ,---.    /  /    '   .;__,'  /
+|  |   |      /     \  |  :  /`./   |  |   |
+:__,'| :     /    /  | |  :  ;_     :__,'| :
+  '  : |__  .    ' / |  \  \    `.    '  : |__
+  |  | '.'| '   ;   /|   `----.   \   |  | '.'|
+  ;  :    ; '   |  / |  /  /`--'  /   ;  :    ;
+  |  ,   /  |   :    | '--'.     /    |  ,   /
+   ---`-'    \   \  /    `--'---'      ---`-'
+              `----'
+<BLANKLINE>
+<BLANKLINE>
 3x5 :
 <BLANKLINE>
  #           #
@@ -26,6 +48,12 @@ This function get a string as input if input is one digit add a zero
  #  ##   #   #
  ## ### ##   ##
 <BLANKLINE>
+<BLANKLINE>
+4max :
+888888 888888 .dP"Y8 888888
+  88   88__   `Ybo."   88
+  88   88""   o.`Y8b   88
+  88   888888 8bodP'   88
 <BLANKLINE>
 5lineoblique :
 <BLANKLINE>
@@ -75,6 +103,112 @@ ttt eee  ss ttt
  t  e e  s   t
  tt ee  ss   tt
 <BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+amc3line :
+.-. .-. .-. .-.
+ |  |-  `-.  |
+ '  `-' `-'  '
+<BLANKLINE>
+<BLANKLINE>
+amcaaa01 :
+sdSS_SSSSSSbs    sSSs    sSSs  sdSS_SSSSSSbs
+YSSS~S%SSSSSP   d%%SP   d%%SP  YSSS~S%SSSSSP
+     S%S       d%S'    d%S'         S%S
+     S%S       S%S     S%|          S%S
+     S&S       S&S     S&S          S&S
+     S&S       S&S_Ss  Y&Ss         S&S
+     S&S       S&S~SP  `S&&S        S&S
+     S&S       S&S       `S*S       S&S
+     S*S       S*b        l*S       S*S
+     S*S       S*S.      .S*P       S*S
+     S*S        SSSbs  sSS*S        S*S
+     S*S         YSSP  YSS'         S*S
+     SP                             SP
+     Y                              Y
+<BLANKLINE>
+<BLANKLINE>
+amcneko :
+<BLANKLINE>
+.sSSSSSSSSSSSSSs. .sSSSSs.    .sSSSSSSSs. .sSSSSSSSSSSSSSs.
+SSSSS S SSS SSSSS S SSSSSSSs. S SSS SSSS' SSSSS S SSS SSSSS
+SSSSS S  SS SSSSS S  SS SSSS' S  SS       SSSSS S  SS SSSSS
+`:S:' S..SS `:S:' S..SS       `SSSSsSSSa. `:S:' S..SS `:S:'
+      S:::S       S:::SSSS    .sSSS SSSSS       S:::S
+      S;;;S       S;;;S       S;;;S SSSSS       S;;;S
+      S%%%S       S%%%S SSSSS S%%%S SSSSS       S%%%S
+      SSSSS       SSSSSsSS;:' SSSSSsSSSSS       SSSSS
+<BLANKLINE>
+<BLANKLINE>
+amcrazo2 :
+   . .    .       . .       . .       . .    .
+.+'|=|`+.=|`+. .+'|=|`+. .+'|=|`+. .+'|=|`+.=|`+.
+|.+' |  | `+.| |  | `+.| |  | `+.| |.+' |  | `+.|
+     |  |      |  |=|`.  |  | .         |  |
+     |  |      |  | `.|  `+.|=|`+.      |  |
+     |  |      |  |    . .    |  |      |  |
+     |  |      |  | .+'| |`+. |  |      |  |
+     |.+'      `+.|=|.+' `+.|=|.+'      |.+'
+<BLANKLINE>
+<BLANKLINE>
+amcrazor :
+ ___  ___   ___        ___  ___   ___  ___  ___   ___
+`._|=|   |=|_.'   .'|=|_.' |   |=|_.' `._|=|   |=|_.'
+     |   |      .'  |  ___ `.  |           |   |
+     |   |      |   |=|_.'   `.|=|`.       |   |
+     `.  |      |   |  ___  ___  |  `.     `.  |
+       `.|      |___|=|_.'  `._|=|___|       `.|
+<BLANKLINE>
+<BLANKLINE>
+amcslash :
+<BLANKLINE>
+.s5SSSSs. .s5SSSs.  .s5SSSs.  .s5SSSSs.
+   SSS          SS.       SS.    SSS
+   S%S    sS    `:; sS    `:;    S%S
+   S%S    SSSs.     `:;;;;.      S%S
+   S%S    SS              ;;.    S%S
+   `:;    SS              `:;    `:;
+   ;,.    SS    ;,. .,;   ;,.    ;,.
+   ;:'    `:;;;;;:' `:;;;;;:'    ;:'
+<BLANKLINE>
+<BLANKLINE>
+amcthin :
+.-..-..-. .-..--. .-..-. .-..-..-.
+ ~ | | ~  | | ~~  | | ~   ~ | | ~
+   | |    | | _    \|       | |
+   | |    | |`-'     |\     | |
+   | |    | | __   _ | |    | |
+   `-'    `-'`--' `-'`-'    `-'
+<BLANKLINE>
+<BLANKLINE>
+amctubes :
+sss sssss d sss     sss. sss sssss
+    S     S       d          S
+    S     S       Y          S
+    S     S sSSs    ss.      S
+    S     S            b     S
+    S     S            P     S
+    P     P sSSss ` ss'      P
+<BLANKLINE>
+<BLANKLINE>
+amcun1 :
+<BLANKLINE>
+<BLANKLINE>
+,'',,'',,'', ,'',,'', ,'',,'', ,'',,'',,'',
+',,';  ;',,' ;  ;',,' ;  ;',,' ',,';  ;',,'
+    ;  ;     ;  ;',,' ',,','',     ;  ;
+    ;  ;     ;  ; ,,  ,'',;  ;     ;  ;
+    ',,'     ',,'',,' ',,'',,'     ',,'
+<BLANKLINE>
+<BLANKLINE>
+arrows :
+  >=>                       >=>
+  >=>                       >=>
+>=>>==>   >==>     >===>  >=>>==>
+  >=>   >>   >=>  >=>       >=>
+  >=>   >>===>>=>   >==>    >=>
+  >=>   >>            >=>   >=>
+   >=>   >====>   >=> >=>    >=>
 <BLANKLINE>
 <BLANKLINE>
 avatar :
@@ -143,6 +277,17 @@ d888888b d88888b .d8888. d888888b
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+bear :
+   _     _      _     _      _     _      _     _
+  (c).-.(c)    (c).-.(c)    (c).-.(c)    (c).-.(c)
+   / ._. \      / ._. \      / ._. \      / ._. \
+ __\( Y )/__  __\( Y )/__  __\( Y )/__  __\( Y )/__
+(_.-/'-'\-._)(_.-/'-'\-._)(_.-/'-'\-._)(_.-/'-'\-._)
+   || T ||      || E ||      || S ||      || T ||
+ _.' `-' '._  _.' `-' '._  _.' `-' '._  _.' `-' '._
+(.-./`-'\.-.)(.-./`-'\.-.)(.-./`-`\.-.)(.-./`-'\.-.)
+ `-'     `-'  `-'     `-'  `-'     `-'  `-'     `-'
+<BLANKLINE>
 bell :
   .                   .
  _/_     ___    ____ _/_
@@ -150,6 +295,9 @@ bell :
   |    |----'  `--.   |
   \__/ `.___, \___.'  \__/
 <BLANKLINE>
+<BLANKLINE>
+benjamin :
+"|"[-_\""|"
 <BLANKLINE>
 big :
  _               _
@@ -330,6 +478,10 @@ ___ ____ ____ ___
  |  |___ ___]  |
 <BLANKLINE>
 <BLANKLINE>
+cybersmall :
+ ___ ____ ____ ___
+  |  |=== ====  |
+<BLANKLINE>
 cygnet :
 <BLANKLINE>
  .       .
@@ -468,6 +620,17 @@ _        __        ___       ___        __
    |  |     |   __)   \___  \     |  |
    |  |     |  (___   ____)  )    |  |
 ___|  |____/       )_(      (_____|  |____
+<BLANKLINE>
+<BLANKLINE>
+gothic :
+<BLANKLINE>
+  ,                ,
+ ||               ||
+=||=  _-_   _-_, =||=
+ ||  || \\ ||_.   ||
+ ||  ||/    ~ ||  ||
+ \\, \\,/  ,-_-   \\,
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 graffiti :
@@ -774,6 +937,19 @@ rectangles :
 |_|  |___||___||_|
 <BLANKLINE>
 <BLANKLINE>
+rev :
+==========================
+==========================
+==========================
+==  ==================  ==
+=    ===   ====   ===    =
+==  ===  =  ==  =  ===  ==
+==  ===     ===  =====  ==
+==  ===  =======  ====  ==
+==  ===  =  ==  =  ===  ==
+==   ===   ====   ====   =
+==========================
+<BLANKLINE>
 roman :
     .                          .
   .o8                        .o8
@@ -914,6 +1090,11 @@ smslant :
 \__/ \__/ /___/\__/
 <BLANKLINE>
 <BLANKLINE>
+smtengwar :
+    ,'
+|~)  | (~) |~)
+|       /  |
+<BLANKLINE>
 speed :
 _____               _____
 __  /______ __________  /_
@@ -1005,6 +1186,8 @@ tengwar :
  88               .dP'      88
 .8P                        .8P
 <BLANKLINE>
+term :
+test
 thick :
  w               w
 w8ww .d88b d88b w8ww
@@ -1854,10 +2037,10 @@ zombie
 <BLANKLINE>
 <BLANKLINE>
         _      ___
-__   __/ |    ( _ )
-\ \ / /| |    / _ \
- \ V / | | _ | (_) |
-  \_/  |_|(_) \___/
+__   __/ |    / _ \
+\ \ / /| |   | (_) |
+ \ V / | | _  \__, |
+  \_/  |_|(_)   /_/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".

@@ -1,0 +1,1 @@
+python -m autopep8 art --recursive --aggressive --aggressive --in-place --pep8-passes 2000 --verbose

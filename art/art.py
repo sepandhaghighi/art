@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "1.8"
+version = "1.9"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -85,7 +85,27 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "pepper": [pepper_dic, False], "poison": [poison_dic, True],
             "rot13": [rot13_dic, False], "short": [short_dic, False],
             "small": [small_dic, False], "tengwar": [tengwar_dic, True],
-            "big": [big_dic, False]}
+            "big": [big_dic, False], "1row": [dic_1row, True],
+            "3d_diagonal": [dic_3d_diagonal, False],
+            "4max": [dic_4max, True],
+            "amc3line": [amc3line_dic, True],
+            "cybersmall": [cybersmall_dic, True],
+            "gothic": [gothic_dic, False],
+            "rev": [rev_dic, False],
+            "smtengwar": [smtengwar_dic, False],
+            "term": [term_dic, False],
+            "amcrazor": [amcrazor_dic, True],
+            "amcaaa01": [amcaaa01_dic, True],
+            "amcneko": [amcneko_dic, False],
+            "amcrazo2": [amcrazo2_dic, True],
+            "amcslash": [amcslash_dic, False],
+            "amcthin": [amcthin_dic, True],
+            "amctubes": [amctubes_dic, True],
+            "amcun1": [amcun1_dic, False],
+            "arrows": [arrows_dic, False],
+            "bear": [bear_dic, True],
+            "benjamin": [benjamin_dic, True]
+            }
 
 DEFAULT_FONT = "standard"
 
