@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. decimal
 	14. defleppard
 	15. dietcola
-	16. dosrebel
+	16. flipped
 	17. double
 	18. doubleshorts
 	19. eftipiti
