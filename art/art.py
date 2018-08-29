@@ -124,7 +124,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "doubleshorts": [doubleshorts_dic, True],
             "eftipiti": [eftipiti_dic, False],
             "filter": [filter_dic, True],
-            "flipped":[flipped_dic,True]
+            "flipped": [flipped_dic, True]
             }
 
 DEFAULT_FONT = "standard"
