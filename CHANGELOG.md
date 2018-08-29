@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ## [2.0] - 2018-08-29
 ### Added
-- 10 new fonts
+- 20 new fonts
 	1. bigfig
 	2. bolger
 	3. braced
@@ -18,6 +18,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. cola
 	9. crawford
 	10. cricket
+	11. DANC4
+	12. dancingfont
+	13. decimal
+	14. defleppard
+	15. dietcola
+	16. dosrebel
+	17. double
+	18. doubleshorts
+	19. eftipiti
+	20. filter
 
 ## [1.9] - 2018-08-23
 ### Added
