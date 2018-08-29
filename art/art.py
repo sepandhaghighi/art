@@ -114,7 +114,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "chiseled": [chiseled_dic, True],
             "cola": [cola_dic, False],
             "crawford": [crawford_dic, True],
-            "cricket": [cricket_dic, False]
+            "cricket": [cricket_dic, False],
+            "danc4": [danc4_dic,False],
+            "dancingfont":[dancingfont_dic,True],
+            "decimal":[decimal_dic,False],
+            "defleppard":[defleppard_dic,True],
+            "dietcola":[dietcola_dic,False],
+            "dosrebel":[dosrebel_dic,False],
+            "double":[double_dic,True],
+            "doubleshorts":[doubleshorts_dic,True],
+            "eftipiti":[eftipiti_dic,False],
+            "filter":[filter_dic,True]
             }
 
 DEFAULT_FONT = "standard"
