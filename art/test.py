@@ -578,6 +578,40 @@ cygnet :
  '-`'--' '-
 <BLANKLINE>
 <BLANKLINE>
+danc4 :
+'\   /`  \O/   |_O_|'\   /`
+  \ /     Y     _|    \ /
+   X     / \  _|  \    X
+  /O\  ./   \,    |_  /O\
+<BLANKLINE>
+dancingfont :
+  _____   U _____ u   ____       _____
+ |_ " _|  \| ___"|/  / __"| u   |_ " _|
+   | |     |  _|"   <\___ \/      | |
+  /| |\    | |___    u___) |     /| |\
+ u |_|U    |_____|   |____/>>   u |_|U
+ _// \\_   <<   >>    )(  (__)  _// \\_
+(__) (__) (__) (__)  (__)      (__) (__)
+decimal :
+116 101 115 116
+defleppard :
+<BLANKLINE>
+<BLANKLINE>
+                   ,;          .
+                 f#i          ;W
+ GEEEEEEEL     .E#t          f#E GEEEEEEEL
+ ,;;L#K;;.    i#W,         .E#f  ,;;L#K;;.
+    t#E      L#D.         iWW;      t#E
+    t#E    :K#Wfff;      L##Lffi    t#E
+    t#E    i##WLLLLt    tLLG##L     t#E
+    t#E     .E#L          ,W#i      t#E
+    t#E       f#E:       j#E.       t#E
+    t#E        ,WW;    .D#j         t#E
+    t#E         .D#;  ,WK,          t#E
+     fE           tt  EG.            fE
+      :               ,               :
+<BLANKLINE>
+<BLANKLINE>
 diamond :
   /\\                     /\\
   /\\                     /\\
@@ -587,6 +621,14 @@ diamond :
   /\\  /\            /\\  /\\
    /\\   /\\\\   /\\ /\\   /\\
 <BLANKLINE>
+<BLANKLINE>
+dietcola :
+<BLANKLINE>
+    /                     /
+---/---   .-.     .   ---/---
+  /     ./.-'_   / \    /
+ /      (__.'   / ._)  /
+               /
 <BLANKLINE>
 digital :
 +-++-++-++-+
@@ -630,6 +672,19 @@ doom :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+dosrebel :
+  �����                      �����
+ �����                      �����
+ �������    ������   �����  �������
+�����۰    ��۰���� ��۰�  �����۰
+  ����    �������� �������   ����
+  ���� ������۰��   �������  ���� ���
+  ������� ��������  ������   �������
+   �����   ������  ������     �����
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 dotmatrix :
     _                                                    _
    (_)                                                  (_)
@@ -641,6 +696,18 @@ dotmatrix :
      (_)(_)        (_)(_)(_)(_)      (_)(_)(_)(_)         (_)(_)
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+double :
+______ ____ __ ______
+| || |||   (( \| || |
+  ||  ||==  \\   ||
+  ||  ||___\_))  ||
+<BLANKLINE>
+<BLANKLINE>
+doubleshorts :
+_____ _____   __ _____
+ ||   ||==   ((   ||
+ ||   ||___ \_))  ||
 <BLANKLINE>
 drpepper :
    _               _
@@ -655,6 +722,10 @@ eftifont :
 | ]/o\(c'| ]
 L| \( \_)L|
 <BLANKLINE>
+<BLANKLINE>
+eftipiti :
+<BLANKLINE>
+test
 <BLANKLINE>
 eftirobot :
  _            _
@@ -685,6 +756,13 @@ _________ _______  _______ _________
    | |   | (            ) |   | |
    | |   | (____/\/\____) |   | |
    )_(   (_______/\_______)   )_(
+<BLANKLINE>
+<BLANKLINE>
+filter :
+888888888   ,d8PPPP 88888888  888888888
+   '88d     d88ooo  88ooooPp     '88d
+  '888    ,88'             d8   '888
+'88p      88bdPPP   8888888P  '88p
 <BLANKLINE>
 <BLANKLINE>
 fourtops :
