@@ -120,11 +120,11 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "decimal": [decimal_dic, False],
             "defleppard": [defleppard_dic, True],
             "dietcola": [dietcola_dic, False],
-            "dosrebel": [dosrebel_dic, False],
             "double": [double_dic, True],
             "doubleshorts": [doubleshorts_dic, True],
             "eftipiti": [eftipiti_dic, False],
-            "filter": [filter_dic, True]
+            "filter": [filter_dic, True],
+            "flipped":[flipped_dic,True]
             }
 
 DEFAULT_FONT = "standard"
