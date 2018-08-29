@@ -104,7 +104,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "amcun1": [amcun1_dic, False],
             "arrows": [arrows_dic, False],
             "bear": [bear_dic, True],
-            "benjamin": [benjamin_dic, True]
+            "benjamin": [benjamin_dic, True],
+            "bigfig":[bigfig_dic,False],
+            "bolger":[bolger_dic,False],
+            "braced":[braced_dic,True],
+            "bright":[bright_dic,True],
+            "broadway":[broadway_dic,True],
+            "cards":[cards_dic,True],
+            "chiseled":[chiseled_dic,True],
+            "cola":[cola_dic,False],
+            "crawford":[crawford_dic,True],
+            "cricket":[cricket_dic,False]
             }
 
 DEFAULT_FONT = "standard"
