@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "1.9"
+version = "2.0"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -104,7 +104,27 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "amcun1": [amcun1_dic, False],
             "arrows": [arrows_dic, False],
             "bear": [bear_dic, True],
-            "benjamin": [benjamin_dic, True]
+            "benjamin": [benjamin_dic, True],
+            "bigfig": [bigfig_dic, False],
+            "bolger": [bolger_dic, False],
+            "braced": [braced_dic, True],
+            "bright": [bright_dic, True],
+            "broadway": [broadway_dic, True],
+            "cards": [cards_dic, True],
+            "chiseled": [chiseled_dic, True],
+            "cola": [cola_dic, False],
+            "crawford": [crawford_dic, True],
+            "cricket": [cricket_dic, False],
+            "danc4": [danc4_dic, False],
+            "dancingfont": [dancingfont_dic, True],
+            "decimal": [decimal_dic, False],
+            "defleppard": [defleppard_dic, True],
+            "dietcola": [dietcola_dic, False],
+            "double": [double_dic, True],
+            "doubleshorts": [doubleshorts_dic, True],
+            "eftipiti": [eftipiti_dic, False],
+            "filter": [filter_dic, True],
+            "flipped": [flipped_dic, True]
             }
 
 DEFAULT_FONT = "standard"
