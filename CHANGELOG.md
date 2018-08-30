@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [2.0] - 2018-08-29
+## [2.0] - 2018-08-30
 ### Added
 - 20 new fonts
 	1. bigfig
@@ -28,6 +28,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. doubleshorts
 	19. eftipiti
 	20. filter
+- Font list HTML page
+- Art list HTML page
 
 ## [1.9] - 2018-08-23
 ### Added
