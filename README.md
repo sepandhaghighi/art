@@ -362,8 +362,8 @@ Just send your text to one of these bots. 👇👇👇👇
 <p>Screen Record</p>
 </div>
 
-* [View Full Font List](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List")					
-* [View Full Art List](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List")
+* View Full Font List ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
+* View Full Art List ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
 
 ## Issues & Bug Reports			
 
