@@ -1,4 +1,3 @@
 codecov==2.0.15
-setuptools>=39.2.0
 
 
