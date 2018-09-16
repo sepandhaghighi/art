@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.0"
+version = "2.1"
 
 
 description = '''ASCII art is also known as "computer text art".
