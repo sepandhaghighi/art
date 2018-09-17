@@ -1,5 +1,9 @@
 sudo: true
 
+os:
+  - linux
+  - osx
+
 language: python
 
 python:
