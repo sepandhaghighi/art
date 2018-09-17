@@ -21,6 +21,7 @@ if __name__ == "__main__":
             cov.stop()
             cov.report()
             cov.save()
+            sys.exit(error_flag)
         elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":
