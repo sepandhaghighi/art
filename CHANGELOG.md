@@ -25,6 +25,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	15. horizontalright
 ### Changed
 - `setuptools` removed from `requirements.txt`
+- `OSX` env added to `.travis.yml`
+- Test cases modified
 
 ## [2.0] - 2018-08-30
 ### Added
