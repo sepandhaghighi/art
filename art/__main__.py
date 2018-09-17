@@ -13,11 +13,11 @@ if __name__ == "__main__":
         if args[1].upper() == "TEST":
             cov = coverage.Coverage()
             cov.start()
-            doctest.testfile(
+            error_flag=doctest.testfile(
                 "test.py",
                 optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
                 | doctest.IGNORE_EXCEPTION_DETAIL,
-                verbose=False)
+                verbose=False)[0]
             cov.stop()
             cov.report()
             cov.save()
