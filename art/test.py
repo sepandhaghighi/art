@@ -13,7 +13,7 @@ This function get a string as input if input is one digit add a zero
 ~|~ [- _\~ ~|~
 <BLANKLINE>
 <BLANKLINE>
-3-:
+3-d :
    **                     **
   /**                    /**
  ******  *****   ****** ******
