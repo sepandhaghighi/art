@@ -1,16 +1,30 @@
 sudo: true
 
-os:
-  - linux
-
 language: python
 
-python:
-  - 3.6
-  - 3.5
-  - 3.4
-  - 3.3
-  - 2.7
+matrix:
+    include:
+        - os: linux
+          sudo: required
+          python: 3.6
+        - os: linux
+          sudo: required
+          python: 3.5
+        - os: linux
+          sudo: required
+          python: 3.4
+        - os: linux
+          sudo: required
+          python: 3.3
+        - os: linux
+          sudo: required
+          python: 2.7
+        - os: osx
+          language: generic
+          env: TOXENV=py36
+        - os: osx
+          language: generic
+          env: TOXENV=py35
 
 install:
   - python setup.py install
