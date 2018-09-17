@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `setuptools` removed from `requirements.txt`
 - `OSX` env added to `.travis.yml`
 - Test cases modified
+- `text2art` bug  in OSX fixed
 
 ## [2.0] - 2018-08-30
 ### Added
