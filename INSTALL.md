@@ -8,11 +8,11 @@
 
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art --upgrade` or `pip3 install art --upgrade` (Need root access)
+- `pip install art==2.1` or `pip3 install art==2.1` (Need root access)
 
 ### Easy Install
 
-- Run `easy_install --upgrade art` (Need root access)
+- Run `easy_install "art==2.1"` (Need root access)
 
 
 ### Note		
