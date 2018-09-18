@@ -764,6 +764,41 @@ fourtops :
  | \/__) |
 <BLANKLINE>
 <BLANKLINE>
+fraktur :
+     s                  .x+=:.        s
+    :8                 z`    ^%      :8
+   .88                    .   <k    .88
+  :888ooo      .u       .@8Ned8"   :888ooo
+-*8888888   ud8888.   .@^%8888"  -*8888888
+  8888    :888'8888. x88:  `)8b.   8888
+  8888    d888 '88%" 8888N=*8888   8888
+  8888    8888.+"     %8"    R88   8888
+ .8888Lu= 8888L        @8Wou 9%   .8888Lu=
+ ^%888*   '8888c. .+ .888888P`    ^%888*
+   'Y"     "88888%   `   ^"F        'Y"
+             "YP'
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+funface :
+(o)__(o)           oo_    (o)__(o)
+(__  __)   wWw    /  _)-< (__  __)
+  (  )     (O)_   \__ `.    (  )
+   )(     .' __)     `. |    )(
+  (  )   (  _)       _| |   (  )
+   )/     `.__)   ,-'   |    )/
+  (              (_..--'    (
+<BLANKLINE>
+funfaces :
+(o)__(o)   wWw     oo_    (o)__(o)
+(__  __)   (O)_   /  _)-< (__  __)
+  (  )     / __)  \__ `.    (  )
+   )(     / (        `. |    )(
+  (  )   (  _)       _| |   (  )
+   )/     \ \_    ,-'   |    )/
+  (        \__)  (_..--'    (
+<BLANKLINE>
 fuzzy :
  .-.              .-.
 .' `.            .' `.
@@ -772,6 +807,63 @@ fuzzy :
  :_; `.__.'`.__.' :_;
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+georgi16 :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+  /                         /
+ /M       ____     ____    /M
+/MMMMM   6MMMMb   6MMMMb\ /MMMMM
+ MM     6M'  `Mb MM'    `  MM
+ MM     MM    MM YM.       MM
+ MM     MMMMMMMM  YMMMMb   MM
+ MM     MM            `Mb  MM
+ YM.  , YM    d9 L    ,MM  YM.  ,
+  YMMM9  YMMMM9  MYMMMM9    YMMM9
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+georgia11 :
+<BLANKLINE>
+<BLANKLINE>
+  mm                       mm
+  MM                       MM
+mmMMmm   .gP"Ya  ,pP"Ybd mmMMmm
+  MM    ,M'   Yb 8I   `"   MM
+  MM    8M"""""" `YMMMa.   MM
+  MM    YM.    , L.   I8   MM
+  `Mbmo  `Mbmmd' M9mmmP'   `Mbmo
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ghost :
+ .-') _       ('-.     .-')     .-') _
+(  OO) )    _(  OO)   ( OO ).  (  OO) )
+/     '._  (,------. (_)---\_) /     '._
+|'--...__)  |  .---' /    _ |  |'--...__)
+'--.  .--'  |  |     \  :` `.  '--.  .--'
+   |  |    (|  '--.   '..`''.)    |  |
+   |  |     |  .--'  .-._)   \    |  |
+   |  |     |  `---. \       /    |  |
+   `--'     `------'  `-----'     `--'
+<BLANKLINE>
+ghoulish :
+.-,.-.,-.  )\.---.    )\.--.  .-,.-.,-.
+) ,, ,. ( (   ,-._(  (   ._.' ) ,, ,. (
+\( |(  )/  \  '-,     `-.`.   \( |(  )/
+   ) \      ) ,-`    ,_ (  \     ) \
+   \ (     (  ``-.  (  '.)  )    \ (
+    )/      )..-.(   '._,_.'      )/
+<BLANKLINE>
+<BLANKLINE>
+glenyn :
+____ ____ ___  ____
+|_ _\| __\| _\ |_ _\
+  || |  ]_[__ \  ||
+  |/ |___/|___/  |/
 <BLANKLINE>
 goofy :
 _        __        ___       ___        __
@@ -793,6 +885,12 @@ gothic :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+graceful :
+ ____  ____  ____  ____
+(_  _)(  __)/ ___)(_  _)
+  )(   ) _) \___ \  )(
+ (__) (____)(____/ (__)
+<BLANKLINE>
 graffiti :
   __                     __
 _/  |_   ____    _______/  |_
@@ -800,6 +898,39 @@ _/  |_   ____    _______/  |_
  |  |  \  ___/  \___ \  |  |
  |__|   \___  >/____  > |__|
             \/      \/
+<BLANKLINE>
+greek :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ ___  ___   ____  ___
+(   )/ __) /  ._)(   )
+ | | > _) ( () )  | |
+  \_)\___) \__/    \_)
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+heartleft :
+ .-.-.  .-.-.  .-.-.  .-.-.
+( t .' ( e .' ( s .' ( t .'
+ `.(    `.(    `.(    `.(
+<BLANKLINE>
+<BLANKLINE>
+heartright :
+.-.-.  .-.-.  .-.-.  .-.-.
+'. t ) '. e ) '. s ) '. t )
+  ).'    ).'    ).'    ).'
+<BLANKLINE>
+<BLANKLINE>
+henry3d :
+  _                          _
+ FJ_      ____      ____    FJ_
+J  _|    F __ J    F ___J  J  _|
+| |-'   | _____J  | '----_ | |-'
+F |__-. F L___--. )-____  LF |__-.
+\_____/J\______/FJ\______/F\_____/
+J_____F J______F  J______F J_____F
+<BLANKLINE>
 <BLANKLINE>
 hollywood :
 <BLANKLINE>
@@ -810,6 +941,22 @@ hollywood :
  /'         /(___,/'   '---,      /'
 (__        (________ (___,/      (__
 <BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+horizontalleft :
+ _         _______        __   _
+| /_____  | ._ _. |  .-. \  \ | /_____
+| ______/ | \ v / | / _ \_\ | | ______/
+|_\       |_/   \_| |_\`.___/ |_\
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+horizontalright :
+       _   _______   __              _
+ _____\ | | ._ _. | /  / .-.   _____\ |
+\______ | | \ v / | | /_/ _ \ \______ |
+      /_| |_/   \_| \___.'/_|       /_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
@@ -2196,11 +2343,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____       ___
-__   __|___ \     / _ \
-\ \ / /  __) |   | | | |
- \ V /  / __/  _ | |_| |
-  \_/  |_____|(_) \___/
+        ____      _
+__   __|___ \    / |
+\ \ / /  __) |   | |
+ \ V /  / __/  _ | |
+  \_/  |_____|(_)|_|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".

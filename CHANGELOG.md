@@ -5,6 +5,30 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.1] - 2018-09-18
+### Added
+- 15 new fonts
+	1. fraktur
+	2. funface
+	3. funfaces
+	4. georgi16
+	5. georgia11
+	6. ghost
+	7. ghoulish
+	8. glenyn
+	9. graceful
+	10. greek
+	11. heartleft
+	12. heartright
+	13. henry3d
+	14. horizontalleft
+	15. horizontalright
+### Changed
+- `setuptools` removed from `requirements.txt`
+- `OSX` env added to `.travis.yml`
+- Test cases modified
+- `text2art` bug  in OSX fixed
+
 ## [2.0] - 2018-08-30
 ### Added
 - 20 new fonts
@@ -449,7 +473,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.0...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.1...HEAD
+[2.1]: https://github.com/sepandhaghighi/art/compare/v2.0...v2.1
 [2.0]: https://github.com/sepandhaghighi/art/compare/v1.9...v2.0
 [1.9]: https://github.com/sepandhaghighi/art/compare/v1.8...v1.9
 [1.8]: https://github.com/sepandhaghighi/art/compare/v1.7...v1.8

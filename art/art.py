@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.0"
+version = "2.1"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -124,7 +124,22 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "doubleshorts": [doubleshorts_dic, True],
             "eftipiti": [eftipiti_dic, False],
             "filter": [filter_dic, True],
-            "flipped": [flipped_dic, True]
+            "flipped": [flipped_dic, True],
+            "fraktur": [fraktur_dic, False],
+            "funface": [funface_dic, True],
+            "funfaces": [funfaces_dic, True],
+            "georgi16": [georgi16_dic, False],
+            "georgia11": [georgia11_dic, False],
+            "ghost": [ghost_dic, True],
+            "ghoulish": [ghoulish_dic, True],
+            "glenyn": [glenyn_dic, True],
+            "graceful": [graceful_dic, True],
+            "greek": [greek_dic, False],
+            "heartleft": [heartleft_dic, False],
+            "heartright": [heartright_dic, False],
+            "henry3d": [henry3d_dic, False],
+            "horizontalleft": [horizontalleft_dic, True],
+            "horizontalright": [horizontalright_dic, True]
             }
 
 DEFAULT_FONT = "standard"
@@ -384,6 +399,6 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
                 temp = temp + " "
             temp = temp + split_list[j][i]
         result_list.append(temp)
-    if "win" not in sys.platform:
+    if "win32" != sys.platform:
         spliter = "\r\n"
     return((spliter).join(result_list))
