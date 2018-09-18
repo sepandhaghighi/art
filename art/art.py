@@ -399,6 +399,6 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
                 temp = temp + " "
             temp = temp + split_list[j][i]
         result_list.append(temp)
-    if "win32"!=sys.platform:
+    if "win32" != sys.platform:
         spliter = "\r\n"
     return((spliter).join(result_list))
