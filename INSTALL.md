@@ -13,10 +13,3 @@
 ### Easy Install
 
 - Run `easy_install "art==2.1"` (Need root access)
-
-
-### Note		
-
-On error, install `requirements` manually :	
-
-- Run `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
