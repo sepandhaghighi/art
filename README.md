@@ -291,7 +291,12 @@ True
 		<td align="center">text2art</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-	</tr>		
+	</tr>	
+	<tr>
+		<td align="center">set_default</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>	
 </table> 
 </html>				
 
