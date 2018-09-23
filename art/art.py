@@ -4,7 +4,6 @@ from .text_dic import *
 import os
 import sys
 import random
-import functools
 
 version = "2.2"
 
