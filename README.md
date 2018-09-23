@@ -353,8 +353,6 @@ ___ ____ ____ ___
  \__| \___||___/ \__|
                      
 
->>> set_default(font=2)
->>> tprint("test")
 >>> set_default("italic")
 >>> tprint("test")
              
