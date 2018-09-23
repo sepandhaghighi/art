@@ -139,7 +139,24 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "heartright": [heartright_dic, False],
             "henry3d": [henry3d_dic, False],
             "horizontalleft": [horizontalleft_dic, True],
-            "horizontalright": [horizontalright_dic, True]
+            "horizontalright": [horizontalright_dic, True],
+            "ICL-1900": [ICL_1900_dic,True],
+            "impossible": [impossible_dic,True],
+            "ivrit": [ivrit_dic,False],
+            "jacky": [jacky_dic,True],
+            "jerusalem": [jerusalem_dic,False],
+            "katakana": [katakana_dic,False],
+            "keyboard": [keyboard_dic,False],
+            "knob": [knob_dic,True],
+            "lildevil": [lildevil_dic,True],
+            "lineblocks": [lineblocks_dic,True],
+            "merlin1": [merlin1_dic,True],
+            "merlin2": [merlin2_dic,True],
+            "modular": [modular_dic,True],
+            "morse": [morse_dic,True],
+            "morse2":[morse2_dic,True],
+            "moscow": [moscow_dic,True],
+            "muzzle": [muzzle_dic,True]
             }
 
 DEFAULT_FONT = "standard"
