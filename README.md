@@ -364,44 +364,6 @@ _/  _   _ _/
 
 </pre>
 
-<pre>
->>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
->>> print(Art)
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> aprint("happi")  # correct --> aprint("happy") (distance < 3)
- ۜ\(סּںסּَ` )/ۜ 
->>> Art=art("birds2222",number=1) # correct --> Art=art("birds",number=1) (distance > 3)
->>> print(Art)
-Traceback (most recent call last):
-	...
-art.art.artError: Invalid art name
->>> aprint("happi231")  # correct --> aprint("happy") (distance > 3)
-Traceback (most recent call last):
-	...
-art.art.artError: Invalid art name
->>> Art=text2art("test",font="black") # correct --> Art=text2art("test",font="block")
->>> print(Art)
-
- .----------------.  .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. || .--------------. |
-| |  _________   | || |  _________   | || |    _______   | || |  _________   | |
-| | |  _   _  |  | || | |_   ___  |  | || |   /  ___  |  | || | |  _   _  |  | |
-| | |_/ | | \_|  | || |   | |_  \_|  | || |  |  (__ \_|  | || | |_/ | | \_|  | |
-| |     | |      | || |   |  _|  _   | || |   '.___`-.   | || |     | |      | |
-| |    _| |_     | || |  _| |___/ |  | || |  |`\____) |  | || |    _| |_     | |
-| |   |_____|    | || | |_________|  | || |  |_______.'  | || |   |_____|    | |
-| |              | || |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'  '----------------'
-
->>> tprint("test",font="cybermedum")   # correct --> tprint("test",font="cybermedium")
-___ ____ ____ ___ 
- |  |___ [__   |  
- |  |___ ___]  |  
-                  
-   
-</pre>
-
  
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
