@@ -4,6 +4,7 @@ from .text_dic import *
 import os
 import sys
 import random
+import functools
 
 version = "2.2"
 
@@ -417,3 +418,21 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if "win32" != sys.platform:
         spliter = "\r\n"
     return((spliter).join(result_list))
+
+
+def default_font(font=DEFAULT_FONT,chr_ignore=True,filename="art",print_status=True):
+    '''
+    This fuction change text2art tprint and tsave default values
+    :param font: input font
+    :type font:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :param filename: output file name (only tsave)
+    :type filename:str
+    :param print_status : Save message print flag (only tsave)
+    :type print_status:bool
+    :return: None
+    '''
+    tprint.__defaults__ = (font, chr_ignore)
+    tsave.__defaults__ = (font, filename, chr_ignore, print_status)
+    text2art.__defaults__ = (font, chr_ignore)
