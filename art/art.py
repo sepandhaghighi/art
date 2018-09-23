@@ -420,7 +420,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     return((spliter).join(result_list))
 
 
-def default_font(font=DEFAULT_FONT,chr_ignore=True,filename="art",print_status=True):
+def set_defaults(font=DEFAULT_FONT,chr_ignore=True,filename="art",
+             print_status=True):
     '''
     This fuction change text2art tprint and tsave default values
     :param font: input font
