@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [2.2] - 2018-09-23
+## [2.2] - 2018-09-24
 ### Added
 - 15 new fonts
 	1. ICL-1900
@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. morse2
 	14. moscow
 	15. muzzle
+- `set_default` function
 
 ## [2.1] - 2018-09-18
 ### Added
