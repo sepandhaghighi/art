@@ -5,6 +5,25 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.2] - 2018-09-23
+### Added
+- 15 new fonts
+	1. ICL-1900
+	2. impossible
+	3. jacky
+	4. katakana
+	5. keyboard
+	6. knob
+	7. lildevil
+	8. lineblocks
+	9. merlin1
+	10. merlin2
+	11. modular
+	12. morse
+	13. morse2
+	14. moscow
+	15. muzzle
+
 ## [2.1] - 2018-09-18
 ### Added
 - 15 new fonts
@@ -473,7 +492,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.1...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.2...HEAD
+[2.2]: https://github.com/sepandhaghighi/art/compare/v2.1...v2.2
 [2.1]: https://github.com/sepandhaghighi/art/compare/v2.0...v2.1
 [2.0]: https://github.com/sepandhaghighi/art/compare/v1.9...v2.0
 [1.9]: https://github.com/sepandhaghighi/art/compare/v1.8...v1.9
