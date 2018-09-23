@@ -434,6 +434,14 @@ def set_default(font=DEFAULT_FONT,chr_ignore=True,filename="art",
     :type print_status:bool
     :return: None
     '''
+    if isinstance(font,str)==False:
+        raise artError("font should have str type")
+    if isinstance(chr_ignore,bool)==False:
+        raise artError("chr_ignore should have bool type")
+    if isinstance(filename,str)==False:
+        raise artError("filename should have str type")
+    if isinstance(print_status,bool)==False:
+        raise artError("print_status should have bool type")
     tprint.__defaults__ = (font, chr_ignore)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status)
     text2art.__defaults__ = (font, chr_ignore)
