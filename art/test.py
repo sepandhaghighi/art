@@ -2643,6 +2643,29 @@ Traceback (most recent call last):
 art.art.artError: number should have int type
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
+>>> set_default(font="italic")
+>>> tprint("test")
+<BLANKLINE>
+_/  _   _ _/
+/  (- _)  /
+<BLANKLINE>
+<BLANKLINE>
+>>> set_default(font=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: font should have str type
+>>> set_default(chr_ignore=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: chr_ignore should have bool type
+>>> set_default(filename=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: filename should have str type
+>>> set_default(print_status=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: print_status should have bool type
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
