@@ -274,9 +274,9 @@ True
 <html>
 <table>
 	<tr>
-		<td align="center" style="font-weight: bold;">Function</td>
-		<td align="center" style="font-weight: bold;">Normal Output</td>
-		<td align="center" style="font-weight: bold;">Error</td>
+		<td align="center">Function</td>
+		<td align="center">Normal Output</td>
+		<td align="center">Error</td>
 	</tr>
 	<tr>
 		<td align="center">art</td>
