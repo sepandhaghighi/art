@@ -24,7 +24,7 @@
 <a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3?svg=true"></a>	
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-175-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-190-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-250-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 </div>
@@ -38,6 +38,7 @@
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
+   		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
@@ -71,7 +72,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">175</td>
+		<td align="center">190</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -127,6 +128,17 @@ Traceback (most recent call last):
         ...
 art.art.artError: number should have int type
 </pre>
+
+3. randart
+
+`randart` function is added in `Version 2.2` as `art("random")` shortcut
+<pre>
+>>> randart()
+'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
+>>> randart()
+'✌(◕‿-)✌ '
+</pre>			
+
 ### ASCII Text
 1. text2art				
 
@@ -258,42 +270,8 @@ True
 {'Status': False, 'Message': "'int' object has no attribute 'split'"}
                         
 </pre>
-* Note : Functions error response updated in `Version 0.8`
 
-<html>
-<table>
-	<tr>
-		<td align="center">Function</td>
-		<td align="center">Normal Output</td>
-		<td align="center">Error</td>
-	</tr>
-	<tr>
-		<td align="center">art</td>
-		<td align="center">str</td>
-		<td align="center">raise artError</td>
-	</tr>
-	<tr>
-		<td align="center">aprint</td>
-		<td align="center">None</td>
-		<td align="center">raise artError</td>
-	</tr>
-	<tr>
-		<td align="center">tprint</td>
-		<td align="center">None</td>
-		<td align="center">raise artError</td>
-	</tr>
-	<tr>
-		<td align="center">tsave</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
-	</tr>
-	<tr>
-		<td align="center">text2art</td>
-		<td align="center">str</td>
-		<td align="center">raise artError</td>
-	</tr>		
-</table> 
-</html>				
+			
 
 ### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
@@ -336,6 +314,83 @@ ___ ____ ____ ___
    
 </pre>
 
+### Set Defaults			
+`set_default` function is added in `Version 2.2` in order to change default values.
+
+<pre>
+>>> help(set_default)
+Help on function set_default in module art.art:
+
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True)
+    This fuction change text2art tprint and tsave default values
+    :param font: input font
+    :type font:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :param filename: output file name (only tsave)
+    :type filename:str
+    :param print_status : Save message print flag (only tsave)
+    :type print_status:bool
+    :return: None
+
+>>> tprint("test")
+ _               _   
+| |_   ___  ___ | |_ 
+| __| / _ \/ __|| __|
+| |_ |  __/\__ \| |_ 
+ \__| \___||___/ \__|
+                     
+
+>>> set_default(font="italic")
+>>> tprint("test")
+             
+_/  _   _ _/ 
+/  (- _)  /  
+             
+
+</pre>
+* Note : Functions error response updated in `Version 0.8`
+
+	<html>
+	<table>
+	<tr>
+		<td align="center">Function</td>
+		<td align="center">Normal Output</td>
+		<td align="center">Error</td>
+	</tr>
+	<tr>
+		<td align="center">art</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+
+	</tr>
+	<tr>
+		<td align="center">aprint</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center">tprint</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center">tsave</td>
+		<td align="center">{"Status":bool,"Message":str}</td>
+		<td align="center">{"Status":bool,"Message":str}</td>
+	</tr>
+	<tr>
+		<td align="center">text2art</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+	</tr>	
+	<tr>
+		<td align="center">set_default</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>	
+	</table> 
+	</html>	
  
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`

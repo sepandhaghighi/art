@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.1"
+version = "2.2"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -139,7 +139,22 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "heartright": [heartright_dic, False],
             "henry3d": [henry3d_dic, False],
             "horizontalleft": [horizontalleft_dic, True],
-            "horizontalright": [horizontalright_dic, True]
+            "horizontalright": [horizontalright_dic, True],
+            "ICL-1900": [ICL_1900_dic, True],
+            "impossible": [impossible_dic, True],
+            "jacky": [jacky_dic, True],
+            "katakana": [katakana_dic, False],
+            "keyboard": [keyboard_dic, False],
+            "knob": [knob_dic, True],
+            "lildevil": [lildevil_dic, True],
+            "lineblocks": [lineblocks_dic, True],
+            "merlin1": [merlin1_dic, True],
+            "merlin2": [merlin2_dic, True],
+            "modular": [modular_dic, True],
+            "morse": [morse_dic, True],
+            "morse2": [morse2_dic, True],
+            "moscow": [moscow_dic, True],
+            "muzzle": [muzzle_dic, True]
             }
 
 DEFAULT_FONT = "standard"
@@ -242,6 +257,14 @@ def art(artname, number=1, text=""):
         if isinstance(text, str) == False:
             raise artError("text should have str type")
         return (art_value[0] + text + art_value[1] + " ") * number
+
+
+def randart():
+    '''
+    This function return random 1line art
+    :return: ascii art as str
+    '''
+    return art("random")
 
 
 def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
@@ -402,3 +425,30 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if "win32" != sys.platform:
         spliter = "\r\n"
     return((spliter).join(result_list))
+
+
+def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
+                print_status=True):
+    '''
+    This fuction change text2art tprint and tsave default values
+    :param font: input font
+    :type font:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :param filename: output file name (only tsave)
+    :type filename:str
+    :param print_status : Save message print flag (only tsave)
+    :type print_status:bool
+    :return: None
+    '''
+    if isinstance(font, str) == False:
+        raise artError("font should have str type")
+    if isinstance(chr_ignore, bool) == False:
+        raise artError("chr_ignore should have bool type")
+    if isinstance(filename, str) == False:
+        raise artError("filename should have str type")
+    if isinstance(print_status, bool) == False:
+        raise artError("print_status should have bool type")
+    tprint.__defaults__ = (font, chr_ignore)
+    tsave.__defaults__ = (font, filename, chr_ignore, print_status)
+    text2art.__defaults__ = (font, chr_ignore)

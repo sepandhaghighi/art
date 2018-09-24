@@ -64,6 +64,21 @@ This function get a string as input if input is one digit add a zero
  / /      //           \ \      / /
 / /      ((____     //   ) )   / /
 <BLANKLINE>
+ICL-1900 :
+test
+ *
+<BLANKLINE>
+* **
+<BLANKLINE>
+  *
+*  *
+<BLANKLINE>
+ *
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 acrobatic :
   o                               o
  <|>                             <|>
@@ -960,6 +975,20 @@ horizontalright :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+impossible :
+       _                _              _               _
+      /\ \             /\ \           / /\            /\ \
+      \_\ \           /  \ \         / /  \           \_\ \
+      /\__ \         / /\ \ \       / / /\ \__        /\__ \
+     / /_ \ \       / / /\ \_\     / / /\ \___\      / /_ \ \
+    / / /\ \ \     / /_/_ \/_/     \ \ \ \/___/     / / /\ \ \
+   / / /  \/_/    / /____/\         \ \ \          / / /  \/_/
+  / / /          / /\____\/     _    \ \ \        / / /
+ / / /          / / /______    /_/\__/ / /       / / /
+/_/ /          / / /_______\   \ \/___/ /       /_/ /
+\_\/           \/__________/    \_____\/        \_\/
+<BLANKLINE>
+<BLANKLINE>
 invita :
 <BLANKLINE>
 <BLANKLINE>
@@ -1026,6 +1055,16 @@ _/  _   _ _/
 /  (- _)  /
 <BLANKLINE>
 <BLANKLINE>
+jacky :
+ ________    _____    _____   ________
+(___  ___)  / ___/   / ____\ (___  ___)
+    ) )    ( (__    ( (___       ) )
+   ( (      ) __)    \___ \     ( (
+    ) )    ( (           ) )     ) )
+   ( (      \ \___   ___/ /     ( (
+   /__\      \____\ /____/      /__\
+<BLANKLINE>
+<BLANKLINE>
 jazmine :
 <BLANKLINE>
   o                  o
@@ -1037,6 +1076,34 @@ jazmine :
 ::..::.....::.....:::..:
 ::::::::::::::::::::::::
 ::::::::::::::::::::::::
+<BLANKLINE>
+katakana :
+     #                ##########      #
+  #######  ########## #        #   #######
+   # #             #          #     # #
+   # #            #          #      # #
+##########     # #          #    ##########
+     #          #         ##          #
+     #           #      ##            #
+<BLANKLINE>
+<BLANKLINE>
+keyboard :
+<BLANKLINE>
+ _______  _______  _______  _______
+|\     /||\     /||\     /||\     /|
+| +---+ || +---+ || +---+ || +---+ |
+| |   | || |   | || |   | || |   | |
+| |t  | || |e  | || |s  | || |t  | |
+| +---+ || +---+ || +---+ || +---+ |
+|/_____\||/_____\||/_____\||/_____\|
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+knob :
+         _  _________  _   _____          _
+ _______| |(  _   _  )( ) (  _  ) _______| |
+(_______  || | | | | || |_| | | |(_______  |
+        |_|(_) (_) (_)(_____) (_)        |_|
 <BLANKLINE>
 larry3d :
  __                       __
@@ -1075,6 +1142,23 @@ tt    eeeee   sss  tt
  tttt  eeeee     s  tttt
               sss
 <BLANKLINE>
+lildevil :
+(`-')       (`-')  _  (`-').-> (`-')
+( OO).->    ( OO).-/  ( OO)_   ( OO).->
+/    '._   (,------. (_)--\_)  /    '._
+|'--...__)  |  .---' /    _ /  |'--...__)
+`--.  .--' (|  '--.  \_..`--.  `--.  .--'
+   |  |     |  .--'  .-._)   \    |  |
+   |  |     |  `---. \       /    |  |
+   `--'     `------'  `-----'     `--'
+<BLANKLINE>
+lineblocks :
+_______  ______  ______  _______
+  | |   | |     / |        | |
+  | |   | |---- '------.   | |
+  |_|   |_|____  ____|_/   |_|
+<BLANKLINE>
+<BLANKLINE>
 lockergnome :
  :|             :|
 :::| :~~/ <::< :::|
@@ -1102,6 +1186,27 @@ maxfour :
  | \/__) |
 <BLANKLINE>
 <BLANKLINE>
+merlin1 :
+ ___________    _______    ________   ___________
+("     _   ")  /"     "|  /"       ) ("     _   ")
+ )__/  \\__/  (: ______) (:   \___/   )__/  \\__/
+    \\_ /      \/    |    \___  \        \\_ /
+    |.  |      // ___)_    __/  \\       |.  |
+    \:  |     (:      "|  /" \   :)      \:  |
+     \__|      \_______) (_______/        \__|
+<BLANKLINE>
+<BLANKLINE>
+merlin2 :
+    _         _          _         _
+ __/\\__   __/\\___     /\\__   __/\\__
+(__  __)) (_  ____))   /    \\ (__  __))
+  /  \\    /  ._))    _\  \_//   /  \\
+ /:.  \\  /:. ||___  // \:.\    /:.  \\
+ \__  //  \  _____)) \\__  /    \__  //
+    \//    \//          \\/        \//
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 mike :
   _   _     _
    | |/ //   |
@@ -1112,6 +1217,35 @@ mini :
 _|_  _   _ _|_
  |_ (/_ _>  |_
 <BLANKLINE>
+<BLANKLINE>
+modular :
+ _______  _______  _______  _______
+|       ||       ||       ||       |
+|_     _||    ___||  _____||_     _|
+  |   |  |   |___ | |_____   |   |
+  |   |  |    ___||_____  |  |   |
+  |   |  |   |___  _____| |  |   |
+  |___|  |_______||_______|  |___|
+<BLANKLINE>
+morse :
+- . ... -
+<BLANKLINE>
+morse2 :
+- . ... -
+<BLANKLINE>
+moscow :
+<BLANKLINE>
+##### #####  #### #####
+  #   #     #       #
+  #   ####  #       #
+  #   #     #       #
+  #   #####  ####   #
+<BLANKLINE>
+muzzle :
+       __
+>>|<< |   |<< >>|<<
+  |   |<< --    |
+  |   |__ >>|   |
 <BLANKLINE>
 nancyj :
   dP                       dP
@@ -2343,11 +2477,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      _
-__   __|___ \    / |
-\ \ / /  __) |   | |
- \ V /  / __/  _ | |
-  \_/  |_____|(_)|_|
+        ____      ____
+__   __|___ \    |___ \
+\ \ / /  __) |     __) |
+ \ V /  / __/  _  / __/
+  \_/  |_____|(_)|_____|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -2377,12 +2511,16 @@ Help :
 >>> random.seed(3)
 >>> Art = art("random")
 >>> Text = text2art("test","random")
+>>> Art3 = randart()
 >>> random.seed(9)
 >>> Text2 = text2art("test","random")
 >>> Art2 =  art("random")
+>>> Art4 = randart()
 >>> len(Art)!=len(Art2)
 True
 >>> len(Text)!=len(Text2)
+True
+>>> len(Art3)!=len(Art4)
 True
 >>> Data=art('assdsds')
 Traceback (most recent call last):
@@ -2509,6 +2647,29 @@ Traceback (most recent call last):
 art.art.artError: number should have int type
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
+>>> set_default(font="italic")
+>>> tprint("test")
+<BLANKLINE>
+_/  _   _ _/
+/  (- _)  /
+<BLANKLINE>
+<BLANKLINE>
+>>> set_default(font=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: font should have str type
+>>> set_default(chr_ignore=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: chr_ignore should have bool type
+>>> set_default(filename=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: filename should have str type
+>>> set_default(print_status=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: print_status should have bool type
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
