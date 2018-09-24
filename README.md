@@ -318,6 +318,21 @@ ___ ____ ____ ___
 `set_default` function is added in `Version 2.2` in order to change default values.
 
 <pre>
+>>> help(set_default)
+Help on function set_default in module art.art:
+
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True)
+    This fuction change text2art tprint and tsave default values
+    :param font: input font
+    :type font:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :param filename: output file name (only tsave)
+    :type filename:str
+    :param print_status : Save message print flag (only tsave)
+    :type print_status:bool
+    :return: None
+
 >>> tprint("test")
  _               _   
 | |_   ___  ___ | |_ 
@@ -326,7 +341,7 @@ ___ ____ ____ ___
  \__| \___||___/ \__|
                      
 
->>> set_default("italic")
+>>> set_default(font="italic")
 >>> tprint("test")
              
 _/  _   _ _/ 
