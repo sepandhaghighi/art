@@ -2511,12 +2511,16 @@ Help :
 >>> random.seed(3)
 >>> Art = art("random")
 >>> Text = text2art("test","random")
+>>> Art3 = randomart()
 >>> random.seed(9)
 >>> Text2 = text2art("test","random")
 >>> Art2 =  art("random")
+>>> Art4 = randomart()
 >>> len(Art)!=len(Art2)
 True
 >>> len(Text)!=len(Text2)
+True
+>>> len(Art3)!=len(Art4)
 True
 >>> Data=art('assdsds')
 Traceback (most recent call last):
