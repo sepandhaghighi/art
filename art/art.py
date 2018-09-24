@@ -259,6 +259,14 @@ def art(artname, number=1, text=""):
         return (art_value[0] + text + art_value[1] + " ") * number
 
 
+def randomart():
+    '''
+    This function return random 1line art
+    :return: ascii art as str
+    '''
+    return art("random")
+
+
 def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     '''
     This function split function by \n then call text2art function
