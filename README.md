@@ -127,6 +127,11 @@ Traceback (most recent call last):
         ...
 art.art.artError: number should have int type
 </pre>
+
+3. randart
+<pre>
+
+</pre>
 ### ASCII Text
 1. text2art				
 

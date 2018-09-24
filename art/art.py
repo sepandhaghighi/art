@@ -259,7 +259,7 @@ def art(artname, number=1, text=""):
         return (art_value[0] + text + art_value[1] + " ") * number
 
 
-def randomart():
+def randart():
     '''
     This function return random 1line art
     :return: ascii art as str

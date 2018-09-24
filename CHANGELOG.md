@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	14. moscow
 	15. muzzle
 - `set_default` function
+- `randart` function
 
 ## [2.1] - 2018-09-18
 ### Added

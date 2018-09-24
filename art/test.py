@@ -2511,11 +2511,11 @@ Help :
 >>> random.seed(3)
 >>> Art = art("random")
 >>> Text = text2art("test","random")
->>> Art3 = randomart()
+>>> Art3 = randart()
 >>> random.seed(9)
 >>> Text2 = text2art("test","random")
 >>> Art2 =  art("random")
->>> Art4 = randomart()
+>>> Art4 = randart()
 >>> len(Art)!=len(Art2)
 True
 >>> len(Text)!=len(Text2)
