@@ -270,7 +270,7 @@ True
 {'Status': False, 'Message': "'int' object has no attribute 'split'"}
                         
 </pre>
-* Note : Functions error response updated in `Version 0.8`
+
 			
 
 ### Typo-Tolerance			
@@ -334,6 +334,8 @@ _/  _   _ _/
              
 
 </pre>
+* Note : Functions error response updated in `Version 0.8`
+
 	<html>
 	<table>
 	<tr>
