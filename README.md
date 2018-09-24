@@ -129,9 +129,15 @@ art.art.artError: number should have int type
 </pre>
 
 3. randart
-<pre>
 
-</pre>
+`randart` function is added in `Version 2.2` as `art("random")` shortcut
+<pre>
+>>> randart()
+'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
+>>> randart()
+'✌(◕‿-)✌ '
+</pre>			
+
 ### ASCII Text
 1. text2art				
 
