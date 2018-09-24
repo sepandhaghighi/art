@@ -38,6 +38,7 @@
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
+   		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
@@ -270,47 +271,7 @@ True
                         
 </pre>
 * Note : Functions error response updated in `Version 0.8`
-
-	<html>
-	<table>
-	<tr>
-		<td align="center">Function</td>
-		<td align="center">Normal Output</td>
-		<td align="center">Error</td>
-	</tr>
-	<tr>
-		<td align="center">art</td>
-		<td align="center">str</td>
-		<td align="center">raise artError</td>
-
-	</tr>
-	<tr>
-		<td align="center">aprint</td>
-		<td align="center">None</td>
-		<td align="center">raise artError</td>
-	</tr>
-	<tr>
-		<td align="center">tprint</td>
-		<td align="center">None</td>
-		<td align="center">raise artError</td>
-	</tr>
-	<tr>
-		<td align="center">tsave</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
-		<td align="center">{"Status":bool,"Message":str}</td>
-	</tr>
-	<tr>
-		<td align="center">text2art</td>
-		<td align="center">str</td>
-		<td align="center">raise artError</td>
-	</tr>	
-	<tr>
-		<td align="center">set_default</td>
-		<td align="center">None</td>
-		<td align="center">raise artError</td>
-	</tr>	
-	</table> 
-	</html>				
+			
 
 ### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
@@ -374,6 +335,46 @@ _/  _   _ _/
 
 </pre>
 
+	<html>
+	<table>
+	<tr>
+		<td align="center">Function</td>
+		<td align="center">Normal Output</td>
+		<td align="center">Error</td>
+	</tr>
+	<tr>
+		<td align="center">art</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+
+	</tr>
+	<tr>
+		<td align="center">aprint</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center">tprint</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center">tsave</td>
+		<td align="center">{"Status":bool,"Message":str}</td>
+		<td align="center">{"Status":bool,"Message":str}</td>
+	</tr>
+	<tr>
+		<td align="center">text2art</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+	</tr>	
+	<tr>
+		<td align="center">set_default</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>	
+	</table> 
+	</html>	
  
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
