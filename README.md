@@ -271,8 +271,8 @@ True
 </pre>
 * Note : Functions error response updated in `Version 0.8`
 
-<html>
-<table>
+	<html>
+	<table>
 	<tr>
 		<td align="center">Function</td>
 		<td align="center">Normal Output</td>
@@ -309,8 +309,8 @@ True
 		<td align="center">None</td>
 		<td align="center">raise artError</td>
 	</tr>	
-</table> 
-</html>				
+	</table> 
+	</html>				
 
 ### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
