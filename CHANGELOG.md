@@ -5,6 +5,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.3] - 2018-10-07
+### Added
+- 12 new fonts
+	1. nancyj-improved
+	2. nscript
+	3. ntgreek
+	4. nvscript
+	5. octal
+	6. oldbanner
+	7. os2
+	8. peaksslant
+	9. puzzle
+	10. rammstein
+	11. red_phoenix
+	12. runyc
+
 ## [2.2] - 2018-09-24
 ### Added
 - 15 new fonts
@@ -494,7 +510,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.2...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.3...HEAD
+[2.3]: https://github.com/sepandhaghighi/art/compare/v2.2...v2.3
 [2.2]: https://github.com/sepandhaghighi/art/compare/v2.1...v2.2
 [2.1]: https://github.com/sepandhaghighi/art/compare/v2.0...v2.1
 [2.0]: https://github.com/sepandhaghighi/art/compare/v1.9...v2.0
