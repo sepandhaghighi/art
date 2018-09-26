@@ -1266,6 +1266,14 @@ d8888P .d8888b. .d8888b. d8888P
   dP   `88888P' `88888P'   dP
 <BLANKLINE>
 <BLANKLINE>
+nancyj-improved :
+  dP                       dP
+  88                       88
+d8888P .d8888b. .d8888b. d8888P
+  88   88ooood8 Y8ooooo.   88
+  88   88.  ...       88   88
+  dP   `88888P' `88888P'   dP
+<BLANKLINE>
 nancyj-underlined :
   dP                       dP
   88                       88
@@ -1286,6 +1294,53 @@ nipples :
    {__   {____   {__ {__   {__
 <BLANKLINE>
 <BLANKLINE>
+nscript :
+<BLANKLINE>
+   I8                         I8
+   I8                         I8
+88888888                   88888888
+   I8                         I8
+   I8     ,ggg,     ,g,       I8
+   I8    i8" "8i   ,8'8,      I8
+  ,I8,   I8, ,8I  ,8'  Yb    ,I8,
+ ,d88b,  `YbadP' ,8'_   8)  ,d88b,
+88P""Y88888P"Y888P' "YY8P8P88P""Y88
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ntgreek :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ ___  ___   ____  ___
+(   )/ __) /  ._)(   )
+ | | > _) ( () )  | |
+  \_)\___) \__/    \_)
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+nvscript :
+<BLANKLINE>
+   I8                         I8
+   I8                         I8
+88888888                   88888888
+   I8                         I8
+   I8     ,ggg,     ,g,       I8
+   I8    i8" "8i   ,8'8,      I8
+  ,I8,   I8, ,8I  ,8'  Yb    ,I8,
+ ,d88b,  `YbadP' ,8'_   8)  ,d88b,
+ 8P""Y8 888P"Y888P' "YY8P8P 8P""Y8
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 o8 :
   o8                             o8
 o888oo  ooooooooo8  oooooooo8  o888oo
@@ -1294,6 +1349,8 @@ o888oo  ooooooooo8  oooooooo8  o888oo
   888o   88oooo888 88oooooo88    888o
 <BLANKLINE>
 <BLANKLINE>
+octal :
+164 145 163 164
 ogre :
  _               _
 | |_   ___  ___ | |_
@@ -1301,6 +1358,24 @@ ogre :
 | |_ |  __/\__ \| |_
  \__| \___||___/ \__|
 <BLANKLINE>
+<BLANKLINE>
+oldbanner :
+<BLANKLINE>
+##### ######  ####  #####
+  #   #      #        #
+  #   #####   ####    #
+  #   #           #   #
+  #   #      #    #   #
+  #   ######  ####    #
+<BLANKLINE>
+os2 :
+_oo____________________oo____
+_oo_____ooooo___oooo___oo____
+oooo___oo____o_oo___o_oooo___
+_oo____ooooooo___oo____oo____
+_oo__o_oo______o___oo__oo__o_
+__ooo___ooooo___oooo____ooo__
+_____________________________
 <BLANKLINE>
 pawp :
 <BLANKLINE>
@@ -1322,6 +1397,14 @@ peaks :
   /^^  /^            /^^  /^^
    /^^   /^^^^   /^^ /^^   /^^
 <BLANKLINE>
+<BLANKLINE>
+peaksslant :
+     ___/\/\_____     ____________     ____________     ___/\/\_____
+    _/\/\/\/\/\_     ___/\/\/\___     ___/\/\/\/\_     _/\/\/\/\/\_
+   ___/\/\_____     _/\/\/\/\/\_     _/\/\/\/\___     ___/\/\_____
+  ___/\/\_____     _/\/\_______     _______/\/\_     ___/\/\_____
+ ___/\/\/\___     ___/\/\/\/\_     _/\/\/\/\___     ___/\/\/\___
+____________     ____________     ____________     ____________
 <BLANKLINE>
 pebbles :
 <BLANKLINE>
@@ -1365,10 +1448,26 @@ puffy :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+puzzle :
+     _         _         _         _
+   _( )__    _( )__    _( )__    _( )__
+ _|     _| _|     _| _|     _| _|     _|
+(_ T _ (_ (_ E _ (_ (_ S _ (_ (_ T _ (_
+  |_( )__|  |_( )__|  |_( )__|  |_( )__|
+<BLANKLINE>
 pyramid :
   ^    ^    ^    ^
  /t\  /e\  /s\  /t\
 <___><___><___><___>
+<BLANKLINE>
+rammstein :
+<BLANKLINE>
+   __     ______   ______     __
+ _|  |_  |   ___| |   ___|  _|  |_
+|_    _| |   ___|  `-.`-.  |_    _|
+  |__|   |______| |______|   |__|
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 rectangles :
 <BLANKLINE>
@@ -1376,6 +1475,15 @@ rectangles :
 | |_  ___  ___ | |_
 |  _|| -_||_ -||  _|
 |_|  |___||___||_|
+<BLANKLINE>
+<BLANKLINE>
+red_phoenix :
+  __                        __
+_/  |_    ____     ______ _/  |_
+\   __\ _/ __ \   /  ___/ \   __\
+ |  |   \  ___/   \___ \   |  |
+ |__|    \___  > /____  >  |__|
+             \/       \/
 <BLANKLINE>
 <BLANKLINE>
 rev :
@@ -1430,6 +1538,14 @@ d88888 d88 88b C88b  d88888
  888    "YeeP" d,dP   888
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+runyc :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+/|\ |\/| /  /|\
+ |  |  | --  |
+ |  |  |  /  |
 <BLANKLINE>
 sblood :
  @@@@@@@ @@@@@@@@  @@@@@@ @@@@@@@
