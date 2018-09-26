@@ -154,7 +154,19 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "morse": [morse_dic, True],
             "morse2": [morse2_dic, True],
             "moscow": [moscow_dic, True],
-            "muzzle": [muzzle_dic, True]
+            "muzzle": [muzzle_dic, True],
+            "nancyj-improved": [nancyj_improved_dic,False],
+            "nscript":[nscript_dic,False],
+            "ntgreek": [ntgreek_dic,False],
+            "nvscript": [nvscript_dic,False],
+            "octal": [octal_dic,False],
+            "oldbanner": [oldbanner_dic,False],
+            "os2": [os2_dic,False],
+            "peaksslant": [peaksslant_dic,False],
+            "puzzle": [puzzle_dic,True],
+            "rammstein": [rammstein_dic,False],
+            "red_phoenix": [red_phoenix_dic,False],
+            "runyc": [runyc_dic,False]
             }
 
 DEFAULT_FONT = "standard"
