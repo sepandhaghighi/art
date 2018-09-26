@@ -262,3 +262,5 @@ art_dic = {
 
 
 }
+
+art_counter = len(art_dic)

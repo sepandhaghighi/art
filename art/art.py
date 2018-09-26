@@ -168,7 +168,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "red_phoenix": [red_phoenix_dic,False],
             "runyc": [runyc_dic,False]
             }
-
+font_counter = len(font_map)
 DEFAULT_FONT = "standard"
 
 
