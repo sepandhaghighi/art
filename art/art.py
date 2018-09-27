@@ -166,7 +166,15 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "puzzle": [puzzle_dic, True],
             "rammstein": [rammstein_dic, False],
             "red_phoenix": [red_phoenix_dic, False],
-            "runyc": [runyc_dic, False]
+            "runyc": [runyc_dic, False],
+            "santaclara": [santaclara_dic,False],
+            "shimrod": [shimrod_dic,False],
+            "smallcaps": [smallcaps_dic,True],
+            "smpoison": [smpoison_dic,True],
+            "soft": [soft_dic,False],
+            "spliff": [spliff_dic,True],
+            "stacey": [stacey_dic,True],
+            "stampate": [stampate_dic,False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
