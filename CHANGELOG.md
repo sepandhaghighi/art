@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ## [2.3] - 2018-10-07
 ### Added
-- 31 new fonts
+- 35 new fonts
 	1. nancyj-improved
 	2. nscript
 	3. ntgreek
@@ -39,6 +39,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	29. tubular
 	30. twisted
 	31. varsity
+	32. wavy
+	33. wetletter
+	34. whimsy
+	35. wow
 
 ## [2.2] - 2018-09-24
 ### Added
