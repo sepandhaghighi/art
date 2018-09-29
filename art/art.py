@@ -185,7 +185,11 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "tsalagi": [tsalagi_dic, False],
             "tubular": [tubular_dic, False],
             "twisted": [twisted_dic, True],
-            "varsity": [varsity_dic, False]
+            "varsity": [varsity_dic, False],
+            "wavy": [wavy_dic,False],
+            "wetletter": [wetletter_dic,True],
+            "whimsy": [whimsy_dic,True],
+            "wow": [wow_dic,True]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
