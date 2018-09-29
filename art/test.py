@@ -1981,6 +1981,12 @@ varsity :
  \__/   '.__.' [\__) )  \__/
 <BLANKLINE>
 <BLANKLINE>
+wavy :
+<BLANKLINE>
+_)_   _   _ _)_
+(_   )_) (  (_
+    (_   _)
+<BLANKLINE>
 weird :
 <BLANKLINE>
  /              /
@@ -1988,6 +1994,30 @@ weird :
 |    |___)|___ |
 |__  |__   __/ |__
 <BLANKLINE>
+<BLANKLINE>
+wetletter :
+ _______  ,---.      .---.  _______
+|__   __| | .-'     ( .-._)|__   __|
+  )| |    | `-.    (_) \     )| |
+ (_) |    | .-'    _  \ \   (_) |
+   | |    |  `--. ( `-'  )    | |
+   `-'    /( __.'  `----'     `-'
+         (__)
+<BLANKLINE>
+whimsy :
+<BLANKLINE>
+   d8P                    d8P
+d888888P               d888888P
+  ?88'   d8888b .d888b,  ?88'
+  88P   d8b_,dP ?8b,     88P
+  88b   88b       `?8b   88b
+  `?8b  `?888P'`?888P'   `?8b
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+wow :
+`][` ]E ((5 `][`
 <BLANKLINE>
 >>> tprint("test",font = "block243")
 <BLANKLINE>
