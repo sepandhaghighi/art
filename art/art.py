@@ -175,17 +175,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "spliff": [spliff_dic, True],
             "stacey": [stacey_dic, True],
             "stampate": [stampate_dic, False],
-            "stforek": [stforek_dic,True],
-            "sub-zero": [sub_zero_dic,True],
-            "swampland": [swampland_dic,True],
-            "sweet": [sweet_dic,True],
-            "ticks": [ticks_dic,False],
-            "ticksslant": [ticksslant_dic,False],
-            "tiles": [tiles_dic,False],
-            "tsalagi": [tsalagi_dic,False],
-            "tubular": [tubular_dic,False],
-            "twisted": [twisted_dic,True],
-            "varsity": [varsity_dic,False]
+            "stforek": [stforek_dic, True],
+            "sub-zero": [sub_zero_dic, True],
+            "swampland": [swampland_dic, True],
+            "sweet": [sweet_dic, True],
+            "ticks": [ticks_dic, False],
+            "ticksslant": [ticksslant_dic, False],
+            "tiles": [tiles_dic, False],
+            "tsalagi": [tsalagi_dic, False],
+            "tubular": [tubular_dic, False],
+            "twisted": [twisted_dic, True],
+            "varsity": [varsity_dic, False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
