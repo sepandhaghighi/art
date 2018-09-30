@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.2"
+version = "2.3"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -154,9 +154,44 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "morse": [morse_dic, True],
             "morse2": [morse2_dic, True],
             "moscow": [moscow_dic, True],
-            "muzzle": [muzzle_dic, True]
+            "muzzle": [muzzle_dic, True],
+            "nancyj-improved": [nancyj_improved_dic, False],
+            "nscript": [nscript_dic, False],
+            "ntgreek": [ntgreek_dic, False],
+            "nvscript": [nvscript_dic, False],
+            "octal": [octal_dic, False],
+            "oldbanner": [oldbanner_dic, False],
+            "os2": [os2_dic, False],
+            "peaksslant": [peaksslant_dic, False],
+            "puzzle": [puzzle_dic, True],
+            "rammstein": [rammstein_dic, False],
+            "red_phoenix": [red_phoenix_dic, False],
+            "runyc": [runyc_dic, False],
+            "santaclara": [santaclara_dic, False],
+            "shimrod": [shimrod_dic, False],
+            "smallcaps": [smallcaps_dic, True],
+            "smpoison": [smpoison_dic, True],
+            "soft": [soft_dic, False],
+            "spliff": [spliff_dic, True],
+            "stacey": [stacey_dic, True],
+            "stampate": [stampate_dic, False],
+            "stforek": [stforek_dic, True],
+            "sub-zero": [sub_zero_dic, True],
+            "swampland": [swampland_dic, True],
+            "sweet": [sweet_dic, True],
+            "ticks": [ticks_dic, False],
+            "ticksslant": [ticksslant_dic, False],
+            "tiles": [tiles_dic, False],
+            "tsalagi": [tsalagi_dic, False],
+            "tubular": [tubular_dic, False],
+            "twisted": [twisted_dic, True],
+            "varsity": [varsity_dic, False],
+            "wavy": [wavy_dic, False],
+            "wetletter": [wetletter_dic, True],
+            "whimsy": [whimsy_dic, True],
+            "wow": [wow_dic, True]
             }
-
+font_counter = len(font_map)
 DEFAULT_FONT = "standard"
 
 
