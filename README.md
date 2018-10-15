@@ -56,7 +56,7 @@ letters to make a visual shape that is spread over multiple lines of text.
 	
 Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
-<html>
+
 <table>
 	<tr> 
 		<td align="center">Open Hub</td>
@@ -79,9 +79,9 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 		<td align="center">250</td>
 	</tr>
 </table>
-</html>
 
-<html>
+
+
 <table>
 	<tr> 
 		<td align="center">Branch</td>
@@ -99,7 +99,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3/branch/dev?svg=true"></a></td>
 	</tr>
 </table>
-</html>
+
     
 
 ## Usage
@@ -371,7 +371,6 @@ _/  _   _ _/
 </pre>
 * Note : Functions error response updated in `Version 0.8`
 
-	<html>
 	<table>
 	<tr>
 		<td align="center">Function</td>
@@ -410,7 +409,6 @@ _/  _   _ _/
 		<td align="center">raise artError</td>
 	</tr>	
 	</table> 
-	</html>	
  
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
