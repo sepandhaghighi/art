@@ -5,6 +5,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.4] - 2018-11-01
+### Added
+- 10 new fonts
+	1. alpha
+	2. alligator3
+	3. amc3liv1
+	4. ascii_new_roman
+	5. B1FF
+	6. dwhistled
+	7. eftiwall
+	8. fire_font-k
+	9. fire_font-s
+	10. gradient
+### Changed
+- `requirements.txt` modified
+
 ## [2.3] - 2018-09-30
 ### Added
 - 35 new fonts
@@ -533,7 +549,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.3...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.4...HEAD
+[2.4]: https://github.com/sepandhaghighi/art/compare/v2.3...v2.4
 [2.3]: https://github.com/sepandhaghighi/art/compare/v2.2...v2.3
 [2.2]: https://github.com/sepandhaghighi/art/compare/v2.1...v2.2
 [2.1]: https://github.com/sepandhaghighi/art/compare/v2.0...v2.1
