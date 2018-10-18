@@ -32,7 +32,7 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='2.3',
+    version='2.4',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',
@@ -48,7 +48,7 @@ setup(
     install_requires=get_requires(),
     python_requires='>=2.7',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
         'Intended Audience :: End Users/Desktop',
