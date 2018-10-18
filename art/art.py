@@ -189,7 +189,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "wavy": [wavy_dic, False],
             "wetletter": [wetletter_dic, True],
             "whimsy": [whimsy_dic, True],
-            "wow": [wow_dic, True]
+            "wow": [wow_dic, True],
+            "alligator3": [alligator3_dic,True],
+            "alpha": [alpha_dic,True],
+            "amc3liv1": [amc3liv1_dic,True],
+            "ascii_new_roman": [ascii_new_roman_dic,True],
+            "B1FF": [B1FF_dic,True],
+            "dwhistled": [dwhistled_dic,False],
+            "eftiwall": [eftiwall_dic,False],
+            "fire_font-k": [fire_font_k_dic,False],
+            "fire_font-s": [fire_font_s_dic,False],
+            "gradient": [gradient_dic,True]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
