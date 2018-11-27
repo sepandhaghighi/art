@@ -132,7 +132,7 @@ art.art.artError: artname shoud have str type
 2. aprint				
 
 This function print 1-line art in normal mode (return None) and raise `artError` in exception
-<pre>
+```pycon
 >>> aprint("butterfly") # print art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy") # print art
@@ -147,17 +147,17 @@ This function print 1-line art in normal mode (return None) and raise `artError`
 Traceback (most recent call last):
         ...
 art.art.artError: number should have int type
-</pre>
+```
 
 3. randart
 
 `randart` function is added in `Version 2.2` as `art("random")` shortcut
-<pre>
+```pycon
 >>> randart()
 'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
 >>> randart()
 '✌(◕‿-)✌ '
-</pre>			
+```		
 
 ### ASCII Text
 1. text2art				
@@ -210,7 +210,7 @@ art.art.artError: س is invalid
 2. tprint				
 
 This function print ascii text in normal mode (return None) and raise `artError` in exception
-<pre>
+```pycon
 >>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
@@ -271,11 +271,11 @@ ___  ____ _    ____ ____
 |__/ |__| |___ |__| |  \ 
 
 
-</pre>
+```
 3. tsave				
 
 This function return `dict` in normal and exception mode
-<pre>
+```pycon
 >>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
 Saved! 
 Filename: test.txt
@@ -289,14 +289,14 @@ True
 >>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 {'Status': False, 'Message': "'int' object has no attribute 'split'"}
                         
-</pre>
+```
 
 			
 
 ### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
 
-<pre>
+```pycon
 >>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
 >>> print(Art)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
@@ -332,12 +332,12 @@ ___ ____ ____ ___
  |  |___ ___]  |  
                   
    
-</pre>
+```
 
 ### Set Defaults			
 `set_default` function is added in `Version 2.2` in order to change default values.
 
-<pre>
+```pycon
 >>> help(set_default)
 Help on function set_default in module art.art:
 
@@ -368,7 +368,7 @@ _/  _   _ _/
 /  (- _)  /  
              
 
-</pre>
+```
 * Note : Functions error response updated in `Version 0.8`
 
 	<table>
