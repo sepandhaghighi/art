@@ -108,7 +108,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception	
-<pre>
+```pycon
 >>> from art import *
 >>> art_1=art("coffee") # return art as str in normal mode
 >>> print(art_1)
@@ -128,7 +128,7 @@ Traceback (most recent call last):
         ...
 art.art.artError: artname shoud have str type
 
-</pre>
+```
 2. aprint				
 
 This function print 1-line art in normal mode (return None) and raise `artError` in exception
