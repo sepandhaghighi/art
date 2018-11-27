@@ -163,7 +163,7 @@ art.art.artError: number should have int type
 1. text2art				
 
 This function return ascii text as `str` in normal mode and raise `artError` in exception
-<pre>	
+```pycon	
 >>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
 >>> print(Art)
               _   
@@ -206,7 +206,7 @@ Traceback (most recent call last):
         ...
 art.art.artError: س is invalid 
              
-</pre>
+```
 2. tprint				
 
 This function print ascii text in normal mode (return None) and raise `artError` in exception
