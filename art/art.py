@@ -231,14 +231,17 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list():
+def font_list(words="test"):
     '''
     This Function Print All Of Fonts
     :return: None
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        tprint("test", str(item))
+        if str(item) in ["char4"]:
+            tprint(words.upper(), str(item))
+        else:
+            tprint(words, str(item))
 
 
 def art_list():
