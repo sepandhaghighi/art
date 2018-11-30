@@ -1,18 +1,14 @@
 <div align="center">
 <pre>
-      ___           ___                   
-     /\  \         /\  \                  
-    /::\  \       /::\  \         ___     
-   /:/\:\  \     /:/\:\__\       /\__\    
-  /:/ /::\  \   /:/ /:/  /      /:/  /    
- /:/_/:/\:\__\ /:/_/:/__/___   /:/__/     
- \:\/:/  \/__/ \:\/:::::/  /  /::\  \     
-  \::/__/       \::/~~/~~~~  /:/\:\  \    
-   \:\  \        \:\~~\      \/__\:\  \   
-    \:\__\        \:\__\          \:\__\  
-     \/__/         \/__/           \/__/  
 
-
+                      d8P  
+                   d888888P
+ d888b8b    88bd88b  ?88'  
+d8P' ?88    88P'  `  88P   
+88b  ,88b  d88       88b   
+`?88P'`88bd88'       `?8b  
+                           
+   
 </pre>
 <a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a>
 
