@@ -1,0 +1,4 @@
+codecov==2.0.15
+setuptools==40.6.2
+
+
