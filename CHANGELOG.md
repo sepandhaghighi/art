@@ -5,6 +5,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.5] - 2018-12-02
+### Added
+- 15 new fonts
+	1. char1
+	2. char2
+	3. char3
+	4. char4
+	5. charact1
+	6. charact2
+	7. charact3
+	8. charact4
+	9. charact5
+	10. charact6
+	11. characte
+	12. chartr
+	13. chartri
+	14. 1943
+	15. advenger
+- `dev-requirements.txt`
+
+### Changed
+- `Python 3.7` added to `.travis.yml` & `appveyor.yml`
+- `font_list` modified
+- `README.md` modified
+- `INSTALL.md` modified
+
 ## [2.4] - 2018-10-30
 ### Added
 - 10 new fonts
@@ -549,7 +575,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.4...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.5...HEAD
+[2.5]: https://github.com/sepandhaghighi/art/compare/v2.4...v2.5
 [2.4]: https://github.com/sepandhaghighi/art/compare/v2.3...v2.4
 [2.3]: https://github.com/sepandhaghighi/art/compare/v2.2...v2.3
 [2.2]: https://github.com/sepandhaghighi/art/compare/v2.1...v2.2

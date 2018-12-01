@@ -1,32 +1,21 @@
 <div align="center">
 <pre>
-      ___           ___                   
-     /\  \         /\  \                  
-    /::\  \       /::\  \         ___     
-   /:/\:\  \     /:/\:\__\       /\__\    
-  /:/ /::\  \   /:/ /:/  /      /:/  /    
- /:/_/:/\:\__\ /:/_/:/__/___   /:/__/     
- \:\/:/  \/__/ \:\/:::::/  /  /::\  \     
-  \::/__/       \::/~~/~~~~  /:/\:\  \    
-   \:\  \        \:\~~\      \/__\:\  \   
-    \:\__\        \:\__\          \:\__\  
-     \/__/         \/__/           \/__/  
-
-
+ ______   ______  _______ 
+| |  | | | |  | \   | |   
+| |__| | | |__| |   | |   
+|_|  |_| |_|  \_\   |_|   
+         
 </pre>
 <a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a>
-
-
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
-
-
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-235-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-250-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-250-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
+<a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
 	
 ----------
@@ -72,7 +61,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">235</td>
+		<td align="center">250</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -108,7 +97,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception	
-<pre>
+```pycon
 >>> from art import *
 >>> art_1=art("coffee") # return art as str in normal mode
 >>> print(art_1)
@@ -128,11 +117,11 @@ Traceback (most recent call last):
         ...
 art.art.artError: artname shoud have str type
 
-</pre>
+```
 2. aprint				
 
 This function print 1-line art in normal mode (return None) and raise `artError` in exception
-<pre>
+```pycon
 >>> aprint("butterfly") # print art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy") # print art
@@ -147,23 +136,23 @@ This function print 1-line art in normal mode (return None) and raise `artError`
 Traceback (most recent call last):
         ...
 art.art.artError: number should have int type
-</pre>
+```
 
 3. randart
 
 `randart` function is added in `Version 2.2` as `art("random")` shortcut
-<pre>
+```pycon
 >>> randart()
 'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
 >>> randart()
 '✌(◕‿-)✌ '
-</pre>			
+```		
 
 ### ASCII Text
 1. text2art				
 
 This function return ascii text as `str` in normal mode and raise `artError` in exception
-<pre>	
+```pycon	
 >>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
 >>> print(Art)
               _   
@@ -206,11 +195,11 @@ Traceback (most recent call last):
         ...
 art.art.artError: س is invalid 
              
-</pre>
+```
 2. tprint				
 
 This function print ascii text in normal mode (return None) and raise `artError` in exception
-<pre>
+```pycon
 >>> tprint("art") # print ascii text (default font) 
               _   
   __ _  _ __ | |_ 
@@ -271,11 +260,11 @@ ___  ____ _    ____ ____
 |__/ |__| |___ |__| |  \ 
 
 
-</pre>
+```
 3. tsave				
 
 This function return `dict` in normal and exception mode
-<pre>
+```pycon
 >>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
 Saved! 
 Filename: test.txt
@@ -289,14 +278,14 @@ True
 >>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 {'Status': False, 'Message': "'int' object has no attribute 'split'"}
                         
-</pre>
+```
 
 			
 
 ### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (>`Version 0.9`)
 
-<pre>
+```pycon
 >>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
 >>> print(Art)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
@@ -332,12 +321,12 @@ ___ ____ ____ ___
  |  |___ ___]  |  
                   
    
-</pre>
+```
 
 ### Set Defaults			
 `set_default` function is added in `Version 2.2` in order to change default values.
 
-<pre>
+```pycon
 >>> help(set_default)
 Help on function set_default in module art.art:
 
@@ -368,7 +357,7 @@ _/  _   _ _/
 /  (- _)  /  
              
 
-</pre>
+```
 * Note : Functions error response updated in `Version 0.8`
 
 	<table>

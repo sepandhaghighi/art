@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.4"
+version = "2.5"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -199,7 +199,22 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "eftiwall": [eftiwall_dic, False],
             "fire_font-k": [fire_font_k_dic, False],
             "fire_font-s": [fire_font_s_dic, False],
-            "gradient": [gradient_dic, True]
+            "gradient": [gradient_dic, True],
+            "1943": [dic_1943, False],
+            "advenger": [advenger_dic, False],
+            "char1": [char1_dic, False],
+            "char2": [char2_dic, False],
+            "char3": [char3_dic, False],
+            "char4": [char4_dic, False],
+            "charact1": [charact1_dic, False],
+            "charact2": [charact2_dic, False],
+            "charact3": [charact3_dic, False],
+            "charact4": [charact4_dic, False],
+            "charact5": [charact5_dic, False],
+            "charact6": [charact6_dic, False],
+            "characte": [characte_dic, False],
+            "chartr": [chartr_dic, False],
+            "chartri": [chartri_dic, False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
@@ -216,14 +231,19 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list():
+def font_list(text="test"):
     '''
+    :param text : Input text
+    :type text : str
     This Function Print All Of Fonts
     :return: None
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        tprint("test", str(item))
+        if str(item) in ["char4"]:
+            tprint(text.upper(), str(item))
+        else:
+            tprint(text, str(item))
 
 
 def art_list():
