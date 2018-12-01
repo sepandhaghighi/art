@@ -3044,11 +3044,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      _  _
-__   __|___ \    | || |
-\ \ / /  __) |   | || |_
- \ V /  / __/  _ |__   _|
-  \_/  |_____|(_)   |_|
+        ____      ____
+__   __|___ \    | ___|
+\ \ / /  __) |   |___ \
+ \ V /  / __/  _  ___) |
+  \_/  |_____|(_)|____/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
