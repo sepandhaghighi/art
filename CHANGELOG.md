@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. chartri
 	14. 1943
 	15. advenger
+- `dev-requirements.txt`
 
 ### Changed
 - `Python 3.7` added to `.travis.yml` & `appveyor.yml`
