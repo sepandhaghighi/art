@@ -10,7 +10,7 @@ import coverage
 if __name__ == "__main__":
     args = sys.argv
     if len(args) > 1:
-        if args[1].upper() == "TEST":
+        if args[1].upper() == "TESTCOV":
             cov = coverage.Coverage()
             cov.start()
             error_flag = doctest.testfile(
@@ -22,6 +22,12 @@ if __name__ == "__main__":
             cov.report()
             cov.save()
             sys.exit(error_flag)
+        elif args[1].upper() == "TEST":
+            error_flag = doctest.testfile("test.py",optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS| doctest.IGNORE_EXCEPTION_DETAIL,verbose=False)[0]
+            if error_flag==0:
+                print("\nTest Passed")
+            else:
+                print("\nTest Failed")
         elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":

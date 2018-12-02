@@ -44,6 +44,6 @@ install:
   - python setup.py install
 
 script:
-  - python -m art test
+  - python -m art testcov
 after_success:
   - codecov
