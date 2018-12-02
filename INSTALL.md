@@ -10,6 +10,8 @@
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
 - `pip install art==2.6` or `pip3 install art==2.6` (Need root access)
 
+* Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
+
 ### Conda
 
 - Check [Conda Managing Package](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org)
