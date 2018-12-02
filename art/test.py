@@ -2273,6 +2273,138 @@ d888888P               d888888P
 wow :
 `][` ]E ((5 `][`
 <BLANKLINE>
+xbrite :
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+ #             #
+ #             #
+###  ##  #### ###
+ #  #  # #  #  #
+ #  ####  ##   #
+ #  #    #  #  #
+ ##  ### ####  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xbriteb :
+<BLANKLINE>
+ #              #
+ #              #
+ #              #
+###  ###  #### ###
+ #  #   # #  #  #
+ #  #####  ##   #
+ #  #     #  #  #
+ ##  #### ####  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xbritebi :
+<BLANKLINE>
+  #              #
+ ##             ##
+ ##             ##
+####   ## #### ####
+ #    # #  # #  #
+ #   ###   ##   #
+#    #  # #  # #
+###  #### ###  ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xbritei :
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+ #             #
+ #             #
+###   ##  ### ###
+ #   # #  # #  #
+#   ###   ##  #
+#   #  # # #  #
+##  #### ###  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xchartr :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+#           #
+##  ##   ## ##
+#  #  # # # #
+#  ####  #  #
+#  #    # # #
+##  ### ##  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xchartri :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+###   #    ## ###
+#    ###  #   #
+#   ##     #  #
+#   #  # #  # #
+##   ##   ##  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcour :
+<BLANKLINE>
+<BLANKLINE>
+ #               #
+ #               #
+####   ##   ### ####
+ #    #  # #     #
+ #    ###   ##   #
+ #  # #       #  #  #
+  ##   ### ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcourb :
+<BLANKLINE>
+<BLANKLINE>
+ ##                  ##
+ ##                  ##
+#####   ###   ####  #####
+ ##    ## ## ###     ##
+ ##    #####  ####   ##
+ ## ## ##       ###  ## ##
+  ###   #### #####    ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcourbi :
+<BLANKLINE>
+<BLANKLINE>
+  ##                  ##
+ ##                  ##
+#####   ###    #### #####
+ ##    ## ##  ##  #  ##
+##    ######  ####  ##
+## ## ##     #  ##  ## ##
+ ###   ####  ####    ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcouri :
+<BLANKLINE>
+<BLANKLINE>
+   #                 #
+  #                 #
+#####   ##    ### #####
+  #    #  #  #      #
+ #    #####   ##   #
+ #  # #     #  #   #  #
+  ##   ###  ###     ##
 >>> tprint("test",font = "block243")
 <BLANKLINE>
   _|                            _|
