@@ -2405,6 +2405,146 @@ xcouri :
  #    #####   ##   #
  #  # #     #  #   #  #
   ##   ###  ###     ##
+xhelv :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+ #             #
+###  ##   ##  ###
+ #  #  # #  #  #
+ #  ####  ##   #
+ #  #       #  #
+ #  #  # #  #  #
+ ##  ##   ##   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xhelvb :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+##              ##
+##              ##
+###  ###   ###  ###
+##  ## ## ## ## ##
+##  #####  ###  ##
+##  ##       ## ##
+##  ## ## ## ## ##
+ ##  ###   ###   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xhelvbi :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+  ##                  ##
+  ##                  ##
+#####   ###    ###  #####
+ ##    ## ##  ## ##  ##
+ ##    #####   ##    ##
+##    ##        ##  ##
+##    ## ##  ## ##  ##
+ ##    ###    ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xhelvi :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+  #                #
+  #                #
+####   ###   ##  ####
+ #    #  #  #  #  #
+ #   ####    #    #
+#    #        #  #
+#    #  #  #  #  #
+##    ##    ##   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsans :
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+####  ##   ## ####
+ #   #  # #    #
+ #   #### ##   #
+ #   #     ##  #
+ #   #      #  #
+  ##  ### ##    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsansb :
+<BLANKLINE>
+<BLANKLINE>
+ ##              ##
+####  ###   ### ####
+ ##  ## ## ##    ##
+ ##  ## ## ###   ##
+ ##  #####  ###  ##
+ ##  ##      ##  ##
+  ##  #### ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsansbi :
+<BLANKLINE>
+<BLANKLINE>
+  ##                 ##
+#####   ###   #### #####
+ ##    # ##  ##     ##
+ ##   ## ##  ###    ##
+##    ####    ###  ##
+##    ##       ##  ##
+###    ###  ####   ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsansi :
+<BLANKLINE>
+<BLANKLINE>
+  #                #
+####   ###   ### ####
+ #    #  #  #     #
+ #   #  #   ##    #
+#    ###     ##  #
+#    #        #  #
+##    ###  ###   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xtimes :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #            #
+##           ##
+###  ###  ## ###
+##  ## # ##  ##
+##  #### ### ##
+##  ##    ## ##
+ ##  ### ###  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xttyb :
+<BLANKLINE>
+<BLANKLINE>
+ ##                ##
+#####  ###   #### #####
+ ##   ## ## ##     ##
+ ##   ## ## ####   ##
+ ##   #####  ####  ##
+ ##   ##       ##  ##
+  ###  #### ####    ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 >>> tprint("test",font = "block243")
 <BLANKLINE>
   _|                            _|
