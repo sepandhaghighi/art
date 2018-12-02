@@ -2,7 +2,7 @@
 
 ### Source Code
 - Download [Version 2.6](https://github.com/sepandhaghighi/art/archive/v2.6.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
-- `python3 setup.py install --upgrade` or `python setup.py install --upgrade` (Need root access)				
+- `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
