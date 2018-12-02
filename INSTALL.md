@@ -13,7 +13,7 @@
 ### Conda
 
 - Check [Conda Managing Package](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org)
-- `conda install -c sepandhaghighi art `
+- `conda install -c sepandhaghighi art ` (Need root access)
 
 ### Easy Install
 
