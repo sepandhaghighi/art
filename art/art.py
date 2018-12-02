@@ -215,16 +215,16 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "characte": [characte_dic, False],
             "chartr": [chartr_dic, False],
             "chartri": [chartri_dic, False],
-            "xbrite":[xbrite_dic,False],
-            "xbriteb":[xbriteb_dic,False],
-            "xbritebi":[xbritebi_dic,False],
-            "xbritei":[xbritei_dic,False],
-            "xchartr":[xchartr_dic,False],
-            "xchartri":[xchartri_dic,False],
-            "xcour":[xcour_dic,False],
-            "xcourb":[xcourb_dic,False],
-            "xcourbi":[xcourbi_dic,False],
-            "xcouri":[xcouri_dic,False]
+            "xbrite": [xbrite_dic, False],
+            "xbriteb": [xbriteb_dic, False],
+            "xbritebi": [xbritebi_dic, False],
+            "xbritei": [xbritei_dic, False],
+            "xchartr": [xchartr_dic, False],
+            "xchartri": [xchartri_dic, False],
+            "xcour": [xcour_dic, False],
+            "xcourb": [xcourb_dic, False],
+            "xcourbi": [xcourbi_dic, False],
+            "xcouri": [xcouri_dic, False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
