@@ -23,8 +23,11 @@ if __name__ == "__main__":
             cov.save()
             sys.exit(error_flag)
         elif args[1].upper() == "TEST":
-            error_flag = doctest.testfile("test.py",optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS| doctest.IGNORE_EXCEPTION_DETAIL,verbose=False)[0]
-            if error_flag==0:
+            error_flag = doctest.testfile(
+                "test.py",
+                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
+                verbose=False)[0]
+            if error_flag == 0:
                 print("\nTest Passed")
             else:
                 print("\nTest Failed")
