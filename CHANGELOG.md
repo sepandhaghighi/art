@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ## [2.6] - 2018-12-04
 ### Added
-- 10 new fonts
+- 20 new fonts
 	1. xbrite
 	2. xbriteb
 	3. xbritei
@@ -18,6 +18,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. xcourb
 	9. xcourbi
 	10. xcouri
+	11. xhelv
+	12. xhelvb
+	13. xhelvbi
+	14. xhelvi
+	15. xsans
+	16. xsansb
+	17. xsansbi
+	18. xsansi
+	19. xtimes
+	20. xttyb
 - CLI `testcov` flag
 ### Changed
 - `requirements.txt` modified
