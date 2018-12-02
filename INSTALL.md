@@ -1,14 +1,14 @@
 ## Installation		
 
 ### Source Code
-- Download [Version 2.5](https://github.com/sepandhaghighi/art/archive/v2.5.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 2.6](https://github.com/sepandhaghighi/art/archive/v2.6.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `python3 setup.py install --upgrade` or `python setup.py install --upgrade` (Need root access)				
 
 ### PyPI
 
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==2.5` or `pip3 install art==2.5` (Need root access)
+- `pip install art==2.6` or `pip3 install art==2.6` (Need root access)
 
 ### Conda
 
@@ -17,4 +17,4 @@
 
 ### Easy Install
 
-- Run `easy_install "art==2.5"` (Need root access)
+- Run `easy_install "art==2.6"` (Need root access)
