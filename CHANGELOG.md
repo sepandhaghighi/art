@@ -5,6 +5,35 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.6] - 2018-12-05
+### Added
+- 20 new fonts
+	1. xbrite
+	2. xbriteb
+	3. xbritei
+	4. xbritebi
+	5. xchartr
+	6. xchartri
+	7. xcour
+	8. xcourb
+	9. xcourbi
+	10. xcouri
+	11. xhelv
+	12. xhelvb
+	13. xhelvbi
+	14. xhelvi
+	15. xsans
+	16. xsansb
+	17. xsansbi
+	18. xsansi
+	19. xtimes
+	20. xttyb
+- CLI `testcov` flag
+### Changed
+- `requirements.txt` modified
+- `INSTALL.md` modified
+- CLI `test` flag modified
+
 ## [2.5] - 2018-12-02
 ### Added
 - 15 new fonts
@@ -575,7 +604,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.5...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.6...HEAD
+[2.6]: https://github.com/sepandhaghighi/art/compare/v2.5...v2.6
 [2.5]: https://github.com/sepandhaghighi/art/compare/v2.4...v2.5
 [2.4]: https://github.com/sepandhaghighi/art/compare/v2.3...v2.4
 [2.3]: https://github.com/sepandhaghighi/art/compare/v2.2...v2.3

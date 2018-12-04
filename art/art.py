@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.5"
+version = "2.6"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -214,7 +214,27 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "charact6": [charact6_dic, False],
             "characte": [characte_dic, False],
             "chartr": [chartr_dic, False],
-            "chartri": [chartri_dic, False]
+            "chartri": [chartri_dic, False],
+            "xbrite": [xbrite_dic, False],
+            "xbriteb": [xbriteb_dic, False],
+            "xbritebi": [xbritebi_dic, False],
+            "xbritei": [xbritei_dic, False],
+            "xchartr": [xchartr_dic, False],
+            "xchartri": [xchartri_dic, False],
+            "xcour": [xcour_dic, False],
+            "xcourb": [xcourb_dic, False],
+            "xcourbi": [xcourbi_dic, False],
+            "xcouri": [xcouri_dic, False],
+            "xhelv": [xhelv_dic, False],
+            "xhelvb": [xhelvb_dic, False],
+            "xhelvbi": [xhelvbi_dic, False],
+            "xhelvi": [xhelvi_dic, False],
+            "xsans": [xsans_dic, False],
+            "xsansb": [xsansb_dic, False],
+            "xsansbi": [xsansbi_dic, False],
+            "xsansi": [xsansi_dic, False],
+            "xtimes": [xtimes_dic, False],
+            "xttyb": [xttyb_dic, False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"

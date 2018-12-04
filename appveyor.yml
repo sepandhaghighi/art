@@ -58,4 +58,4 @@ install:
   - "%PYTHON%/python.exe setup.py install"
 
 test_script:
-  - "%PYTHON%/python.exe -m art test"
+  - "%PYTHON%/python.exe -m art testcov"

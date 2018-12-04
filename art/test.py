@@ -2273,6 +2273,278 @@ d888888P               d888888P
 wow :
 `][` ]E ((5 `][`
 <BLANKLINE>
+xbrite :
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+ #             #
+ #             #
+###  ##  #### ###
+ #  #  # #  #  #
+ #  ####  ##   #
+ #  #    #  #  #
+ ##  ### ####  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xbriteb :
+<BLANKLINE>
+ #              #
+ #              #
+ #              #
+###  ###  #### ###
+ #  #   # #  #  #
+ #  #####  ##   #
+ #  #     #  #  #
+ ##  #### ####  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xbritebi :
+<BLANKLINE>
+  #              #
+ ##             ##
+ ##             ##
+####   ## #### ####
+ #    # #  # #  #
+ #   ###   ##   #
+#    #  # #  # #
+###  #### ###  ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xbritei :
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+ #             #
+ #             #
+###   ##  ### ###
+ #   # #  # #  #
+#   ###   ##  #
+#   #  # # #  #
+##  #### ###  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xchartr :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+#           #
+##  ##   ## ##
+#  #  # # # #
+#  ####  #  #
+#  #    # # #
+##  ### ##  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xchartri :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+###   #    ## ###
+#    ###  #   #
+#   ##     #  #
+#   #  # #  # #
+##   ##   ##  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcour :
+<BLANKLINE>
+<BLANKLINE>
+ #               #
+ #               #
+####   ##   ### ####
+ #    #  # #     #
+ #    ###   ##   #
+ #  # #       #  #  #
+  ##   ### ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcourb :
+<BLANKLINE>
+<BLANKLINE>
+ ##                  ##
+ ##                  ##
+#####   ###   ####  #####
+ ##    ## ## ###     ##
+ ##    #####  ####   ##
+ ## ## ##       ###  ## ##
+  ###   #### #####    ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcourbi :
+<BLANKLINE>
+<BLANKLINE>
+  ##                  ##
+ ##                  ##
+#####   ###    #### #####
+ ##    ## ##  ##  #  ##
+##    ######  ####  ##
+## ## ##     #  ##  ## ##
+ ###   ####  ####    ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xcouri :
+<BLANKLINE>
+<BLANKLINE>
+   #                 #
+  #                 #
+#####   ##    ### #####
+  #    #  #  #      #
+ #    #####   ##   #
+ #  # #     #  #   #  #
+  ##   ###  ###     ##
+xhelv :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+ #             #
+###  ##   ##  ###
+ #  #  # #  #  #
+ #  ####  ##   #
+ #  #       #  #
+ #  #  # #  #  #
+ ##  ##   ##   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xhelvb :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+##              ##
+##              ##
+###  ###   ###  ###
+##  ## ## ## ## ##
+##  #####  ###  ##
+##  ##       ## ##
+##  ## ## ## ## ##
+ ##  ###   ###   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xhelvbi :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+  ##                  ##
+  ##                  ##
+#####   ###    ###  #####
+ ##    ## ##  ## ##  ##
+ ##    #####   ##    ##
+##    ##        ##  ##
+##    ## ##  ## ##  ##
+ ##    ###    ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xhelvi :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+  #                #
+  #                #
+####   ###   ##  ####
+ #    #  #  #  #  #
+ #   ####    #    #
+#    #        #  #
+#    #  #  #  #  #
+##    ##    ##   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsans :
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+####  ##   ## ####
+ #   #  # #    #
+ #   #### ##   #
+ #   #     ##  #
+ #   #      #  #
+  ##  ### ##    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsansb :
+<BLANKLINE>
+<BLANKLINE>
+ ##              ##
+####  ###   ### ####
+ ##  ## ## ##    ##
+ ##  ## ## ###   ##
+ ##  #####  ###  ##
+ ##  ##      ##  ##
+  ##  #### ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsansbi :
+<BLANKLINE>
+<BLANKLINE>
+  ##                 ##
+#####   ###   #### #####
+ ##    # ##  ##     ##
+ ##   ## ##  ###    ##
+##    ####    ###  ##
+##    ##       ##  ##
+###    ###  ####   ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xsansi :
+<BLANKLINE>
+<BLANKLINE>
+  #                #
+####   ###   ### ####
+ #    #  #  #     #
+ #   #  #   ##    #
+#    ###     ##  #
+#    #        #  #
+##    ###  ###   ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xtimes :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #            #
+##           ##
+###  ###  ## ###
+##  ## # ##  ##
+##  #### ### ##
+##  ##    ## ##
+ ##  ### ###  ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+xttyb :
+<BLANKLINE>
+<BLANKLINE>
+ ##                ##
+#####  ###   #### #####
+ ##   ## ## ##     ##
+ ##   ## ## ####   ##
+ ##   #####  ####  ##
+ ##   ##       ##  ##
+  ###  #### ####    ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 >>> tprint("test",font = "block243")
 <BLANKLINE>
   _|                            _|
@@ -3044,11 +3316,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      ____
-__   __|___ \    | ___|
-\ \ / /  __) |   |___ \
- \ V /  / __/  _  ___) |
-  \_/  |_____|(_)|____/
+        ____       __
+__   __|___ \     / /_
+\ \ / /  __) |   | '_ \
+ \ V /  / __/  _ | (_) |
+  \_/  |_____|(_) \___/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
