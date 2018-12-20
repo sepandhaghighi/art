@@ -253,9 +253,9 @@ DEFAULT_FONT = "standard"
 def line(char="*", number=30):
     '''
     This function print line of chars
-    :param char: character
+    :param char: input character
     :type char:str
-    :param number: number of character
+    :param number: number of characters
     :return: None
     '''
     print(char * number)
@@ -263,9 +263,9 @@ def line(char="*", number=30):
 
 def font_list(text="test"):
     '''
-    :param text : Input text
+    This function print all Of fonts
+    :param text : input text
     :type text : str
-    This Function Print All Of Fonts
     :return: None
     '''
     for item in sorted(list(font_map.keys())):
@@ -278,7 +278,7 @@ def font_list(text="test"):
 
 def art_list():
     '''
-    This Function Print All Of 1Line Arts
+    This function print all Of 1-Line arts
     :return: None
     '''
     for i in sorted(list(art_dic.keys())):
@@ -293,7 +293,7 @@ def art_list():
 
 def help_func():
     '''
-    Print Help Page
+    Print help page
     :return: None
     '''
     tprint("art")
@@ -312,7 +312,7 @@ def help_func():
 
 def aprint(artname, number=1, text=""):
     '''
-    Art Print
+    Art print
     This function print ascii art
     :param artname: artname
     :type artname : str
@@ -356,7 +356,7 @@ def art(artname, number=1, text=""):
 
 def randart():
     '''
-    This function return random 1line art
+    This function return random 1-line art
     :return: ascii art as str
     '''
     return art("random")
@@ -390,7 +390,7 @@ def tsave(
         chr_ignore=True,
         print_status=True):
     '''
-
+    This function save ascii art
     :param text: input text
     :param font: input font
     :type font:str
@@ -399,7 +399,7 @@ def tsave(
     :type filename:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
-    :param print_status : Save message print flag
+    :param print_status : save message print flag
     :type print_status:bool
     :return: None
     '''
@@ -472,7 +472,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
-    :return: artText as str
+    :return: ascii art text as str
     '''
     split_list = []
     result_list = []
@@ -525,14 +525,14 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
                 print_status=True):
     '''
-    This fuction change text2art tprint and tsave default values
+    This function change text2art, tprint and tsave default values
     :param font: input font
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :param filename: output file name (only tsave)
     :type filename:str
-    :param print_status : Save message print flag (only tsave)
+    :param print_status : save message print flag (only tsave)
     :type print_status:bool
     :return: None
     '''
