@@ -38,6 +38,9 @@ matrix:
         - os: osx
           language: generic
           env: TOXENV=py27
+        - os: osx
+          language: generic
+          env: TOXENV=py26
 
 install:
   - pip install -r dev-requirements.txt
