@@ -234,7 +234,17 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "xsansbi": [xsansbi_dic, False],
             "xsansi": [xsansi_dic, False],
             "xtimes": [xtimes_dic, False],
-            "xttyb": [xttyb_dic, False]
+            "xttyb": [xttyb_dic, False],
+            "heroboti": [heroboti_dic,False],
+            "high_noo": [high_noo_dic,False],
+            "hills" : [hills_dic,False],
+            "home_pak": [home_pak_dic,False],
+            "house_of": [house_of_dic,False],
+            "hypa_bal": [hypa_bal_dic,False],
+            "hyper" : [hyper_dic,False],
+            "inc_raw" : [inc_raw_dic,False],
+            "italics" : [italics_dic,False],
+            "kgames_i": [kgames_i_dic,False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
