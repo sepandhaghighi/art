@@ -23,6 +23,9 @@ matrix:
         - os: linux
           sudo: required
           python: 2.7
+        - os: linux
+          sudo: required
+          python: 2.6
         - os: osx
           language: generic
           env: TOXENV=py36
