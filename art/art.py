@@ -244,7 +244,27 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "hyper" : [hyper_dic,False],
             "inc_raw" : [inc_raw_dic,False],
             "italics" : [italics_dic,False],
-            "kgames_i": [kgames_i_dic,False]
+            "kgames_i": [kgames_i_dic,False],
+            "4x4_offr": [dic_4x4_offr,False],
+            "5x7": [dic_5x7,False],
+            "5x8": [dic_5x8,False],
+            "6x9": [dic_6x9,False],
+            "6x10": [dic_6x10,False],
+            "64f1": [dic_64f1,False],
+            "a_zooloo": [a_zooloo_dic,False],
+            "asc": [asc_dic,False],
+            "assalt_m": [assalt_m_dic,False],
+            "asslt_m" : [asslt__m_dic,False],
+            "atc" : [atc_dic,False],
+            "atc_gran" : [atc_gran_dic,False],
+            "battle_s" : [battle_s_dic,False],
+            "battlesh" : [battlesh_dic,False],
+            "baz_bil" : [baz_bil_dic,False],
+            "beer_pub" : [beer_pub_dic,False],
+            "c1" : [c1_dic,False],
+            "c2" : [c2_dic,False],
+            "kik_star" : [kik_star_dic,False],
+            "krak_out" : [krak_out_dic,False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
