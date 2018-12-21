@@ -290,7 +290,7 @@ def font_list(text="test"):
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4"]:
+        if str(item) in ["char4","c2"]:
             tprint(text.upper(), str(item))
         else:
             tprint(text, str(item))
