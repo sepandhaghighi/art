@@ -5,6 +5,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.7] - 2018-12-21
+### Added
+- 10 new fonts
+	1. heroboti
+	2. high_noo
+	3. hills
+	4. home_pak
+	5. house_of
+	6. hypa_bal
+	7. hyper
+	8. inc_raw
+	9. italics
+	10. kgames_i
+### Changed
+- docstring modified
+
 ## [2.6] - 2018-12-05
 ### Added
 - 20 new fonts
@@ -604,7 +620,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.6...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.7...HEAD
+[2.7]: https://github.com/sepandhaghighi/art/compare/v2.6...v2.7
 [2.6]: https://github.com/sepandhaghighi/art/compare/v2.5...v2.6
 [2.5]: https://github.com/sepandhaghighi/art/compare/v2.4...v2.5
 [2.4]: https://github.com/sepandhaghighi/art/compare/v2.3...v2.4
