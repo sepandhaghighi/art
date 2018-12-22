@@ -58,3 +58,4 @@ install:
 
 test_script:
   - "%PYTHON%/python.exe -m art testcov"
+  - "%PYTHON%/python.exe -m cProfile -s cumtime art_profile.py"
