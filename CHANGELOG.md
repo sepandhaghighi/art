@@ -5,9 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [2.7] - 2018-12-21
+## [2.7] - 2018-12-23
 ### Added
-- 10 new fonts
+- 30 new fonts
 	1. heroboti
 	2. high_noo
 	3. hills
@@ -18,8 +18,29 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. inc_raw
 	9. italics
 	10. kgames_i
+	11. kik_star
+	12. krak_out
+	13. 4x4_offr
+	14. 5x7
+	15. 5x8
+	16. 64f1
+	17. 6x10
+	18. 6x9
+	19. a_zooloo
+	20. asc
+	21. assalt_m
+	22. asslt_m
+	23. atc
+	24. atc_gran
+	25. battle_s
+	26. battlesh
+	27. baz_bil
+	28. beer_pub
+	29. c1
+	30. c2
 ### Changed
 - docstring modified
+- `B1FF` font bug fixed
 
 ## [2.6] - 2018-12-05
 ### Added
