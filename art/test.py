@@ -136,9 +136,6 @@ This function get a string as input if input is one digit add a zero
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
-B1FF :
-T35T
-<BLANKLINE>
 ICL-1900 :
 test
  *
@@ -423,6 +420,9 @@ avatar :
   | |  |  /_ \___ |  | |
   \_/  \____\\____/  \_/
 <BLANKLINE>
+<BLANKLINE>
+b1ff :
+T35T
 <BLANKLINE>
 banner :
 <BLANKLINE>
