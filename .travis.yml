@@ -48,5 +48,6 @@ install:
 
 script:
   - python -m art testcov
+  - python -m cProfile -s cumtime art/art_profile.py
 after_success:
   - codecov
