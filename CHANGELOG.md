@@ -38,6 +38,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	28. beer_pub
 	29. c1
 	30. c2
+- `art_profile.py` added
 ### Changed
 - docstring modified
 - `B1FF` font bug fixed
