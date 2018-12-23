@@ -132,21 +132,6 @@
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
-ICL-1900 :
-test
- *
-<BLANKLINE>
-* **
-<BLANKLINE>
-  *
-*  *
-<BLANKLINE>
- *
-<BLANKLINE>
-<BLANKLINE>
-<BLANKLINE>
-<BLANKLINE>
-<BLANKLINE>
 a_zooloo :
  #####   ### ##    ###     #####
  #####   ### ##    ###     #####
@@ -1476,6 +1461,21 @@ hyper :
 ##                  ###   ##
 ##                   #    ##
 ##                        ##
+<BLANKLINE>
+icl-1900 :
+test
+ *
+<BLANKLINE>
+* **
+<BLANKLINE>
+  *
+*  *
+<BLANKLINE>
+ *
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 <BLANKLINE>
 impossible :
        _                _              _               _

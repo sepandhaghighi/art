@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - docstring modified
 - `B1FF` font bug fixed
+- `ICL-1900` font bug fixed
 
 ## [2.6] - 2018-12-05
 ### Added
