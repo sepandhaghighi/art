@@ -43,6 +43,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - docstring modified
 - `B1FF` font bug fixed
 - `ICL-1900` font bug fixed
+- `AK-47` 1-line art bug fixed
+- `I kill you` 1-line art bug fixed
 
 ## [2.6] - 2018-12-05
 ### Added
