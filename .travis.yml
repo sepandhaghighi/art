@@ -38,6 +38,9 @@ matrix:
         - os: osx
           language: generic
           env: TOXENV=py27
+        - os: osx
+          language: generic
+          env: TOXENV=py26
 
 install:
   - pip install -r dev-requirements.txt
@@ -45,5 +48,6 @@ install:
 
 script:
   - python -m art testcov
+  - python -m cProfile -s cumtime art_profile.py
 after_success:
   - codecov

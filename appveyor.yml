@@ -2,7 +2,6 @@ build: false
 
 environment:
   matrix:
-  
     - PYTHON: "C:\\Python27"
       PYTHON_VERSION: "2.7.2"
       PYTHON_ARCH: "32" 
@@ -59,3 +58,4 @@ install:
 
 test_script:
   - "%PYTHON%/python.exe -m art testcov"
+  - "%PYTHON%/python.exe -m cProfile -s cumtime art_profile.py"

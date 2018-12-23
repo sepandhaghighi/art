@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.6"
+version = "2.7"
 
 
 description = '''ASCII art is also known as "computer text art".
@@ -140,7 +140,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "henry3d": [henry3d_dic, False],
             "horizontalleft": [horizontalleft_dic, True],
             "horizontalright": [horizontalright_dic, True],
-            "ICL-1900": [ICL_1900_dic, True],
+            "icl-1900": [ICL_1900_dic, True],
             "impossible": [impossible_dic, True],
             "jacky": [jacky_dic, True],
             "katakana": [katakana_dic, False],
@@ -194,7 +194,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "alpha": [alpha_dic, True],
             "amc3liv1": [amc3liv1_dic, True],
             "ascii_new_roman": [ascii_new_roman_dic, True],
-            "B1FF": [B1FF_dic, True],
+            "b1ff": [B1FF_dic, True],
             "dwhistled": [dwhistled_dic, False],
             "eftiwall": [eftiwall_dic, False],
             "fire_font-k": [fire_font_k_dic, False],
@@ -234,7 +234,37 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "xsansbi": [xsansbi_dic, False],
             "xsansi": [xsansi_dic, False],
             "xtimes": [xtimes_dic, False],
-            "xttyb": [xttyb_dic, False]
+            "xttyb": [xttyb_dic, False],
+            "heroboti": [heroboti_dic, False],
+            "high_noo": [high_noo_dic, False],
+            "hills": [hills_dic, False],
+            "home_pak": [home_pak_dic, False],
+            "house_of": [house_of_dic, False],
+            "hypa_bal": [hypa_bal_dic, False],
+            "hyper": [hyper_dic, False],
+            "inc_raw": [inc_raw_dic, False],
+            "italics": [italics_dic, False],
+            "kgames_i": [kgames_i_dic, False],
+            "4x4_offr": [dic_4x4_offr, False],
+            "5x7": [dic_5x7, False],
+            "5x8": [dic_5x8, False],
+            "6x9": [dic_6x9, False],
+            "6x10": [dic_6x10, False],
+            "64f1": [dic_64f1, False],
+            "a_zooloo": [a_zooloo_dic, False],
+            "asc": [asc_dic, False],
+            "assalt_m": [assalt_m_dic, False],
+            "asslt_m": [asslt__m_dic, False],
+            "atc": [atc_dic, False],
+            "atc_gran": [atc_gran_dic, False],
+            "battle_s": [battle_s_dic, False],
+            "battlesh": [battlesh_dic, False],
+            "baz_bil": [baz_bil_dic, False],
+            "beer_pub": [beer_pub_dic, False],
+            "c1": [c1_dic, False],
+            "c2": [c2_dic, False],
+            "kik_star": [kik_star_dic, False],
+            "krak_out": [krak_out_dic, False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
@@ -243,9 +273,9 @@ DEFAULT_FONT = "standard"
 def line(char="*", number=30):
     '''
     This function print line of chars
-    :param char: character
+    :param char: input character
     :type char:str
-    :param number: number of character
+    :param number: number of characters
     :return: None
     '''
     print(char * number)
@@ -253,14 +283,14 @@ def line(char="*", number=30):
 
 def font_list(text="test"):
     '''
-    :param text : Input text
+    This function print all Of fonts
+    :param text : input text
     :type text : str
-    This Function Print All Of Fonts
     :return: None
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4"]:
+        if str(item) in ["char4", "c2"]:
             tprint(text.upper(), str(item))
         else:
             tprint(text, str(item))
@@ -268,7 +298,7 @@ def font_list(text="test"):
 
 def art_list():
     '''
-    This Function Print All Of 1Line Arts
+    This function print all Of 1-Line arts
     :return: None
     '''
     for i in sorted(list(art_dic.keys())):
@@ -283,7 +313,7 @@ def art_list():
 
 def help_func():
     '''
-    Print Help Page
+    Print help page
     :return: None
     '''
     tprint("art")
@@ -302,7 +332,7 @@ def help_func():
 
 def aprint(artname, number=1, text=""):
     '''
-    Art Print
+    Art print
     This function print ascii art
     :param artname: artname
     :type artname : str
@@ -346,7 +376,7 @@ def art(artname, number=1, text=""):
 
 def randart():
     '''
-    This function return random 1line art
+    This function return random 1-line art
     :return: ascii art as str
     '''
     return art("random")
@@ -380,7 +410,7 @@ def tsave(
         chr_ignore=True,
         print_status=True):
     '''
-
+    This function save ascii art
     :param text: input text
     :param font: input font
     :type font:str
@@ -389,7 +419,7 @@ def tsave(
     :type filename:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
-    :param print_status : Save message print flag
+    :param print_status : save message print flag
     :type print_status:bool
     :return: None
     '''
@@ -462,7 +492,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
-    :return: artText as str
+    :return: ascii art text as str
     '''
     split_list = []
     result_list = []
@@ -515,14 +545,14 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
                 print_status=True):
     '''
-    This fuction change text2art tprint and tsave default values
+    This function change text2art, tprint and tsave default values
     :param font: input font
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :param filename: output file name (only tsave)
     :type filename:str
-    :param print_status : Save message print flag (only tsave)
+    :param print_status : save message print flag (only tsave)
     :type print_status:bool
     :return: None
     '''
