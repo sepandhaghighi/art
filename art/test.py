@@ -3807,6 +3807,30 @@ art.art.artError: filename should have str type
 Traceback (most recent call last):
         ...
 art.art.artError: print_status should have bool type
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-small")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-small")
+>>> Art == Art2
+False
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-medium")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-medium")
+>>> Art == Art2
+False
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-large")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-large")
+>>> Art == Art2
+False
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-xlarge")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-xlarge")
+>>> Art == Art2
+False
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
