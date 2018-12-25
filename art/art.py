@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-VERSION = "2.7"
+VERSION = "2.8"
 
 SMALLTHRESHOLD = 60
 MEDIUMTHRESHOLD = 250
