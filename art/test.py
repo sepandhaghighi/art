@@ -4045,6 +4045,17 @@ False
 >>> Art2 = text2art("test","rnd-xlarge")
 >>> Art == Art2
 False
+>>> font_dicts = font_size_splitter(font_map)
+>>> len(font_dicts["small_list"])>0
+True
+>>> len(font_dicts["medium_list"])>0
+True
+>>> len(font_dicts["large_list"])>0
+True
+>>> len(font_dicts["xlarge_list"])>0
+True
+>>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == font_counter
+True
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
