@@ -295,7 +295,27 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "c1": [c1_dic, False],
             "c2": [c2_dic, False],
             "kik_star": [kik_star_dic, False],
-            "krak_out": [krak_out_dic, False]
+            "krak_out": [krak_out_dic, False],
+            "tsn_base": [tsn_base_dic,False],
+            "twin_cob": [twin_cob_dic,False],
+            "type_set": [type_set_dic,False],
+            "ucf_fan": [ucf_fan_dic,False],
+            "ugalympi": [ugalympi_dic,False],
+            "unarmed": [unarmed__dic,False],
+            "usa":[usa_dic,False],
+            "usa_pq": [usa_pq_dic,False],
+            "utopia": [utopia_dic,False],
+            "utopiab": [utopiab_dic,False],
+            "utopiabi": [utopiabi_dic,False],
+            "utopiai": [utopiai_dic,False],
+            "vortron": [vortron_dic,False],
+            "war_of_w": [war_of_w_dic,False],
+            "xtty": [xtty_dic,False],
+            "yie_ar_k": [yie_ar_k_dic,False],
+            "yie-ar": [yie_ar_dic,False],
+            "zig_zag": [zig_zag_dic,False],
+            "zone7" : [zone7_dic,False],
+            "z-pilot": [z_pilot_dic,False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
