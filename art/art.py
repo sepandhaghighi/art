@@ -7,6 +7,9 @@ import random
 
 version = "2.7"
 
+SMALLTHRESHOLD = 80
+MEDIUMTHRESHOLD = 200
+LARGETHRESHOLD = 500
 
 description = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -20,7 +23,7 @@ class artError(Exception):
 
 def font_size_splitter(font_map):
     '''
-    This function split fonts to 4 category
+    This function split fonts to 4 category (small,medium,large,xlarge) by maximum length of letter in each font
     :param font_map: input fontmap
     :type font_map : dict
     :return: splitted fonts as dict
@@ -33,9 +36,9 @@ def font_size_splitter(font_map):
         length = max(map(len, font_map[font][0].values()))
         if length <= 80:
             small_font.append(font)
-        elif length > 80 and length <= 200:
+        elif length > SMALLTHRESHOLD and length <= MEDIUMTHRESHOLD:
             medium_font.append(font)
-        elif length > 200 and length <= 500:
+        elif length > MEDIUMTHRESHOLD and length <= LARGETHRESHOLD:
             large_font.append(font)
         else:
             xlarge_font.append(font)
