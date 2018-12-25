@@ -5,7 +5,7 @@ import os
 import sys
 import random
 
-version = "2.7"
+VERSION = "2.7"
 
 SMALLTHRESHOLD = 80
 MEDIUMTHRESHOLD = 200
@@ -343,7 +343,7 @@ def help_func():
     :return: None
     '''
     tprint("art")
-    tprint("v" + version)
+    tprint("v" + VERSION)
     print(description + "\n")
     print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
