@@ -7,8 +7,8 @@ import random
 
 VERSION = "2.7"
 
-SMALLTHRESHOLD = 80
-MEDIUMTHRESHOLD = 200
+SMALLTHRESHOLD = 60
+MEDIUMTHRESHOLD = 250
 LARGETHRESHOLD = 500
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
