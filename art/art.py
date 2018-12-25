@@ -19,6 +19,12 @@ class artError(Exception):
 
 
 def font_size_splitter(font_map):
+    '''
+    This function split fonts to 4 category
+    :param font_map: input fontmap
+    :type font_map : dict
+    :return: splitted fonts as dict
+    '''
     small_font = []
     medium_font = []
     large_font = []
