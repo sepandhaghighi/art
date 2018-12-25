@@ -18,6 +18,23 @@ class artError(Exception):
     pass
 
 
+def font_size_spliter(font_map):
+    small_font = []
+    medium_font = []
+    large_font = []
+    xlarge_font = []
+    for font in font_map.keys():
+        length = max(map(len, font_map[font][0].values()))
+        if length <= 80:
+            small_font.append(font)
+        elif length > 80 and length <= 200:
+            medium_font.append(font)
+        elif length > 200 and length <= 500:
+            large_font.append(font)
+        else:
+            xlarge_font.append(font)
+    return {"small_list":small_font,"medium_list":medium_font,"large_list":large_font,"xlarge_list":xlarge_font}
+
 font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "standard": [standard_dic, False], "avatar": [avatar_dic, True],
             "basic": [basic_dic, True], "bulbhead": [bulbhead_dic, True],
@@ -268,7 +285,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
-
+RND_SIZE_DICT = font_size_spliter(font_map)
 
 def line(char="*", number=30):
     '''
@@ -505,7 +522,19 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    if font == "random" or font == "rand":
+    if font=="rnd-small" or font=="random-small" or font=="rand-small":
+        random_index = random.randint(0, len(RND_SIZE_DICT["small_list"]) - 1)
+        font = RND_SIZE_DICT["small_list"][random_index]
+    elif font=="rnd-medium" or font=="random-medium" or font=="rand-medium":
+        random_index = random.randint(0, len(RND_SIZE_DICT["medium_list"]) - 1)
+        font = RND_SIZE_DICT["medium_list"][random_index]
+    elif font=="rnd-large" or font=="random-large" or font=="rand-large":
+        random_index = random.randint(0, len(RND_SIZE_DICT["large_list"]) - 1)
+        font = RND_SIZE_DICT["large_list"][random_index]
+    elif font=="rnd-xlarge" or font=="random-xlarge" or font=="rand-xlarge":
+        random_index = random.randint(0, len(RND_SIZE_DICT["xlarge_list"]) - 1)
+        font = RND_SIZE_DICT["xlarge_list"][random_index]
+    elif font == "random" or font == "rand" or font=="rnd":
         random_index = random.randint(0, len(fonts) - 1)
         font = fonts[random_index]
     elif font not in font_map.keys():
