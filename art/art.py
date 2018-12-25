@@ -18,7 +18,7 @@ class artError(Exception):
     pass
 
 
-def font_size_spliter(font_map):
+def font_size_splitter(font_map):
     small_font = []
     medium_font = []
     large_font = []
@@ -285,7 +285,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
-RND_SIZE_DICT = font_size_spliter(font_map)
+RND_SIZE_DICT = font_size_splitter(font_map)
 
 def line(char="*", number=30):
     '''
