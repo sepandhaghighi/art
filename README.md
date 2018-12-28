@@ -6,8 +6,6 @@
 |_|  |_| |_|  \_\   |_|   
          
 </pre>
-<a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a>
-<a href="https://codebeat.co/projects/github-com-sepandhaghighi-art-dev"><img alt="codebeat badge" src="https://codebeat.co/badges/90e77325-a046-4cc5-9c3e-646c011a5b72" /></a>
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
@@ -87,6 +85,14 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 		<td align="center">AppVeyor</td>
 		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3/branch/master?svg=true"></a></td>
 		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3/branch/dev?svg=true"></a></td>
+	</tr>
+</table>
+
+<table>
+	<tr> 
+		<td align="center">Code Quality</td>
+		<td align="center"><a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a></td>	
+		<td align="center"><a href="https://codebeat.co/projects/github-com-sepandhaghighi-art-dev"><img alt="codebeat badge" src="https://codebeat.co/badges/90e77325-a046-4cc5-9c3e-646c011a5b72" /></a></td>	
 	</tr>
 </table>
 
