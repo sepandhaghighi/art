@@ -534,6 +534,35 @@ def distance_calc(s1, s2):
     return distances[-1]
 
 
+def indirect_font(font,fonts):
+    '''
+    This function check input font for indirect modes
+    :param font: input font
+    :type font : str
+    :param fonts: fonts list
+    :type fonts : list
+    :return: font as str
+    '''
+    if font == "rnd-small" or font == "random-small" or font == "rand-small":
+        random_index = random.randint(0, len(RND_SIZE_DICT["small_list"]) - 1)
+        font = RND_SIZE_DICT["small_list"][random_index]
+    elif font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
+        random_index = random.randint(0, len(RND_SIZE_DICT["medium_list"]) - 1)
+        font = RND_SIZE_DICT["medium_list"][random_index]
+    elif font == "rnd-large" or font == "random-large" or font == "rand-large":
+        random_index = random.randint(0, len(RND_SIZE_DICT["large_list"]) - 1)
+        font = RND_SIZE_DICT["large_list"][random_index]
+    elif font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
+        random_index = random.randint(0, len(RND_SIZE_DICT["xlarge_list"]) - 1)
+        font = RND_SIZE_DICT["xlarge_list"][random_index]
+    elif font == "random" or font == "rand" or font == "rnd":
+        random_index = random.randint(0, len(fonts) - 1)
+        font = fonts[random_index]
+    elif font not in font_map.keys():
+        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
+        font = fonts[distance_list.index(min(distance_list))]
+    return font
+
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     '''
     This function print art text
@@ -556,24 +585,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    if font == "rnd-small" or font == "random-small" or font == "rand-small":
-        random_index = random.randint(0, len(RND_SIZE_DICT["small_list"]) - 1)
-        font = RND_SIZE_DICT["small_list"][random_index]
-    elif font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
-        random_index = random.randint(0, len(RND_SIZE_DICT["medium_list"]) - 1)
-        font = RND_SIZE_DICT["medium_list"][random_index]
-    elif font == "rnd-large" or font == "random-large" or font == "rand-large":
-        random_index = random.randint(0, len(RND_SIZE_DICT["large_list"]) - 1)
-        font = RND_SIZE_DICT["large_list"][random_index]
-    elif font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
-        random_index = random.randint(0, len(RND_SIZE_DICT["xlarge_list"]) - 1)
-        font = RND_SIZE_DICT["xlarge_list"][random_index]
-    elif font == "random" or font == "rand" or font == "rnd":
-        random_index = random.randint(0, len(fonts) - 1)
-        font = fonts[random_index]
-    elif font not in font_map.keys():
-        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
-        font = fonts[distance_list.index(min(distance_list))]
+    font = indirect_font(font,fonts)
     letters = font_map[font][0]
     if font_map[font][1]:
         text_temp = text.lower()
