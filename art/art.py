@@ -420,10 +420,9 @@ def art(artname, number=1, text=""):
         raise artError("number should have int type")
     if isinstance(art_value, str):
         return (art_value + " ") * number
-    else:
-        if isinstance(text, str) == False:
-            raise artError("text should have str type")
-        return (art_value[0] + text + art_value[1] + " ") * number
+    if isinstance(text, str) == False:
+        raise artError("text should have str type")
+    return (art_value[0] + text + art_value[1] + " ") * number
 
 
 def randart():
