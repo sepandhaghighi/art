@@ -400,7 +400,7 @@ def art(artname, number=1, text=""):
     :type artname : str
     :return: ascii art as str
     '''
-    if isinstance(artname, str) == False:
+    if isinstance(artname, str) is False:
         raise artError("artname shoud have str type")
     artname = artname.lower()
     arts = sorted(art_dic.keys())
@@ -416,11 +416,11 @@ def art(artname, number=1, text=""):
         else:
             raise artError("Invalid art name")
     art_value = art_dic[artname]
-    if isinstance(number, int) == False:
+    if isinstance(number, int) is False:
         raise artError("number should have int type")
     if isinstance(art_value, str):
         return (art_value + " ") * number
-    if isinstance(text, str) == False:
+    if isinstance(text, str) is False:
         raise artError("text should have str type")
     return (art_value[0] + text + art_value[1] + " ") * number
 
@@ -444,7 +444,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     '''
-    if isinstance(text, str) == False:
+    if isinstance(text, str) is False:
         raise artError("text should have str type")
     split_list = text.split("\n")
     result = ""
@@ -550,9 +550,9 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     letters = standard_dic
     text_temp = text
     spliter = "\n"
-    if isinstance(text, str) == False:
+    if isinstance(text, str) is False:
         raise artError("text should have str type")
-    if isinstance(font, str) == False:
+    if isinstance(font, str) is False:
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
@@ -619,13 +619,13 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type print_status:bool
     :return: None
     '''
-    if isinstance(font, str) == False:
+    if isinstance(font, str) is False:
         raise artError("font should have str type")
-    if isinstance(chr_ignore, bool) == False:
+    if isinstance(chr_ignore, bool) is False:
         raise artError("chr_ignore should have bool type")
-    if isinstance(filename, str) == False:
+    if isinstance(filename, str) is False:
         raise artError("filename should have str type")
-    if isinstance(print_status, bool) == False:
+    if isinstance(print_status, bool) is False:
         raise artError("print_status should have bool type")
     tprint.__defaults__ = (font, chr_ignore)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status)
