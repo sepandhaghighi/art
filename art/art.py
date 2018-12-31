@@ -534,7 +534,7 @@ def distance_calc(s1, s2):
     return distances[-1]
 
 
-def indirect_font(font,fonts):
+def indirect_font(font, fonts):
     '''
     This function check input font for indirect modes
     :param font: input font
@@ -563,6 +563,7 @@ def indirect_font(font,fonts):
         font = fonts[distance_list.index(min(distance_list))]
     return font
 
+
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     '''
     This function print art text
@@ -585,7 +586,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    font = indirect_font(font,fonts)
+    font = indirect_font(font, fonts)
     letters = font_map[font][0]
     if font_map[font][1]:
         text_temp = text.lower()
