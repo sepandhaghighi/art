@@ -5,10 +5,13 @@ import os
 import sys
 import random
 
-version = "2.7"
+VERSION = "2.8"
 
+SMALLTHRESHOLD = 60
+MEDIUMTHRESHOLD = 250
+LARGETHRESHOLD = 500
 
-description = '''ASCII art is also known as "computer text art".
+DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 Art is a Python lib for text converting to ASCII ART fancy.'''
@@ -16,6 +19,34 @@ Art is a Python lib for text converting to ASCII ART fancy.'''
 
 class artError(Exception):
     pass
+
+
+def font_size_splitter(font_map):
+    '''
+    This function split fonts to 4 category (small,medium,large,xlarge) by maximum length of letter in each font
+    :param font_map: input fontmap
+    :type font_map : dict
+    :return: splitted fonts as dict
+    '''
+    small_font = []
+    medium_font = []
+    large_font = []
+    xlarge_font = []
+    for font in font_map.keys():
+        length = max(map(len, font_map[font][0].values()))
+        if length <= 80:
+            small_font.append(font)
+        elif length > SMALLTHRESHOLD and length <= MEDIUMTHRESHOLD:
+            medium_font.append(font)
+        elif length > MEDIUMTHRESHOLD and length <= LARGETHRESHOLD:
+            large_font.append(font)
+        else:
+            xlarge_font.append(font)
+    return {
+        "small_list": small_font,
+        "medium_list": medium_font,
+        "large_list": large_font,
+        "xlarge_list": xlarge_font}
 
 
 font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
@@ -264,10 +295,31 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "c1": [c1_dic, False],
             "c2": [c2_dic, False],
             "kik_star": [kik_star_dic, False],
-            "krak_out": [krak_out_dic, False]
+            "krak_out": [krak_out_dic, False],
+            "tsn_base": [tsn_base_dic, False],
+            "twin_cob": [twin_cob_dic, False],
+            "type_set": [type_set_dic, False],
+            "ucf_fan": [ucf_fan_dic, False],
+            "ugalympi": [ugalympi_dic, False],
+            "unarmed": [unarmed__dic, False],
+            "usa": [usa_dic, False],
+            "usa_pq": [usa_pq_dic, False],
+            "utopia": [utopia_dic, False],
+            "utopiab": [utopiab_dic, False],
+            "utopiabi": [utopiabi_dic, False],
+            "utopiai": [utopiai_dic, False],
+            "vortron": [vortron_dic, False],
+            "war_of_w": [war_of_w_dic, False],
+            "xtty": [xtty_dic, False],
+            "yie_ar_k": [yie_ar_k_dic, False],
+            "yie-ar": [yie_ar_dic, False],
+            "zig_zag": [zig_zag_dic, False],
+            "zone7": [zone7_dic, False],
+            "z-pilot": [z_pilot_dic, False]
             }
 font_counter = len(font_map)
 DEFAULT_FONT = "standard"
+RND_SIZE_DICT = font_size_splitter(font_map)
 
 
 def line(char="*", number=30):
@@ -290,7 +342,7 @@ def font_list(text="test"):
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4", "c2"]:
+        if str(item) in ["char4", "c2", "war_of_w"]:
             tprint(text.upper(), str(item))
         else:
             tprint(text, str(item))
@@ -317,8 +369,8 @@ def help_func():
     :return: None
     '''
     tprint("art")
-    tprint("v" + version)
-    print(description + "\n")
+    tprint("v" + VERSION)
+    print(DESCRIPTION + "\n")
     print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
@@ -348,7 +400,7 @@ def art(artname, number=1, text=""):
     :type artname : str
     :return: ascii art as str
     '''
-    if isinstance(artname, str) == False:
+    if isinstance(artname, str) is False:
         raise artError("artname shoud have str type")
     artname = artname.lower()
     arts = sorted(art_dic.keys())
@@ -364,14 +416,13 @@ def art(artname, number=1, text=""):
         else:
             raise artError("Invalid art name")
     art_value = art_dic[artname]
-    if isinstance(number, int) == False:
+    if isinstance(number, int) is False:
         raise artError("number should have int type")
     if isinstance(art_value, str):
         return (art_value + " ") * number
-    else:
-        if isinstance(text, str) == False:
-            raise artError("text should have str type")
-        return (art_value[0] + text + art_value[1] + " ") * number
+    if isinstance(text, str) is False:
+        raise artError("text should have str type")
+    return (art_value[0] + text + art_value[1] + " ") * number
 
 
 def randart():
@@ -393,7 +444,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     '''
-    if isinstance(text, str) == False:
+    if isinstance(text, str) is False:
         raise artError("text should have str type")
     split_list = text.split("\n")
     result = ""
@@ -483,6 +534,36 @@ def distance_calc(s1, s2):
     return distances[-1]
 
 
+def indirect_font(font, fonts):
+    '''
+    This function check input font for indirect modes
+    :param font: input font
+    :type font : str
+    :param fonts: fonts list
+    :type fonts : list
+    :return: font as str
+    '''
+    if font == "rnd-small" or font == "random-small" or font == "rand-small":
+        random_index = random.randint(0, len(RND_SIZE_DICT["small_list"]) - 1)
+        font = RND_SIZE_DICT["small_list"][random_index]
+    elif font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
+        random_index = random.randint(0, len(RND_SIZE_DICT["medium_list"]) - 1)
+        font = RND_SIZE_DICT["medium_list"][random_index]
+    elif font == "rnd-large" or font == "random-large" or font == "rand-large":
+        random_index = random.randint(0, len(RND_SIZE_DICT["large_list"]) - 1)
+        font = RND_SIZE_DICT["large_list"][random_index]
+    elif font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
+        random_index = random.randint(0, len(RND_SIZE_DICT["xlarge_list"]) - 1)
+        font = RND_SIZE_DICT["xlarge_list"][random_index]
+    elif font == "random" or font == "rand" or font == "rnd":
+        random_index = random.randint(0, len(fonts) - 1)
+        font = fonts[random_index]
+    elif font not in font_map.keys():
+        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
+        font = fonts[distance_list.index(min(distance_list))]
+    return font
+
+
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     '''
     This function print art text
@@ -499,18 +580,13 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     letters = standard_dic
     text_temp = text
     spliter = "\n"
-    if isinstance(text, str) == False:
+    if isinstance(text, str) is False:
         raise artError("text should have str type")
-    if isinstance(font, str) == False:
+    if isinstance(font, str) is False:
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    if font == "random" or font == "rand":
-        random_index = random.randint(0, len(fonts) - 1)
-        font = fonts[random_index]
-    elif font not in font_map.keys():
-        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
-        font = fonts[distance_list.index(min(distance_list))]
+    font = indirect_font(font, fonts)
     letters = font_map[font][0]
     if font_map[font][1]:
         text_temp = text.lower()
@@ -556,13 +632,13 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type print_status:bool
     :return: None
     '''
-    if isinstance(font, str) == False:
+    if isinstance(font, str) is False:
         raise artError("font should have str type")
-    if isinstance(chr_ignore, bool) == False:
+    if isinstance(chr_ignore, bool) is False:
         raise artError("chr_ignore should have bool type")
-    if isinstance(filename, str) == False:
+    if isinstance(filename, str) is False:
         raise artError("filename should have str type")
-    if isinstance(print_status, bool) == False:
+    if isinstance(print_status, bool) is False:
         raise artError("print_status should have bool type")
     tprint.__defaults__ = (font, chr_ignore)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status)

@@ -1,14 +1,14 @@
 ## Installation		
 
 ### Source Code
-- Download [Version 2.7](https://github.com/sepandhaghighi/art/archive/v2.7.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 2.8](https://github.com/sepandhaghighi/art/archive/v2.8.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==2.7` or `pip3 install art==2.7` (Need root access)
+- `pip install art==2.8` or `pip3 install art==2.8` (Need root access)
 
 * Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
 
@@ -19,4 +19,4 @@
 
 ### Easy Install
 
-- Run `easy_install "art==2.7"` (Need root access)
+- Run `easy_install "art==2.8"` (Need root access)

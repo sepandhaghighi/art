@@ -2479,6 +2479,16 @@ tsalagi :
     |    | '      \      |
  \_/    _|_    \__/   \_/
 <BLANKLINE>
+tsn_base :
+###         #  ##     #### ###
+  ##        #  ##     ##     ##
+  ##        #  ##            ##
+###         #  ##       ## ###
+  ##        #  ##            ##
+  ##     ####  ##            ##
+  ##           ##     ##     ##
+###      ####  ##     #### ###
+<BLANKLINE>
 tubular :
   O~~                     O~~
   O~~                     O~~
@@ -2487,6 +2497,16 @@ O~O~ O~   O~~     O~~~~ O~O~ O~
   O~~  O~~~~~ O~~  O~~~   O~~
   O~~  O~            O~~  O~~
    O~~   O~~~~   O~~ O~~   O~~
+<BLANKLINE>
+<BLANKLINE>
+twin_cob :
+<BLANKLINE>
+#######  #######   ######  #######
+   ##    ##       ##          ##
+   ##    ######    #####      ##
+   ##    ##            ##     ##
+   ##    #######  ######      ##
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 twisted :
@@ -2503,6 +2523,46 @@ twopoint :
 _|_ _ __|_
  | }__\ |
 <BLANKLINE>
+type_set :
+  #####   ######    ####     #####
+    #     #        #    #      #
+    #     #        #           #
+    #     ####      ####       #
+    #     #             #      #
+    #     #        #    #      #
+    #     ######    ####       #
+<BLANKLINE>
+<BLANKLINE>
+ucf_fan :
+#######  #######    ####   #######
+  ###    ###  ##   ### ##    ###
+  ###    ###      ###        ###
+  ###    ######    #####     ###
+  ###    ###           ##    ###
+  ###    ###  ##   ##  ##    ###
+  ###    #######   #####     ###
+<BLANKLINE>
+<BLANKLINE>
+ugalympi :
+   #      ###     # ##        #
+## #     # #  ###    ##    ## #
+    #### # #### # # #  # #     ####
+# ## # #  ## # ##  #   # # # ## # #
+# ####   # #  ###   ###    # ####
+  ###    #    # # #### # #   ###
+###  # #  #    ## ##   #   ###  # #
+ #   #   ##   ##  ##  #  #  #   #
+<BLANKLINE>
+unarmed :
+         #######
+       #       #                  #
+     ###  # # ##                ###
+   #####      #               #####
+ #### #   # ###             #### #
+### ####    #       #   ## ### ####
+#### ##  ####        ##### #### ##
+ ####### ##                 #######
+<BLANKLINE>
 univers :
 <BLANKLINE>
 <BLANKLINE>
@@ -2516,12 +2576,84 @@ MM88MMM   ,adPPYba,  ,adPPYba,  MM88MMM
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+usa :
+                #
+          ## #  #  ## #  #
+ ## #  #                    ## #  #
+<BLANKLINE>
+          ## #  #  ## #  #
+ ## #  #                    ## #  #
+                #
+          ## #  #  ## #  #
+<BLANKLINE>
+usa_pq :
+#### ###          ## ####  #### ###
+## # # # # ## ###          ## # # #
+ # # # # ## ####  # ## ###  # # # #
+ # # ###          ## ####   # # ###
+## ##### # ## ### # # # #  ## #####
+######## ## ####  # ## ### ########
+#### ###          ## ##### #### ###
+## ####  # ## ### ######## ## ####
+<BLANKLINE>
 usaflag :
  :::==== :::===== :::===  :::====
  :::==== :::      :::     :::====
    ===   ======    =====    ===
    ===   ===          ===   ===
    ===   ======== ======    ===
+<BLANKLINE>
+<BLANKLINE>
+utopia :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #             #
+###   ##   ## ###
+ #   #  # #    #
+ #   ####  #   #
+ #   #      #  #
+  ##  ### ##    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+utopiab :
+<BLANKLINE>
+<BLANKLINE>
+  #                #
+ ##               ##
+####  ###   #### ####
+ ##  ## ## ###    ##
+ ##  #####  ###   ##
+ ##  ##      ###  ##
+  ##  #### ####    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+utopiabi :
+<BLANKLINE>
+<BLANKLINE>
+  #                #
+ ##               ##
+####   ##    ### ####
+ ##   # ##  ##    ##
+##   ####   ###  ##
+##   ##      ##  ##
+###  ####  ###   ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+utopiai :
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ #            #
+###   ##  ## ###
+ #   # # #    #
+#   ###   #  #
+#   #      # #
+##   ##  ##  ##
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 varsity :
@@ -2532,6 +2664,25 @@ varsity :
  | |,  | \__.,  `'.'.   | |,
  \__/   '.__.' [\__) )  \__/
 <BLANKLINE>
+<BLANKLINE>
+vortron :
+<BLANKLINE>
+         #   ####
+#######  ##    ## ######   #######
+#######  ##  #### ######   #######
+#######      ##   ######   #######
+         ##  ####
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+war_of_w :
+<BLANKLINE>
+#######  #######    ####   #######
+#  ##  #  ##    #  ##      #  ##  #
+#####     ####      ####   #####
+   ##     ##           ##     ##
+   ##     ##    # ##   ##     ##
+  ####   #######    #### #   ####
 <BLANKLINE>
 wavy :
 <BLANKLINE>
@@ -2830,6 +2981,19 @@ xtimes :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+xtty :
+<BLANKLINE>
+<BLANKLINE>
+ #              #
+####  ##   ### ####
+ #   #  # #     #
+ #   #### ##    #
+ #   #      ##  #
+ #   #       #  #
+  ##  ### ###    ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 xttyb :
 <BLANKLINE>
 <BLANKLINE>
@@ -2842,6 +3006,56 @@ xttyb :
   ###  #### ####    ###
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+yie-ar :
+          # # # #
+          #######
+          #######
+         ########
+         ########
+          #######
+          #######
+          # # # #
+<BLANKLINE>
+yie_ar_k :
+          # # # #
+          #######
+          #######
+         ########
+         ########
+          #######
+          #######
+          # # # #
+<BLANKLINE>
+z-pilot :
+######## ######## ######## ########
+######## ###### # ######## ########
+######## ### #  # # ###### ########
+######## ### #  # # ###### ########
+######## ### #  # ######## ########
+######## ### #  # ######## ########
+# ###### ## # # # # ### ## # ######
+# ######  # # # # # ### ## # ######
+<BLANKLINE>
+zig_zag :
+ ### # #                ##  ### # #
+# ## ##                 #  # ## ##
+# ###  #                   # ###  #
+  #  ##                      #  ##
+     #                          #
+                #
+              ##
+          # ## ##
+<BLANKLINE>
+zone7 :
+         ########
+     #   ###   ##  ##           #
+      #  #### # #  #             #
+         # ###  #
+         #  ### #
+         # # ####
+         ##   ###
+         ########
 <BLANKLINE>
 >>> tprint("test",font = "block243")
 <BLANKLINE>
@@ -3614,11 +3828,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      _____
-__   __|___ \    |___  |
-\ \ / /  __) |      / /
- \ V /  / __/  _   / /
-  \_/  |_____|(_) /_/
+        ____       ___
+__   __|___ \     ( _ )
+\ \ / /  __) |    / _ \
+ \ V /  / __/  _ | (_) |
+  \_/  |_____|(_) \___/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -3807,6 +4021,41 @@ art.art.artError: filename should have str type
 Traceback (most recent call last):
         ...
 art.art.artError: print_status should have bool type
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-small")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-small")
+>>> Art == Art2
+False
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-medium")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-medium")
+>>> Art == Art2
+False
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-large")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-large")
+>>> Art == Art2
+False
+>>> random.seed(200)
+>>> Art = text2art("test","rnd-xlarge")
+>>> random.seed(300)
+>>> Art2 = text2art("test","rnd-xlarge")
+>>> Art == Art2
+False
+>>> font_dicts = font_size_splitter(font_map)
+>>> len(font_dicts["small_list"])>0
+True
+>>> len(font_dicts["medium_list"])>0
+True
+>>> len(font_dicts["large_list"])>0
+True
+>>> len(font_dicts["xlarge_list"])>0
+True
+>>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == font_counter
+True
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")

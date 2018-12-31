@@ -5,6 +5,36 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.8] - 2019-01-01
+### Added
+- 20 new fonts
+	1. zone7
+	2. zig_zag
+	3. yie_ar_k
+	4. yie-ar
+	5. xtty
+	6. war_of_w
+	7. vortron
+	8. utopia
+	9. utopiai
+	10. utopiabi
+	11. utopiab
+	12. usa_pq
+	13. usa
+	14. unarmed
+	15. ugalympi
+	16. ucf_fan
+	17. type_set
+	18. twin_cob
+	19. tsn_base
+	20. z-pilot
+- `rnd-small` mode
+- `rnd-medium` mode
+- `rnd-large` mode
+- `rnd-xlarge` mode
+### Changed
+- `README.md` modified
+
 ## [2.7] - 2018-12-23
 ### Added
 - 30 new fonts
@@ -38,7 +68,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	28. beer_pub
 	29. c1
 	30. c2
-- `art_profile.py` added
+- `art_profile.py`
 ### Changed
 - docstring modified
 - `B1FF` font bug fixed
@@ -645,7 +675,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.7...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.8...HEAD
+[2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8
 [2.7]: https://github.com/sepandhaghighi/art/compare/v2.6...v2.7
 [2.6]: https://github.com/sepandhaghighi/art/compare/v2.5...v2.6
 [2.5]: https://github.com/sepandhaghighi/art/compare/v2.4...v2.5

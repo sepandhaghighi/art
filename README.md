@@ -6,13 +6,12 @@
 |_|  |_| |_|  \_\   |_|   
          
 </pre>
-<a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a>
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-300-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-320-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-250-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
@@ -26,6 +25,7 @@
    * [Usage](https://github.com/sepandhaghighi/art#usage)
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
+   		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
@@ -61,7 +61,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">300</td>
+		<td align="center">320</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -89,14 +89,22 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 	</tr>
 </table>
 
+<table>
+	<tr> 
+		<td align="center">Code Quality</td>
+		<td align="center"><a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a></td>	
+		<td align="center"><a href="https://codebeat.co/projects/github-com-sepandhaghighi-art-dev"><img alt="codebeat badge" src="https://codebeat.co/badges/90e77325-a046-4cc5-9c3e-646c011a5b72" /></a></td>	
+	</tr>
+</table>
+
     
 
 ## Usage
 
 ### 1-Line Art
-1. art					
+#### 1. art					
 
-This function return 1-line art as `str` in normal mode and raise `artError` in exception	
+This function return 1-line art as `str` in normal mode and raise `artError` in exception.	
 ```pycon
 >>> from art import *
 >>> art_1=art("coffee") # return art as str in normal mode
@@ -118,9 +126,9 @@ Traceback (most recent call last):
 art.art.artError: artname shoud have str type
 
 ```
-2. aprint				
+#### 2. aprint				
 
-This function print 1-line art in normal mode (return None) and raise `artError` in exception
+This function print 1-line art in normal mode (return None) and raise `artError` in exception.
 ```pycon
 >>> aprint("butterfly") # print art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
@@ -138,9 +146,9 @@ Traceback (most recent call last):
 art.art.artError: number should have int type
 ```
 
-3. randart
+#### 3. randart
 
-`randart` function is added in `Version 2.2` as `art("random")` shortcut
+`randart` function is added in `Version 2.2` as `art("random")` shortcut.
 ```pycon
 >>> randart()
 'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
@@ -149,9 +157,9 @@ art.art.artError: number should have int type
 ```		
 
 ### ASCII Text
-1. text2art				
+#### 1. text2art				
 
-This function return ascii text as `str` in normal mode and raise `artError` in exception
+This function return ascii text as `str` in normal mode and raise `artError` in exception.
 ```pycon	
 >>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
 >>> print(Art)
@@ -194,11 +202,11 @@ ___ ____ ____ ___
 Traceback (most recent call last):
         ...
 art.art.artError: س is invalid 
-             
+  
 ```
-2. tprint				
+#### 2. tprint				
 
-This function print ascii text in normal mode (return None) and raise `artError` in exception
+This function print ascii text in normal mode (return None) and raise `artError` in exception.
 ```pycon
 >>> tprint("art") # print ascii text (default font) 
               _   
@@ -261,9 +269,9 @@ ___  ____ _    ____ ____
 
 
 ```
-3. tsave				
+#### 3. tsave				
 
-This function return `dict` in normal and exception mode
+This function return `dict` in normal and exception mode.
 ```pycon
 >>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
 Saved! 
@@ -280,7 +288,141 @@ True
                         
 ```
 
+### Font Modes
+
+These modes are available for `text2art`, `tprint` & `tsave`.	
+
+#### 1. Font Name	
 			
+```pycon
+
+>>> tprint("art",font="block",chr_ignore=True)
+
+ .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. |
+| |      __      | || |  _______     | || |  _________   | |
+| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |
+| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |
+| |   / ____ \   | || |   |  __ /    | || |     | |      | |
+| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |
+| ||____|  |____|| || | |____| |___| | || |   |_____|    | |
+| |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'
+
+```	
+
+#### 2. Random		
+
+Randomly select from all fonts.	
+
+Keywords : `random`, `rand` & `rnd`
+
+```pycon
+>>> tprint("test",font="random")
+ |       | 
+~|~/~/(~~|~
+ | \/__) | 
+  
+
+```
+
+#### 3. Random Small
+
+Randomly select from small fonts.	
+
+Keywords : `rnd-small`, `random-small` & `rand-small`
+
+* Note : New in `Version 2.8`
+
+```pycon
+>>> tprint("test",font="rnd-small")
+             
+_/  _   _ _/ 
+/  (- _)  /  
+             
+```
+
+#### 4. Random Medium
+
+Randomly select from medium fonts.
+
+Keywords : `rnd-medium`, `random-medium` & `rand-medium`
+
+* Note : New in `Version 2.8`
+
+```pycon
+>>> tprint("test",font="rnd-medium")
+                      
+  ,                ,  
+ ||               ||  
+=||=  _-_   _-_, =||= 
+ ||  || \\ ||_.   ||  
+ ||  ||/    ~ ||  ||  
+ \\, \\,/  ,-_-   \\, 
+                      
+                      
+```
+
+#### 5. Random Large
+
+Randomly select from large fonts.
+
+Keywords : `rnd-large`, `random-large` & `rand-large`
+
+* Note : New in `Version 2.8`
+
+```pycon
+>>> tprint("test",font="rnd-large")
+                                                                    
+8888888 8888888888 8 8888888888      d888888o.   8888888 8888888888 
+      8 8888       8 8888          .`8888:' `88.       8 8888       
+      8 8888       8 8888          8.`8888.   Y8       8 8888       
+      8 8888       8 8888          `8.`8888.           8 8888       
+      8 8888       8 888888888888   `8.`8888.          8 8888       
+      8 8888       8 8888            `8.`8888.         8 8888       
+      8 8888       8 8888             `8.`8888.        8 8888       
+      8 8888       8 8888         8b   `8.`8888.       8 8888       
+      8 8888       8 8888         `8b.  ;8.`8888       8 8888       
+      8 8888       8 888888888888  `Y8888P ,88P'       8 8888       
+
+
+```
+
+#### 6. Random XLarge
+
+Randomly select from xlarge fonts.	
+
+Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
+
+* Note : New in `Version 2.8`
+
+```pycon
+>>> tprint("test","rnd-xlarge")
+      _____                    _____                    _____                _____          
+     /\    \                  /\    \                  /\    \              /\    \         
+    /::\    \                /::\    \                /::\    \            /::\    \        
+    \:::\    \              /::::\    \              /::::\    \           \:::\    \       
+     \:::\    \            /::::::\    \            /::::::\    \           \:::\    \      
+      \:::\    \          /:::/\:::\    \          /:::/\:::\    \           \:::\    \     
+       \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \           \:::\    \    
+       /::::\    \      /::::\   \:::\    \       \:::\   \:::\    \          /::::\    \   
+      /::::::\    \    /::::::\   \:::\    \    ___\:::\   \:::\    \        /::::::\    \  
+     /:::/\:::\    \  /:::/\:::\   \:::\    \  /\   \:::\   \:::\    \      /:::/\:::\    \ 
+    /:::/  \:::\____\/:::/__\:::\   \:::\____\/::\   \:::\   \:::\____\    /:::/  \:::\____\
+   /:::/    \::/    /\:::\   \:::\   \::/    /\:::\   \:::\   \::/    /   /:::/    \::/    /
+  /:::/    / \/____/  \:::\   \:::\   \/____/  \:::\   \:::\   \/____/   /:::/    / \/____/ 
+ /:::/    /            \:::\   \:::\    \       \:::\   \:::\    \      /:::/    /          
+/:::/    /              \:::\   \:::\____\       \:::\   \:::\____\    /:::/    /           
+\::/    /                \:::\   \::/    /        \:::\  /:::/    /    \::/    /            
+ \/____/                  \:::\   \/____/          \:::\/:::/    /      \/____/             
+                           \:::\    \               \::::::/    /                           
+                            \:::\____\               \::::/    /                            
+                             \::/    /                \::/    /                             
+                              \/____/                  \/____/                              
+                                                                                            
+```
+	
 
 ### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
