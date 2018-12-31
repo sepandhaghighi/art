@@ -19,7 +19,7 @@
 	
 ----------
 
-# Table of contents					
+## Table of contents					
    * [Overview](https://github.com/sepandhaghighi/art#overview)
    * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
    * [Usage](https://github.com/sepandhaghighi/art#usage)
@@ -38,7 +38,7 @@
    * [Donate](https://github.com/sepandhaghighi/art#donate-to-our-project)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
 
-# Overview	
+## Overview	
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 	
@@ -98,10 +98,10 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
     
 
-# Usage
+## Usage
 
-## 1-Line Art
-### 1. art					
+### 1-Line Art
+#### 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception	
 ```pycon
@@ -125,7 +125,7 @@ Traceback (most recent call last):
 art.art.artError: artname shoud have str type
 
 ```
-### 2. aprint				
+#### 2. aprint				
 
 This function print 1-line art in normal mode (return None) and raise `artError` in exception
 ```pycon
@@ -145,7 +145,7 @@ Traceback (most recent call last):
 art.art.artError: number should have int type
 ```
 
-### 3. randart
+#### 3. randart
 
 `randart` function is added in `Version 2.2` as `art("random")` shortcut
 ```pycon
@@ -155,8 +155,8 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```		
 
-## ASCII Text
-### 1. text2art				
+### ASCII Text
+#### 1. text2art				
 
 This function return ascii text as `str` in normal mode and raise `artError` in exception
 ```pycon	
@@ -234,7 +234,7 @@ art.art.artError: س is invalid
                                                                
             
 ```
-### 2. tprint				
+#### 2. tprint				
 
 This function print ascii text in normal mode (return None) and raise `artError` in exception
 ```pycon
@@ -329,7 +329,7 @@ _/  _   _ _/
       8 8888       8 888888888888  `Y8888P ,88P'       8 8888       
 
 ```
-### 3. tsave				
+#### 3. tsave				
 
 This function return `dict` in normal and exception mode
 ```pycon
@@ -350,7 +350,7 @@ True
 
 			
 
-## Typo-Tolerance			
+### Typo-Tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
 ```pycon
@@ -467,7 +467,7 @@ _/  _   _ _/
 	</tr>	
 	</table> 
  
-## CLI			
+### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
 - List of fonts : `python -m art fonts`
 - Test : `python -m art test`
@@ -476,7 +476,7 @@ _/  _   _ _/
 - Save :  `python -m art save yourtext fontname(optional)`
 - All  :  `python -m art all yourtext`
 
-## Telegram Bot			
+### Telegram Bot			
 
 Just send your text to one of these bots. 👇👇👇👇		
 
@@ -484,7 +484,7 @@ Just send your text to one of these bots. 👇👇👇👇
 
 <a href="https://t.me/textart_robot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot2-blue.svg"></a>
 
-## Screen Record		
+### Screen Record		
 
 
 <div align="center">
@@ -495,22 +495,22 @@ Just send your text to one of these bots. 👇👇👇👇
 * View Full Font List ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
 * View Full Art List ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
 
-# Issues & Bug Reports			
+## Issues & Bug Reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
 or send an email to [sepand@qpage.ir](mailto:sepand@qpage.ir "sepand@qpage.ir"). 
 
-# License
+## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_large)
 
-# Reference    
+## Reference    
 
 1. [1 Line Art](http://1lineart.kulaone.com/#/)
 2. [Text To ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
 3. [ASCII Generator](http://www.network-science.de/ascii/)
 
-# Donate to our project
+## Donate to our project
 								
 <h3>Bitcoin :</h3>					
 
