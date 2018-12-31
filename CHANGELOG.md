@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `rnd-large` mode
 - `rnd-xlarge` mode
 ### Changed
-- `INSTALL.md` modified
+- `README.md` modified
 
 ## [2.7] - 2018-12-23
 ### Added
