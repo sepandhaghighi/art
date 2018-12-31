@@ -23,10 +23,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. usa
 	14. unarmed
 	15. ugalympi
-	16. ucf_dan
+	16. ucf_fan
 	17. type_set
 	18. twin_cob
 	19. tsn_base
+	20. z-pilot
 - `rnd-small` mode
 - `rnd-medium` mode
 - `rnd-large` mode
