@@ -327,7 +327,7 @@ These modes are available for `text2art`, `tprint` & `tsave`
 			
 ```pycon
 
->>> tprint("art",font="block",chr_ignore=True) # print ascii text (block font)
+>>> tprint("art",font="block",chr_ignore=True)
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -350,7 +350,7 @@ Randomly select from all fonts.
 Keywords : `random`, `rand` & `rnd`
 
 ```pycon
->>> tprint("test",font="random") # random font mode
+>>> tprint("test",font="random")
  |       | 
 ~|~/~/(~~|~
  | \/__) | 
@@ -364,8 +364,10 @@ Randomly select from small fonts.
 
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
+* Note : New in `Version 2.8`
+
 ```pycon
->>> tprint("test",font="rnd-small") # random-size mode new in version 2.8
+>>> tprint("test",font="rnd-small")
              
 _/  _   _ _/ 
 /  (- _)  /  
@@ -378,8 +380,10 @@ Randomly select from medium fonts.
 
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
+* Note : New in `Version 2.8`
+
 ```pycon
->>> tprint("test",font="rnd-medium") # random-size mode new in version 2.8
+>>> tprint("test",font="rnd-medium")
                       
   ,                ,  
  ||               ||  
@@ -397,8 +401,10 @@ Randomly select from large fonts.
 
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
+* Note : New in `Version 2.8`
+
 ```pycon
->>> tprint("test",font="rnd-large") # random-size mode new in version 2.8
+>>> tprint("test",font="rnd-large")
                                                                     
 8888888 8888888888 8 8888888888      d888888o.   8888888 8888888888 
       8 8888       8 8888          .`8888:' `88.       8 8888       
@@ -419,6 +425,8 @@ Keywords : `rnd-large`, `random-large` & `rand-large`
 Randomly select from xlarge fonts.	
 
 Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
+
+* Note : New in `Version 2.8`
 
 ```pycon
 >>> tprint("test","rnd-xlarge")
