@@ -31,6 +31,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `rnd-medium` mode
 - `rnd-large` mode
 - `rnd-xlarge` mode
+### Changed
+- `INSTALL.md` modified
+
 ## [2.7] - 2018-12-23
 ### Added
 - 30 new fonts
