@@ -202,38 +202,7 @@ ___ ____ ____ ___
 Traceback (most recent call last):
         ...
 art.art.artError: س is invalid 
-
->>> Art = text2art("test","rnd-small")  # random-size mode new in version 2.8
->>> print(Art)
- |               |   
-  _|   -_) (_-<   _| 
-\__| \___| ___/ \__| 
-                     
-
->>> Art = text2art("test","rnd-medium")  # random-size mode new in version 2.8
->>> print(Art)
-       .                        .   
-   ...;...                  ...;... 
-    .'       .-.       .     .'     
-  .;       .;.-'     .';   .;       
-.;          `:::'  .' .' .;         
-                  '                 
-
->>> Art = text2art("test","rnd-large")  # random-size mode new in version 2.8
->>> print(Art)
-       _                _              _               _       
-      /\ \             /\ \           / /\            /\ \     
-      \_\ \           /  \ \         / /  \           \_\ \    
-      /\__ \         / /\ \ \       / / /\ \__        /\__ \   
-     / /_ \ \       / / /\ \_\     / / /\ \___\      / /_ \ \  
-    / / /\ \ \     / /_/_ \/_/     \ \ \ \/___/     / / /\ \ \ 
-   / / /  \/_/    / /____/\         \ \ \          / / /  \/_/ 
-  / / /          / /\____\/     _    \ \ \        / / /        
- / / /          / / /______    /_/\__/ / /       / / /         
-/_/ /          / / /_______\   \ \/___/ /       /_/ /          
-\_\/           \/__________/    \_____\/        \_\/           
-                                                               
-            
+  
 ```
 #### 2. tprint				
 
