@@ -104,7 +104,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 ### 1-Line Art
 #### 1. art					
 
-This function return 1-line art as `str` in normal mode and raise `artError` in exception	
+This function return 1-line art as `str` in normal mode and raise `artError` in exception.	
 ```pycon
 >>> from art import *
 >>> art_1=art("coffee") # return art as str in normal mode
@@ -128,7 +128,7 @@ art.art.artError: artname shoud have str type
 ```
 #### 2. aprint				
 
-This function print 1-line art in normal mode (return None) and raise `artError` in exception
+This function print 1-line art in normal mode (return None) and raise `artError` in exception.
 ```pycon
 >>> aprint("butterfly") # print art
 Ƹ̵̡Ӝ̵̨̄Ʒ 
@@ -148,7 +148,7 @@ art.art.artError: number should have int type
 
 #### 3. randart
 
-`randart` function is added in `Version 2.2` as `art("random")` shortcut
+`randart` function is added in `Version 2.2` as `art("random")` shortcut.
 ```pycon
 >>> randart()
 'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
@@ -159,7 +159,7 @@ art.art.artError: number should have int type
 ### ASCII Text
 #### 1. text2art				
 
-This function return ascii text as `str` in normal mode and raise `artError` in exception
+This function return ascii text as `str` in normal mode and raise `artError` in exception.
 ```pycon	
 >>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
 >>> print(Art)
@@ -237,7 +237,7 @@ art.art.artError: س is invalid
 ```
 #### 2. tprint				
 
-This function print ascii text in normal mode (return None) and raise `artError` in exception
+This function print ascii text in normal mode (return None) and raise `artError` in exception.
 ```pycon
 >>> tprint("art") # print ascii text (default font) 
               _   
@@ -302,7 +302,7 @@ ___  ____ _    ____ ____
 ```
 #### 3. tsave				
 
-This function return `dict` in normal and exception mode
+This function return `dict` in normal and exception mode.
 ```pycon
 >>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
 Saved! 
@@ -321,7 +321,7 @@ True
 
 ### Font Modes
 
-These modes are available for `text2art`, `tprint` & `tsave`	
+These modes are available for `text2art`, `tprint` & `tsave`.	
 
 #### 1. Font Name	
 			
