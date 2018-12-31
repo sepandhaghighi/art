@@ -25,6 +25,7 @@
    * [Usage](https://github.com/sepandhaghighi/art#usage)
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
+   		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
@@ -318,7 +319,7 @@ True
                         
 ```
 
-### Different Font Modes
+### Font Modes
 
 These modes are available for `text2art`, `tprint` & `tsave`	
 
@@ -349,7 +350,7 @@ Randomly select from all fonts.
 Keywords : `random`, `rand` & `rnd`
 
 ```pycon
->>> tprint("test","random") # random font mode
+>>> tprint("test",font="random") # random font mode
  |       | 
 ~|~/~/(~~|~
  | \/__) | 
@@ -364,7 +365,7 @@ Randomly select from small fonts.
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
 ```pycon
->>> tprint("test","rnd-small") # random-size mode new in version 2.8
+>>> tprint("test",font="rnd-small") # random-size mode new in version 2.8
              
 _/  _   _ _/ 
 /  (- _)  /  
@@ -378,7 +379,7 @@ Randomly select from medium fonts.
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
 ```pycon
->>> tprint("test","rnd-medium") # random-size mode new in version 2.8
+>>> tprint("test",font="rnd-medium") # random-size mode new in version 2.8
                       
   ,                ,  
  ||               ||  
@@ -397,7 +398,7 @@ Randomly select from large fonts.
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
 ```pycon
->>> tprint("test","rnd-large") # random-size mode new in version 2.8
+>>> tprint("test",font="rnd-large") # random-size mode new in version 2.8
                                                                     
 8888888 8888888888 8 8888888888      d888888o.   8888888 8888888888 
       8 8888       8 8888          .`8888:' `88.       8 8888       
