@@ -7,9 +7,9 @@ import random
 
 VERSION = "2.8"
 
-SMALLTHRESHOLD = 60
-MEDIUMTHRESHOLD = 250
-LARGETHRESHOLD = 500
+SMALLTHRESHOLD = 50
+MEDIUMTHRESHOLD = 100
+LARGETHRESHOLD = 200
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -34,7 +34,7 @@ def font_size_splitter(font_map):
     xlarge_font = []
     for font in font_map.keys():
         length = max(map(len, font_map[font][0].values()))
-        if length <= 80:
+        if length <= SMALLTHRESHOLD:
             small_font.append(font)
         elif length > SMALLTHRESHOLD and length <= MEDIUMTHRESHOLD:
             medium_font.append(font)
