@@ -17,10 +17,17 @@ CHANGELOG_ITEMS = [
     "https://github.com/sepandhaghighi/art/compare/v{0}...HEAD",
     "[{0}]:"]
 ART_LIST_ITEMS = ["### Version : {0}"]
-FONT_LIST_ITEMS = ['font_list(\\"art {0}\\")',"### Version : {0}"]
+FONT_LIST_ITEMS = ['font_list(\\"art {0}\\")', "### Version : {0}"]
 PARAMS_ITEMS = ['VERSION = "{0}"']
 FILES = {
-    "setup.py": SETUP_ITEMS, "INSTALL.md": INSTALL_ITEMS, "CHANGELOG.md": CHANGELOG_ITEMS, "FontList.ipynb": FONT_LIST_ITEMS,"ArtList.ipynb":ART_LIST_ITEMS, os.path.join("art","art.py"): PARAMS_ITEMS}
+    "setup.py": SETUP_ITEMS,
+    "INSTALL.md": INSTALL_ITEMS,
+    "CHANGELOG.md": CHANGELOG_ITEMS,
+    "FontList.ipynb": FONT_LIST_ITEMS,
+    "ArtList.ipynb": ART_LIST_ITEMS,
+    os.path.join(
+        "art",
+        "art.py"): PARAMS_ITEMS}
 
 TEST_NUMBER = len(FILES.keys())
 
