@@ -48,6 +48,7 @@ install:
 
 script:
   - python -m art testcov
+  - python version_check.py
   - python -m cProfile -s cumtime art_profile.py
 after_success:
   - codecov
