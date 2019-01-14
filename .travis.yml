@@ -28,7 +28,7 @@ matrix:
           env: TOXENV=py36
         - os: osx
           language: generic
-          env: TOXENV=py35
+          env: PYTHON=3.5.1
         - os: osx
           language: generic
           env: TOXENV=py34
@@ -41,7 +41,8 @@ matrix:
         - os: osx
           language: generic
           env: TOXENV=py26
-
+before_install:
+  - bash .travis/before_install.sh 
 install:
   - pip install -r dev-requirements.txt
   - python setup.py install
