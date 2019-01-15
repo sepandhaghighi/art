@@ -30,6 +30,7 @@
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
+   		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/CONTRIBUTING.md)
@@ -557,6 +558,15 @@ Just send your text to one of these bots. 👇👇👇👇
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot1-red.svg"></a>			
 
 <a href="https://t.me/textart_robot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot2-blue.svg"></a>
+
+
+### Try ART In Your Browser
+
+ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
+
+* Open `FontList.ipynb` and `ArtList.ipynb`
 
 ### Screen Record		
 
