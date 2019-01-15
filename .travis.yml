@@ -1,6 +1,12 @@
 language: python
 
 matrix:
+    allow_failures:
+        - os: osx
+          language: generic
+          env: TOXENV=py27
+        - os: linux
+          python: nightly
     include:
         - os: linux
           python: 3.7
@@ -15,13 +21,6 @@ matrix:
           python: 3.3
         - os: linux
           python: 2.7
-matrix:
-    allow_failures:
-        - os: osx
-          language: generic
-          env: TOXENV=py27
-        - os: linux
-          python: nightly
 install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip install -r dev-requirements.txt --user ; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install -r dev-requirements.txt ; fi
