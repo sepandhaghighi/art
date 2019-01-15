@@ -102,7 +102,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
 ## Usage
 
-### 1-Line Art
+### 1-Line art
 #### 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception.	
@@ -157,7 +157,7 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```		
 
-### ASCII Text
+### ASCII text
 #### 1. text2art				
 
 This function return ascii text as `str` in normal mode and raise `artError` in exception.
@@ -289,11 +289,11 @@ True
                         
 ```
 
-### Font Modes
+### Font modes
 
 These modes are available for `text2art`, `tprint` & `tsave`.	
 
-#### 1. Font Name	
+#### 1. Font name	
 			
 ```pycon
 
@@ -328,7 +328,7 @@ Keywords : `random`, `rand` & `rnd`
 
 ```
 
-#### 3. Random Small
+#### 3. Random small
 
 Randomly select from small fonts.	
 
@@ -344,7 +344,7 @@ _/  _   _ _/
              
 ```
 
-#### 4. Random Medium
+#### 4. Random medium
 
 Randomly select from medium fonts.
 
@@ -365,7 +365,7 @@ Keywords : `rnd-medium`, `random-medium` & `rand-medium`
                       
 ```
 
-#### 5. Random Large
+#### 5. Random large
 
 Randomly select from large fonts.
 
@@ -390,7 +390,7 @@ Keywords : `rnd-large`, `random-large` & `rand-large`
 
 ```
 
-#### 6. Random XLarge
+#### 6. Random xlarge
 
 Randomly select from xlarge fonts.	
 
@@ -425,7 +425,7 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 ```
 	
 
-### Typo-Tolerance			
+### Typo-tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
 ```pycon
@@ -466,7 +466,7 @@ ___ ____ ____ ___
    
 ```
 
-### Set Defaults			
+### Set defaults			
 `set_default` function is added in `Version 2.2` in order to change default values.
 
 ```pycon
@@ -551,7 +551,7 @@ _/  _   _ _/
 - Save :  `python -m art save yourtext fontname(optional)`
 - All  :  `python -m art all yourtext`
 
-### Telegram Bot			
+### Telegram bot			
 
 Just send your text to one of these bots. 👇👇👇👇		
 
@@ -560,7 +560,7 @@ Just send your text to one of these bots. 👇👇👇👇
 <a href="https://t.me/textart_robot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot2-blue.svg"></a>
 
 
-### Try ART In Your Browser
+### Try ART in your browser
 
 ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
 
@@ -568,7 +568,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 
 * Open `FontList.ipynb` and `ArtList.ipynb`
 
-### Screen Record		
+### Screen record		
 
 
 <div align="center">
@@ -579,7 +579,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 * View Full Font List ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
 * View Full Art List ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
 
-## Issues & Bug Reports			
+## Issues & bug reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
 or send an email to [sepand@qpage.ir](mailto:sepand@qpage.ir "sepand@qpage.ir"). 

@@ -1,6 +1,6 @@
 ## Installation		
 
-### Source Code
+### Source code
 - Download [Version 2.8](https://github.com/sepandhaghighi/art/archive/v2.8.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
@@ -17,6 +17,6 @@
 - Check [Conda Managing Package](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org)
 - `conda install -c sepandhaghighi art ` (Need root access)
 
-### Easy Install
+### Easy install
 
 - Run `easy_install "art==2.8"` (Need root access)
