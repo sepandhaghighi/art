@@ -7,6 +7,6 @@ if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
     pyenv install $PYTHON
     export PYENV_VERSION=$PYTHON
     export PATH="/Users/travis/.pyenv/shims:${PATH}"
-    pyenv global $PYTHON
+    pyenv local $PYTHON
 	exit 0
 fi
