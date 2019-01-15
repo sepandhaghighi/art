@@ -4035,13 +4035,13 @@ False
 False
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-large")
->>> random.seed(300)
+>>> random.seed(800)
 >>> Art2 = text2art("test","rnd-large")
 >>> Art == Art2
 False
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-xlarge")
->>> random.seed(300)
+>>> random.seed(800)
 >>> Art2 = text2art("test","rnd-xlarge")
 >>> Art == Art2
 False
