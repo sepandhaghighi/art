@@ -28,8 +28,8 @@ matrix:
           language: generic
           env: TOXENV=py27
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip install --upgrade --upgrade-strategy=only-if-needed -r dev-requirements.txt --user ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install --upgrade --upgrade-strategy=only-if-needed -r dev-requirements.txt ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip install -r dev-requirements.txt --user ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install -r dev-requirements.txt ; fi
   - python setup.py install
 script:
   - python -m art testcov
