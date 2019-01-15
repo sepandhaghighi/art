@@ -1,32 +1,26 @@
-sudo: true
-
 language: python
 
 matrix:
     include:
         - os: linux
-          sudo: true
           python: 3.7
           dist: xenial
         - os: linux
-          sudo: required
           python: 3.6
         - os: linux
-          sudo: required
           python: 3.5
         - os: linux
-          sudo: required
           python: 3.4
         - os: linux
-          sudo: required
           python: 3.3
         - os: linux
-          sudo: required
           python: 2.7
-    allow_failures:
+        allow_failures:
         - os: osx
           language: generic
           env: TOXENV=py27
+        - os: linux
+          python: nightly
 install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip install -r dev-requirements.txt --user ; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install -r dev-requirements.txt ; fi
