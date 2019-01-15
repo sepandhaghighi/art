@@ -21,6 +21,11 @@ matrix:
           python: 3.3
         - os: linux
           python: 2.7
+        - os: osx
+          language: generic
+          env: TOXENV=py27
+        - os: linux
+          python: nightly
 install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip install -r dev-requirements.txt --user ; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install -r dev-requirements.txt ; fi
