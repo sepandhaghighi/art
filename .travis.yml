@@ -43,6 +43,7 @@ matrix:
           env: TOXENV=py26
 before_install:
   - bash .travis/before_install.sh 
+  - python --version
 install:
   - pip install -r dev-requirements.txt
   - python setup.py install
