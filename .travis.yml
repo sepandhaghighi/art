@@ -15,6 +15,7 @@ matrix:
           python: 3.3
         - os: linux
           python: 2.7
+matrix:
     allow_failures:
         - os: osx
           language: generic
