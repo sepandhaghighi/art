@@ -4047,7 +4047,7 @@ False
 False
 >>> Art = text2art("te","wizard")
 >>> Art2 = text2art("test","wizard")
->>> Art3 = text2art("test"*3,"wizard")
+>>> Art3 = text2art("test"*2,"wizard")
 >>> Art4 = text2art("test"*5,"wizard")
 >>> Art == Art2
 False
