@@ -7,9 +7,17 @@ import random
 
 VERSION = "2.8"
 
-SMALLTHRESHOLD = 50
-MEDIUMTHRESHOLD = 100
-LARGETHRESHOLD = 200
+FONT_SMALL_THRESHOLD = 50
+FONT_MEDIUM_THRESHOLD = 100
+FONT_LARGE_THRESHOLD = 200
+TEXT_XLARGE_THRESHOLD = 0
+TEXT_LARGE_THRESHOLD = 0
+TEXT_MEDIUM_THRESHOLD = 0
+
+SMALL_WIZARD_FONT = ["contessa","avatar","mini","twopoint","3x5","threepoint","ascii_new_roman","bulbhead","serifcap","lockergnome"]
+MEDIUM_WIZARD_FONT = ["soft","4max","5x7","charact4","o8","alphabet","shadow","speed","rounded","chartri"]
+LARGE_WIZARD_FONT = ["xhelvi","amcun1","smpoison","3-d","nancyj","os2","block2"]
+XLARGE_WIZARD_FONT = ["dotmatrix","sweet","hollywood","nscript","georgia11","block"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -34,11 +42,11 @@ def font_size_splitter(font_map):
     xlarge_font = []
     for font in font_map.keys():
         length = max(map(len, font_map[font][0].values()))
-        if length <= SMALLTHRESHOLD:
+        if length <= FONT_SMALL_THRESHOLD:
             small_font.append(font)
-        elif length > SMALLTHRESHOLD and length <= MEDIUMTHRESHOLD:
+        elif length > FONT_SMALL_THRESHOLD and length <= FONT_MEDIUM_THRESHOLD:
             medium_font.append(font)
-        elif length > MEDIUMTHRESHOLD and length <= LARGETHRESHOLD:
+        elif length > FONT_LARGE_THRESHOLD and length <= FONT_LARGE_THRESHOLD:
             large_font.append(font)
         else:
             xlarge_font.append(font)
