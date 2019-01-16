@@ -591,7 +591,7 @@ def indirect_font(font, fonts, text):
     elif font == "random" or font == "rand" or font == "rnd":
         random_index = random.randint(0, len(fonts) - 1)
         font = fonts[random_index]
-    elif font == "wizard" or font == "wiz":
+    elif font == "wizard" or font == "wiz" or font == "magic":
         font = wizard_font(text)
     elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
