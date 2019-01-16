@@ -4045,6 +4045,16 @@ False
 >>> Art2 = text2art("test","rnd-xlarge")
 >>> Art == Art2
 False
+>>> Art = text2art("te","wizard")
+>>> Art2 = text2art("test","wizard")
+>>> Art3 = text2art("test"*3,"wizard")
+>>> Art4 = text2art("test"*5,"wizard")
+>>> Art == Art2
+False
+>>> Art == Art3
+False
+>>> Art == Art4
+False
 >>> font_dicts = font_size_splitter(font_map)
 >>> len(font_dicts["small_list"])>0
 True

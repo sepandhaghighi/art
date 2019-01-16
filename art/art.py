@@ -10,6 +10,7 @@ VERSION = "2.8"
 FONT_SMALL_THRESHOLD = 50
 FONT_MEDIUM_THRESHOLD = 100
 FONT_LARGE_THRESHOLD = 200
+
 TEXT_XLARGE_THRESHOLD = 3
 TEXT_LARGE_THRESHOLD = 8
 TEXT_MEDIUM_THRESHOLD = 15
@@ -46,7 +47,7 @@ def font_size_splitter(font_map):
             small_font.append(font)
         elif length > FONT_SMALL_THRESHOLD and length <= FONT_MEDIUM_THRESHOLD:
             medium_font.append(font)
-        elif length > FONT_LARGE_THRESHOLD and length <= FONT_LARGE_THRESHOLD:
+        elif length > FONT_MEDIUM_THRESHOLD and length <= FONT_LARGE_THRESHOLD:
             large_font.append(font)
         else:
             xlarge_font.append(font)
