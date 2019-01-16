@@ -543,6 +543,12 @@ def distance_calc(s1, s2):
 
 
 def wizard_font(text):
+    '''
+    This function check input text length for wizard mode
+    :param text: input text
+    :type text:str
+    :return: font as str
+    '''
     text_length = len(text)
     if text_length <= TEXT_XLARGE_THRESHOLD:
         random_index = random.randint(0, len(XLARGE_WIZARD_FONT) - 1)
