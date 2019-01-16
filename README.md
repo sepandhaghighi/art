@@ -424,6 +424,51 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
                                                                                             
 ```
 	
+#### 6. Wizard	
+
+This mode consider length of input text to select font
+
+Keywords : `wizard`, `wiz` & `magic`
+
+* Note : New in `Version 2.9`
+
+```pycon
+>>> tprint("1","wizard")
+    88 
+  ,d88 
+888888 
+    88 
+    88 
+    88 
+    88 
+    88 
+    88 
+    88 
+       
+            
+
+>>> tprint("1"*5,"wizard")
+d88  d88  d88  d88  d88  
+ 88   88   88   88   88  
+ 88   88   88   88   88  
+ 88   88   88   88   88  
+ 88   88   88   88   88  
+d88P d88P d88P d88P d88P 
+                         
+                         
+
+>>> tprint("1"*15,"wizard")
+                                             
+                                             
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+                                             
+                                             
+```
 
 ### Typo-tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
