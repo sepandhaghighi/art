@@ -542,13 +542,31 @@ def distance_calc(s1, s2):
     return distances[-1]
 
 
-def indirect_font(font, fonts):
+def wizard_font(text):
+    text_length = len(text)
+    if text_length <= TEXT_XLARGE_THRESHOLD:
+        random_index = random.randint(0, len(XLARGE_WIZARD_FONT) - 1)
+        font = XLARGE_WIZARD_FONT[random_index]
+    elif text_length > TEXT_XLARGE_THRESHOLD and text_length <= TEXT_LARGE_THRESHOLD:
+        random_index = random.randint(0, len(LARGE_WIZARD_FONT) - 1)
+        font = LARGE_WIZARD_FONT[random_index]
+    elif text_length > TEXT_LARGE_THRESHOLD and text_length <= TEXT_MEDIUM_THRESHOLD:
+        random_index = random.randint(0, len(MEDIUM_WIZARD_FONT) - 1)
+        font = MEDIUM_WIZARD_FONT[random_index]
+    else:
+        random_index = random.randint(0, len(SMALL_WIZARD_FONT) - 1)
+        font = SMALL_WIZARD_FONT[random_index]
+    return font
+
+def indirect_font(font, fonts, text):
     '''
     This function check input font for indirect modes
     :param font: input font
     :type font : str
     :param fonts: fonts list
     :type fonts : list
+    :param text: input text
+    :type text:str
     :return: font as str
     '''
     if font == "rnd-small" or font == "random-small" or font == "rand-small":
@@ -566,6 +584,8 @@ def indirect_font(font, fonts):
     elif font == "random" or font == "rand" or font == "rnd":
         random_index = random.randint(0, len(fonts) - 1)
         font = fonts[random_index]
+    elif font == "wizard" or font == "wiz":
+        font = wizard_font(text)
     elif font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
@@ -594,7 +614,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    font = indirect_font(font, fonts)
+    font = indirect_font(font, fonts, text)
     letters = font_map[font][0]
     if font_map[font][1]:
         text_temp = text.lower()
