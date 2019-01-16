@@ -12,8 +12,8 @@ FONT_MEDIUM_THRESHOLD = 100
 FONT_LARGE_THRESHOLD = 200
 
 TEXT_XLARGE_THRESHOLD = 3
-TEXT_LARGE_THRESHOLD = 8
-TEXT_MEDIUM_THRESHOLD = 15
+TEXT_LARGE_THRESHOLD = 7
+TEXT_MEDIUM_THRESHOLD = 10
 
 SMALL_WIZARD_FONT = ["contessa","avatar","mini","twopoint","3x5","threepoint","ascii_new_roman","bulbhead","serifcap","lockergnome"]
 MEDIUM_WIZARD_FONT = ["soft","4max","5x7","charact4","o8","alphabet","shadow","speed","rounded","chartri"]
