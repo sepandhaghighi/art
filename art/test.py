@@ -3845,10 +3845,10 @@ zombie
 <BLANKLINE>
 <BLANKLINE>
         ____       ___
-__   __|___ \     ( _ )
-\ \ / /  __) |    / _ \
- \ V /  / __/  _ | (_) |
-  \_/  |_____|(_) \___/
+__   __|___ \     / _ \
+\ \ / /  __) |   | (_) |
+ \ V /  / __/  _  \__, |
+  \_/  |_____|(_)   /_/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".

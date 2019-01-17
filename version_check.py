@@ -3,7 +3,7 @@ import os
 import sys
 import codecs
 Failed = 0
-VERSION = "2.8"
+VERSION = "2.9"
 
 
 SETUP_ITEMS = [
