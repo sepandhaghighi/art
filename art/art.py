@@ -552,17 +552,13 @@ def wizard_font(text):
     '''
     text_length = len(text)
     if text_length <= TEXT_XLARGE_THRESHOLD:
-        random_index = random.randint(0, len(XLARGE_WIZARD_FONT) - 1)
-        font = XLARGE_WIZARD_FONT[random_index]
+        font = random.choice(XLARGE_WIZARD_FONT)
     elif text_length > TEXT_XLARGE_THRESHOLD and text_length <= TEXT_LARGE_THRESHOLD:
-        random_index = random.randint(0, len(LARGE_WIZARD_FONT) - 1)
-        font = LARGE_WIZARD_FONT[random_index]
+        font = random.choice(LARGE_WIZARD_FONT)
     elif text_length > TEXT_LARGE_THRESHOLD and text_length <= TEXT_MEDIUM_THRESHOLD:
-        random_index = random.randint(0, len(MEDIUM_WIZARD_FONT) - 1)
-        font = MEDIUM_WIZARD_FONT[random_index]
+        font = random.choice(MEDIUM_WIZARD_FONT)
     else:
-        random_index = random.randint(0, len(SMALL_WIZARD_FONT) - 1)
-        font = SMALL_WIZARD_FONT[random_index]
+        font = random.choice(SMALL_WIZARD_FONT)
     return font
 
 def indirect_font(font, fonts, text):
