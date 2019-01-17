@@ -21,6 +21,7 @@ if __name__ == "__main__":
             cov.stop()
             cov.report()
             cov.save()
+            cov.html_report()
             sys.exit(error_flag)
         elif args[1].upper() == "TEST":
             error_flag = doctest.testfile(
