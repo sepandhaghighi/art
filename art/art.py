@@ -368,7 +368,7 @@ def art_list():
             aprint(i)
             line()
         except Exception:
-            print("[Waning] This art is not printable in this environment")
+            print("[Warning] This art is not printable in this environment")
             line()
 
 
