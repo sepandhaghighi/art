@@ -5,28 +5,61 @@ import os
 import sys
 import random
 
-VERSION = "2.8" # pragma: no cover
+VERSION = "2.8"  # pragma: no cover
 
-FONT_SMALL_THRESHOLD = 50 # pragma: no cover
-FONT_MEDIUM_THRESHOLD = 100 # pragma: no cover
-FONT_LARGE_THRESHOLD = 200 # pragma: no cover
+FONT_SMALL_THRESHOLD = 50  # pragma: no cover
+FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
+FONT_LARGE_THRESHOLD = 200  # pragma: no cover
 
-TEXT_XLARGE_THRESHOLD = 3 # pragma: no cover
-TEXT_LARGE_THRESHOLD = 7 # pragma: no cover
-TEXT_MEDIUM_THRESHOLD = 10 # pragma: no cover
+TEXT_XLARGE_THRESHOLD = 3  # pragma: no cover
+TEXT_LARGE_THRESHOLD = 7  # pragma: no cover
+TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
 
-SMALL_WIZARD_FONT = ["contessa","avatar","mini","twopoint","3x5","threepoint","ascii_new_roman","bulbhead","serifcap","lockergnome"]  # pragma: no cover
-MEDIUM_WIZARD_FONT = ["soft","4max","5x7","charact4","o8","alphabet","shadow","speed","rounded","chartri"] # pragma: no cover
-LARGE_WIZARD_FONT = ["xhelvi","amcun1","smpoison","3-d","nancyj","os2","block2"] # pragma: no cover
-XLARGE_WIZARD_FONT = ["dotmatrix","sweet","hollywood","nscript","georgia11","block"] # pragma: no cover
+SMALL_WIZARD_FONT = [
+    "contessa",
+    "avatar",
+    "mini",
+    "twopoint",
+    "3x5",
+    "threepoint",
+    "ascii_new_roman",
+    "bulbhead",
+    "serifcap",
+    "lockergnome"]  # pragma: no cover
+MEDIUM_WIZARD_FONT = [
+    "soft",
+    "4max",
+    "5x7",
+    "charact4",
+    "o8",
+    "alphabet",
+    "shadow",
+    "speed",
+    "rounded",
+    "chartri"]  # pragma: no cover
+LARGE_WIZARD_FONT = [
+    "xhelvi",
+    "amcun1",
+    "smpoison",
+    "3-d",
+    "nancyj",
+    "os2",
+    "block2"]  # pragma: no cover
+XLARGE_WIZARD_FONT = [
+    "dotmatrix",
+    "sweet",
+    "hollywood",
+    "nscript",
+    "georgia11",
+    "block"]  # pragma: no cover
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
-ART is a Python lib for text converting to ASCII art fancy.''' # pragma: no cover
+ART is a Python lib for text converting to ASCII art fancy.'''  # pragma: no cover
 
 
-class artError(Exception): # pragma: no cover
+class artError(Exception):  # pragma: no cover
     pass
 
 
@@ -58,7 +91,7 @@ def font_size_splitter(font_map):
         "xlarge_list": xlarge_font}
 
 
-font_map = {"block": [block_dic, True], "banner": [banner_dic, False], # pragma: no cover
+font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma: no cover
             "standard": [standard_dic, False], "avatar": [avatar_dic, True],
             "basic": [basic_dic, True], "bulbhead": [bulbhead_dic, True],
             "chunky": [chunky_dic, False], "coinstak": [coinstak_dic, False],
@@ -326,9 +359,9 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False], # pragma:
             "zone7": [zone7_dic, False],
             "z-pilot": [z_pilot_dic, False]
             }
-font_counter = len(font_map) # pragma: no cover
-DEFAULT_FONT = "standard" # pragma: no cover
-RND_SIZE_DICT = font_size_splitter(font_map) # pragma: no cover
+font_counter = len(font_map)  # pragma: no cover
+DEFAULT_FONT = "standard"  # pragma: no cover
+RND_SIZE_DICT = font_size_splitter(font_map)  # pragma: no cover
 
 
 def line(char="*", number=30):
@@ -560,6 +593,7 @@ def wizard_font(text):
         font = random.choice(SMALL_WIZARD_FONT)
     return font
 
+
 def indirect_font(font, fonts, text):
     '''
     This function check input font for indirect modes
@@ -593,6 +627,7 @@ def indirect_font(font, fonts, text):
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     return font
+
 
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     '''

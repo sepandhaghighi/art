@@ -45,7 +45,8 @@ def print_result(failed=False):
 if __name__ == "__main__":
     for file_name in FILES.keys():
         try:
-            file_content = codecs.open(file_name, "r","utf-8","ignore").read()
+            file_content = codecs.open(
+                file_name, "r", "utf-8", "ignore").read()
             for test_item in FILES[file_name]:
                 if file_content.find(test_item.format(VERSION)) == -1:
                     print("Incorrect version tag in " + file_name)
