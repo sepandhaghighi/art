@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.9] - 2019-01-18
+### Added
+- `wizard` mode
+- Interactive notebooks section (binder)
+- `.coveragerc`
+- `version_check.py`
+### Changed
+- `README.md` modified
+- Minor bug in coverage system fixed
+- `.travis.yml` modified
+- `font_size_splitter` function thresholds fixed
+
 ## [2.8] - 2019-01-01
 ### Added
 - 20 new fonts
@@ -675,7 +687,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.8...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.9...HEAD
+[2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9
 [2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8
 [2.7]: https://github.com/sepandhaghighi/art/compare/v2.6...v2.7
 [2.6]: https://github.com/sepandhaghighi/art/compare/v2.5...v2.6
