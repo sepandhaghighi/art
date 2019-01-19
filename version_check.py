@@ -7,13 +7,10 @@ from art import *
 Failed = 0
 VERSION = "2.9"
 
-
-README_FONT_ITEMS = [
-    '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">',
-    '<td align="center">{0}</td>']
-README_ART_ITEMS = [
-    '<td align="center">{0}</td>',
-    '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">']
+README_ITEMS = ['<td align="center">{0}</td>'.format(str(font_counter)),
+                '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(art_counter)),
+                '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">'.format(str(font_counter)),
+                '<td align="center">{0}</td>'.format(str(art_counter))]
 
 SETUP_ITEMS = [
     "version='{0}'"]
@@ -43,7 +40,7 @@ TEST_NUMBER = len(FILES.keys()) + 1
 
 
 def print_result(failed=False):
-    message = "Version tag tests "
+    message = "Version/Counter tag tests "
     if not failed:
         print("\n" + message + "passed!")
     else:
@@ -67,18 +64,10 @@ if __name__ == "__main__":
     try:
         readme_file_content = codecs.open(
             "README.md", "r", "utf-8", "ignore").read()
-        for test_item in README_ART_ITEMS:
+        for test_item in README_ITEMS:
             if readme_file_content.find(
-                test_item.format(
-                    str(art_counter))) == -1:
-                print("Incorrect art counter in " + "README.md")
-                Failed += 1
-                break
-        for test_item in README_FONT_ITEMS:
-            if readme_file_content.find(
-                test_item.format(
-                    str(font_counter))) == -1:
-                print("Incorrect font counter in " + "README.md")
+                    test_item) == -1:
+                print("Incorrect counter in " + "README.md")
                 Failed += 1
                 break
     except Exception as e:
