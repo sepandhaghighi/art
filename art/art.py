@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from .art_dic import *
-from .text_dic import *
+from .text_dic1 import *
+from .text_dic2 import *
 import os
 import sys
 import random
