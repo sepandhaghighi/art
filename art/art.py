@@ -358,7 +358,28 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "yie-ar": [yie_ar_dic, False],
             "zig_zag": [zig_zag_dic, False],
             "zone7": [zone7_dic, False],
-            "z-pilot": [z_pilot_dic, False]
+            "z-pilot": [z_pilot_dic, False],
+            "aquaplan": [aquaplan_dic,False],
+            "ascii": [ascii_dic,False],
+            "c_ascii": [c_ascii_dic,False],
+            "c_consen": [c_consen_dic,False],
+            "clb6x10": [clb6x10_dic,False],
+            "clb8x8": [clb8x8_dic,False],
+            "clb8x10": [clb8x10_dic,False],
+            "cli8x8": [cli8x8_dic,False],
+            "clr4x6": [clr4x6_dic,False],
+            "clr5x6": [clr5x6_dic,False],
+            "clr5x8": [clr5x8_dic,False],
+            "clr5x10": [clr5x10_dic,False],
+            "clr6x6": [clr6x6_dic,False],
+            "clr6x8": [clr6x8_dic,False],
+            "clr6x10": [clr6x10_dic,False],
+            "clr7x8": [clr7x8_dic,False],
+            "clr8x8": [clr8x8_dic,False],
+            "clr8x10": [clr8x10_dic,False],
+            "coil_cop": [coil_cop_dic,False],
+            "com_sen": [com_sen_dic,False]
+
             }
 font_counter = len(font_map)  # pragma: no cover
 DEFAULT_FONT = "standard"  # pragma: no cover
