@@ -2,9 +2,18 @@
 import os
 import sys
 import codecs
+from art import *
+
 Failed = 0
 VERSION = "2.9"
 
+
+README_FONT_ITEMS = [
+    '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">',
+    '<td align="center">{0}</td>']
+README_ART_ITEMS = [
+    '<td align="center">{0}</td>',
+    '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">']
 
 SETUP_ITEMS = [
     "version='{0}'"]
@@ -30,7 +39,7 @@ FILES = {
         "art",
         "art.py"): PARAMS_ITEMS}
 
-TEST_NUMBER = len(FILES.keys())
+TEST_NUMBER = len(FILES.keys()) + 1
 
 
 def print_result(failed=False):
@@ -55,6 +64,25 @@ if __name__ == "__main__":
         except Exception as e:
             print("Error in " + file_name + "\n" + "Message : " + str(e))
 
+    try:
+        readme_file_content = codecs.open(
+            "README.md", "r", "utf-8", "ignore").read()
+        for test_item in README_ART_ITEMS:
+            if readme_file_content.find(
+                test_item.format(
+                    str(art_counter))) == -1:
+                print("Incorrect art counter in " + "README.md")
+                Failed += 1
+                break
+        for test_item in README_FONT_ITEMS:
+            if readme_file_content.find(
+                test_item.format(
+                    str(font_counter))) == -1:
+                print("Incorrect font counter in " + "README.md")
+                Failed += 1
+                break
+    except Exception as e:
+        print("Error in " + file_name + "\n" + "Message : " + str(e))
     if Failed == 0:
         print_result(False)
         sys.exit(0)
