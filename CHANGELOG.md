@@ -5,8 +5,29 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [2.9] - 2019-01-18
+## [2.9] - 2019-01-21
 ### Added
+- 20 new fonts
+	1. aquaplan
+	2. ascii
+	3. c_consen
+	4. clb6x10
+	5. clb8x10
+	6. clb8x8
+	7. cli8x8
+	8. clr4x6
+	9. clr5x10
+	10. clr5x6
+	11. clr5x8
+	12. clr6x10
+	13. clr6x6
+	14. clr6x8
+	15. clr7x8
+	16. clr8x10
+	17. clr8x8
+	18. coil_cop
+	19. com_sen
+	20. c_ascii
 - `wizard` mode
 - Interactive notebooks section (binder)
 - `.coveragerc`
