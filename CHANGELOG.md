@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [2.9] - 2019-01-21
+## [2.9] - 2019-01-23
 ### Added
 - 20 new fonts
 	1. aquaplan
@@ -103,7 +103,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	30. c2
 - `art_profile.py`
 ### Changed
-- docstring modified
+- Docstring modified
 - `B1FF` font bug fixed
 - `ICL-1900` font bug fixed
 - `AK-47` 1-line art bug fixed
@@ -382,7 +382,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	29. train
 	30. spot
 ### Changed
-- car race 1-line art fixed
+- `car race` 1-line art fixed
 
 ## [1.6] - 2018-07-10
 ### Added
@@ -484,7 +484,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	9. mango
 	10. bunny
 	11. kiss
-- random 1-line art mode
+- `random` 1-line art mode
 ### Changed
 - Minor bug in `text2art` random range fixed
 - `README.md` modified
@@ -504,7 +504,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. jazmine
 	9. lcd
 	10. lean
-- random font mode
+- `random` font mode
 
 ## [1.2] - 2018-06-04
 ### Added
@@ -569,7 +569,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. pyramid
 	14. puffy
 	15. pebbles
-- Typo-Tolerance system
+- Typo-tolerance system
 ### Changed
 - `README.md` modified
 - Test cases modified
@@ -619,7 +619,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.6] - 	2018-01-09
 ### Added
-- all flag
+- `all` flag
 
 ## [0.5] - 2017-12-05
 ### Added
@@ -641,14 +641,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ### Changed
-- Universal Text Format Added For Unix & Windows
+- Universal text format added for Unix & Windows
 
 
 
 ## [0.3] - 	2017-10-28
 ### Added
 - Save function (tsave)
-- chr_ignore flag
+- `chr_ignore` flag
 - 10 new fonts
 	1. banner
 	2. avatar
@@ -685,7 +685,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	33. stop
 	34. thin
 	35. usaflag
-- overall_stat
 ### Changed
 - Space bug fixed
 
@@ -695,12 +694,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Standard font
 ### Changed
 - Minor bugs fixed
-
-
-
-### Changed
- - statistic_result to class_stat
- - params() to stat()
 
 ## [0.1] - 2017-10-04
 ### Added
