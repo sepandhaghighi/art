@@ -3,6 +3,14 @@
     src: url("fonts/Baloo.ttf");
 }
 
+.gif {
+    text-align: center;
+}
+
+.gif img {
+    height: 500px;
+    width: 800px;
+}
 table {
     border-collapse: collapse;
 }
