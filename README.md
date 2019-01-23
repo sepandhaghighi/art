@@ -11,7 +11,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-320-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-340-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-250-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
@@ -30,6 +30,7 @@
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
+   		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/CONTRIBUTING.md)
@@ -43,7 +44,7 @@
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 	
-Art is a Python lib for text converting to ASCII ART fancy. ;-)
+ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 
 <table>
@@ -61,7 +62,7 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">320</td>
+		<td align="center">340</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -101,7 +102,15 @@ Art is a Python lib for text converting to ASCII ART fancy. ;-)
 
 ## Usage
 
-### 1-Line Art
+<div align="center">
+
+<img src="https://github.com/sepandhaghighi/art/blob/master/otherfile/ART.gif">
+<p>Quick Start</p>
+
+</div>				
+
+
+### 1-Line art
 #### 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception.	
@@ -156,7 +165,7 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```		
 
-### ASCII Text
+### ASCII text
 #### 1. text2art				
 
 This function return ascii text as `str` in normal mode and raise `artError` in exception.
@@ -288,11 +297,11 @@ True
                         
 ```
 
-### Font Modes
+### Font modes
 
 These modes are available for `text2art`, `tprint` & `tsave`.	
 
-#### 1. Font Name	
+#### 1. Font name	
 			
 ```pycon
 
@@ -327,7 +336,7 @@ Keywords : `random`, `rand` & `rnd`
 
 ```
 
-#### 3. Random Small
+#### 3. Random small
 
 Randomly select from small fonts.	
 
@@ -343,7 +352,7 @@ _/  _   _ _/
              
 ```
 
-#### 4. Random Medium
+#### 4. Random medium
 
 Randomly select from medium fonts.
 
@@ -364,7 +373,7 @@ Keywords : `rnd-medium`, `random-medium` & `rand-medium`
                       
 ```
 
-#### 5. Random Large
+#### 5. Random large
 
 Randomly select from large fonts.
 
@@ -389,7 +398,7 @@ Keywords : `rnd-large`, `random-large` & `rand-large`
 
 ```
 
-#### 6. Random XLarge
+#### 6. Random xlarge
 
 Randomly select from xlarge fonts.	
 
@@ -423,8 +432,53 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
                                                                                             
 ```
 	
+#### 6. Wizard	
 
-### Typo-Tolerance			
+This mode consider length of input text to select font
+
+Keywords : `wizard`, `wiz` & `magic`
+
+* Note : New in `Version 2.9`
+
+```pycon
+>>> tprint("1","wizard")
+    88 
+  ,d88 
+888888 
+    88 
+    88 
+    88 
+    88 
+    88 
+    88 
+    88 
+       
+            
+
+>>> tprint("1"*5,"wizard")
+d88  d88  d88  d88  d88  
+ 88   88   88   88   88  
+ 88   88   88   88   88  
+ 88   88   88   88   88  
+ 88   88   88   88   88  
+d88P d88P d88P d88P d88P 
+                         
+                         
+
+>>> tprint("1"*15,"wizard")
+                                             
+                                             
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+ #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+                                             
+                                             
+```
+
+### Typo-tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
 ```pycon
@@ -465,7 +519,7 @@ ___ ____ ____ ___
    
 ```
 
-### Set Defaults			
+### Set defaults			
 `set_default` function is added in `Version 2.2` in order to change default values.
 
 ```pycon
@@ -550,7 +604,7 @@ _/  _   _ _/
 - Save :  `python -m art save yourtext fontname(optional)`
 - All  :  `python -m art all yourtext`
 
-### Telegram Bot			
+### Telegram bot			
 
 Just send your text to one of these bots. 👇👇👇👇		
 
@@ -558,7 +612,16 @@ Just send your text to one of these bots. 👇👇👇👇
 
 <a href="https://t.me/textart_robot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot2-blue.svg"></a>
 
-### Screen Record		
+
+### Try ART in your browser
+
+ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
+
+* Open `FontList.ipynb` and `ArtList.ipynb`
+
+### Screen record		
 
 
 <div align="center">
@@ -569,7 +632,7 @@ Just send your text to one of these bots. 👇👇👇👇
 * View Full Font List ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
 * View Full Art List ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
 
-## Issues & Bug Reports			
+## Issues & bug reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
 or send an email to [sepand@qpage.ir](mailto:sepand@qpage.ir "sepand@qpage.ir"). 

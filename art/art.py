@@ -1,23 +1,66 @@
 # -*- coding: utf-8 -*-
 from .art_dic import *
-from .text_dic import *
+from .text_dic1 import *
+from .text_dic2 import *
 import os
 import sys
 import random
 
-VERSION = "2.8"
+VERSION = "2.9"  # pragma: no cover
 
-SMALLTHRESHOLD = 60
-MEDIUMTHRESHOLD = 250
-LARGETHRESHOLD = 500
+FONT_SMALL_THRESHOLD = 50  # pragma: no cover
+FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
+FONT_LARGE_THRESHOLD = 200  # pragma: no cover
+
+TEXT_XLARGE_THRESHOLD = 3  # pragma: no cover
+TEXT_LARGE_THRESHOLD = 7  # pragma: no cover
+TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
+
+SMALL_WIZARD_FONT = [
+    "contessa",
+    "avatar",
+    "mini",
+    "twopoint",
+    "3x5",
+    "threepoint",
+    "ascii_new_roman",
+    "bulbhead",
+    "serifcap",
+    "lockergnome"]  # pragma: no cover
+MEDIUM_WIZARD_FONT = [
+    "soft",
+    "4max",
+    "5x7",
+    "charact4",
+    "o8",
+    "alphabet",
+    "shadow",
+    "speed",
+    "rounded",
+    "chartri"]  # pragma: no cover
+LARGE_WIZARD_FONT = [
+    "xhelvi",
+    "amcun1",
+    "smpoison",
+    "3-d",
+    "nancyj",
+    "os2",
+    "block2"]  # pragma: no cover
+XLARGE_WIZARD_FONT = [
+    "dotmatrix",
+    "sweet",
+    "hollywood",
+    "nscript",
+    "georgia11",
+    "block"]  # pragma: no cover
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
-Art is a Python lib for text converting to ASCII ART fancy.'''
+ART is a Python lib for text converting to ASCII art fancy.'''  # pragma: no cover
 
 
-class artError(Exception):
+class artError(Exception):  # pragma: no cover
     pass
 
 
@@ -34,11 +77,11 @@ def font_size_splitter(font_map):
     xlarge_font = []
     for font in font_map.keys():
         length = max(map(len, font_map[font][0].values()))
-        if length <= 80:
+        if length <= FONT_SMALL_THRESHOLD:
             small_font.append(font)
-        elif length > SMALLTHRESHOLD and length <= MEDIUMTHRESHOLD:
+        elif length > FONT_SMALL_THRESHOLD and length <= FONT_MEDIUM_THRESHOLD:
             medium_font.append(font)
-        elif length > MEDIUMTHRESHOLD and length <= LARGETHRESHOLD:
+        elif length > FONT_MEDIUM_THRESHOLD and length <= FONT_LARGE_THRESHOLD:
             large_font.append(font)
         else:
             xlarge_font.append(font)
@@ -49,7 +92,7 @@ def font_size_splitter(font_map):
         "xlarge_list": xlarge_font}
 
 
-font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
+font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma: no cover
             "standard": [standard_dic, False], "avatar": [avatar_dic, True],
             "basic": [basic_dic, True], "bulbhead": [bulbhead_dic, True],
             "chunky": [chunky_dic, False], "coinstak": [coinstak_dic, False],
@@ -315,11 +358,32 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],
             "yie-ar": [yie_ar_dic, False],
             "zig_zag": [zig_zag_dic, False],
             "zone7": [zone7_dic, False],
-            "z-pilot": [z_pilot_dic, False]
+            "z-pilot": [z_pilot_dic, False],
+            "aquaplan": [aquaplan_dic, False],
+            "ascii": [ascii_dic, False],
+            "c_ascii": [c_ascii_dic, False],
+            "c_consen": [c_consen_dic, False],
+            "clb6x10": [clb6x10_dic, False],
+            "clb8x8": [clb8x8_dic, False],
+            "clb8x10": [clb8x10_dic, False],
+            "cli8x8": [cli8x8_dic, False],
+            "clr4x6": [clr4x6_dic, False],
+            "clr5x6": [clr5x6_dic, False],
+            "clr5x8": [clr5x8_dic, False],
+            "clr5x10": [clr5x10_dic, False],
+            "clr6x6": [clr6x6_dic, False],
+            "clr6x8": [clr6x8_dic, False],
+            "clr6x10": [clr6x10_dic, False],
+            "clr7x8": [clr7x8_dic, False],
+            "clr8x8": [clr8x8_dic, False],
+            "clr8x10": [clr8x10_dic, False],
+            "coil_cop": [coil_cop_dic, False],
+            "com_sen": [com_sen_dic, False]
+
             }
-font_counter = len(font_map)
-DEFAULT_FONT = "standard"
-RND_SIZE_DICT = font_size_splitter(font_map)
+font_counter = len(font_map)  # pragma: no cover
+DEFAULT_FONT = "standard"  # pragma: no cover
+RND_SIZE_DICT = font_size_splitter(font_map)  # pragma: no cover
 
 
 def line(char="*", number=30):
@@ -342,7 +406,7 @@ def font_list(text="test"):
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4", "c2", "war_of_w"]:
+        if str(item) in ["char4", "c2", "war_of_w", "coil_cop"]:
             tprint(text.upper(), str(item))
         else:
             tprint(text, str(item))
@@ -359,7 +423,7 @@ def art_list():
             aprint(i)
             line()
         except Exception:
-            print("[Waning] This art is not printable in this environment")
+            print("[Warning] This art is not printable in this environment")
             line()
 
 
@@ -405,8 +469,7 @@ def art(artname, number=1, text=""):
     artname = artname.lower()
     arts = sorted(art_dic.keys())
     if artname == "random" or artname == "rand":
-        random_index = random.randint(0, len(arts) - 1)
-        artname = arts[random_index]
+        artname = random.choice(arts)
     elif artname not in art_dic.keys():
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
@@ -534,31 +597,55 @@ def distance_calc(s1, s2):
     return distances[-1]
 
 
-def indirect_font(font, fonts):
+def wizard_font(text):
+    '''
+    This function check input text length for wizard mode
+    :param text: input text
+    :type text:str
+    :return: font as str
+    '''
+    text_length = len(text)
+    if text_length <= TEXT_XLARGE_THRESHOLD:
+        font = random.choice(XLARGE_WIZARD_FONT)
+    elif text_length > TEXT_XLARGE_THRESHOLD and text_length <= TEXT_LARGE_THRESHOLD:
+        font = random.choice(LARGE_WIZARD_FONT)
+    elif text_length > TEXT_LARGE_THRESHOLD and text_length <= TEXT_MEDIUM_THRESHOLD:
+        font = random.choice(MEDIUM_WIZARD_FONT)
+    else:
+        font = random.choice(SMALL_WIZARD_FONT)
+    return font
+
+
+def indirect_font(font, fonts, text):
     '''
     This function check input font for indirect modes
     :param font: input font
     :type font : str
     :param fonts: fonts list
     :type fonts : list
+    :param text: input text
+    :type text:str
     :return: font as str
     '''
     if font == "rnd-small" or font == "random-small" or font == "rand-small":
-        random_index = random.randint(0, len(RND_SIZE_DICT["small_list"]) - 1)
-        font = RND_SIZE_DICT["small_list"][random_index]
-    elif font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
-        random_index = random.randint(0, len(RND_SIZE_DICT["medium_list"]) - 1)
-        font = RND_SIZE_DICT["medium_list"][random_index]
-    elif font == "rnd-large" or font == "random-large" or font == "rand-large":
-        random_index = random.randint(0, len(RND_SIZE_DICT["large_list"]) - 1)
-        font = RND_SIZE_DICT["large_list"][random_index]
-    elif font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
-        random_index = random.randint(0, len(RND_SIZE_DICT["xlarge_list"]) - 1)
-        font = RND_SIZE_DICT["xlarge_list"][random_index]
-    elif font == "random" or font == "rand" or font == "rnd":
-        random_index = random.randint(0, len(fonts) - 1)
-        font = fonts[random_index]
-    elif font not in font_map.keys():
+        font = random.choice(RND_SIZE_DICT["small_list"])
+        return font
+    if font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
+        font = random.choice(RND_SIZE_DICT["medium_list"])
+        return font
+    if font == "rnd-large" or font == "random-large" or font == "rand-large":
+        font = random.choice(RND_SIZE_DICT["large_list"])
+        return font
+    if font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
+        font = random.choice(RND_SIZE_DICT["xlarge_list"])
+        return font
+    if font == "random" or font == "rand" or font == "rnd":
+        font = random.choice(fonts)
+        return font
+    if font == "wizard" or font == "wiz" or font == "magic":
+        font = wizard_font(text)
+        return font
+    if font not in font_map.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     return font
@@ -586,7 +673,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         raise artError("font should have str type")
     font = font.lower()
     fonts = sorted(font_map.keys())
-    font = indirect_font(font, fonts)
+    font = indirect_font(font, fonts, text)
     letters = font_map[font][0]
     if font_map[font][1]:
         text_temp = text.lower()

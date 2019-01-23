@@ -5,6 +5,39 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.9] - 2019-01-24
+### Added
+- 20 new fonts
+	1. aquaplan
+	2. ascii
+	3. c_consen
+	4. clb6x10
+	5. clb8x10
+	6. clb8x8
+	7. cli8x8
+	8. clr4x6
+	9. clr5x10
+	10. clr5x6
+	11. clr5x8
+	12. clr6x10
+	13. clr6x6
+	14. clr6x8
+	15. clr7x8
+	16. clr8x10
+	17. clr8x8
+	18. coil_cop
+	19. com_sen
+	20. c_ascii
+- `wizard` mode
+- Interactive notebooks section (binder)
+- `.coveragerc`
+- `version_check.py`
+### Changed
+- `README.md` modified
+- Minor bug in coverage system fixed
+- `.travis.yml` modified
+- `font_size_splitter` function thresholds fixed
+
 ## [2.8] - 2019-01-01
 ### Added
 - 20 new fonts
@@ -70,7 +103,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	30. c2
 - `art_profile.py`
 ### Changed
-- docstring modified
+- Docstring modified
 - `B1FF` font bug fixed
 - `ICL-1900` font bug fixed
 - `AK-47` 1-line art bug fixed
@@ -349,7 +382,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	29. train
 	30. spot
 ### Changed
-- car race 1-line art fixed
+- `car race` 1-line art fixed
 
 ## [1.6] - 2018-07-10
 ### Added
@@ -451,7 +484,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	9. mango
 	10. bunny
 	11. kiss
-- random 1-line art mode
+- `random` 1-line art mode
 ### Changed
 - Minor bug in `text2art` random range fixed
 - `README.md` modified
@@ -471,7 +504,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. jazmine
 	9. lcd
 	10. lean
-- random font mode
+- `random` font mode
 
 ## [1.2] - 2018-06-04
 ### Added
@@ -536,7 +569,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. pyramid
 	14. puffy
 	15. pebbles
-- Typo-Tolerance system
+- Typo-tolerance system
 ### Changed
 - `README.md` modified
 - Test cases modified
@@ -586,7 +619,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.6] - 	2018-01-09
 ### Added
-- all flag
+- `all` flag
 
 ## [0.5] - 2017-12-05
 ### Added
@@ -608,14 +641,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ### Changed
-- Universal Text Format Added For Unix & Windows
+- Universal text format added for Unix & Windows
 
 
 
 ## [0.3] - 	2017-10-28
 ### Added
 - Save function (tsave)
-- chr_ignore flag
+- `chr_ignore` flag
 - 10 new fonts
 	1. banner
 	2. avatar
@@ -652,7 +685,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	33. stop
 	34. thin
 	35. usaflag
-- overall_stat
 ### Changed
 - Space bug fixed
 
@@ -663,19 +695,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Minor bugs fixed
 
-
-
-### Changed
- - statistic_result to class_stat
- - params() to stat()
-
 ## [0.1] - 2017-10-04
 ### Added
 - Block font
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.8...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.9...HEAD
+[2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9
 [2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8
 [2.7]: https://github.com/sepandhaghighi/art/compare/v2.6...v2.7
 [2.6]: https://github.com/sepandhaghighi/art/compare/v2.5...v2.6

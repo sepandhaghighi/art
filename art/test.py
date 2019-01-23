@@ -4,6 +4,22 @@
 >>> import random
 >>> import sys
 >>> from art import *
+>>> tprint("\t\t2","block")
+<BLANKLINE>
+ .----------------.
+| .--------------. |
+| |    _____     | |
+| |   / ___ `.   | |
+| |  |_/___) |   | |
+| |   .'____.'   | |
+| |  / /____     | |
+| |  |_______|   | |
+| |              | |
+| '--------------' |
+ '----------------'
+<BLANKLINE>
+>>> tprint("","block")
+<BLANKLINE>
 >>> font_list()
 1943 :
 ### # #           ### # #  ### # #
@@ -328,6 +344,16 @@ amcun1 :
     ',,'     ',,'',,' ',,'',,'     ',,'
 <BLANKLINE>
 <BLANKLINE>
+aquaplan :
+          #####
+##       #######         # ##
+##       ########       ## ##
+# #   ## ########      ### # #   ##
+ # #     #######      ####  # #
+# # #    ########    ##### # # #
+#    ##  ##### #    #### # #    ##
+#      #  # ### # ##### #  #      #
+<BLANKLINE>
 arrows :
   >=>                       >=>
   >=>                       >=>
@@ -346,6 +372,17 @@ asc :
     #     ####     #######     #
     #     #              #     #
     #     #######  #######     #
+<BLANKLINE>
+<BLANKLINE>
+ascii :
+ ######   #######   #####   ######
+ # ## #    ##   #  ##   ##  # ## #
+   ##      ## #    #          ##
+   ##      ####     #####     ##
+   ##      ## #         ##    ##
+   ##      ##   #  ##   ##    ##
+  ####    #######   #####    ####
+<BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
 ascii_new_roman :
@@ -646,6 +683,26 @@ c2 :
    ##    #######  #######     ##
    ##    #######   #####      ##
 <BLANKLINE>
+c_ascii :
+ ######   #######   #####   ######
+ # ## #    ##   #  ##   ##  # ## #
+   ##      ## #    ##         ##
+   ##      ####     #####     ##
+   ##      ## #         ##    ##
+   ##      ##   #  ##   ##    ##
+  ####    #######   #####    ####
+<BLANKLINE>
+<BLANKLINE>
+c_consen :
+###    ####   ###    ###
+##     #### # ###    ##
+###      # ## # #### ###
+###    ###    ###    ###
+###    ###    ###    ###
+###    ###    ###    ###
+###     ### # ###    ###
+###      #### ###    ###
+<BLANKLINE>
 calgphy2 :
 <BLANKLINE>
 <BLANKLINE>
@@ -862,6 +919,160 @@ chunky :
 |____||_____||_____||____|
 <BLANKLINE>
 <BLANKLINE>
+clb6x10 :
+  ##                   ##
+  ##                   ##
+  ##                   ##
+ ####    ###    ####  ####
+  ##    ## ##  ##      ##
+  ##    #####   ###    ##
+  ##    ##        ##   ##
+   ##    ###   ####     ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+clb8x10 :
+   ##                         ##
+   ##                         ##
+   ##                         ##
+ ######    #####    #####   ######
+   ##     ##   ##  ##         ##
+   ##     #######   ####      ##
+   ##     ##           ##     ##
+    ###    #####   #####       ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+clb8x8 :
+   ##                         ##
+   ##                         ##
+ ######    #####    #####   ######
+   ##     ##   ##  ##         ##
+   ##     #######   ####      ##
+   ##     ##           ##     ##
+    ###    #####   #####       ###
+<BLANKLINE>
+<BLANKLINE>
+cli8x8 :
+    ##                         ##
+   ##                         ##
+#######     ####     ##### #######
+  ##      ##   ##   ##       ##
+ ##      ########    ##     ##
+ ##      ##           ##    ##
+  ###     ####    #####      ###
+<BLANKLINE>
+<BLANKLINE>
+clr4x6 :
+ #              #
+###   ##   ##  ###
+ #   ###  ##    #
+ #   #     ##   #
+ #    ##  ##    #
+<BLANKLINE>
+<BLANKLINE>
+clr5x10 :
+<BLANKLINE>
+<BLANKLINE>
+  #                 #
+ ####   ##    ###  ####
+  #    #  #  #      #
+  #    ####   ##    #
+  #    #        #   #
+   ##   ##   ###     ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+clr5x6 :
+  #                 #
+ ####   ##    ###  ####
+  #    ####  ##     #
+  #    #       ##   #
+   ##   ##   ###     ##
+<BLANKLINE>
+<BLANKLINE>
+clr5x8 :
+<BLANKLINE>
+  #                 #
+ ####   ##    ###  ####
+  #    #  #  #      #
+  #    ####   ##    #
+  #    #        #   #
+   ##   ##   ###     ##
+<BLANKLINE>
+<BLANKLINE>
+clr6x10 :
+   #                    #
+   #                    #
+   #                    #
+ #####   ###    ####  #####
+   #    #   #  #        #
+   #    #####   ###     #
+   #    #          #    #
+    ##   ###   ####      ##
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+clr6x6 :
+  #                    #
+ ####    ###    ####  ####
+  #     #####  ###     #
+  #     #        ###   #
+   ##    ###   ####     ##
+<BLANKLINE>
+<BLANKLINE>
+clr6x8 :
+   #                    #
+   #                    #
+ #####   ###    ####  #####
+   #    #   #  #        #
+   #    #####   ###     #
+   #    #          #    #
+    ##   ###   ####      ##
+<BLANKLINE>
+<BLANKLINE>
+clr7x8 :
+   #                       #
+   #                       #
+ #####    ####    #####  #####
+   #     #    #  #         #
+   #     ######   ####     #
+   #     #            #    #
+    ###   ####   #####      ###
+<BLANKLINE>
+<BLANKLINE>
+clr8x10 :
+   #                          #
+   #                          #
+   #                          #
+ ######    #####    #####   ######
+   #      #     #  #          #
+   #      #######   ####      #
+   #      #             #     #
+    ###    #####   #####       ###
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+clr8x8 :
+   #                          #
+   #                          #
+ ######    #####    #####   ######
+   #      #     #  #          #
+   #      #######   ####      #
+   #      #             #     #
+    ###    #####   #####       ###
+<BLANKLINE>
+<BLANKLINE>
+coil_cop :
+######## #######   #####   ########
+## ## ##  ##   #  ##   ##  ## ## ##
+   ##     ##      ##          ##
+   ##     ####     #####      ##
+   ##     ##           ##     ##
+   ##     ##   #  ##   ##     ##
+  ####   #######   #####     ####
+<BLANKLINE>
+<BLANKLINE>
 coinstak :
   O))                     O))
   O))                     O))
@@ -891,6 +1102,16 @@ Y88b.  Y8b.          X88 Y88b.
  "Y888  "Y8888   88888P'  "Y888
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+com_sen :
+######   #######   #####   ######
+  ##      ##      ##   ##    ##
+  ##      ##      ##         ##
+  ##      ####     #####     ##
+  ##      ##           ##    ##
+  ##      ##      ##   ##    ##
+  ##     #######   #####     ##
 <BLANKLINE>
 <BLANKLINE>
 computer :
@@ -3829,16 +4050,16 @@ zombie
 <BLANKLINE>
 <BLANKLINE>
         ____       ___
-__   __|___ \     ( _ )
-\ \ / /  __) |    / _ \
- \ V /  / __/  _ | (_) |
-  \_/  |_____|(_) \___/
+__   __|___ \     / _ \
+\ \ / /  __) |   | (_) |
+ \ V /  / __/  _  \__, |
+  \_/  |_____|(_)   /_/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
-Art is a Python lib for text converting to ASCII ART fancy.
+ART is a Python lib for text converting to ASCII art fancy.
 <BLANKLINE>
 Webpage : http://art.shaghighi.ir
 <BLANKLINE>
@@ -4035,15 +4256,25 @@ False
 False
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-large")
->>> random.seed(300)
+>>> random.seed(800)
 >>> Art2 = text2art("test","rnd-large")
 >>> Art == Art2
 False
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-xlarge")
->>> random.seed(300)
+>>> random.seed(800)
 >>> Art2 = text2art("test","rnd-xlarge")
 >>> Art == Art2
+False
+>>> Art = text2art("te","wizard")
+>>> Art2 = text2art("test","wizard")
+>>> Art3 = text2art("test"*2,"wizard")
+>>> Art4 = text2art("test"*5,"wizard")
+>>> Art == Art2
+False
+>>> Art == Art3
+False
+>>> Art == Art4
 False
 >>> font_dicts = font_size_splitter(font_map)
 >>> len(font_dicts["small_list"])>0
