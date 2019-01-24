@@ -15,10 +15,17 @@
     border-collapse: collapse;
 }
 
-.function-table {
+.function-table{
     border: 1px solid black;
 }
 
+.function-table th{
+    border: 1px solid black;
+}
+
+.function-table td{
+    border: 1px solid black;
+}
 td {
     padding: 7px;
 }
