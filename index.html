@@ -126,171 +126,306 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <ol>
     <li>art</li>
     <p>This function return 1-line art as `str` in normal mode and raise `artError` in exception</p>
-<pre class="library">
->>> from art import *
->>> art_1=art("coffee") # return art as str in normal mode
->>> print(art_1)
-c[_]
->>> art_2=art("woman",number=2) # return multiple art as str
->>> print(art_2)
-▓⚗_⚗▓ ▓⚗_⚗▓ 
->>> art_3=art("love_you",number=1,text="test") # 2-part art
->>> print(art_3)
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> art("random") # random 1-line art mode
-'(っ◕‿◕)っ '
->>> art("rand")   # random 1-line art mode
-'t(-_-t) '
->>> art(22,number=1,text="") # raise artError
-Traceback (most recent call last):
-...
-art.art.artError: artname shoud have str type
-</pre>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">art</span> <span style="color: #008800; font-weight: bold">import</span> <span style="color: #333333">*</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>art_1<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;coffee&quot;</span>) <span style="color: #888888"># return art as str in normal mode</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(art_1)
+<span style="color: #888888">c[_]</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>art_2<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;woman&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #888888"># return multiple art as str</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(art_2)
+<span style="color: #888888">▓⚗_⚗▓ ▓⚗_⚗▓ </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>art_3<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;love_you&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test&quot;</span>) <span style="color: #888888"># 2-part art</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(art_3)
+<span style="color: #888888">»-(¯`·.·´¯)-&gt;test&lt;-(¯`·.·´¯)-« </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>art(<span style="background-color: #fff0f0">&quot;random&quot;</span>) <span style="color: #888888"># random 1-line art mode</span>
+<span style="color: #888888">&#39;(っ◕‿◕)っ &#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>art(<span style="background-color: #fff0f0">&quot;rand&quot;</span>)   <span style="color: #888888"># random 1-line art mode</span>
+<span style="color: #888888">&#39;t(-_-t) &#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>art(<span style="color: #0000DD; font-weight: bold">22</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;&quot;</span>) <span style="color: #888888"># raise artError</span>
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+<span style="color: #888888">...</span>
+<span style="color: #FF0000">art.art.artError</span>: artname shoud have str type
+</pre></td></tr></table></div>
+
 <li>aprint</li> 
 <p>This function print 1-line art in normal mode (return None) and raise `artError` in exception</p>
-<pre class="library">
->>> aprint("butterfly") # print art
-Ƹ̵̡Ӝ̵̨̄Ʒ 
->>> aprint("happy") # print art
- ۜ\(סּںסּَ` )/ۜ
->>> aprint("love_you",number=1,text="test")  # 2-part art
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> aprint("random") # random 1-line art mode
-'(っ◕‿◕)っ '
->>> aprint("rand")   # random 1-line art mode
-'t(-_-t) '
->>> aprint("woman",number="22",text="") # raise artError
-Traceback (most recent call last):
-        ...
-art.art.artError: number should have int type
-</pre>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;butterfly&quot;</span>) <span style="color: #888888"># print art</span>
+<span style="color: #888888">Ƹ̵̡Ӝ̵̨̄Ʒ </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happy&quot;</span>) <span style="color: #888888"># print art</span>
+<span style="color: #888888"> ۜ\(סּںסּَ` )/ۜ</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;love_you&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test&quot;</span>)  <span style="color: #888888"># 2-part art</span>
+<span style="color: #888888">»-(¯`·.·´¯)-&gt;test&lt;-(¯`·.·´¯)-« </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;random&quot;</span>) <span style="color: #888888"># random 1-line art mode</span>
+<span style="color: #888888">&#39;(っ◕‿◕)っ &#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;rand&quot;</span>)   <span style="color: #888888"># random 1-line art mode</span>
+<span style="color: #888888">&#39;t(-_-t) &#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;woman&quot;</span>,number<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;22&quot;</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;&quot;</span>) <span style="color: #888888"># raise artError</span>
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+        <span style="color: #333333">...</span>
+<span style="color: #FF0000">art.art.artError</span>: number should have int type
+</pre></td></tr></table></div>
 </ol>
 <h2>ASCII text</h2>
 <ol>
 <li>text2art</li>
 <p>This function return ascii text as `str` in normal mode and raise `artError` in exception</p>
-<pre class="library">
->>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
->>> print(Art)
-              _   
-  __ _  _ __ | |_ 
- / _` || '__|| __|
-| (_| || |   | |_ 
- \__,_||_|    \__|
-                  
-                     
->>> Art=text2art("art",font='block',chr_ignore=True) # Return ascii text with block font
->>> print(Art)
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># Return ascii text (default font) and default chr_ignore=True </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888">              _   </span>
+<span style="color: #888888">  __ _  _ __ | |_ </span>
+<span style="color: #888888"> / _` || &#39;__|| __|</span>
+<span style="color: #888888">| (_| || |   | |_ </span>
+<span style="color: #888888"> \__,_||_|    \__|</span>
+<span style="color: #888888">                  </span>
+<span style="color: #888888">                     </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;block&#39;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># Return ascii text with block font</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
 
 
- .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. |
-| |      __      | || |  _______     | || |  _________   | |
-| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |
-| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |
-| |   / ____ \   | || |   |  __ /    | || |     | |      | |
-| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |
-| ||____|  |____|| || | |____| |___| | || |   |_____|    | |
-| |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'
+<span style="color: #888888"> .----------------.  .----------------.  .----------------.</span>
+<span style="color: #888888">| .--------------. || .--------------. || .--------------. |</span>
+<span style="color: #888888">| |      __      | || |  _______     | || |  _________   | |</span>
+<span style="color: #888888">| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |</span>
+<span style="color: #888888">| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |</span>
+<span style="color: #888888">| |   / ____ \   | || |   |  __ /    | || |     | |      | |</span>
+<span style="color: #888888">| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |</span>
+<span style="color: #888888">| ||____|  |____|| || | |____| |___| | || |   |_____|    | |</span>
+<span style="color: #888888">| |              | || |              | || |              | |</span>
+<span style="color: #888888">| &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; |</span>
+<span style="color: #888888"> &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;</span>
 
->>> Art=text2art("test","random") # random font mode
->>> print(Art)
- |       | 
-~|~/~/(~~|~
- | \/__) | 
-           
->>> Art=text2art("test","rand") # random font mode
->>> print(Art)
-___ ____ ____ ___ 
- |  |___ [__   |  
- |  |___ ___]  | 
- 
->>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
-Traceback (most recent call last):
-        ...
-art.art.artError: س is invalid           
-</pre>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;random&quot;</span>) <span style="color: #888888"># random font mode</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888"> |       | </span>
+<span style="color: #888888">~|~/~/(~~|~</span>
+<span style="color: #888888"> | \/__) | </span>
+<span style="color: #888888">           </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;rand&quot;</span>) <span style="color: #888888"># random font mode</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888">___ ____ ____ ___ </span>
+<span style="color: #888888"> |  |___ [__   |  </span>
+<span style="color: #888888"> |  |___ ___]  | </span>
+<span style="color: #888888"> </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>text2art(<span style="background-color: #fff0f0">&quot;seسسس&quot;</span>,font<span style="color: #333333">=</span>DEFAULT_FONT,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception</span>
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+        <span style="color: #333333">...</span>
+<span style="color: #FF0000">art.art.artError</span>: س is invalid    
+</pre></td></tr></table></div>
 <li>tprint</li>
 <p>This function print ascii text in normal mode (return None) and raise `artError` in exception</p>
-<pre class="library">
->>> tprint("art") # print ascii text (default font) 
-              _   
-  __ _  _ __ | |_ 
- / _` || '__|| __|
-| (_| || |   | |_ 
- \__,_||_|    \__|
-                  
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># print ascii text (default font) </span>
+<span style="color: #888888">              _   </span>
+<span style="color: #888888">  __ _  _ __ | |_ </span>
+<span style="color: #888888"> / _` || &#39;__|| __|</span>
+<span style="color: #888888">| (_| || |   | |_ </span>
+<span style="color: #888888"> \__,_||_|    \__|</span>
+<span style="color: #888888">                  </span>
 
->>> tprint("art",font="block",chr_ignore=True) # print ascii text (block font)
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;block&quot;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># print ascii text (block font)</span>
 
- .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. |
-| |      __      | || |  _______     | || |  _________   | |
-| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |
-| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |
-| |   / ____ \   | || |   |  __ /    | || |     | |      | |
-| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |
-| ||____|  |____|| || | |____| |___| | || |   |_____|    | |
-| |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'
+<span style="color: #888888"> .----------------.  .----------------.  .----------------.</span>
+<span style="color: #888888">| .--------------. || .--------------. || .--------------. |</span>
+<span style="color: #888888">| |      __      | || |  _______     | || |  _________   | |</span>
+<span style="color: #888888">| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |</span>
+<span style="color: #888888">| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |</span>
+<span style="color: #888888">| |   / ____ \   | || |   |  __ /    | || |     | |      | |</span>
+<span style="color: #888888">| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |</span>
+<span style="color: #888888">| ||____|  |____|| || | |____| |___| | || |   |_____|    | |</span>
+<span style="color: #888888">| |              | || |              | || |              | |</span>
+<span style="color: #888888">| &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; |</span>
+<span style="color: #888888"> &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;</span>
 
->>> tprint('testسس')  # chr_ignore flag ==True (Default)
- _               _   
-| |_   ___  ___ | |_ 
-| __| / _ \/ __|| __|
-| |_ |  __/\__ \| |_ 
- \__| \___||___/ \__|
-                     
->>> tprint("test","random") # random font mode
- |       | 
-~|~/~/(~~|~
- | \/__) | 
-           
->>> tprint("test","rand") # random font mode
-___ ____ ____ ___ 
- |  |___ [__   |  
- |  |___ ___]  | 
- 
- 
->>> tprint('testسس',chr_ignore=False) # raise artError in exception 
-Traceback (most recent call last):
-       ...
-art.art.artError: س is invalid
->>> tprint('''Lorem  # Multi-line print
-ipsum 
-dolor''', font="cybermedium")
-_    ____ ____ ____ _  _    
-|    |  | |__/ |___ |\/|    
-|___ |__| |  \ |___ |  |    
-                            
-_ ___  ____ _  _ _  _    
-| |__] [__  |  | |\/|    
-| |    ___] |__| |  |    
-                         
-___  ____ _    ____ ____ 
-|  \ |  | |    |  | |__/ 
-|__/ |__| |___ |__| |  \ 
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;testسس&#39;</span>)  <span style="color: #888888"># chr_ignore flag ==True (Default)</span>
+<span style="color: #888888"> _               _   </span>
+<span style="color: #888888">| |_   ___  ___ | |_ </span>
+<span style="color: #888888">| __| / _ \/ __|| __|</span>
+<span style="color: #888888">| |_ |  __/\__ \| |_ </span>
+<span style="color: #888888"> \__| \___||___/ \__|</span>
+<span style="color: #888888">                     </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;random&quot;</span>) <span style="color: #888888"># random font mode</span>
+<span style="color: #888888"> |       | </span>
+<span style="color: #888888">~|~/~/(~~|~</span>
+<span style="color: #888888"> | \/__) | </span>
+<span style="color: #888888">           </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;rand&quot;</span>) <span style="color: #888888"># random font mode</span>
+<span style="color: #888888">___ ____ ____ ___ </span>
+<span style="color: #888888"> |  |___ [__   |  </span>
+<span style="color: #888888"> |  |___ ___]  | </span>
+<span style="color: #888888"> </span>
+<span style="color: #888888"> </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;testسس&#39;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception </span>
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+       <span style="color: #333333">...</span>
+<span style="color: #FF0000">art.art.artError</span>: س is invalid
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;&#39;&#39;Lorem  # Multi-line print</span>
+<span style="color: #888888">ipsum </span>
+<span style="color: #888888">dolor&#39;&#39;&#39;, font=&quot;cybermedium&quot;)</span>
+<span style="color: #888888">_    ____ ____ ____ _  _    </span>
+<span style="color: #888888">|    |  | |__/ |___ |\/|    </span>
+<span style="color: #888888">|___ |__| |  \ |___ |  |    </span>
+<span style="color: #888888">                            </span>
+<span style="color: #888888">_ ___  ____ _  _ _  _    </span>
+<span style="color: #888888">| |__] [__  |  | |\/|    </span>
+<span style="color: #888888">| |    ___] |__| |  |    </span>
+<span style="color: #888888">                         </span>
+<span style="color: #888888">___  ____ _    ____ ____ </span>
+<span style="color: #888888">|  \ |  | |    |  | |__/ </span>
+<span style="color: #888888">|__/ |__| |___ |__| |  \ </span>
+</pre></td></tr></table></div>
 
-</pre>
 <li>tsave</li>
 <p>This function return `dict` in normal and exception mode</p>
-<pre class="library">
->>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
-Saved! 
-Filename: test.txt
->>> Response["Message"]
-'OK'
->>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
->>> Response["Message"]
-'OK'
->>> Response["Status"]
-True
->>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
-{'Status': False, 'Message': "'int' object has no attribute 'split'"}
-</pre>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ascii text in test.txt file with save message (print_status==True) # return dict</span>
+<span style="color: #888888">Saved! </span>
+<span style="color: #888888">Filename: test.txt</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
+<span style="color: #888888">&#39;OK&#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,print_status<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># save ascii text in test.txt file without save message (print_status==False)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
+<span style="color: #888888">&#39;OK&#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Status&quot;</span>]
+<span style="color: #888888">True</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tsave(<span style="color: #0000DD; font-weight: bold">22</span>,font<span style="color: #333333">=</span>DEFAULT_FONT,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;art&quot;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>,print_status<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+<span style="color: #888888">{&#39;Status&#39;: False, &#39;Message&#39;: &quot;&#39;int&#39; object has no attribute &#39;split&#39;&quot;}</span>
+</pre></td></tr></table></div>
+
  
 </ol>
 <h2>Font modes</h2>
@@ -298,230 +433,379 @@ True
 <ol>
 
 <li>Font name</li>
-<pre class="library">
->>> tprint("art",font="block",chr_ignore=True)
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;block&quot;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>)
 
- .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. |
-| |      __      | || |  _______     | || |  _________   | |
-| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |
-| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |
-| |   / ____ \   | || |   |  __ /    | || |     | |      | |
-| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |
-| ||____|  |____|| || | |____| |___| | || |   |_____|    | |
-| |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'
- 
-</pre>
+<span style="color: #888888"> .----------------.  .----------------.  .----------------.</span>
+<span style="color: #888888">| .--------------. || .--------------. || .--------------. |</span>
+<span style="color: #888888">| |      __      | || |  _______     | || |  _________   | |</span>
+<span style="color: #888888">| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |</span>
+<span style="color: #888888">| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |</span>
+<span style="color: #888888">| |   / ____ \   | || |   |  __ /    | || |     | |      | |</span>
+<span style="color: #888888">| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |</span>
+<span style="color: #888888">| ||____|  |____|| || | |____| |___| | || |   |_____|    | |</span>
+<span style="color: #888888">| |              | || |              | || |              | |</span>
+<span style="color: #888888">| &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; |</span>
+<span style="color: #888888"> &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;</span>
+</pre></td></tr></table></div>
+
 
 <li>Random</li>
 <p>Randomly select from all fonts.</p>
 <p>Keywords : <code>random</code>, <code>rand</code> & <code>rnd</code></p>
-<pre class="library">
->>> tprint("test",font="random")
- |       | 
-~|~/~/(~~|~
- | \/__) | 
- 
-</pre>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;random&quot;</span>)
+<span style="color: #888888"> |       | </span>
+<span style="color: #888888">~|~/~/(~~|~</span>
+<span style="color: #888888"> | \/__) | </span>
+<span style="color: #888888"> </span>
+</pre></td></tr></table></div>
+
 
 <li>Random small</li>
 <p>Randomly select from small fonts.</p>
 <p>Keywords : <code>rnd-small</code>, <code>random-small</code> & <code>rand-small</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
-<pre class="library">
->>> tprint("test",font="rnd-small")
-             
-_/  _   _ _/ 
-/  (- _)  /  
-            
-</pre>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;rnd-small&quot;</span>)
+<span style="color: #888888">             </span>
+<span style="color: #888888">_/  _   _ _/ </span>
+<span style="color: #888888">/  (- _)  /  </span>
+<span style="color: #888888">            </span>
+</pre></td></tr></table></div>
+
 <li>Random medium</li>
 <p>Randomly select from medium fonts.</p>
 <p>Keywords : <code>rnd-medium</code>, <code>random-medium</code> & <code>rand-medium</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
-<pre class="library">
->>> tprint("test",font="rnd-medium")
-                      
-  ,                ,  
- ||               ||  
-=||=  _-_   _-_, =||= 
- ||  || \\ ||_.   ||  
- ||  ||/    ~ ||  ||  
- \\, \\,/  ,-_-   \\, 
-                      
- 
-</pre>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;rnd-medium&quot;</span>)
+<span style="color: #888888">                      </span>
+<span style="color: #888888">  ,                ,  </span>
+<span style="color: #888888"> ||               ||  </span>
+<span style="color: #888888">=||=  _-_   _-_, =||= </span>
+<span style="color: #888888"> ||  || \\ ||_.   ||  </span>
+<span style="color: #888888"> ||  ||/    ~ ||  ||  </span>
+<span style="color: #888888"> \\, \\,/  ,-_-   \\, </span>
+<span style="color: #888888">                      </span>
+<span style="color: #888888"> </span>
+</pre></td></tr></table></div>
+
 
 <li>Random large</li>
 <p>Randomly select from large fonts.</p>
 <p>Keywords : <code>rnd-large</code>, <code>random-large</code> & <code>rand-large</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
-<pre class="library">
->>> tprint("test",font="rnd-large")
-                                                                    
-8888888 8888888888 8 8888888888      d888888o.   8888888 8888888888 
-      8 8888       8 8888          .`8888:' `88.       8 8888       
-      8 8888       8 8888          8.`8888.   Y8       8 8888       
-      8 8888       8 8888          `8.`8888.           8 8888       
-      8 8888       8 888888888888   `8.`8888.          8 8888       
-      8 8888       8 8888            `8.`8888.         8 8888       
-      8 8888       8 8888             `8.`8888.        8 8888       
-      8 8888       8 8888         8b   `8.`8888.       8 8888       
-      8 8888       8 8888         `8b.  ;8.`8888       8 8888       
-      8 8888       8 888888888888  `Y8888P ,88P'       8 8888       
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;rnd-large&quot;</span>)
+<span style="color: #888888">                                                                    </span>
+<span style="color: #888888">8888888 8888888888 8 8888888888      d888888o.   8888888 8888888888 </span>
+<span style="color: #888888">      8 8888       8 8888          .`8888:&#39; `88.       8 8888       </span>
+<span style="color: #888888">      8 8888       8 8888          8.`8888.   Y8       8 8888       </span>
+<span style="color: #888888">      8 8888       8 8888          `8.`8888.           8 8888       </span>
+<span style="color: #888888">      8 8888       8 888888888888   `8.`8888.          8 8888       </span>
+<span style="color: #888888">      8 8888       8 8888            `8.`8888.         8 8888       </span>
+<span style="color: #888888">      8 8888       8 8888             `8.`8888.        8 8888       </span>
+<span style="color: #888888">      8 8888       8 8888         8b   `8.`8888.       8 8888       </span>
+<span style="color: #888888">      8 8888       8 8888         `8b.  ;8.`8888       8 8888       </span>
+<span style="color: #888888">      8 8888       8 888888888888  `Y8888P ,88P&#39;       8 8888       </span>
+</pre></td></tr></table></div>
 
-</pre>
 
 <li>Random xlarge</li>
 <p>Randomly select from xlarge fonts.</p>
 <p>Keywords : <code>rnd-xlarge</code>, <code>random-xlarge</code> & <code>rand-xlarge</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
-<pre class="library">
->>> tprint("test","rnd-xlarge")
-      _____                    _____                    _____                _____          
-     /\    \                  /\    \                  /\    \              /\    \         
-    /::\    \                /::\    \                /::\    \            /::\    \        
-    \:::\    \              /::::\    \              /::::\    \           \:::\    \       
-     \:::\    \            /::::::\    \            /::::::\    \           \:::\    \      
-      \:::\    \          /:::/\:::\    \          /:::/\:::\    \           \:::\    \     
-       \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \           \:::\    \    
-       /::::\    \      /::::\   \:::\    \       \:::\   \:::\    \          /::::\    \   
-      /::::::\    \    /::::::\   \:::\    \    ___\:::\   \:::\    \        /::::::\    \  
-     /:::/\:::\    \  /:::/\:::\   \:::\    \  /\   \:::\   \:::\    \      /:::/\:::\    \ 
-    /:::/  \:::\____\/:::/__\:::\   \:::\____\/::\   \:::\   \:::\____\    /:::/  \:::\____\
-   /:::/    \::/    /\:::\   \:::\   \::/    /\:::\   \:::\   \::/    /   /:::/    \::/    /
-  /:::/    / \/____/  \:::\   \:::\   \/____/  \:::\   \:::\   \/____/   /:::/    / \/____/ 
- /:::/    /            \:::\   \:::\    \       \:::\   \:::\    \      /:::/    /          
-/:::/    /              \:::\   \:::\____\       \:::\   \:::\____\    /:::/    /           
-\::/    /                \:::\   \::/    /        \:::\  /:::/    /    \::/    /            
- \/____/                  \:::\   \/____/          \:::\/:::/    /      \/____/             
-                           \:::\    \               \::::::/    /                           
-                            \:::\____\               \::::/    /                            
-                             \::/    /                \::/    /                             
-                              \/____/                  \/____/                              
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;rnd-xlarge&quot;</span>)
+<span style="color: #888888">      _____                    _____                    _____                _____          </span>
+<span style="color: #888888">     /\    \                  /\    \                  /\    \              /\    \         </span>
+<span style="color: #888888">    /::\    \                /::\    \                /::\    \            /::\    \        </span>
+<span style="color: #888888">    \:::\    \              /::::\    \              /::::\    \           \:::\    \       </span>
+<span style="color: #888888">     \:::\    \            /::::::\    \            /::::::\    \           \:::\    \      </span>
+<span style="color: #888888">      \:::\    \          /:::/\:::\    \          /:::/\:::\    \           \:::\    \     </span>
+<span style="color: #888888">       \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \           \:::\    \    </span>
+<span style="color: #888888">       /::::\    \      /::::\   \:::\    \       \:::\   \:::\    \          /::::\    \   </span>
+<span style="color: #888888">      /::::::\    \    /::::::\   \:::\    \    ___\:::\   \:::\    \        /::::::\    \  </span>
+<span style="color: #888888">     /:::/\:::\    \  /:::/\:::\   \:::\    \  /\   \:::\   \:::\    \      /:::/\:::\    \ </span>
+<span style="color: #888888">    /:::/  \:::\____\/:::/__\:::\   \:::\____\/::\   \:::\   \:::\____\    /:::/  \:::\____\</span>
+<span style="color: #888888">   /:::/    \::/    /\:::\   \:::\   \::/    /\:::\   \:::\   \::/    /   /:::/    \::/    /</span>
+<span style="color: #888888">  /:::/    / \/____/  \:::\   \:::\   \/____/  \:::\   \:::\   \/____/   /:::/    / \/____/ </span>
+<span style="color: #888888"> /:::/    /            \:::\   \:::\    \       \:::\   \:::\    \      /:::/    /          </span>
+<span style="color: #888888">/:::/    /              \:::\   \:::\____\       \:::\   \:::\____\    /:::/    /           </span>
+<span style="color: #888888">\::/    /                \:::\   \::/    /        \:::\  /:::/    /    \::/    /            </span>
+<span style="color: #888888"> \/____/                  \:::\   \/____/          \:::\/:::/    /      \/____/             </span>
+<span style="color: #888888">                           \:::\    \               \::::::/    /                           </span>
+<span style="color: #888888">                            \:::\____\               \::::/    /                            </span>
+<span style="color: #888888">                             \::/    /                \::/    /                             </span>
+<span style="color: #888888">                              \/____/                  \/____/                              </span>
+</pre></td></tr></table></div>
 
-</pre>
 
 <li>Wizard</li>
 <p>This mode consider length of input text to select font.</p>
 <p>Keywords : <code>wizard</code>, <code>wiz</code> & <code>magic</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.9</code></p>
-<pre class="library">
->>> tprint("1","wizard")
-    88 
-  ,d88 
-888888 
-    88 
-    88 
-    88 
-    88 
-    88 
-    88 
-    88 
-       
-            
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;1&quot;</span>,<span style="background-color: #fff0f0">&quot;wizard&quot;</span>)
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">  ,d88 </span>
+<span style="color: #888888">888888 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">    88 </span>
+<span style="color: #888888">       </span>
+<span style="color: #888888">            </span>
 
->>> tprint("1"*5,"wizard")
-d88  d88  d88  d88  d88  
- 88   88   88   88   88  
- 88   88   88   88   88  
- 88   88   88   88   88  
- 88   88   88   88   88  
-d88P d88P d88P d88P d88P 
-                         
-                         
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;1&quot;</span><span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">5</span>,<span style="background-color: #fff0f0">&quot;wizard&quot;</span>)
+<span style="color: #888888">d88  d88  d88  d88  d88  </span>
+<span style="color: #888888"> 88   88   88   88   88  </span>
+<span style="color: #888888"> 88   88   88   88   88  </span>
+<span style="color: #888888"> 88   88   88   88   88  </span>
+<span style="color: #888888"> 88   88   88   88   88  </span>
+<span style="color: #888888">d88P d88P d88P d88P d88P </span>
+<span style="color: #888888">                         </span>
+<span style="color: #888888">                         </span>
 
->>> tprint("1"*15,"wizard")
-                                             
-                                             
- #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
-## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
- #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
- #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
- #  #  #  #  #  #  #  #  #  #  #  #  #  #  # 
-## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;1&quot;</span><span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">15</span>,<span style="background-color: #fff0f0">&quot;wizard&quot;</span>)
+<span style="color: #888888">                                             </span>
+<span style="color: #888888">                                             </span>
+<span style="color: #888888"> #  #  #  #  #  #  #  #  #  #  #  #  #  #  # </span>
+<span style="color: #888888">## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </span>
+<span style="color: #888888"> #  #  #  #  #  #  #  #  #  #  #  #  #  #  # </span>
+<span style="color: #888888"> #  #  #  #  #  #  #  #  #  #  #  #  #  #  # </span>
+<span style="color: #888888"> #  #  #  #  #  #  #  #  #  #  #  #  #  #  # </span>
+<span style="color: #888888">## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </span>
+</pre></td></tr></table></div>
 
-</pre>
 
 </ol>
 <h2>Typo-tolerance</h2>
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (><code>Version 0.9</code>)
 
-<pre class="library">
->>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
->>> print(Art)
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> aprint("happi")  # correct --> aprint("happy") (distance < 3)
- ۜ\(סּںסּَ` )/ۜ 
->>> Art=art("birds2222",number=1) # correct --> Art=art("birds",number=1) (distance > 3)
->>> print(Art)
-Traceback (most recent call last):
-	...
-art.art.artError: Invalid art name
->>> aprint("happi231")  # correct --> aprint("happy") (distance > 3)
-Traceback (most recent call last):
-	...
-art.art.artError: Invalid art name
->>> Art=text2art("test",font="black") # correct --> Art=text2art("test",font="block")
->>> print(Art)
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;loveyou&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test&quot;</span>) <span style="color: #888888"># correct --&gt; art(&quot;love_you&quot;,number=1,text=&quot;test&quot;) (distance &lt; 3)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888">»-(¯`·.·´¯)-&gt;test&lt;-(¯`·.·´¯)-« </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi&quot;</span>)  <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;) (distance &lt; 3)</span>
+<span style="color: #888888"> ۜ\(סּںסּَ` )/ۜ </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;birds2222&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #888888"># correct --&gt; Art=art(&quot;birds&quot;,number=1) (distance &gt; 3)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+	<span style="color: #888888">...</span>
+<span style="color: #FF0000">art.art.artError</span>: Invalid art name
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi231&quot;</span>)  <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;) (distance &gt; 3)</span>
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+	<span style="color: #888888">...</span>
+<span style="color: #FF0000">art.art.artError</span>: Invalid art name
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;black&quot;</span>) <span style="color: #888888"># correct --&gt; Art=text2art(&quot;test&quot;,font=&quot;block&quot;)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
 
- .----------------.  .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. || .--------------. |
-| |  _________   | || |  _________   | || |    _______   | || |  _________   | |
-| | |  _   _  |  | || | |_   ___  |  | || |   /  ___  |  | || | |  _   _  |  | |
-| | |_/ | | \_|  | || |   | |_  \_|  | || |  |  (__ \_|  | || | |_/ | | \_|  | |
-| |     | |      | || |   |  _|  _   | || |   '.___`-.   | || |     | |      | |
-| |    _| |_     | || |  _| |___/ |  | || |  |`\____) |  | || |    _| |_     | |
-| |   |_____|    | || | |_________|  | || |  |_______.'  | || |   |_____|    | |
-| |              | || |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'  '----------------'
+<span style="color: #888888"> .----------------.  .----------------.  .----------------.  .----------------.</span>
+<span style="color: #888888">| .--------------. || .--------------. || .--------------. || .--------------. |</span>
+<span style="color: #888888">| |  _________   | || |  _________   | || |    _______   | || |  _________   | |</span>
+<span style="color: #888888">| | |  _   _  |  | || | |_   ___  |  | || |   /  ___  |  | || | |  _   _  |  | |</span>
+<span style="color: #888888">| | |_/ | | \_|  | || |   | |_  \_|  | || |  |  (__ \_|  | || | |_/ | | \_|  | |</span>
+<span style="color: #888888">| |     | |      | || |   |  _|  _   | || |   &#39;.___`-.   | || |     | |      | |</span>
+<span style="color: #888888">| |    _| |_     | || |  _| |___/ |  | || |  |`\____) |  | || |    _| |_     | |</span>
+<span style="color: #888888">| |   |_____|    | || | |_________|  | || |  |_______.&#39;  | || |   |_____|    | |</span>
+<span style="color: #888888">| |              | || |              | || |              | || |              | |</span>
+<span style="color: #888888">| &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; |</span>
+<span style="color: #888888"> &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;</span>
 
->>> tprint("test",font="cybermedum")   # correct --> tprint("test",font="cybermedium")
-___ ____ ____ ___ 
- |  |___ [__   |  
- |  |___ ___]  |  
-                     
-</pre>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;cybermedum&quot;</span>)   <span style="color: #888888"># correct --&gt; tprint(&quot;test&quot;,font=&quot;cybermedium&quot;)</span>
+<span style="color: #888888">___ ____ ____ ___ </span>
+<span style="color: #888888"> |  |___ [__   |  </span>
+<span style="color: #888888"> |  |___ ___]  |  </span>
+<span style="color: #888888">                     </span>
+</pre></td></tr></table></div>
+
 <h2>Set defaults</h2>
 <p><code>set_default</code> function is added in <code>Version 2.2</code> in order to change default values.</p>
-<pre class="library">
->>> help(set_default)
-Help on function set_default in module art.art:
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>help(set_default)
+<span style="color: #888888">Help on function set_default in module art.art:</span>
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True)
-    This fuction change text2art tprint and tsave default values
-    :param font: input font
-    :type font:str
-    :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
-    :param filename: output file name (only tsave)
-    :type filename:str
-    :param print_status : Save message print flag (only tsave)
-    :type print_status:bool
-    :return: None
+<span style="color: #888888">set_default(font=&#39;standard&#39;, chr_ignore=True, filename=&#39;art&#39;, print_status=True)</span>
+<span style="color: #888888">    This fuction change text2art tprint and tsave default values</span>
+<span style="color: #888888">    :param font: input font</span>
+<span style="color: #888888">    :type font:str</span>
+<span style="color: #888888">    :param chr_ignore: ignore not supported character</span>
+<span style="color: #888888">    :type chr_ignore:bool</span>
+<span style="color: #888888">    :param filename: output file name (only tsave)</span>
+<span style="color: #888888">    :type filename:str</span>
+<span style="color: #888888">    :param print_status : Save message print flag (only tsave)</span>
+<span style="color: #888888">    :type print_status:bool</span>
+<span style="color: #888888">    :return: None</span>
 
->>> tprint("test")
- _               _   
-| |_   ___  ___ | |_ 
-| __| / _ \/ __|| __|
-| |_ |  __/\__ \| |_ 
- \__| \___||___/ \__|
-                     
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>)
+<span style="color: #888888"> _               _   </span>
+<span style="color: #888888">| |_   ___  ___ | |_ </span>
+<span style="color: #888888">| __| / _ \/ __|| __|</span>
+<span style="color: #888888">| |_ |  __/\__ \| |_ </span>
+<span style="color: #888888"> \__| \___||___/ \__|</span>
+<span style="color: #888888">                     </span>
 
->>> set_default(font="italic")
->>> tprint("test")
-             
-_/  _   _ _/ 
-/  (- _)  /  
-             
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>set_default(font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;italic&quot;</span>)
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>)
+<span style="color: #888888">             </span>
+<span style="color: #888888">_/  _   _ _/ </span>
+<span style="color: #888888">/  (- _)  /  </span>
+<span style="color: #888888">             </span>
+</pre></td></tr></table></div>
 
-</pre>
 
 <p class="red">* Functions error response updated in <code>Version 0.8</code></p>
-<table style="border:1px solid black;border-collapse: separate;">
+<table class="function-table" style="border:1px solid black;border-collapse: separate;">
 	<tr>
 		<td align="center" style="border:1px solid black;border-collapse: separate;">Function</td>
 		<td align="center" style="border:1px solid black;border-collapse: separate;">Normal</td>

@@ -11,11 +11,11 @@
     height: 500px;
     width: 800px;
 }
-table {
+.function-table {
     border-collapse: collapse;
 }
 
-table, th, td {
+.function-table {
     border: 1px solid black;
 }
 
