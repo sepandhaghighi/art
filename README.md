@@ -39,6 +39,7 @@
    * [License](https://github.com/sepandhaghighi/art#license)
    * [Donate](https://github.com/sepandhaghighi/art#donate-to-our-project)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
+   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/CODE_OF_CONDUCT.md)
 
 ## Overview	
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
