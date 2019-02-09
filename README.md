@@ -638,6 +638,8 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 Just fill an issue and describe it. I'll check it ASAP!							
 or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com "sepand.haghighi@yahoo.com"). 
 
+* Please complete the issue template 
+
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_large)
