@@ -21,7 +21,7 @@ INSTALL_ITEMS = [
     'easy_install "art=={0}"']
 CHANGELOG_ITEMS = [
     "## [{0}]",
-    "https://github.com/sepandhaghighi/art/compare/v{0}...HEAD",
+    "https://github.com/sepandhaghighi/art/compare/v{0}...dev",
     "[{0}]:"]
 ART_LIST_ITEMS = ["### Version : {0}"]
 FONT_LIST_ITEMS = ['font_list(\\"art {0}\\")', "### Version : {0}"]
@@ -59,6 +59,7 @@ if __name__ == "__main__":
                     Failed += 1
                     break
         except Exception as e:
+            Failed += 1
             print("Error in " + file_name + "\n" + "Message : " + str(e))
 
     try:
@@ -71,6 +72,7 @@ if __name__ == "__main__":
                 Failed += 1
                 break
     except Exception as e:
+        Failed += 1
         print("Error in " + file_name + "\n" + "Message : " + str(e))
     if Failed == 0:
         print_result(False)
