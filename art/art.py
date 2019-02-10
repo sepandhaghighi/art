@@ -393,7 +393,12 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fbr1": [fbr1_dic, False],
             "fbr2": [fbr2_dic, False],
             "fbr12": [fbr12_dic, False],
-            "finalass": [finalass_dic, False]
+            "finalass": [finalass_dic, False],
+            "fireing_":[fireing_dic,False],
+            "flyn_sh":[flyn_sh_dic,False],
+            "fp1":[fp1_dic,False],
+            "fp2":[fp2_dic,False],
+            "funky_dr":[funky_dr_dic,False]
 
             }
 font_counter = len(font_map)  # pragma: no cover
