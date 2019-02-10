@@ -379,21 +379,21 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "clr8x10": [clr8x10_dic, False],
             "coil_cop": [coil_cop_dic, False],
             "com_sen": [com_sen_dic, False],
-            "druid": [druid_dic,False],
-            "e_fist":[e_fist_dic,False],
-            "ebbs_1":[ebbs_1_dic,False],
-            "ebbs_2":[ebbs_2_dic,False],
-            "eca":[eca_dic,False],
-            "faces_of":[faces_of_dic,False],
-            "fair_mea":[fair_mea_dic,False],
-            "fairligh":[fairligh_dic,False],
-            "fantasy":[fantasy_dic,False],
-            "fbr_stri":[fbr_stri_dic,False],
-            "fbr_tilt":[fbr_tilt_dic,False],
-            "fbr1":[fbr1_dic,False],
-            "fbr2":[fbr2_dic,False],
-            "fbr12":[fbr12_dic,False],
-            "finalass":[finalass_dic,False]
+            "druid": [druid_dic, False],
+            "e_fist": [e_fist_dic, False],
+            "ebbs_1": [ebbs_1_dic, False],
+            "ebbs_2": [ebbs_2_dic, False],
+            "eca": [eca_dic, False],
+            "faces_of": [faces_of_dic, False],
+            "fair_mea": [fair_mea_dic, False],
+            "fairligh": [fairligh_dic, False],
+            "fantasy": [fantasy_dic, False],
+            "fbr_stri": [fbr_stri_dic, False],
+            "fbr_tilt": [fbr_tilt_dic, False],
+            "fbr1": [fbr1_dic, False],
+            "fbr2": [fbr2_dic, False],
+            "fbr12": [fbr12_dic, False],
+            "finalass": [finalass_dic, False]
 
             }
 font_counter = len(font_map)  # pragma: no cover
@@ -421,7 +421,7 @@ def font_list(text="test"):
     '''
     for item in sorted(list(font_map.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4", "c2", "war_of_w", "coil_cop","fbr12"]:
+        if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
             tprint(text.upper(), str(item))
         else:
             tprint(text, str(item))
