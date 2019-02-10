@@ -29,8 +29,10 @@ if __name__ == "__main__":
                 verbose=False)[0]
             if error_flag == 0:
                 print("\nTest Passed")
+                sys.exit(error_flag)
             else:
                 print("\nTest Failed")
+                sys.exit(error_flag)
         elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":
