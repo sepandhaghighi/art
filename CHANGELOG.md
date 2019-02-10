@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ## [3.0] - 2019-02-11
 ### Added
+- 20 new fonts
+	1. druid
+	2. e_fist
+	3. ebbs_1
+	4. ebbs_2
+	5. eca
+	6. faces_of
+	7. fair_mea
+	8. fairligh
+	9. fantasy
+	10. fbr12
+	11. fbr1
+	12. fbr2
+	13. fbr_stri
+	14. fbr_tilt
+	15. finalass
 - `CODE_OF_CONDUCT.md`
 - `PULL_REQUEST_TEMPLATE.md`
 - `ISSUE_TEMPLATE.md`
