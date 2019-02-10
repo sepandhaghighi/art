@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ## [3.0] - 2019-02-11
 ### Added
-- 20 new fonts
+- 15 new fonts
 	1. druid
 	2. e_fist
 	3. ebbs_1
@@ -26,6 +26,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `CODE_OF_CONDUCT.md`
 - `PULL_REQUEST_TEMPLATE.md`
 - `ISSUE_TEMPLATE.md`
+- `vulture` test
+- `bandit` test
 ### Changed
 - `README.md` modified
 - `CONTRIBUTING.md` modified
