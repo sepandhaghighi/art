@@ -6,7 +6,7 @@ import os
 import sys
 import random
 
-VERSION = "2.9"  # pragma: no cover
+VERSION = "3.0"  # pragma: no cover
 
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover

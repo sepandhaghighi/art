@@ -5,14 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.0] - 2019-02-11
 ### Added
 - `CODE_OF_CONDUCT.md`
 - `PULL_REQUEST_TEMPLATE.md`
 - `ISSUE_TEMPLATE.md`
-
 ### Changed
 - `README.md` modified
 - `CONTRIBUTING.md` modified
+
 
 ## [2.9] - 2019-01-24
 ### Added
@@ -710,7 +711,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.9...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.0...dev
+[3.0]: https://github.com/sepandhaghighi/art/compare/v2.9...v3.0
 [2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9
 [2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8
 [2.7]: https://github.com/sepandhaghighi/art/compare/v2.6...v2.7
