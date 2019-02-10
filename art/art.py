@@ -394,7 +394,7 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fbr2": [fbr2_dic, False],
             "fbr12": [fbr12_dic, False],
             "finalass": [finalass_dic, False],
-            "fireing_":[fireing_dic,False],
+            "fireing":[fireing_dic,False],
             "flyn_sh":[flyn_sh_dic,False],
             "fp1":[fp1_dic,False],
             "fp2":[fp2_dic,False],
