@@ -33,13 +33,13 @@
    		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
-   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/CONTRIBUTING.md)
+   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
    * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
    * [License](https://github.com/sepandhaghighi/art#license)
    * [Donate](https://github.com/sepandhaghighi/art#donate-to-our-project)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
-   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/CODE_OF_CONDUCT.md)
+   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
 
 ## Overview	
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
