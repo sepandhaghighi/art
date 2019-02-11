@@ -5,6 +5,43 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.0] - 2019-02-11
+### Added
+- 20 new fonts
+	1. druid
+	2. e_fist
+	3. ebbs_1
+	4. ebbs_2
+	5. eca
+	6. faces_of
+	7. fair_mea
+	8. fairligh
+	9. fantasy
+	10. fbr12
+	11. fbr1
+	12. fbr2
+	13. fbr_stri
+	14. fbr_tilt
+	15. finalass
+	16. fireing
+	17. flyn_sh
+	18. fp1
+	19. fp2
+	20. funky_dr
+- `CODE_OF_CONDUCT.md`
+- `PULL_REQUEST_TEMPLATE.md`
+- `ISSUE_TEMPLATE.md`
+- `vulture` test
+- `bandit` test
+### Changed
+- `README.md` modified
+- `CONTRIBUTING.md` modified
+- `font_map` renamed to `FONT_MAP`
+- `font_counter` renamed to `FONT_COUNTER`
+- `art_counter` renamed to `ART_COUNTER`
+- Constants and parameters moved to `art_param.py`
+
+
 ## [2.9] - 2019-01-24
 ### Added
 - 20 new fonts
@@ -701,7 +738,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v2.9...HEAD
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.0...dev
+[3.0]: https://github.com/sepandhaghighi/art/compare/v2.9...v3.0
 [2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9
 [2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8
 [2.7]: https://github.com/sepandhaghighi/art/compare/v2.6...v2.7

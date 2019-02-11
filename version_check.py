@@ -5,12 +5,12 @@ import codecs
 from art import *
 
 Failed = 0
-VERSION = "2.9"
+VERSION = "3.0"
 
-README_ITEMS = ['<td align="center">{0}</td>'.format(str(font_counter)),
-                '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(art_counter)),
-                '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">'.format(str(font_counter)),
-                '<td align="center">{0}</td>'.format(str(art_counter))]
+README_ITEMS = ['<td align="center">{0}</td>'.format(str(FONT_COUNTER)),
+                '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(ART_COUNTER)),
+                '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">'.format(str(FONT_COUNTER)),
+                '<td align="center">{0}</td>'.format(str(ART_COUNTER))]
 
 SETUP_ITEMS = [
     "version='{0}'"]
@@ -21,7 +21,7 @@ INSTALL_ITEMS = [
     'easy_install "art=={0}"']
 CHANGELOG_ITEMS = [
     "## [{0}]",
-    "https://github.com/sepandhaghighi/art/compare/v{0}...HEAD",
+    "https://github.com/sepandhaghighi/art/compare/v{0}...dev",
     "[{0}]:"]
 ART_LIST_ITEMS = ["### Version : {0}"]
 FONT_LIST_ITEMS = ['font_list(\\"art {0}\\")', "### Version : {0}"]
@@ -34,7 +34,7 @@ FILES = {
     "ArtList.ipynb": ART_LIST_ITEMS,
     os.path.join(
         "art",
-        "art.py"): PARAMS_ITEMS}
+        "art_param.py"): PARAMS_ITEMS}
 
 TEST_NUMBER = len(FILES.keys()) + 1
 
@@ -59,6 +59,7 @@ if __name__ == "__main__":
                     Failed += 1
                     break
         except Exception as e:
+            Failed += 1
             print("Error in " + file_name + "\n" + "Message : " + str(e))
 
     try:
@@ -71,6 +72,7 @@ if __name__ == "__main__":
                 Failed += 1
                 break
     except Exception as e:
+        Failed += 1
         print("Error in " + file_name + "\n" + "Message : " + str(e))
     if Failed == 0:
         print_result(False)
