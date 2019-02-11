@@ -48,6 +48,7 @@ letters to make a visual shape that is spread over multiple lines of text.
 ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 
+
 <table>
 	<tr> 
 		<td align="center">Open Hub</td>
@@ -167,6 +168,8 @@ art.art.artError: number should have int type
 ```		
 
 ### ASCII text
+	
+
 #### 1. text2art				
 
 This function return ascii text as `str` in normal mode and raise `artError` in exception.
@@ -303,6 +306,8 @@ True
 These modes are available for `text2art`, `tprint` & `tsave`.	
 
 #### 1. Font name	
+
+⚠️ Some fonts don't support all characters
 			
 ```pycon
 
