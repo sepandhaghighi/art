@@ -34,7 +34,7 @@ FILES = {
     "ArtList.ipynb": ART_LIST_ITEMS,
     os.path.join(
         "art",
-        "art.py"): PARAMS_ITEMS}
+        "art_param.py"): PARAMS_ITEMS}
 
 TEST_NUMBER = len(FILES.keys()) + 1
 
