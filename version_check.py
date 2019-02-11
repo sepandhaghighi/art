@@ -7,10 +7,10 @@ from art import *
 Failed = 0
 VERSION = "3.0"
 
-README_ITEMS = ['<td align="center">{0}</td>'.format(str(font_counter)),
-                '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(art_counter)),
-                '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">'.format(str(font_counter)),
-                '<td align="center">{0}</td>'.format(str(art_counter))]
+README_ITEMS = ['<td align="center">{0}</td>'.format(str(FONT_COUNTER)),
+                '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(ART_COUNTER)),
+                '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">'.format(str(FONT_COUNTER)),
+                '<td align="center">{0}</td>'.format(str(ART_COUNTER))]
 
 SETUP_ITEMS = [
     "version='{0}'"]
