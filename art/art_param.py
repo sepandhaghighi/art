@@ -368,5 +368,5 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
-ART_COUNTER = len(art_dic)
+ART_COUNTER = len(art_dic) # pragma: no cover
 DEFAULT_FONT = "standard"  # pragma: no cover
