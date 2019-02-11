@@ -36,6 +36,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `README.md` modified
 - `CONTRIBUTING.md` modified
+- `font_map` renamed to `FONT_MAP`
+- `font_counter` renamed to `FONT_COUNTER`
+- `art_counter` renamed to `ART_COUNTER`
+- Constants and parameters moved to `art_param.py`
 
 
 ## [2.9] - 2019-01-24
