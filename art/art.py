@@ -40,7 +40,7 @@ def font_size_splitter(font_map):
         "large_list": large_font,
         "xlarge_list": xlarge_font}
 
-RND_SIZE_DICT = font_size_splitter(font_map)  # pragma: no cover
+RND_SIZE_DICT = font_size_splitter(FONT_MAP)  # pragma: no cover
 
 
 def line(char="*", number=30):
@@ -61,7 +61,7 @@ def font_list(text="test"):
     :type text : str
     :return: None
     '''
-    for item in sorted(list(font_map.keys())):
+    for item in sorted(list(FONT_MAP.keys())):
         print(str(item) + " : ")
         if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
             tprint(text.upper(), str(item))
@@ -302,7 +302,7 @@ def indirect_font(font, fonts, text):
     if font == "wizard" or font == "wiz" or font == "magic":
         font = wizard_font(text)
         return font
-    if font not in font_map.keys():
+    if font not in FONT_MAP.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     return font
@@ -329,10 +329,10 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if isinstance(font, str) is False:
         raise artError("font should have str type")
     font = font.lower()
-    fonts = sorted(font_map.keys())
+    fonts = sorted(FONT_MAP.keys())
     font = indirect_font(font, fonts, text)
-    letters = font_map[font][0]
-    if font_map[font][1]:
+    letters = FONT_MAP[font][0]
+    if FONT_MAP[font][1]:
         text_temp = text.lower()
     for i in text_temp:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):

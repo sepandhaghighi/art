@@ -56,7 +56,7 @@ letters to make a visual shape that is spread over multiple lines of text.
 ART is a Python lib for text converting to ASCII art fancy.'''  # pragma: no cover
 
 
-font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma: no cover
+FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma: no cover
             "standard": [standard_dic, False], "avatar": [avatar_dic, True],
             "basic": [basic_dic, True], "bulbhead": [bulbhead_dic, True],
             "chunky": [chunky_dic, False], "coinstak": [coinstak_dic, False],
@@ -366,5 +366,5 @@ font_map = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
 
             }
 
-font_counter = len(font_map)  # pragma: no cover
+font_counter = len(FONT_MAP)  # pragma: no cover
 DEFAULT_FONT = "standard"  # pragma: no cover

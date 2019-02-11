@@ -4476,7 +4476,7 @@ False
 False
 >>> Art == Art4
 False
->>> font_dicts = font_size_splitter(font_map)
+>>> font_dicts = font_size_splitter(FONT_MAP)
 >>> len(font_dicts["small_list"])>0
 True
 >>> len(font_dicts["medium_list"])>0
