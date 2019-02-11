@@ -6,9 +6,6 @@ import sys
 import random
 
 
-
-
-
 class artError(Exception):  # pragma: no cover
     pass
 
@@ -39,6 +36,7 @@ def font_size_splitter(font_map):
         "medium_list": medium_font,
         "large_list": large_font,
         "xlarge_list": xlarge_font}
+
 
 RND_SIZE_DICT = font_size_splitter(FONT_MAP)  # pragma: no cover
 
