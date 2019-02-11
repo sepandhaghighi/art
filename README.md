@@ -169,6 +169,8 @@ art.art.artError: number should have int type
 
 ### ASCII text
 	
+⚠️ Some fonts don't support all characters		
+
 
 #### 1. text2art				
 
