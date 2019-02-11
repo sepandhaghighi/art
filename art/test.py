@@ -4485,7 +4485,7 @@ True
 True
 >>> len(font_dicts["xlarge_list"])>0
 True
->>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == font_counter
+>>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == FONT_COUNTER
 True
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")

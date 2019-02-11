@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from .text_dic1 import *
 from .text_dic2 import *
+from .art_dic import *
 
 VERSION = "3.0"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
@@ -366,5 +367,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
 
             }
 
-font_counter = len(FONT_MAP)  # pragma: no cover
+FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
+ART_COUNTER = len(art_dic)
 DEFAULT_FONT = "standard"  # pragma: no cover
