@@ -20,6 +20,8 @@
 <BLANKLINE>
 >>> tprint(" ","block")
 <BLANKLINE>
+>>> tprint("123","alpha")
+<BLANKLINE>
 >>> font_list()
 1943 :
 ### # #           ### # #  ### # #
