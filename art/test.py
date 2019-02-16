@@ -18,7 +18,7 @@
 | '--------------' |
  '----------------'
 <BLANKLINE>
->>> tprint("","block")
+>>> tprint(" ","block")
 <BLANKLINE>
 >>> font_list()
 1943 :
