@@ -67,19 +67,25 @@ def font_list(text="test"):
             tprint(text, str(item))
 
 
-def art_list():
+def art_list(test=False):
     '''
     This function print all Of 1-Line arts
+    :param test : exception test flag
+    :type test : bool
     :return: None
     '''
     for i in sorted(list(art_dic.keys())):
         try:
+            if test == True:
+                raise Exception
             print(i)
             aprint(i)
             line()
         except Exception:
             print("[Warning] This art is not printable in this environment")
             line()
+            if test == True:
+                break
 
 
 def help_func():

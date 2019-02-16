@@ -4239,6 +4239,9 @@ zoidberg
 zombie
 'º_º'
 ******************************
+>>> art_list(True)
+[Warning] This art is not printable in this environment
+******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~
 >>> help_func()
