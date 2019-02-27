@@ -52,20 +52,22 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test"):
+def font_list(text="test",test_mode=False):
     '''
     This function print all Of fonts
     :param text : input text
     :type text : str
+    :param test_mode : test mode activation flag
+    :type test_mode : bool
     :return: None
     '''
     for item in sorted(list(FONT_MAP.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
-            tprint(text.upper(), str(item))
-        else:
-            tprint(text, str(item))
-
+        text_temp = text
+        if test_mode==True:
+            if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
+                text_temp = text_temp.upper()
+        tprint(text_temp, str(item))
 
 def art_list(test=False):
     '''
