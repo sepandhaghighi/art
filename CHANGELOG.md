@@ -5,6 +5,29 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 20 new 1-line art
+	1. rose3
+	2. cigaret
+	3. oar
+	4. sword5
+	5. car
+	6. hacksaw
+	7. canoe
+	8. spider1
+	9. machinegun
+	10. roadblock
+	11. aliens
+	12. marge simpson
+	13. homer simpson
+	14. bat
+	15. superman logo
+	16. dna sample
+	17. mail box
+	18. ufo1
+	19. ufo2
+	20. spider2
+
 ## [3.0] - 2019-02-11
 ### Added
 - 20 new fonts
