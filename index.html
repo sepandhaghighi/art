@@ -709,17 +709,20 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 31
 32
 33
-34</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;loveyou&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test&quot;</span>) <span style="color: #888888"># correct --&gt; art(&quot;love_you&quot;,number=1,text=&quot;test&quot;) (distance &lt; 3)</span>
+34
+35
+36</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;loveyou&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,text<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test&quot;</span>) <span style="color: #888888"># correct --&gt; art(&quot;love_you&quot;,number=1,text=&quot;test&quot;), error &lt; |artname|/2</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
 <span style="color: #888888">»-(¯`·.·´¯)-&gt;test&lt;-(¯`·.·´¯)-« </span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi&quot;</span>)  <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;) (distance &lt; 3)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi&quot;</span>)  <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;), error &lt; |artname|/2</span>
 <span style="color: #888888"> ۜ\(סּںסּَ` )/ۜ </span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;birds2222&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #888888"># correct --&gt; Art=art(&quot;birds&quot;,number=1) (distance &gt; 3)</span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>art(<span style="background-color: #fff0f0">&quot;birds2222222&quot;</span>,number<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #888888"># correct --&gt; Art=art(&quot;birds&quot;,number=1), error &gt;= |artname|/2</span>
 <span style="color: #0044DD">Traceback (most recent call last):</span>
 	<span style="color: #888888">...</span>
 <span style="color: #FF0000">art.art.artError</span>: Invalid art name
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi231&quot;</span>)  <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;) (distance &gt; 3)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi231&quot;</span>)  <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;), error &lt; |artname|/2</span>
+<span style="color: #888888">⎦˚◡˚⎣ </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>aprint(<span style="background-color: #fff0f0">&quot;happi2312344&quot;</span>) <span style="color: #888888"># correct --&gt; aprint(&quot;happy&quot;), error &gt;= |artname|/2</span>
 <span style="color: #0044DD">Traceback (most recent call last):</span>
 	<span style="color: #888888">...</span>
 <span style="color: #FF0000">art.art.artError</span>: Invalid art name
@@ -742,8 +745,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">___ ____ ____ ___ </span>
 <span style="color: #888888"> |  |___ [__   |  </span>
 <span style="color: #888888"> |  |___ ___]  |  </span>
-<span style="color: #888888">                     </span>
+<span style="color: #888888">                  </span>
+<span style="color: #888888">   </span>
 </pre></td></tr></table></div>
+
 
 <h2>Set defaults</h2>
 <p><code>set_default</code> function is added in <code>Version 2.2</code> in order to change default values.</p>
