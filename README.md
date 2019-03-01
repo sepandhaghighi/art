@@ -490,17 +490,18 @@ d88P d88P d88P d88P d88P
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
 ```pycon
->>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
+>>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test"), error < |artname|/2
 >>> print(Art)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> aprint("happi")  # correct --> aprint("happy") (distance < 3)
+>>> aprint("happi")  # correct --> aprint("happy"), error < |artname|/2
  ۜ\(סּںסּَ` )/ۜ 
->>> Art=art("birds2222",number=1) # correct --> Art=art("birds",number=1) (distance > 3)
->>> print(Art)
+>>> Art=art("birds2222222",number=1) # correct --> Art=art("birds",number=1), error >= |artname|/2
 Traceback (most recent call last):
 	...
 art.art.artError: Invalid art name
->>> aprint("happi231")  # correct --> aprint("happy") (distance > 3)
+>>> aprint("happi231")  # correct --> aprint("happy"), error < |artname|/2
+⎦˚◡˚⎣ 
+>>> aprint("happi2312344") # correct --> aprint("happy"), error >= |artname|/2
 Traceback (most recent call last):
 	...
 art.art.artError: Invalid art name
