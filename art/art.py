@@ -138,7 +138,7 @@ def art(artname, number=1, text=""):
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
-        if min_distance < 3:
+        if min_distance < (len(artname)/2):
             artname = arts[distance_list.index(min_distance)]
         else:
             raise artError("Invalid art name")
