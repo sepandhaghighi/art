@@ -27,6 +27,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. ufo1
 	19. ufo2
 	20. spider2
+### Changed
+- `README.md` modified
+- `art` function modified
 
 ## [3.0] - 2019-02-11
 ### Added
