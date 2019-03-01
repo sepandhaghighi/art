@@ -27,6 +27,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. ufo1
 	19. ufo2
 	20. spider2
+- 15 new fonts
+	1. future_1
+	2. future_2
+	3. future_3
+	4. future_4
+	5. future_5
+	6. future_6
+	7. future_7
+	8. future_8
+	9. gauntlet
+	10. ghost_bo
+	11. grand_pr
+	12. green_be
+	13. hades
+	14. heavy_me
+	15. nfi1
 ### Changed
 - `README.md` modified
 - `art` function modified
