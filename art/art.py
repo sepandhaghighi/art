@@ -65,7 +65,7 @@ def font_list(text="test", test_mode=False):
         print(str(item) + " : ")
         text_temp = text
         if test_mode:
-            if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
+            if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12","ghost_bo"]:
                 text_temp = text_temp.upper()
         tprint(text_temp, str(item))
 
