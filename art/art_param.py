@@ -363,7 +363,22 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "flyn_sh": [flyn_sh_dic, False],
             "fp1": [fp1_dic, False],
             "fp2": [fp2_dic, False],
-            "funky_dr": [funky_dr_dic, False]
+            "funky_dr": [funky_dr_dic, False],
+            "future_1": [future_1_dic,False],
+            "future_2": [future_2_dic,False],
+            "future_3": [future_3_dic,False],
+            "future_4": [future_4_dic,False],
+            "future_5": [future_5_dic,False],
+            "future_6": [future_6_dic,False],
+            "future_7": [future_7_dic,False],
+            "future_8": [future_8_dic,False],
+            "gauntlet": [gauntlet_dic,False],
+            "ghost_bo": [ghost_bo_dic,False],
+            "grand_pr": [grand_pr_dic,False],
+            "green_be": [green_be_dic,False],
+            "hades": [hades_dic,False],
+            "heavy_me": [heavy_me_dic,False],
+            "nfi1": [nfi1_dic,False]
 
             }
 
