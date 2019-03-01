@@ -52,7 +52,7 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test",test_mode=False):
+def font_list(text="test", test_mode=False):
     '''
     This function print all Of fonts
     :param text : input text
@@ -64,10 +64,11 @@ def font_list(text="test",test_mode=False):
     for item in sorted(list(FONT_MAP.keys())):
         print(str(item) + " : ")
         text_temp = text
-        if test_mode==True:
+        if test_mode:
             if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
                 text_temp = text_temp.upper()
         tprint(text_temp, str(item))
+
 
 def art_list(test=False):
     '''
@@ -78,7 +79,7 @@ def art_list(test=False):
     '''
     for i in sorted(list(art_dic.keys())):
         try:
-            if test == True:
+            if test:
                 raise Exception
             print(i)
             aprint(i)
@@ -86,7 +87,7 @@ def art_list(test=False):
         except Exception:
             print("[Warning] This art is not printable in this environment")
             line()
-            if test == True:
+            if test:
                 break
 
 
