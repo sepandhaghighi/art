@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 20 new 1-line art
+- 30 new 1-line art
 	1. rose3
 	2. cigaret
 	3. oar
@@ -27,6 +27,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. ufo1
 	19. ufo2
 	20. spider2
+	21. american money
+	22. british money
+	23. teepee
+	24. heart3
+	25. angel
+	26. shark
+	27. regular ass
+	28. fat ass
+	29. kiss my ass
+	30. devil
 - 15 new fonts
 	1. future_1
 	2. future_2
