@@ -65,7 +65,13 @@ def font_list(text="test", test_mode=False):
         print(str(item) + " : ")
         text_temp = text
         if test_mode:
-            if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12","ghost_bo"]:
+            if str(item) in [
+                "char4",
+                "c2",
+                "war_of_w",
+                "coil_cop",
+                "fbr12",
+                    "ghost_bo"]:
                 text_temp = text_temp.upper()
         tprint(text_temp, str(item))
 
@@ -138,7 +144,7 @@ def art(artname, number=1, text=""):
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
-        if min_distance < (len(artname)/2):
+        if min_distance < (len(artname) / 2):
             artname = arts[distance_list.index(min_distance)]
         else:
             raise artError("Invalid art name")
