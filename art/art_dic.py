@@ -278,7 +278,17 @@ art_dic = {
     "mail box": "|M|/",
     "ufo1": ".-=-.",
     "ufo2": ".-=o=-.",
-    "spider2": "/\oo/\\"
+    "spider2": "/\oo/\\",
+    "american money": "[($)]",
+    "british money": "[£::]",
+    "teepee": "/|\\",
+    "heart3": "<3",
+    "angel": "^i^",
+    "shark": "~~~~~~^~~~~~",
+    "regular ass": "(_!_)",
+    "fat ass": "(__!__)",
+    "kiss my ass": "(_x_)",
+    "devil": "]:->"
 
 
 }
