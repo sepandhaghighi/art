@@ -45,7 +45,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	15. nfi1
 ### Changed
 - `README.md` modified
-- `art` function modified
+- `art` function typo-tolerance threshold modified
 
 ## [3.0] - 2019-02-11
 ### Added
