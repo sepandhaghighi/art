@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.1] - 2019-03-05
 ### Added
 - 30 new 1-line art
 	1. rose3
@@ -790,7 +791,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.0...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.1...dev
+[3.1]: https://github.com/sepandhaghighi/art/compare/v3.0...v3.1
 [3.0]: https://github.com/sepandhaghighi/art/compare/v2.9...v3.0
 [2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9
 [2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8
