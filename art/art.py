@@ -144,8 +144,10 @@ def art(artname, number=1, text=""):
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
-        if min_distance < (len(artname) / 2):
-            artname = arts[distance_list.index(min_distance)]
+        selected_art = arts[distance_list.index(min_distance)]
+        threshold = max(len(artname),len(selected_art))/2
+        if min_distance < threshold:
+            artname = selected_art
         else:
             raise artError("Invalid art name")
     art_value = art_dic[artname]
