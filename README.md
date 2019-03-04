@@ -630,6 +630,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
 
 * Open `FontList.ipynb` and `ArtList.ipynb`
+* Edit and execute each part of the notes, step by step from the top panel by run button
 
 ### Screen record		
 
