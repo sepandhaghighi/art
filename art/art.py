@@ -145,7 +145,7 @@ def art(artname, number=1, text=""):
                                  arts))
         min_distance = min(distance_list)
         selected_art = arts[distance_list.index(min_distance)]
-        threshold = max(len(artname),len(selected_art))/2
+        threshold = max(len(artname), len(selected_art)) / 2
         if min_distance < threshold:
             artname = selected_art
         else:
