@@ -114,6 +114,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 
 ### 1-Line art
+
+⚠️ Some environments don't support all 1-Line arts
+
+
 #### 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception.	
