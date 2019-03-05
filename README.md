@@ -11,8 +11,8 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-360-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-250-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-375-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-280-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -64,11 +64,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">360</td>
+		<td align="center">375</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">250</td>
+		<td align="center">280</td>
 	</tr>
 </table>
 
@@ -97,6 +97,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 		<td align="center">Code Quality</td>
 		<td align="center"><a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a></td>	
 		<td align="center"><a href="https://codebeat.co/projects/github-com-sepandhaghighi-art-dev"><img alt="codebeat badge" src="https://codebeat.co/badges/90e77325-a046-4cc5-9c3e-646c011a5b72" /></a></td>	
+		<td align="center"><a href="https://www.codefactor.io/repository/github/sepandhaghighi/art"><img src="https://www.codefactor.io/repository/github/sepandhaghighi/art/badge" alt="CodeFactor" /></a></td>
 	</tr>
 </table>
 
@@ -113,6 +114,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 
 ### 1-Line art
+
+⚠️ Some environments don't support all 1-Line arts
+
+
 #### 1. art					
 
 This function return 1-line art as `str` in normal mode and raise `artError` in exception.	
@@ -490,17 +495,18 @@ d88P d88P d88P d88P d88P
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
 ```pycon
->>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test") (distance < 3)
+>>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test"), error < |artname|/2
 >>> print(Art)
 »-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
->>> aprint("happi")  # correct --> aprint("happy") (distance < 3)
+>>> aprint("happi")  # correct --> aprint("happy"), error < |artname|/2
  ۜ\(סּںסּَ` )/ۜ 
->>> Art=art("birds2222",number=1) # correct --> Art=art("birds",number=1) (distance > 3)
->>> print(Art)
+>>> Art=art("birds2222222",number=1) # correct --> Art=art("birds",number=1), error >= |artname|/2
 Traceback (most recent call last):
 	...
 art.art.artError: Invalid art name
->>> aprint("happi231")  # correct --> aprint("happy") (distance > 3)
+>>> aprint("happi231")  # correct --> aprint("happy"), error < |artname|/2
+⎦˚◡˚⎣ 
+>>> aprint("happi2312344") # correct --> aprint("happy"), error >= |artname|/2
 Traceback (most recent call last):
 	...
 art.art.artError: Invalid art name
@@ -628,6 +634,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
 
 * Open `FontList.ipynb` and `ArtList.ipynb`
+* Edit and execute each part of the notes, step by step from the top panel by run button
 
 ### Screen record		
 
@@ -637,8 +644,8 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 <p>Screen Record</p>
 </div>
 
-* View Full Font List ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
-* View Full Art List ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
+* View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
+* View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
 
 ## Issues & bug reports			
 

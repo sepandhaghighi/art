@@ -5,6 +5,59 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.1] - 2019-03-06
+### Added
+- 30 new 1-line art
+	1. rose3
+	2. cigaret
+	3. oar
+	4. sword5
+	5. car
+	6. hacksaw
+	7. canoe
+	8. spider1
+	9. machinegun
+	10. roadblock
+	11. aliens
+	12. marge simpson
+	13. homer simpson
+	14. bat
+	15. superman logo
+	16. dna sample
+	17. mail box
+	18. ufo1
+	19. ufo2
+	20. spider2
+	21. american money
+	22. british money
+	23. teepee
+	24. heart3
+	25. angel
+	26. shark
+	27. regular ass
+	28. fat ass
+	29. kiss my ass
+	30. devil
+- 15 new fonts
+	1. future_1
+	2. future_2
+	3. future_3
+	4. future_4
+	5. future_5
+	6. future_6
+	7. future_7
+	8. future_8
+	9. gauntlet
+	10. ghost_bo
+	11. grand_pr
+	12. green_be
+	13. hades
+	14. heavy_me
+	15. nfi1
+### Changed
+- `README.md` modified
+- `art` function typo-tolerance threshold modified
+
 ## [3.0] - 2019-02-11
 ### Added
 - 20 new fonts
@@ -738,7 +791,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.0...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.1...dev
+[3.1]: https://github.com/sepandhaghighi/art/compare/v3.0...v3.1
 [3.0]: https://github.com/sepandhaghighi/art/compare/v2.9...v3.0
 [2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9
 [2.8]: https://github.com/sepandhaghighi/art/compare/v2.7...v2.8

@@ -52,34 +52,49 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test"):
+def font_list(text="test", test_mode=False):
     '''
     This function print all Of fonts
     :param text : input text
     :type text : str
+    :param test_mode : test mode activation flag
+    :type test_mode : bool
     :return: None
     '''
     for item in sorted(list(FONT_MAP.keys())):
         print(str(item) + " : ")
-        if str(item) in ["char4", "c2", "war_of_w", "coil_cop", "fbr12"]:
-            tprint(text.upper(), str(item))
-        else:
-            tprint(text, str(item))
+        text_temp = text
+        if test_mode:
+            if str(item) in [
+                "char4",
+                "c2",
+                "war_of_w",
+                "coil_cop",
+                "fbr12",
+                    "ghost_bo"]:
+                text_temp = text_temp.upper()
+        tprint(text_temp, str(item))
 
 
-def art_list():
+def art_list(test=False):
     '''
     This function print all Of 1-Line arts
+    :param test : exception test flag
+    :type test : bool
     :return: None
     '''
     for i in sorted(list(art_dic.keys())):
         try:
+            if test:
+                raise Exception
             print(i)
             aprint(i)
             line()
         except Exception:
             print("[Warning] This art is not printable in this environment")
             line()
+            if test:
+                break
 
 
 def help_func():
@@ -129,8 +144,10 @@ def art(artname, number=1, text=""):
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
         min_distance = min(distance_list)
-        if min_distance < 3:
-            artname = arts[distance_list.index(min_distance)]
+        selected_art = arts[distance_list.index(min_distance)]
+        threshold = max(len(artname), len(selected_art)) / 2
+        if min_distance < threshold:
+            artname = selected_art
         else:
             raise artError("Invalid art name")
     art_value = art_dic[artname]

@@ -5,7 +5,7 @@ import codecs
 from art import *
 
 Failed = 0
-VERSION = "3.0"
+VERSION = "3.1"
 
 README_ITEMS = ['<td align="center">{0}</td>'.format(str(FONT_COUNTER)),
                 '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(ART_COUNTER)),
@@ -24,7 +24,7 @@ CHANGELOG_ITEMS = [
     "https://github.com/sepandhaghighi/art/compare/v{0}...dev",
     "[{0}]:"]
 ART_LIST_ITEMS = ["### Version : {0}"]
-FONT_LIST_ITEMS = ['font_list(\\"art {0}\\")', "### Version : {0}"]
+FONT_LIST_ITEMS = ["### Version : {0}"]
 PARAMS_ITEMS = ['VERSION = "{0}"']
 FILES = {
     "setup.py": SETUP_ITEMS,
