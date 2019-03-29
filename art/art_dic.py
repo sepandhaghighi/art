@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+"""1-line art data."""
 art_dic = {
     "fish1": "><(((('>",
     "fish2": "><>",
