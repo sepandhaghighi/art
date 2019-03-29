@@ -59,7 +59,7 @@ def line(char="*", number=30):
 
 def font_list(text="test", test_mode=False):
     """
-    Print all of fonts.
+    Print all fonts.
 
     :param text : input text
     :type text : str
@@ -84,7 +84,7 @@ def font_list(text="test", test_mode=False):
 
 def art_list(test=False):
     """
-    Print all Of 1-Line arts.
+    Print all 1-Line arts.
 
     :param test : exception test flag
     :type test : bool
@@ -126,7 +126,7 @@ def help_func():
 
 def aprint(artname, number=1, text=""):
     """
-    Print ascii art.
+    Print 1-line art.
 
     :param artname: artname
     :type artname : str
@@ -137,7 +137,7 @@ def aprint(artname, number=1, text=""):
 
 def art(artname, number=1, text=""):
     """
-    Return ascii art.
+    Return 1-line art.
 
     :param artname: artname
     :type artname : str
