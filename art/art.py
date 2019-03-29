@@ -8,16 +8,19 @@ import random
 
 
 class artError(Exception):  # pragma: no cover
+    """Art error class."""
+
     pass
 
 
 def font_size_splitter(font_map):
-    '''
-    This function split fonts to 4 category (small,medium,large,xlarge) by maximum length of letter in each font
+    """
+    Split fonts to 4 category (small,medium,large,xlarge) by maximum length of letter in each font.
+
     :param font_map: input fontmap
     :type font_map : dict
     :return: splitted fonts as dict
-    '''
+    """
     small_font = []
     medium_font = []
     large_font = []
@@ -43,25 +46,27 @@ RND_SIZE_DICT = font_size_splitter(FONT_MAP)  # pragma: no cover
 
 
 def line(char="*", number=30):
-    '''
-    This function print line of chars
+    """
+    Print line of chars.
+
     :param char: input character
     :type char:str
     :param number: number of characters
     :return: None
-    '''
+    """
     print(char * number)
 
 
 def font_list(text="test", test_mode=False):
-    '''
-    This function print all Of fonts
+    """
+    Print all of fonts.
+
     :param text : input text
     :type text : str
     :param test_mode : test mode activation flag
     :type test_mode : bool
     :return: None
-    '''
+    """
     for item in sorted(list(FONT_MAP.keys())):
         print(str(item) + " : ")
         text_temp = text
@@ -78,12 +83,13 @@ def font_list(text="test", test_mode=False):
 
 
 def art_list(test=False):
-    '''
-    This function print all Of 1-Line arts
+    """
+    Print all Of 1-Line arts.
+
     :param test : exception test flag
     :type test : bool
     :return: None
-    '''
+    """
     for i in sorted(list(art_dic.keys())):
         try:
             if test:
@@ -99,10 +105,11 @@ def art_list(test=False):
 
 
 def help_func():
-    '''
-    Print help page
+    """
+    Print help page.
+
     :return: None
-    '''
+    """
     tprint("art")
     tprint("v" + VERSION)
     print(DESCRIPTION + "\n")
@@ -118,23 +125,24 @@ def help_func():
 
 
 def aprint(artname, number=1, text=""):
-    '''
-    Art print
-    This function print ascii art
+    """
+    Print ascii art.
+
     :param artname: artname
     :type artname : str
     :return: None
-    '''
+    """
     print(art(artname=artname, number=number, text=text))
 
 
 def art(artname, number=1, text=""):
-    '''
-    This function return ascii art
+    """
+    Return ascii art.
+
     :param artname: artname
     :type artname : str
     :return: ascii art as str
-    '''
+    """
     if isinstance(artname, str) is False:
         raise artError("artname shoud have str type")
     artname = artname.lower()
@@ -162,16 +170,18 @@ def art(artname, number=1, text=""):
 
 
 def randart():
-    '''
-    This function return random 1-line art
+    """
+    Return random 1-line art.
+
     :return: ascii art as str
-    '''
+    """
     return art("random")
 
 
 def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
-    '''
-    This function split function by \n then call text2art function
+    r"""
+    Split text by \n then call text2art function.
+
     :param text: input text
     :type text:str
     :param font: input font
@@ -179,7 +189,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :return: None
-    '''
+    """
     if isinstance(text, str) is False:
         raise artError("text should have str type")
     split_list = text.split("\n")
@@ -196,8 +206,9 @@ def tsave(
         filename="art",
         chr_ignore=True,
         print_status=True):
-    '''
-    This function save ascii art
+    """
+    Save ascii art.
+
     :param text: input text
     :param font: input font
     :type font:str
@@ -209,7 +220,7 @@ def tsave(
     :param print_status : save message print flag
     :type print_status:bool
     :return: None
-    '''
+    """
     try:
         split_list = text.split("\n")
         files_list = os.listdir(os.getcwd())
@@ -242,8 +253,9 @@ def tsave(
 
 
 def distance_calc(s1, s2):
-    '''
-    This function calculate Levenshtein distance between two words
+    """
+    Calculate Levenshtein distance between two words.
+
     :param s1: first word
     :type s1 : str
     :param s2: second word
@@ -253,7 +265,7 @@ def distance_calc(s1, s2):
     References :
     1- https://stackoverflow.com/questions/2460177/edit-distance-in-python
     2- https://en.wikipedia.org/wiki/Levenshtein_distance
-    '''
+    """
     if len(s1) > len(s2):
         s1, s2 = s2, s1
 
@@ -271,12 +283,13 @@ def distance_calc(s1, s2):
 
 
 def wizard_font(text):
-    '''
-    This function check input text length for wizard mode
+    """
+    Check input text length for wizard mode.
+
     :param text: input text
     :type text:str
     :return: font as str
-    '''
+    """
     text_length = len(text)
     if text_length <= TEXT_XLARGE_THRESHOLD:
         font = random.choice(XLARGE_WIZARD_FONT)
@@ -290,8 +303,9 @@ def wizard_font(text):
 
 
 def indirect_font(font, fonts, text):
-    '''
-    This function check input font for indirect modes
+    """
+    Check input font for indirect modes.
+
     :param font: input font
     :type font : str
     :param fonts: fonts list
@@ -299,7 +313,7 @@ def indirect_font(font, fonts, text):
     :param text: input text
     :type text:str
     :return: font as str
-    '''
+    """
     if font == "rnd-small" or font == "random-small" or font == "rand-small":
         font = random.choice(RND_SIZE_DICT["small_list"])
         return font
@@ -325,8 +339,9 @@ def indirect_font(font, fonts, text):
 
 
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
-    '''
-    This function print art text
+    """
+    Return art text.
+
     :param text: input text
     :type text:str
     :param font: input font
@@ -334,7 +349,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :return: ascii art text as str
-    '''
+    """
     split_list = []
     result_list = []
     letters = standard_dic
@@ -380,8 +395,9 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
                 print_status=True):
-    '''
-    This function change text2art, tprint and tsave default values
+    """
+    Change text2art, tprint and tsave default values.
+
     :param font: input font
     :type font:str
     :param chr_ignore: ignore not supported character
@@ -391,7 +407,7 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :param print_status : save message print flag (only tsave)
     :type print_status:bool
     :return: None
-    '''
+    """
     if isinstance(font, str) is False:
         raise artError("font should have str type")
     if isinstance(chr_ignore, bool) is False:
