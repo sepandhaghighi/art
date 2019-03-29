@@ -1,2 +1,2 @@
-"""Art modules"""
+"""Art modules."""
 from .art import *
