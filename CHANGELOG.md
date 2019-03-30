@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 20 new 1-line art
+- 30 new 1-line art
 	1. shrug
 	2. flex
 	3. this guy
@@ -27,6 +27,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. dick
 	19. wizard
 	20. wat 
+	21. chu
+	22. butt
+	23. sophie
+	24. joy
+	25. bautista
+	26. smooth
+	27. fuckall
+	28. penis
+	29. wat-wat
+	30. fail
 ### Changed
 - Docstrings modified
 
