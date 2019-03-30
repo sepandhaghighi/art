@@ -1,4 +1,4 @@
-as<div align="center">
+<div align="center">
 <pre>
  ______   ______  _______ 
 | |  | | | |  | \   | |   
