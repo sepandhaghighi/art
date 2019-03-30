@@ -311,7 +311,7 @@ art_dic = {
     "wat": "ಠ_ಠ",
     "chu": "(´ε｀ )",
     "butt": "(‿|‿)",
-    "sophie": "<XX""XX>",
+    "sophie": '<XX""XX>',
     "joy": "n_n",
     "bautista": "(╯°_°）╯︵ ━━━",
     "smooth": "(づ ￣ ³￣)づ ⓈⓂⓄⓄⓉⒽ ",
