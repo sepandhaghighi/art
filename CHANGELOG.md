@@ -6,6 +6,27 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 20 new 1-line art
+	1. shrug
+	2. flex
+	3. this guy
+	4. why
+	5. meditation
+	6. kitty
+	7. pac man
+	8. emo
+	9. shark attack
+	10. shocked
+	11. monocle
+	12. piggy
+	13. camera
+	14. what??
+	15. neo
+	16. lenny
+	17. snowing
+	18. dick
+	19. wizard
+	20. wat 
 ### Changed
 - Docstrings modified
 
