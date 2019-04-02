@@ -135,7 +135,8 @@ RANDOM_FILTERED_FONTS = [
     "tengwar",
     "tsalagi",
     "gauntlet",
-    "flyn_sh"]
+    "flyn_sh",
+    "moscow"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
