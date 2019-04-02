@@ -25,7 +25,8 @@ def font_size_splitter(font_map):
     medium_font = []
     large_font = []
     xlarge_font = []
-    for font in font_map.keys():
+    fonts = set(font_map.keys()) - RANDOM_FILTERED_FONTS
+    for font in fonts:
         length = max(map(len, font_map[font][0].values()))
         if length <= FONT_SMALL_THRESHOLD:
             small_font.append(font)

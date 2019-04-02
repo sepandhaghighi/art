@@ -57,6 +57,8 @@ UPPERCASE_FONTS = ["1943","4x4_offr","64f1","a_zooloo","advenger","aquaplan","as
                    "future_3","future_4","future_5","future_6","future_7","future_8","ghost_bo","grand_pr","green_be","hades","heavy_me","heroboti","house_of","hypa_bal","hyper","kgames_i",
                    "kik_star","krak_out","tsn_base","ugalympi","unarmed","usa","usa_pq","vortron","war_of_w","yie-ar","yie_ar_k","z-pilot","zig_zag","zone7"]
 
+RANDOM_FILTERED_FONTS = ["5x8","binary","decimal","high_noo","hills","katakana","morse","morse2","nfi1","octal","rot13","smtengwar","tengwar","tsalagi","gauntlet","flyn_sh"]
+
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
