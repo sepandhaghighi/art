@@ -53,7 +53,7 @@ XLARGE_WIZARD_FONT = [
     "block"]  # pragma: no cover
 
 UPPERCASE_FONTS = ["1943","4x4_offr","64f1","a_zooloo","advenger","aquaplan","assalt_m","asslt_m","atc","atc_gran","battle_s","battlesh","baz_bil","beer_pub","c1","c2","c_consen","char1","char4",
-                   "chartr","chartri","coil_cop","druid","faces_of","fair_mea","fairligh","fantasy","fbr1","fbr12","fbr_stri","fbr_tilt","finalass","fp1","fp2","funky_dr","future_1","future_2",
+                   "coil_cop","druid","faces_of","fair_mea","fairligh","fantasy","fbr1","fbr12","fbr_stri","fbr_tilt","finalass","fp1","fp2","funky_dr","future_1","future_2",
                    "future_3","future_4","future_5","future_6","future_7","future_8","ghost_bo","grand_pr","green_be","hades","heavy_me","heroboti","house_of","hypa_bal","hyper","kgames_i",
                    "kik_star","krak_out","tsn_base","ugalympi","unarmed","usa","usa_pq","vortron","war_of_w","yie-ar","yie_ar_k","z-pilot","zig_zag","zone7"]
 
