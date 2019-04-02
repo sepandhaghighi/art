@@ -41,7 +41,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Docstrings modified
 - Some fonts lowercase bug fixed
 - Random mode modified
-- `test_mode` argument removed from `font_list` function
+- `test_mode` parameter removed from `font_list` function
 
 ## [3.1] - 2019-03-06
 ### Added
