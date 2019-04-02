@@ -365,6 +365,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     letters = FONT_MAP[font][0]
     if FONT_MAP[font][1]:
         text_temp = text.lower()
+    if font in UPPERCASE_FONTS:
+        text_temp = text.upper()
     for i in text_temp:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
             continue
