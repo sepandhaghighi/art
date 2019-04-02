@@ -5,6 +5,46 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.2] - 2019-04-02
+### Added
+- 30 new 1-line art
+	1. shrug
+	2. flex
+	3. this guy
+	4. why
+	5. meditation
+	6. kitty
+	7. pac man
+	8. emo
+	9. shark attack
+	10. shocked
+	11. monocle
+	12. piggy
+	13. camera
+	14. what??
+	15. neo
+	16. lenny
+	17. snowing
+	18. dick
+	19. wizard
+	20. wat 
+	21. chu
+	22. butt
+	23. sophie
+	24. joy
+	25. bautista
+	26. smooth
+	27. fuckall
+	28. penis
+	29. wat-wat
+	30. fail
+- `pydocstyle` test
+### Changed
+- Docstrings modified
+- Some fonts lowercase bug fixed
+- Random mode modified
+- `test_mode` parameter removed from `font_list` function
+
 ## [3.1] - 2019-03-06
 ### Added
 - 30 new 1-line art
@@ -791,7 +831,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.1...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.2...dev
+[3.2]: https://github.com/sepandhaghighi/art/compare/v3.1...v3.2
 [3.1]: https://github.com/sepandhaghighi/art/compare/v3.0...v3.1
 [3.0]: https://github.com/sepandhaghighi/art/compare/v2.9...v3.0
 [2.9]: https://github.com/sepandhaghighi/art/compare/v2.8...v2.9

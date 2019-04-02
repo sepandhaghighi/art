@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+"""Fonts data (part-1)."""
 block_dic = {
     "a": '''
  .----------------.

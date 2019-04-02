@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+"""Fonts data (part-2)."""
 
 fraktur_dic = {
     ' ': u'   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n',

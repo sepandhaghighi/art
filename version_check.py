@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
+"""Version-check script."""
 import os
 import sys
 import codecs
 from art import *
 
 Failed = 0
-VERSION = "3.1"
+VERSION = "3.2"
 
 README_ITEMS = ['<td align="center">{0}</td>'.format(str(FONT_COUNTER)),
                 '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(ART_COUNTER)),
@@ -40,6 +41,13 @@ TEST_NUMBER = len(FILES.keys()) + 1
 
 
 def print_result(failed=False):
+    """
+    Print final result.
+
+    :param failed: failed flag
+    :type failed: bool
+    :return: None
+    """
     message = "Version/Counter tag tests "
     if not failed:
         print("\n" + message + "passed!")

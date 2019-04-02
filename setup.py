@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""Setup module."""
 try:
     from setuptools import setup
 except ImportError:
@@ -12,11 +13,13 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
 
 
 def get_requires():
+    """Read requirements.txt."""
     requirements = open("requirements.txt", "r").read()
     return list(filter(lambda x: x != "", requirements.split()))
 
 
 def read_description():
+    """Read README.md and CHANGELOG.md."""
     try:
         with open("README.md") as r:
             description = "\n"
@@ -32,7 +35,7 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='3.1',
+    version='3.2',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',

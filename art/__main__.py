@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""Art main."""
 from .art import *
 from .art_dic import *
 import sys
