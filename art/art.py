@@ -57,28 +57,17 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test", test_mode=False):
+def font_list(text="test"):
     """
     Print all fonts.
 
     :param text : input text
     :type text : str
-    :param test_mode : test mode activation flag
-    :type test_mode : bool
     :return: None
     """
     for item in sorted(list(FONT_MAP.keys())):
         print(str(item) + " : ")
         text_temp = text
-        if test_mode:
-            if str(item) in [
-                "char4",
-                "c2",
-                "war_of_w",
-                "coil_cop",
-                "fbr12",
-                    "ghost_bo"]:
-                text_temp = text_temp.upper()
         tprint(text_temp, str(item))
 
 
