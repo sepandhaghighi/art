@@ -37,6 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	28. penis
 	29. wat-wat
 	30. fail
+- `pydocstyle` test
 ### Changed
 - Docstrings modified
 - Some fonts lowercase bug fixed
