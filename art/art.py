@@ -134,7 +134,7 @@ def art(artname, number=1, text=""):
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
-        raise artError("artname shoud have str type")
+        raise artError(ART_NAME_ERROR)
     artname = artname.lower()
     arts = sorted(art_dic.keys())
     if artname == "random" or artname == "rand":

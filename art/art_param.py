@@ -13,6 +13,7 @@ TEXT_XLARGE_THRESHOLD = 3  # pragma: no cover
 TEXT_LARGE_THRESHOLD = 7  # pragma: no cover
 TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
 
+ART_NAME_ERROR = "The artname type must be str."
 
 SMALL_WIZARD_FONT = [
     "contessa",

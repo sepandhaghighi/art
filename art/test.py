@@ -4748,7 +4748,7 @@ art.art.artError: text should have str type
 >>> art(22,number=1,text="")
 Traceback (most recent call last):
         ...
-art.art.artError: artname shoud have str type
+art.art.artError: The artname type must be str.
 >>> aprint("woman",number="22",text="")
 Traceback (most recent call last):
         ...
