@@ -18,6 +18,10 @@ ART_NAME_ERROR = "Invalid art name."
 NUMBER_TYPE_ERROR = "The number type must be int."
 TEXT_TYPE_ERROR = "The text type must be str."
 FONT_TYPE_ERROR = "The font type must be str."
+CHR_IGNORE_TYPE_ERROR = "The chr_ignore type must be bool."
+FILE_TYPE_ERROR = "The filename type must be str."
+PRINT_STATUS_TYPE_ERROR = "The print_status type must be bool."
+
 
 SMALL_WIZARD_FONT = [
     "contessa",

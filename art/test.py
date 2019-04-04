@@ -4769,15 +4769,15 @@ art.art.artError: The font type must be str.
 >>> set_default(chr_ignore=2)
 Traceback (most recent call last):
         ...
-art.art.artError: chr_ignore should have bool type
+art.art.artError: The chr_ignore type must be bool.
 >>> set_default(filename=2)
 Traceback (most recent call last):
         ...
-art.art.artError: filename should have str type
+art.art.artError: The filename type must be str.
 >>> set_default(print_status=2)
 Traceback (most recent call last):
         ...
-art.art.artError: print_status should have bool type
+art.art.artError: The print_status type must be bool.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)

@@ -403,11 +403,11 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
     if isinstance(chr_ignore, bool) is False:
-        raise artError("chr_ignore should have bool type")
+        raise artError(CHR_IGNORE_TYPE_ERROR)
     if isinstance(filename, str) is False:
-        raise artError("filename should have str type")
+        raise artError(FILE_TYPE_ERROR)
     if isinstance(print_status, bool) is False:
-        raise artError("print_status should have bool type")
+        raise artError(PRINT_STATUS_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status)
     text2art.__defaults__ = (font, chr_ignore)
