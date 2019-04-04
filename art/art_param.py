@@ -17,6 +17,7 @@ ART_TYPE_ERROR = "The artname type must be str."
 ART_NAME_ERROR = "Invalid art name."
 NUMBER_TYPE_ERROR = "The number type must be int."
 TEXT_TYPE_ERROR = "The text type must be str."
+FONT_TYPE_ERROR = "The font type must be str."
 
 SMALL_WIZARD_FONT = [
     "contessa",

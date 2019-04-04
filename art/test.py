@@ -4677,7 +4677,7 @@ art.art.artError: Invalid art name.
 >>> text2art("test",font = 2)
 Traceback (most recent call last):
         ...
-art.art.artError: font should have str type
+art.art.artError: The font type must be str.
 >>> art("love_you",number=2,text=2)
 Traceback (most recent call last):
         ...
@@ -4765,7 +4765,7 @@ _/  _   _ _/
 >>> set_default(font=2)
 Traceback (most recent call last):
         ...
-art.art.artError: font should have str type
+art.art.artError: The font type must be str.
 >>> set_default(chr_ignore=2)
 Traceback (most recent call last):
         ...

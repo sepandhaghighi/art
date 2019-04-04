@@ -348,7 +348,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if isinstance(text, str) is False:
         raise artError(TEXT_TYPE_ERROR)
     if isinstance(font, str) is False:
-        raise artError("font should have str type")
+        raise artError(FONT_TYPE_ERROR)
     font = font.lower()
     fonts = sorted(FONT_MAP.keys())
     font = indirect_font(font, fonts, text)
@@ -401,7 +401,7 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :return: None
     """
     if isinstance(font, str) is False:
-        raise artError("font should have str type")
+        raise artError(FONT_TYPE_ERROR)
     if isinstance(chr_ignore, bool) is False:
         raise artError("chr_ignore should have bool type")
     if isinstance(filename, str) is False:
