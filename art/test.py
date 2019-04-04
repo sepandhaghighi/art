@@ -4633,7 +4633,7 @@ True
 >>> Data=art('assdsds')
 Traceback (most recent call last):
         ...
-art.art.artError: Invalid art name
+art.art.artError: Invalid art name.
 >>> art("coffee")
 'c[_] '
 >>> tprint("test 2")

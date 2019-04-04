@@ -148,7 +148,7 @@ def art(artname, number=1, text=""):
         if min_distance < threshold:
             artname = selected_art
         else:
-            raise artError("Invalid art name")
+            raise artError(ART_INVALID_ERROR)
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
         raise artError("number should have int type")
