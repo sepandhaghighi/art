@@ -155,7 +155,7 @@ def art(artname, number=1, text=""):
     if isinstance(art_value, str):
         return (art_value + " ") * number
     if isinstance(text, str) is False:
-        raise artError("text should have str type")
+        raise artError(TEXT_TYPE_ERROR)
     return (art_value[0] + text + art_value[1] + " ") * number
 
 
@@ -181,7 +181,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :return: None
     """
     if isinstance(text, str) is False:
-        raise artError("text should have str type")
+        raise artError(TEXT_TYPE_ERROR)
     split_list = text.split("\n")
     result = ""
     for item in split_list:
@@ -346,7 +346,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     text_temp = text
     spliter = "\n"
     if isinstance(text, str) is False:
-        raise artError("text should have str type")
+        raise artError(TEXT_TYPE_ERROR)
     if isinstance(font, str) is False:
         raise artError("font should have str type")
     font = font.lower()

@@ -4681,7 +4681,7 @@ art.art.artError: font should have str type
 >>> art("love_you",number=2,text=2)
 Traceback (most recent call last):
         ...
-art.art.artError: text should have str type
+art.art.artError: The text type must be str.
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
@@ -4731,7 +4731,7 @@ True
 >>> Data=text2art(222)
 Traceback (most recent call last):
         ...
-art.art.artError: text should have str type
+art.art.artError: The text type must be str.
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
 Traceback (most recent call last):
         ...
@@ -4744,7 +4744,7 @@ False
 >>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
 Traceback (most recent call last):
         ...
-art.art.artError: text should have str type
+art.art.artError: The text type must be str.
 >>> art(22,number=1,text="")
 Traceback (most recent call last):
         ...

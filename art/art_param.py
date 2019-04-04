@@ -16,6 +16,7 @@ TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
 ART_TYPE_ERROR = "The artname type must be str."
 ART_NAME_ERROR = "Invalid art name."
 NUMBER_TYPE_ERROR = "The number type must be int."
+TEXT_TYPE_ERROR = "The text type must be str."
 
 SMALL_WIZARD_FONT = [
     "contessa",
