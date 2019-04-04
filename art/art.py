@@ -134,7 +134,7 @@ def art(artname, number=1, text=""):
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
-        raise artError(ART_NAME_ERROR)
+        raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
     arts = sorted(art_dic.keys())
     if artname == "random" or artname == "rand":
@@ -148,10 +148,10 @@ def art(artname, number=1, text=""):
         if min_distance < threshold:
             artname = selected_art
         else:
-            raise artError(ART_INVALID_ERROR)
+            raise artError(ART_NAME_ERROR)
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
-        raise artError("number should have int type")
+        raise artError(NUMBER_TYPE_ERROR)
     if isinstance(art_value, str):
         return (art_value + " ") * number
     if isinstance(text, str) is False:

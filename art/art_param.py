@@ -13,8 +13,9 @@ TEXT_XLARGE_THRESHOLD = 3  # pragma: no cover
 TEXT_LARGE_THRESHOLD = 7  # pragma: no cover
 TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
 
-ART_NAME_ERROR = "The artname type must be str."
-ART_INVALID_ERROR = "Invalid art name."
+ART_TYPE_ERROR = "The artname type must be str."
+ART_NAME_ERROR = "Invalid art name."
+NUMBER_TYPE_ERROR = "The number type must be int."
 
 SMALL_WIZARD_FONT = [
     "contessa",

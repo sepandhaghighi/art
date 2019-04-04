@@ -4752,7 +4752,7 @@ art.art.artError: The artname type must be str.
 >>> aprint("woman",number="22",text="")
 Traceback (most recent call last):
         ...
-art.art.artError: number should have int type
+art.art.artError: The number type must be int.
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> set_default(font="italic")
