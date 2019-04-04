@@ -364,7 +364,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
             if (chr_ignore):
                 continue
             else:
-                raise artError(str(i) + " is invalid")
+                raise artError(str(i) + " is invalid.")
         if len(letters[i]) == 0:
             continue
         split_list.append(letters[i].split("\n"))

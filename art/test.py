@@ -4735,7 +4735,7 @@ art.art.artError: The text type must be str.
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
 Traceback (most recent call last):
         ...
-art.art.artError: س is invalid
+art.art.artError: س is invalid.
 >>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
 "'int' object has no attribute 'split'"
