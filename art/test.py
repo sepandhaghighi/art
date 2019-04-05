@@ -1556,6 +1556,8 @@ fireing :
  #####   ######   ####      #####
 <BLANKLINE>
 <BLANKLINE>
+flip :
+ϝԍƨϝ
 flipped :
     _  ____  _ __     _
  __| ||    || |  \ __| |
