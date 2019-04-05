@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 3 new fonts
+	1. mirror
+	2. flip
+	3. mirror_flip
 - 40 new 1-line art
 	1. dead eyes
 	2. satan
