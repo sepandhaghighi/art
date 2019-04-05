@@ -368,6 +368,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         if len(letters[i]) == 0:
             continue
         split_list.append(letters[i].split("\n"))
+    if font == "mirror":
+        split_list.reverse()
     if len(split_list) == 0:
         return ""
     for i in range(len(split_list[0])):
