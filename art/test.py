@@ -22,7 +22,7 @@
 <BLANKLINE>
 >>> tprint("123","alpha")
 <BLANKLINE>
->>> font_list()
+>>> font_list(test=True)
 1943 :
 #### ##  ### ###   ## ##   #### ##
 # ## ##   ##  ##  ##   ##  # ## ##
@@ -1556,8 +1556,6 @@ fireing :
  #####   ######   ####      #####
 <BLANKLINE>
 <BLANKLINE>
-flip :
-ϝԍƨϝ
 flipped :
     _  ____  _ __     _
  __| ||    || |  \ __| |
@@ -2335,10 +2333,6 @@ _|_  _   _ _|_
  |_ (/_ _>  |_
 <BLANKLINE>
 <BLANKLINE>
-mirror :
-ɈƨǝɈ
-mirror_flip :
-ʇsǝʇ
 modular :
  _______  _______  _______  _______
 |       ||       ||       ||       |
