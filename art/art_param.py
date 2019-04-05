@@ -476,7 +476,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "heavy_me": [heavy_me_dic, False],
             "nfi1": [nfi1_dic, False],
             "flip": [flip_dic,False],
-            "mirror": [mirror_dic,False]
+            "mirror": [mirror_dic,False],
+            "mirror_flip": [mirror_flip_dic,False]
 
             }
 
