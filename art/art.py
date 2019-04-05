@@ -58,7 +58,7 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test",test=False):
+def font_list(text="test", test=False):
     """
     Print all fonts.
 
@@ -67,7 +67,7 @@ def font_list(text="test",test=False):
     :return: None
     """
     fonts = set(FONT_MAP.keys())
-    if test == True :
+    if test:
         fonts = fonts - set(TEST_FILTERED_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")

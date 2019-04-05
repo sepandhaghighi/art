@@ -150,7 +150,7 @@ RANDOM_FILTERED_FONTS = [
     "mirror_flip",
     "flip"]
 
-TEST_FILTERED_FONTS = ["mirror","mirror_flip","flip"]
+TEST_FILTERED_FONTS = ["mirror", "mirror_flip", "flip"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
