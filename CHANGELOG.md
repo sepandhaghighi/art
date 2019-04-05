@@ -52,6 +52,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	39. exchange
 	40. singing2
 - `test2.py`
+### Changed
+- `test_mode` parameter added to `font_list` function
 ## [3.2] - 2019-04-02
 ### Added
 - 30 new 1-line art
