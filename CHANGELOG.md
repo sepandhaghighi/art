@@ -5,6 +5,48 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 40 new 1-line art
+	1. dead eyes
+	2. satan
+	3. bomb
+	4. sleepy coffee
+	5. high five
+	6. wtf dude?
+	7. fungry
+	8. derp
+	9. drwoning
+	10. almost cared
+	11. yessir
+	12. coffee now
+	13. round cat
+	14. squee
+	15. round bird
+	16. hoxom
+	17. squid
+	18. man spider
+	19. spell cast
+	20. jazz musician
+	21. myan cat
+	22. gimme
+	23. crab
+	24. playing in snow
+	25. sunglasses
+	26. mini penis
+	27. victory
+	28. don fuller
+	29. dgaf
+	30. ryans dick
+	31. eds dick
+	32. point
+	33. afraid
+	34. laughing
+	35. energy
+	36. drunkenness
+	37. error
+	38. penis2
+	39. exchange
+	40. singing2
 ## [3.2] - 2019-04-02
 ### Added
 - 30 new 1-line art
