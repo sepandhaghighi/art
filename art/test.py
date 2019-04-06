@@ -4738,18 +4738,22 @@ Help :
 <BLANKLINE>
 >>> random.seed(3)
 >>> Art = art("random")
+>>> random.seed(40)
 >>> Text = text2art("test","random")
+>>> random.seed(55)
 >>> Art3 = randart()
 >>> random.seed(19)
 >>> Text2 = text2art("test","random")
+>>> random.seed(39)
 >>> Art2 =  art("random")
+>>> random.seed(119)
 >>> Art4 = randart()
->>> len(Art)!=len(Art2)
-True
->>> len(Text)!=len(Text2)
-True
->>> len(Art3)!=len(Art4)
-True
+>>> Art == Art2
+False
+>>> Text == Text2
+False
+>>> Art3 == Art4
+False
 >>> Data=art('assdsds')
 Traceback (most recent call last):
         ...
