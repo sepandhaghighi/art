@@ -34,11 +34,22 @@ if __name__ == "__main__":
             else:
                 print("\nTest Failed")
                 sys.exit(error_flag)
-        elif args[1].upper() == "TEST2":
-            error_flag = doctest.testfile(
+        elif args[1].upper() == "TESTCOV2":
+            cov = coverage.Coverage()
+            cov.start()
+            error_flag_1 = doctest.testfile(
+                "test.py",
+                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
+                            | doctest.IGNORE_EXCEPTION_DETAIL,
+                verbose=False)[0]
+            error_flag_2 = doctest.testfile(
                 "test2.py",
                 optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
                 verbose=False)[0]
+            error_flag = error_flag_1 + error_flag_2
+            cov.stop()
+            cov.report()
+            cov.save()
             if error_flag == 0:
                 print("\nTest2 Passed")
                 sys.exit(error_flag)
