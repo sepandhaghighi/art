@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_dic import *
+from .art_param import FONT_MAP
 import sys
 import doctest
 import os
@@ -71,7 +71,7 @@ if __name__ == "__main__":
                     'w',
                     zipfile.ZIP_DEFLATED)
                 print("Generating . . . ")
-                for font in font_map.keys():
+                for font in FONT_MAP.keys():
                     tsave(
                         args[2],
                         filename=os.path.join(
