@@ -5,6 +5,7 @@ from .art_param import *
 import os
 import sys
 import random
+import codecs
 
 
 class artError(Exception):  # pragma: no cover
@@ -230,7 +231,10 @@ def tsave(
                 index = index + 1
             else:
                 break
-        file = open(test_name + extension, "w")
+        if font.lower() in TEST_FILTERED_FONTS:
+            file = codecs.open(test_name + extension, "w",encoding='utf-8')
+        else:
+            file = open(test_name + extension, "w")
         result = ""
         for item in split_list:
             if len(item) != 0:
