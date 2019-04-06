@@ -1,7 +1,6 @@
 set -e
 set -x
 
-python -m art testcov
 python version_check.py
 if [ "$TRAVIS_PYTHON_VERSION" = '3.6' ]
   then
@@ -10,5 +9,7 @@ if [ "$TRAVIS_PYTHON_VERSION" = '3.6' ]
 	  python -m pydocstyle --match='(?!test).*\.py'
 	  python -m art testcov2
 	  codecov
+  else
+	  python -m art testcov
   fi
 python -m cProfile -s cumtime art_profile.py
