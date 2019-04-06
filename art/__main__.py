@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_param import FONT_MAP,ENVIRONMENT_WARNING
+from .art_param import FONT_MAP,ART_ENVIRONMENT_WARNING,FONT_ENVIRONMENT_WARNING
 import sys
 import doctest
 import os
@@ -94,7 +94,7 @@ if __name__ == "__main__":
                     except artError as e:
                         print(str(e))
                     except UnicodeEncodeError:
-                        print(ENVIRONMENT_WARNING)
+                        print(FONT_ENVIRONMENT_WARNING)
                 else:
                     tprint(args[2])
             elif args[1].upper() == "SAVE":
@@ -108,7 +108,7 @@ if __name__ == "__main__":
                 except artError as e:
                     print(str(e))
                 except UnicodeEncodeError:
-                    print(ENVIRONMENT_WARNING)
+                    print(ART_ENVIRONMENT_WARNING)
             else:
                 help_func()
         else:

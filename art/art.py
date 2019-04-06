@@ -78,7 +78,7 @@ def font_list(text="test", test=False):
         try:
             tprint(text_temp, str(item))
         except Exception:
-            print(ENVIRONMENT_WARNING)
+            print(FONT_ENVIRONMENT_WARNING)
 
 
 def art_list(test=False):
@@ -97,7 +97,7 @@ def art_list(test=False):
             aprint(i)
             line()
         except Exception:
-            print(ENVIRONMENT_WARNING)
+            print(ART_ENVIRONMENT_WARNING)
             line()
             if test:
                 break
