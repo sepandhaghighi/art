@@ -347,7 +347,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     result_list = []
     letters = standard_dic
     text_temp = text
-    spliter = "\n"
+    splitter = "\n"
     if isinstance(text, str) is False:
         raise artError(TEXT_TYPE_ERROR)
     if isinstance(font, str) is False:
@@ -386,8 +386,11 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
             temp = temp + split_list[j][i]
         result_list.append(temp)
     if "win32" != sys.platform:
-        spliter = "\r\n"
-    return((spliter).join(result_list))
+        splitter = "\r\n"
+    result = (splitter).join(result_list)
+    if result[-1] != "\n":
+        result += splitter
+    return result
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
