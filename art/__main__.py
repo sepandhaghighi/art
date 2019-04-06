@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_param import FONT_MAP
+from .art_param import FONT_MAP,ENVIRONMENT_WARNING
 import sys
 import doctest
 import os
@@ -103,7 +103,7 @@ if __name__ == "__main__":
                 except artError as e:
                     print(str(e))
                 except UnicodeEncodeError:
-                    print("[Warning] This art is not printable in this environment")
+                    print(ENVIRONMENT_WARNING)
             else:
                 help_func()
         else:
