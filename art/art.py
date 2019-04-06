@@ -65,6 +65,8 @@ def font_list(text="test", test=False):
 
     :param text : input text
     :type text : str
+    :param test: test flag
+    :type test: bool
     :return: None
     """
     fonts = set(FONT_MAP.keys())
@@ -73,7 +75,10 @@ def font_list(text="test", test=False):
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
-        tprint(text_temp, str(item))
+        try:
+            tprint(text_temp, str(item))
+        except Exception:
+            print(ENVIRONMENT_WARNING)
 
 
 def art_list(test=False):

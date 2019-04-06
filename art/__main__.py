@@ -89,7 +89,12 @@ if __name__ == "__main__":
                       str(os.path.join("ARTFonts", "ALL_FONT" + '.zip')))
             elif args[1].upper() == "TEXT":
                 if len(args) > 3:
-                    tprint(args[2], font=args[3])
+                    try:
+                        tprint(args[2], font=args[3])
+                    except artError as e:
+                        print(str(e))
+                    except UnicodeEncodeError:
+                        print(ENVIRONMENT_WARNING)
                 else:
                     tprint(args[2])
             elif args[1].upper() == "SAVE":
