@@ -141,8 +141,9 @@ def art(artname, number=1, text=""):
         raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
     arts = sorted(art_dic.keys())
-    if artname == "random" or artname == "rand":
-        artname = random.choice(arts)
+    if artname == "random" or artname == "rand" or artname == "rnd":
+        filtered_arts = list(set(arts) - set(RANDOM_FILTERED_ARTS))
+        artname = random.choice(filtered_arts)
     elif artname not in art_dic.keys():
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
