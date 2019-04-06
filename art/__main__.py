@@ -11,7 +11,7 @@ import coverage
 
 def main_test(test_name="TEST"):
     """
-    Main test function.
+    Select proper test mode.
 
     :param test_name: test name
     :type test_name: str
