@@ -21,7 +21,7 @@ FONT_TYPE_ERROR = "The font type must be str."
 CHR_IGNORE_TYPE_ERROR = "The chr_ignore type must be bool."
 FILE_TYPE_ERROR = "The filename type must be str."
 PRINT_STATUS_TYPE_ERROR = "The print_status type must be bool."
-
+ENVIRONMENT_WARNING = "[Warning] This art is not printable in this environment."
 
 SMALL_WIZARD_FONT = [
     "contessa",

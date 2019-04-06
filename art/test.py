@@ -4693,7 +4693,7 @@ zombie
 'º_º'
 ******************************
 >>> art_list(True)
-[Warning] This art is not printable in this environment
+[Warning] This art is not printable in this environment.
 ******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~

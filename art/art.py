@@ -92,7 +92,7 @@ def art_list(test=False):
             aprint(i)
             line()
         except Exception:
-            print("[Warning] This art is not printable in this environment")
+            print(ENVIRONMENT_WARNING)
             line()
             if test:
                 break
