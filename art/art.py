@@ -238,7 +238,7 @@ def tsave(
             else:
                 break
         if font.lower() in TEST_FILTERED_FONTS:
-            file = codecs.open(test_name + extension, "w",encoding='utf-8')
+            file = codecs.open(test_name + extension, "w", encoding='utf-8')
         else:
             file = open(test_name + extension, "w")
         result = ""

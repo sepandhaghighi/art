@@ -151,8 +151,12 @@ RANDOM_FILTERED_FONTS = [
     "mirror_flip",
     "flip"]
 
-RANDOM_FILTERED_ARTS = ["message2","love you","text decoration","message1","musical"]
-
+RANDOM_FILTERED_ARTS = [
+    "message2",
+    "love you",
+    "text decoration",
+    "message1",
+    "musical"]
 
 
 TEST_FILTERED_FONTS = ["mirror", "mirror_flip", "flip"]

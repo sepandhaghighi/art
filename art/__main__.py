@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_param import FONT_MAP,ART_ENVIRONMENT_WARNING,FONT_ENVIRONMENT_WARNING
+from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
 import sys
 import doctest
 import os
@@ -9,9 +9,7 @@ import zipfile
 import coverage
 
 
-
-
-def main_test(test_name = "TEST"):
+def main_test(test_name="TEST"):
     """
     Main test function.
 
@@ -26,7 +24,7 @@ def main_test(test_name = "TEST"):
     error_flag_1 = doctest.testfile(
         "test.py",
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
-                    | doctest.IGNORE_EXCEPTION_DETAIL,
+        | doctest.IGNORE_EXCEPTION_DETAIL,
         verbose=False)[0]
     if test_name == "TESTCOV2":
         error_flag_2 = doctest.testfile(
@@ -39,7 +37,7 @@ def main_test(test_name = "TEST"):
         cov.report()
         cov.save()
     if error_flag == 0:
-        print("\n" + test_name+" Passed")
+        print("\n" + test_name + " Passed")
         sys.exit(error_flag)
     else:
         print("\n" + test_name + " Failed")
