@@ -149,7 +149,8 @@ RANDOM_FILTERED_FONTS = [
     "moscow",
     "mirror",
     "mirror_flip",
-    "flip"]
+    "flip",
+    "dwhistled"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
