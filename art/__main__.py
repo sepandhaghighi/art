@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
+from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, PACKAGE_LOAD_WARNING
 import sys
 import doctest
 import os
 import zipfile
-import coverage
+try:
+    import coverage
+except ImportError:
+    print(PACKAGE_LOAD_WARNING)
 
 
 def select_test(test_name="TEST"):
