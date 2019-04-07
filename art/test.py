@@ -4801,11 +4801,11 @@ art.art.artError: Invalid art name.
 >>> text2art("test",font = 2)
 Traceback (most recent call last):
         ...
-art.art.artError: The font type must be str.
+art.art.artError: The 'font' type must be str.
 >>> art("love_you",number=2,text=2)
 Traceback (most recent call last):
         ...
-art.art.artError: The text type must be str.
+art.art.artError: The 'text' type must be str.
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
@@ -4855,7 +4855,7 @@ True
 >>> Data=text2art(222)
 Traceback (most recent call last):
         ...
-art.art.artError: The text type must be str.
+art.art.artError: The 'text' type must be str.
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
 Traceback (most recent call last):
         ...
@@ -4868,15 +4868,15 @@ False
 >>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
 Traceback (most recent call last):
         ...
-art.art.artError: The text type must be str.
+art.art.artError: The 'text' type must be str.
 >>> art(22,number=1,text="")
 Traceback (most recent call last):
         ...
-art.art.artError: The artname type must be str.
+art.art.artError: The 'artname' type must be str.
 >>> aprint("woman",number="22",text="")
 Traceback (most recent call last):
         ...
-art.art.artError: The number type must be int.
+art.art.artError: The 'number' type must be int.
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> set_default(font="italic")
@@ -4889,19 +4889,19 @@ _/  _   _ _/
 >>> set_default(font=2)
 Traceback (most recent call last):
         ...
-art.art.artError: The font type must be str.
+art.art.artError: The 'font' type must be str.
 >>> set_default(chr_ignore=2)
 Traceback (most recent call last):
         ...
-art.art.artError: The chr_ignore type must be bool.
+art.art.artError: The 'chr_ignore' type must be bool.
 >>> set_default(filename=2)
 Traceback (most recent call last):
         ...
-art.art.artError: The filename type must be str.
+art.art.artError: The 'filename' type must be str.
 >>> set_default(print_status=2)
 Traceback (most recent call last):
         ...
-art.art.artError: The print_status type must be bool.
+art.art.artError: The 'print_status' type must be bool.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)
