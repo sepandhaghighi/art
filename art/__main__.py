@@ -9,7 +9,7 @@ import zipfile
 import coverage
 
 
-def main_test(test_name="TEST"):
+def select_test(test_name="TEST"):
     """
     Select proper test mode.
 
@@ -48,11 +48,11 @@ if __name__ == "__main__":
     args = sys.argv
     if len(args) > 1:
         if args[1].upper() == "TESTCOV":
-            main_test("TESTCOV")
+            select_test("TESTCOV")
         elif args[1].upper() == "TEST":
-            main_test("TEST")
+            select_test("TEST")
         elif args[1].upper() == "TESTCOV2":
-            main_test("TESTCOV2")
+            select_test("TESTCOV2")
         elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":
