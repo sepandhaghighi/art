@@ -176,6 +176,7 @@ art.art.artError: number should have int type
 	
 ⚠️ Some fonts don't support all characters		
 
+⚠️ Some environments don't support all fonts
 
 #### 1. text2art				
 
