@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Fonts height checking script."""
+"""Fonts height testing script."""
 import sys
 from art import *
 
@@ -14,10 +14,10 @@ for font in FONT_MAP.keys():
         print("Height error in font : " + font)
         Failed += 1
 
-
+Message = "Font height test "
 if Failed == 0:
-    print("\n" + message + "passed!")
+    print(message + "passed!")
     sys.exit(0)
 else:
-    print("\n" + message + "passed!")
+    print(message + "failed!")
     sys.exit(1)
