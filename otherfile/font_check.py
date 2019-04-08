@@ -14,7 +14,10 @@ for font in FONT_MAP.keys():
         print("Height error in font : " + font)
         Failed += 1
 
+
 if Failed == 0:
+    print("\n" + message + "passed!")
     sys.exit(0)
 else:
+    print("\n" + message + "passed!")
     sys.exit(1)

@@ -3,7 +3,7 @@
 import os
 import sys
 import codecs
-from art import *
+from art.art_param import *
 
 Failed = 0
 VERSION = "3.3"
