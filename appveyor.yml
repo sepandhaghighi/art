@@ -47,5 +47,5 @@ install:
 
 test_script:
   - "%PYTHON%/python.exe -m art testcov"
-  - "%PYTHON%/python.exe version_check.py"
+  - "%PYTHON%/python.exe otherfile/version_check.py"
   - "%PYTHON%/python.exe -m cProfile -s cumtime art_profile.py"
