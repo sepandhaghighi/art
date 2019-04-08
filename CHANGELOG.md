@@ -53,6 +53,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	39. exchange
 	40. singing2
 - `test2.py`
+- `font_check.py`
 ### Changed
 - `test_mode` parameter added to `font_list` function
 - `all` flag bug fixed
