@@ -5,6 +5,61 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.3] - 2019-04-10
+### Added
+- 3 new fonts
+	1. mirror
+	2. flip
+	3. mirror_flip
+- 40 new 1-line art
+	1. dead eyes
+	2. satan
+	3. bomb
+	4. sleepy coffee
+	5. high five
+	6. wtf dude?
+	7. fungry
+	8. derp
+	9. drwoning
+	10. almost cared
+	11. yessir
+	12. coffee now
+	13. round cat
+	14. squee
+	15. round bird
+	16. hoxom
+	17. squid
+	18. man spider
+	19. spell cast
+	20. jazz musician
+	21. myan cat
+	22. gimme
+	23. crab
+	24. playing in snow
+	25. sunglasses
+	26. mini penis
+	27. victory
+	28. don fuller
+	29. dgaf
+	30. ryans dick
+	31. eds dick
+	32. point
+	33. afraid
+	34. laughing
+	35. energy
+	36. drunkenness
+	37. error
+	38. penis2
+	39. exchange
+	40. singing2
+- `test2.py`
+- `font_check.py`
+### Changed
+- `test_mode` parameter added to `font_list` function
+- `all` flag bug fixed
+- `__main__.py` modified
+- Warnings and errors messages moved to `art_param.py`
+- Art random mode modified
 ## [3.2] - 2019-04-02
 ### Added
 - 30 new 1-line art
@@ -42,7 +97,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Docstrings modified
 - Some fonts lowercase bug fixed
-- Random mode modified
+- Font random modes modified
 - `test_mode` parameter removed from `font_list` function
 
 ## [3.1] - 2019-03-06
@@ -831,7 +886,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.2...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.3...dev
+[3.3]: https://github.com/sepandhaghighi/art/compare/v3.2...v3.3
 [3.2]: https://github.com/sepandhaghighi/art/compare/v3.1...v3.2
 [3.1]: https://github.com/sepandhaghighi/art/compare/v3.0...v3.1
 [3.0]: https://github.com/sepandhaghighi/art/compare/v2.9...v3.0

@@ -4,6 +4,7 @@
 >>> import random
 >>> import sys
 >>> from art import *
+>>> import string
 >>> tprint("\t\t2","block")
 <BLANKLINE>
  .----------------.
@@ -22,7 +23,7 @@
 <BLANKLINE>
 >>> tprint("123","alpha")
 <BLANKLINE>
->>> font_list()
+>>> font_list(test=True)
 1943 :
 #### ##  ### ###   ## ##   #### ##
 # ## ##   ##  ##  ##   ##  # ## ##
@@ -3654,6 +3655,9 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 9/11 truth
 ✈__✈ █ █ ▄
 ******************************
+afraid
+(　ﾟ Дﾟ)
+******************************
 airplane1
  ‛¯¯٭٭¯¯(▫▫)¯¯٭٭¯¯’
 ******************************
@@ -3665,6 +3669,9 @@ ak-47
 ******************************
 aliens
 (<>..<>)
+******************************
+almost cared
+╰╏ ◉ 〜 ◉ ╏╯
 ******************************
 american money
 [($)]
@@ -3731,6 +3738,9 @@ bird
 ******************************
 birds
 ~(‾▿‾)~
+******************************
+bomb
+!!(　’ ‘)ﾉﾉ⌒●~*
 ******************************
 boobies
 (. )( .)
@@ -3819,6 +3829,12 @@ cigarette
 coffee
 c[_]
 ******************************
+coffee now
+{zzz}°°°( -_-)>c[_]
+******************************
+crab
+(\|) ._. (|/)
+******************************
 crayons
 ((̲̅ ̲̅(̲̅C̲̅r̲̅a̲̅y̲̅o̲̅l̲̲̅̅a̲̅( ̲̅((>
 ******************************
@@ -3849,14 +3865,23 @@ dancee
 dancing people
 ‎(/.__.)/   \(.__.\)
 ******************************
+dead eyes
+¿ⓧ_ⓧﮌ
+******************************
 death star defense team
 |-o-| (-o-) |-o-|
 ******************************
 decorate
 ▂▃▅▇█▓▒░۩۞۩        ۩۞۩░▒▓█▇▅▃▂
 ******************************
+derp
+ヘ（。□°）ヘ
+******************************
 devil
 ]:->
+******************************
+dgaf
+┌∩┐(◣ _ ◢)┌∩┐
 ******************************
 dice
 [: :]
@@ -3873,6 +3898,15 @@ dog
 domino
 [: :|:::]
 ******************************
+don fuller
+╭∩╮(Ο_Ο)╭∩╮
+******************************
+drowning
+人人人ヾ( ;×o×)〃 人人人
+******************************
+drunkenness
+ヽ（´ー｀）┌
+******************************
 dummy
 <-|-'_'-|->
 ******************************
@@ -3882,17 +3916,29 @@ eastbound fish
 eaten apple
 [===]-'
 ******************************
+eds dick
+8=D
+******************************
 elephant
 °j°m
 ******************************
 emo
 (///_ ;)
 ******************************
+energy
+ つ ◕_◕ ༽つ  つ ◕_◕ ༽つ
+******************************
 epic gun
 ︻┳デ═—
 ******************************
 eric
 >--) ) ) )*>
+******************************
+error
+(╯°□°)╯︵ ɹoɹɹƎ
+******************************
+exchange
+(╯°□°）╯︵ ǝƃuɐɥɔxǝ
 ******************************
 eye closed
  (╯_╰)
@@ -3954,8 +4000,14 @@ nlm (-_-) mln
 fuckall
  	╭∩╮（︶︿︶）╭∩╮
 ******************************
+fungry
+Σ_(꒪ཀ꒪」∠)_
+******************************
 ghost
 ‹’’›(Ͼ˳Ͽ)‹’’›
+******************************
+gimme
+༼ つ ◕_◕ ༽つ
 ******************************
 glasses
 -@-@-
@@ -4020,6 +4072,9 @@ hell yeah
 help
 ٩(͡๏̯͡๏)۶
 ******************************
+high five
+( ⌒o⌒)人(⌒-⌒ )v
+******************************
 homer
 (_8(|)
 ******************************
@@ -4031,6 +4086,9 @@ honeycute
 ******************************
 house
 __̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___
+******************************
+hoxom
+h(o x o )m
 ******************************
 hug me
 (っ◕‿◕)っ
@@ -4055,6 +4113,9 @@ inlove
 ******************************
 jaymz
  (•̪●)==ε/̵͇̿​̿/’̿’̿ ̿ ̿̿    `(•.°)~
+******************************
+jazz musician
+ヽ(⌐■_■)ノ♪♬
 ******************************
 john lennon
 ((ºjº))
@@ -4110,6 +4171,9 @@ kyubey
 kyubey2
 ／人 ◕‿‿◕ 人＼
 ******************************
+laughing
+(＾▽＾)
+******************************
 lenny
 ( ͡° ͜ʖ ͡°)
 ******************************
@@ -4142,6 +4206,9 @@ machinegun
 ******************************
 mail box
 |M|/
+******************************
+man spider
+/╲/\༼ *ಠ 益 ಠ* ༽/\╱\
 ******************************
 man tears
 ಥ_ಥ
@@ -4176,6 +4243,9 @@ message2
 metal
 \m/_(>_<)_\m/
 ******************************
+mini penis
+=D
+******************************
 mis mujeres
 (-(-_(-_-)_-)-)
 ******************************
@@ -4199,6 +4269,9 @@ mtmtika
 ******************************
 musical
 ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+******************************
+myancat
+mmmyyyyy<⦿⽘⦿>aaaannn
 ******************************
 nathan
 ♪└(￣◇￣)┐♪└(￣◇￣)┐♪└(￣◇￣)┐♪
@@ -4242,6 +4315,9 @@ peace yo!
 penis
 8===D
 ******************************
+penis2
+○○)=======o)
+******************************
 perky
 ( ๏ Y ๏ )
 ******************************
@@ -4268,6 +4344,12 @@ pistols1
 ******************************
 pistols2
 ̿' ̿'\̵͇̿̿\з=(◕_◕)=ε/̵͇̿̿/'̿'̿ ̿
+******************************
+playing in snow
+(╯^□^)╯︵ ❄☃❄
+******************************
+point
+(☞ﾟヮﾟ)☞
 ******************************
 polar bear
 ˁ˚ᴥ˚ˀ
@@ -4335,8 +4417,17 @@ rose2
 rose3
 @-->--->---
 ******************************
+round bird
+,(u°)>
+******************************
+round cat
+~(^._.)
+******************************
 russian boobs
 [.][.]
+******************************
+ryans dick
+8======D
 ******************************
 sad1
 ε(´סּ︵סּ`)з
@@ -4346,6 +4437,9 @@ sad2
 ******************************
 sat
 '(◣_◢)'
+******************************
+satan
+↑_(ΦwΦ;)Ψ
 ******************************
 scissors
 ✄
@@ -4371,6 +4465,9 @@ shrug
 singing
 d(^o^)b¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 ******************************
+singing2
+♪└(￣◇￣)┐♪
+******************************
 sky free
 ѧѦ ѧ  ︵͡︵  ̢ ̱ ̧̱ι̵̱̊ι̶̨̱ ̶̱   ︵ Ѧѧ  ︵͡ ︵   ѧ Ѧ    ̵̗̊o̵̖  ︵  ѦѦ ѧ
 ******************************
@@ -4379,6 +4476,9 @@ sleeping
 ******************************
 sleeping baby
 [{-_-}] ZZZzz zz z...
+******************************
+sleepy coffee
+( -_-)旦~
 ******************************
 slenderman
 ϟƖΣNd€RMαN
@@ -4416,6 +4516,9 @@ sparkling heart
 spear
 >>-;;;------;;-->
 ******************************
+spell cast
+╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ
+******************************
 sperm
 ~~o
 ******************************
@@ -4427,6 +4530,12 @@ spider2
 ******************************
 spot
 (  . Y .  )
+******************************
+squee
+ヾ(◎o◎,,；)ﾉ
+******************************
+squid
+くコ:彡
 ******************************
 srs face
 (ಠ_ಠ)
@@ -4442,6 +4551,9 @@ stars in my eyes
 ******************************
 stars2
 ⋆ ✢ ✣ ✤ ✥ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ★
+******************************
+sunglasses
+(•_•)>⌐■-■ (⌐■_■)
 ******************************
 sunny day
 ☁ ▅▒░☼‿☼░▒▅ ☁
@@ -4521,6 +4633,9 @@ up
 upsidedown
 ( ͜。 ͡ʖ ͜。)
 ******************************
+victory
+V(-.o)V
+******************************
 wat
 ಠ_ಠ
 ******************************
@@ -4557,6 +4672,12 @@ _/\__/\__0>
 worm2
 ~
 ******************************
+wtf dude?
+＼(◑д◐)＞∠(◑д◐)
+******************************
+yessir
+∠(･`_´･ )
+******************************
 yo
 __o000o__(o)(o)__o000o__
 ******************************
@@ -4573,7 +4694,7 @@ zombie
 'º_º'
 ******************************
 >>> art_list(True)
-[Warning] This art is not printable in this environment
+[Warning] This art is not printable in this environment.
 ******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~
@@ -4585,11 +4706,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _____     ____
-__   __|___ /    |___ \
-\ \ / /  |_ \      __) |
- \ V /  ___) | _  / __/
-  \_/  |____/ (_)|_____|
+        _____     _____
+__   __|___ /    |___ /
+\ \ / /  |_ \      |_ \
+ \ V /  ___) | _  ___) |
+  \_/  |____/ (_)|____/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4618,22 +4739,26 @@ Help :
 <BLANKLINE>
 >>> random.seed(3)
 >>> Art = art("random")
+>>> random.seed(40)
 >>> Text = text2art("test","random")
+>>> random.seed(55)
 >>> Art3 = randart()
 >>> random.seed(19)
 >>> Text2 = text2art("test","random")
+>>> random.seed(39)
 >>> Art2 =  art("random")
+>>> random.seed(119)
 >>> Art4 = randart()
->>> len(Art)!=len(Art2)
-True
->>> len(Text)!=len(Text2)
-True
->>> len(Art3)!=len(Art4)
-True
+>>> Art == Art2
+False
+>>> Text == Text2
+False
+>>> Art3 == Art4
+False
 >>> Data=art('assdsds')
 Traceback (most recent call last):
         ...
-art.art.artError: Invalid art name
+art.art.artError: Invalid art name.
 >>> art("coffee")
 'c[_] '
 >>> tprint("test 2")
@@ -4677,11 +4802,11 @@ art.art.artError: Invalid art name
 >>> text2art("test",font = 2)
 Traceback (most recent call last):
         ...
-art.art.artError: font should have str type
+art.art.artError: The 'font' type must be str.
 >>> art("love_you",number=2,text=2)
 Traceback (most recent call last):
         ...
-art.art.artError: text should have str type
+art.art.artError: The 'text' type must be str.
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
@@ -4731,11 +4856,11 @@ True
 >>> Data=text2art(222)
 Traceback (most recent call last):
         ...
-art.art.artError: text should have str type
+art.art.artError: The 'text' type must be str.
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
 Traceback (most recent call last):
         ...
-art.art.artError: س is invalid
+art.art.artError: س is invalid.
 >>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
 "'int' object has no attribute 'split'"
@@ -4744,15 +4869,15 @@ False
 >>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
 Traceback (most recent call last):
         ...
-art.art.artError: text should have str type
+art.art.artError: The 'text' type must be str.
 >>> art(22,number=1,text="")
 Traceback (most recent call last):
         ...
-art.art.artError: artname shoud have str type
+art.art.artError: The 'artname' type must be str.
 >>> aprint("woman",number="22",text="")
 Traceback (most recent call last):
         ...
-art.art.artError: number should have int type
+art.art.artError: The 'number' type must be int.
 >>> aprint("love_you",number=1,text="")
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> set_default(font="italic")
@@ -4765,19 +4890,19 @@ _/  _   _ _/
 >>> set_default(font=2)
 Traceback (most recent call last):
         ...
-art.art.artError: font should have str type
+art.art.artError: The 'font' type must be str.
 >>> set_default(chr_ignore=2)
 Traceback (most recent call last):
         ...
-art.art.artError: chr_ignore should have bool type
+art.art.artError: The 'chr_ignore' type must be bool.
 >>> set_default(filename=2)
 Traceback (most recent call last):
         ...
-art.art.artError: filename should have str type
+art.art.artError: The 'filename' type must be str.
 >>> set_default(print_status=2)
 Traceback (most recent call last):
         ...
-art.art.artError: print_status should have bool type
+art.art.artError: The 'print_status' type must be bool.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)
@@ -4823,6 +4948,9 @@ True
 True
 >>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == (FONT_COUNTER - len(RANDOM_FILTERED_FONTS))
 True
+>>> for font in FONT_MAP.keys():
+...     for letter in string.ascii_letters + string.punctuation + string.digits:
+...         Data = text2art(letter,font,chr_ignore=False)
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")

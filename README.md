@@ -11,8 +11,8 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-375-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-310-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-378-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-350-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -64,11 +64,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">375</td>
+		<td align="center">378</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">310</td>
+		<td align="center">350</td>
 	</tr>
 </table>
 
@@ -176,6 +176,7 @@ art.art.artError: number should have int type
 	
 ⚠️ Some fonts don't support all characters		
 
+⚠️ Some environments don't support all fonts
 
 #### 1. text2art				
 
@@ -664,6 +665,7 @@ or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com
 2. [Text To ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
 3. [ASCII Generator](http://www.network-science.de/ascii/)
 4. [Asky](https://asky.io/)
+5. [Flipyourtext](https://www.flipyourtext.com/)
 
 ## Donate to our project
 								

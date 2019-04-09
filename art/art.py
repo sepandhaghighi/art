@@ -5,6 +5,7 @@ from .art_param import *
 import os
 import sys
 import random
+import codecs
 
 
 class artError(Exception):  # pragma: no cover
@@ -58,18 +59,26 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test"):
+def font_list(text="test", test=False):
     """
     Print all fonts.
 
     :param text : input text
     :type text : str
+    :param test: test flag
+    :type test: bool
     :return: None
     """
-    for item in sorted(list(FONT_MAP.keys())):
+    fonts = set(FONT_MAP.keys())
+    if test:
+        fonts = fonts - set(TEST_FILTERED_FONTS)
+    for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
-        tprint(text_temp, str(item))
+        try:
+            tprint(text_temp, str(item))
+        except Exception:
+            print(FONT_ENVIRONMENT_WARNING)
 
 
 def art_list(test=False):
@@ -88,7 +97,7 @@ def art_list(test=False):
             aprint(i)
             line()
         except Exception:
-            print("[Warning] This art is not printable in this environment")
+            print(ART_ENVIRONMENT_WARNING)
             line()
             if test:
                 break
@@ -134,11 +143,12 @@ def art(artname, number=1, text=""):
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
-        raise artError("artname shoud have str type")
+        raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
     arts = sorted(art_dic.keys())
-    if artname == "random" or artname == "rand":
-        artname = random.choice(arts)
+    if artname == "random" or artname == "rand" or artname == "rnd":
+        filtered_arts = list(set(arts) - set(RANDOM_FILTERED_ARTS))
+        artname = random.choice(filtered_arts)
     elif artname not in art_dic.keys():
         distance_list = list(map(lambda x: distance_calc(artname, x),
                                  arts))
@@ -148,14 +158,14 @@ def art(artname, number=1, text=""):
         if min_distance < threshold:
             artname = selected_art
         else:
-            raise artError("Invalid art name")
+            raise artError(ART_NAME_ERROR)
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
-        raise artError("number should have int type")
+        raise artError(NUMBER_TYPE_ERROR)
     if isinstance(art_value, str):
         return (art_value + " ") * number
     if isinstance(text, str) is False:
-        raise artError("text should have str type")
+        raise artError(TEXT_TYPE_ERROR)
     return (art_value[0] + text + art_value[1] + " ") * number
 
 
@@ -181,7 +191,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :return: None
     """
     if isinstance(text, str) is False:
-        raise artError("text should have str type")
+        raise artError(TEXT_TYPE_ERROR)
     split_list = text.split("\n")
     result = ""
     for item in split_list:
@@ -227,7 +237,10 @@ def tsave(
                 index = index + 1
             else:
                 break
-        file = open(test_name + extension, "w")
+        if font.lower() in TEST_FILTERED_FONTS:
+            file = codecs.open(test_name + extension, "w", encoding='utf-8')
+        else:
+            file = open(test_name + extension, "w")
         result = ""
         for item in split_list:
             if len(item) != 0:
@@ -344,11 +357,11 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     result_list = []
     letters = standard_dic
     text_temp = text
-    spliter = "\n"
+    splitter = "\n"
     if isinstance(text, str) is False:
-        raise artError("text should have str type")
+        raise artError(TEXT_TYPE_ERROR)
     if isinstance(font, str) is False:
-        raise artError("font should have str type")
+        raise artError(FONT_TYPE_ERROR)
     font = font.lower()
     fonts = sorted(FONT_MAP.keys())
     font = indirect_font(font, fonts, text)
@@ -364,10 +377,12 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
             if (chr_ignore):
                 continue
             else:
-                raise artError(str(i) + " is invalid")
+                raise artError(str(i) + " is invalid.")
         if len(letters[i]) == 0:
             continue
         split_list.append(letters[i].split("\n"))
+    if font in ["mirror", "mirror_flip"]:
+        split_list.reverse()
     if len(split_list) == 0:
         return ""
     for i in range(len(split_list[0])):
@@ -381,8 +396,11 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
             temp = temp + split_list[j][i]
         result_list.append(temp)
     if "win32" != sys.platform:
-        spliter = "\r\n"
-    return((spliter).join(result_list))
+        splitter = "\r\n"
+    result = (splitter).join(result_list)
+    if result[-1] != "\n":
+        result += splitter
+    return result
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
@@ -401,13 +419,13 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :return: None
     """
     if isinstance(font, str) is False:
-        raise artError("font should have str type")
+        raise artError(FONT_TYPE_ERROR)
     if isinstance(chr_ignore, bool) is False:
-        raise artError("chr_ignore should have bool type")
+        raise artError(CHR_IGNORE_TYPE_ERROR)
     if isinstance(filename, str) is False:
-        raise artError("filename should have str type")
+        raise artError(FILE_TYPE_ERROR)
     if isinstance(print_status, bool) is False:
-        raise artError("print_status should have bool type")
+        raise artError(PRINT_STATUS_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status)
     text2art.__defaults__ = (font, chr_ignore)

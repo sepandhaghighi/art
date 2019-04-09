@@ -1,39 +1,61 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_dic import *
+from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, PACKAGE_LOAD_WARNING
 import sys
 import doctest
 import os
 import zipfile
-import coverage
+try:
+    import coverage
+except ImportError:
+    print(PACKAGE_LOAD_WARNING)
+
+
+def select_test(test_name="TEST"):
+    """
+    Select proper test mode.
+
+    :param test_name: test name
+    :type test_name: str
+    :return: None
+    """
+    error_flag_2 = 0
+    if test_name == "TESTCOV" or test_name == "TESTCOV2":
+        cov = coverage.Coverage()
+        cov.start()
+    error_flag_1 = doctest.testfile(
+        "test.py",
+        optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
+        | doctest.IGNORE_EXCEPTION_DETAIL,
+        verbose=False)[0]
+    if test_name == "TESTCOV2":
+        error_flag_2 = doctest.testfile(
+            "test2.py",
+            optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
+            verbose=False)[0]
+    error_flag = error_flag_1 + error_flag_2
+    if test_name == "TESTCOV" or test_name == "TESTCOV2":
+        cov.stop()
+        cov.report()
+        cov.save()
+    if error_flag == 0:
+        print("\n" + test_name + " Passed")
+        sys.exit(error_flag)
+    else:
+        print("\n" + test_name + " Failed")
+        sys.exit(error_flag)
+
 
 if __name__ == "__main__":
     args = sys.argv
     if len(args) > 1:
         if args[1].upper() == "TESTCOV":
-            cov = coverage.Coverage()
-            cov.start()
-            error_flag = doctest.testfile(
-                "test.py",
-                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
-                | doctest.IGNORE_EXCEPTION_DETAIL,
-                verbose=False)[0]
-            cov.stop()
-            cov.report()
-            cov.save()
-            sys.exit(error_flag)
+            select_test("TESTCOV")
         elif args[1].upper() == "TEST":
-            error_flag = doctest.testfile(
-                "test.py",
-                optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
-                verbose=False)[0]
-            if error_flag == 0:
-                print("\nTest Passed")
-                sys.exit(error_flag)
-            else:
-                print("\nTest Failed")
-                sys.exit(error_flag)
+            select_test("TEST")
+        elif args[1].upper() == "TESTCOV2":
+            select_test("TESTCOV2")
         elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":
@@ -49,7 +71,7 @@ if __name__ == "__main__":
                     'w',
                     zipfile.ZIP_DEFLATED)
                 print("Generating . . . ")
-                for font in font_map.keys():
+                for font in FONT_MAP.keys():
                     tsave(
                         args[2],
                         filename=os.path.join(
@@ -68,7 +90,12 @@ if __name__ == "__main__":
                       str(os.path.join("ARTFonts", "ALL_FONT" + '.zip')))
             elif args[1].upper() == "TEXT":
                 if len(args) > 3:
-                    tprint(args[2], font=args[3])
+                    try:
+                        tprint(args[2], font=args[3])
+                    except artError as e:
+                        print(str(e))
+                    except UnicodeEncodeError:
+                        print(FONT_ENVIRONMENT_WARNING)
                 else:
                     tprint(args[2])
             elif args[1].upper() == "SAVE":
@@ -82,7 +109,7 @@ if __name__ == "__main__":
                 except artError as e:
                     print(str(e))
                 except UnicodeEncodeError:
-                    print("[Warning] This art is not printable in this environment")
+                    print(ART_ENVIRONMENT_WARNING)
             else:
                 help_func()
         else:

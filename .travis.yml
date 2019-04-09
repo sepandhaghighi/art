@@ -32,5 +32,3 @@ before_script:
   - chmod +x otherfile/test.sh
 script:
   - ./otherfile/test.sh
-after_success:
-  - codecov
