@@ -153,7 +153,8 @@ RANDOM_FILTERED_FONTS = [
     "flip",
     "dwhistled",
     "white_bubble",
-    "smallcaps2"]
+    "smallcaps2",
+    "superscript"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -168,7 +169,8 @@ TEST_FILTERED_FONTS = [
     "mirror_flip",
     "flip",
     "white_bubble",
-    "smallcaps2"]
+    "smallcaps2",
+    "superscript"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -502,7 +504,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "mirror": [mirror_dic, False],
             "mirror_flip": [mirror_flip_dic, False],
             "white_bubble": [white_bubble_dic, False],
-            "smallcaps2": [smallcaps2_dic, False]
+            "smallcaps2": [smallcaps2_dic, False],
+            "superscript": [superscript_dic,False]
 
             }
 
