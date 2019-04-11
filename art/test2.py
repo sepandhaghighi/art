@@ -12,6 +12,8 @@
 ʇsǝʇ
 <BLANKLINE>
 ᴛᴇsᴛ
+ₜₑₛₜ
+<BLANKLINE>
 <BLANKLINE>
 ᵗᵉˢᵗ
 <BLANKLINE>
@@ -28,6 +30,8 @@ Filename: mirror_flip.txt
 Saved!
 Filename: smallcaps2.txt
 Saved!
+Filename: subscript.txt
+Saved!
 Filename: superscript.txt
 Saved!
 Filename: white_bubble.txt
@@ -37,5 +41,6 @@ Filename: white_bubble.txt
 >>> os.remove("white_bubble.txt")
 >>> os.remove("smallcaps2.txt")
 >>> os.remove("superscript.txt")
+>>> os.remove("subscript.txt")
 
 '''
