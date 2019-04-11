@@ -507,8 +507,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "mirror_flip": [mirror_flip_dic, False],
             "white_bubble": [white_bubble_dic, False],
             "smallcaps2": [smallcaps2_dic, False],
-            "superscript": [superscript_dic,False],
-            "subscript": [subscript_dic,False]
+            "superscript": [superscript_dic, False],
+            "subscript": [subscript_dic, False]
 
             }
 
