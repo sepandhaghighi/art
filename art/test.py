@@ -4949,7 +4949,7 @@ True
 >>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == (FONT_COUNTER - len(RANDOM_FILTERED_FONTS))
 True
 >>> for font in FONT_MAP.keys():
-...     for letter in string.ascii_letters + string.punctuation + string.digits:
+...     for letter in string.ascii_letters + string.punctuation + string.digits + " ":
 ...         Data = text2art(letter,font,chr_ignore=False)
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
