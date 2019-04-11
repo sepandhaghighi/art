@@ -11,6 +11,8 @@
 <BLANKLINE>
 ʇsǝʇ
 <BLANKLINE>
+ᴛᴇsᴛ
+<BLANKLINE>
 ⓣⓔⓢⓣ
 <BLANKLINE>
 >>> for i in sorted(TEST_FILTERED_FONTS):
@@ -22,10 +24,13 @@ Filename: mirror.txt
 Saved!
 Filename: mirror_flip.txt
 Saved!
+Filename: smallcaps2.txt
+Saved!
 Filename: white_bubble.txt
 >>> os.remove("flip.txt")
 >>> os.remove("mirror.txt")
 >>> os.remove("mirror_flip.txt")
 >>> os.remove("white_bubble.txt")
+>>> os.remove("smallcaps2.txt")
 
 '''
