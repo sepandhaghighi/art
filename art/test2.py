@@ -9,6 +9,8 @@
 <BLANKLINE>
 ɈƨǝɈ
 <BLANKLINE>
+ｔｅｓｔ
+<BLANKLINE>
 ʇsǝʇ
 <BLANKLINE>
 ᴛᴇsᴛ
@@ -23,6 +25,8 @@
 ...	    Data = tsave("test@34",font=i,filename=i)
 Saved!
 Filename: flip.txt
+Saved!
+Filename: full_width.txt
 Saved!
 Filename: mirror.txt
 Saved!
@@ -42,5 +46,6 @@ Filename: white_bubble.txt
 >>> os.remove("smallcaps2.txt")
 >>> os.remove("superscript.txt")
 >>> os.remove("subscript.txt")
+>>> os.remove("full_width.txt")
 
 '''
