@@ -6,11 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 4 new fonts
+- 5 new fonts
 	1. white_bubble
 	2. smallcaps2
 	3. superscript
 	4. subscript
+	5. full_width
 ## [3.3] - 2019-04-10
 ### Added
 - 3 new fonts
