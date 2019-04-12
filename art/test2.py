@@ -7,9 +7,9 @@
 ...	    tprint("test",font=i)
 ϝԍƨϝ
 <BLANKLINE>
-ɈƨǝɈ
-<BLANKLINE>
 ｔｅｓｔ
+<BLANKLINE>
+ɈƨǝɈ
 <BLANKLINE>
 ʇsǝʇ
 <BLANKLINE>
