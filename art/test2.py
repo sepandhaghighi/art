@@ -16,7 +16,6 @@
 ᴛᴇsᴛ
 ₜₑₛₜ
 <BLANKLINE>
-<BLANKLINE>
 ᵗᵉˢᵗ
 <BLANKLINE>
 ⓣⓔⓢⓣ
