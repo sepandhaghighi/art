@@ -39,5 +39,13 @@ Saved!
 Filename: superscript.txt
 Saved!
 Filename: white_bubble.txt
+>>> os.remove("flip.txt")
+>>> os.remove("mirror.txt")
+>>> os.remove("mirror_flip.txt")
+>>> os.remove("white_bubble.txt")
+>>> os.remove("smallcaps2.txt")
+>>> os.remove("superscript.txt")
+>>> os.remove("subscript.txt")
+>>> os.remove("full_width.txt")
 
 '''
