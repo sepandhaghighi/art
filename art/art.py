@@ -220,10 +220,10 @@ def tsave(
             raise Exception(TEXT_TYPE_ERROR)
         files_list = os.listdir(os.getcwd())
         extension = ".txt"
-        splited_filename = filename.split(".")
-        name = splited_filename[0]
-        if len(splited_filename) > 1:
-            extension = "." + splited_filename[1]
+        splitted_filename = filename.split(".")
+        name = splitted_filename[0]
+        if len(splitted_filename) > 1:
+            extension = "." + splitted_filename[1]
         index = 2
         test_name = name
         while(True):
