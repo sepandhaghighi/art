@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	3. superscript
 	4. subscript
 	5. full_width
+- `text2art` function support of `\n`
+### Changed
+- `tprint` function modified
+- `tsave` function modified
 ## [3.3] - 2019-04-10
 ### Added
 - 3 new fonts
