@@ -180,7 +180,7 @@ def randart():
 
 def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     r"""
-    Split text by \n then call text2art function.
+    Print art text (support \n).
 
     :param text: input text
     :type text:str
@@ -201,7 +201,7 @@ def tsave(
         chr_ignore=True,
         print_status=True):
     """
-    Save ascii art.
+    Save ascii art (support \n).
 
     :param text: input text
     :param font: input font
@@ -333,6 +333,19 @@ def indirect_font(font, fonts, text):
 
 
 def __word2art(word, font, chr_ignore, letters):
+    """
+    Return art word.
+
+    :param word: input word
+    :type word: str
+    :param font: input font
+    :type font: str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore: bool
+    :param letters: font letters table
+    :type letters: dict
+    :return: ascii art as str
+    """
     split_list = []
     result_list = []
     splitter = "\n"
@@ -369,8 +382,8 @@ def __word2art(word, font, chr_ignore, letters):
     return result
 
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
-    """
-    Return art text.
+    r"""
+    Return art text (support \n).
 
     :param text: input text
     :type text:str
