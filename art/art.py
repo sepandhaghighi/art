@@ -216,7 +216,8 @@ def tsave(
     :return: None
     """
     try:
-        split_list = text.split("\n")
+        if isinstance(text, str) is False:
+            raise Exception(TEXT_TYPE_ERROR)
         files_list = os.listdir(os.getcwd())
         extension = ".txt"
         splited_filename = filename.split(".")
@@ -235,11 +236,7 @@ def tsave(
             file = codecs.open(test_name + extension, "w", encoding='utf-8')
         else:
             file = open(test_name + extension, "w")
-        result = ""
-        for item in split_list:
-            if len(item) != 0:
-                result = result + \
-                    text2art(item, font=font, chr_ignore=chr_ignore)
+        result = text2art(text, font=font, chr_ignore=chr_ignore)
         file.write(result)
         file.close()
         if print_status:
