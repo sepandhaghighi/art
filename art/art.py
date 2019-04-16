@@ -190,13 +190,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     """
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    split_list = text.split("\n")
-    result = ""
-    for item in split_list:
-        if len(item) != 0:
-            result = result + text2art(item, font=font, chr_ignore=chr_ignore)
+    result = text2art(text, font=font, chr_ignore=chr_ignore)
     print(result)
 
 
