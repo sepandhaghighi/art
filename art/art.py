@@ -381,6 +381,7 @@ def __word2art(word, font, chr_ignore, letters):
         result += splitter
     return result
 
+
 def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     r"""
     Return art text (support \n).
@@ -411,7 +412,10 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     result = ""
     for word in word_list:
         if len(word) != 0:
-            result = result + __word2art(word=word, font=font, chr_ignore=chr_ignore, letters=letters)
+            result = result + __word2art(word=word,
+                                         font=font,
+                                         chr_ignore=chr_ignore,
+                                         letters=letters)
     return result
 
 
