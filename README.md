@@ -219,6 +219,26 @@ ___ ____ ____ ___
  |  |___ [__   |  
  |  |___ ___]  | 
 
+>>> print(text2art('''Lorem  
+ipsum 
+dolor''', font="small")) # Multi-line print
+ _                            
+| |    ___  _ _  ___  _ __    
+| |__ / _ \| '_|/ -_)| '  \   
+|____|\___/|_|  \___||_|_|_|  
+                              
+ _                         
+(_) _ __  ___ _  _  _ __   
+| || '_ \(_-<| || || '  \  
+|_|| .__//__/ \_,_||_|_|_| 
+   |_|                     
+    _       _           
+ __| | ___ | | ___  _ _ 
+/ _` |/ _ \| |/ _ \| '_|
+\__,_|\___/|_|\___/|_|  
+                        
+
+
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -273,9 +293,9 @@ ___ ____ ____ ___
 Traceback (most recent call last):
        ...
 art.art.artError: س is invalid
->>> tprint('''Lorem  # Multi-line print
+>>> tprint('''Lorem  
 ipsum 
-dolor''', font="cybermedium")
+dolor''', font="cybermedium") # Multi-line print
 _    ____ ____ ____ _  _    
 |    |  | |__/ |___ |\/|    
 |___ |__| |  \ |___ |  |    
