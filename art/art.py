@@ -341,36 +341,11 @@ def indirect_font(font, fonts, text):
     return font
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
-    """
-    Return art text.
-
-    :param text: input text
-    :type text:str
-    :param font: input font
-    :type font:str
-    :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
-    :return: ascii art text as str
-    """
+def __word2art(word, font, chr_ignore, letters):
     split_list = []
     result_list = []
-    letters = standard_dic
-    text_temp = text
     splitter = "\n"
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    if isinstance(font, str) is False:
-        raise artError(FONT_TYPE_ERROR)
-    font = font.lower()
-    fonts = sorted(FONT_MAP.keys())
-    font = indirect_font(font, fonts, text)
-    letters = FONT_MAP[font][0]
-    if FONT_MAP[font][1]:
-        text_temp = text.lower()
-    if font in UPPERCASE_FONTS:
-        text_temp = text.upper()
-    for i in text_temp:
+    for i in word:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
             continue
         if (i not in letters.keys()):
@@ -400,6 +375,39 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     result = (splitter).join(result_list)
     if result[-1] != "\n":
         result += splitter
+    return result
+
+def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
+    """
+    Return art text.
+
+    :param text: input text
+    :type text:str
+    :param font: input font
+    :type font:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :return: ascii art text as str
+    """
+    letters = standard_dic
+    text_temp = text
+    if isinstance(text, str) is False:
+        raise artError(TEXT_TYPE_ERROR)
+    if isinstance(font, str) is False:
+        raise artError(FONT_TYPE_ERROR)
+    font = font.lower()
+    fonts = sorted(FONT_MAP.keys())
+    font = indirect_font(font, fonts, text)
+    letters = FONT_MAP[font][0]
+    if FONT_MAP[font][1]:
+        text_temp = text.lower()
+    if font in UPPERCASE_FONTS:
+        text_temp = text.upper()
+    word_list = text_temp.split("\n")
+    result = ""
+    for word in word_list:
+        if len(word) != 0:
+            result = result + __word2art(word=word, font=font, chr_ignore=chr_ignore, letters=letters)
     return result
 
 
