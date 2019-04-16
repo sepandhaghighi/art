@@ -200,7 +200,7 @@ def tsave(
         filename="art",
         chr_ignore=True,
         print_status=True):
-    """
+    r"""
     Save ascii art (support \n).
 
     :param text: input text
