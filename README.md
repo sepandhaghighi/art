@@ -468,7 +468,7 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
                                                                                             
 ```
 	
-#### 6. Wizard	
+#### 7. Wizard	
 
 This mode consider length of input text to select font
 
@@ -514,7 +514,7 @@ d88P d88P d88P d88P d88P
                                              
 ```
 
-#### 7. Random Non-ASCII
+#### 8. Random Non-ASCII
 
 Randomly select from Non-ASCII fonts.	
 
