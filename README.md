@@ -514,6 +514,20 @@ d88P d88P d88P d88P d88P
                                              
 ```
 
+#### 7. Random Non-ASCII
+
+Randomly select from Non-ASCII fonts.	
+
+Keywords : `random-na`, `rand-na` & `rnd-na`
+
+```pycon
+>>> tprint("test","random-na")
+₮Ɇ₴₮
+
+```
+⚠️ Non-ASCII fonts are only available in `Font name` and `Random None-ASCII` modes	
+
+
 ### Typo-tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
