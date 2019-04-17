@@ -5,6 +5,10 @@
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
 ...	    tprint("test",font=i)
+тєѕт
+<BLANKLINE>
+₮Ɇ₴₮
+<BLANKLINE>
 ϝԍƨϝ
 <BLANKLINE>
 ｔｅｓｔ
@@ -23,6 +27,10 @@
 <BLANKLINE>
 >>> for i in sorted(TEST_FILTERED_FONTS):
 ...	    Data = tsave("test@34",font=i,filename=i)
+Saved!
+Filename: antrophobia.txt
+Saved!
+Filename: currency.txt
 Saved!
 Filename: flip.txt
 Saved!
@@ -47,5 +55,7 @@ Filename: white_bubble.txt
 >>> os.remove("superscript.txt")
 >>> os.remove("subscript.txt")
 >>> os.remove("full_width.txt")
+>>> os.remove("antrophobia.txt")
+>>> os.remove("currency.txt")
 
 '''
