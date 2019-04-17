@@ -238,6 +238,8 @@ dolor''', font="small")) # Multi-line print
 \__,_|\___/|_|\___/|_|  
                         
 
+>>> print(text2art("test","white_bubble"))  # Non-ASCII font example
+ⓣⓔⓢⓣ
 
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
