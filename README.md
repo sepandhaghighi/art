@@ -520,6 +520,8 @@ Randomly select from Non-ASCII fonts.
 
 Keywords : `random-na`, `rand-na` & `rnd-na`
 
+* Note : New in `Version 3.4`
+
 ```pycon
 >>> tprint("test","random-na")
 ₮Ɇ₴₮
