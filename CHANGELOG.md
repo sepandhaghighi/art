@@ -6,12 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 5 new fonts
+- 7 new fonts
 	1. white_bubble
 	2. smallcaps2
 	3. superscript
 	4. subscript
 	5. full_width
+	6. currency
+	7. antrophobia
 - `text2art` function support of `\n`
 ### Changed
 - `tprint` function modified
