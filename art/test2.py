@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
 >>> import os
+>>> import random
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
@@ -25,6 +26,12 @@
 <BLANKLINE>
 ⓣⓔⓢⓣ
 <BLANKLINE>
+>>> random.seed(24)
+>>> Art = text2art("test","rnd-na")
+>>> random.seed(45)
+>>> Art2 = text2art("test","rnd-na")
+>>> Art == Art2
+False
 >>> for i in sorted(TEST_FILTERED_FONTS):
 ...	    Data = tsave("test@34",font=i,filename=i)
 Saved!
