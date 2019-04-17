@@ -686,6 +686,8 @@ or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com
 3. [ASCII Generator](http://www.network-science.de/ascii/)
 4. [Asky](https://asky.io/)
 5. [Flipyourtext](https://www.flipyourtext.com/)
+6. [YayText](https://yaytext.com)
+7. [Coolletters](http://www.coolletters.net/)
 
 ## Donate to our project
 								
