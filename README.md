@@ -524,6 +524,9 @@ Keywords : `random-na`, `rand-na` & `rnd-na`
 >>> tprint("test","random-na")
 ₮Ɇ₴₮
 
+>>> tprint("test","random-na")
+ʇsǝʇ
+
 ```
 ⚠️ Non-ASCII fonts are only available in `Font name` and `Random None-ASCII` modes	
 
