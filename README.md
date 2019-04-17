@@ -176,13 +176,13 @@ art.art.artError: number should have int type
 	
 ⚠️ Some fonts don't support all characters		
 
-⚠️ Some environments don't support all fonts
+⚠️ From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
 
 #### 1. text2art				
 
-This function return ascii text as `str` in normal mode and raise `artError` in exception.
+This function return ASCII text as `str` in normal mode and raise `artError` in exception.
 ```pycon	
->>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
+>>> Art=text2art("art") # Return ASCII text (default font) and default chr_ignore=True 
 >>> print(Art)
               _   
   __ _  _ __ | |_ 
@@ -191,7 +191,7 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
  \__,_||_|    \__|
                   
                      
->>> Art=text2art("art",font='block',chr_ignore=True) # Return ascii text with block font
+>>> Art=text2art("art",font='block',chr_ignore=True) # Return ASCII text with block font
 >>> print(Art)
 
 
@@ -247,9 +247,9 @@ art.art.artError: س is invalid
 ```
 #### 2. tprint				
 
-This function print ascii text in normal mode (return None) and raise `artError` in exception.
+This function print ASCII text in normal mode (return None) and raise `artError` in exception.
 ```pycon
->>> tprint("art") # print ascii text (default font) 
+>>> tprint("art") # print ASCII text (default font) 
               _   
   __ _  _ __ | |_ 
  / _` || '__|| __|
@@ -257,7 +257,7 @@ This function print ascii text in normal mode (return None) and raise `artError`
  \__,_||_|    \__|
                   
 
->>> tprint("art",font="block",chr_ignore=True) # print ascii text (block font)
+>>> tprint("art",font="block",chr_ignore=True) # print ASCII text (block font)
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -314,12 +314,12 @@ ___  ____ _    ____ ____
 
 This function return `dict` in normal and exception mode.
 ```pycon
->>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
+>>> Response=tsave("art",filename="test.txt") # save ASCII text in test.txt file with save message (print_status==True) # return dict
 Saved! 
 Filename: test.txt
 >>> Response["Message"]
 'OK'
->>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
+>>> Response=tsave("art",filename="test.txt",print_status=False) # save ASCII text in test.txt file without save message (print_status==False)
 >>> Response["Message"]
 'OK'
 >>> Response["Status"]
