@@ -533,7 +533,7 @@ Keywords : `random-na`, `rand-na` & `rnd-na`
 ʇsǝʇ
 
 ```
-⚠️ Non-ASCII fonts are only available in `Font name` and `Random None-ASCII` modes	
+⚠️ Non-ASCII fonts are only available in `Font name` and `Random Non-ASCII` modes	
 
 
 ### Typo-tolerance			
