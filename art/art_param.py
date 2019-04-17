@@ -516,7 +516,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "superscript": [superscript_dic, False],
             "subscript": [subscript_dic, False],
             "full_width": [full_width_dic, False],
-            "antrophobia": [antrophobia_dic,False],
+            "antrophobia": [antrophobia_dic, False],
             "currency": [currency_dic, False]
 
             }
