@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `tprint` function modified
 - `tsave` function modified
+- `README.md` modified
 ## [3.3] - 2019-04-10
 ### Added
 - 3 new fonts
