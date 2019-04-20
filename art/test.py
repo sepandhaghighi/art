@@ -4706,11 +4706,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _____     _____
-__   __|___ /    |___ /
-\ \ / /  |_ \      |_ \
- \ V /  ___) | _  ___) |
-  \_/  |____/ (_)|____/
+        _____     _  _
+__   __|___ /    | || |
+\ \ / /  |_ \    | || |_
+ \ V /  ___) | _ |__   _|
+  \_/  |____/ (_)   |_|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4863,7 +4863,7 @@ Traceback (most recent call last):
 art.art.artError: س is invalid.
 >>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
-"'int' object has no attribute 'split'"
+"The 'text' type must be str."
 >>> Data["Status"]
 False
 >>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
@@ -4949,7 +4949,7 @@ True
 >>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == (FONT_COUNTER - len(RANDOM_FILTERED_FONTS))
 True
 >>> for font in FONT_MAP.keys():
-...     for letter in string.ascii_letters + string.punctuation + string.digits:
+...     for letter in string.ascii_letters + string.punctuation + string.digits + " ":
 ...         Data = text2art(letter,font,chr_ignore=False)
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")

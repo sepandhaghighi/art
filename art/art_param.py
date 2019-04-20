@@ -4,7 +4,7 @@ from .text_dic1 import *
 from .text_dic2 import *
 from .art_dic import *
 
-VERSION = "3.3"  # pragma: no cover
+VERSION = "3.4"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -151,7 +151,14 @@ RANDOM_FILTERED_FONTS = [
     "mirror",
     "mirror_flip",
     "flip",
-    "dwhistled"]
+    "dwhistled",
+    "white_bubble",
+    "smallcaps2",
+    "superscript",
+    "subscript",
+    "full_width",
+    "antrophobia",
+    "currency"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -161,7 +168,17 @@ RANDOM_FILTERED_ARTS = [
     "musical"]
 
 
-TEST_FILTERED_FONTS = ["mirror", "mirror_flip", "flip"]
+TEST_FILTERED_FONTS = [
+    "mirror",
+    "mirror_flip",
+    "flip",
+    "white_bubble",
+    "smallcaps2",
+    "superscript",
+    "subscript",
+    "full_width",
+    "antrophobia",
+    "currency"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -493,7 +510,14 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "nfi1": [nfi1_dic, False],
             "flip": [flip_dic, False],
             "mirror": [mirror_dic, False],
-            "mirror_flip": [mirror_flip_dic, False]
+            "mirror_flip": [mirror_flip_dic, False],
+            "white_bubble": [white_bubble_dic, False],
+            "smallcaps2": [smallcaps2_dic, False],
+            "superscript": [superscript_dic, False],
+            "subscript": [subscript_dic, False],
+            "full_width": [full_width_dic, False],
+            "antrophobia": [antrophobia_dic, False],
+            "currency": [currency_dic, False]
 
             }
 

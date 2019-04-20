@@ -11,7 +11,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-378-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-385-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-350-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
@@ -64,7 +64,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">378</td>
+		<td align="center">385</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -176,13 +176,13 @@ art.art.artError: number should have int type
 	
 ⚠️ Some fonts don't support all characters		
 
-⚠️ Some environments don't support all fonts
+⚠️ From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
 
 #### 1. text2art				
 
-This function return ascii text as `str` in normal mode and raise `artError` in exception.
+This function return ASCII text as `str` in normal mode and raise `artError` in exception.
 ```pycon	
->>> Art=text2art("art") # Return ascii text (default font) and default chr_ignore=True 
+>>> Art=text2art("art") # Return ASCII text (default font) and default chr_ignore=True 
 >>> print(Art)
               _   
   __ _  _ __ | |_ 
@@ -191,7 +191,7 @@ This function return ascii text as `str` in normal mode and raise `artError` in 
  \__,_||_|    \__|
                   
                      
->>> Art=text2art("art",font='block',chr_ignore=True) # Return ascii text with block font
+>>> Art=text2art("art",font='block',chr_ignore=True) # Return ASCII text with block font
 >>> print(Art)
 
 
@@ -219,6 +219,28 @@ ___ ____ ____ ___
  |  |___ [__   |  
  |  |___ ___]  | 
 
+>>> print(text2art('''Lorem  
+ipsum 
+dolor''', font="small")) # Multi-line print
+ _                            
+| |    ___  _ _  ___  _ __    
+| |__ / _ \| '_|/ -_)| '  \   
+|____|\___/|_|  \___||_|_|_|  
+                              
+ _                         
+(_) _ __  ___ _  _  _ __   
+| || '_ \(_-<| || || '  \  
+|_|| .__//__/ \_,_||_|_|_| 
+   |_|                     
+    _       _           
+ __| | ___ | | ___  _ _ 
+/ _` |/ _ \| |/ _ \| '_|
+\__,_|\___/|_|\___/|_|  
+                        
+
+>>> print(text2art("test","white_bubble"))  # Non-ASCII font example
+ⓣⓔⓢⓣ
+
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -227,9 +249,9 @@ art.art.artError: س is invalid
 ```
 #### 2. tprint				
 
-This function print ascii text in normal mode (return None) and raise `artError` in exception.
+This function print ASCII text in normal mode (return None) and raise `artError` in exception.
 ```pycon
->>> tprint("art") # print ascii text (default font) 
+>>> tprint("art") # print ASCII text (default font) 
               _   
   __ _  _ __ | |_ 
  / _` || '__|| __|
@@ -237,7 +259,7 @@ This function print ascii text in normal mode (return None) and raise `artError`
  \__,_||_|    \__|
                   
 
->>> tprint("art",font="block",chr_ignore=True) # print ascii text (block font)
+>>> tprint("art",font="block",chr_ignore=True) # print ASCII text (block font)
 
  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. |
@@ -273,9 +295,9 @@ ___ ____ ____ ___
 Traceback (most recent call last):
        ...
 art.art.artError: س is invalid
->>> tprint('''Lorem  # Multi-line print
+>>> tprint('''Lorem  
 ipsum 
-dolor''', font="cybermedium")
+dolor''', font="cybermedium") # Multi-line print
 _    ____ ____ ____ _  _    
 |    |  | |__/ |___ |\/|    
 |___ |__| |  \ |___ |  |    
@@ -294,12 +316,12 @@ ___  ____ _    ____ ____
 
 This function return `dict` in normal and exception mode.
 ```pycon
->>> Response=tsave("art",filename="test.txt") # save ascii text in test.txt file with save message (print_status==True) # return dict
+>>> Response=tsave("art",filename="test.txt") # save ASCII text in test.txt file with save message (print_status==True) # return dict
 Saved! 
 Filename: test.txt
 >>> Response["Message"]
 'OK'
->>> Response=tsave("art",filename="test.txt",print_status=False) # save ascii text in test.txt file without save message (print_status==False)
+>>> Response=tsave("art",filename="test.txt",print_status=False) # save ASCII text in test.txt file without save message (print_status==False)
 >>> Response["Message"]
 'OK'
 >>> Response["Status"]
@@ -332,6 +354,9 @@ These modes are available for `text2art`, `tprint` & `tsave`.
 | |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'
+
+>>> tprint("art","white_bubble")
+ⓐⓡⓣ
 
 ```	
 
@@ -446,7 +471,7 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
                                                                                             
 ```
 	
-#### 6. Wizard	
+#### 7. Wizard	
 
 This mode consider length of input text to select font
 
@@ -491,6 +516,25 @@ d88P d88P d88P d88P d88P
                                              
                                              
 ```
+
+#### 8. Random Non-ASCII
+
+Randomly select from Non-ASCII fonts.	
+
+Keywords : `random-na`, `rand-na` & `rnd-na`
+
+* Note : New in `Version 3.4`
+
+```pycon
+>>> tprint("test","random-na")
+₮Ɇ₴₮
+
+>>> tprint("test","random-na")
+ʇsǝʇ
+
+```
+⚠️ Non-ASCII fonts are only available in `Font name` and `Random Non-ASCII` modes	
+
 
 ### Typo-tolerance			
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
@@ -666,6 +710,8 @@ or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com
 3. [ASCII Generator](http://www.network-science.de/ascii/)
 4. [Asky](https://asky.io/)
 5. [Flipyourtext](https://www.flipyourtext.com/)
+6. [YayText](https://yaytext.com)
+7. [Coolletters](http://www.coolletters.net/)
 
 ## Donate to our project
 								

@@ -9,7 +9,7 @@ except ImportError:
 MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
     It involves the smart placement of typed special characters or
     letters to make a visual shape that is spread over multiple lines of text.
-    Art is a Python lib for text converting to ASCII ART fancy.'''
+    ART is a Python lib for text converting to ASCII art fancy.'''
 
 
 def get_requires():
@@ -35,7 +35,7 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='3.3',
+    version='3.4',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',

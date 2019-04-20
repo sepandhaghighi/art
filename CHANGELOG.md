@@ -5,6 +5,23 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.4] - 2019-04-20
+### Added
+- 7 new fonts
+	1. white_bubble
+	2. smallcaps2
+	3. superscript
+	4. subscript
+	5. full_width
+	6. currency
+	7. antrophobia
+- `text2art` function support of `\n`
+- `rnd-na` mode
+### Changed
+- `tprint` function modified
+- `tsave` function modified
+- `README.md` modified
+- `random` mode modified
 ## [3.3] - 2019-04-10
 ### Added
 - 3 new fonts
@@ -886,7 +903,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.3...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.4...dev
+[3.4]: https://github.com/sepandhaghighi/art/compare/v3.3...v3.4
 [3.3]: https://github.com/sepandhaghighi/art/compare/v3.2...v3.3
 [3.2]: https://github.com/sepandhaghighi/art/compare/v3.1...v3.2
 [3.1]: https://github.com/sepandhaghighi/art/compare/v3.0...v3.1

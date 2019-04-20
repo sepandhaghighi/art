@@ -7,7 +7,9 @@ Please consider the following :
 1. Fork it!
 2. Create your feature branch (under `dev` branch)
 3. Add standard `docstring` to your functions
-4. Add tests for new features (`doctest` testcases in `test.py`)
+4. Add tests for new features (`doctest` testcases)
+	- Non-ASCII fonts in `test2.py`
+	- Other in `test.py`
 5. Pass all CI tests
 6. Update `CHANGELOG.md`
 	- Describe changes under `[Unreleased]` section

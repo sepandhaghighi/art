@@ -180,7 +180,7 @@ def randart():
 
 def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     r"""
-    Split text by \n then call text2art function.
+    Print art text (support \n).
 
     :param text: input text
     :type text:str
@@ -190,13 +190,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     """
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    split_list = text.split("\n")
-    result = ""
-    for item in split_list:
-        if len(item) != 0:
-            result = result + text2art(item, font=font, chr_ignore=chr_ignore)
+    result = text2art(text, font=font, chr_ignore=chr_ignore)
     print(result)
 
 
@@ -206,8 +200,8 @@ def tsave(
         filename="art",
         chr_ignore=True,
         print_status=True):
-    """
-    Save ascii art.
+    r"""
+    Save ascii art (support \n).
 
     :param text: input text
     :param font: input font
@@ -222,13 +216,14 @@ def tsave(
     :return: None
     """
     try:
-        split_list = text.split("\n")
+        if isinstance(text, str) is False:
+            raise Exception(TEXT_TYPE_ERROR)
         files_list = os.listdir(os.getcwd())
         extension = ".txt"
-        splited_filename = filename.split(".")
-        name = splited_filename[0]
-        if len(splited_filename) > 1:
-            extension = "." + splited_filename[1]
+        splitted_filename = filename.split(".")
+        name = splitted_filename[0]
+        if len(splitted_filename) > 1:
+            extension = "." + splitted_filename[1]
         index = 2
         test_name = name
         while(True):
@@ -241,11 +236,7 @@ def tsave(
             file = codecs.open(test_name + extension, "w", encoding='utf-8')
         else:
             file = open(test_name + extension, "w")
-        result = ""
-        for item in split_list:
-            if len(item) != 0:
-                result = result + \
-                    text2art(item, font=font, chr_ignore=chr_ignore)
+        result = text2art(text, font=font, chr_ignore=chr_ignore)
         file.write(result)
         file.close()
         if print_status:
@@ -330,10 +321,14 @@ def indirect_font(font, fonts, text):
         font = random.choice(RND_SIZE_DICT["xlarge_list"])
         return font
     if font == "random" or font == "rand" or font == "rnd":
-        font = random.choice(fonts)
+        filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
+        font = random.choice(filtered_fonts)
         return font
     if font == "wizard" or font == "wiz" or font == "magic":
         font = wizard_font(text)
+        return font
+    if font == "rnd-na" or font == "random-na" or font == "rand-na":
+        font = random.choice(TEST_FILTERED_FONTS)
         return font
     if font not in FONT_MAP.keys():
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
@@ -341,36 +336,24 @@ def indirect_font(font, fonts, text):
     return font
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
+def __word2art(word, font, chr_ignore, letters):
     """
-    Return art text.
+    Return art word.
 
-    :param text: input text
-    :type text:str
+    :param word: input word
+    :type word: str
     :param font: input font
-    :type font:str
+    :type font: str
     :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
-    :return: ascii art text as str
+    :type chr_ignore: bool
+    :param letters: font letters table
+    :type letters: dict
+    :return: ascii art as str
     """
     split_list = []
     result_list = []
-    letters = standard_dic
-    text_temp = text
     splitter = "\n"
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    if isinstance(font, str) is False:
-        raise artError(FONT_TYPE_ERROR)
-    font = font.lower()
-    fonts = sorted(FONT_MAP.keys())
-    font = indirect_font(font, fonts, text)
-    letters = FONT_MAP[font][0]
-    if FONT_MAP[font][1]:
-        text_temp = text.lower()
-    if font in UPPERCASE_FONTS:
-        text_temp = text.upper()
-    for i in text_temp:
+    for i in word:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
             continue
         if (i not in letters.keys()):
@@ -400,6 +383,43 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     result = (splitter).join(result_list)
     if result[-1] != "\n":
         result += splitter
+    return result
+
+
+def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
+    r"""
+    Return art text (support \n).
+
+    :param text: input text
+    :type text:str
+    :param font: input font
+    :type font:str
+    :param chr_ignore: ignore not supported character
+    :type chr_ignore:bool
+    :return: ascii art text as str
+    """
+    letters = standard_dic
+    text_temp = text
+    if isinstance(text, str) is False:
+        raise artError(TEXT_TYPE_ERROR)
+    if isinstance(font, str) is False:
+        raise artError(FONT_TYPE_ERROR)
+    font = font.lower()
+    fonts = sorted(FONT_MAP.keys())
+    font = indirect_font(font, fonts, text)
+    letters = FONT_MAP[font][0]
+    if FONT_MAP[font][1]:
+        text_temp = text.lower()
+    if font in UPPERCASE_FONTS:
+        text_temp = text.upper()
+    word_list = text_temp.split("\n")
+    result = ""
+    for word in word_list:
+        if len(word) != 0:
+            result = result + __word2art(word=word,
+                                         font=font,
+                                         chr_ignore=chr_ignore,
+                                         letters=letters)
     return result
 
 
