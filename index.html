@@ -38,10 +38,10 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
 |__]   |      ___] |___ |    |  | | \| |__/    |  | |  | |__] |  | | |__] |  | | 
                                                                                  
 
- _  _  ____  ____  ___  ____  _____  _  _    ___    ___ 
-( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  (__ )  (__ )
- \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    (_ \   (_ \
-  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (___/()(___/
+ _  _  ____  ____  ___  ____  _____  _  _    ___     __  
+( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  (__ )   /. | 
+ \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    (_ \  (_  _)
+  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (___/()  (_) 
 
 
 
@@ -50,7 +50,7 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
         <div style="margin-bottom:10px;">
         <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
         <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-        <a href="FontList.html" target="_blank"><img src="https://img.shields.io/badge/Font List-378-blue.svg"></a>
+        <a href="FontList.html" target="_blank"><img src="https://img.shields.io/badge/Font List-385-blue.svg"></a>
         <a href="ArtList.html" target="_blank"><img src="https://img.shields.io/badge/Art List-350-orange.svg"></a>
         <a href="http://github.com/sepandhaghighi/art"><img src="https://img.shields.io/badge/Github-Repo-green.svg"></a>
         <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
@@ -74,7 +74,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">378</td>
+		<td align="center">385</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -85,7 +85,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
         <hr/> 
     <h2>Source code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v3.3.zip">Version 3.3</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v3.4.zip">Version 3.4</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -94,7 +94,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 
 <ul>
     <li>Check <a href="https://packaging.python.org/installing/">Python Packaging User Guide</a></li>
-    <li><code>pip install art==3.3</code> or <code>pip3 install art==3.3</code> <span class="red"> Need root access </span></li>
+    <li><code>pip install art==3.4</code> or <code>pip3 install art==3.4</code> <span class="red"> Need root access </span></li>
 </ul>
 
 <h2>Conda </h2>
@@ -105,7 +105,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </ul>
 <h2>Easy install</h2>
 <ul>
-    <li>Run <code>easy_install "art==3.3"</code> <span class="red"> Need root access </span></li>
+    <li>Run <code>easy_install "art==3.4"</code> <span class="red"> Need root access </span></li>
 </ul>
 <h2>Note</h2>
     <ul>
@@ -198,94 +198,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </ol>
 <h2>ASCII text</h2>
 <p>⚠️ Some fonts don't support all characters</p>
+<p>⚠️ From <code>Version 3.3</code> Non-ASCII fonts added (These fonts are not compatible with some environments)</p>
 <ol>
 <li>text2art</li>
-<p>This function return ascii text as `str` in normal mode and raise `artError` in exception</p>
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># Return ascii text (default font) and default chr_ignore=True </span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
-<span style="color: #888888">              _   </span>
-<span style="color: #888888">  __ _  _ __ | |_ </span>
-<span style="color: #888888"> / _` || &#39;__|| __|</span>
-<span style="color: #888888">| (_| || |   | |_ </span>
-<span style="color: #888888"> \__,_||_|    \__|</span>
-<span style="color: #888888">                  </span>
-<span style="color: #888888">                     </span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;block&#39;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># Return ascii text with block font</span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
-
-
-<span style="color: #888888"> .----------------.  .----------------.  .----------------.</span>
-<span style="color: #888888">| .--------------. || .--------------. || .--------------. |</span>
-<span style="color: #888888">| |      __      | || |  _______     | || |  _________   | |</span>
-<span style="color: #888888">| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |</span>
-<span style="color: #888888">| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |</span>
-<span style="color: #888888">| |   / ____ \   | || |   |  __ /    | || |     | |      | |</span>
-<span style="color: #888888">| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |</span>
-<span style="color: #888888">| ||____|  |____|| || | |____| |___| | || |   |_____|    | |</span>
-<span style="color: #888888">| |              | || |              | || |              | |</span>
-<span style="color: #888888">| &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; |</span>
-<span style="color: #888888"> &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;</span>
-
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;random&quot;</span>) <span style="color: #888888"># random font mode</span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
-<span style="color: #888888"> |       | </span>
-<span style="color: #888888">~|~/~/(~~|~</span>
-<span style="color: #888888"> | \/__) | </span>
-<span style="color: #888888">           </span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;rand&quot;</span>) <span style="color: #888888"># random font mode</span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
-<span style="color: #888888">___ ____ ____ ___ </span>
-<span style="color: #888888"> |  |___ [__   |  </span>
-<span style="color: #888888"> |  |___ ___]  | </span>
-<span style="color: #888888"> </span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>text2art(<span style="background-color: #fff0f0">&quot;seسسس&quot;</span>,font<span style="color: #333333">=</span>DEFAULT_FONT,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception</span>
-<span style="color: #0044DD">Traceback (most recent call last):</span>
-        <span style="color: #333333">...</span>
-<span style="color: #FF0000">art.art.artError</span>: س is invalid    
-</pre></td></tr></table></div>
-    &nbsp;
-<li>tprint</li>
-<p>This function print ascii text in normal mode (return None) and raise `artError` in exception</p>
+<p>This function return ASCII text as `str` in normal mode and raise `artError` in exception</p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
  2
  3
@@ -343,7 +259,136 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 55
 56
 57
-58</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># print ascii text (default font) </span>
+58
+59
+60
+61
+62
+63</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># Return ASCII text (default font) and default chr_ignore=True </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888">              _   </span>
+<span style="color: #888888">  __ _  _ __ | |_ </span>
+<span style="color: #888888"> / _` || &#39;__|| __|</span>
+<span style="color: #888888">| (_| || |   | |_ </span>
+<span style="color: #888888"> \__,_||_|    \__|</span>
+<span style="color: #888888">                  </span>
+<span style="color: #888888">                     </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;block&#39;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># Return ASCII text with block font</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+
+
+<span style="color: #888888"> .----------------.  .----------------.  .----------------.</span>
+<span style="color: #888888">| .--------------. || .--------------. || .--------------. |</span>
+<span style="color: #888888">| |      __      | || |  _______     | || |  _________   | |</span>
+<span style="color: #888888">| |     /  \     | || | |_   __ \    | || | |  _   _  |  | |</span>
+<span style="color: #888888">| |    / /\ \    | || |   | |__) |   | || | |_/ | | \_|  | |</span>
+<span style="color: #888888">| |   / ____ \   | || |   |  __ /    | || |     | |      | |</span>
+<span style="color: #888888">| | _/ /    \ \_ | || |  _| |  \ \_  | || |    _| |_     | |</span>
+<span style="color: #888888">| ||____|  |____|| || | |____| |___| | || |   |_____|    | |</span>
+<span style="color: #888888">| |              | || |              | || |              | |</span>
+<span style="color: #888888">| &#39;--------------&#39; || &#39;--------------&#39; || &#39;--------------&#39; |</span>
+<span style="color: #888888"> &#39;----------------&#39;  &#39;----------------&#39;  &#39;----------------&#39;</span>
+
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;random&quot;</span>) <span style="color: #888888"># random font mode</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888"> |       | </span>
+<span style="color: #888888">~|~/~/(~~|~</span>
+<span style="color: #888888"> | \/__) | </span>
+<span style="color: #888888">           </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;rand&quot;</span>) <span style="color: #888888"># random font mode</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
+<span style="color: #888888">___ ____ ____ ___ </span>
+<span style="color: #888888"> |  |___ [__   |  </span>
+<span style="color: #888888"> |  |___ ___]  | </span>
+
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(text2art(<span style="background-color: #fff0f0">&#39;&#39;&#39;Lorem  </span>
+<span style="color: #888888">ipsum </span>
+<span style="color: #888888">dolor&#39;&#39;&#39;, font=&quot;small&quot;)) # Multi-line print</span>
+<span style="color: #888888"> _                            </span>
+<span style="color: #888888">| |    ___  _ _  ___  _ __    </span>
+<span style="color: #888888">| |__ / _ \| &#39;_|/ -_)| &#39;  \   </span>
+<span style="color: #888888">|____|\___/|_|  \___||_|_|_|  </span>
+<span style="color: #888888">                              </span>
+<span style="color: #888888"> _                         </span>
+<span style="color: #888888">(_) _ __  ___ _  _  _ __   </span>
+<span style="color: #888888">| || &#39;_ \(_-&lt;| || || &#39;  \  </span>
+<span style="color: #888888">|_|| .__//__/ \_,_||_|_|_| </span>
+<span style="color: #888888">   |_|                     </span>
+<span style="color: #888888">    _       _           </span>
+<span style="color: #888888"> __| | ___ | | ___  _ _ </span>
+<span style="color: #888888">/ _` |/ _ \| |/ _ \| &#39;_|</span>
+<span style="color: #888888">\__,_|\___/|_|\___/|_|  </span>
+<span style="color: #888888">                        </span>
+
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;white_bubble&quot;</span>))  <span style="color: #888888"># Non-ASCII font example</span>
+<span style="color: #888888">ⓣⓔⓢⓣ</span>
+
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>text2art(<span style="background-color: #fff0f0">&quot;seسسس&quot;</span>,font<span style="color: #333333">=</span>DEFAULT_FONT,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception</span>
+<span style="color: #0044DD">Traceback (most recent call last):</span>
+        <span style="color: #333333">...</span>
+<span style="color: #FF0000">art.art.artError</span>: س is invalid 
+</pre></td></tr></table></div>
+    &nbsp;
+<li>tprint</li>
+<p>This function print ASCII text in normal mode (return None) and raise `artError` in exception</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># print ASCII text (default font) </span>
 <span style="color: #888888">              _   </span>
 <span style="color: #888888">  __ _  _ __ | |_ </span>
 <span style="color: #888888"> / _` || &#39;__|| __|</span>
@@ -351,7 +396,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888"> \__,_||_|    \__|</span>
 <span style="color: #888888">                  </span>
 
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;block&quot;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># print ascii text (block font)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>,font<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;block&quot;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># print ASCII text (block font)</span>
 
 <span style="color: #888888"> .----------------.  .----------------.  .----------------.</span>
 <span style="color: #888888">| .--------------. || .--------------. || .--------------. |</span>
@@ -380,16 +425,16 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;rand&quot;</span>) <span style="color: #888888"># random font mode</span>
 <span style="color: #888888">___ ____ ____ ___ </span>
 <span style="color: #888888"> |  |___ [__   |  </span>
-<span style="color: #888888"> |  |___ ___]  | </span>
-<span style="color: #888888"> </span>
-<span style="color: #888888"> </span>
+<span style="color: #888888"> |  |___ ___]  |  </span>
+<span style="color: #888888">                  </span>
+
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;testسس&#39;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception </span>
 <span style="color: #0044DD">Traceback (most recent call last):</span>
        <span style="color: #333333">...</span>
 <span style="color: #FF0000">art.art.artError</span>: س is invalid
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;&#39;&#39;Lorem  # Multi-line print</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;&#39;&#39;Lorem  </span>
 <span style="color: #888888">ipsum </span>
-<span style="color: #888888">dolor&#39;&#39;&#39;, font=&quot;cybermedium&quot;)</span>
+<span style="color: #888888">dolor&#39;&#39;&#39;, font=&quot;cybermedium&quot;) # Multi-line print</span>
 <span style="color: #888888">_    ____ ____ ____ _  _    </span>
 <span style="color: #888888">|    |  | |__/ |___ |\/|    </span>
 <span style="color: #888888">|___ |__| |  \ |___ |  |    </span>
@@ -416,12 +461,12 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
  9
 10
 11
-12</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ascii text in test.txt file with save message (print_status==True) # return dict</span>
+12</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True) # return dict</span>
 <span style="color: #888888">Saved! </span>
 <span style="color: #888888">Filename: test.txt</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
 <span style="color: #888888">&#39;OK&#39;</span>
-<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,print_status<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># save ascii text in test.txt file without save message (print_status==False)</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,print_status<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># save ASCII text in test.txt file without save message (print_status==False)</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
 <span style="color: #888888">&#39;OK&#39;</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Status&quot;</span>]
@@ -672,9 +717,23 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888"> #  #  #  #  #  #  #  #  #  #  #  #  #  #  # </span>
 <span style="color: #888888">## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </span>
 </pre></td></tr></table></div>
+&nbsp;
+<li>Random Non-ASCII</li>
+<p>Randomly select from Non-ASCII fonts.</p>
+<p>Keywords : <code>random-na</code>, <code>rand-na</code> & <code>rnd-na</code></p>
+<p><span class="red">Note</span> : New in <code>Version 3.4</code></p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;random-na&quot;</span>)
+<span style="color: #888888">₮Ɇ₴₮</span>
 
-
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;random-na&quot;</span>)
+<span style="color: #888888">ʇsǝʇ</span>
+</pre></td></tr></table></div>
 </ol>
+<p>⚠️ Non-ASCII fonts are only available in <code>Font name</code> and <code>Random Non-ASCII</code> modes</p>
 <h2>Typo-tolerance</h2>
 <p><a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (><code>Version 0.9</code>)</p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
