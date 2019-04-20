@@ -321,7 +321,8 @@ def indirect_font(font, fonts, text):
         font = random.choice(RND_SIZE_DICT["xlarge_list"])
         return font
     if font == "random" or font == "rand" or font == "rnd":
-        font = random.choice(fonts)
+        filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
+        font = random.choice(filtered_fonts)
         return font
     if font == "wizard" or font == "wiz" or font == "magic":
         font = wizard_font(text)
