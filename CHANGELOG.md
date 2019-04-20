@@ -16,11 +16,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	6. currency
 	7. antrophobia
 - `text2art` function support of `\n`
+- `rnd-na` mode
 ### Changed
 - `tprint` function modified
 - `tsave` function modified
-- `rnd-na` mode
 - `README.md` modified
+- `random` mode modified
 ## [3.3] - 2019-04-10
 ### Added
 - 3 new fonts
