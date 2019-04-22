@@ -160,7 +160,8 @@ RANDOM_FILTERED_FONTS = [
     "antrophobia",
     "currency",
     "magic",
-    "paranormal"]
+    "paranormal",
+    "sorcerer"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -182,7 +183,8 @@ TEST_FILTERED_FONTS = [
     "antrophobia",
     "currency",
     "magic",
-    "paranormal"]
+    "paranormal",
+    "sorcerer"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -523,7 +525,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "antrophobia": [antrophobia_dic, False],
             "currency": [currency_dic, False],
             "magic": [magic_dic,False],
-            "paranormal": [paranormal_dic,False]
+            "paranormal": [paranormal_dic,False],
+            "sorcerer": [sorcerer_dic,False]
 
             }
 
