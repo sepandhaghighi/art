@@ -528,11 +528,11 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "full_width": [full_width_dic, False],
             "antrophobia": [antrophobia_dic, False],
             "currency": [currency_dic, False],
-            "magical": [magic_dic,False],
-            "paranormal": [paranormal_dic,False],
-            "sorcerer": [sorcerer_dic,False],
-            "special": [special_dic,False],
-            "dirty": [dirty_dic,False]
+            "magical": [magic_dic, False],
+            "paranormal": [paranormal_dic, False],
+            "sorcerer": [sorcerer_dic, False],
+            "special": [special_dic, False],
+            "dirty": [dirty_dic, False]
 
             }
 
