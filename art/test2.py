@@ -10,15 +10,25 @@
 <BLANKLINE>
 ₮Ɇ₴₮
 <BLANKLINE>
+ẗệṩẗ
+<BLANKLINE>
 ϝԍƨϝ
 <BLANKLINE>
 ｔｅｓｔ
+<BLANKLINE>
+ᏆᎬsᏆ
 <BLANKLINE>
 ɈƨǝɈ
 <BLANKLINE>
 ʇsǝʇ
 <BLANKLINE>
+tєѕt
+<BLANKLINE>
 ᴛᴇsᴛ
+<BLANKLINE>
+ᏆɛֆᏆ
+<BLANKLINE>
+TEᔕT
 <BLANKLINE>
 ₜₑₛₜ
 <BLANKLINE>
@@ -39,15 +49,25 @@ Filename: antrophobia.txt
 Saved!
 Filename: currency.txt
 Saved!
+Filename: dirty.txt
+Saved!
 Filename: flip.txt
 Saved!
 Filename: full_width.txt
+Saved!
+Filename: magical.txt
 Saved!
 Filename: mirror.txt
 Saved!
 Filename: mirror_flip.txt
 Saved!
+Filename: paranormal.txt
+Saved!
 Filename: smallcaps2.txt
+Saved!
+Filename: sorcerer.txt
+Saved!
+Filename: special.txt
 Saved!
 Filename: subscript.txt
 Saved!
@@ -64,5 +84,10 @@ Filename: white_bubble.txt
 >>> os.remove("full_width.txt")
 >>> os.remove("antrophobia.txt")
 >>> os.remove("currency.txt")
+>>> os.remove("dirty.txt")
+>>> os.remove("magical.txt")
+>>> os.remove("paranormal.txt")
+>>> os.remove("sorcerer.txt")
+>>> os.remove("special.txt")
 
 '''
