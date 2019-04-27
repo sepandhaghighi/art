@@ -5,35 +5,66 @@
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
-...	    tprint("test",font=i)
+...     print(i+":")
+...     tprint("test",font=i)
+antrophobia:
 тєѕт
 <BLANKLINE>
+currency:
 ₮Ɇ₴₮
 <BLANKLINE>
+dirty:
 ẗệṩẗ
 <BLANKLINE>
+fancy1:
+тεsт
+<BLANKLINE>
+fancy2:
+ㄒ乇丂ㄒ
+<BLANKLINE>
+flip:
 ϝԍƨϝ
 <BLANKLINE>
+full_width:
 ｔｅｓｔ
 <BLANKLINE>
+knight:
+ṮḕṠṮ
+<BLANKLINE>
+magical:
 ᏆᎬsᏆ
 <BLANKLINE>
+mirror:
 ɈƨǝɈ
 <BLANKLINE>
+mirror_flip:
 ʇsǝʇ
 <BLANKLINE>
+paranormal:
 tєѕt
 <BLANKLINE>
+smallcaps2:
 ᴛᴇsᴛ
 <BLANKLINE>
+sorcerer:
 ᏆɛֆᏆ
 <BLANKLINE>
+special:
 TEᔕT
 <BLANKLINE>
+subscript:
 ₜₑₛₜ
 <BLANKLINE>
+superscript:
 ᵗᵉˢᵗ
 <BLANKLINE>
+thin2:
+ｔｅｓｔ
+<BLANKLINE>
+tiny:
+ᴛᴇᴤᴛ
+<BLANKLINE>
+white_bubble:
 ⓣⓔⓢⓣ
 <BLANKLINE>
 >>> random.seed(24)
