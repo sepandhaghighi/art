@@ -6,12 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 5 new fonts
+- 10 new fonts
 	1. magical
 	2. paranormal
 	3. sorcerer
 	4. special
 	5. dirty
+	6. knight
+	7. thin2
+	8. tiny
+	9. fancy1
+	10. fancy2
 ## [3.4] - 2019-04-20
 ### Added
 - 7 new fonts
