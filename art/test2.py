@@ -42,52 +42,13 @@ TEᔕT
 >>> Art2 = text2art("test","rnd-na")
 >>> Art == Art2
 False
->>> for i in sorted(TEST_FILTERED_FONTS):
-...	    Data = tsave("test@34",font=i,filename=i)
+>>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
-Saved!
-Filename: currency.txt
-Saved!
-Filename: dirty.txt
-Saved!
-Filename: flip.txt
-Saved!
-Filename: full_width.txt
+>>> Data = tsave("test@34",font="magical",filename="magical.txt")
 Saved!
 Filename: magical.txt
-Saved!
-Filename: mirror.txt
-Saved!
-Filename: mirror_flip.txt
-Saved!
-Filename: paranormal.txt
-Saved!
-Filename: smallcaps2.txt
-Saved!
-Filename: sorcerer.txt
-Saved!
-Filename: special.txt
-Saved!
-Filename: subscript.txt
-Saved!
-Filename: superscript.txt
-Saved!
-Filename: white_bubble.txt
->>> os.remove("flip.txt")
->>> os.remove("mirror.txt")
->>> os.remove("mirror_flip.txt")
->>> os.remove("white_bubble.txt")
->>> os.remove("smallcaps2.txt")
->>> os.remove("superscript.txt")
->>> os.remove("subscript.txt")
->>> os.remove("full_width.txt")
 >>> os.remove("antrophobia.txt")
->>> os.remove("currency.txt")
->>> os.remove("dirty.txt")
 >>> os.remove("magical.txt")
->>> os.remove("paranormal.txt")
->>> os.remove("sorcerer.txt")
->>> os.remove("special.txt")
 
 '''
