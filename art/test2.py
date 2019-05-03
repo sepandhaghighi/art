@@ -5,25 +5,81 @@
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
-...	    tprint("test",font=i)
+...     print(i+":")
+...     tprint("test",font=i)
+antrophobia:
 тєѕт
 <BLANKLINE>
+currency:
 ₮Ɇ₴₮
 <BLANKLINE>
+dirty:
+ẗệṩẗ
+<BLANKLINE>
+fancy1:
+тεsт
+<BLANKLINE>
+fancy2:
+ㄒ乇丂ㄒ
+<BLANKLINE>
+fancy3:
+ŤĔŚŤ
+<BLANKLINE>
+fancy4:
+ᏆᎬsᏆ
+<BLANKLINE>
+fancy5:
+ᏖᏋᏕᏖ
+<BLANKLINE>
+fancy6:
+ƭεรƭ
+<BLANKLINE>
+fancy7:
+丅ᗴᔕ丅
+<BLANKLINE>
+flip:
 ϝԍƨϝ
 <BLANKLINE>
+full_width:
 ｔｅｓｔ
 <BLANKLINE>
+knight:
+ṮḕṠṮ
+<BLANKLINE>
+magical:
+ᏆᎬsᏆ
+<BLANKLINE>
+mirror:
 ɈƨǝɈ
 <BLANKLINE>
+mirror_flip:
 ʇsǝʇ
 <BLANKLINE>
+paranormal:
+tєѕt
+<BLANKLINE>
+smallcaps2:
 ᴛᴇsᴛ
 <BLANKLINE>
+sorcerer:
+ᏆɛֆᏆ
+<BLANKLINE>
+special:
+TEᔕT
+<BLANKLINE>
+subscript:
 ₜₑₛₜ
 <BLANKLINE>
+superscript:
 ᵗᵉˢᵗ
 <BLANKLINE>
+thin2:
+ｔｅｓｔ
+<BLANKLINE>
+tiny:
+ᴛᴇᴤᴛ
+<BLANKLINE>
+white_bubble:
 ⓣⓔⓢⓣ
 <BLANKLINE>
 >>> random.seed(24)
@@ -32,37 +88,13 @@
 >>> Art2 = text2art("test","rnd-na")
 >>> Art == Art2
 False
->>> for i in sorted(TEST_FILTERED_FONTS):
-...	    Data = tsave("test@34",font=i,filename=i)
+>>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
+>>> Data = tsave("test@34",font="magical",filename="magical.txt")
 Saved!
-Filename: currency.txt
-Saved!
-Filename: flip.txt
-Saved!
-Filename: full_width.txt
-Saved!
-Filename: mirror.txt
-Saved!
-Filename: mirror_flip.txt
-Saved!
-Filename: smallcaps2.txt
-Saved!
-Filename: subscript.txt
-Saved!
-Filename: superscript.txt
-Saved!
-Filename: white_bubble.txt
->>> os.remove("flip.txt")
->>> os.remove("mirror.txt")
->>> os.remove("mirror_flip.txt")
->>> os.remove("white_bubble.txt")
->>> os.remove("smallcaps2.txt")
->>> os.remove("superscript.txt")
->>> os.remove("subscript.txt")
->>> os.remove("full_width.txt")
+Filename: magical.txt
 >>> os.remove("antrophobia.txt")
->>> os.remove("currency.txt")
+>>> os.remove("magical.txt")
 
 '''

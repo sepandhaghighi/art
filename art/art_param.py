@@ -4,7 +4,7 @@ from .text_dic1 import *
 from .text_dic2 import *
 from .art_dic import *
 
-VERSION = "3.4"  # pragma: no cover
+VERSION = "3.5"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -158,7 +158,22 @@ RANDOM_FILTERED_FONTS = [
     "subscript",
     "full_width",
     "antrophobia",
-    "currency"]
+    "currency",
+    "magical",
+    "paranormal",
+    "sorcerer",
+    "special",
+    "dirty",
+    "knight",
+    "thin2",
+    "tiny",
+    "fancy1",
+    "fancy2",
+    "fancy3",
+    "fancy4",
+    "fancy5",
+    "fancy6",
+    "fancy7"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -178,7 +193,22 @@ TEST_FILTERED_FONTS = [
     "subscript",
     "full_width",
     "antrophobia",
-    "currency"]
+    "currency",
+    "magical",
+    "paranormal",
+    "sorcerer",
+    "special",
+    "dirty",
+    "knight",
+    "thin2",
+    "tiny",
+    "fancy1",
+    "fancy2",
+    "fancy3",
+    "fancy4",
+    "fancy5",
+    "fancy6",
+    "fancy7"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -517,8 +547,22 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "subscript": [subscript_dic, False],
             "full_width": [full_width_dic, False],
             "antrophobia": [antrophobia_dic, False],
-            "currency": [currency_dic, False]
-
+            "currency": [currency_dic, False],
+            "magical": [magic_dic, False],
+            "paranormal": [paranormal_dic, False],
+            "sorcerer": [sorcerer_dic, False],
+            "special": [special_dic, False],
+            "dirty": [dirty_dic, False],
+            "knight": [knight_dic, False],
+            "thin2": [thin2_dic, False],
+            "tiny": [tiny_dic, False],
+            "fancy1": [fancy1_dic, False],
+            "fancy2": [fancy2_dic, False],
+            "fancy3": [fancy3_dic, False],
+            "fancy4": [fancy4_dic, False],
+            "fancy5": [fancy5_dic, False],
+            "fancy6": [fancy6_dic, False],
+            "fancy7": [fancy7_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
