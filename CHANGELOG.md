@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 10 new fonts
+- 15 new fonts
 	1. fancy8
 	2. fancy9
 	3. fancy10
@@ -17,6 +17,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. fancy15
 	9. fancy16
 	10. fancy17
+	11. fancy18
+	12. fancy19
+	13. fancy20
+	14. fancy21
+	15. fancy22
 ## [3.5] - 2019-05-04
 ### Added
 - 15 new fonts
