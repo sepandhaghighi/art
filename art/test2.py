@@ -49,6 +49,9 @@ fancy18:
 fancy19:
 ꓄ꍟꌗ꓄
 <BLANKLINE>
+fancy2:
+ㄒ乇丂ㄒ
+<BLANKLINE>
 fancy20:
 ᵀᴱˢᵀ
 <BLANKLINE>
@@ -57,9 +60,6 @@ fancy21:
 <BLANKLINE>
 fancy22:
 ŤƐらŤ
-<BLANKLINE>
-fancy2:
-ㄒ乇丂ㄒ
 <BLANKLINE>
 fancy3:
 ŤĔŚŤ
