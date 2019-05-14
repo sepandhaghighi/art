@@ -4706,11 +4706,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _____     ____
-__   __|___ /    | ___|
-\ \ / /  |_ \    |___ \
- \ V /  ___) | _  ___) |
-  \_/  |____/ (_)|____/
+        _____      __
+__   __|___ /     / /_
+\ \ / /  |_ \    | '_ \
+ \ V /  ___) | _ | (_) |
+  \_/  |____/ (_) \___/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".

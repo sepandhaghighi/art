@@ -5,6 +5,31 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.6] - 2019-05-15
+### Added
+- 20 new fonts
+	1. fancy8
+	2. fancy9
+	3. fancy10
+	4. fancy11
+	5. fancy12
+	6. fancy13
+	7. fancy14
+	8. fancy15
+	9. fancy16
+	10. fancy17
+	11. fancy18
+	12. fancy19
+	13. fancy20
+	14. fancy21
+	15. fancy22
+	16. fancy23
+	17. fancy24
+	18. fancy25
+	19. fancy26
+	20. fancy27
+### Changed
+- Drop Python 3.3 support
 ## [3.5] - 2019-05-04
 ### Added
 - 15 new fonts
@@ -921,7 +946,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.5...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.6...dev
+[3.6]: https://github.com/sepandhaghighi/art/compare/v3.5...v3.6
 [3.5]: https://github.com/sepandhaghighi/art/compare/v3.4...v3.5
 [3.4]: https://github.com/sepandhaghighi/art/compare/v3.3...v3.4
 [3.3]: https://github.com/sepandhaghighi/art/compare/v3.2...v3.3
