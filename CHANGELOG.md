@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [3.6] - 2019-05-14
+## [3.6] - 2019-05-15
 ### Added
 - 20 new fonts
 	1. fancy8
@@ -28,6 +28,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. fancy25
 	19. fancy26
 	20. fancy27
+### Changed
+- Drop Python 3.3 support
 ## [3.5] - 2019-05-04
 ### Added
 - 15 new fonts
