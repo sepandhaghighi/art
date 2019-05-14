@@ -32,12 +32,6 @@ environment:
     - PYTHON: "C:\\Python34"
       PYTHON_VERSION: "3.4.6"
       PYTHON_ARCH: "32"
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.0"
-      PYTHON_ARCH: "32"
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.0"
-      PYTHON_ARCH: "64"
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
