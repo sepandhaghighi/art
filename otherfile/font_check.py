@@ -3,21 +3,39 @@
 import sys
 from art.art_param import *
 
-Failed = 0
-
-for font in FONT_MAP.keys():
+Failed1 = 0
+Failed2 = 0
+Font_List = list(FONT_MAP.keys())
+Message1 = "Font height test "
+Message2 = "Font duplication test "
+for font in Font_List:
     s = []
     for letter in FONT_MAP[font][0].keys():
         if len(FONT_MAP[font][0][letter]) != 0:
             s.append(len(FONT_MAP[font][0][letter].split("\n")))
     if len(set(s)) != 1:
         print("Height error in font : " + font)
-        Failed += 1
+        Failed1 += 1
 
-Message = "Font height test "
-if Failed == 0:
-    print(Message + "passed!")
-    sys.exit(0)
+
+if Failed1 == 0:
+    print(Message1 + "passed!")
 else:
-    print(Message + "failed!")
-    sys.exit(1)
+    print(Message1 + "failed!")
+
+for font1 in Font_List:
+    for font2 in Font_List:
+        if Font_List.index(font1) < Font_List.index(font2):
+            if FONT_MAP[font1][0] == FONT_MAP[font2][0]:
+                print("Duplication -- > " + font1+","+font2)
+                Failed2 += 1
+
+if Failed2 == 0:
+    print(Message2 + "passed!")
+else:
+    print(Message2 + "failed!")
+
+sys.exit(Failed2+Failed1)
+
+
+
