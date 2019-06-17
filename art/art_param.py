@@ -380,7 +380,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "morse": [morse_dic, True],
             "moscow": [moscow_dic, True],
             "muzzle": [muzzle_dic, True],
-            "nancyj-improved": [nancyj_improved_dic, False],
             "nscript": [nscript_dic, False],
             "nvscript": [nvscript_dic, False],
             "octal": [octal_dic, False],
