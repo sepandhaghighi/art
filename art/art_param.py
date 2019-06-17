@@ -388,7 +388,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "octal": [octal_dic, False],
             "oldbanner": [oldbanner_dic, False],
             "os2": [os2_dic, False],
-            "peaksslant": [peaksslant_dic, False],
             "puzzle": [puzzle_dic, True],
             "rammstein": [rammstein_dic, False],
             "red_phoenix": [red_phoenix_dic, False],
