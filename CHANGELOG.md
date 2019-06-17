@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Duplication test added to`font_check.py`
+### Removed
+- 11 duplicate fonts
+	1. fancy14
+	2. magical
+	3. morse2
+	4. fire_font-k
+	5. paranormal
+	6. battle_s
+	7. ntgreek
+	8. peaksslant
+	9. sorcerer
+	10. nancyj-improved
+	11. fancy11
 ## [3.6] - 2019-05-15
 ### Added
 - 20 new fonts
