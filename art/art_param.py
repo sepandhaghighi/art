@@ -388,7 +388,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "muzzle": [muzzle_dic, True],
             "nancyj-improved": [nancyj_improved_dic, False],
             "nscript": [nscript_dic, False],
-            "ntgreek": [ntgreek_dic, False],
             "nvscript": [nvscript_dic, False],
             "octal": [octal_dic, False],
             "oldbanner": [oldbanner_dic, False],
