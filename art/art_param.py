@@ -425,7 +425,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "b1ff": [B1FF_dic, True],
             "dwhistled": [dwhistled_dic, False],
             "eftiwall": [eftiwall_dic, False],
-            "fire_font-k": [fire_font_k_dic, False],
             "fire_font-s": [fire_font_s_dic, False],
             "gradient": [gradient_dic, True],
             "1943": [dic_1943, False],
