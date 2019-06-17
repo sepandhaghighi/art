@@ -23,12 +23,14 @@ if Failed1 == 0:
 else:
     print(Message1 + "failed!")
 
+index = 1
 for font1 in Font_List:
     for font2 in Font_List:
         if Font_List.index(font1) < Font_List.index(font2):
             if FONT_MAP[font1][0] == FONT_MAP[font2][0]:
-                print("Duplication -- > " + font1+","+font2)
+                print(str(index)+"-Duplication -- > " + font1+","+font2)
                 Failed2 += 1
+                index += 1
 
 if Failed2 == 0:
     print(Message2 + "passed!")
