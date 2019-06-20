@@ -33,6 +33,7 @@
    		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
+   * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
    * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
@@ -698,6 +699,19 @@ Just fill an issue and describe it. I'll check it ASAP!
 or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com "sepand.haghighi@yahoo.com"). 
 
 * Please complete the issue template 
+
+## Dependencies
+
+<table>
+	<tr> 
+		<td align="center">master</td>	
+		<td align="center">dev</td>	
+	</tr>
+	<tr>
+		<td align="center"><a href="https://requires.io/github/sepandhaghighi/art/requirements/?branch=master"><img src="https://requires.io/github/sepandhaghighi/art/requirements.svg?branch=master" alt="Requirements Status" /></a></td>
+		<td align="center"><a href="https://requires.io/github/sepandhaghighi/art/requirements/?branch=dev"><img src="https://requires.io/github/sepandhaghighi/art/requirements.svg?branch=dev" alt="Requirements Status" /></a></td>
+	</tr>
+</table>
 
 ## License
 
