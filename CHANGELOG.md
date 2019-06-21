@@ -8,19 +8,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Duplication test added to`font_check.py`
 - `README.md` modified
+- fancy11 and fancy14 fonts updated
 ### Removed
-- 11 duplicate fonts
-	1. fancy14
-	2. magical
-	3. morse2
-	4. fire_font-k
-	5. paranormal
-	6. battle_s
-	7. ntgreek
-	8. peaksslant
-	9. sorcerer
-	10. nancyj-improved
-	11. fancy11
+- 9 duplicate fonts
+	1. magical
+	2. morse2
+	3. fire_font-k
+	4. paranormal
+	5. battle_s
+	6. ntgreek
+	7. peaksslant
+	8. sorcerer
+	9. nancyj-improved
 ## [3.6] - 2019-05-15
 ### Added
 - 20 new fonts
