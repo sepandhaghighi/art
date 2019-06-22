@@ -554,7 +554,7 @@ tᏋѕt
 ꓄єร꓄
 ```
 
-⚠️ Non-ASCII fonts are only available in `Font name` and `Random Non-ASCII` modes	
+⚠️ Non-ASCII fonts are only available in `Font name`, `Random Non-ASCII` and `Mix` modes	
 
 
 ### Typo-tolerance			
@@ -746,6 +746,7 @@ or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com
 5. [Flipyourtext](https://www.flipyourtext.com/)
 6. [YayText](https://yaytext.com)
 7. [Coolletters](http://www.coolletters.net/)
+8. [Instagram Fonts](https://igfonts.io/)
 
 ## Donate to our project
 								
