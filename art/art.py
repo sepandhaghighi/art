@@ -337,6 +337,11 @@ def indirect_font(font, fonts, text):
 
 
 def mix_letters():
+    """
+    Return letters list in mix mode.
+
+    :return: letters as list
+    """
     letters = fancy1_dic.copy()
     for i in letters.keys():
         random_font = random.choice(TEST_FILTERED_FONTS)
