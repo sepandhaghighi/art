@@ -336,6 +336,12 @@ def indirect_font(font, fonts, text):
     return font
 
 
+def mix_letters():
+    letters = fancy1_dic.copy()
+    for i in letters.keys():
+        random_font = random.choice(TEST_FILTERED_FONTS)
+        letters[i] = FONT_MAP[random_font][0][i]
+    return letters
 def __word2art(word, font, chr_ignore, letters):
     """
     Return art word.
@@ -405,13 +411,16 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
     font = font.lower()
-    fonts = sorted(FONT_MAP.keys())
-    font = indirect_font(font, fonts, text)
-    letters = FONT_MAP[font][0]
-    if FONT_MAP[font][1]:
-        text_temp = text.lower()
-    if font in UPPERCASE_FONTS:
-        text_temp = text.upper()
+    if font != "mix":
+        fonts = sorted(FONT_MAP.keys())
+        font = indirect_font(font, fonts, text)
+        letters = FONT_MAP[font][0]
+        if FONT_MAP[font][1]:
+            text_temp = text.lower()
+        if font in UPPERCASE_FONTS:
+            text_temp = text.upper()
+    else:
+        letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
     for word in word_list:
