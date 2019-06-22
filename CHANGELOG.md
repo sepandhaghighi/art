@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Duplication test added to`font_check.py`
 - `README.md` modified
 - fancy11 and fancy14 fonts updated
+- `indirect_font` function modified
 ### Removed
 - 9 duplicate fonts
 	1. magical
