@@ -534,6 +534,26 @@ Keywords : `random-na`, `rand-na` & `rnd-na`
 ʇsǝʇ
 
 ```
+
+#### 9. Mix Non-ASCII
+
+Randomly mix Non-ASCII fonts.
+
+Keywords : `mix`
+
+* Note : New in `Version 3.7`
+
+```pycon
+>>> tprint("test","mix")
+†Ɛѕ†
+
+>>> tprint("test","mix")
+tᏋѕt
+
+>>> tprint("test","mix")
+꓄єร꓄
+```
+
 ⚠️ Non-ASCII fonts are only available in `Font name` and `Random Non-ASCII` modes	
 
 
