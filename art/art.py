@@ -348,6 +348,7 @@ def mix_letters():
         letters[i] = FONT_MAP[random_font][0][i]
     return letters
 
+
 def __word2art(word, font, chr_ignore, letters):
     """
     Return art word.
