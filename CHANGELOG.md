@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	1. fancy28
 	2. fancy29
 	3. fancy30
+- `mix` mode
 ### Changed
 - Duplication test added to`font_check.py`
 - `README.md` modified
