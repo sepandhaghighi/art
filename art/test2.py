@@ -154,6 +154,9 @@ False
 >>> Art2 = text2art("test","mix")
 >>> Art == Art2
 False
+>>> tprint("test","fancy1")
+тεsт
+<BLANKLINE>
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
