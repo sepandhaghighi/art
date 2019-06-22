@@ -85,6 +85,9 @@ fancy29:
 fancy3:
 ŤĔŚŤ
 <BLANKLINE>
+fancy30:
+ᖶᘿSᖶ
+<BLANKLINE>
 fancy4:
 ᏆᎬsᏆ
 <BLANKLINE>
