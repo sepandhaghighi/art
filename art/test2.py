@@ -148,6 +148,12 @@ white_bubble:
 >>> Art2 = text2art("test","rnd-na")
 >>> Art == Art2
 False
+>>> random.seed(24)
+>>> Art = text2art("test","mix")
+>>> random.seed(45)
+>>> Art2 = text2art("test","mix")
+>>> Art == Art2
+False
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
