@@ -23,7 +23,7 @@ fancy10:
 ɬɛʂɬ
 <BLANKLINE>
 fancy11:
-тeѕт
+ՇєรՇ
 <BLANKLINE>
 fancy12:
 tєѕt
@@ -32,7 +32,7 @@ fancy13:
 tєรt
 <BLANKLINE>
 fancy14:
-ᏆᎬsᏆ
+ȶɛֆȶ
 <BLANKLINE>
 fancy15:
 ✞ƎƧ✞
@@ -76,8 +76,17 @@ fancy26:
 fancy27:
 tēŞt
 <BLANKLINE>
+fancy28:
+ƬΣƧƬ
+<BLANKLINE>
+fancy29:
+†ê§†
+<BLANKLINE>
 fancy3:
 ŤĔŚŤ
+<BLANKLINE>
+fancy30:
+ᖶᘿSᖶ
 <BLANKLINE>
 fancy4:
 ᏆᎬsᏆ
@@ -106,23 +115,14 @@ full_width:
 knight:
 ṮḕṠṮ
 <BLANKLINE>
-magical:
-ᏆᎬsᏆ
-<BLANKLINE>
 mirror:
 ɈƨǝɈ
 <BLANKLINE>
 mirror_flip:
 ʇsǝʇ
 <BLANKLINE>
-paranormal:
-tєѕt
-<BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
-<BLANKLINE>
-sorcerer:
-ᏆɛֆᏆ
 <BLANKLINE>
 special:
 TEᔕT
@@ -148,6 +148,15 @@ white_bubble:
 >>> Art2 = text2art("test","rnd-na")
 >>> Art == Art2
 False
+>>> random.seed(24)
+>>> Art = text2art("test","mix")
+>>> random.seed(45)
+>>> Art2 = text2art("test","mix")
+>>> Art == Art2
+False
+>>> tprint("test","fancy1")
+тεsт
+<BLANKLINE>
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt

@@ -5,6 +5,29 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.7] - 2019-06-24
+### Added
+- 3 new fonts
+	1. fancy28
+	2. fancy29
+	3. fancy30
+- `mix` mode
+### Changed
+- Duplication test added to`font_check.py`
+- `README.md` modified
+- fancy11 and fancy14 fonts updated
+- `indirect_font` function modified
+### Removed
+- 9 duplicate fonts
+	1. magical
+	2. morse2
+	3. fire_font-k
+	4. paranormal
+	5. battle_s
+	6. ntgreek
+	7. peaksslant
+	8. sorcerer
+	9. nancyj-improved
 ## [3.6] - 2019-05-15
 ### Added
 - 20 new fonts
@@ -946,7 +969,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.6...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.7...dev
+[3.7]: https://github.com/sepandhaghighi/art/compare/v3.6...v3.7
 [3.6]: https://github.com/sepandhaghighi/art/compare/v3.5...v3.6
 [3.5]: https://github.com/sepandhaghighi/art/compare/v3.4...v3.5
 [3.4]: https://github.com/sepandhaghighi/art/compare/v3.3...v3.4

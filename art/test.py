@@ -503,16 +503,6 @@ d888888b d88888b .d8888. d888888b
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
-battle_s :
-######  #######   ######  ######
-######  #######  #######  ######
-  ##     ##  ##  ##   ##    ##
-  ##     ####     ###       ##
-  ##     ####       ###     ##
-  ##     ##  ##  ##   ##    ##
- ####   #######  #######   ####
- ####   #######  ######    ####
-<BLANKLINE>
 battlesh :
 ######  #######   ######  ######
 ######  #######  #######  ######
@@ -1525,17 +1515,6 @@ finalass :
    ##    #######   #####      ##
 <BLANKLINE>
 <BLANKLINE>
-fire_font-k :
-<BLANKLINE>
-    )                  )
- ( /(     (         ( /(
- )\())   ))\   (    )\())
-(_))/   /((_)  )\  (_))/
-| |_   (_))   ((_) | |_
-|  _|  / -_)  (_-< |  _|
- \__|  \___|  /__/  \__|
-<BLANKLINE>
-<BLANKLINE>
 fire_font-s :
 <BLANKLINE>
     )                  )
@@ -2346,9 +2325,6 @@ modular :
 morse :
 - . ... -
 <BLANKLINE>
-morse2 :
-- . ... -
-<BLANKLINE>
 moscow :
 <BLANKLINE>
 ##### #####  #### #####
@@ -2381,14 +2357,6 @@ d8888P .d8888b. .d8888b. d8888P
   88   88.  ...       88   88
   dP   `88888P' `88888P'   dP
 <BLANKLINE>
-<BLANKLINE>
-nancyj-improved :
-  dP                       dP
-  88                       88
-d8888P .d8888b. .d8888b. d8888P
-  88   88ooood8 Y8ooooo.   88
-  88   88.  ...       88   88
-  dP   `88888P' `88888P'   dP
 <BLANKLINE>
 nancyj-underlined :
   dP                       dP
@@ -2435,17 +2403,6 @@ nscript :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
-<BLANKLINE>
-<BLANKLINE>
-<BLANKLINE>
-ntgreek :
-<BLANKLINE>
-<BLANKLINE>
-<BLANKLINE>
- ___  ___   ____  ___
-(   )/ __) /  ._)(   )
- | | > _) ( () )  | |
-  \_)\___) \__/    \_)
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
@@ -2523,14 +2480,6 @@ peaks :
   /^^  /^            /^^  /^^
    /^^   /^^^^   /^^ /^^   /^^
 <BLANKLINE>
-<BLANKLINE>
-peaksslant :
-     ___/\/\_____     ____________     ____________     ___/\/\_____
-    _/\/\/\/\/\_     ___/\/\/\___     ___/\/\/\/\_     _/\/\/\/\/\_
-   ___/\/\_____     _/\/\/\/\/\_     _/\/\/\/\___     ___/\/\_____
-  ___/\/\_____     _/\/\_______     _______/\/\_     ___/\/\_____
- ___/\/\/\___     ___/\/\/\/\_     _/\/\/\/\___     ___/\/\/\___
-____________     ____________     ____________     ____________
 <BLANKLINE>
 pebbles :
 <BLANKLINE>
@@ -4706,11 +4655,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _____      __
-__   __|___ /     / /_
-\ \ / /  |_ \    | '_ \
- \ V /  ___) | _ | (_) |
-  \_/  |____/ (_) \___/
+        _____     _____
+__   __|___ /    |___  |
+\ \ / /  |_ \       / /
+ \ V /  ___) | _   / /
+  \_/  |____/ (_) /_/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".

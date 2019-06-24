@@ -296,18 +296,17 @@ def wizard_font(text):
     return font
 
 
-def indirect_font(font, fonts, text):
+def indirect_font(font, text):
     """
     Check input font for indirect modes.
 
     :param font: input font
     :type font : str
-    :param fonts: fonts list
-    :type fonts : list
     :param text: input text
     :type text:str
     :return: font as str
     """
+    fonts = sorted(FONT_MAP.keys())
     if font == "rnd-small" or font == "random-small" or font == "rand-small":
         font = random.choice(RND_SIZE_DICT["small_list"])
         return font
@@ -330,10 +329,23 @@ def indirect_font(font, fonts, text):
     if font == "rnd-na" or font == "random-na" or font == "rand-na":
         font = random.choice(TEST_FILTERED_FONTS)
         return font
-    if font not in FONT_MAP.keys():
+    if font not in fonts:
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
         font = fonts[distance_list.index(min(distance_list))]
     return font
+
+
+def mix_letters():
+    """
+    Return letters list in mix mode.
+
+    :return: letters as list
+    """
+    letters = fancy1_dic.copy()
+    for i in letters.keys():
+        random_font = random.choice(TEST_FILTERED_FONTS)
+        letters[i] = FONT_MAP[random_font][0][i]
+    return letters
 
 
 def __word2art(word, font, chr_ignore, letters):
@@ -405,13 +417,15 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
     font = font.lower()
-    fonts = sorted(FONT_MAP.keys())
-    font = indirect_font(font, fonts, text)
-    letters = FONT_MAP[font][0]
-    if FONT_MAP[font][1]:
-        text_temp = text.lower()
-    if font in UPPERCASE_FONTS:
-        text_temp = text.upper()
+    if font != "mix":
+        font = indirect_font(font, text)
+        letters = FONT_MAP[font][0]
+        if FONT_MAP[font][1]:
+            text_temp = text.lower()
+        if font in UPPERCASE_FONTS:
+            text_temp = text.upper()
+    else:
+        letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
     for word in word_list:

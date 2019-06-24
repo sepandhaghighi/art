@@ -4,7 +4,7 @@ from .text_dic1 import *
 from .text_dic2 import *
 from .art_dic import *
 
-VERSION = "3.6"  # pragma: no cover
+VERSION = "3.7"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -74,7 +74,6 @@ UPPERCASE_FONTS = [
     "asslt_m",
     "atc",
     "atc_gran",
-    "battle_s",
     "battlesh",
     "baz_bil",
     "beer_pub",
@@ -138,7 +137,6 @@ RANDOM_FILTERED_FONTS = [
     "hills",
     "katakana",
     "morse",
-    "morse2",
     "nfi1",
     "octal",
     "rot13",
@@ -159,9 +157,6 @@ RANDOM_FILTERED_FONTS = [
     "full_width",
     "antrophobia",
     "currency",
-    "magical",
-    "paranormal",
-    "sorcerer",
     "special",
     "dirty",
     "knight",
@@ -193,7 +188,10 @@ RANDOM_FILTERED_FONTS = [
     "fancy24",
     "fancy25",
     "fancy26",
-    "fancy27"]
+    "fancy27",
+    "fancy28",
+    "fancy29",
+    "fancy30"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -214,9 +212,6 @@ TEST_FILTERED_FONTS = [
     "full_width",
     "antrophobia",
     "currency",
-    "magical",
-    "paranormal",
-    "sorcerer",
     "special",
     "dirty",
     "knight",
@@ -248,7 +243,10 @@ TEST_FILTERED_FONTS = [
     "fancy24",
     "fancy25",
     "fancy26",
-    "fancy27"]
+    "fancy27",
+    "fancy28",
+    "fancy29",
+    "fancy30"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -390,17 +388,13 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "merlin2": [merlin2_dic, True],
             "modular": [modular_dic, True],
             "morse": [morse_dic, True],
-            "morse2": [morse2_dic, True],
             "moscow": [moscow_dic, True],
             "muzzle": [muzzle_dic, True],
-            "nancyj-improved": [nancyj_improved_dic, False],
             "nscript": [nscript_dic, False],
-            "ntgreek": [ntgreek_dic, False],
             "nvscript": [nvscript_dic, False],
             "octal": [octal_dic, False],
             "oldbanner": [oldbanner_dic, False],
             "os2": [os2_dic, False],
-            "peaksslant": [peaksslant_dic, False],
             "puzzle": [puzzle_dic, True],
             "rammstein": [rammstein_dic, False],
             "red_phoenix": [red_phoenix_dic, False],
@@ -435,7 +429,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "b1ff": [B1FF_dic, True],
             "dwhistled": [dwhistled_dic, False],
             "eftiwall": [eftiwall_dic, False],
-            "fire_font-k": [fire_font_k_dic, False],
             "fire_font-s": [fire_font_s_dic, False],
             "gradient": [gradient_dic, True],
             "1943": [dic_1943, False],
@@ -495,7 +488,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "asslt_m": [asslt__m_dic, False],
             "atc": [atc_dic, False],
             "atc_gran": [atc_gran_dic, False],
-            "battle_s": [battle_s_dic, False],
             "battlesh": [battlesh_dic, False],
             "baz_bil": [baz_bil_dic, False],
             "beer_pub": [beer_pub_dic, False],
@@ -588,9 +580,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "full_width": [full_width_dic, False],
             "antrophobia": [antrophobia_dic, False],
             "currency": [currency_dic, False],
-            "magical": [magic_dic, False],
-            "paranormal": [paranormal_dic, False],
-            "sorcerer": [sorcerer_dic, False],
             "special": [special_dic, False],
             "dirty": [dirty_dic, False],
             "knight": [knight_dic, False],
@@ -622,7 +611,10 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy24": [fancy24_dic, False],
             "fancy25": [fancy25_dic, False],
             "fancy26": [fancy26_dic, False],
-            "fancy27": [fancy27_dic, False]
+            "fancy27": [fancy27_dic, False],
+            "fancy28": [fancy28_dic, False],
+            "fancy29": [fancy29_dic, False],
+            "fancy30": [fancy30_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
