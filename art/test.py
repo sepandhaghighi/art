@@ -4686,6 +4686,11 @@ Help :
      - all 'yourtext'  -->  Example : 'python -m art all exampletext'
 >>> tprint('طط')
 <BLANKLINE>
+>>> art1 = "MonSter"
+>>> art1_copy = "MonSter"
+>>> Art0 = art(art1)
+>>> art1 == art1_copy
+True
 >>> random.seed(3)
 >>> Art = art("random")
 >>> random.seed(40)
@@ -4886,6 +4891,20 @@ False
 False
 >>> Art == Art4
 False
+>>> text1 = "test"
+>>> text1_copy = "test"
+>>> font1 = "Beer_Pub"
+>>> font1_copy = "Beer_Pub"
+>>> Art5 = text2art(text1,font1)
+>>> text1 == text1_copy
+True
+>>> font1 == font1_copy
+True
+>>> text2 = "TEST"
+>>> text2_copy = "TEST"
+>>> Art6 = text2art(text2,"double")
+>>> text2 == text2_copy
+True
 >>> font_dicts = font_size_splitter(FONT_MAP)
 >>> len(font_dicts["small_list"])>0
 True
