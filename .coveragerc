@@ -6,3 +6,4 @@ exclude_lines =
     pragma: no cover
 	from
 	import
+	def
