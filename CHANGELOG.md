@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 5 new fonts
+	1. fancy31
+	2. fancy32
+	3. fancy33
+	4. fancy34
+	5. symbols
 ## [3.7] - 2019-06-24
 ### Added
 - 3 new fonts
