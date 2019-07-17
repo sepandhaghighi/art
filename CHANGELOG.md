@@ -18,6 +18,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	9. fancy38
 	10. fancy39
 	11. fancy40
+- 10 new 1-line art
+	1. acid
+	2. arrowhead
+	3. awkward
+	4. because
+	5. blackeye
+	6. catlenny
+	7. dab
+	8. damnyou
+	9. depressed
+	10. dunno
 ### Changed
 - `dev-requirements.txt` modified
 ## [3.7] - 2019-06-24
