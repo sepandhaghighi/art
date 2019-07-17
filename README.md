@@ -748,6 +748,7 @@ or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com
 7. [Coolletters](http://www.coolletters.net/)
 8. [Instagram Fonts](https://igfonts.io/)
 9. [Cool Symbol](https://coolsymbol.com/)
+10. [ASCII Moji](http://asciimoji.com/)
 
 ## Donate to our project
 								
