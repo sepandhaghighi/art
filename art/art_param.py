@@ -196,7 +196,8 @@ RANDOM_FILTERED_FONTS = [
     "fancy31",
     "fancy32",
     "fancy33",
-    "fancy34"]
+    "fancy34",
+    "fancy35"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -256,7 +257,8 @@ TEST_FILTERED_FONTS = [
     "fancy31",
     "fancy32",
     "fancy33",
-    "fancy34"]
+    "fancy34",
+    "fancy35"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -629,7 +631,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy31": [fancy31_dic, False],
             "fancy32": [fancy32_dic, False],
             "fancy33": [fancy33_dic, False],
-            "fancy34": [fancy34_dic, False]
+            "fancy34": [fancy34_dic, False],
+            "fancy35": [fancy35_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
