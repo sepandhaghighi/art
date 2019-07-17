@@ -358,5 +358,15 @@ art_dic = {
     "error": "(╯°□°)╯︵ ɹoɹɹƎ",
     "penis2": "○○)=======o)",
     "exchange": "(╯°□°）╯︵ ǝƃuɐɥɔxǝ",
-    "singing2": "♪└(￣◇￣)┐♪"
+    "singing2": "♪└(￣◇￣)┐♪",
+    "acid": "⊂(◉‿◉)つ",
+    "arrowhead": "⤜(ⱺ ʖ̯ⱺ)⤏",
+    "awkward": "•͡˘㇁•͡˘",
+    "because": "∵",
+    "blackeye": "0__#",
+    "catlenny": "( ͡° ᴥ ͡°)",
+    "dab": "ヽ( •_)ᕗ",
+    "damnyou": "(ᕗ ͠° ਊ ͠° )ᕗ",
+    "depressed": "(︶︹︶)",
+    "dunno": "¯\(°_o)/¯"
 }
