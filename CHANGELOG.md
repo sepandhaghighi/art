@@ -6,12 +6,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 5 new fonts
+- 11 new fonts
 	1. fancy31
 	2. fancy32
 	3. fancy33
 	4. fancy34
 	5. symbols
+	6. fancy35
+	7. fancy36
+	8. fancy37
+	9. fancy38
+	10. fancy39
+	11. fancy40
+### Changed
+- `dev-requirements.txt` modified
 ## [3.7] - 2019-06-24
 ### Added
 - 3 new fonts
