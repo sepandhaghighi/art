@@ -5,6 +5,43 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.8] - 2019-07-18
+### Added
+- 11 new fonts
+	1. fancy31
+	2. fancy32
+	3. fancy33
+	4. fancy34
+	5. symbols
+	6. fancy35
+	7. fancy36
+	8. fancy37
+	9. fancy38
+	10. fancy39
+	11. fancy40
+- 20 new 1-line art
+	1. acid
+	2. arrowhead
+	3. awkward
+	4. because
+	5. blackeye
+	6. catlenny
+	7. dab
+	8. damnyou
+	9. depressed
+	10. dunno
+	11. eeriemob
+	12. envelope
+	13. fart
+	14. finn
+	15. frown
+	16. glitter
+	17. gotit
+	18. hello
+	19. loading
+	20. meep
+### Changed
+- `dev-requirements.txt` modified
 ## [3.7] - 2019-06-24
 ### Added
 - 3 new fonts
@@ -969,7 +1006,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.7...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.8...dev
+[3.8]: https://github.com/sepandhaghighi/art/compare/v3.7...v3.8
 [3.7]: https://github.com/sepandhaghighi/art/compare/v3.6...v3.7
 [3.6]: https://github.com/sepandhaghighi/art/compare/v3.5...v3.6
 [3.5]: https://github.com/sepandhaghighi/art/compare/v3.4...v3.5

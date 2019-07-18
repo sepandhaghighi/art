@@ -4,7 +4,7 @@ from .text_dic1 import *
 from .text_dic2 import *
 from .art_dic import *
 
-VERSION = "3.7"  # pragma: no cover
+VERSION = "3.8"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -191,7 +191,18 @@ RANDOM_FILTERED_FONTS = [
     "fancy27",
     "fancy28",
     "fancy29",
-    "fancy30"]
+    "fancy30",
+    "symbols",
+    "fancy31",
+    "fancy32",
+    "fancy33",
+    "fancy34",
+    "fancy35",
+    "fancy36",
+    "fancy37",
+    "fancy38",
+    "fancy39",
+    "fancy40"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -246,7 +257,18 @@ TEST_FILTERED_FONTS = [
     "fancy27",
     "fancy28",
     "fancy29",
-    "fancy30"]
+    "fancy30",
+    "symbols",
+    "fancy31",
+    "fancy32",
+    "fancy33",
+    "fancy34",
+    "fancy35",
+    "fancy36",
+    "fancy37",
+    "fancy38",
+    "fancy39",
+    "fancy40"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -614,7 +636,18 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy27": [fancy27_dic, False],
             "fancy28": [fancy28_dic, False],
             "fancy29": [fancy29_dic, False],
-            "fancy30": [fancy30_dic, False]
+            "fancy30": [fancy30_dic, False],
+            "symbols": [symbols_dic, False],
+            "fancy31": [fancy31_dic, False],
+            "fancy32": [fancy32_dic, False],
+            "fancy33": [fancy33_dic, False],
+            "fancy34": [fancy34_dic, False],
+            "fancy35": [fancy35_dic, False],
+            "fancy36": [fancy36_dic, False],
+            "fancy37": [fancy37_dic, False],
+            "fancy38": [fancy38_dic, False],
+            "fancy39": [fancy39_dic, False],
+            "fancy40": [fancy40_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
