@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	9. fancy38
 	10. fancy39
 	11. fancy40
-- 10 new 1-line art
+- 20 new 1-line art
 	1. acid
 	2. arrowhead
 	3. awkward
@@ -29,6 +29,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. damnyou
 	9. depressed
 	10. dunno
+	12. envelope
+	13. fart
+	14. finn
+	15. frown
+	16. glitter
+	17. gotit
+	18. hello
+	19. loading
+	20. meep
 ### Changed
 - `dev-requirements.txt` modified
 ## [3.7] - 2019-06-24
