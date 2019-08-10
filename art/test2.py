@@ -121,6 +121,15 @@ fancy4:
 fancy40:
 ꓅ꑾꇘ꓅
 <BLANKLINE>
+fancy41:
+ț£§ț
+<BLANKLINE>
+fancy42:
+ţ€$ţ
+<BLANKLINE>
+fancy43:
+ᖶᙍSᖶ
+<BLANKLINE>
 fancy5:
 ᏖᏋᏕᏖ
 <BLANKLINE>
