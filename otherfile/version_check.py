@@ -26,7 +26,7 @@ CHANGELOG_ITEMS = [
     "[{0}]:"]
 ART_LIST_ITEMS = ["### Version : {0}"]
 FONT_LIST_ITEMS = ["### Version : {0}"]
-PARAMS_ITEMS = ['VERSION = "{0}"']
+PARAMS_ITEMS = ['ART_VERSION = "{0}"']
 FILES = {
     "setup.py": SETUP_ITEMS,
     "INSTALL.md": INSTALL_ITEMS,

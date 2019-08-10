@@ -4,7 +4,7 @@ from .text_dic1 import *
 from .text_dic2 import *
 from .art_dic import *
 
-VERSION = "3.8"  # pragma: no cover
+ART_VERSION = "3.8"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
