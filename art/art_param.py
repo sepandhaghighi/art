@@ -2,6 +2,7 @@
 """Art parameters."""
 from .text_dic1 import *
 from .text_dic2 import *
+from .text_dic3 import *
 from .art_dic import *
 
 ART_VERSION = "3.8"  # pragma: no cover
