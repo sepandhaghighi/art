@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `__version__` variable
+- 
 - 5 new fonts
 	1. fancy41
 	2. fancy42
@@ -15,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	5. fancy45
 ### Changed
 - `VERSION` variable renamed to `ART_VERSION`
+- Some fonts moved to `text_dic3.py`
 ## [3.8] - 2019-07-19
 ### Added
 - 11 new fonts
