@@ -130,6 +130,12 @@ fancy42:
 fancy43:
 ᖶᙍSᖶ
 <BLANKLINE>
+fancy44:
+тεƨт
+<BLANKLINE>
+fancy45:
+тešт
+<BLANKLINE>
 fancy5:
 ᏖᏋᏕᏖ
 <BLANKLINE>
