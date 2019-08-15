@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `VERSION` variable renamed to `ART_VERSION`
 - Some fonts moved to `text_dic3.py`
 - `ISSUE_TEMPLATE.md` modified
+- `CONTRIBUTING.md` modified
 ## [3.8] - 2019-07-19
 ### Added
 - 11 new fonts
