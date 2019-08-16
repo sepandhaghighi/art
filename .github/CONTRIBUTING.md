@@ -16,13 +16,13 @@ Please consider the following :
 7. Submit a pull request into `dev` (please complete the pull request template)
 
 
-### New font notes
+### New font
 
 1. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable ASCII characters)
 2. Map font name and data in `FONT_MAP` dictionary
 3. Select case sensitive mode in `FONT_MAP` dictionary
-	- `False` : If font is case sensitive
-	- `True` : If font is not case sensitive
+	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
+	- `True` : If font is not case sensitive (Example : ```""poison": [poison_dic, True]```)
 4. If font only support capital letters:
 	- Add font name to `UPPERCASE_FONTS`
 5. If font is Non-ASCII:
@@ -34,4 +34,16 @@ Please consider the following :
 7. Update `FontList.ipynb`
 8. Update counters in `README.md`
 
+
+### New 1-Line art
+
+1. Add 1-line art to the end of ‍`art_dic` dictionary in `art_dic.py`
+2. If 1-line art is not bipartite:
+	- Add as string (Example : ```"1-line art name": "string"```)
+3. If 1-line art is bipartite:
+	- Add as list (Example : ```"1-line art name": ["string1","string1"]```)
+	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list
+4. Add test case to `test.py` 
+5. Update `ArtList.ipynb`
+6. Update counters in `README.md`
 
