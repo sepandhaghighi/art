@@ -31,5 +31,7 @@ Please consider the following :
 	- Add test case to `test2.py`
 6. If font is ASCII:
 	- Add test case to `test.py` 
+7. Update `FontList.ipynb`
+8. Update counters in `README.md`
 
 
