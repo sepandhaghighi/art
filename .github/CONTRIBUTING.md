@@ -22,7 +22,7 @@ Please consider the following :
 2. Map font name and data in `FONT_MAP` dictionary
 3. Select case sensitive mode in `FONT_MAP` dictionary
 	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
-	- `True` : If font is not case sensitive (Example : ```""poison": [poison_dic, True]```)
+	- `True` : If font is not case sensitive (Example : ```"poison": [poison_dic, True]```)
 4. If font only support capital letters:
 	- Add font name to `UPPERCASE_FONTS`
 5. If font is Non-ASCII:
@@ -31,7 +31,7 @@ Please consider the following :
 	- Add test case to `test2.py`
 6. If font is ASCII:
 	- Add test case to `test.py` 
-7. Update `FontList.ipynb`
+7. Re-run `FontList.ipynb`
 8. Update counters in `README.md`
 
 
@@ -44,6 +44,6 @@ Please consider the following :
 	- Add as list (Example : ```"1-line art name": ["string1","string1"]```)
 	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list
 4. Add test case to `test.py` 
-5. Update `ArtList.ipynb`
+5. Re-run `ArtList.ipynb`
 6. Update counters in `README.md`
 
