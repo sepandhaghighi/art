@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `__version__` variable
+- `font_wizard.py`
 - 15 new fonts
 	1. fancy41
 	2. fancy42
