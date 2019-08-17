@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Fonts height testing script."""
+"""Wizard script for new fonts."""
 import string
 import sys
 import art
@@ -10,7 +10,7 @@ Font_List = list(art.art_param.FONT_MAP.keys())
 Error1 = "[Error] Font data is empty!"
 Error2 = "[Error] Font should support 95 printable ASCII characters, please check font data!"
 Error3 = "[Error] Font duplication (art version : {}) -- > ".format(art.__version__)
-
+Error4 = "[Error] All letters should have same height"
 
 if __name__ == "__main__":
     art.tprint("Font Wizard")
@@ -33,6 +33,13 @@ if __name__ == "__main__":
         if font_dic == art.art_param.FONT_MAP[font2][0]:
             print(Error3 + font2)
             sys.exit()
+    s = []
+    for letter in font_dic.keys():
+        if len(font_dic[letter]) != 0:
+            s.append(len(font_dic[letter].split("\n")))
+    if len(set(s)) != 1:
+        print(Error4)
+        sys.exit()
     if len(font_dic) == 95:
         print("Done!")
         print("Font dictionary: \n")
