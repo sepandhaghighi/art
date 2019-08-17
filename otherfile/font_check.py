@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Fonts height testing script."""
+"""Fonts height and duplication testing script."""
 import sys
 from art.art_param import *
 from art.art_dic import *
