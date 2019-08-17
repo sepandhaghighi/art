@@ -22,6 +22,7 @@ Please consider the following :
 
 1. Select a non-duplicate name
 2. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable ASCII characters)
+	- You can use `font_wizard.py` in `otherfile` folder
 3. Map font name and data in `FONT_MAP` dictionary
 4. Select case sensitive mode in `FONT_MAP` dictionary
 	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
@@ -36,6 +37,7 @@ Please consider the following :
 	- Add test case to `test.py` 
 8. Re-run `FontList.ipynb`
 9. Update counters in `README.md`
+10. Update reference in `README.md`
 
 
 ### 1-Line art
@@ -50,4 +52,5 @@ Please consider the following :
 5. Add test case to `test.py` 
 6. Re-run `ArtList.ipynb`
 7. Update counters in `README.md`
+8. Update reference in `README.md`
 
