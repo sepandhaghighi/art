@@ -38,6 +38,7 @@ Please consider the following :
 8. Re-run `FontList.ipynb`
 9. Update counters in `README.md`
 10. Update reference in `README.md`
+11. Run `autopep8.bat` (*Optional*)
 
 
 ### 1-Line art
