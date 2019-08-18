@@ -9,14 +9,15 @@ Font_List = list(art.art_param.FONT_MAP.keys())
 
 Error1 = "[Error] Font data is empty!"
 Error2 = "[Error] Font should support 95 printable ASCII characters, please check font data!"
-Error3 = "[Error] Font duplication (art version : {}) -- > ".format(art.__version__)
+Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
+    art.__version__)
 Error4 = "[Error] All letters should have same height"
 
 if __name__ == "__main__":
     art.tprint("Font Wizard")
     print("Use this string as input for font resource : ")
     print(Letters)
-    print("*"*30)
+    print("*" * 30)
     font_data = input("Please enter font data (string or list) : ")
     if len(font_data) == 0:
         print(Error1)
@@ -26,7 +27,7 @@ if __name__ == "__main__":
         if len(font_data) != len(Letters):
             print(Error2)
             sys.exit()
-    font_dic = dict(zip(Letters,font_data))
+    font_dic = dict(zip(Letters, font_data))
     if " " not in font_dic.keys():
         font_dic[" "] = " "
     for font2 in Font_List:
@@ -46,10 +47,3 @@ if __name__ == "__main__":
         print(font_dic)
     else:
         print(Error2)
-
-
-
-
-
-
-
