@@ -14,10 +14,10 @@ Error4 = "[Error] All letters should have same height"
 
 if __name__ == "__main__":
     art.tprint("Font Wizard")
-    print("Use this string as input for font resource: ")
+    print("Use this string as input for font resource : ")
     print(Letters)
     print("*"*30)
-    font_data = input("Please enter font data: ")
+    font_data = input("Please enter font data (string or list) : ")
     if len(font_data) == 0:
         print(Error1)
         sys.exit()
@@ -42,7 +42,7 @@ if __name__ == "__main__":
         sys.exit()
     if len(font_dic) == 95:
         print("Done!")
-        print("Font dictionary: \n")
+        print("Font dictionary : \n")
         print(font_dic)
     else:
         print(Error2)
