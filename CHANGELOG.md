@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [3.9] - 2019-08-20
+## [3.9] - 2019-08-21
 ### Added
 - `__version__` variable
 - `font_wizard.py`
