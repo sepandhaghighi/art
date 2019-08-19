@@ -16,13 +16,12 @@ Please consider the following :
 7. Submit a pull request into `dev` (please complete the pull request template)
 
 
-## Notes	
 
-### Font
+## Font
 
 1. Select a non-duplicate name
 2. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable ASCII characters)
-	- You can use `font_wizard.py` in `otherfile` folder
+	- You can use `font_wizard.py` in `otherfile` folder (Need to install latest version of `art` package)
 3. Map font name and data in `FONT_MAP` dictionary
 4. Select case sensitive mode in `FONT_MAP` dictionary
 	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
@@ -38,10 +37,10 @@ Please consider the following :
 8. Re-run `FontList.ipynb`
 9. Update counters in `README.md`
 10. Update `Reference` section in `README.md`
-11. Run `autopep8.bat` (*Optional*)
+11. Run `autopep8.bat` (*Optional*, Need to install latest version of `autopep8` package)
 
 
-### 1-Line art
+## 1-Line art
 
 1. Select a non-duplicate name
 2. Add 1-line art to the end of ‍`art_dic` dictionary in `art_dic.py`
