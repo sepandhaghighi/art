@@ -32,12 +32,12 @@ Please consider the following :
 6. If font is Non-ASCII:
 	- Add font name to `TEST_FILTERED_FONTS` list
 	- Add font name to `RANDOM_FILTERED_FONTS` list
-	- Add test case to `test2.py`
+	- Add a test case to `test2.py`
 7. If font is ASCII:
-	- Add test case to `test.py` 
+	- Add a test case to `test.py` 
 8. Re-run `FontList.ipynb`
 9. Update counters in `README.md`
-10. Update reference in `README.md`
+10. Update `Reference` section in `README.md`
 11. Run `autopep8.bat` (*Optional*)
 
 
@@ -50,8 +50,7 @@ Please consider the following :
 4. If 1-line art is bipartite:
 	- Add as list (Example : ```"1-line art name": ["string1","string1"]```)
 	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list
-5. Add test case to `test.py` 
+5. Add a test case to `test.py` 
 6. Re-run `ArtList.ipynb`
 7. Update counters in `README.md`
-8. Update reference in `README.md`
-
+8. Update `Reference` section in `README.md`
