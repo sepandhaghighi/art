@@ -2,5 +2,5 @@
 """Profile file."""
 from art import *
 
-font_list("ART PROFILE",test=True)
+font_list("ART PROFILE", test=True)
 art_list()
