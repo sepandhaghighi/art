@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.9] - 2019-08-20
 ### Added
 - `__version__` variable
 - `font_wizard.py`
@@ -1030,7 +1031,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.8...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.9...dev
+[3.9]: https://github.com/sepandhaghighi/art/compare/v3.8...v3.9
 [3.8]: https://github.com/sepandhaghighi/art/compare/v3.7...v3.8
 [3.7]: https://github.com/sepandhaghighi/art/compare/v3.6...v3.7
 [3.6]: https://github.com/sepandhaghighi/art/compare/v3.5...v3.6
