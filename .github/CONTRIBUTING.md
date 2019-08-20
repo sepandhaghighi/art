@@ -6,14 +6,17 @@ Please consider the following :
 
 1. Fork it!
 2. Create your feature branch (under `dev` branch)
-3. Add standard `docstring` to your functions
-4. Add tests for new features (`doctest`)
+3. Add your features
+	- To add a new font visit [here](#font)
+	- To add a new 1-line art visit [here](#1-line-art)
+4. Add standard `docstring` to your functions
+5. Add tests for new features (`doctest`)
 	- Non-ASCII fonts in `test2.py`
 	- Other in `test.py`
-5. Pass all CI tests
-6. Update `CHANGELOG.md`
+6. Pass all CI tests
+7. Update `CHANGELOG.md`
 	- Describe changes under `[Unreleased]` section
-7. Submit a pull request into `dev` (please complete the pull request template)
+8. Submit a pull request into `dev` (please complete the pull request template)
 
 
 
