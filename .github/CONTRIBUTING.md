@@ -6,17 +6,18 @@ Please consider the following :
 
 1. Fork it!
 2. Create your feature branch (under `dev` branch)
-3. Add your new features or fix some bugs
+3. Add your new features or fix detected bugs
 	- To add a new font visit [here](#font)
 	- To add a new 1-line art visit [here](#1-line-art)
 4. Add standard `docstring` to your functions
 5. Add tests for new features (`doctest`)
 	- Non-ASCII fonts in `test2.py`
 	- Other in `test.py`
-6. Pass all CI tests
-7. Update `CHANGELOG.md`
+6. Update `README.md` (if needed)
+7. Pass all CI tests
+8. Update `CHANGELOG.md`
 	- Describe changes under `[Unreleased]` section
-8. Submit a pull request into `dev` (please complete the pull request template)
+9. Submit a pull request into `dev` (please complete the pull request template)
 
 
 
@@ -24,7 +25,7 @@ Please consider the following :
 
 1. Select a non-duplicate name
 2. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable ASCII characters)
-	- You can use `font_wizard.py` in `otherfile` folder (Need to install latest version of `art` package)
+	- You can use `font_wizard.py` in `otherfile` folder (need to install latest version of `art` package)
 3. Map font name and data in `FONT_MAP` dictionary
 4. Select case sensitive mode in `FONT_MAP` dictionary
 	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
@@ -40,7 +41,7 @@ Please consider the following :
 8. Re-run `FontList.ipynb`
 9. Update counters in `README.md`
 10. Update `Reference` section in `README.md`
-11. Run `autopep8.bat` (*Optional*, Need to install latest version of `autopep8` package)
+11. Run `autopep8.bat` (*Optional*, need to install latest version of `autopep8` package)
 
 
 ## 1-Line art
