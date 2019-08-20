@@ -6,7 +6,7 @@ Please consider the following :
 
 1. Fork it!
 2. Create your feature branch (under `dev` branch)
-3. Add your features
+3. Add your new features or fix some bugs
 	- To add a new font visit [here](#font)
 	- To add a new 1-line art visit [here](#1-line-art)
 4. Add standard `docstring` to your functions
