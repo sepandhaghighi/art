@@ -2,6 +2,7 @@
 """Wizard script for new fonts."""
 import string
 import sys
+import ast
 import art
 
 Letters = string.ascii_letters + string.punctuation + string.digits
@@ -23,7 +24,7 @@ if __name__ == "__main__":
         print(Error1)
         sys.exit()
     if len(font_data) != len(Letters):
-        font_data = eval(font_data)
+        font_data = ast.literal_eval(font_data)
         if len(font_data) != len(Letters):
             print(Error2)
             sys.exit()
