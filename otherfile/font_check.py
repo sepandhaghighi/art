@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Fonts height testing script."""
+"""Fonts height and duplication testing script."""
 import sys
 from art.art_param import *
 from art.art_dic import *
@@ -29,14 +29,16 @@ for font1 in Font_List:
         if Font_List.index(font1) < Font_List.index(font2):
             if FONT_MAP[font1][0] == FONT_MAP[font2][0]:
                 Failed2 += 1
-                print(str(Failed2)+"-font duplication -- > " + font1+","+font2)
+                print(
+                    str(Failed2) +
+                    "-font duplication -- > " +
+                    font1 +
+                    "," +
+                    font2)
 
 if Failed2 == 0:
     print(Message2 + "passed!")
 else:
     print(Message2 + "failed!")
 
-sys.exit(Failed2+Failed1)
-
-
-
+sys.exit(Failed2 + Failed1)

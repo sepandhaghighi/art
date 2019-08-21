@@ -6,7 +6,7 @@ import codecs
 from art.art_param import *
 
 Failed = 0
-VERSION = "3.8"
+VERSION = "3.9"
 
 README_ITEMS = ['<td align="center">{0}</td>'.format(str(FONT_COUNTER)),
                 '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(ART_COUNTER)),
@@ -26,7 +26,7 @@ CHANGELOG_ITEMS = [
     "[{0}]:"]
 ART_LIST_ITEMS = ["### Version : {0}"]
 FONT_LIST_ITEMS = ["### Version : {0}"]
-PARAMS_ITEMS = ['VERSION = "{0}"']
+PARAMS_ITEMS = ['ART_VERSION = "{0}"']
 FILES = {
     "setup.py": SETUP_ITEMS,
     "INSTALL.md": INSTALL_ITEMS,

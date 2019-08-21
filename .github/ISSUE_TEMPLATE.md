@@ -10,4 +10,4 @@
 
 #### Python Version
 
-#### ART Version
+#### ART Version (Use : `art.__version__`)

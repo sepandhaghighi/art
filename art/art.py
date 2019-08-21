@@ -110,7 +110,7 @@ def help_func():
     :return: None
     """
     tprint("art")
-    tprint("v" + VERSION)
+    tprint("v" + ART_VERSION)
     print(DESCRIPTION + "\n")
     print("Webpage : http://art.shaghighi.ir\n")
     print("Help : \n")
