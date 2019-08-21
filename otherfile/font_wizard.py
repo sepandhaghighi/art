@@ -24,8 +24,12 @@ if __name__ == "__main__":
         print(Error1)
         sys.exit()
     if len(font_data) != len(Letters):
-        font_data = ast.literal_eval(font_data)
-        if len(font_data) != len(Letters):
+        try:
+            font_data = ast.literal_eval(font_data)
+            if len(font_data) != len(Letters):
+                print(Error2)
+                sys.exit()
+        except Exception:
             print(Error2)
             sys.exit()
     font_dic = dict(zip(Letters, font_data))
