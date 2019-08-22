@@ -241,7 +241,7 @@ Saved!
 Filename: antrophobia.txt
 >>> Data = tsave("test@34",font="fancy37",filename="fancy37.txt")
 Saved!
-Filename: magical.txt
+Filename: fancy37.txt
 >>> file = codecs.open("antrophobia.txt","r",encoding="utf-8")
 >>> print(file.read())
 тєѕт@34
