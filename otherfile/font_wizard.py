@@ -13,7 +13,7 @@ Error2 = "[Error] Font should support 95 printable ASCII characters, please chec
 Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
     art.__version__)
 Error4 = "[Error] All letters should have same height"
-Error5 = "[Error] Font should compatible with UTF-8"
+Error5 = "[Error] Font should be compatible with UTF-8"
 
 def is_utf8(s):
     """
@@ -24,7 +24,8 @@ def is_utf8(s):
     :return: result as bool
     """
     try:
-        x=bytes(s,'utf-8').decode('utf-8', 'strict')
+        x1 = s.encode('utf-8')
+        x2 = bytes(x1).decode('utf-8', 'strict')
         return True
     except Exception:
         return False

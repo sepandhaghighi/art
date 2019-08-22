@@ -20,7 +20,8 @@ def is_utf8(s):
     :return: result as bool
     """
     try:
-        x=bytes(s,'utf-8').decode('utf-8', 'strict')
+        x1 = s.encode('utf-8')
+        x2 = bytes(x1).decode('utf-8', 'strict')
         return True
     except Exception:
         return False
