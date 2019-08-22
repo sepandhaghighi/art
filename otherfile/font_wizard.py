@@ -13,6 +13,21 @@ Error2 = "[Error] Font should support 95 printable ASCII characters, please chec
 Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
     art.__version__)
 Error4 = "[Error] All letters should have same height"
+Error5 = "[Error] Font should compatible with UTF-8"
+
+def is_utf8(s):
+    """
+    Check input string for UTF-8 compatibility.
+
+    :param s: input string
+    :type s: str
+    :return: result as bool
+    """
+    try:
+        x=bytes(s,'utf-8').decode('utf-8', 'strict')
+        return True
+    except Exception:
+        return False
 
 if __name__ == "__main__":
     art.tprint("Font Wizard")
@@ -20,6 +35,9 @@ if __name__ == "__main__":
     print(Letters)
     print("*" * 30)
     font_data = input("Please enter font data (string or list) : ")
+    if not is_utf8(font_data):
+        print(Error5)
+        sys.exit()
     if len(font_data) == 0:
         print(Error1)
         sys.exit()
