@@ -4979,6 +4979,15 @@ True
 >>> for font in FONT_MAP.keys():
 ...     for letter in string.ascii_letters + string.punctuation + string.digits + " ":
 ...         Data = text2art(letter,font,chr_ignore=False)
+>>> file = open("art.txt","r")
+>>> print(file.read())
+ _               _                  _
+| |_   ___  ___ | |_    __ _  _ __ | |_
+| __| / _ \/ __|| __|  / _` || '__|| __|
+| |_ |  __/\__ \| |_  | (_| || |   | |_
+ \__| \___||___/ \__|  \__,_||_|    \__|
+<BLANKLINE>
+<BLANKLINE>
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
