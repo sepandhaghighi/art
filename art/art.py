@@ -232,12 +232,14 @@ def tsave(
                 index = index + 1
             else:
                 break
-        if font.lower() in TEST_FILTERED_FONTS:
-            file = codecs.open(test_name + extension, "w", encoding='utf-8')
-        else:
-            file = open(test_name + extension, "w")
+        file = codecs.open(test_name + extension, "w", encoding='utf-8')
         result = text2art(text, font=font, chr_ignore=chr_ignore)
-        file.write(result)
+        try:
+            file.write(result)
+        except UnicodeDecodeError:
+            file.close()
+            file = codecs.open(test_name + extension, "w")
+            file.write(result)
         file.close()
         if print_status:
             print("Saved! \nFilename: " + test_name + extension)
