@@ -15,6 +15,7 @@ Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
 Error4 = "[Error] All letters should have same height"
 Error5 = "[Error] Font should be compatible with UTF-8"
 
+
 def is_utf8(s):
     """
     Check input string for UTF-8 compatibility.
@@ -25,12 +26,13 @@ def is_utf8(s):
     """
     try:
         if sys.version_info.major == 3:
-            x2 = bytes(s,'utf-8').decode('utf-8', 'strict')
+            x2 = bytes(s, 'utf-8').decode('utf-8', 'strict')
         else:
             return True
         return True
     except Exception:
         return False
+
 
 if __name__ == "__main__":
     art.tprint("Font Wizard")
