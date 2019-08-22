@@ -28,47 +28,49 @@ def is_utf8(s):
     except Exception:
         return False
 
-def print_result():
+def print_result(flag_list,message_list):
     """
     Print final result.
 
+    :param flag_list: list of test flags
+    :type flag_list: list
+    :param message_list: list of test messages
+    :type message_list: list
     :return: None
     """
     print("art version : {}\n".format(art.__version__))
-    message_list = [Message1,Message2,Message3]
-    flag_list = [Failed1,Failed1,Failed1]
     for index,flag in enumerate(flag_list):
         if flag == 0:
             print(message_list[index] + "passed!")
         else:
             print(message_list[index] + "failed!")
 
+if __name__ == "__main__":
+    for font in Font_List:
+        s = []
+        l = ""
+        for letter in art.art_param.FONT_MAP[font][0].keys():
+            if len(art.art_param.FONT_MAP[font][0][letter]) != 0:
+                s.append(len(art.art_param.FONT_MAP[font][0][letter].split("\n")))
+            l += art.art_param.FONT_MAP[font][0][letter]
+        if len(set(s)) != 1:
+            print("Height error in font : " + font)
+            Failed1 += 1
+        if not is_utf8(l):
+            Failed3 +=1
+            print("UTF-8 compatibility error in font : " + font)
 
-for font in Font_List:
-    s = []
-    l = ""
-    for letter in art.art_param.FONT_MAP[font][0].keys():
-        if len(art.art_param.FONT_MAP[font][0][letter]) != 0:
-            s.append(len(art.art_param.FONT_MAP[font][0][letter].split("\n")))
-        l += art.art_param.FONT_MAP[font][0][letter]
-    if len(set(s)) != 1:
-        print("Height error in font : " + font)
-        Failed1 += 1
-    if not is_utf8(l):
-        Failed3 +=1
-        print("UTF-8 compatibility error in font : " + font)
+    for font1 in Font_List:
+        for font2 in Font_List:
+            if Font_List.index(font1) < Font_List.index(font2):
+                if art.art_param.FONT_MAP[font1][0] == art.art_param.FONT_MAP[font2][0]:
+                    Failed2 += 1
+                    print(
+                        str(Failed2) +
+                        "-font duplication -- > " +
+                        font1 +
+                        "," +
+                        font2)
 
-for font1 in Font_List:
-    for font2 in Font_List:
-        if Font_List.index(font1) < Font_List.index(font2):
-            if art.art_param.FONT_MAP[font1][0] == art.art_param.FONT_MAP[font2][0]:
-                Failed2 += 1
-                print(
-                    str(Failed2) +
-                    "-font duplication -- > " +
-                    font1 +
-                    "," +
-                    font2)
-
-print_result()
-sys.exit(Failed2 + Failed1 + Failed3)
+    print_result([Failed1,Failed1,Failed1],[Message1,Message2,Message3])
+    sys.exit(Failed2 + Failed1 + Failed3)
