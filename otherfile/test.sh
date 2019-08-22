@@ -3,21 +3,29 @@ set -x
 
 
 IS_IN_TRAVIS=false
+PYTHON_COMMAND=python
 
-python otherfile/version_check.py
-python otherfile/font_check.py
-
+if [ "$TRAVIS_OS_NAME" == "osx" ]
+then
+	PYTHON_COMMAND=python3
+fi
+ 
 if [ "$CI" = 'true' ] && [ "$TRAVIS" = 'true' ]
 then
      IS_IN_TRAVIS=true
 fi
+ 
+$PYTHON_COMMAND otherfile/version_check.py
+$PYTHON_COMMAND otherfile/font_check.py
+$PYTHON_COMMAND -m art testcov2
 
 if [ "$IS_IN_TRAVIS" = 'false' ] || [ "$TRAVIS_PYTHON_VERSION" = '3.6' ]
-  then
-      python -m vulture --min-confidence 80 --exclude=art,build,.eggs --sort-by-size .
-      python -m bandit -r art -s B311
-	  python -m pydocstyle --match='(?!test).*\.py'
-  fi
-python -m art testcov2
-codecov
-python -m cProfile -s cumtime art_profile.py
+then
+     $PYTHON_COMMAND -m vulture --min-confidence 80 --exclude=art,build,.eggs --sort-by-size .
+     $PYTHON_COMMAND -m bandit -r art -s B311
+	 $PYTHON_COMMAND -m pydocstyle --match='(?!test).*\.py'
+	 codecov
+fi
+
+
+$PYTHON_COMMAND -m cProfile -s cumtime art_profile.py
