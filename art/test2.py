@@ -2,6 +2,7 @@
 '''
 >>> import os
 >>> import random
+>>> import codecs
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
@@ -238,10 +239,18 @@ False
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
->>> Data = tsave("test@34",font="magical",filename="magical.txt")
+>>> Data = tsave("test@34",font="fancy37",filename="fancy37.txt")
 Saved!
 Filename: magical.txt
+>>> file = codecs.open("antrophobia.txt","r",encoding="utf-8")
+>>> print(file.read())
+тєѕт@34
+<BLANKLINE>
+>>> file = codecs.open("fancy37.txt","r",encoding="utf-8")
+>>> print(file.read())
+ꋖꏹꌚꋖ@34
+<BLANKLINE>
 >>> os.remove("antrophobia.txt")
->>> os.remove("magical.txt")
+>>> os.remove("fancy37.txt")
 
 '''
