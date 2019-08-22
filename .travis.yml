@@ -36,12 +36,9 @@ matrix:
           python: nightly
           dist: xenial
 install:
-  - pip install -r requirements.txt
-  - python setup.py install
-  - python -m art test
+  - chmod +x .travis/install.sh
+  - ./.travis/install.sh
 before_script:
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip install -r dev-requirements.txt --user ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install -r dev-requirements.txt ; fi
-  - chmod +x otherfile/test.sh
+  - chmod +x .travis/test.sh
 script:
-  - ./otherfile/test.sh
+  - ./.travis/test.sh
