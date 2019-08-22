@@ -4988,6 +4988,7 @@ True
  \__| \___||___/ \__|  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
+>>> file.close()
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
