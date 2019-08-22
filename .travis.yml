@@ -4,7 +4,7 @@ matrix:
     allow_failures:
         - os: osx
           language: generic
-          env: TOXENV=py27
+          env: TOXENV=py36
         - os: linux
           python: 3.8-dev
           dist: xenial
@@ -25,7 +25,7 @@ matrix:
           python: 2.7
         - os: osx
           language: generic
-          env: TOXENV=py27
+          env: TOXENV=py36
         - os: linux
           python: 3.7-dev
           dist: xenial
