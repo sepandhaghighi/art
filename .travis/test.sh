@@ -21,7 +21,7 @@ $PYTHON_COMMAND -m art testcov2
 
 if [ "$IS_IN_TRAVIS" = 'false' ] || [ "$TRAVIS_PYTHON_VERSION" = '3.6' ]
 then
-     $PYTHON_COMMAND -m vulture --min-confidence 80 --exclude=art,build,.eggs --sort-by-size .
+     $PYTHON_COMMAND -m vulture art/ otherfile/ setup.py art_profile.py --min-confidence 65 --exclude=build,.eggs --sort-by-size
      $PYTHON_COMMAND -m bandit -r art -s B311
 	 $PYTHON_COMMAND -m pydocstyle --match='(?!test).*\.py'
 	 codecov
