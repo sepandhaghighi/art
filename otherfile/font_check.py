@@ -76,5 +76,5 @@ if __name__ == "__main__":
                         "," +
                         font2)
 
-    print_result([Failed1, Failed1, Failed1], [Message1, Message2, Message3])
+    print_result([Failed1, Failed2, Failed3], [Message1, Message2, Message3])
     sys.exit(Failed2 + Failed1 + Failed3)
