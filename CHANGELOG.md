@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `font_wizard.py` updated
 - `font_check.py` updated
 - `tsave` function bug fixed
+- Test system modified
 ## [3.9] - 2019-08-21
 ### Added
 - `__version__` variable
