@@ -229,7 +229,7 @@ def tsave(
             extension = "." + splitted_filename[1]
         index = 2
         test_name = name
-        while(overwrite == False):
+        while(overwrite is False):
             if test_name + extension in files_list:
                 test_name = name + str(index)
                 index = index + 1
