@@ -199,7 +199,8 @@ def tsave(
         font=DEFAULT_FONT,
         filename="art",
         chr_ignore=True,
-        print_status=True):
+        print_status=True,
+        overwrite=False):
     r"""
     Save ascii art (support \n).
 
@@ -213,6 +214,8 @@ def tsave(
     :type chr_ignore:bool
     :param print_status : save message print flag
     :type print_status:bool
+    :param overwrite : overwrite the saved file if true
+    :type overwrite:bool
     :return: None
     """
     try:
