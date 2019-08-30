@@ -224,9 +224,9 @@ def tsave(
         files_list = os.listdir(os.getcwd())
         extension = ".txt"
         splitted_filename = filename.split(".")
-        name = splitted_filename[0]
+        name = filename[:-1 * filename[::-1].find('.') - 1]
         if len(splitted_filename) > 1:
-            extension = "." + splitted_filename[1]
+            extension = "." + splitted_filename[-1]
         index = 2
         test_name = name
         while(overwrite is False):
