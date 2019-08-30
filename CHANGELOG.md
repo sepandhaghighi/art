@@ -5,15 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- overwrite feature added to tsave function in `art.py`
 ### Added
 - `install.sh`
 ### Changed
 - `test.sh` moved to `.travis` folder
 - `font_wizard.py` updated
 - `font_check.py` updated
-- `tsave` function bug fixed
+- `tsave` function bugs fixed
 - Test system modified
+- `overwrite` parameter added to `tsave` function
 ## [3.9] - 2019-08-21
 ### Added
 - `__version__` variable
