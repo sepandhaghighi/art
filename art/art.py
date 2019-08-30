@@ -222,11 +222,13 @@ def tsave(
         if isinstance(text, str) is False:
             raise Exception(TEXT_TYPE_ERROR)
         files_list = os.listdir(os.getcwd())
-        extension = ".txt"
         splitted_filename = filename.split(".")
-        name = filename[:-1 * filename[::-1].find('.') - 1]
         if len(splitted_filename) > 1:
+            name = filename[:-1 * filename[::-1].find('.') - 1]
             extension = "." + splitted_filename[-1]
+        else:
+            name = filename
+            extension = ".txt"
         index = 2
         test_name = name
         while(overwrite is False):
