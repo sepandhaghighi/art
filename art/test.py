@@ -4989,18 +4989,27 @@ True
 <BLANKLINE>
 <BLANKLINE>
 >>> file.close()
->>> tsave("test","standard",filename="test1.txt")
+>>> Data = tsave("test","standard",filename="test1.txt")
 Saved!
 Filename: test1.txt
-{'Status': True, 'Message': 'OK'}
->>> tsave("test","standard",filename="test1.txt", overwrite=True)
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data = tsave("test","standard",filename="test1.txt", overwrite=True)
 Saved!
 Filename: test1.txt
-{'Status': True, 'Message': 'OK'}
->>> tsave("test","standard",filename="test1.2.txt")
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data = tsave("test","standard",filename="test1.2.txt")
 Saved!
 Filename: test1.2.txt
-{'Status': True, 'Message': 'OK'}
+>>> Data["Status"]
+True
+>>> Data["Message"]
+'OK'
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
