@@ -4993,10 +4993,6 @@ True
 Saved!
 Filename: test1.txt
 {'Status': True, 'Message': 'OK'}
->>> tsave("test","standard",filename="test1.txt")
-Saved!
-Filename: test12.txt
-{'Status': True, 'Message': 'OK'}
 >>> tsave("test","standard",filename="test1.txt", overwrite=True)
 Saved!
 Filename: test1.txt
@@ -5011,7 +5007,6 @@ Filename: test1.2.txt
 >>> os.remove("test.bw")
 >>> os.remove("test.txt")
 >>> os.remove("test1.txt")
->>> os.remove("test12.txt")
 >>> os.remove("test1.2.txt")
 
 '''
