@@ -317,7 +317,7 @@ ___  ____ _    ____ ____
 
 This function return `dict` in normal and exception mode.
 ```pycon
->>> Response=tsave("art",filename="test.txt") # save ASCII text in test.txt file with save message (print_status==True) # return dict
+>>> Response=tsave("art",filename="test.txt") # save ASCII text in test.txt file with save message (print_status==True), return dict
 Saved! 
 Filename: test.txt
 >>> Response["Message"]
@@ -329,6 +329,9 @@ Filename: test.txt
 True
 >>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 {'Status': False, 'Message': "'int' object has no attribute 'split'"}
+>>> Response=tsave("art",filename="test.txt",overwrite=True) # overwrite parameter is added in Version 4.0
+Saved! 
+Filename: test.txt
                         
 ```
 
