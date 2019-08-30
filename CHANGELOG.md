@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `tsave` function bugs fixed
 - Test system modified
 - `overwrite` parameter added to `tsave` function
+- `README.md` modified
+- `CONTRIBUTING.md` modified
 ## [3.9] - 2019-08-21
 ### Added
 - `__version__` variable
