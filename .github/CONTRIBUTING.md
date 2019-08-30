@@ -17,7 +17,9 @@ Please consider the following :
 7. Pass all CI tests
 8. Update `CHANGELOG.md`
 	- Describe changes under `[Unreleased]` section
-9. Submit a pull request into `dev` (please complete the pull request template)
+9. Update `AUTHORS.md`
+	- Add your name under `# Other Contributors #` section
+10. Submit a pull request into `dev` (please complete the pull request template)
 
 
 
