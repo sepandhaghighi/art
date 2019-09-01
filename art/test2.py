@@ -170,6 +170,9 @@ fancy54:
 fancy55:
 t€$t
 <BLANKLINE>
+fancy56:
+𝐭𝐞𝐬𝐭
+<BLANKLINE>
 fancy6:
 ƭεรƭ
 <BLANKLINE>

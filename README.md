@@ -65,7 +65,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">440</td>
+		<td align="center">441</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
