@@ -179,6 +179,9 @@ fancy57:
 fancy58:
 𝖙𝖊𝖘𝖙
 <BLANKLINE>
+fancy59:
+𝕥𝕖𝕤𝕥
+<BLANKLINE>
 fancy6:
 ƭεรƭ
 <BLANKLINE>
