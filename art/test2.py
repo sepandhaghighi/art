@@ -186,7 +186,7 @@ fancy6:
 ƭεรƭ
 <BLANKLINE>
 fancy60:
-𝕥𝕖𝕤𝕥
+𝘁𝗲𝘀𝘁
 <BLANKLINE>
 fancy7:
 丅ᗴᔕ丅
