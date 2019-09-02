@@ -708,7 +708,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy57": [fancy57_dic, False],
             "fancy58": [fancy58_dic, False],
             "fancy59": [fancy59_dic, False],
-            "fancy60": [fancy59_dic, False]
+            "fancy60": [fancy60_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
