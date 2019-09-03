@@ -41,7 +41,9 @@ Please consider the following :
 7. If font is ASCII:
 	- Add a test case to `test.py` (*Alphabetical order*) 
 8. Re-run `FontList.ipynb`
-9. Update counters in `README.md`
+9. Update 2 font counters in `README.md`
+	- Badge section
+	- Overview section
 10. Update `Reference` section in `README.md`
 11. Run `autopep8.bat` (*Optional*, need to install latest version of `autopep8` package)
 
@@ -57,5 +59,7 @@ Please consider the following :
 	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list
 5. Add a test case to `test.py` (*Alphabetical order*)  
 6. Re-run `ArtList.ipynb`
-7. Update counters in `README.md`
+7. Update 2 art counters in `README.md`
+	- Badge section
+	- Overview section
 8. Update `Reference` section in `README.md`
