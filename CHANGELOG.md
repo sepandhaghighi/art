@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `install.sh`
+- 5 new fonts
+	1. fancy56
+	2. fancy57
+	3. fancy58
+	4. fancy59
+	5. fancy60
 ### Changed
 - `test.sh` moved to `.travis` folder
 - `font_wizard.py` updated
