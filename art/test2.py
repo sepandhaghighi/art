@@ -212,6 +212,9 @@ fancy67:
 fancy68:
 𝔱𝔢𝔰𝔱
 <BLANKLINE>
+fancy69:
+ᵗᵉᶳᵗ
+<BLANKLINE>
 fancy7:
 丅ᗴᔕ丅
 <BLANKLINE>
