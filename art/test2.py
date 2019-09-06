@@ -200,6 +200,9 @@ fancy63:
 fancy64:
 𝙩𝙚𝙨𝙩
 <BLANKLINE>
+fancy65:
+𝓉𝑒𝓈𝓉
+<BLANKLINE>
 fancy7:
 丅ᗴᔕ丅
 <BLANKLINE>
