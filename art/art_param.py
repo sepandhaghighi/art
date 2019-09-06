@@ -133,6 +133,7 @@ UPPERCASE_FONTS = [
 RANDOM_FILTERED_FONTS = [
     "5x8",
     "binary",
+    "contouring1",
     "decimal",
     "high_noo",
     "hills",
@@ -248,6 +249,7 @@ RANDOM_FILTERED_ARTS = [
 
 
 TEST_FILTERED_FONTS = [
+    "contouring1",
     "mirror",
     "mirror_flip",
     "flip",
@@ -625,6 +627,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "clr8x8": [clr8x8_dic, False],
             "clr8x10": [clr8x10_dic, False],
             "coil_cop": [coil_cop_dic, False],
+            "contouring1": [contouring1_dic, False],
             "com_sen": [com_sen_dic, False],
             "druid": [druid_dic, False],
             "e_fist": [e_fist_dic, True],
