@@ -14,6 +14,9 @@ antrophobia:
 contouring1:
 ⓣⓔⓢⓣ
 <BLANKLINE>
+contouring2:
+⒯⒠⒮⒯
+<BLANKLINE>
 currency:
 ₮Ɇ₴₮
 <BLANKLINE>

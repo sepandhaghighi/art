@@ -134,6 +134,7 @@ RANDOM_FILTERED_FONTS = [
     "5x8",
     "binary",
     "contouring1",
+    "contouring2",
     "decimal",
     "high_noo",
     "hills",
@@ -250,6 +251,7 @@ RANDOM_FILTERED_ARTS = [
 
 TEST_FILTERED_FONTS = [
     "contouring1",
+    "contouring2",
     "mirror",
     "mirror_flip",
     "flip",
@@ -628,6 +630,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "clr8x10": [clr8x10_dic, False],
             "coil_cop": [coil_cop_dic, False],
             "contouring1": [contouring1_dic, False],
+            "contouring2": [contouring2_dic, True],
             "com_sen": [com_sen_dic, False],
             "druid": [druid_dic, False],
             "e_fist": [e_fist_dic, True],
