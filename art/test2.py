@@ -227,6 +227,9 @@ fancy71:
 fancy72:
 тєѕт
 <BLANKLINE>
+fancy73:
+ŧêšŧ
+<BLANKLINE>
 fancy8:
 tєรt
 <BLANKLINE>
