@@ -133,6 +133,8 @@ UPPERCASE_FONTS = [
 RANDOM_FILTERED_FONTS = [
     "5x8",
     "binary",
+    "contouring1",
+    "contouring2",
     "decimal",
     "high_noo",
     "hills",
@@ -223,7 +225,21 @@ RANDOM_FILTERED_FONTS = [
     "fancy57",
     "fancy58",
     "fancy59",
-    "fancy60"]
+    "fancy60",
+    "fancy61",
+    "fancy62",
+    "fancy63",
+    "fancy64",
+    "fancy65",
+    "fancy66",
+    "fancy67",
+    "fancy68",
+    "fancy69",
+    "fancy70",
+    "fancy71",
+    "fancy72",
+    "fancy73",
+    "fancy74"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -234,6 +250,8 @@ RANDOM_FILTERED_ARTS = [
 
 
 TEST_FILTERED_FONTS = [
+    "contouring1",
+    "contouring2",
     "mirror",
     "mirror_flip",
     "flip",
@@ -309,7 +327,21 @@ TEST_FILTERED_FONTS = [
     "fancy57",
     "fancy58",
     "fancy59",
-    "fancy60"]
+    "fancy60",
+    "fancy61",
+    "fancy62",
+    "fancy63",
+    "fancy64",
+    "fancy65",
+    "fancy66",
+    "fancy67",
+    "fancy68",
+    "fancy69",
+    "fancy70",
+    "fancy71",
+    "fancy72",
+    "fancy73",
+    "fancy74"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -597,6 +629,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "clr8x8": [clr8x8_dic, False],
             "clr8x10": [clr8x10_dic, False],
             "coil_cop": [coil_cop_dic, False],
+            "contouring1": [contouring1_dic, False],
+            "contouring2": [contouring2_dic, True],
             "com_sen": [com_sen_dic, False],
             "druid": [druid_dic, False],
             "e_fist": [e_fist_dic, True],
@@ -708,7 +742,21 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy57": [fancy57_dic, False],
             "fancy58": [fancy58_dic, False],
             "fancy59": [fancy59_dic, False],
-            "fancy60": [fancy60_dic, False]
+            "fancy60": [fancy60_dic, False],
+            "fancy61": [fancy61_dic, False],
+            "fancy62": [fancy62_dic, False],
+            "fancy63": [fancy63_dic, False],
+            "fancy64": [fancy64_dic, False],
+            "fancy65": [fancy65_dic, False],
+            "fancy66": [fancy66_dic, False],
+            "fancy67": [fancy67_dic, False],
+            "fancy68": [fancy68_dic, False],
+            "fancy69": [fancy69_dic, False],
+            "fancy70": [fancy70_dic, False],
+            "fancy71": [fancy71_dic, False],
+            "fancy72": [fancy72_dic, False],
+            "fancy73": [fancy73_dic, False],
+            "fancy74": [fancy74_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
