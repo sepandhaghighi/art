@@ -5,32 +5,31 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- 16 new fonts
-	1.fancy61
-	2.fancy62
-	3.fancy63
-	4.fanyc64
-	5.fancy65
-	6.fancy66
-	7.fancy67
-	8.fancy68
-	9.fancy69
-	10.fanyc70
-	11.fancy71
-	12.fancy72
-	13.fancy73
-	14.fancy74
-	15.contouring1
-	16.contouring2
-- `autopep8.sh`
 ### Added
 - `install.sh`
-- 5 new fonts
+- `autopep8.sh`
+- 21 new fonts
 	1. fancy56
 	2. fancy57
 	3. fancy58
 	4. fancy59
 	5. fancy60
+	6. fancy61
+	7. fancy62
+	8. fancy63
+	9. fanyc64
+	10. fancy65
+	11. fancy66
+	12. fancy67
+	13. fancy68
+	14. fancy69
+	15. fanyc70
+	16. fancy71
+	17. fancy72
+	18. fancy73
+	19. fancy74
+	20. contouring1
+	21. contouring2
 ### Changed
 - `test.sh` moved to `.travis` folder
 - `font_wizard.py` updated
