@@ -46,7 +46,7 @@ Please consider the following :
 	- Badge section
 	- Overview section
 10. Update `Reference` section in `README.md`
-11. Run `autopep8.bat` (*Optional*, need to install latest version of `autopep8` package)
+11. Run `autopep8.bat`/`autopep8.sh` (*Optional*, need to install latest version of `autopep8` package)
 
 
 ## 1-Line art
