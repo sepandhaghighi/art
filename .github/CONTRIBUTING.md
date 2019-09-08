@@ -21,7 +21,7 @@ Please consider the following :
 	- Add your name under `# Other Contributors #` section
 10. Submit a pull request into `dev` (please complete the pull request template)
 
-
+⚠️ If you want to suggest fonts and arts, visit [this issue](https://github.com/sepandhaghighi/art/issues/59)
 
 ## Font
 
