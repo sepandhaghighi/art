@@ -118,7 +118,7 @@ def aprint(artname, number=1, text=""):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param text: text for two part art
+    :param text: text for bipartite art
     :type text: str
     :return: None
     """
@@ -136,7 +136,7 @@ def art(artname, number=1, text=""):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param text: text for two part art
+    :param text: text for bipartite art
     :type text: str
     :return: ascii art as str
     """
