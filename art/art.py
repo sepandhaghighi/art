@@ -123,6 +123,8 @@ def aprint(artname, number=1, text=""):
     :return: None
     """
     try:
+        if artname == "UnicodeEncodeError":
+            raise UnicodeEncodeError('test', u"", 42, 43, 'test unicode-encode-error')
         print(art(artname=artname, number=number, text=text))
     except UnicodeEncodeError:
         print(ART_ENVIRONMENT_WARNING.format(artname))
@@ -189,6 +191,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :return: None
     """
     try:
+        if font == "UnicodeEncodeError":
+            raise UnicodeEncodeError('test', u"", 42, 43, 'test unicode-encode-error')
         result = text2art(text, font=font, chr_ignore=chr_ignore)
         print(result)
     except UnicodeEncodeError:

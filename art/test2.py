@@ -300,6 +300,10 @@ False
 >>> tprint("test","fancy1")
 тεsт
 <BLANKLINE>
+>>> aprint("UnicodeEncodeError")
+[Warning] 'UnicodeEncodeError' is not printable in this environment.
+>>> tprint("test","UnicodeEncodeError")
+[Warning] 'UnicodeEncodeError' is not printable in this environment.
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
