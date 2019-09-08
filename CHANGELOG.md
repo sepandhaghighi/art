@@ -37,7 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `tsave` function bugs fixed
 - `aprint` and `tprint` functions modified
 - Test system modified
-- `overwrite` parameter added to `tsave` function
+- `overwrite` parameter added to `tsave` and `set_default` functions
 - `README.md` modified
 - `CONTRIBUTING.md` modified
 ## [3.9] - 2019-08-21
