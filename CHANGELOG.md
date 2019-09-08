@@ -35,6 +35,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `font_wizard.py` updated
 - `font_check.py` updated
 - `tsave` function bugs fixed
+- `aprint` and `tprint` functions modified
 - Test system modified
 - `overwrite` parameter added to `tsave` function
 - `README.md` modified
