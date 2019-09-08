@@ -23,7 +23,7 @@ CHR_IGNORE_TYPE_ERROR = "The 'chr_ignore' type must be bool."
 FILE_TYPE_ERROR = "The 'filename' type must be str."
 PRINT_STATUS_TYPE_ERROR = "The 'print_status' type must be bool."
 ART_ENVIRONMENT_WARNING = "[Warning] This art is not printable in this environment."
-FONT_ENVIRONMENT_WARNING = "[Warning] This font is not printable in this environment."
+FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
 
 SMALL_WIZARD_FONT = [

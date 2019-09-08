@@ -75,10 +75,7 @@ def font_list(text="test", test=False):
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
-        try:
-            tprint(text_temp, str(item))
-        except Exception:
-            print(FONT_ENVIRONMENT_WARNING)
+        tprint(text_temp, str(item))
 
 
 def art_list(test=False):
@@ -198,8 +195,11 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     """
-    result = text2art(text, font=font, chr_ignore=chr_ignore)
-    print(result)
+    try:
+        result = text2art(text, font=font, chr_ignore=chr_ignore)
+        print(result)
+    except UnicodeEncodeError:
+        print(FONT_ENVIRONMENT_WARNING.format(font))
 
 
 def tsave(
