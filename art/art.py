@@ -129,6 +129,10 @@ def aprint(artname, number=1, text=""):
 
     :param artname: artname
     :type artname : str
+    :param number: number of repeats
+    :type number: int
+    :param text: text for two part art
+    :type text: str
     :return: None
     """
     print(art(artname=artname, number=number, text=text))
@@ -140,6 +144,10 @@ def art(artname, number=1, text=""):
 
     :param artname: artname
     :type artname : str
+    :param number: number of repeats
+    :type number: int
+    :param text: text for two part art
+    :type text: str
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
