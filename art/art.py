@@ -78,26 +78,16 @@ def font_list(text="test", test=False):
         tprint(text_temp, str(item))
 
 
-def art_list(test=False):
+def art_list():
     """
     Print all 1-Line arts.
 
-    :param test : exception test flag
-    :type test : bool
     :return: None
     """
     for i in sorted(list(art_dic.keys())):
-        try:
-            if test:
-                raise Exception
-            print(i)
-            aprint(i)
-            line()
-        except Exception:
-            print(ART_ENVIRONMENT_WARNING)
-            line()
-            if test:
-                break
+        print(i)
+        aprint(i)
+        line()
 
 
 def help_func():
@@ -132,7 +122,10 @@ def aprint(artname, number=1, text=""):
     :type text: str
     :return: None
     """
-    print(art(artname=artname, number=number, text=text))
+    try:
+        print(art(artname=artname, number=number, text=text))
+    except UnicodeEncodeError:
+        print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
 def art(artname, number=1, text=""):
