@@ -4914,6 +4914,10 @@ art.art.artError: The 'filename' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'print_status' type must be bool.
+>>> set_default(overwrite=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'overwrite' type must be bool.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)

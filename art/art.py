@@ -450,7 +450,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True):
+                print_status=True,overwrite=False):
     """
     Change text2art, tprint and tsave default values.
 
@@ -462,6 +462,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type filename:str
     :param print_status : save message print flag (only tsave)
     :type print_status:bool
+    :param overwrite : overwrite the saved file if true
+    :type overwrite:bool
     :return: None
     """
     if isinstance(font, str) is False:
@@ -472,6 +474,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(FILE_TYPE_ERROR)
     if isinstance(print_status, bool) is False:
         raise artError(PRINT_STATUS_TYPE_ERROR)
+    if isinstance(overwrite, bool) is False:
+        raise artError(OVERWRITE_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore)
-    tsave.__defaults__ = (font, filename, chr_ignore, print_status)
+    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite)
     text2art.__defaults__ = (font, chr_ignore)
