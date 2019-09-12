@@ -26,7 +26,7 @@ def is_utf8(s):
     """
     try:
         if sys.version_info.major == 3:
-            x2 = bytes(s, 'utf-8').decode('utf-8', 'strict')
+            _ = bytes(s, 'utf-8').decode('utf-8', 'strict')
         else:
             return True
         return True
