@@ -464,7 +464,7 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type filename:str
     :param print_status : save message print flag (only tsave)
     :type print_status:bool
-    :param overwrite : overwrite the saved file if true
+    :param overwrite : overwrite the saved file if true (only tsave)
     :type overwrite:bool
     :return: None
     """
