@@ -38,10 +38,10 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
 |__]   |      ___] |___ |    |  | | \| |__/    |  | |  | |__] |  | | |__] |  | | 
                                                                                  
 
- _  _  ____  ____  ___  ____  _____  _  _    ___    ___ 
-( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )  (__ )  / _ \
- \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (    (_ \  \_  /
-  \/  (____)(_)\_)(___/(____)(_____)(_)\_)  (___/() (_/ 
+ _  _  ____  ____  ___  ____  _____  _  _     __      ___  
+( \/ )( ___)(  _ \/ __)(_  _)(  _  )( \( )   /. |    / _ \ 
+ \  /  )__)  )   /\__ \ _)(_  )(_)(  )  (   (_  _)  ( (_) )
+  \/  (____)(_)\_)(___/(____)(_____)(_)\_)    (_) () \___/ 
 
 
 
@@ -85,7 +85,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
         <hr/> 
     <h2>Source code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v3.9.zip">Version 3.9</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v4.0.zip">Version 4.0</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -94,7 +94,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 
 <ul>
     <li>Check <a href="https://packaging.python.org/installing/">Python Packaging User Guide</a></li>
-    <li><code>pip install art==3.9</code> or <code>pip3 install art==3.9</code> <span class="red"> Need root access </span></li>
+    <li><code>pip install art==4.0</code> or <code>pip3 install art==4.0</code> <span class="red"> Need root access </span></li>
 </ul>
 
 <h2>Conda </h2>
@@ -105,7 +105,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </ul>
 <h2>Easy install</h2>
 <ul>
-    <li>Run <code>easy_install "art==3.9"</code> <span class="red"> Need root access </span></li>
+    <li>Run <code>easy_install "art==4.0"</code> <span class="red"> Need root access </span></li>
 </ul>
 <h2>Note</h2>
     <ul>
@@ -461,7 +461,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
  9
 10
 11
-12</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True) # return dict</span>
+12
+13
+14
+15</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True), return dict</span>
 <span style="color: #888888">Saved! </span>
 <span style="color: #888888">Filename: test.txt</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
@@ -473,8 +476,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">True</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tsave(<span style="color: #0000DD; font-weight: bold">22</span>,font<span style="color: #333333">=</span>DEFAULT_FONT,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;art&quot;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">True</span>,print_status<span style="color: #333333">=</span><span style="color: #007020">True</span>)
 <span style="color: #888888">{&#39;Status&#39;: False, &#39;Message&#39;: &quot;&#39;int&#39; object has no attribute &#39;split&#39;&quot;}</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,overwrite<span style="color: #333333">=</span><span style="color: #007020">True</span>) <span style="color: #888888"># overwrite parameter is added in Version 4.0</span>
+<span style="color: #888888">Saved! </span>
+<span style="color: #888888">Filename: test.txt</span>
 </pre></td></tr></table></div>
-
  
 </ol>
 <h2>Font modes</h2>
@@ -861,19 +866,25 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 26
 27
 28
-29</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>help(set_default)
+29
+30
+31
+32</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>help(set_default)
 <span style="color: #888888">Help on function set_default in module art.art:</span>
 
-<span style="color: #888888">set_default(font=&#39;standard&#39;, chr_ignore=True, filename=&#39;art&#39;, print_status=True)</span>
-<span style="color: #888888">    This fuction change text2art tprint and tsave default values</span>
+<span style="color: #888888">set_default(font=&#39;standard&#39;, chr_ignore=True, filename=&#39;art&#39;, print_status=True, overwrite=False)</span>
+<span style="color: #888888">    Change text2art, tprint and tsave default values.</span>
+<span style="color: #888888">    </span>
 <span style="color: #888888">    :param font: input font</span>
 <span style="color: #888888">    :type font:str</span>
 <span style="color: #888888">    :param chr_ignore: ignore not supported character</span>
 <span style="color: #888888">    :type chr_ignore:bool</span>
 <span style="color: #888888">    :param filename: output file name (only tsave)</span>
 <span style="color: #888888">    :type filename:str</span>
-<span style="color: #888888">    :param print_status : Save message print flag (only tsave)</span>
+<span style="color: #888888">    :param print_status : save message print flag (only tsave)</span>
 <span style="color: #888888">    :type print_status:bool</span>
+<span style="color: #888888">    :param overwrite : overwrite the saved file if true (only tsave)</span>
+<span style="color: #888888">    :type overwrite:bool</span>
 <span style="color: #888888">    :return: None</span>
 
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>)
