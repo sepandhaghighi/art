@@ -609,16 +609,19 @@ ___ ____ ____ ___
 >>> help(set_default)
 Help on function set_default in module art.art:
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True)
-    This fuction change text2art tprint and tsave default values
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False)
+    Change text2art, tprint and tsave default values.
+    
     :param font: input font
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :param filename: output file name (only tsave)
     :type filename:str
-    :param print_status : Save message print flag (only tsave)
+    :param print_status : save message print flag (only tsave)
     :type print_status:bool
+    :param overwrite : overwrite the saved file if true
+    :type overwrite:bool
     :return: None
 
 >>> tprint("test")
