@@ -5,7 +5,7 @@ from .text_dic2 import *
 from .text_dic3 import *
 from .art_dic import *
 
-ART_VERSION = "3.9"  # pragma: no cover
+ART_VERSION = "4.0"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -22,8 +22,9 @@ FONT_TYPE_ERROR = "The 'font' type must be str."
 CHR_IGNORE_TYPE_ERROR = "The 'chr_ignore' type must be bool."
 FILE_TYPE_ERROR = "The 'filename' type must be str."
 PRINT_STATUS_TYPE_ERROR = "The 'print_status' type must be bool."
-ART_ENVIRONMENT_WARNING = "[Warning] This art is not printable in this environment."
-FONT_ENVIRONMENT_WARNING = "[Warning] This font is not printable in this environment."
+OVERWRITE_TYPE_ERROR = "The 'overwrite' type must be bool."
+ART_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
+FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
 
 SMALL_WIZARD_FONT = [
@@ -133,6 +134,8 @@ UPPERCASE_FONTS = [
 RANDOM_FILTERED_FONTS = [
     "5x8",
     "binary",
+    "contouring1",
+    "contouring2",
     "decimal",
     "high_noo",
     "hills",
@@ -218,7 +221,26 @@ RANDOM_FILTERED_FONTS = [
     "fancy52",
     "fancy53",
     "fancy54",
-    "fancy55"]
+    "fancy55",
+    "fancy56",
+    "fancy57",
+    "fancy58",
+    "fancy59",
+    "fancy60",
+    "fancy61",
+    "fancy62",
+    "fancy63",
+    "fancy64",
+    "fancy65",
+    "fancy66",
+    "fancy67",
+    "fancy68",
+    "fancy69",
+    "fancy70",
+    "fancy71",
+    "fancy72",
+    "fancy73",
+    "fancy74"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -229,6 +251,8 @@ RANDOM_FILTERED_ARTS = [
 
 
 TEST_FILTERED_FONTS = [
+    "contouring1",
+    "contouring2",
     "mirror",
     "mirror_flip",
     "flip",
@@ -299,7 +323,26 @@ TEST_FILTERED_FONTS = [
     "fancy52",
     "fancy53",
     "fancy54",
-    "fancy55"]
+    "fancy55",
+    "fancy56",
+    "fancy57",
+    "fancy58",
+    "fancy59",
+    "fancy60",
+    "fancy61",
+    "fancy62",
+    "fancy63",
+    "fancy64",
+    "fancy65",
+    "fancy66",
+    "fancy67",
+    "fancy68",
+    "fancy69",
+    "fancy70",
+    "fancy71",
+    "fancy72",
+    "fancy73",
+    "fancy74"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -587,6 +630,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "clr8x8": [clr8x8_dic, False],
             "clr8x10": [clr8x10_dic, False],
             "coil_cop": [coil_cop_dic, False],
+            "contouring1": [contouring1_dic, False],
+            "contouring2": [contouring2_dic, True],
             "com_sen": [com_sen_dic, False],
             "druid": [druid_dic, False],
             "e_fist": [e_fist_dic, True],
@@ -693,7 +738,26 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy52": [fancy52_dic, False],
             "fancy53": [fancy53_dic, False],
             "fancy54": [fancy54_dic, False],
-            "fancy55": [fancy55_dic, False]
+            "fancy55": [fancy55_dic, False],
+            "fancy56": [fancy56_dic, False],
+            "fancy57": [fancy57_dic, False],
+            "fancy58": [fancy58_dic, False],
+            "fancy59": [fancy59_dic, False],
+            "fancy60": [fancy60_dic, False],
+            "fancy61": [fancy61_dic, False],
+            "fancy62": [fancy62_dic, False],
+            "fancy63": [fancy63_dic, False],
+            "fancy64": [fancy64_dic, False],
+            "fancy65": [fancy65_dic, False],
+            "fancy66": [fancy66_dic, False],
+            "fancy67": [fancy67_dic, False],
+            "fancy68": [fancy68_dic, False],
+            "fancy69": [fancy69_dic, False],
+            "fancy70": [fancy70_dic, False],
+            "fancy71": [fancy71_dic, False],
+            "fancy72": [fancy72_dic, False],
+            "fancy73": [fancy73_dic, False],
+            "fancy74": [fancy74_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover

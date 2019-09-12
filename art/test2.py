@@ -2,6 +2,8 @@
 '''
 >>> import os
 >>> import random
+>>> import sys
+>>> import codecs
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
@@ -9,6 +11,12 @@
 ...     tprint("test",font=i)
 antrophobia:
 тєѕт
+<BLANKLINE>
+contouring1:
+ⓣⓔⓢⓣ
+<BLANKLINE>
+contouring2:
+⒯⒠⒮⒯
 <BLANKLINE>
 currency:
 ₮Ɇ₴₮
@@ -169,11 +177,68 @@ fancy54:
 fancy55:
 t€$t
 <BLANKLINE>
+fancy56:
+𝐭𝐞𝐬𝐭
+<BLANKLINE>
+fancy57:
+𝚝𝚎𝚜𝚝
+<BLANKLINE>
+fancy58:
+𝖙𝖊𝖘𝖙
+<BLANKLINE>
+fancy59:
+𝕥𝕖𝕤𝕥
+<BLANKLINE>
 fancy6:
 ƭεรƭ
 <BLANKLINE>
+fancy60:
+𝘁𝗲𝘀𝘁
+<BLANKLINE>
+fancy61:
+𝑡𝑒𝑠𝑡
+<BLANKLINE>
+fancy62:
+𝘵𝘦𝘴𝘵
+<BLANKLINE>
+fancy63:
+𝒕𝒆𝒔𝒕
+<BLANKLINE>
+fancy64:
+𝙩𝙚𝙨𝙩
+<BLANKLINE>
+fancy65:
+𝓉𝑒𝓈𝓉
+<BLANKLINE>
+fancy66:
+𝓽𝒆𝓼𝓽
+<BLANKLINE>
+fancy67:
+ｔｅｓｔ
+<BLANKLINE>
+fancy68:
+𝔱𝔢𝔰𝔱
+<BLANKLINE>
+fancy69:
+ᵗᵉᶳᵗ
+<BLANKLINE>
 fancy7:
 丅ᗴᔕ丅
+<BLANKLINE>
+fancy70:
+тeѕт
+<BLANKLINE>
+fancy71:
+тєѕт
+<BLANKLINE>
+fancy72:
+тєѕт
+<BLANKLINE>
+fancy73:
+ŧêšŧ
+<BLANKLINE>
+fancy74:
+ŧεşŧ
 <BLANKLINE>
 fancy8:
 tєรt
@@ -235,13 +300,17 @@ False
 >>> tprint("test","fancy1")
 тεsт
 <BLANKLINE>
+>>> aprint("UnicodeEncodeError")
+[Warning] 'UnicodeEncodeError' is not printable in this environment.
+>>> tprint("test","UnicodeEncodeError")
+[Warning] 'UnicodeEncodeError' is not printable in this environment.
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
->>> Data = tsave("test@34",font="magical",filename="magical.txt")
+>>> Data = tsave("test@34",font="fancy37",filename="fancy37.txt")
 Saved!
-Filename: magical.txt
+Filename: fancy37.txt
 >>> os.remove("antrophobia.txt")
->>> os.remove("magical.txt")
+>>> os.remove("fancy37.txt")
 
 '''

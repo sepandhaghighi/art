@@ -11,7 +11,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-440-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-461-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-370-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
@@ -65,7 +65,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">440</td>
+		<td align="center">461</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -317,7 +317,7 @@ ___  ____ _    ____ ____
 
 This function return `dict` in normal and exception mode.
 ```pycon
->>> Response=tsave("art",filename="test.txt") # save ASCII text in test.txt file with save message (print_status==True) # return dict
+>>> Response=tsave("art",filename="test.txt") # save ASCII text in test.txt file with save message (print_status==True), return dict
 Saved! 
 Filename: test.txt
 >>> Response["Message"]
@@ -329,6 +329,9 @@ Filename: test.txt
 True
 >>> tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
 {'Status': False, 'Message': "'int' object has no attribute 'split'"}
+>>> Response=tsave("art",filename="test.txt",overwrite=True) # overwrite parameter is added in Version 4.0
+Saved! 
+Filename: test.txt
                         
 ```
 
@@ -606,16 +609,19 @@ ___ ____ ____ ___
 >>> help(set_default)
 Help on function set_default in module art.art:
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True)
-    This fuction change text2art tprint and tsave default values
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False)
+    Change text2art, tprint and tsave default values.
+    
     :param font: input font
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :param filename: output file name (only tsave)
     :type filename:str
-    :param print_status : Save message print flag (only tsave)
+    :param print_status : save message print flag (only tsave)
     :type print_status:bool
+    :param overwrite : overwrite the saved file if true (only tsave)
+    :type overwrite:bool
     :return: None
 
 >>> tprint("test")

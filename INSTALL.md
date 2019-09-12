@@ -1,14 +1,16 @@
-## Installation		
+## Installation	
+
+⚠️ ART 4.0 is the last version to support Python 2.7
 
 ### Source code
-- Download [Version 3.9](https://github.com/sepandhaghighi/art/archive/v3.9.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 4.0](https://github.com/sepandhaghighi/art/archive/v4.0.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==3.9` or `pip3 install art==3.9` (Need root access)
+- `pip install art==4.0` or `pip3 install art==4.0` (Need root access)
 
 * Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
 
@@ -19,4 +21,4 @@
 
 ### Easy install
 
-- Run `easy_install "art==3.9"` (Need root access)
+- Run `easy_install "art==4.0"` (Need root access)

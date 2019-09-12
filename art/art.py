@@ -75,32 +75,19 @@ def font_list(text="test", test=False):
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
-        try:
-            tprint(text_temp, str(item))
-        except Exception:
-            print(FONT_ENVIRONMENT_WARNING)
+        tprint(text_temp, str(item))
 
 
-def art_list(test=False):
+def art_list():
     """
     Print all 1-Line arts.
 
-    :param test : exception test flag
-    :type test : bool
     :return: None
     """
     for i in sorted(list(art_dic.keys())):
-        try:
-            if test:
-                raise Exception
-            print(i)
-            aprint(i)
-            line()
-        except Exception:
-            print(ART_ENVIRONMENT_WARNING)
-            line()
-            if test:
-                break
+        print(i)
+        aprint(i)
+        line()
 
 
 def help_func():
@@ -129,9 +116,19 @@ def aprint(artname, number=1, text=""):
 
     :param artname: artname
     :type artname : str
+    :param number: number of repeats
+    :type number: int
+    :param text: text for bipartite art
+    :type text: str
     :return: None
     """
-    print(art(artname=artname, number=number, text=text))
+    try:
+        if artname == "UnicodeEncodeError":
+            raise UnicodeEncodeError(
+                'test', u"", 42, 43, 'test unicode-encode-error')
+        print(art(artname=artname, number=number, text=text))
+    except UnicodeEncodeError:
+        print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
 def art(artname, number=1, text=""):
@@ -140,6 +137,10 @@ def art(artname, number=1, text=""):
 
     :param artname: artname
     :type artname : str
+    :param number: number of repeats
+    :type number: int
+    :param text: text for bipartite art
+    :type text: str
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
@@ -190,8 +191,14 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type chr_ignore:bool
     :return: None
     """
-    result = text2art(text, font=font, chr_ignore=chr_ignore)
-    print(result)
+    try:
+        if font == "UnicodeEncodeError":
+            raise UnicodeEncodeError(
+                'test', u"", 42, 43, 'test unicode-encode-error')
+        result = text2art(text, font=font, chr_ignore=chr_ignore)
+        print(result)
+    except UnicodeEncodeError:
+        print(FONT_ENVIRONMENT_WARNING.format(font))
 
 
 def tsave(
@@ -199,7 +206,8 @@ def tsave(
         font=DEFAULT_FONT,
         filename="art",
         chr_ignore=True,
-        print_status=True):
+        print_status=True,
+        overwrite=False):
     r"""
     Save ascii art (support \n).
 
@@ -213,31 +221,37 @@ def tsave(
     :type chr_ignore:bool
     :param print_status : save message print flag
     :type print_status:bool
+    :param overwrite : overwrite the saved file if true
+    :type overwrite:bool
     :return: None
     """
     try:
         if isinstance(text, str) is False:
             raise Exception(TEXT_TYPE_ERROR)
         files_list = os.listdir(os.getcwd())
-        extension = ".txt"
         splitted_filename = filename.split(".")
-        name = splitted_filename[0]
         if len(splitted_filename) > 1:
-            extension = "." + splitted_filename[1]
+            name = filename[:-1 * filename[::-1].find('.') - 1]
+            extension = "." + splitted_filename[-1]
+        else:
+            name = filename
+            extension = ".txt"
         index = 2
         test_name = name
-        while(True):
+        while(overwrite is False):
             if test_name + extension in files_list:
                 test_name = name + str(index)
                 index = index + 1
             else:
                 break
-        if font.lower() in TEST_FILTERED_FONTS:
-            file = codecs.open(test_name + extension, "w", encoding='utf-8')
-        else:
-            file = open(test_name + extension, "w")
+        file = codecs.open(test_name + extension, "w", encoding='utf-8')
         result = text2art(text, font=font, chr_ignore=chr_ignore)
-        file.write(result)
+        try:
+            file.write(result)
+        except UnicodeDecodeError:
+            file.close()
+            file = codecs.open(test_name + extension, "w")
+            file.write(result)
         file.close()
         if print_status:
             print("Saved! \nFilename: " + test_name + extension)
@@ -438,7 +452,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True):
+                print_status=True, overwrite=False):
     """
     Change text2art, tprint and tsave default values.
 
@@ -450,6 +464,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type filename:str
     :param print_status : save message print flag (only tsave)
     :type print_status:bool
+    :param overwrite : overwrite the saved file if true (only tsave)
+    :type overwrite:bool
     :return: None
     """
     if isinstance(font, str) is False:
@@ -460,6 +476,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(FILE_TYPE_ERROR)
     if isinstance(print_status, bool) is False:
         raise artError(PRINT_STATUS_TYPE_ERROR)
+    if isinstance(overwrite, bool) is False:
+        raise artError(OVERWRITE_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore)
-    tsave.__defaults__ = (font, filename, chr_ignore, print_status)
+    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite)
     text2art.__defaults__ = (font, chr_ignore)

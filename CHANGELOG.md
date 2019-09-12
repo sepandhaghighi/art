@@ -5,6 +5,42 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.0] - 2019-09-12
+### Added
+- `install.sh`
+- `autopep8.sh`
+- 21 new fonts
+	1. fancy56
+	2. fancy57
+	3. fancy58
+	4. fancy59
+	5. fancy60
+	6. fancy61
+	7. fancy62
+	8. fancy63
+	9. fanyc64
+	10. fancy65
+	11. fancy66
+	12. fancy67
+	13. fancy68
+	14. fancy69
+	15. fanyc70
+	16. fancy71
+	17. fancy72
+	18. fancy73
+	19. fancy74
+	20. contouring1
+	21. contouring2
+### Changed
+- `test.sh` moved to `.travis` folder
+- `font_wizard.py` updated
+- `font_check.py` updated
+- `tsave` function bugs fixed
+- `aprint` and `tprint` functions modified
+- Test system modified
+- `overwrite` parameter added to `tsave` and `set_default` functions
+- `README.md` modified
+- `CONTRIBUTING.md` modified
 ## [3.9] - 2019-08-21
 ### Added
 - `__version__` variable
@@ -1031,7 +1067,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v3.9...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.0...dev
+[4.0]: https://github.com/sepandhaghighi/art/compare/v3.9...v4.0
 [3.9]: https://github.com/sepandhaghighi/art/compare/v3.8...v3.9
 [3.8]: https://github.com/sepandhaghighi/art/compare/v3.7...v3.8
 [3.7]: https://github.com/sepandhaghighi/art/compare/v3.6...v3.7

@@ -4702,9 +4702,6 @@ zoidberg
 zombie
 'º_º'
 ******************************
->>> art_list(True)
-[Warning] This art is not printable in this environment.
-******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~
 >>> help_func()
@@ -4715,11 +4712,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _____      ___
-__   __|___ /     / _ \
-\ \ / /  |_ \    | (_) |
- \ V /  ___) | _  \__, |
-  \_/  |____/ (_)   /_/
+        _  _        ___
+__   __| || |      / _ \
+\ \ / /| || |_    | | | |
+ \ V / |__   _| _ | |_| |
+  \_/     |_|  (_) \___/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4917,6 +4914,10 @@ art.art.artError: The 'filename' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'print_status' type must be bool.
+>>> set_default(overwrite=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'overwrite' type must be bool.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)
@@ -4979,10 +4980,43 @@ True
 >>> for font in FONT_MAP.keys():
 ...     for letter in string.ascii_letters + string.punctuation + string.digits + " ":
 ...         Data = text2art(letter,font,chr_ignore=False)
+>>> file = open("art.txt","r")
+>>> print(file.read())
+ _               _                  _
+| |_   ___  ___ | |_    __ _  _ __ | |_
+| __| / _ \/ __|| __|  / _` || '__|| __|
+| |_ |  __/\__ \| |_  | (_| || |   | |_
+ \__| \___||___/ \__|  \__,_||_|    \__|
+<BLANKLINE>
+<BLANKLINE>
+>>> file.close()
+>>> Data = tsave("test","standard",filename="test1.txt")
+Saved!
+Filename: test1.txt
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data = tsave("test","standard",filename="test1.txt", overwrite=True)
+Saved!
+Filename: test1.txt
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data = tsave("test","standard",filename="test1.2.txt")
+Saved!
+Filename: test1.2.txt
+>>> Data["Status"]
+True
+>>> Data["Message"]
+'OK'
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
 >>> os.remove("test.bw")
 >>> os.remove("test.txt")
+>>> os.remove("test1.txt")
+>>> os.remove("test1.2.txt")
 
 '''
