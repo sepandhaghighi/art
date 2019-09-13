@@ -745,17 +745,18 @@ or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com
 
 ## Reference    
 
-1. [1 Line Art](http://1lineart.kulaone.com/#/)
-2. [Text To ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
-3. [ASCII Generator](http://www.network-science.de/ascii/)
-4. [Asky](https://asky.io/)
-5. [Flipyourtext](https://www.flipyourtext.com/)
-6. [YayText](https://yaytext.com)
-7. [Coolletters](http://www.coolletters.net/)
-8. [Instagram Fonts](https://igfonts.io/)
-9. [Cool Symbol](https://coolsymbol.com/)
-10. [ASCII Moji](http://asciimoji.com/)
-11. [SMILEY COOL](https://smiley.cool/)
+1. [FIGlet](http://www.figlet.org/)
+2. [1 Line Art](http://1lineart.kulaone.com/#/)
+3. [Text To ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
+4. [ASCII Generator](http://www.network-science.de/ascii/)
+5. [Asky](https://asky.io/)
+6. [Flipyourtext](https://www.flipyourtext.com/)
+7. [YayText](https://yaytext.com)
+8. [Coolletters](http://www.coolletters.net/)
+9. [Instagram Fonts](https://igfonts.io/)
+10. [Cool Symbol](https://coolsymbol.com/)
+11. [ASCII Moji](http://asciimoji.com/)
+12. [SMILEY COOL](https://smiley.cool/)
 
 ## Donate to our project
 								
