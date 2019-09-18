@@ -265,10 +265,10 @@ fancy81:
 ƚЄ$ƚ
 <BLANKLINE>
 fancy82:
-ƚЄ$ƚ
+Ŧ£ŞŦ
 <BLANKLINE>
 fancy83:
-Ŧ£ŞŦ
+τεȘτ
 <BLANKLINE>
 fancy84:
 tΞst
