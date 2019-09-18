@@ -258,6 +258,9 @@ fancy79:
 fancy8:
 tєรt
 <BLANKLINE>
+fancy80:
+ƭєƨƭ
+<BLANKLINE>
 fancy9:
 тeѕт
 <BLANKLINE>
