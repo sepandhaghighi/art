@@ -130,7 +130,8 @@ UPPERCASE_FONTS = [
     "z-pilot",
     "zig_zag",
     "zone7",
-    "fancy75"]
+    "fancy75",
+    "fancy81"]
 
 RANDOM_FILTERED_FONTS = [
     "5x8",
@@ -249,6 +250,7 @@ RANDOM_FILTERED_FONTS = [
     "fancy78",
     "fancy79",
     "fancy80",
+    "fancy81",
     "rev1",
     "rev2"]
 
@@ -360,6 +362,7 @@ TEST_FILTERED_FONTS = [
     "fancy78",
     "fancy79",
     "fancy80",
+    "fancy81",
     "rev1",
     "rev2"]
 
@@ -784,6 +787,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy78": [fancy78_dic, True],
             "fancy79": [fancy79_dic, True],
             "fancy80": [fancy80_dic, True],
+            "fancy81": [fancy81_dic, True],
             "rev1": [reverse1_dic, False],
             "rev2": [reverse2_dic, False]
             }
