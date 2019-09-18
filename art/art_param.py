@@ -253,6 +253,7 @@ RANDOM_FILTERED_FONTS = [
     "fancy81",
     "fancy82",
     "fancy83",
+    "fancy84",
     "rev1",
     "rev2"]
 
@@ -367,6 +368,7 @@ TEST_FILTERED_FONTS = [
     "fancy81",
     "fancy82",
     "fancy83",
+    "fancy84",
     "rev1",
     "rev2"]
 
@@ -794,6 +796,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy81": [fancy81_dic, True],
             "fancy82": [fancy82_dic, True],
             "fancy83": [fancy83_dic, True],
+            "fancy84": [fancy84_dic, True],
             "rev1": [reverse1_dic, False],
             "rev2": [reverse2_dic, False]
             }
