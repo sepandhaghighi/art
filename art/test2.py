@@ -276,6 +276,9 @@ mirror_flip:
 rev1:
 [5\[
 <BLANKLINE>
+rev2:
+[5\[
+<BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
 <BLANKLINE>
