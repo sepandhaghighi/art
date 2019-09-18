@@ -243,6 +243,9 @@ fancy74:
 fancy75:
 ｲ乇ㄎｲ
 <BLANKLINE>
+fancy76:
+էҽʂէ
+<BLANKLINE>
 fancy8:
 tєรt
 <BLANKLINE>
