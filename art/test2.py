@@ -267,6 +267,9 @@ full_width:
 knight:
 ṮḕṠṮ
 <BLANKLINE>
+love1:
+ƬƐSƬ
+<BLANKLINE>
 mirror:
 ɈƨǝɈ
 <BLANKLINE>
