@@ -264,6 +264,12 @@ fancy80:
 fancy81:
 ƚЄ$ƚ
 <BLANKLINE>
+fancy82:
+ƚЄ$ƚ
+<BLANKLINE>
+fancy83:
+τεȘτ
+<BLANKLINE>
 fancy9:
 тeѕт
 <BLANKLINE>
