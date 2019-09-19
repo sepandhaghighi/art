@@ -129,9 +129,7 @@ UPPERCASE_FONTS = [
     "yie_ar_k",
     "z-pilot",
     "zig_zag",
-    "zone7",
-    "fancy75",
-    "fancy81"]
+    "zone7"]
 
 RANDOM_FILTERED_FONTS = [
     "5x8",
@@ -787,16 +785,16 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy72": [fancy72_dic, False],
             "fancy73": [fancy73_dic, False],
             "fancy74": [fancy74_dic, False],
-            "fancy75": [fancy75_dic, True],
+            "fancy75": [fancy75_dic, False],
             "fancy76": [fancy76_dic, False],
-            "fancy77": [fancy77_dic, True],
-            "fancy78": [fancy78_dic, True],
-            "fancy79": [fancy79_dic, True],
-            "fancy80": [fancy80_dic, True],
-            "fancy81": [fancy81_dic, True],
-            "fancy82": [fancy82_dic, True],
-            "fancy83": [fancy83_dic, True],
-            "fancy84": [fancy84_dic, True],
+            "fancy77": [fancy77_dic, False],
+            "fancy78": [fancy78_dic, False],
+            "fancy79": [fancy79_dic, False],
+            "fancy80": [fancy80_dic, False],
+            "fancy81": [fancy81_dic, False],
+            "fancy82": [fancy82_dic, False],
+            "fancy83": [fancy83_dic, False],
+            "fancy84": [fancy84_dic, False],
             "rev1": [reverse1_dic, False],
             "rev2": [reverse2_dic, False]
             }
