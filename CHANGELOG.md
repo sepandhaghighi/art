@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	11. fancy84
 ### Changed
 - `font_check.py` modified
+- `font_wizard.py` modified
 ## [4.0] - 2019-09-12
 ### Added
 - `install.sh`
