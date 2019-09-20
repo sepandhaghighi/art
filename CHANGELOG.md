@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- 11 new fonts
+	1. fancy75
+	2. fancy76
+	3. fancy77
+	4. fancy78
+	5. love1
+	6. fancy79
+	7. fancy80
+	8. fancy81
+	9. fancy82
+	10. fancy83
+	11. fancy84
 ## [4.0] - 2019-09-12
 ### Added
 - `install.sh`

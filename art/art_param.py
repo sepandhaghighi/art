@@ -140,6 +140,7 @@ RANDOM_FILTERED_FONTS = [
     "high_noo",
     "hills",
     "katakana",
+    "love1",
     "morse",
     "nfi1",
     "octal",
@@ -240,7 +241,17 @@ RANDOM_FILTERED_FONTS = [
     "fancy71",
     "fancy72",
     "fancy73",
-    "fancy74"]
+    "fancy74",
+    "fancy75",
+    "fancy76",
+    "fancy77",
+    "fancy78",
+    "fancy79",
+    "fancy80",
+    "fancy81",
+    "fancy82",
+    "fancy83",
+    "fancy84"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -268,6 +279,7 @@ TEST_FILTERED_FONTS = [
     "knight",
     "thin2",
     "tiny",
+    "love1",
     "fancy1",
     "fancy2",
     "fancy3",
@@ -342,7 +354,17 @@ TEST_FILTERED_FONTS = [
     "fancy71",
     "fancy72",
     "fancy73",
-    "fancy74"]
+    "fancy74",
+    "fancy75",
+    "fancy76",
+    "fancy77",
+    "fancy78",
+    "fancy79",
+    "fancy80",
+    "fancy81",
+    "fancy82",
+    "fancy83",
+    "fancy84"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -606,6 +628,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "vortron": [vortron_dic, False],
             "war_of_w": [war_of_w_dic, False],
             "xtty": [xtty_dic, False],
+            "love1": [love1_dic, False],
             "yie_ar_k": [yie_ar_k_dic, False],
             "yie-ar": [yie_ar_dic, False],
             "zig_zag": [zig_zag_dic, False],
@@ -757,7 +780,17 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy71": [fancy71_dic, False],
             "fancy72": [fancy72_dic, False],
             "fancy73": [fancy73_dic, False],
-            "fancy74": [fancy74_dic, False]
+            "fancy74": [fancy74_dic, False],
+            "fancy75": [fancy75_dic, False],
+            "fancy76": [fancy76_dic, False],
+            "fancy77": [fancy77_dic, False],
+            "fancy78": [fancy78_dic, False],
+            "fancy79": [fancy79_dic, False],
+            "fancy80": [fancy80_dic, False],
+            "fancy81": [fancy81_dic, False],
+            "fancy82": [fancy82_dic, False],
+            "fancy83": [fancy83_dic, False],
+            "fancy84": [fancy84_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
