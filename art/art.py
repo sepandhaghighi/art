@@ -358,7 +358,7 @@ def mix_letters():
     letters = fancy1_dic.copy()
     for i in letters.keys():
         random_font = random.choice(TEST_FILTERED_FONTS)
-        letters[i] = FONT_MAP[random_font][0][i]
+        letters[i] = get_font_dic(random_font)[i]
     return letters
 
 
@@ -433,7 +433,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     font = font.lower()
     if font != "mix":
         font = indirect_font(font, text)
-        letters = FONT_MAP[font][0]
+        letters = get_font_dic(font)
         if FONT_MAP[font][1]:
             text_temp = text.lower()
         if font in UPPERCASE_FONTS:
