@@ -59,19 +59,19 @@ if __name__ == "__main__":
     if " " not in font_dic.keys():
         font_dic[" "] = " "
     for font2 in Font_List:
-        if len(font_dic) == len(art.art_param.FONT_MAP[font2][0]):
-            if font_dic == art.art_param.FONT_MAP[font2][0]:
+        if len(font_dic) == len(art.get_font_dic(font2)):
+            if font_dic == art.get_font_dic(font2):
                 print(Error3 + font2)
                 sys.exit()
         else:
             font1_keys = set(font_dic.keys())
-            font2_keys = set(art.art_param.FONT_MAP[font2][0].keys())
+            font2_keys = set(art.get_font_dic(font2).keys())
             inter_keys = list(font1_keys.intersection(font2_keys))
             font1_map = []
             font2_map = []
             for letter in inter_keys:
                 font1_map.append(font_dic[letter])
-                font2_map.append(art.art_param.FONT_MAP[font2][0][letter])
+                font2_map.append(art.get_font_dic(font2)[letter])
             if font1_map == font2_map:
                 print(Error3 + font2)
                 sys.exit()
