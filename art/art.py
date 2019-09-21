@@ -485,7 +485,7 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
 
 def get_font_dic(font_name):
     """
-    return given font's dictionary
+    Return given font's dictionary.
 
     :param  font_name: font's name
     :type font_name:str
