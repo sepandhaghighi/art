@@ -481,3 +481,14 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     tprint.__defaults__ = (font, chr_ignore)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite)
     text2art.__defaults__ = (font, chr_ignore)
+
+
+def get_font_dic(font_name):
+    """
+    return given font's dictionary
+
+    :param  font_name: font's name
+    :type font_name:str
+    :return font's dictionary
+    """
+    return FONT_MAP[font_name][0]
