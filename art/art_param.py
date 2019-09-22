@@ -143,6 +143,7 @@ RANDOM_FILTERED_FONTS = [
     "hills",
     "katakana",
     "love1",
+    "love2",
     "morse",
     "nfi1",
     "octal",
@@ -284,6 +285,7 @@ TEST_FILTERED_FONTS = [
     "thin2",
     "tiny",
     "love1",
+    "love2",
     "fancy1",
     "fancy2",
     "fancy3",
@@ -796,7 +798,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy83": [fancy83_dic, False],
             "fancy84": [fancy84_dic, False],
             "contouring3": [contouring3_dic, False],
-            "contouring4": [contouring4_dic, False]
+            "contouring4": [contouring4_dic, False],
+            "love2": [love2_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
