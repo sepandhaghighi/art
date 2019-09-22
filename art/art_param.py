@@ -137,6 +137,7 @@ RANDOM_FILTERED_FONTS = [
     "contouring1",
     "contouring2",
     "contouring3",
+    "contouring4",
     "decimal",
     "high_noo",
     "hills",
@@ -266,6 +267,7 @@ TEST_FILTERED_FONTS = [
     "contouring1",
     "contouring2",
     "contouring3",
+    "contouring4",
     "mirror",
     "mirror_flip",
     "flip",
@@ -793,7 +795,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy82": [fancy82_dic, False],
             "fancy83": [fancy83_dic, False],
             "fancy84": [fancy84_dic, False],
-            "contouring3": [contouring3_dic, False]
+            "contouring3": [contouring3_dic, False],
+            "contouring4": [contouring4_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
