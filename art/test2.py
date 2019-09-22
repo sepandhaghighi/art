@@ -279,6 +279,12 @@ fancy83:
 fancy84:
 tΞst
 <BLANKLINE>
+fancy85:
+ťĕʂť
+<BLANKLINE>
+fancy86:
+ᴛᴇsᴛ
+<BLANKLINE>
 fancy9:
 тeѕт
 <BLANKLINE>
