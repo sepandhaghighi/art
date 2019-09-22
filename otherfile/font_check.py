@@ -68,10 +68,12 @@ if __name__ == "__main__":
     for font1 in Font_List:
         for font2 in Font_List:
             if Font_List.index(font1) < Font_List.index(font2):
-                if len(art.get_font_dic(font1)) == len(art.get_font_dic(font2)):
+                if len(
+                        art.get_font_dic(font1)) == len(
+                        art.get_font_dic(font2)):
                     if art.get_font_dic(font1) == art.get_font_dic(font2):
                         Failed2 += 1
-                        print(Message4.format(str(Failed2),font1,font2))
+                        print(Message4.format(str(Failed2), font1, font2))
                 else:
                     font1_keys = set(art.get_font_dic(font1).keys())
                     font2_keys = set(art.get_font_dic(font2).keys())
