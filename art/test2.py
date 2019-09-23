@@ -2,8 +2,6 @@
 '''
 >>> import os
 >>> import random
->>> import sys
->>> import codecs
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
@@ -11,6 +9,12 @@
 ...     tprint("test",font=i)
 antrophobia:
 тєѕт
+<BLANKLINE>
+black_bubble:
+🅣🅔🅢🅣
+<BLANKLINE>
+black_square:
+🆃🅴🆂🆃
 <BLANKLINE>
 contouring1:
 ⓣⓔⓢⓣ
@@ -309,6 +313,9 @@ mirror:
 mirror_flip:
 ʇsǝʇ
 <BLANKLINE>
+paranormal:
+tєst
+<BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
 <BLANKLINE>
@@ -332,6 +339,9 @@ tiny:
 <BLANKLINE>
 white_bubble:
 ⓣⓔⓢⓣ
+<BLANKLINE>
+white_square:
+🅃🄴🅂🅃
 <BLANKLINE>
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")

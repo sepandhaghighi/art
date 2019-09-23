@@ -248,7 +248,7 @@ def tsave(
         result = text2art(text, font=font, chr_ignore=chr_ignore)
         try:
             file.write(result)
-        except UnicodeDecodeError:
+        except UnicodeDecodeError: # pragma: no cover
             file.close()
             file = codecs.open(test_name + extension, "w")
             file.write(result)

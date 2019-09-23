@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 16 new fonts
+- 20 new fonts
 	1. fancy75
 	2. fancy76
 	3. fancy77
@@ -23,6 +23,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	14. contouring3
 	15. contouring4
 	16. love2
+	17. black_square
+	18. white_square
+	19. black_bubble
+	20. paranormal
 - `get_font_dic` function
 ### Changed
 - `font_check.py` modified
