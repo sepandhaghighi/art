@@ -12,6 +12,9 @@
 antrophobia:
 тєѕт
 <BLANKLINE>
+black_bubble:
+🅣🅔🅢🅣
+<BLANKLINE>
 black_square:
 🆃🅴🆂🆃
 <BLANKLINE>
@@ -311,6 +314,9 @@ mirror:
 <BLANKLINE>
 mirror_flip:
 ʇsǝʇ
+<BLANKLINE>
+paranormal:
+tєst
 <BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
