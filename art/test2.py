@@ -12,6 +12,9 @@
 antrophobia:
 тєѕт
 <BLANKLINE>
+black_square:
+🆃🅴🆂🆃
+<BLANKLINE>
 contouring1:
 ⓣⓔⓢⓣ
 <BLANKLINE>
@@ -332,6 +335,9 @@ tiny:
 <BLANKLINE>
 white_bubble:
 ⓣⓔⓢⓣ
+<BLANKLINE>
+white_square:
+🅃🄴🅂🅃
 <BLANKLINE>
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")
