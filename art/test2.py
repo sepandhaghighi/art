@@ -2,8 +2,6 @@
 '''
 >>> import os
 >>> import random
->>> import sys
->>> import codecs
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
