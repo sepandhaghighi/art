@@ -5,9 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- get_font_dic function added to `art.py`
 ### Added
-- 11 new fonts
+- 16 new fonts
 	1. fancy75
 	2. fancy76
 	3. fancy77
@@ -19,6 +18,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	9. fancy82
 	10. fancy83
 	11. fancy84
+	12. fancy85
+	13. fancy86
+	14. contouring3
+	15. contouring4
+	16. love2
+- `get_font_dic` function
 ### Changed
 - `font_check.py` modified
 - `font_wizard.py` modified

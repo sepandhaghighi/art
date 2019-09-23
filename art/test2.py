@@ -18,6 +18,12 @@ contouring1:
 contouring2:
 ⒯⒠⒮⒯
 <BLANKLINE>
+contouring3:
+[̲̅t][̲̅e][̲̅s][̲̅t]
+<BLANKLINE>
+contouring4:
+(̲̅t)(̲̅e)(̲̅s)(̲̅t)
+<BLANKLINE>
 currency:
 ₮Ɇ₴₮
 <BLANKLINE>
@@ -273,6 +279,12 @@ fancy83:
 fancy84:
 tΞst
 <BLANKLINE>
+fancy85:
+ťĕʂť
+<BLANKLINE>
+fancy86:
+ᴛᴇsᴛ
+<BLANKLINE>
 fancy9:
 тeѕт
 <BLANKLINE>
@@ -287,6 +299,9 @@ knight:
 <BLANKLINE>
 love1:
 ƬƐSƬ
+<BLANKLINE>
+love2:
+тєsт
 <BLANKLINE>
 mirror:
 ɈƨǝɈ

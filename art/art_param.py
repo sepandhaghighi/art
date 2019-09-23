@@ -136,11 +136,14 @@ RANDOM_FILTERED_FONTS = [
     "binary",
     "contouring1",
     "contouring2",
+    "contouring3",
+    "contouring4",
     "decimal",
     "high_noo",
     "hills",
     "katakana",
     "love1",
+    "love2",
     "morse",
     "nfi1",
     "octal",
@@ -251,7 +254,9 @@ RANDOM_FILTERED_FONTS = [
     "fancy81",
     "fancy82",
     "fancy83",
-    "fancy84"]
+    "fancy84",
+    "fancy85",
+    "fancy86"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -264,6 +269,8 @@ RANDOM_FILTERED_ARTS = [
 TEST_FILTERED_FONTS = [
     "contouring1",
     "contouring2",
+    "contouring3",
+    "contouring4",
     "mirror",
     "mirror_flip",
     "flip",
@@ -280,6 +287,7 @@ TEST_FILTERED_FONTS = [
     "thin2",
     "tiny",
     "love1",
+    "love2",
     "fancy1",
     "fancy2",
     "fancy3",
@@ -364,7 +372,9 @@ TEST_FILTERED_FONTS = [
     "fancy81",
     "fancy82",
     "fancy83",
-    "fancy84"]
+    "fancy84",
+    "fancy85",
+    "fancy86"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -790,7 +800,12 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy81": [fancy81_dic, False],
             "fancy82": [fancy82_dic, False],
             "fancy83": [fancy83_dic, False],
-            "fancy84": [fancy84_dic, False]
+            "fancy84": [fancy84_dic, False],
+            "contouring3": [contouring3_dic, False],
+            "contouring4": [contouring4_dic, False],
+            "love2": [love2_dic, False],
+            "fancy85": [fancy85_dic, False],
+            "fancy86": [fancy86_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
