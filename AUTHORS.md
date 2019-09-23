@@ -1,8 +1,8 @@
 # Core Developer #
 
 ----------
-- Sepand Haghighi - Sharif University Of Technology/Moduland Co - ([http://github.com/sepandhaghighi](http://github.com/sepandhaghighi)) ([sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com))
+- Sepand Haghighi - Sharif University Of Technology/Moduland Co - ([@sepandhaghighi](http://github.com/sepandhaghighi)) 
+- Sadra Sabouri - Sharif University Of Technology - [@sadrasabouri](https://github.com/sadrasabouri)
 
 # Other Contributors #
 ----------
-- [Sadra Sabouri](https://github.com/sadrasabouri)
