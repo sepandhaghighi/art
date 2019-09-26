@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [4.1] - 2019-09-25
+## [4.1] - 2019-09-26
 ### Added
 - 20 new fonts
 	1. fancy75
@@ -32,6 +32,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `font_check.py` modified
 - `font_wizard.py` modified
+- `CONTRIBUTING.md` modified
 ## [4.0] - 2019-09-12
 ### Added
 - `install.sh`
