@@ -10,6 +10,7 @@ Font_List = list(art.art_param.FONT_MAP.keys())
 Message1 = "Font height test "
 Message2 = "Font duplication test "
 Message3 = "Font UTF-8 compatibility test "
+Message4 = "{0}-font duplication -- > {1},{2}"
 
 
 def is_utf8(s):
@@ -52,11 +53,11 @@ if __name__ == "__main__":
     for font in Font_List:
         s = []
         l = ""
-        for letter in art.art_param.FONT_MAP[font][0].keys():
-            if len(art.art_param.FONT_MAP[font][0][letter]) != 0:
+        for letter in art.get_font_dic(font).keys():
+            if len(art.get_font_dic(font)[letter]) != 0:
                 s.append(
-                    len(art.art_param.FONT_MAP[font][0][letter].split("\n")))
-            l += art.art_param.FONT_MAP[font][0][letter]
+                    len(art.get_font_dic(font)[letter].split("\n")))
+            l += art.get_font_dic(font)[letter]
         if len(set(s)) != 1:
             print("Height error in font : " + font)
             Failed1 += 1
@@ -67,14 +68,23 @@ if __name__ == "__main__":
     for font1 in Font_List:
         for font2 in Font_List:
             if Font_List.index(font1) < Font_List.index(font2):
-                if art.art_param.FONT_MAP[font1][0] == art.art_param.FONT_MAP[font2][0]:
-                    Failed2 += 1
-                    print(
-                        str(Failed2) +
-                        "-font duplication -- > " +
-                        font1 +
-                        "," +
-                        font2)
-
+                if len(
+                        art.get_font_dic(font1)) == len(
+                        art.get_font_dic(font2)):
+                    if art.get_font_dic(font1) == art.get_font_dic(font2):
+                        Failed2 += 1
+                        print(Message4.format(str(Failed2), font1, font2))
+                else:
+                    font1_keys = set(art.get_font_dic(font1).keys())
+                    font2_keys = set(art.get_font_dic(font2).keys())
+                    inter_keys = list(font1_keys.intersection(font2_keys))
+                    font1_map = []
+                    font2_map = []
+                    for letter in inter_keys:
+                        font1_map.append(art.get_font_dic(font1)[letter])
+                        font2_map.append(art.get_font_dic(font2)[letter])
+                    if font1_map == font2_map:
+                        Failed2 += 1
+                        print(Message4.format(str(Failed2), font1, font2))
     print_result([Failed1, Failed2, Failed3], [Message1, Message2, Message3])
     sys.exit(Failed2 + Failed1 + Failed3)

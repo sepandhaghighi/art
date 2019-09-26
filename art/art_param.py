@@ -5,7 +5,7 @@ from .text_dic2 import *
 from .text_dic3 import *
 from .art_dic import *
 
-ART_VERSION = "4.0"  # pragma: no cover
+ART_VERSION = "4.1"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -136,10 +136,14 @@ RANDOM_FILTERED_FONTS = [
     "binary",
     "contouring1",
     "contouring2",
+    "contouring3",
+    "contouring4",
     "decimal",
     "high_noo",
     "hills",
     "katakana",
+    "love1",
+    "love2",
     "morse",
     "nfi1",
     "octal",
@@ -240,7 +244,23 @@ RANDOM_FILTERED_FONTS = [
     "fancy71",
     "fancy72",
     "fancy73",
-    "fancy74"]
+    "fancy74",
+    "fancy75",
+    "fancy76",
+    "fancy77",
+    "fancy78",
+    "fancy79",
+    "fancy80",
+    "fancy81",
+    "fancy82",
+    "fancy83",
+    "fancy84",
+    "fancy85",
+    "fancy86",
+    "white_square",
+    "black_square",
+    "paranormal",
+    "black_bubble"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -253,6 +273,8 @@ RANDOM_FILTERED_ARTS = [
 TEST_FILTERED_FONTS = [
     "contouring1",
     "contouring2",
+    "contouring3",
+    "contouring4",
     "mirror",
     "mirror_flip",
     "flip",
@@ -268,6 +290,8 @@ TEST_FILTERED_FONTS = [
     "knight",
     "thin2",
     "tiny",
+    "love1",
+    "love2",
     "fancy1",
     "fancy2",
     "fancy3",
@@ -342,7 +366,23 @@ TEST_FILTERED_FONTS = [
     "fancy71",
     "fancy72",
     "fancy73",
-    "fancy74"]
+    "fancy74",
+    "fancy75",
+    "fancy76",
+    "fancy77",
+    "fancy78",
+    "fancy79",
+    "fancy80",
+    "fancy81",
+    "fancy82",
+    "fancy83",
+    "fancy84",
+    "fancy85",
+    "fancy86",
+    "white_square",
+    "black_square",
+    "paranormal",
+    "black_bubble"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -606,6 +646,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "vortron": [vortron_dic, False],
             "war_of_w": [war_of_w_dic, False],
             "xtty": [xtty_dic, False],
+            "love1": [love1_dic, False],
             "yie_ar_k": [yie_ar_k_dic, False],
             "yie-ar": [yie_ar_dic, False],
             "zig_zag": [zig_zag_dic, False],
@@ -757,7 +798,26 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy71": [fancy71_dic, False],
             "fancy72": [fancy72_dic, False],
             "fancy73": [fancy73_dic, False],
-            "fancy74": [fancy74_dic, False]
+            "fancy74": [fancy74_dic, False],
+            "fancy75": [fancy75_dic, False],
+            "fancy76": [fancy76_dic, False],
+            "fancy77": [fancy77_dic, False],
+            "fancy78": [fancy78_dic, False],
+            "fancy79": [fancy79_dic, False],
+            "fancy80": [fancy80_dic, False],
+            "fancy81": [fancy81_dic, False],
+            "fancy82": [fancy82_dic, False],
+            "fancy83": [fancy83_dic, False],
+            "fancy84": [fancy84_dic, False],
+            "contouring3": [contouring3_dic, False],
+            "contouring4": [contouring4_dic, False],
+            "love2": [love2_dic, False],
+            "fancy85": [fancy85_dic, False],
+            "fancy86": [fancy86_dic, False],
+            "white_square": [white_square_dic, False],
+            "black_square": [black_square_dic, False],
+            "paranormal": [paranormal_dic, False],
+            "black_bubble": [black_bubble_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover

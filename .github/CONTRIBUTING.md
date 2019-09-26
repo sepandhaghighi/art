@@ -32,6 +32,7 @@ Please consider the following :
 4. Select case sensitive mode in `FONT_MAP` dictionary
 	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
 	- `True` : If font is not case sensitive (Example : ```"poison": [poison_dic, True]```)
+	- This is an *optional* step for memory saving, if you haven't removed capital letters from font data, you can simply select case sensitive mode
 5. If font only support capital letters:
 	- Add font name to `UPPERCASE_FONTS`
 6. If font is Non-ASCII:

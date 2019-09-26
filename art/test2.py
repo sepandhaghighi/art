@@ -2,8 +2,6 @@
 '''
 >>> import os
 >>> import random
->>> import sys
->>> import codecs
 >>> from art import *
 >>> from art.art_param import TEST_FILTERED_FONTS
 >>> for i in sorted(TEST_FILTERED_FONTS):
@@ -12,11 +10,23 @@
 antrophobia:
 тєѕт
 <BLANKLINE>
+black_bubble:
+🅣🅔🅢🅣
+<BLANKLINE>
+black_square:
+🆃🅴🆂🆃
+<BLANKLINE>
 contouring1:
 ⓣⓔⓢⓣ
 <BLANKLINE>
 contouring2:
 ⒯⒠⒮⒯
+<BLANKLINE>
+contouring3:
+[̲̅t][̲̅e][̲̅s][̲̅t]
+<BLANKLINE>
+contouring4:
+(̲̅t)(̲̅e)(̲̅s)(̲̅t)
 <BLANKLINE>
 currency:
 ₮Ɇ₴₮
@@ -240,8 +250,44 @@ fancy73:
 fancy74:
 ŧεşŧ
 <BLANKLINE>
+fancy75:
+ｲ乇ㄎｲ
+<BLANKLINE>
+fancy76:
+էҽʂէ
+<BLANKLINE>
+fancy77:
+ƚҽʂƚ
+<BLANKLINE>
+fancy78:
+tєรt
+<BLANKLINE>
+fancy79:
+†εš†
+<BLANKLINE>
 fancy8:
 tєรt
+<BLANKLINE>
+fancy80:
+ƭєƨƭ
+<BLANKLINE>
+fancy81:
+ƚЄ$ƚ
+<BLANKLINE>
+fancy82:
+Ŧ£ŞŦ
+<BLANKLINE>
+fancy83:
+τεȘτ
+<BLANKLINE>
+fancy84:
+tΞst
+<BLANKLINE>
+fancy85:
+ťĕʂť
+<BLANKLINE>
+fancy86:
+ᴛᴇsᴛ
 <BLANKLINE>
 fancy9:
 тeѕт
@@ -255,11 +301,20 @@ full_width:
 knight:
 ṮḕṠṮ
 <BLANKLINE>
+love1:
+ƬƐSƬ
+<BLANKLINE>
+love2:
+тєsт
+<BLANKLINE>
 mirror:
 ɈƨǝɈ
 <BLANKLINE>
 mirror_flip:
 ʇsǝʇ
+<BLANKLINE>
+paranormal:
+tєst
 <BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
@@ -284,6 +339,9 @@ tiny:
 <BLANKLINE>
 white_bubble:
 ⓣⓔⓢⓣ
+<BLANKLINE>
+white_square:
+🅃🄴🅂🅃
 <BLANKLINE>
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")
