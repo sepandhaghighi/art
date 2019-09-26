@@ -29,7 +29,7 @@ Please consider the following :
 2. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable ASCII characters)
 	- You can use `font_wizard.py` in `otherfile` folder (need to install latest version of `art` package)
 3. Map font name and data in `FONT_MAP` dictionary
-4. Select case sensitive mode in `FONT_MAP` dictionary (*Optional*)
+4. Select case sensitive mode in `FONT_MAP` dictionary
 	- `False` : If font is case sensitive (Example : ```"eftiwater": [eftiwater_dic, False]```)
 	- `True` : If font is not case sensitive (Example : ```"poison": [poison_dic, True]```)
 	- This is an *optional* step for memory saving, if you haven't removed capital letters from font data, you can simply select case sensitive mode
