@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 - 14 new fonts
-	1. smallcaps
+	1. smallcaps3
 	2. fraktur2
 	3. bold fraktur
 	4. bold script

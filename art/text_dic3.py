@@ -14427,7 +14427,7 @@ black_bubble_dic = {
     'U': '🅤',
     '@': '@',
     ':': ':'}
-smallcaps_dic = {
+smallcaps3_dic = {
     'a': 'ᴀ',
     'b': 'ʙ',
     'c': 'ᴄ',

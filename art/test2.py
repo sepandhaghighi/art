@@ -346,10 +346,10 @@ tєst
 rusify:
 тё$т
 <BLANKLINE>
-smallcaps:
+smallcaps2:
 ᴛᴇsᴛ
 <BLANKLINE>
-smallcaps2:
+smallcaps3:
 ᴛᴇsᴛ
 <BLANKLINE>
 special:
