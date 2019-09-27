@@ -328,6 +328,9 @@ mirror:
 mirror_flip:
 ʇsǝʇ
 <BLANKLINE>
+monospace:
+𝚝𝚎𝚜𝚝
+<BLANKLINE>
 paranormal:
 tєst
 <BLANKLINE>
