@@ -373,6 +373,9 @@ thin2:
 tiny:
 ᴛᴇᴤᴛ
 <BLANKLINE>
+tiny2:
+ᴛᴇꜱᴛ
+<BLANKLINE>
 white_bubble:
 ⓣⓔⓢⓣ
 <BLANKLINE>
