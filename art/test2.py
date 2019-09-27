@@ -16,6 +16,9 @@ black_bubble:
 black_square:
 🆃🅴🆂🆃
 <BLANKLINE>
+bold_fraktur:
+𝖙𝖊𝖘𝖙
+<BLANKLINE>
 contouring1:
 ⓣⓔⓢⓣ
 <BLANKLINE>

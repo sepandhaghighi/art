@@ -262,7 +262,8 @@ RANDOM_FILTERED_FONTS = [
     "paranormal",
     "black_bubble",
     "smallcaps",
-    "fraktur"]
+    "fraktur",
+    "bold_fraktur"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -386,7 +387,8 @@ TEST_FILTERED_FONTS = [
     "paranormal",
     "black_bubble",
     "smallcap",
-    "fraktur"]
+    "fraktur",
+    "bold_fraktur"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -823,7 +825,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "paranormal": [paranormal_dic, False],
             "black_bubble": [black_bubble_dic, False],
             "smallcaps": [smallcaps_dic, False],
-            "fraktur": [fraktur_dic, False]
+            "fraktur": [fraktur_dic, False],
+            "bold_fraktur": [bold_fraktur_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
