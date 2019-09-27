@@ -307,6 +307,9 @@ fraktur:
 full_width:
 ｔｅｓｔ
 <BLANKLINE>
+handwriting1:
+𝓉𝑒𝓈𝓉
+<BLANKLINE>
 knight:
 ṮḕṠṮ
 <BLANKLINE>
