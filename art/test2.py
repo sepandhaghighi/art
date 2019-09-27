@@ -19,6 +19,9 @@ black_square:
 bold_fraktur:
 𝖙𝖊𝖘𝖙
 <BLANKLINE>
+bold_script:
+𝓽𝓮𝓼𝓽
+<BLANKLINE>
 contouring1:
 ⓣⓔⓢⓣ
 <BLANKLINE>
