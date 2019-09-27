@@ -376,6 +376,9 @@ tiny:
 tiny2:
 ᴛᴇꜱᴛ
 <BLANKLINE>
+upside_down:
+ʇǝsʇ
+<BLANKLINE>
 white_bubble:
 ⓣⓔⓢⓣ
 <BLANKLINE>

@@ -273,7 +273,8 @@ RANDOM_FILTERED_FONTS = [
     "knight2",
     "h4k3r",
     "thin",
-    "tiny2"]
+    "tiny2",
+    "upside_down"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -408,7 +409,8 @@ TEST_FILTERED_FONTS = [
     "knight2",
     "h4k3r",
     "thin",
-    "tiny2"]
+    "tiny2",
+    "upside_down"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -856,7 +858,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "monospace": [monospace_dic, False],
             "h4k3r": [h4k3r_dic, False],
             "thin": [thin_dic, False],
-            "tiny2": [tiny2_dic, False]
+            "tiny2": [tiny2_dic, False],
+            "upside_down": [upside_down_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
