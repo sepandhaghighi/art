@@ -295,6 +295,9 @@ fancy9:
 flip:
 ϝԍƨϝ
 <BLANKLINE>
+fraktur:
+𝔱𝔢𝔰𝔱
+<BLANKLINE>
 full_width:
 ｔｅｓｔ
 <BLANKLINE>
