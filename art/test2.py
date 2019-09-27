@@ -364,6 +364,9 @@ superscript:
 symbols:
 ☂€ⓢ☂
 <BLANKLINE>
+thin:
+ｔｅｓｔ
+<BLANKLINE>
 thin2:
 ｔｅｓｔ
 <BLANKLINE>
