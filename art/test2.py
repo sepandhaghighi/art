@@ -331,6 +331,9 @@ mirror_flip:
 paranormal:
 tєst
 <BLANKLINE>
+rusify:
+тё$т
+<BLANKLINE>
 smallcaps:
 ᴛᴇsᴛ
 <BLANKLINE>
