@@ -319,6 +319,9 @@ handwriting2:
 knight:
 ṮḕṠṮ
 <BLANKLINE>
+knight2:
+ṮḕṠṮ
+<BLANKLINE>
 love1:
 ƬƐSƬ
 <BLANKLINE>
