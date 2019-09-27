@@ -316,6 +316,9 @@ mirror_flip:
 paranormal:
 tєst
 <BLANKLINE>
+smallcaps:
+ᴛᴇsᴛ
+<BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
 <BLANKLINE>
