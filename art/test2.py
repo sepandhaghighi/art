@@ -310,6 +310,9 @@ fraktur:
 full_width:
 ｔｅｓｔ
 <BLANKLINE>
+h4k3r:
+7357
+<BLANKLINE>
 handwriting1:
 𝓉𝑒𝓈𝓉
 <BLANKLINE>
