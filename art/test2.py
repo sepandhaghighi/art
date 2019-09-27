@@ -310,6 +310,9 @@ full_width:
 handwriting1:
 𝓉𝑒𝓈𝓉
 <BLANKLINE>
+handwriting2:
+ƚҽʂƚ
+<BLANKLINE>
 knight:
 ṮḕṠṮ
 <BLANKLINE>

@@ -265,7 +265,8 @@ RANDOM_FILTERED_FONTS = [
     "fraktur",
     "bold_fraktur",
     "bold_script",
-    "handwriting1"]
+    "handwriting1",
+    "handwriting2"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -392,7 +393,8 @@ TEST_FILTERED_FONTS = [
     "fraktur",
     "bold_fraktur",
     "bold_script",
-    "handwriting1"]
+    "handwriting1",
+    "handwriting2"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -832,7 +834,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fraktur": [fraktur_dic, False],
             "bold_fraktur": [bold_fraktur_dic, False],
             "bold_script": [bold_script_dic, False],
-            "handwriting1": [handwriting1_dic, False]
+            "handwriting1": [handwriting1_dic, False],
+            "handwriting2": [handwriting2_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover
