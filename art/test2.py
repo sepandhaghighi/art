@@ -304,7 +304,7 @@ fancy9:
 flip:
 ϝԍƨϝ
 <BLANKLINE>
-fraktur:
+fraktur2:
 𝔱𝔢𝔰𝔱
 <BLANKLINE>
 full_width:
@@ -364,10 +364,10 @@ superscript:
 symbols:
 ☂€ⓢ☂
 <BLANKLINE>
-thin:
+thin2:
 ｔｅｓｔ
 <BLANKLINE>
-thin2:
+thin3:
 ｔｅｓｔ
 <BLANKLINE>
 tiny:

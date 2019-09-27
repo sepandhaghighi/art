@@ -262,7 +262,7 @@ RANDOM_FILTERED_FONTS = [
     "paranormal",
     "black_bubble",
     "smallcaps",
-    "fraktur",
+    "fraktur2",
     "bold_fraktur",
     "bold_script",
     "handwriting1",
@@ -272,7 +272,7 @@ RANDOM_FILTERED_FONTS = [
     "dirty2",
     "knight2",
     "h4k3r",
-    "thin",
+    "thin3",
     "tiny2",
     "upside_down"]
 
@@ -397,8 +397,8 @@ TEST_FILTERED_FONTS = [
     "black_square",
     "paranormal",
     "black_bubble",
-    "smallcap",
-    "fraktur",
+    "smallcaps",
+    "fraktur2",
     "bold_fraktur",
     "bold_script",
     "handwriting1",
@@ -408,7 +408,7 @@ TEST_FILTERED_FONTS = [
     "dirty2",
     "knight2",
     "h4k3r",
-    "thin",
+    "thin3",
     "tiny2",
     "upside_down"]
 
@@ -848,8 +848,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "black_square": [black_square_dic, False],
             "paranormal": [paranormal_dic, False],
             "black_bubble": [black_bubble_dic, False],
-            "smallcaps": [smallcaps_dic, False],
-            "fraktur": [fraktur_dic, False],
+            "fraktur2": [fraktur2_dic, False],
             "bold_fraktur": [bold_fraktur_dic, False],
             "bold_script": [bold_script_dic, False],
             "handwriting1": [handwriting1_dic, False],
@@ -857,7 +856,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "rusify": [rusify_dic, False],
             "monospace": [monospace_dic, False],
             "h4k3r": [h4k3r_dic, False],
-            "thin": [thin_dic, False],
+            "thin3": [thin3_dic, False],
             "tiny2": [tiny2_dic, False],
             "upside_down": [upside_down_dic, False]
             }
