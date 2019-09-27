@@ -40,6 +40,9 @@ currency:
 dirty:
 ẗệṩẗ
 <BLANKLINE>
+dirty2:
+ẗệṩẗ
+<BLANKLINE>
 fancy1:
 тεsт
 <BLANKLINE>
