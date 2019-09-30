@@ -260,7 +260,21 @@ RANDOM_FILTERED_FONTS = [
     "white_square",
     "black_square",
     "paranormal",
-    "black_bubble"]
+    "black_bubble",
+    "smallcaps3",
+    "fraktur2",
+    "bold_fraktur",
+    "bold_script",
+    "handwriting1",
+    "handwriting2",
+    "rusify",
+    "monospace",
+    "dirty2",
+    "knight2",
+    "h4k3r",
+    "thin3",
+    "tiny2",
+    "upside_down"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -382,7 +396,21 @@ TEST_FILTERED_FONTS = [
     "white_square",
     "black_square",
     "paranormal",
-    "black_bubble"]
+    "black_bubble",
+    "smallcaps3",
+    "fraktur2",
+    "bold_fraktur",
+    "bold_script",
+    "handwriting1",
+    "handwriting2",
+    "rusify",
+    "monospace",
+    "dirty2",
+    "knight2",
+    "h4k3r",
+    "thin3",
+    "tiny2",
+    "upside_down"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -721,7 +749,9 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "currency": [currency_dic, False],
             "special": [special_dic, False],
             "dirty": [dirty_dic, False],
+            "dirty2": [dirty2_dic, False],
             "knight": [knight_dic, False],
+            "knight2": [knight2_dic, False],
             "thin2": [thin2_dic, False],
             "tiny": [tiny_dic, False],
             "fancy1": [fancy1_dic, False],
@@ -817,7 +847,19 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "white_square": [white_square_dic, False],
             "black_square": [black_square_dic, False],
             "paranormal": [paranormal_dic, False],
-            "black_bubble": [black_bubble_dic, False]
+            "black_bubble": [black_bubble_dic, False],
+            "smallcaps3": [smallcaps3_dic, False],
+            "fraktur2": [fraktur2_dic, False],
+            "bold_fraktur": [bold_fraktur_dic, False],
+            "bold_script": [bold_script_dic, False],
+            "handwriting1": [handwriting1_dic, False],
+            "handwriting2": [handwriting2_dic, False],
+            "rusify": [rusify_dic, False],
+            "monospace": [monospace_dic, False],
+            "h4k3r": [h4k3r_dic, False],
+            "thin3": [thin3_dic, False],
+            "tiny2": [tiny2_dic, False],
+            "upside_down": [upside_down_dic, False]
             }
 
 FONT_COUNTER = len(FONT_MAP)  # pragma: no cover

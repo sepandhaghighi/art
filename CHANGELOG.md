@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- 14 new fonts
+	1. smallcaps3
+	2. fraktur2
+	3. bold_fraktur
+	4. bold_script
+	5. handwriting1
+	6. handwriting2
+	7. rusify
+	8. monospace
+	9. dirty2
+	10. knight2
+	11. h4k3r
+	12. thin3
+	13. tiny2
+	14. upside_down
 ## [4.1] - 2019-09-26
 ### Added
 - 20 new fonts
