@@ -4,6 +4,8 @@
 >>> import random
 >>> import sys
 >>> from art import *
+>>> from art.art_param import FONT_MAP,FONT_COUNTER,RANDOM_FILTERED_FONTS
+>>> from art.art import font_size_splitter
 >>> import string
 >>> tprint("\t\t2","block")
 <BLANKLINE>
@@ -4868,16 +4870,16 @@ True
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
->>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
+>>> text2art("seسسس",chr_ignore=False)
 Traceback (most recent call last):
         ...
 art.art.artError: س is invalid.
->>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+>>> Data=tsave(22,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
 "The 'text' type must be str."
 >>> Data["Status"]
 False
->>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
+>>> tprint(22,chr_ignore=True)
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
