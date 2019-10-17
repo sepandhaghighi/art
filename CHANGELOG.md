@@ -21,6 +21,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	12. thin3
 	13. tiny2
 	14. upside_down
+- `FONT_NAMES` variable
+- `ART_NAMES` variable
 ### Changed
 - Namespace optimized
 ## [4.1] - 2019-09-26
