@@ -4877,7 +4877,7 @@ art.art.artError: س is invalid.
 "The 'text' type must be str."
 >>> Data["Status"]
 False
->>> tprint(22,chr_ignore=True)
+>>> tprint(22,font = DEFAULT_FONT,chr_ignore=True)
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
@@ -4967,7 +4967,7 @@ True
 >>> text2 == text2_copy
 True
 >>> from art.art import font_size_splitter
->>> from art.art_param import FONT_MAP,FONT_COUNTER,RANDOM_FILTERED_FONTS
+>>> from art.art_param import FONT_MAP,RANDOM_FILTERED_FONTS
 >>> font_dicts = font_size_splitter(FONT_MAP)
 >>> len(font_dicts["small_list"])>0
 True
