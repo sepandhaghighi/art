@@ -173,7 +173,7 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```	
 
-* Note : Use `ART_NAMES` to access all arts name list (New in `Version 4.2`)
+* Note : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
 
 ### ASCII text
 	
@@ -337,7 +337,7 @@ Filename: test.txt
                         
 ```
 
-* Note : Use `FONT_NAMES` to access all fonts name list (New in `Version 4.2`)
+* Note : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
 
 
 ### Font modes
