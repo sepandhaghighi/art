@@ -171,7 +171,9 @@ art.art.artError: number should have int type
 'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
 >>> randart()
 '✌(◕‿-)✌ '
-```		
+```	
+
+* Note : Use `ART_NAMES` to access all arts name list (New in `Version 4.2`)
 
 ### ASCII text
 	
@@ -334,6 +336,9 @@ Saved!
 Filename: test.txt
                         
 ```
+
+* Note : Use `FONT_NAMES` to access all fonts name list (New in `Version 4.2`)
+
 
 ### Font modes
 
