@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
 	1. smallcaps3
@@ -1115,7 +1116,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.1...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.2...dev
+[4.2]: https://github.com/sepandhaghighi/art/compare/v4.1...v4.2
 [4.1]: https://github.com/sepandhaghighi/art/compare/v4.0...v4.1
 [4.0]: https://github.com/sepandhaghighi/art/compare/v3.9...v4.0
 [3.9]: https://github.com/sepandhaghighi/art/compare/v3.8...v3.9
