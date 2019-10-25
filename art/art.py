@@ -99,7 +99,7 @@ def help_func():
     tprint("art")
     tprint("v" + ART_VERSION)
     print(DESCRIPTION + "\n")
-    print("Webpage : http://art.shaghighi.ir\n")
+    print("Webpage : https://www.4r7.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
     print("     - fonts --> (list of fonts)\n")
