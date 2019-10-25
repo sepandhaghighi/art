@@ -727,7 +727,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 ## Issues & bug reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com "sepand.haghighi@yahoo.com"). 
+or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir"). 
 
 * Please complete the issue template 
 
