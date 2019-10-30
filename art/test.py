@@ -4712,11 +4712,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _  _       _
-__   __| || |     / |
-\ \ / /| || |_    | |
- \ V / |__   _| _ | |
-  \_/     |_|  (_)|_|
+        _  _       ____
+__   __| || |     |___ \
+\ \ / /| || |_      __) |
+ \ V / |__   _| _  / __/
+  \_/     |_|  (_)|_____|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4724,7 +4724,7 @@ It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 ART is a Python lib for text converting to ASCII art fancy.
 <BLANKLINE>
-Webpage : http://art.shaghighi.ir
+Webpage : https://www.4r7.ir
 <BLANKLINE>
 Help :
 <BLANKLINE>
@@ -4868,16 +4868,16 @@ True
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
->>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False)
+>>> text2art("seسسس",chr_ignore=False)
 Traceback (most recent call last):
         ...
 art.art.artError: س is invalid.
->>> Data=tsave(22,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True)
+>>> Data=tsave(22,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
 "The 'text' type must be str."
 >>> Data["Status"]
 False
->>> tprint(22,font=DEFAULT_FONT,chr_ignore=True)
+>>> tprint(22,font = DEFAULT_FONT,chr_ignore=True)
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
@@ -4966,6 +4966,8 @@ True
 >>> Art6 = text2art(text2,"double")
 >>> text2 == text2_copy
 True
+>>> from art.art import font_size_splitter
+>>> from art.art_param import FONT_MAP,RANDOM_FILTERED_FONTS
 >>> font_dicts = font_size_splitter(FONT_MAP)
 >>> len(font_dicts["small_list"])>0
 True

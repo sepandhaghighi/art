@@ -11,7 +11,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-481-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-495-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-370-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
@@ -65,7 +65,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">481</td>
+		<td align="center">495</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -171,7 +171,9 @@ art.art.artError: number should have int type
 'ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ '
 >>> randart()
 '✌(◕‿-)✌ '
-```		
+```	
+
+* Note : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
 
 ### ASCII text
 	
@@ -334,6 +336,9 @@ Saved!
 Filename: test.txt
                         
 ```
+
+* Note : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+
 
 ### Font modes
 
@@ -722,7 +727,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 ## Issues & bug reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [sepand.haghighi@yahoo.com](mailto:sepand.haghighi@yahoo.com "sepand.haghighi@yahoo.com"). 
+or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir"). 
 
 * Please complete the issue template 
 

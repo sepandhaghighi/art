@@ -99,7 +99,7 @@ def help_func():
     tprint("art")
     tprint("v" + ART_VERSION)
     print(DESCRIPTION + "\n")
-    print("Webpage : http://art.shaghighi.ir\n")
+    print("Webpage : https://www.4r7.ir\n")
     print("Help : \n")
     print("     - list --> (list of arts)\n")
     print("     - fonts --> (list of fonts)\n")
@@ -248,7 +248,7 @@ def tsave(
         result = text2art(text, font=font, chr_ignore=chr_ignore)
         try:
             file.write(result)
-        except UnicodeDecodeError: # pragma: no cover
+        except UnicodeDecodeError:  # pragma: no cover
             file.close()
             file = codecs.open(test_name + extension, "w")
             file.write(result)
