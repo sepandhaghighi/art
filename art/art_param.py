@@ -880,7 +880,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "thin3": [thin3_dic, False],
             "tiny2": [tiny2_dic, False],
             "upside_down": [upside_down_dic, False],
-            "chinese_mafia" : [chinese_mafia_dic, False],
+            "chinese_mafia": [chinese_mafia_dic, False],
             "sunday_cuddle": [sunday_cuddle_dic, False],
             "native_lands": [native_lands_dic, False],
             "foreign_friends": [foreign_friends_dic, False],
