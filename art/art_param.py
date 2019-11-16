@@ -275,7 +275,8 @@ RANDOM_FILTERED_FONTS = [
     "thin3",
     "tiny2",
     "upside_down",
-    "chinese_mafia"]
+    "chinese_mafia",
+    "sunday_cuddle"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -412,7 +413,8 @@ TEST_FILTERED_FONTS = [
     "thin3",
     "tiny2",
     "upside_down",
-    "chinese_mafia"]
+    "chinese_mafia",
+    "sunday_cuddle"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -862,7 +864,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "thin3": [thin3_dic, False],
             "tiny2": [tiny2_dic, False],
             "upside_down": [upside_down_dic, False],
-            "chinese_mafia" : [chinese mafia_dic, False]
+            "chinese_mafia" : [chinese mafia_dic, False],
+            "sunday_cuddle": [sunday_cuddle_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
