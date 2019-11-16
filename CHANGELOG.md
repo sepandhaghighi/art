@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 10 new fonts
+	1. sarah
+	2. hippie
+	3. minion
+	4. greek_legends
+	5. funky_fresh
+	6. atlantic
+	7. foreign_friends
+	8. native_lands
+	9. sunday_cuddle
+	10. chinese_mafia
 ## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
