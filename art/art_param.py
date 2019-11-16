@@ -279,7 +279,8 @@ RANDOM_FILTERED_FONTS = [
     "sunday_cuddle",
     "native_lands",
     "foreign_friends",
-    "atlantic"]
+    "atlantic",
+    "funky_fresh"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -420,7 +421,8 @@ TEST_FILTERED_FONTS = [
     "sunday_cuddle",
     "native_lands",
     "foreign_friends",
-    "atlantic"]
+    "atlantic",
+    "funky_fresh"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -874,7 +876,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "sunday_cuddle": [sunday_cuddle_dic, False],
             "native_lands": [native_lands_dic, False],
             "foreign_friends": [foreign_friends_dic, False],
-            "atlantic": [atlantic_dic, False]
+            "atlantic": [atlantic_dic, False],
+            "funky_fresh": [funky_fresh_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
