@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 35 new 1-line art
+- 35 new 1-line art 
 	1. cup1
 	2. cup2
 	3. gun2
