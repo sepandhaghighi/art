@@ -27,6 +27,7 @@ art_dic = {
     "rose1": "--------{---(@",
     "rose2": "@}}>-----",
     "rose3": "@-->--->---",
+    "rose4": "@}~}~~~",
     "star in my eyes": "<*_*>",
     "looking face": "ô¿ô",
     "sleeping": "(-.-)Zzz...",
