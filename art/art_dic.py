@@ -63,6 +63,7 @@ art_dic = {
                 "happy": " ۜ\(סּںסּَ` )/ۜ",
                 "love in my eye": "(♥_♥)",
                 "cat2": "龴ↀ◡ↀ龴",
+                "cat3": "^.--.^",
                 "face": "•|龴◡龴|•",
                 "big nose": "˚∆˚",
                 "big eyes": "⺌∅‿∅⺌",
