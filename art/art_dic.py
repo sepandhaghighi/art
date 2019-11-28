@@ -403,5 +403,9 @@ art_dic = {
     "cup1": "(▓",
     "cup2": "\̅_̅/̷̚ʾ",
     "barcode": "  █║▌│ █│║▌ ║││█║▌ │║║█║ │║║█║",
-    "band aid": " ( ̲̅:̲̅:̲̅:̲̅[̲̅ ̲̅]̲̅:̲̅:̲̅:̲̅ ) "
+    "band aid": " ( ̲̅:̲̅:̲̅:̲̅[̲̅ ̲̅]̲̅:̲̅:̲̅:̲̅ ) ",
+    "electrocardiogram1": "√v^√v^√v^√v^√♥",
+    "electrocardiogram2": "v^v^v^v^√\/♥",
+    "electrocardiogram3": "/\/\/\/\/\/\/\/\/\/\/\v^♥",
+    "electrocardiogram4": "√v^√v^♥√v^√v^√"
 }
