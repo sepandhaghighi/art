@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	11. sword9
 	12. knife2
 	13. barcode
-	14. loading2
+	14. loading1
 	15. loading3
 	16. loading4
 	17. loading5
@@ -53,6 +53,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. native_lands
 	9. sunday_cuddle
 	10. chinese_mafia
+### Changed
+- `gun` 1-line art renamed to `gun1`
+- `knife` 1-line art renamed to `knife1`
+- `loading` 1-line art renamed to `loading2`
+- `bat` 1-line art renamed to `bat1`
+- `mouse` 1-line art renamed to `mouse1`
+- `needle` 1-line art renamed to `needle1`
+- `snail` 1-line art renamed to `snail1`
+- `american money` 1-line art renamed to `american money1`
+- `cassette` 1-line art renamed to `cassette1`
 ## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
