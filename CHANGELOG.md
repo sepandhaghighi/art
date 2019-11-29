@@ -63,6 +63,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `snail` 1-line art renamed to `snail1`
 - `american money` 1-line art renamed to `american money1`
 - `cassette` 1-line art renamed to `cassette1`
+- Test system modified
 ## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
