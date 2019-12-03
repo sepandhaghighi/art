@@ -6,6 +6,42 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 35 new 1-line art
+	1. cup1
+	2. cup2
+	3. gun2
+	4. gun3
+	5. fish3
+	6. fish4
+	7. fish5
+	8. sword6
+	9. sword7
+	10. sword8
+	11. sword9
+	12. knife2
+	13. barcode
+	14. loading1
+	15. loading3
+	16. loading4
+	17. loading5
+	18. loading6
+	19. bat2
+	20. band aid
+	21. mouse2
+	22. mouse3
+	23. cat3
+	24. needle2
+	25. rose4
+	26. electrocardiogram1
+	27. electrocardiogram2
+	28. electrocardiogram3
+	29. electrocardiogram4
+	30. snail2
+	31. american money2
+	32. american money3
+	33. american money4
+	34. american money5
+	35. cassette2
 - 10 new fonts
 	1. sarah
 	2. hippie
@@ -17,6 +53,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. native_lands
 	9. sunday_cuddle
 	10. chinese_mafia
+### Changed
+- `gun` 1-line art renamed to `gun1`
+- `knife` 1-line art renamed to `knife1`
+- `loading` 1-line art renamed to `loading2`
+- `bat` 1-line art renamed to `bat1`
+- `mouse` 1-line art renamed to `mouse1`
+- `needle` 1-line art renamed to `needle2`
+- `snail` 1-line art renamed to `snail1`
+- `american money` 1-line art renamed to `american money1`
+- `cassette` 1-line art renamed to `cassette1`
+- Test system modified
 ## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
