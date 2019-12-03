@@ -59,7 +59,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `loading` 1-line art renamed to `loading2`
 - `bat` 1-line art renamed to `bat1`
 - `mouse` 1-line art renamed to `mouse1`
-- `needle` 1-line art renamed to `needle1`
+- `needle` 1-line art renamed to `needle2`
 - `snail` 1-line art renamed to `snail1`
 - `american money` 1-line art renamed to `american money1`
 - `cassette` 1-line art renamed to `cassette1`
