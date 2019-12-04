@@ -412,6 +412,6 @@ art_dic = {
     "band aid": "(̲̅:̲̅:̲̅:̲̅[̲̅ ̲̅]̲̅:̲̅:̲̅:̲̅ )",
     "electrocardiogram1": "√v^√v^√v^√v^√♥",
     "electrocardiogram2": "v^v^v^v^√\/♥",
-    "electrocardiogram3": "/\/\/\/\/\/\/\/\/\/\/\v^♥",
+    "electrocardiogram3": "/\/\/\/\/\/\/\/\/\/\/\\v^♥",
     "electrocardiogram4": "√v^√v^♥√v^√v^√"
 }
