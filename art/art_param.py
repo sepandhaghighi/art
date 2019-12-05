@@ -5,7 +5,7 @@ from .text_dic2 import *
 from .text_dic3 import *
 from .art_dic import *
 
-ART_VERSION = "4.2"  # pragma: no cover
+ART_VERSION = "4.3"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -274,7 +274,17 @@ RANDOM_FILTERED_FONTS = [
     "h4k3r",
     "thin3",
     "tiny2",
-    "upside_down"]
+    "upside_down",
+    "chinese_mafia",
+    "sunday_cuddle",
+    "native_lands",
+    "foreign_friends",
+    "atlantic",
+    "funky_fresh",
+    "greek_legends",
+    "minion",
+    "hippie",
+    "sarah"]
 
 RANDOM_FILTERED_ARTS = [
     "message2",
@@ -410,7 +420,17 @@ TEST_FILTERED_FONTS = [
     "h4k3r",
     "thin3",
     "tiny2",
-    "upside_down"]
+    "upside_down",
+    "chinese_mafia",
+    "sunday_cuddle",
+    "native_lands",
+    "foreign_friends",
+    "atlantic",
+    "funky_fresh",
+    "greek_legends",
+    "minion",
+    "hippie",
+    "sarah"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -859,7 +879,17 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "h4k3r": [h4k3r_dic, False],
             "thin3": [thin3_dic, False],
             "tiny2": [tiny2_dic, False],
-            "upside_down": [upside_down_dic, False]
+            "upside_down": [upside_down_dic, False],
+            "chinese_mafia": [chinese_mafia_dic, False],
+            "sunday_cuddle": [sunday_cuddle_dic, False],
+            "native_lands": [native_lands_dic, False],
+            "foreign_friends": [foreign_friends_dic, False],
+            "atlantic": [atlantic_dic, False],
+            "funky_fresh": [funky_fresh_dic, False],
+            "greek_legends": [greek_legends_dic, False],
+            "minion": [minion_dic, False],
+            "hippie": [hippie_dic, False],
+            "sarah": [sarah_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
