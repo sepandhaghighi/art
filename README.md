@@ -776,8 +776,3 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 <h3>Payping (For Iranian citizens)</h3>
 
 <a href="http://www.payping.net/sepandhaghighi" target="__blank"><img src="http://www.qpage.ir/images/payping.png" height=100px width=100px></a>	
-
-<h3>Say Thanks! </h3>
-
-
-<a href="https://saythanks.io/to/sepandhaghighi"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg"></a>
