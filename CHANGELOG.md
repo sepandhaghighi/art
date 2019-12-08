@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `RANDOM_FILTERED_FONTS` and `TEST_FILTERED_FONTS` lists optimized
 - `README.md` modified
 - `appveyor.yml` modified
+- `INSTALL.md` modified
 ## [4.3] - 2019-12-05
 ### Added
 - 35 new 1-line art
