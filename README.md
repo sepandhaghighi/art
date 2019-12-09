@@ -337,7 +337,8 @@ Filename: test.txt
                         
 ```
 
-* Note : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+* Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+* Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
 
 ### Font modes
