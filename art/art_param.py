@@ -139,7 +139,7 @@ RANDOM_FILTERED_ARTS = [
     "musical"]
 
 
-TEST_FILTERED_FONTS = [
+NON_ASCII_FONTS = [
     "contouring1",
     "contouring2",
     "contouring3",
@@ -294,7 +294,7 @@ RANDOM_FILTERED_FONTS = [
     'gauntlet',
     'flyn_sh',
     'moscow',
-    'dwhistled'] + TEST_FILTERED_FONTS
+    'dwhistled'] + NON_ASCII_FONTS
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or

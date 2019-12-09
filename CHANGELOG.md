@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - MATLAB examples
 ### Changed
 - `CONTRIBUTING.md` modified
-- `RANDOM_FILTERED_FONTS` and `TEST_FILTERED_FONTS` lists optimized
+- `TEST_FILTERED_FONTS` renamed to `NON_ASCII_FONTS`
+- `RANDOM_FILTERED_FONTS` and `NON_ASCII_FONTS` lists optimized
 - `README.md` modified
 - `appveyor.yml` modified
 - `INSTALL.md` modified

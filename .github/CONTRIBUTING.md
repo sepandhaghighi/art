@@ -36,7 +36,7 @@ Please consider the following :
 5. If font only support capital letters:
 	- Add font name to `UPPERCASE_FONTS`
 6. If font is Non-ASCII:
-	- Add font name to `TEST_FILTERED_FONTS` list
+	- Add font name to `NON_ASCII_FONTS` list
 	- Add a test case to `test2.py` (*Alphabetical order*)
 7. If font is ASCII:
 	- Add a test case to `test.py` (*Alphabetical order*) 
