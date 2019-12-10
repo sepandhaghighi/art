@@ -13,7 +13,7 @@ artlib = py.importlib.import_module('art');
 % text2art function
 % text2art(text, font=DEFAULT_FONT, chr_ignore=True)
 % Note : There is no need to use 'chr_ignore' flag in MATLAB 
-% unsupported characters (out of 95 printable characters) will be displayed by a question mark ('?')
+% unsupported characters will be displayed with a question mark ('?')
 art1 = artlib.text2art('art1');
 disp(char(art1));
 
@@ -52,8 +52,6 @@ disp(char(art12));
 
 % tprint function
 % tprint(text, font=DEFAULT_FONT, chr_ignore=True)
-% Note : There is no need to use 'chr_ignore' flag in MATLAB 
-% unsupported characters (out of 95 printable characters) will be displayed by a question mark ('?')
 artlib.tprint('art13');
 
 artlib.tprint('art14','block');
@@ -80,8 +78,6 @@ artlib.tprint('art24','mix');
 
 % tsave function
 % tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True,overwrite=False)
-% Note : There is no need to use 'chr_ignore' flag in MATLAB 
-% unsupported characters (out of 95 printable characters) will be displayed by a question mark ('?')
 response = artlib.tsave('art','standard','test.txt');
 disp('art1 message :')
 disp(char(response{'Message'}))
