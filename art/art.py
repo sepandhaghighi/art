@@ -71,7 +71,7 @@ def font_list(text="test", test=False):
     """
     fonts = set(FONT_MAP.keys())
     if test:
-        fonts = fonts - set(TEST_FILTERED_FONTS)
+        fonts = fonts - set(NON_ASCII_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
@@ -341,7 +341,7 @@ def indirect_font(font, text):
         font = wizard_font(text)
         return font
     if font == "rnd-na" or font == "random-na" or font == "rand-na":
-        font = random.choice(TEST_FILTERED_FONTS)
+        font = random.choice(NON_ASCII_FONTS)
         return font
     if font not in fonts:
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
@@ -357,7 +357,7 @@ def mix_letters():
     """
     letters = fancy1_dic.copy()
     for i in letters.keys():
-        random_font = random.choice(TEST_FILTERED_FONTS)
+        random_font = random.choice(NON_ASCII_FONTS)
         letters[i] = get_font_dic(random_font)[i]
     return letters
 

@@ -337,7 +337,8 @@ Filename: test.txt
                         
 ```
 
-* Note : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+* Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+* Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
 
 ### Font modes
@@ -776,8 +777,3 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 <h3>Payping (For Iranian citizens)</h3>
 
 <a href="http://www.payping.net/sepandhaghighi" target="__blank"><img src="http://www.qpage.ir/images/payping.png" height=100px width=100px></a>	
-
-<h3>Say Thanks! </h3>
-
-
-<a href="https://saythanks.io/to/sepandhaghighi"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg"></a>

@@ -36,18 +36,19 @@ Please consider the following :
 5. If font only support capital letters:
 	- Add font name to `UPPERCASE_FONTS`
 6. If font is Non-ASCII:
-	- Add font name to `TEST_FILTERED_FONTS` list
-	- Add font name to `RANDOM_FILTERED_FONTS` list
+	- Add font name to `NON_ASCII_FONTS` list
 	- Add a test case to `test2.py` (*Alphabetical order*)
 7. If font is ASCII:
 	- Add a test case to `test.py` (*Alphabetical order*) 
-8. Re-run `FontList.ipynb`
+8. If you want to remove this font from shuffle list: (*Optional*)
+	- Add font name to `RANDOM_FILTERED_FONTS` list 
+9. Re-run `FontList.ipynb`
 	- Before this step you should re-install `art` package : ```python setup.py install```
-9. Update 2 font counters in `README.md`
+10. Update 2 font counters in `README.md`
 	- Badge section
 	- Overview section
-10. Update `Reference` section in `README.md`
-11. Run `autopep8.bat`/`autopep8.sh` (*Optional*, need to install latest version of `autopep8` package)
+11. Update `Reference` section in `README.md`
+12. Run `autopep8.bat`/`autopep8.sh` (*Optional*, need to install latest version of `autopep8` package)
 
 
 ## 1-Line art

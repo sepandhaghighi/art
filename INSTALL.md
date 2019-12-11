@@ -22,3 +22,16 @@
 ### Easy install
 
 - Run `easy_install "art==4.3"` (Need root access)
+
+### MATLAB
+
+- Download and install [MATLAB](https://www.mathworks.com/products/matlab.html) (>=8.5, 64/32 bit)
+- Download and install [Python3.x](https://www.python.org/downloads/) (>=3.5, 64/32 bit) 
+	- [x] Select `Add to PATH` option
+	- [x] Select `Install pip` option
+- Run `pip install art` or `pip3 install art` (Need root access)
+- Configure Python interpreter
+```matlab
+>> pyversion PYTHON_EXECUTABLE_FULL_PATH
+```
+- Visit [MATLAB Examples](https://github.com/sepandhaghighi/art/tree/master/MATLAB)	
