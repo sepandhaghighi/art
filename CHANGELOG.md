@@ -6,8 +6,56 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 41 new 1-line art
+	1. smile
+	2. toungue out1
+	3. toungue out2
+	4. bad hair1
+	5. bad hair2
+	6. woops
+	7. screaming
+	8. full mouth
+	9. cussing
+	10. ready to cry
+	11. crying2
+	12. druling1
+	13. druling2
+	14. big kiss
+	15. french kiss
+	16. wink
+	17. big smile
+	18. smirk
+	19. confused1
+	20. confused2
+	21. pursing lips
+	22. shocked2
+	23. really sad
+	24. baseball fan
+	25. angel2
+	26. really mad
+	27. licking lips
+	28. buck teeth
+	29. suprised
+	30. alien
+	31. sunglasses2
+	32. don king
+	33. devilish smile
+	34. devilish grin
+	35. clowning
+	36. bugs bunny
+	37. kitty2
+	38. fish skeleton
+	39. snowman2
+	40. marshmallows
+	41. nerd
 - MATLAB examples
 ### Changed
+- `crying` 1-line art renamed to `crying1`
+- `shocked` 1-line art renamed to `shocked1`
+- `angel` 1-line art renamed to `angel1`
+- `sunglasses` 1-line art renamed to `sunglasses1`
+- `kitty` 1-line art renamed to `kitty1`
+- `snowman` 1-line art renamed to `snowman1`
 - `CONTRIBUTING.md` modified
 - `TEST_FILTERED_FONTS` renamed to `NON_ASCII_FONTS`
 - `RANDOM_FILTERED_FONTS` and `NON_ASCII_FONTS` lists optimized
