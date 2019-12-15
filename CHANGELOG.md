@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 41 new 1-line art
+- 55 new 1-line art
 	1. smile
 	2. toungue out1
 	3. toungue out2
