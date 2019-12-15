@@ -765,6 +765,8 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 12. [SMILEY COOL](https://smiley.cool/)
 13. [SPREZZ](https://www.sprezzkeyboard.com/)
 14. [Textart4u](http://textart4u.blogspot.com/2013/03/one-line-ascii-text-art.html?m=1)
+15. [Chat4o](https://en.chat4o.com/ascii/)
+16. [Findwebapp](http://www.findwebapp.com/ascii-art-one-liner/)
 
 ## Donate to our project
 								
