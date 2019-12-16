@@ -32,6 +32,7 @@
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
    		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
+   * [Testing](https://github.com/sepandhaghighi/art#testing)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
@@ -686,7 +687,23 @@ _/  _   _ _/
 		<td align="center">raise artError</td>
 	</tr>	
 	</table> 
- 
+
+### Testing
+- Only ASCII fonts and arts (without **coverage**) :
+```
+python -m art test
+```
+
+- Only ASCII fonts and arts (with **coverage**) :
+```
+python -m art testcov
+```
+
+- All fonts and arts (with **coverage**) :
+```
+python -m art testcov2
+```
+
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
 - List of fonts : `python -m art fonts`
