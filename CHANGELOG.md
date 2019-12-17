@@ -56,7 +56,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	47. sad3
 	48. sad4
 	49. headphone2
-	50. cigarette3
+	50. cigarette1
 	51. spider3
 	52. barcode2
 	53. equalizer
@@ -72,7 +72,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `kitty` 1-line art renamed to `kitty1`
 - `snowman` 1-line art renamed to `snowman1`
 - `barcode` 1-line art renamed to `barcode1`
-- `cigaret` 1-line art renamed to `cigarette1`
+- `cigaret` 1-line art renamed to `cigarette3`
 - `cigarette` 1-line art renamed to `cigarette2`
 - `headphone` 1-line art renamed to `headphone1`
 - `rock on` 1-line art renamed to `rock on1`
