@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 60 new 1-line art
+- 68 new 1-line art
 	1. smile
 	2. toungue out1
 	3. toungue out2
@@ -67,6 +67,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	58. playing cards diamonds
 	59. playing cards spades
 	60. playing cards clubs
+	61. black spade
+	62. black heart
+	63. black diamond
+	64. black club
+	65. white spade
+	66. white heart
+	67. white diamond
+	68. white club
 - MATLAB examples
 ### Changed
 - `crying` 1-line art renamed to `crying1`
