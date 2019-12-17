@@ -468,6 +468,10 @@ art_dic = {
     "surprised2": "(O_o)",
     "boombox2": "♫♪ |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ♫♪",
     "equalizer": "▇ ▅ █ ▅ ▇ ▂ ▃ ▁ ▁ ▅ ▃ ▅ ▅ ▄ ▅ ▇",
-    "playing cards": "[♥]]] [♦]]] [♣]]] [♠]]]"
+    "playing cards": "[♥]]] [♦]]] [♣]]] [♠]]]",
+    "playing cards hearts": "[♥]]]",
+    "playing cards diamonds": "[♦]]]",
+    "playing cards spades": "[♠]]]",
+    "playing cards clubs": "[♣]]]"
 
 }
