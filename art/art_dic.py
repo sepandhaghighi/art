@@ -472,6 +472,14 @@ art_dic = {
     "playing cards hearts": "[♥]]]",
     "playing cards diamonds": "[♦]]]",
     "playing cards spades": "[♠]]]",
-    "playing cards clubs": "[♣]]]"
+    "playing cards clubs": "[♣]]]",
+    "black spade": "♠",
+    "black heart": "♥",
+    "black diamond": "♦",
+    "black club": "♣",
+    "white spade": "♤",
+    "white heart": "♡",
+    "white diamond": "♢",
+    "white club": "♧"
 
 }
