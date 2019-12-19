@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 41 new 1-line art
+- 68 new 1-line art
 	1. smile
 	2. toungue out1
 	3. toungue out2
@@ -35,7 +35,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	26. really mad
 	27. licking lips
 	28. buck teeth
-	29. suprised
+	29. surprised1
 	30. alien
 	31. sunglasses2
 	32. don king
@@ -48,6 +48,33 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	39. snowman2
 	40. marshmallows
 	41. nerd
+	42. mouse4
+	43. pistols3
+	44. rock on2
+	45. love in my eye2
+	46. love in my eye3
+	47. sad3
+	48. sad4
+	49. headphone2
+	50. cigarette1
+	51. spider3
+	52. barcode2
+	53. equalizer
+	54. boombox2
+	55. surprised2
+	56. playing cards
+	57. playing cards hearts
+	58. playing cards diamonds
+	59. playing cards spades
+	60. playing cards clubs
+	61. spade bold
+	62. heart bold
+	63. diamond bold
+	64. club bold
+	65. spade regular
+	66. heart regular
+	67. diamond regular
+	68. club regular
 - MATLAB examples
 ### Changed
 - `crying` 1-line art renamed to `crying1`
@@ -56,6 +83,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `sunglasses` 1-line art renamed to `sunglasses1`
 - `kitty` 1-line art renamed to `kitty1`
 - `snowman` 1-line art renamed to `snowman1`
+- `barcode` 1-line art renamed to `barcode1`
+- `cigaret` 1-line art renamed to `cigarette3`
+- `cigarette` 1-line art renamed to `cigarette2`
+- `headphone` 1-line art renamed to `headphone1`
+- `rock on` 1-line art renamed to `rock on1`
+- `boom box` 1-line art renamed to `boombox1`
+- `love in my eye` 1-line art renamed to `love in my eye1`
 - `CONTRIBUTING.md` modified
 - `TEST_FILTERED_FONTS` renamed to `NON_ASCII_FONTS`
 - `RANDOM_FILTERED_FONTS` and `NON_ASCII_FONTS` lists optimized

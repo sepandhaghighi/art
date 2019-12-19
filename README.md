@@ -12,7 +12,7 @@
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-505-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-446-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-473-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -32,6 +32,7 @@
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
    		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
+   * [Testing](https://github.com/sepandhaghighi/art#testing)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
@@ -69,7 +70,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">446</td>
+		<td align="center">473</td>
 	</tr>
 </table>
 
@@ -686,11 +687,26 @@ _/  _   _ _/
 		<td align="center">raise artError</td>
 	</tr>	
 	</table> 
- 
+
+### Testing
+- Only ASCII fonts and arts (without **coverage**) :
+```
+python -m art test
+```
+
+- Only ASCII fonts and arts (with **coverage**) :
+```
+python -m art testcov
+```
+
+- All fonts and arts (with **coverage**) :
+```
+python -m art testcov2
+```
+
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
 - List of fonts : `python -m art fonts`
-- Test : `python -m art test`
 - Text : `python -m art text yourtext fontname(optional)`
 - Art : `python -m art shape art_name` or `python -m art art art_name`
 - Save :  `python -m art save yourtext fontname(optional)`
@@ -765,6 +781,8 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 12. [SMILEY COOL](https://smiley.cool/)
 13. [SPREZZ](https://www.sprezzkeyboard.com/)
 14. [Textart4u](http://textart4u.blogspot.com/2013/03/one-line-ascii-text-art.html?m=1)
+15. [Chat4o](https://en.chat4o.com/ascii/)
+16. [Findwebapp](http://www.findwebapp.com/ascii-art-one-liner/)
 
 ## Donate to our project
 								
