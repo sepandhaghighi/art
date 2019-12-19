@@ -67,14 +67,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	58. playing cards diamonds
 	59. playing cards spades
 	60. playing cards clubs
-	61. black spade
-	62. black heart
-	63. black diamond
-	64. black club
-	65. white spade
-	66. white heart
-	67. white diamond
-	68. white club
+	61. spade bold
+	62. heart bold
+	63. diamond bold
+	64. club bold
+	65. spade regular
+	66. heart regular
+	67. diamond regular
+	68. club regular
 - MATLAB examples
 ### Changed
 - `crying` 1-line art renamed to `crying1`
