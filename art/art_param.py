@@ -55,9 +55,13 @@ MEDIUM_WIZARD_FONT = [
     "chartri"]  # pragma: no cover
 LARGE_WIZARD_FONT = [
     "xhelvi",
+    "utopiai",
+    "rev",
     "smpoison",
     "3-d",
+    "larry3d"
     "nancyj",
+    "nancyj-underlined",
     "os2",
     "block2"]  # pragma: no cover
 XLARGE_WIZARD_FONT = [
