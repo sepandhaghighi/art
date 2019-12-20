@@ -36,13 +36,11 @@ SMALL_WIZARD_FONT = [
     "threepoint",
     "ascii_new_roman",
     "bulbhead",
-    "serifcap",
     "lockergnome"]  # pragma: no cover
 MEDIUM_WIZARD_FONT = [
     "soft",
     "4max",
     "5x7",
-    "charact4",
     "o8",
     "alphabet",
     "shadow",
@@ -51,7 +49,6 @@ MEDIUM_WIZARD_FONT = [
     "chartri"]  # pragma: no cover
 LARGE_WIZARD_FONT = [
     "xhelvi",
-    "amcun1",
     "smpoison",
     "3-d",
     "nancyj",
@@ -59,9 +56,7 @@ LARGE_WIZARD_FONT = [
     "block2"]  # pragma: no cover
 XLARGE_WIZARD_FONT = [
     "dotmatrix",
-    "sweet",
     "hollywood",
-    "nscript",
     "georgia11",
     "block"]  # pragma: no cover
 
