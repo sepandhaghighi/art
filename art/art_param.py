@@ -31,6 +31,10 @@ SMALL_WIZARD_FONT = [
     "contessa",
     "avatar",
     "mini",
+    "bigfig",
+    "lcd",
+    "bubble"
+    "digital",
     "twopoint",
     "3x5",
     "threepoint",
