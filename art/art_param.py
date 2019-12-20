@@ -66,6 +66,9 @@ LARGE_WIZARD_FONT = [
     "block2"]  # pragma: no cover
 XLARGE_WIZARD_FONT = [
     "dotmatrix",
+    "univers",
+    "doh",
+    "roman",
     "hollywood",
     "georgia11",
     "block"]  # pragma: no cover
