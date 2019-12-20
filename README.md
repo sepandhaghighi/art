@@ -527,6 +527,8 @@ d88P d88P d88P d88P d88P
                                              
                                              
 ```
+☑️ This mode guarantee support of 95 ASCII characters	
+
 
 #### 8. Random Non-ASCII
 
