@@ -33,7 +33,7 @@ SMALL_WIZARD_FONT = [
     "mini",
     "bigfig",
     "lcd",
-    "bubble"
+    "bubble",
     "digital",
     "twopoint",
     "3x5",
