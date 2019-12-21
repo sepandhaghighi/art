@@ -59,7 +59,7 @@ LARGE_WIZARD_FONT = [
     "rev",
     "smpoison",
     "3-d",
-    "larry3d"
+    "larry3d",
     "nancyj",
     "nancyj-underlined",
     "os2",
