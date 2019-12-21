@@ -373,7 +373,7 @@ These modes are available for `text2art`, `tprint` & `tsave`.
 
 #### 2. Random		
 
-Randomly select from all fonts.	
+🔵 Randomly select from all fonts.	
 
 Keywords : `random`, `rand` & `rnd`
 
@@ -388,7 +388,7 @@ Keywords : `random`, `rand` & `rnd`
 
 #### 3. Random small
 
-Randomly select from small fonts.	
+🔵 Randomly select from small fonts.	
 
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
@@ -404,7 +404,7 @@ _/  _   _ _/
 
 #### 4. Random medium
 
-Randomly select from medium fonts.
+🔵 Randomly select from medium fonts.
 
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
@@ -425,7 +425,7 @@ Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
 #### 5. Random large
 
-Randomly select from large fonts.
+🔵 Randomly select from large fonts.
 
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
@@ -450,7 +450,7 @@ Keywords : `rnd-large`, `random-large` & `rand-large`
 
 #### 6. Random xlarge
 
-Randomly select from xlarge fonts.	
+🔵 Randomly select from xlarge fonts.	
 
 Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
@@ -484,7 +484,9 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 	
 #### 7. Wizard	
 
-This mode consider length of input text to select font
+🔵 This mode consider length of input text to select font
+
+☑️ This mode guarantee support of 95 ASCII characters
 
 Keywords : `wizard`, `wiz` & `magic`
 
@@ -527,12 +529,12 @@ d88P d88P d88P d88P d88P
                                              
                                              
 ```
-☑️ This mode guarantee support of 95 ASCII characters	
+	
 
 
 #### 8. Random Non-ASCII
 
-Randomly select from Non-ASCII fonts.	
+🔵 Randomly select from Non-ASCII fonts.	
 
 Keywords : `random-na`, `rand-na` & `rnd-na`
 
@@ -549,7 +551,7 @@ Keywords : `random-na`, `rand-na` & `rnd-na`
 
 #### 9. Mix Non-ASCII
 
-Randomly mix Non-ASCII fonts.
+🔵 Randomly mix Non-ASCII fonts.
 
 Keywords : `mix`
 
