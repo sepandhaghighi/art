@@ -76,7 +76,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	67. diamond regular
 	68. club regular
 - MATLAB examples
+- `wizard` mode modified
 ### Changed
+- Bipartite art deprecated
 - `crying` 1-line art renamed to `crying1`
 - `shocked` 1-line art renamed to `shocked1`
 - `angel` 1-line art renamed to `angel1`

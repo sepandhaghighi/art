@@ -119,6 +119,8 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 ⚠️ Some environments don't support all 1-Line arts
 
+⚠️ Bipartite art is **deprecated** and will be removed in a future release
+
 
 #### 1. art					
 
@@ -486,6 +488,8 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
 This mode consider length of input text to select font
 
+☑️ Support of 95 ASCII characters guaranteed
+
 Keywords : `wizard`, `wiz` & `magic`
 
 * Note : New in `Version 2.9`
@@ -527,6 +531,8 @@ d88P d88P d88P d88P d88P
                                              
                                              
 ```
+	
+
 
 #### 8. Random Non-ASCII
 
