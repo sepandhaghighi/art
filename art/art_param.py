@@ -47,6 +47,7 @@ MEDIUM_WIZARD_FONT = [
     "5x7",
     "stampate",
     "o8",
+    "standard",
     "alphabet",
     "computer",
     "shadow",
