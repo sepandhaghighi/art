@@ -119,6 +119,8 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 ⚠️ Some environments don't support all 1-Line arts
 
+⚠️ bipartite art is deprecated and will be removed in a future release
+
 
 #### 1. art					
 
