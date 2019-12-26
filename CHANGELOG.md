@@ -5,6 +5,100 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.4] - 2019-12-26
+### Added
+- 68 new 1-line art
+	1. smile
+	2. toungue out1
+	3. toungue out2
+	4. bad hair1
+	5. bad hair2
+	6. woops
+	7. screaming
+	8. full mouth
+	9. cussing
+	10. ready to cry
+	11. crying2
+	12. druling1
+	13. druling2
+	14. big kiss
+	15. french kiss
+	16. wink
+	17. big smile
+	18. smirk
+	19. confused1
+	20. confused2
+	21. pursing lips
+	22. shocked2
+	23. really sad
+	24. baseball fan
+	25. angel2
+	26. really mad
+	27. licking lips
+	28. buck teeth
+	29. surprised1
+	30. alien
+	31. sunglasses2
+	32. don king
+	33. devilish smile
+	34. devilish grin
+	35. clowning
+	36. bugs bunny
+	37. kitty2
+	38. fish skeleton
+	39. snowman2
+	40. marshmallows
+	41. nerd
+	42. mouse4
+	43. pistols3
+	44. rock on2
+	45. love in my eye2
+	46. love in my eye3
+	47. sad3
+	48. sad4
+	49. headphone2
+	50. cigarette1
+	51. spider3
+	52. barcode2
+	53. equalizer
+	54. boombox2
+	55. surprised2
+	56. playing cards
+	57. playing cards hearts
+	58. playing cards diamonds
+	59. playing cards spades
+	60. playing cards clubs
+	61. spade bold
+	62. heart bold
+	63. diamond bold
+	64. club bold
+	65. spade regular
+	66. heart regular
+	67. diamond regular
+	68. club regular
+- MATLAB examples
+- `wizard` mode modified
+### Changed
+- Bipartite art deprecated
+- `crying` 1-line art renamed to `crying1`
+- `shocked` 1-line art renamed to `shocked1`
+- `angel` 1-line art renamed to `angel1`
+- `sunglasses` 1-line art renamed to `sunglasses1`
+- `kitty` 1-line art renamed to `kitty1`
+- `snowman` 1-line art renamed to `snowman1`
+- `barcode` 1-line art renamed to `barcode1`
+- `cigaret` 1-line art renamed to `cigarette3`
+- `cigarette` 1-line art renamed to `cigarette2`
+- `headphone` 1-line art renamed to `headphone1`
+- `rock on` 1-line art renamed to `rock on1`
+- `boom box` 1-line art renamed to `boombox1`
+- `love in my eye` 1-line art renamed to `love in my eye1`
+- `CONTRIBUTING.md` modified
+- `TEST_FILTERED_FONTS` renamed to `NON_ASCII_FONTS`
+- `RANDOM_FILTERED_FONTS` and `NON_ASCII_FONTS` lists optimized
+- `README.md` modified
+- `appveyor.yml` modified
+- `INSTALL.md` modified
 ## [4.3] - 2019-12-05
 ### Added
 - 35 new 1-line art
@@ -1177,7 +1271,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.3...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.4...dev
+[4.4]: https://github.com/sepandhaghighi/art/compare/v4.3...v4.4
 [4.3]: https://github.com/sepandhaghighi/art/compare/v4.2...v4.3
 [4.2]: https://github.com/sepandhaghighi/art/compare/v4.1...v4.2
 [4.1]: https://github.com/sepandhaghighi/art/compare/v4.0...v4.1

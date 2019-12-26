@@ -3,8 +3,8 @@
 >>> import os
 >>> import random
 >>> from art import *
->>> from art.art_param import TEST_FILTERED_FONTS
->>> for i in sorted(TEST_FILTERED_FONTS):
+>>> from art.art_param import NON_ASCII_FONTS
+>>> for i in sorted(NON_ASCII_FONTS):
 ...     print(i+":")
 ...     tprint("test",font=i)
 antrophobia:

@@ -11,7 +11,7 @@ Please consider the following :
 	- To add a new 1-line art visit [here](#1-line-art)
 4. Add standard `docstring` to your functions
 5. Add tests for new features (`doctest`)
-	- Non-ASCII fonts in `test2.py`
+	- **Non-ASCII** fonts in `test2.py`
 	- Other in `test.py`
 6. Update `README.md` (if needed)
 7. Pass all CI tests
@@ -26,7 +26,7 @@ Please consider the following :
 ## Font
 
 1. Select a non-duplicate name
-2. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable ASCII characters)
+2. Add new font data as a dictionary to the end of `text_dic3.py` (support 95 printable **ASCII** characters)
 	- You can use `font_wizard.py` in `otherfile` folder (need to install latest version of `art` package)
 3. Map font name and data in `FONT_MAP` dictionary
 4. Select case sensitive mode in `FONT_MAP` dictionary
@@ -35,12 +35,12 @@ Please consider the following :
 	- This is an *optional* step for memory saving, if you haven't removed capital letters from font data, you can simply select case sensitive mode
 5. If font only support capital letters:
 	- Add font name to `UPPERCASE_FONTS`
-6. If font is Non-ASCII:
-	- Add font name to `TEST_FILTERED_FONTS` list
-	- Add font name to `RANDOM_FILTERED_FONTS` list
+6. If font is **Non-ASCII**:
+	- Add font name to `NON_ASCII_FONTS` list
 	- Add a test case to `test2.py` (*Alphabetical order*)
-7. If font is ASCII:
-	- Add a test case to `test.py` (*Alphabetical order*) 
+7. If font is **ASCII**:
+	- Add a test case to `test.py` (*Alphabetical order*)  
+	- Add font name to `RANDOM_FILTERED_FONTS` list to remove it from random modes (*Optional*)
 8. Re-run `FontList.ipynb`
 	- Before this step you should re-install `art` package : ```python setup.py install```
 9. Update 2 font counters in `README.md`

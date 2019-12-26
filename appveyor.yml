@@ -36,7 +36,7 @@ init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe install -r dev-requirements.txt"
+  - "%PYTHON%/Scripts/pip.exe install -r requirements.txt"
   - "%PYTHON%/python.exe setup.py install"
 
 test_script:
