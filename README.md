@@ -695,19 +695,14 @@ _/  _   _ _/
 	</table> 
 
 ### Testing
-- Only ASCII fonts and arts (without **coverage**) :
+- Only ASCII fonts and arts :
 ```
 python -m art test
 ```
 
-- Only ASCII fonts and arts (with **coverage**) :
+- All fonts and arts :
 ```
-python -m art testcov
-```
-
-- All fonts and arts (with **coverage**) :
-```
-python -m art testcov2
+python -m art test2
 ```
 
 ### CLI			
