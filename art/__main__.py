@@ -29,7 +29,7 @@ def select_test(test_name="TEST"):
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
         | doctest.IGNORE_EXCEPTION_DETAIL,
         verbose=False)[0]
-    if test_name == "TESTCOV2":
+    if test_name == "TESTCOV2" or test_name == "TEST2":
         error_flag_2 = doctest.testfile(
             "test2.py",
             optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
@@ -54,6 +54,8 @@ if __name__ == "__main__":
             select_test("TESTCOV")
         elif args[1].upper() == "TEST":
             select_test("TEST")
+        elif args[1].upper() == "TEST2":
+            select_test("TEST2")
         elif args[1].upper() == "TESTCOV2":
             select_test("TESTCOV2")
         elif args[1].upper() in ["LIST", "ARTS"]:
