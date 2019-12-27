@@ -75,6 +75,21 @@ ol li{
     font-weight: bold;
     font-size: 20px;
 }
+li{
+    display: block;
+}
+ol {
+    counter-reset: item;
+}
+
+ol li:before {
+  content: counters(item, ".")". ";
+  counter-increment: item;
+}
+.toc li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
 
 code{
     font-family: monospace;
