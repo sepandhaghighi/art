@@ -951,11 +951,16 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 		<td align="center" >raise artError</td>
 	</tr>		
 </table>
-    <h2>CLI</h2>
+<h2>Testing</h2>
+    <ul>
+        <li>Only ASCII fonts and arts (without <code>coverage</code>) <ul><li><code>python -m art test</code></li></ul></li>
+        <li>Only ASCII fonts and arts (with <code>coverage</code>) <ul><li><code>python -m art testcov</code></li></ul></li>
+        <li>All fonts and arts (with <code>coverage</code>) <ul><li><code>python -m art testcov2</code></li></ul></li>
+    </ul>
+<h2>CLI</h2>
     <ul>
         <li>List of arts :  <code>python -m art list</code> or <code>python -m art arts</code></li>
         <li>List of fonts : <code>python -m art fonts</code></li>
-        <li>Test : <code>python -m art test</code></li>
         <li>Text : <code>python -m art text yourtext fontname(optional)</code></li>
         <li>Art : <code>python -m art shape art_name</code> or <code>python -m art art art_name</code></li>
         <li>Save :  <code>python -m art save yourtext fontname(optional)</code></li>
