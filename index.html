@@ -64,7 +64,25 @@ ___  _   _    ____ ____ ___  ____ _  _ ___     _  _ ____ ____ _  _ _ ____ _  _ _
 </div>
          </div>
 <div class="install">
-    <h1>Overview</h1>
+    <h1>Table of contents</h1>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#install">Installation</a></li>
+        <li><a href="#usage">Usage</a>
+            <ol>
+                <li><a href="#1-Line-art">1-Line Art</a></li>
+                <li><a href="#ascii-text">ASCII Text</a></li>
+                <li><a href="#font-modes">Font Modes</a></li>
+                <li><a href="#typo-tolerance">Typo-Tolerance</a></li>
+                <li><a href="#set-defaults">Set Defaults</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#cli">CLI</a></li>
+                <li><a href="#mybinder">Try ART In Your Browser</a></li>
+                <li><a href="#screen-record">Screen Record</a></li>
+            </ol>
+        </li>
+    </ol>
+    <h1 id="overview">Overview</h1>
     <p>ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or letters to make a visual shape that is spread over multiple lines of text.
 
 ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
@@ -86,7 +104,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 		<td align="center">473</td>
 	</tr>
 </table>
-    <h1>Install</h1>
+    <h1 id="install">Install</h1>
         <hr/> 
     <p>⚠️ <b>ART 4.4</b> is the last version to support <b>Python 2.7</b> & <b>Python 3.4</b></p>
     <h2>Source code</h2>
@@ -125,7 +143,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </div>
 <div class="usage">
    
-<h1>Usage</h1>
+<h1 id="usage">Usage</h1>
             <hr/> 
 <div class="gif">
 
@@ -133,7 +151,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <p>Quick Start</p>
 
 </div>
-<h2>1-Line art</h2>
+<h2 id="1-Line-art">1-Line art</h2>
 <p>⚠️ Some environments don't support all 1-Line arts</p>
 <p>⚠️ Bipartite art is <b>deprecated</b> and will be removed in a future release</p>
 <ol>
@@ -209,7 +227,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 
 </ol>
-<h2>ASCII text</h2>
+<h2 id="ascii-text">ASCII text</h2>
 <p>⚠️ Some fonts don't support all characters</p>
 <p>⚠️ From <code>Version 3.3</code> Non-ASCII fonts added (These fonts are not compatible with some environments)</p>
 <ol>
@@ -495,7 +513,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
  
 </ol>
-<h2>Font modes</h2>
+<h2 id="font-modes">Font modes</h2>
 <p>These modes are available for <code>text2art</code>, <code>tprint</code> & <code>tsave</code>.</p>
 <ol>
 
@@ -774,7 +792,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 </ol>
 <p>⚠️ Non-ASCII fonts are only available in <code>Font name</code>, <code>Random Non-ASCII</code> and <code>Mix Non-ASCII</code> modes</p>
-<h2>Typo-tolerance</h2>
+<h2 id="typo-tolerance">Typo-tolerance</h2>
 <p><a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (><code>Version 0.9</code>)</p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
  2
@@ -850,7 +868,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 
 
-<h2>Set defaults</h2>
+<h2 id="set-defaults">Set defaults</h2>
 <p><code>set_default</code> function is added in <code>Version 2.2</code> in order to change default values.</p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
  2
@@ -951,13 +969,13 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 		<td align="center" >raise artError</td>
 	</tr>		
 </table>
-<h2>Testing</h2>
+<h2 id="testing">Testing</h2>
     <ul>
-        <li>Only ASCII fonts and arts (without <code>coverage</code>) <ul><li><code>python -m art test</code></li></ul></li>
-        <li>Only ASCII fonts and arts (with <code>coverage</code>) <ul><li><code>python -m art testcov</code></li></ul></li>
-        <li>All fonts and arts (with <code>coverage</code>) <ul><li><code>python -m art testcov2</code></li></ul></li>
+        <li>Only ASCII fonts and arts (without <b>coverage</b>) <ul><li><code>python -m art test</code></li></ul></li>
+        <li>Only ASCII fonts and arts (with <b>coverage</b>) <ul><li><code>python -m art testcov</code></li></ul></li>
+        <li>All fonts and arts (with <b>coverage</b>) <ul><li><code>python -m art testcov2</code></li></ul></li>
     </ul>
-<h2>CLI</h2>
+<h2 id="cli">CLI</h2>
     <ul>
         <li>List of arts :  <code>python -m art list</code> or <code>python -m art arts</code></li>
         <li>List of fonts : <code>python -m art fonts</code></li>
@@ -966,7 +984,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
         <li>Save :  <code>python -m art save yourtext fontname(optional)</code></li>
         <li>All  :  <code>python -m art all yourtext</code></li>
     </ul>
-<h2> Try ART in your browser</h2>
+<h2 id="mybinder"> Try ART in your browser</h2>
 
 <p>ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! : </p>	
 

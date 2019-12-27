@@ -2,7 +2,16 @@
     font-family: "baloo";
     src: url("fonts/Baloo.ttf");
 }
-
+@font-face {
+    font-family: "open-sans";
+    src: url("fonts/OpenSans.ttf");
+}
+body {
+    font-family: "open-sans";
+}
+p{
+    font-size: 18px;
+}
 .gif {
     text-align: center;
 }
@@ -64,6 +73,7 @@ ul li{
 
 ol li{
     font-weight: bold;
+    font-size: 20px;
 }
 
 code{
@@ -75,7 +85,7 @@ code{
 }
 
 li{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a{
@@ -98,7 +108,7 @@ body{
 }
 
 #login-footer p{
-    font-family: "baloo";
+    font-family: "open-sans";
     vertical-align: center;
     margin:auto;
     color: #fafafa;
@@ -129,7 +139,7 @@ body{
     margin-top: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: "sacramento";
+    font-family: "open-sans";
     font-size: 25px;
 }
 
