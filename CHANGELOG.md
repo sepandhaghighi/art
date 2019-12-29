@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 13 new 1-line art
+	1. fish6
+	2. loch ness monster
+	3. mouse5
+	4. mouse6
+	5. mouse7
+	6. sheep
+	7. pie fight
+	8. rose5
+	9. rose6
+	10. rose7
+	11. concerned
+	12. happy4
+	13. happy5
 ### Changed
 - `README.md` modified
 ## [4.4] - 2019-12-26
