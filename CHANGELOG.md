@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 13 new 1-line art
+- 43 new 1-line art
 	1. fish6
 	2. loch ness monster
 	3. mouse5
@@ -20,8 +20,41 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	11. concerned
 	12. happy4
 	13. happy5
+	14. coffee2
+	15. coffee3
+	16. coffee4
+	17. headphone3
+	18. carpet roll
+	19. infinity
+	20. computer mouse
+	21. volcano1
+	22. volcano2
+	23. volcano3
+	24. squigle with spirals
+	25. palm tree
+	26. crotch shot
+	27. vagina
+	28. stealth fighter
+	29. tent1
+	30. tent2
+	31. power lines
+	32. tree stump
+	33. hammer
+	34. arrow2
+	35. sword10
+	36. fish skeleton2
+	37. fork
+	38. pipe
+	39. dead guy
+	40. dead girl
+	41. dead child
+	42. dude glasses
+	43. dude glasses2
 ### Changed
 - `README.md` modified
+- `coffee` 1-line art renamed to `coffee1`
+- `arrow` 1-line art renamed to `arrow1`
+- `fish skeleton` 1-line art renamed to `fish skeleton1`
 ## [4.4] - 2019-12-26
 ### Added
 - 68 new 1-line art
