@@ -4027,7 +4027,7 @@ druling2
 drunkenness
 ヽ（´ー｀）┌
 ******************************
-dude glasses
+dude glasses1
 @[O],[O]
 ******************************
 dude glasses2

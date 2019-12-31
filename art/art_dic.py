@@ -522,7 +522,7 @@ art_dic = {
     "dead guy": "'==xx\\0",
     "dead girl": "'==>x\9",
     "dead child": "'-=,o",
-    "dude glasses": "@[O],[O]",
+    "dude glasses1": "@[O],[O]",
     "dude glasses2": "@(o),(o)"
 
 }

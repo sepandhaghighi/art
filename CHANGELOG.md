@@ -48,7 +48,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	39. dead guy
 	40. dead girl
 	41. dead child
-	42. dude glasses
+	42. dude glasses1
 	43. dude glasses2
 ### Changed
 - `README.md` modified
