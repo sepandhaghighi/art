@@ -138,7 +138,8 @@ art_dic = {
                 "bear": "ʕ•ᴥ•ʔ",
                 "cheer": "  ^(¤o¤)^",
                 "hug me": "(っ◕‿◕)っ",
-                "arrow": "»»---------------------►",
+                "arrow1": "»»---------------------►",
+                "arrow2": "XXX-------->",
                 "rak": "/⦿L⦿\\",
                 "nope": "t(-_-t)",
     "panda": "ヽ(￣(ｴ)￣)ﾉ",
@@ -301,6 +302,7 @@ art_dic = {
     "sword7": "o==[]::::::::::::::::>",
     "sword8": "▬▬ι═══════> ",
     "sword9": " <═══════ι▬▬",
+    "sword10": "O==I======>",
     "car": "`o##o>",
     "hacksaw": "[|^^^^^^^",
     "canoe": ".,.,\______/,..,.,",
@@ -474,7 +476,8 @@ art_dic = {
     "clowning": "*:o)",
     "bugs bunny": "E=B",
     "kitty2": "=^. .^=",
-    "fish skeleton": ">-}-}-}->",
+    "fish skeleton1": ">-}-}-}->",
+    "fish skeleton2": ">++('>",
     "snowman2": '{ }( : ^ )( """" )( )',
     "marshmallows": "-()_)--()_)---",
     "nerd": "::(",
@@ -513,6 +516,13 @@ art_dic = {
     "tent2": "/\\\\",
     "power lines": "TTT",
     "tree stump": 'J"l',
-    "hammer": "#=="
+    "hammer": "#==",
+    "fork": "---=",
+    "pipe": "====\_/",
+    "dead guy": "'==xx\\0",
+    "dead girl": "'==>x\9",
+    "dead child": "'-=,o",
+    "dude glasses": "@[O],[O]",
+    "dude glasses2": "@(o),(o)"
 
 }
