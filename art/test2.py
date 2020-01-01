@@ -49,6 +49,9 @@ dirty:
 dirty2:
 ẗệṩẗ
 <BLANKLINE>
+dwarf:
+ᵗᵉˢᵗ
+<BLANKLINE>
 fancy1:
 тεsт
 <BLANKLINE>
@@ -304,8 +307,35 @@ fancy85:
 fancy86:
 ᴛᴇsᴛ
 <BLANKLINE>
+fancy87:
+𝓽𝓮𝓼𝓽
+<BLANKLINE>
+fancy88:
+tᥱst
+<BLANKLINE>
+fancy89:
+𝗍𝖾𝗌𝗍
+<BLANKLINE>
 fancy9:
 тeѕт
+<BLANKLINE>
+fancy90:
+𝑡𝑒𝑠𝑡
+<BLANKLINE>
+fancy91:
+𝒕𝒆𝒔𝒕
+<BLANKLINE>
+fancy92:
+𝙩𝙚𝙨𝙩
+<BLANKLINE>
+fancy93:
+𝘵𝘦𝘴𝘵
+<BLANKLINE>
+fancy94:
+𝓉𝑒𝓈𝓉
+<BLANKLINE>
+fancy95:
+𝔱𝔢𝔰𝔱
 <BLANKLINE>
 flip:
 ϝԍƨϝ
@@ -343,6 +373,9 @@ knight:
 knight2:
 ṮḕṠṮ
 <BLANKLINE>
+lilia:
+test
+<BLANKLINE>
 love1:
 ƬƐSƬ
 <BLANKLINE>
@@ -378,6 +411,9 @@ smallcaps2:
 <BLANKLINE>
 smallcaps3:
 ᴛᴇsᴛ
+<BLANKLINE>
+smooth:
+тєѕт
 <BLANKLINE>
 special:
 TEᔕT
