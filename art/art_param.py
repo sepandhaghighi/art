@@ -290,7 +290,8 @@ NON_ASCII_FONTS = [
     "greek_legends",
     "minion",
     "hippie",
-    "sarah"]
+    "sarah",
+    "dwarf"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -774,7 +775,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy89": [fancy89_dic, False],
             "fancy90": [fancy90_dic, False],
             "fancy91": [fancy91_dic, False],
-            "fancy92": [fancy92_dic, False]
+            "fancy92": [fancy92_dic, False],
+            "dwarf": [dwarf_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
