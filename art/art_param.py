@@ -313,7 +313,7 @@ NON_ASCII_FONTS = [
     "carrier2",
     "awesome",
     "cjk",
-    "cute",
+    "cute1",
     "cute2",
     "cute3",
     "malayalam"]
