@@ -439,7 +439,7 @@ smallcaps2:
 smallcaps3:
 ᴛᴇsᴛ
 <BLANKLINE>
-smooth:
+smooth1:
 тєѕт
 <BLANKLINE>
 smooth2:
