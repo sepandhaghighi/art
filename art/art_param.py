@@ -266,6 +266,7 @@ NON_ASCII_FONTS = [
     "fancy93",
     "fancy94",
     "fancy95",
+    "fancy96",
     "white_square",
     "black_square",
     "paranormal",
@@ -786,7 +787,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy93": [fancy93_dic, False],
             "fancy94": [fancy94_dic, False],
             "fancy95": [fancy95_dic, False],
-            "smooth": [smooth_dic, False]
+            "smooth": [smooth_dic, False],
+            "fancy96": [fancy96_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
