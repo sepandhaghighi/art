@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 32 new fonts
+- 35 new fonts
 	1. smooth1
 	2. smooth2
 	3. carrier1
@@ -19,26 +19,29 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	10. lilia
 	11. dwarf
 	12. awesome
-	13. fancy87
-	14. fancy88
-	15. fancy89
-	16. fancy90
-	17. fancy91
-	18. fancy92
-	19. fancy93
-	20. fancy94
-	21. fancy95
-	22. fancy96
-	23. fancy97
-	24. fancy98
-	25. fancy99
-	26. fancy100
-	27. fancy101 
-	28. fancy102
-	29. fancy103
-	30. fancy104
-	31. fancy105
-	32. fancy106
+	13. lopioo
+	14. cranky
+	15. fancy87
+	16. fancy88
+	17. fancy89
+	18. fancy90
+	19. fancy91
+	20. fancy92
+	21. fancy93
+	22. fancy94
+	23. fancy95
+	24. fancy96
+	25. fancy97
+	26. fancy98
+	27. fancy99
+	28. fancy100
+	29. fancy101 
+	30. fancy102
+	31. fancy103
+	32. fancy104
+	33. fancy105
+	34. fancy106
+	35. fancy107
 
 - 43 new 1-line art
 	1. fish6
