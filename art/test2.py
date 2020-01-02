@@ -52,6 +52,9 @@ contouring3:
 contouring4:
 (̲̅t)(̲̅e)(̲̅s)(̲̅t)
 <BLANKLINE>
+cranky:
+†εš†
+<BLANKLINE>
 currency:
 ₮Ɇ₴₮
 <BLANKLINE>
@@ -99,6 +102,9 @@ fancy105:
 <BLANKLINE>
 fancy106:
 ʈɛsʈ
+<BLANKLINE>
+fancy107:
+τεsτ
 <BLANKLINE>
 fancy11:
 ՇєรՇ
@@ -429,6 +435,9 @@ knight2:
 <BLANKLINE>
 lilia:
 test
+<BLANKLINE>
+lopioo:
+ȶɛֆȶ
 <BLANKLINE>
 love1:
 ƬƐSƬ
