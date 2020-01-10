@@ -6,6 +6,43 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 35 new fonts
+	1. smooth1
+	2. smooth2
+	3. carrier1
+	4. carrier2
+	5. cute1
+	6. cute2
+	7. cute3
+	8. cjk
+	9. malayalam
+	10. lilia
+	11. dwarf
+	12. awesome
+	13. lopioo
+	14. cranky
+	15. fancy87
+	16. fancy88
+	17. fancy89
+	18. fancy90
+	19. fancy91
+	20. fancy92
+	21. fancy93
+	22. fancy94
+	23. fancy95
+	24. fancy96
+	25. fancy97
+	26. fancy98
+	27. fancy99
+	28. fancy100
+	29. fancy101 
+	30. fancy102
+	31. fancy103
+	32. fancy104
+	33. fancy105
+	34. fancy106
+	35. fancy107
+
 - 43 new 1-line art
 	1. fish6
 	2. loch ness monster
