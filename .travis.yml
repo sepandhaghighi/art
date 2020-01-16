@@ -2,6 +2,7 @@ language: python
 
 matrix:
     allow_failures:
+        - os: linux
           python: nightly
           dist: xenial
         - os: linux
