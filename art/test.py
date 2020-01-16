@@ -5150,11 +5150,11 @@ zombie
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _  _       _  _
-__   __| || |     | || |
-\ \ / /| || |_    | || |_
- \ V / |__   _| _ |__   _|
-  \_/     |_|  (_)   |_|
+        _  _       ____
+__   __| || |     | ___|
+\ \ / /| || |_    |___ \
+ \ V / |__   _| _  ___) |
+  \_/     |_|  (_)|____/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".

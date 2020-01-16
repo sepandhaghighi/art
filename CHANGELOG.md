@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.5] - 2020-01-22
 ### Added
 - 35 new fonts
 	1. smooth1
@@ -42,7 +43,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	33. fancy105
 	34. fancy106
 	35. fancy107
-
 - 43 new 1-line art
 	1. fish6
 	2. loch ness monster
@@ -1358,7 +1358,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.4...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.5...dev
+[4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5
 [4.4]: https://github.com/sepandhaghighi/art/compare/v4.3...v4.4
 [4.3]: https://github.com/sepandhaghighi/art/compare/v4.2...v4.3
 [4.2]: https://github.com/sepandhaghighi/art/compare/v4.1...v4.2
