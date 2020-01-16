@@ -246,6 +246,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `american money` 1-line art renamed to `american money1`
 - `cassette` 1-line art renamed to `cassette1`
 - Test system modified
+- Python 3.4 officially support dropped
+- Python 2.7 officially support dropped
 ## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
