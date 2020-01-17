@@ -1,6 +1,8 @@
 ## Installation	
 
-⚠️ ART 4.4 is the last version to support **Python 2.7** & **Python 3.4** officially
+⚠️ **ART 4.4** is the last version to support **Python 2.7** & **Python 3.4** officially		
+
+⚠️ **PyPI** support of these versions will be removed in a **future release**
 
 ### Source code
 - Download [Version 4.5](https://github.com/sepandhaghighi/art/archive/v4.5.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
