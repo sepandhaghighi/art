@@ -89,6 +89,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	43. dude glasses2
 ### Changed
 - `README.md` modified
+- `INSTALL.md` modified
 - `coffee` 1-line art renamed to `coffee1`
 - `arrow` 1-line art renamed to `arrow1`
 - `fish skeleton` 1-line art renamed to `fish skeleton1`
