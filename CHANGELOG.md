@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [4.5] - 2020-01-22
+## [4.5] - 2020-01-29
 ### Added
 - 35 new fonts
 	1. smooth1
