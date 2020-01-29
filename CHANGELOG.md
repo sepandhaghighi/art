@@ -5,6 +5,94 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.5] - 2020-01-29
+### Added
+- 35 new fonts
+	1. smooth1
+	2. smooth2
+	3. carrier1
+	4. carrier2
+	5. cute1
+	6. cute2
+	7. cute3
+	8. cjk
+	9. malayalam
+	10. lilia
+	11. dwarf
+	12. awesome
+	13. lopioo
+	14. cranky
+	15. fancy87
+	16. fancy88
+	17. fancy89
+	18. fancy90
+	19. fancy91
+	20. fancy92
+	21. fancy93
+	22. fancy94
+	23. fancy95
+	24. fancy96
+	25. fancy97
+	26. fancy98
+	27. fancy99
+	28. fancy100
+	29. fancy101 
+	30. fancy102
+	31. fancy103
+	32. fancy104
+	33. fancy105
+	34. fancy106
+	35. fancy107
+- 43 new 1-line art
+	1. fish6
+	2. loch ness monster
+	3. mouse5
+	4. mouse6
+	5. mouse7
+	6. sheep
+	7. pie fight
+	8. rose5
+	9. rose6
+	10. rose7
+	11. concerned
+	12. happy4
+	13. happy5
+	14. coffee2
+	15. coffee3
+	16. coffee4
+	17. headphone3
+	18. carpet roll
+	19. infinity
+	20. computer mouse
+	21. volcano1
+	22. volcano2
+	23. volcano3
+	24. squigle with spirals
+	25. palm tree
+	26. crotch shot
+	27. vagina
+	28. stealth fighter
+	29. tent1
+	30. tent2
+	31. power lines
+	32. tree stump
+	33. hammer
+	34. arrow2
+	35. sword10
+	36. fish skeleton2
+	37. fork
+	38. pipe
+	39. dead guy
+	40. dead girl
+	41. dead child
+	42. dude glasses1
+	43. dude glasses2
+### Changed
+- `README.md` modified
+- `INSTALL.md` modified
+- `coffee` 1-line art renamed to `coffee1`
+- `arrow` 1-line art renamed to `arrow1`
+- `fish skeleton` 1-line art renamed to `fish skeleton1`
 ## [4.4] - 2019-12-26
 ### Added
 - 68 new 1-line art
@@ -1271,7 +1359,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.4...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.5...dev
+[4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5
 [4.4]: https://github.com/sepandhaghighi/art/compare/v4.3...v4.4
 [4.3]: https://github.com/sepandhaghighi/art/compare/v4.2...v4.3
 [4.2]: https://github.com/sepandhaghighi/art/compare/v4.1...v4.2

@@ -11,8 +11,8 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-505-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-473-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-540-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-516-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -28,11 +28,11 @@
    		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
+   		* [Testing](https://github.com/sepandhaghighi/art#testing)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
    		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
-   * [Testing](https://github.com/sepandhaghighi/art#testing)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
@@ -66,11 +66,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">505</td>
+		<td align="center">540</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">473</td>
+		<td align="center">516</td>
 	</tr>
 </table>
 
@@ -695,19 +695,14 @@ _/  _   _ _/
 	</table> 
 
 ### Testing
-- Only ASCII fonts and arts (without **coverage**) :
+- Only ASCII fonts and arts :
 ```
 python -m art test
 ```
 
-- Only ASCII fonts and arts (with **coverage**) :
+- All fonts and arts :
 ```
-python -m art testcov
-```
-
-- All fonts and arts (with **coverage**) :
-```
-python -m art testcov2
+python -m art test2
 ```
 
 ### CLI			
@@ -789,6 +784,9 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 14. [Textart4u](http://textart4u.blogspot.com/2013/03/one-line-ascii-text-art.html?m=1)
 15. [Chat4o](https://en.chat4o.com/ascii/)
 16. [Findwebapp](http://www.findwebapp.com/ascii-art-one-liner/)
+17. [Hubpages](https://hubpages.com/technology/one-line-ascii-art-for-twitter)
+18. [ASCII-ART](http://www.ascii-art.de/ascii/mno/one_line.txt)
+19. [Messletters](https://www.messletters.com/en/)
 
 ## Donate to our project
 								
