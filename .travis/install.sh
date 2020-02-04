@@ -15,7 +15,6 @@ fi
 $PYTHON_COMMAND setup.py install
 $PYTHON_COMMAND -m art test
 $PYTHON_COMMAND -m art test2
-$PIP_COMMAND install -e .[coverage]
 
 if [ "$TRAVIS_OS_NAME" == "osx" ]
 then

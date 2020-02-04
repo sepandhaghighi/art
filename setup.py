@@ -12,9 +12,9 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
     ART is a Python lib for text converting to ASCII art fancy.'''
 
 
-def get_requires():
-    """Read requirements.txt."""
-    requirements = open("requirements.txt", "r").read()
+def get_dev_requires():
+    """Read dev-requirements.txt."""
+    requirements = open("dev-requirements.txt", "r").read()
     return list(filter(lambda x: x != "", requirements.split()))
 
 
@@ -50,7 +50,7 @@ setup(
     },
     install_requires=[],
     extras_require={
-        "coverage":  get_requires()
+        "dev":  get_dev_requires()
     },
     python_requires='>=2.7',
     classifiers=[
