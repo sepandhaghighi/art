@@ -27,6 +27,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	18. coptic1
 	19. coptic2
 	20. fancy108
+### Changed
+- `setup.py` modified
+- `coverage` dependency moved to `extras_require`
+- Test system modified
+### Removed
+- `requirements.txt`
 ## [4.5] - 2020-01-29
 ### Added
 - 35 new fonts
