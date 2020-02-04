@@ -48,7 +48,10 @@ setup(
         'Source': 'https://github.com/sepandhaghighi/art',
         'Tracker': 'https://github.com/sepandhaghighi/art/issues',
     },
-    install_requires=get_requires(),
+    install_requires=[],
+    extras_require={
+        "coverage":  get_requires()
+    },
     python_requires='>=2.7',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
