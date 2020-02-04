@@ -328,7 +328,8 @@ NON_ASCII_FONTS = [
     "curly",
     "russian",
     "messletters",
-    "coptic1"]
+    "coptic1",
+    "swirly"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -850,7 +851,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "curly": [curly_dic, False],
             "russian": [russian_dic, False],
             "messletters": [messletters_dic, False],
-            "coptic1": [coptic1_dic, False]
+            "coptic1": [coptic1_dic, False],
+            "swirly": [swirly_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
