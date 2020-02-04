@@ -5,12 +5,10 @@ set -x
 
 IS_IN_TRAVIS=false
 PYTHON_COMMAND=python
-PIP_COMMAND=pip
 
 if [ "$TRAVIS_OS_NAME" == "osx" ]
 then
 	PYTHON_COMMAND=python3
-	PIP_COMMAND=pip3
 fi
  
 if [ "$CI" = 'true' ] && [ "$TRAVIS" = 'true' ]
