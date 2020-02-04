@@ -13,6 +13,9 @@ antrophobia:
 atlantic:
 ϯεςϯ
 <BLANKLINE>
+awcute:
+téśt
+<BLANKLINE>
 awesome:
 тεƨт
 <BLANKLINE>
@@ -34,6 +37,9 @@ TᕮST
 carrier2:
 TᙓST
 <BLANKLINE>
+celtic:
+էεʂէ
+<BLANKLINE>
 chinese_mafia:
 丁乇丂丁
 <BLANKLINE>
@@ -52,8 +58,17 @@ contouring3:
 contouring4:
 (̲̅t)(̲̅e)(̲̅s)(̲̅t)
 <BLANKLINE>
+coptic1:
+ⲧⲉ⳽ⲧ
+<BLANKLINE>
+coptic2:
+ⲧⲉ⳽ⲧ
+<BLANKLINE>
 cranky:
 †εš†
+<BLANKLINE>
+curly:
+էҽʂէ
 <BLANKLINE>
 currency:
 ₮Ɇ₴₮
@@ -72,6 +87,12 @@ dirty:
 <BLANKLINE>
 dirty2:
 ẗệṩẗ
+<BLANKLINE>
+dotted:
+ẗëṡẗ
+<BLANKLINE>
+drako:
+ϮꂅᏕϮ
 <BLANKLINE>
 dwarf:
 ᵗᵉˢᵗ
@@ -105,6 +126,9 @@ fancy106:
 <BLANKLINE>
 fancy107:
 τεsτ
+<BLANKLINE>
+fancy108:
+ƚЄ$ƚ
 <BLANKLINE>
 fancy11:
 ՇєรՇ
@@ -397,6 +421,9 @@ fancy98:
 fancy99:
 тeѕт
 <BLANKLINE>
+fasion:
+ŧεşŧ
+<BLANKLINE>
 flip:
 ϝԍƨϝ
 <BLANKLINE>
@@ -424,8 +451,14 @@ handwriting1:
 handwriting2:
 ƚҽʂƚ
 <BLANKLINE>
+hazy:
+ŤƐらŤ
+<BLANKLINE>
 hippie:
 ⊥ε﹩⊥
+<BLANKLINE>
+hyves:
+t€$t
 <BLANKLINE>
 knight:
 ṮḕṠṮ
@@ -448,6 +481,9 @@ love2:
 malayalam:
 ੮૯ട੮
 <BLANKLINE>
+messletters:
+ᴛєѕᴛ
+<BLANKLINE>
 minion:
 ᴛᴇsᴛ
 <BLANKLINE>
@@ -466,11 +502,23 @@ native_lands:
 paranormal:
 tєst
 <BLANKLINE>
+parenthesized:
+⒯⒠⒮⒯
+<BLANKLINE>
 rusify:
 тё$т
 <BLANKLINE>
+russian:
+TΞST
+<BLANKLINE>
 sarah:
 ᏆℰЅᏆ
+<BLANKLINE>
+scammer:
+těst
+<BLANKLINE>
+slammer:
+ƮęsƮ
 <BLANKLINE>
 smallcaps2:
 ᴛᴇsᴛ
@@ -487,6 +535,12 @@ smooth2:
 special:
 TEᔕT
 <BLANKLINE>
+strange:
+τεȘτ
+<BLANKLINE>
+strikethrough:
+ŧɇsŧ
+<BLANKLINE>
 subscript:
 ₜₑₛₜ
 <BLANKLINE>
@@ -495,6 +549,9 @@ sunday_cuddle:
 <BLANKLINE>
 superscript:
 ᵗᵉˢᵗ
+<BLANKLINE>
+swirly:
+੮૯ς੮
 <BLANKLINE>
 symbols:
 ☂€ⓢ☂
@@ -519,6 +576,9 @@ white_bubble:
 <BLANKLINE>
 white_square:
 🅃🄴🅂🅃
+<BLANKLINE>
+wiggly:
+⊥ÈS⊥
 <BLANKLINE>
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")
