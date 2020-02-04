@@ -322,7 +322,8 @@ NON_ASCII_FONTS = [
     "lopioo",
     "scammer",
     "strikethrough",
-    "drako"]
+    "drako",
+    "celtic"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -838,7 +839,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "lopioo": [lopioo_dic, False],
             "scammer": [scammer_dic, False],
             "strikethrough": [strikethrough_dic, False],
-            "drako": [drako_dic, False]
+            "drako": [drako_dic, False],
+            "celtic": [celtic_dic, False]
             }
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
