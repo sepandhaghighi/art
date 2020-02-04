@@ -32,5 +32,3 @@ fi
 
 
 $PYTHON_COMMAND -m cProfile -s cumtime art_profile.py
-$PIP_COMMAND uninstall art
-$PIP_COMMAND install art --upgrade
