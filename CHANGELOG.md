@@ -5,6 +5,28 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 20 new fonts
+	1. scammer
+	2. strikethrough
+	3. drako
+	4. celtic
+	5. fasion
+	6. curly
+	7. russian
+	8. messletters
+	9. swirly
+	10. dotted
+	11. parenthesized
+	12. strange
+	13. wiggly
+	14. hazy
+	15. hyves
+	16. awcute
+	17. slammer
+	18. coptic1
+	19. coptic2
+	20. fancy108
 ## [4.5] - 2020-01-29
 ### Added
 - 35 new fonts
