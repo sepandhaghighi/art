@@ -22,12 +22,12 @@ def select_test(test_name="TEST"):
     :return: None
     """
     error_flag_2 = 0
-    if COVERAGE_INSTALL:
-        if test_name == "TESTCOV" or test_name == "TESTCOV2":
+    if test_name == "TESTCOV" or test_name == "TESTCOV2":
+        if COVERAGE_INSTALL:
             cov = coverage.Coverage()
             cov.start()
-    else:
-        print(PACKAGE_LOAD_WARNING)
+        else:
+            print(PACKAGE_LOAD_WARNING)
     error_flag_1 = doctest.testfile(
         "test.py",
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
