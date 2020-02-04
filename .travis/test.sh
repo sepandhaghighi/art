@@ -5,10 +5,12 @@ set -x
 
 IS_IN_TRAVIS=false
 PYTHON_COMMAND=python
+PIP_COMMAND=pip
 
 if [ "$TRAVIS_OS_NAME" == "osx" ]
 then
 	PYTHON_COMMAND=python3
+	PIP_COMMAND=pip3
 fi
  
 if [ "$CI" = 'true' ] && [ "$TRAVIS" = 'true' ]
@@ -30,3 +32,5 @@ fi
 
 
 $PYTHON_COMMAND -m cProfile -s cumtime art_profile.py
+$PIP_COMMAND uninstall art
+$PIP_COMMAND install art --upgrade
