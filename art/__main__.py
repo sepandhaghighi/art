@@ -6,10 +6,11 @@ import sys
 import doctest
 import os
 import zipfile
+COVERAGE_INSTALL = True
 try:
     import coverage
 except ImportError:
-    print(PACKAGE_LOAD_WARNING)
+    COVERAGE_INSTALL = False
 
 
 def select_test(test_name="TEST"):
@@ -22,8 +23,11 @@ def select_test(test_name="TEST"):
     """
     error_flag_2 = 0
     if test_name == "TESTCOV" or test_name == "TESTCOV2":
-        cov = coverage.Coverage()
-        cov.start()
+        if COVERAGE_INSTALL:
+            cov = coverage.Coverage()
+            cov.start()
+        else:
+            print(PACKAGE_LOAD_WARNING)
     error_flag_1 = doctest.testfile(
         "test.py",
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
@@ -35,7 +39,7 @@ def select_test(test_name="TEST"):
             optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
             verbose=False)[0]
     error_flag = error_flag_1 + error_flag_2
-    if test_name == "TESTCOV" or test_name == "TESTCOV2":
+    if (test_name == "TESTCOV" or test_name == "TESTCOV2") and COVERAGE_INSTALL:
         cov.stop()
         cov.report()
         cov.save()
