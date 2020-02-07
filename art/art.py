@@ -78,13 +78,18 @@ def font_list(text="test", test=False):
         tprint(text_temp, str(item))
 
 
-def art_list():
+def art_list(test=False):
     """
     Print all 1-Line arts.
 
+    :param test: test flag
+    :type test: bool
     :return: None
     """
-    for i in sorted(list(art_dic.keys())):
+    arts = sorted(list(art_dic.keys()))
+    if test:
+        arts = sorted(list(set(arts) - set(NON_ASCII_ARTS)))
+    for i in arts:
         print(i)
         aprint(i)
         line()
