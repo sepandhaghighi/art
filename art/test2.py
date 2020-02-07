@@ -583,11 +583,9 @@ wiggly:
 >>> from art.art_param import NON_ASCII_ARTS
 >>> from art.art import line
 >>> for i in sorted(NON_ASCII_ARTS):
-        print(i+":")
-        aprint(i)
-        line()
-
-
+...     print(i+":")
+...     aprint(i)
+...     line()
 100$:
 [̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]
 ******************************
