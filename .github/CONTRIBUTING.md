@@ -59,10 +59,14 @@ Please consider the following :
 4. If 1-line art is bipartite:
 	- Add as list (Example : ```"1-line art name": ["string1","string1"]```)
 	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list
-5. Add a test case to `test.py` (*Alphabetical order*)  
-6. Re-run `ArtList.ipynb`
+5. If 1-line art is **Non-ASCII**:
+	- Add 1-line art name to `NON_ASCII_ARTS` list
+	- Add a test case to `test2.py` (*Alphabetical order*)
+6. If 1-line art is **ASCII**:
+	- Add a test case to `test.py` (*Alphabetical order*)
+7. Re-run `ArtList.ipynb`
 	- Before this step you should re-install `art` package : ```python setup.py install```
-7. Update 2 art counters in `README.md`
+8. Update 2 art counters in `README.md`
 	- Badge section
 	- Overview section
-8. Update `Reference` section in `README.md`
+9. Update `Reference` section in `README.md`
