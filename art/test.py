@@ -3591,7 +3591,7 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
->>> art_list(test=True)
+>>> art_list(mode="ascii")
 alien
 ::)
 ******************************
