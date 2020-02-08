@@ -64,6 +64,7 @@ Please consider the following :
 	- Add a test case to `test2.py` (*Alphabetical order*)
 6. If 1-line art is **ASCII**:
 	- Add a test case to `test.py` (*Alphabetical order*)
+	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list to remove it from random mode (*Optional*)
 7. Re-run `ArtList.ipynb`
 	- Before this step you should re-install `art` package : ```python setup.py install```
 8. Update 2 art counters in `README.md`
