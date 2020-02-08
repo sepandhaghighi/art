@@ -176,7 +176,8 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```	
 
-* Note : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+* Note1 : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+* Note2 : Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
 
 ### ASCII text
 	
