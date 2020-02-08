@@ -59,19 +59,21 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test", test=False):
+def font_list(text="test", mode="all"):
     """
     Print all fonts.
 
     :param text : input text
     :type text : str
-    :param test: test flag
-    :type test: bool
+    :param mode: fonts mode (all,ascii,non-ascii)
+    :type mode: str
     :return: None
     """
-    fonts = set(FONT_MAP.keys())
-    if test:
+    fonts = set(FONT_NAMES)
+    if mode.lower() == "ascii":
         fonts = fonts - set(NON_ASCII_FONTS)
+    if mode.lower() == "non-ascii":
+        fonts = set(NON_ASCII_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text

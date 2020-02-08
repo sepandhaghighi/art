@@ -3,581 +3,578 @@
 >>> import os
 >>> import random
 >>> from art import *
->>> from art.art_param import NON_ASCII_FONTS
->>> for i in sorted(NON_ASCII_FONTS):
-...     print(i+":")
-...     tprint("test",font=i)
-antrophobia:
+>>> font_list(mode="non-ascii")
+antrophobia :
 тєѕт
 <BLANKLINE>
-atlantic:
+atlantic :
 ϯεςϯ
 <BLANKLINE>
-awcute:
+awcute :
 téśt
 <BLANKLINE>
-awesome:
+awesome :
 тεƨт
 <BLANKLINE>
-black_bubble:
+black_bubble :
 🅣🅔🅢🅣
 <BLANKLINE>
-black_square:
+black_square :
 🆃🅴🆂🆃
 <BLANKLINE>
-bold_fraktur:
+bold_fraktur :
 𝖙𝖊𝖘𝖙
 <BLANKLINE>
-bold_script:
+bold_script :
 𝓽𝓮𝓼𝓽
 <BLANKLINE>
-carrier1:
+carrier1 :
 TᕮST
 <BLANKLINE>
-carrier2:
+carrier2 :
 TᙓST
 <BLANKLINE>
-celtic:
+celtic :
 էεʂէ
 <BLANKLINE>
-chinese_mafia:
+chinese_mafia :
 丁乇丂丁
 <BLANKLINE>
-cjk:
+cjk :
 イモらイ
 <BLANKLINE>
-contouring1:
+contouring1 :
 ⓣⓔⓢⓣ
 <BLANKLINE>
-contouring2:
+contouring2 :
 ⒯⒠⒮⒯
 <BLANKLINE>
-contouring3:
+contouring3 :
 [̲̅t][̲̅e][̲̅s][̲̅t]
 <BLANKLINE>
-contouring4:
+contouring4 :
 (̲̅t)(̲̅e)(̲̅s)(̲̅t)
 <BLANKLINE>
-coptic1:
+coptic1 :
 ⲧⲉ⳽ⲧ
 <BLANKLINE>
-coptic2:
+coptic2 :
 ⲧⲉ⳽ⲧ
 <BLANKLINE>
-cranky:
+cranky :
 †εš†
 <BLANKLINE>
-curly:
+curly :
 էҽʂէ
 <BLANKLINE>
-currency:
+currency :
 ₮Ɇ₴₮
 <BLANKLINE>
-cute1:
+cute1 :
 ƭєƨƭ
 <BLANKLINE>
-cute2:
+cute2 :
 ƭҽʂƭ
 <BLANKLINE>
-cute3:
+cute3 :
 եҽsե
 <BLANKLINE>
-dirty:
+dirty :
 ẗệṩẗ
 <BLANKLINE>
-dirty2:
+dirty2 :
 ẗệṩẗ
 <BLANKLINE>
-dotted:
+dotted :
 ẗëṡẗ
 <BLANKLINE>
-drako:
+drako :
 ϮꂅᏕϮ
 <BLANKLINE>
-dwarf:
+dwarf :
 ᵗᵉˢᵗ
 <BLANKLINE>
-fancy1:
+fancy1 :
 тεsт
 <BLANKLINE>
-fancy10:
+fancy10 :
 ɬɛʂɬ
 <BLANKLINE>
-fancy100:
+fancy100 :
 ꓄ꏂꇙ꓄
 <BLANKLINE>
-fancy101:
+fancy101 :
 tᥱ⳽t
 <BLANKLINE>
-fancy102:
+fancy102 :
 ΓESΓ
 <BLANKLINE>
-fancy103:
+fancy103 :
 tẹṣt
 <BLANKLINE>
-fancy104:
+fancy104 :
 ƮᙓᔑƮ
 <BLANKLINE>
-fancy105:
+fancy105 :
 тešт
 <BLANKLINE>
-fancy106:
+fancy106 :
 ʈɛsʈ
 <BLANKLINE>
-fancy107:
+fancy107 :
 τεsτ
 <BLANKLINE>
-fancy108:
+fancy108 :
 ƚЄ$ƚ
 <BLANKLINE>
-fancy11:
+fancy11 :
 ՇєรՇ
 <BLANKLINE>
-fancy12:
+fancy12 :
 tєѕt
 <BLANKLINE>
-fancy13:
+fancy13 :
 tєรt
 <BLANKLINE>
-fancy14:
+fancy14 :
 ȶɛֆȶ
 <BLANKLINE>
-fancy15:
+fancy15 :
 ✞ƎƧ✞
 <BLANKLINE>
-fancy16:
+fancy16 :
 ΓΞSΓ
 <BLANKLINE>
-fancy17:
+fancy17 :
 ᏆɛֆᏆ
 <BLANKLINE>
-fancy18:
+fancy18 :
 ԵҽՏԵ
 <BLANKLINE>
-fancy19:
+fancy19 :
 ꓄ꍟꌗ꓄
 <BLANKLINE>
-fancy2:
+fancy2 :
 ㄒ乇丂ㄒ
 <BLANKLINE>
-fancy20:
+fancy20 :
 ᵀᴱˢᵀ
 <BLANKLINE>
-fancy21:
+fancy21 :
 тeѕт
 <BLANKLINE>
-fancy22:
+fancy22 :
 ŤƐらŤ
 <BLANKLINE>
-fancy23:
+fancy23 :
 ƬЄƧƬ
 <BLANKLINE>
-fancy24:
+fancy24 :
 ϮꂅᏕϮ
 <BLANKLINE>
-fancy25:
+fancy25 :
 ｲ乇丂ｲ
 <BLANKLINE>
-fancy26:
+fancy26 :
 †εš†
 <BLANKLINE>
-fancy27:
+fancy27 :
 tēŞt
 <BLANKLINE>
-fancy28:
+fancy28 :
 ƬΣƧƬ
 <BLANKLINE>
-fancy29:
+fancy29 :
 †ê§†
 <BLANKLINE>
-fancy3:
+fancy3 :
 ŤĔŚŤ
 <BLANKLINE>
-fancy30:
+fancy30 :
 ᖶᘿSᖶ
 <BLANKLINE>
-fancy31:
+fancy31 :
 ནპჰན
 <BLANKLINE>
-fancy32:
+fancy32 :
 ꓄ꏂꑄ꓄
 <BLANKLINE>
-fancy33:
+fancy33 :
 ꓅ꍟꌚ꓅
 <BLANKLINE>
-fancy34:
+fancy34 :
 ꋖꈼꌚꋖ
 <BLANKLINE>
-fancy35:
+fancy35 :
 ੮૯ς੮
 <BLANKLINE>
-fancy36:
+fancy36 :
 ԵȝՏԵ
 <BLANKLINE>
-fancy37:
+fancy37 :
 ꋖꏹꌚꋖ
 <BLANKLINE>
-fancy38:
+fancy38 :
 ꋖꑀꈜꋖ
 <BLANKLINE>
-fancy39:
+fancy39 :
 ፕቿነፕ
 <BLANKLINE>
-fancy4:
+fancy4 :
 ᏆᎬsᏆ
 <BLANKLINE>
-fancy40:
+fancy40 :
 ꓅ꑾꇘ꓅
 <BLANKLINE>
-fancy41:
+fancy41 :
 ț£§ț
 <BLANKLINE>
-fancy42:
+fancy42 :
 ţ€$ţ
 <BLANKLINE>
-fancy43:
+fancy43 :
 ᖶᙍSᖶ
 <BLANKLINE>
-fancy44:
+fancy44 :
 тεƨт
 <BLANKLINE>
-fancy45:
+fancy45 :
 тešт
 <BLANKLINE>
-fancy46:
+fancy46 :
 էεʂէ
 <BLANKLINE>
-fancy47:
+fancy47 :
 †ε$†
 <BLANKLINE>
-fancy48:
+fancy48 :
 էεรէ
 <BLANKLINE>
-fancy49:
+fancy49 :
 τεЅτ
 <BLANKLINE>
-fancy5:
+fancy5 :
 ᏖᏋᏕᏖ
 <BLANKLINE>
-fancy50:
+fancy50 :
 ҭἔṩҭ
 <BLANKLINE>
-fancy51:
+fancy51 :
 7357
 <BLANKLINE>
-fancy52:
+fancy52 :
 τEŠτ
 <BLANKLINE>
-fancy53:
+fancy53 :
 ƮęsƮ
 <BLANKLINE>
-fancy54:
+fancy54 :
 ⊥ÈS⊥
 <BLANKLINE>
-fancy55:
+fancy55 :
 t€$t
 <BLANKLINE>
-fancy56:
+fancy56 :
 𝐭𝐞𝐬𝐭
 <BLANKLINE>
-fancy57:
+fancy57 :
 𝚝𝚎𝚜𝚝
 <BLANKLINE>
-fancy58:
+fancy58 :
 𝖙𝖊𝖘𝖙
 <BLANKLINE>
-fancy59:
+fancy59 :
 𝕥𝕖𝕤𝕥
 <BLANKLINE>
-fancy6:
+fancy6 :
 ƭεรƭ
 <BLANKLINE>
-fancy60:
+fancy60 :
 𝘁𝗲𝘀𝘁
 <BLANKLINE>
-fancy61:
+fancy61 :
 𝑡𝑒𝑠𝑡
 <BLANKLINE>
-fancy62:
+fancy62 :
 𝘵𝘦𝘴𝘵
 <BLANKLINE>
-fancy63:
+fancy63 :
 𝒕𝒆𝒔𝒕
 <BLANKLINE>
-fancy64:
+fancy64 :
 𝙩𝙚𝙨𝙩
 <BLANKLINE>
-fancy65:
+fancy65 :
 𝓉𝑒𝓈𝓉
 <BLANKLINE>
-fancy66:
+fancy66 :
 𝓽𝒆𝓼𝓽
 <BLANKLINE>
-fancy67:
+fancy67 :
 ｔｅｓｔ
 <BLANKLINE>
-fancy68:
+fancy68 :
 𝔱𝔢𝔰𝔱
 <BLANKLINE>
-fancy69:
+fancy69 :
 ᵗᵉᶳᵗ
 <BLANKLINE>
-fancy7:
+fancy7 :
 丅ᗴᔕ丅
 <BLANKLINE>
-fancy70:
+fancy70 :
 тeѕт
 <BLANKLINE>
-fancy71:
+fancy71 :
 тєѕт
 <BLANKLINE>
-fancy72:
+fancy72 :
 тєѕт
 <BLANKLINE>
-fancy73:
+fancy73 :
 ŧêšŧ
 <BLANKLINE>
-fancy74:
+fancy74 :
 ŧεşŧ
 <BLANKLINE>
-fancy75:
+fancy75 :
 ｲ乇ㄎｲ
 <BLANKLINE>
-fancy76:
+fancy76 :
 էҽʂէ
 <BLANKLINE>
-fancy77:
+fancy77 :
 ƚҽʂƚ
 <BLANKLINE>
-fancy78:
+fancy78 :
 tєรt
 <BLANKLINE>
-fancy79:
+fancy79 :
 †εš†
 <BLANKLINE>
-fancy8:
+fancy8 :
 tєรt
 <BLANKLINE>
-fancy80:
+fancy80 :
 ƭєƨƭ
 <BLANKLINE>
-fancy81:
+fancy81 :
 ƚЄ$ƚ
 <BLANKLINE>
-fancy82:
+fancy82 :
 Ŧ£ŞŦ
 <BLANKLINE>
-fancy83:
+fancy83 :
 τεȘτ
 <BLANKLINE>
-fancy84:
+fancy84 :
 tΞst
 <BLANKLINE>
-fancy85:
+fancy85 :
 ťĕʂť
 <BLANKLINE>
-fancy86:
+fancy86 :
 ᴛᴇsᴛ
 <BLANKLINE>
-fancy87:
+fancy87 :
 𝓽𝓮𝓼𝓽
 <BLANKLINE>
-fancy88:
+fancy88 :
 tᥱst
 <BLANKLINE>
-fancy89:
+fancy89 :
 𝗍𝖾𝗌𝗍
 <BLANKLINE>
-fancy9:
+fancy9 :
 тeѕт
 <BLANKLINE>
-fancy90:
+fancy90 :
 𝑡𝑒𝑠𝑡
 <BLANKLINE>
-fancy91:
+fancy91 :
 𝒕𝒆𝒔𝒕
 <BLANKLINE>
-fancy92:
+fancy92 :
 𝙩𝙚𝙨𝙩
 <BLANKLINE>
-fancy93:
+fancy93 :
 𝘵𝘦𝘴𝘵
 <BLANKLINE>
-fancy94:
+fancy94 :
 𝓉𝑒𝓈𝓉
 <BLANKLINE>
-fancy95:
+fancy95 :
 𝔱𝔢𝔰𝔱
 <BLANKLINE>
-fancy96:
+fancy96 :
 tᥱ⳽t
 <BLANKLINE>
-fancy97:
+fancy97 :
 тεѕт
 <BLANKLINE>
-fancy98:
+fancy98 :
 τεsτ
 <BLANKLINE>
-fancy99:
+fancy99 :
 тeѕт
 <BLANKLINE>
-fasion:
+fasion :
 ŧεşŧ
 <BLANKLINE>
-flip:
+flip :
 ϝԍƨϝ
 <BLANKLINE>
-foreign_friends:
+foreign_friends :
 ṭєṡṭ
 <BLANKLINE>
-fraktur2:
+fraktur2 :
 𝔱𝔢𝔰𝔱
 <BLANKLINE>
-full_width:
+full_width :
 ｔｅｓｔ
 <BLANKLINE>
-funky_fresh:
+funky_fresh :
 тḙṧт
 <BLANKLINE>
-greek_legends:
+greek_legends :
 TΣST
 <BLANKLINE>
-h4k3r:
+h4k3r :
 7357
 <BLANKLINE>
-handwriting1:
+handwriting1 :
 𝓉𝑒𝓈𝓉
 <BLANKLINE>
-handwriting2:
+handwriting2 :
 ƚҽʂƚ
 <BLANKLINE>
-hazy:
+hazy :
 ŤƐらŤ
 <BLANKLINE>
-hippie:
+hippie :
 ⊥ε﹩⊥
 <BLANKLINE>
-hyves:
+hyves :
 t€$t
 <BLANKLINE>
-knight:
+knight :
 ṮḕṠṮ
 <BLANKLINE>
-knight2:
+knight2 :
 ṮḕṠṮ
 <BLANKLINE>
-lilia:
+lilia :
 test
 <BLANKLINE>
-lopioo:
+lopioo :
 ȶɛֆȶ
 <BLANKLINE>
-love1:
+love1 :
 ƬƐSƬ
 <BLANKLINE>
-love2:
+love2 :
 тєsт
 <BLANKLINE>
-malayalam:
+malayalam :
 ੮૯ട੮
 <BLANKLINE>
-messletters:
+messletters :
 ᴛєѕᴛ
 <BLANKLINE>
-minion:
+minion :
 ᴛᴇsᴛ
 <BLANKLINE>
-mirror:
+mirror :
 ɈƨǝɈ
 <BLANKLINE>
-mirror_flip:
+mirror_flip :
 ʇsǝʇ
 <BLANKLINE>
-monospace:
+monospace :
 𝚝𝚎𝚜𝚝
 <BLANKLINE>
-native_lands:
+native_lands :
 ƬꍟꌗƬ
 <BLANKLINE>
-paranormal:
+paranormal :
 tєst
 <BLANKLINE>
-parenthesized:
+parenthesized :
 ⒯⒠⒮⒯
 <BLANKLINE>
-rusify:
+rusify :
 тё$т
 <BLANKLINE>
-russian:
+russian :
 TΞST
 <BLANKLINE>
-sarah:
+sarah :
 ᏆℰЅᏆ
 <BLANKLINE>
-scammer:
+scammer :
 těst
 <BLANKLINE>
-slammer:
+slammer :
 ƮęsƮ
 <BLANKLINE>
-smallcaps2:
+smallcaps2 :
 ᴛᴇsᴛ
 <BLANKLINE>
-smallcaps3:
+smallcaps3 :
 ᴛᴇsᴛ
 <BLANKLINE>
-smooth1:
+smooth1 :
 тєѕт
 <BLANKLINE>
-smooth2:
+smooth2 :
 тєѕт
 <BLANKLINE>
-special:
+special :
 TEᔕT
 <BLANKLINE>
-strange:
+strange :
 τεȘτ
 <BLANKLINE>
-strikethrough:
+strikethrough :
 ŧɇsŧ
 <BLANKLINE>
-subscript:
+subscript :
 ₜₑₛₜ
 <BLANKLINE>
-sunday_cuddle:
+sunday_cuddle :
 тєѕт
 <BLANKLINE>
-superscript:
+superscript :
 ᵗᵉˢᵗ
 <BLANKLINE>
-swirly:
+swirly :
 ੮૯ς੮
 <BLANKLINE>
-symbols:
+symbols :
 ☂€ⓢ☂
 <BLANKLINE>
-thin2:
+thin2 :
 ｔｅｓｔ
 <BLANKLINE>
-thin3:
+thin3 :
 ｔｅｓｔ
 <BLANKLINE>
-tiny:
+tiny :
 ᴛᴇᴤᴛ
 <BLANKLINE>
-tiny2:
+tiny2 :
 ᴛᴇꜱᴛ
 <BLANKLINE>
-upside_down:
+upside_down :
 ʇǝsʇ
 <BLANKLINE>
-white_bubble:
+white_bubble :
 ⓣⓔⓢⓣ
 <BLANKLINE>
-white_square:
+white_square :
 🅃🄴🅂🅃
 <BLANKLINE>
-wiggly:
+wiggly :
 ⊥ÈS⊥
 <BLANKLINE>
 >>> from art.art_param import NON_ASCII_ARTS

@@ -23,7 +23,7 @@
 <BLANKLINE>
 >>> tprint("123","alpha")
 <BLANKLINE>
->>> font_list(test=True)
+>>> font_list(mode="ascii")
 1943 :
 #### ##  ### ###   ## ##   #### ##
 # ## ##   ##  ##  ##   ##  # ## ##
