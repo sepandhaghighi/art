@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- `NON_ASCII_ARTS` list
 - 20 new fonts
 	1. scammer
 	2. strikethrough
@@ -31,6 +32,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `setup.py` modified
 - `coverage` dependency moved to `extras_require`
 - Test system modified
+- `random` mode modified
+- `test` parameter removed from `font_list` function
+- `mode` parameter added to `font_list` and `art_list` functions
 ### Removed
 - `requirements.txt`
 ## [4.5] - 2020-01-29
