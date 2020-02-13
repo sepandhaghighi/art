@@ -436,7 +436,7 @@ def __word2art(word, font, chr_ignore, letters):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
+def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     r"""
     Return art text (support \n).
 
@@ -444,6 +444,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     :type text:str
     :param font: input font
     :type font:str
+    :param decoration: text decoration
+    :type decoration:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :return: ascii art text as str
@@ -466,12 +468,17 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
+    if decoration != None:
+        decoration = indirect_decoration(decoration)
+        result += DECORATIONS_MAP[decoration]
     for word in word_list:
         if len(word) != 0:
             result = result + __word2art(word=word,
                                          font=font,
                                          chr_ignore=chr_ignore,
                                          letters=letters)
+    if decoration != None:
+        result += DECORATIONS_MAP[decoration][::-1]
     return result
 
 
