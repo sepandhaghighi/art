@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `decoration` option added to `text2art`.
 - `decoration` flag added to `tprint`.
 - `decoration` flag added to `tsave`.
+- 3 new decorations
+	1. wave1
+	2. chess1
+	3. barcode1
 ### Added
 - `NON_ASCII_ARTS` list
 - 20 new fonts
