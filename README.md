@@ -11,8 +11,8 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-495-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-370-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-560-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-516-orange.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -28,6 +28,7 @@
    		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
+   		* [Testing](https://github.com/sepandhaghighi/art#testing)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
    		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
@@ -65,11 +66,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">495</td>
+		<td align="center">560</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">370</td>
+		<td align="center">516</td>
 	</tr>
 </table>
 
@@ -117,6 +118,8 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 ### 1-Line art
 
 ⚠️ Some environments don't support all 1-Line arts
+
+⚠️ Bipartite art is **deprecated** and will be removed in a future release
 
 
 #### 1. art					
@@ -173,7 +176,8 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```	
 
-* Note : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+* Note1 : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+* Note2 : Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
 
 ### ASCII text
 	
@@ -337,7 +341,8 @@ Filename: test.txt
                         
 ```
 
-* Note : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+* Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+* Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
 
 ### Font modes
@@ -484,6 +489,8 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
 This mode consider length of input text to select font
 
+☑️ Support of 95 ASCII characters guaranteed
+
 Keywords : `wizard`, `wiz` & `magic`
 
 * Note : New in `Version 2.9`
@@ -525,6 +532,8 @@ d88P d88P d88P d88P d88P
                                              
                                              
 ```
+	
+
 
 #### 8. Random Non-ASCII
 
@@ -685,11 +694,21 @@ _/  _   _ _/
 		<td align="center">raise artError</td>
 	</tr>	
 	</table> 
- 
+
+### Testing
+- Only ASCII fonts and arts :
+```
+python -m art test
+```
+
+- All fonts and arts :
+```
+python -m art test2
+```
+
 ### CLI			
 - List of arts :  `python -m art list` or `python -m art arts`
 - List of fonts : `python -m art fonts`
-- Test : `python -m art test`
 - Text : `python -m art text yourtext fontname(optional)`
 - Art : `python -m art shape art_name` or `python -m art art art_name`
 - Save :  `python -m art save yourtext fontname(optional)`
@@ -762,6 +781,13 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 10. [Cool Symbol](https://coolsymbol.com/)
 11. [ASCII Moji](http://asciimoji.com/)
 12. [SMILEY COOL](https://smiley.cool/)
+13. [SPREZZ](https://www.sprezzkeyboard.com/)
+14. [Textart4u](http://textart4u.blogspot.com/2013/03/one-line-ascii-text-art.html?m=1)
+15. [Chat4o](https://en.chat4o.com/ascii/)
+16. [Findwebapp](http://www.findwebapp.com/ascii-art-one-liner/)
+17. [Hubpages](https://hubpages.com/technology/one-line-ascii-art-for-twitter)
+18. [ASCII-ART](http://www.ascii-art.de/ascii/mno/one_line.txt)
+19. [Messletters](https://www.messletters.com/en/)
 
 ## Donate to our project
 								
@@ -774,8 +800,3 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 <h3>Payping (For Iranian citizens)</h3>
 
 <a href="http://www.payping.net/sepandhaghighi" target="__blank"><img src="http://www.qpage.ir/images/payping.png" height=100px width=100px></a>	
-
-<h3>Say Thanks! </h3>
-
-
-<a href="https://saythanks.io/to/sepandhaghighi"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg"></a>

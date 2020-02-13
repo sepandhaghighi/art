@@ -12,9 +12,9 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
     ART is a Python lib for text converting to ASCII art fancy.'''
 
 
-def get_requires():
-    """Read requirements.txt."""
-    requirements = open("requirements.txt", "r").read()
+def get_dev_requires():
+    """Read dev-requirements.txt."""
+    requirements = open("dev-requirements.txt", "r").read()
     return list(filter(lambda x: x != "", requirements.split()))
 
 
@@ -35,20 +35,23 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='4.2',
+    version='4.5',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
-    author_email='sepand@qpage.ir',
+    author_email='info@4r7.ir',
     url='https://github.com/sepandhaghighi/art',
-    keywords="ascii art python3 python text font",
+    keywords="ascii art python3 python text font non-ascii printing",
     project_urls={
-        'Webpage': 'http://art.shaghighi.ir',
+        'Webpage': 'https://www.4r7.ir',
         'Source': 'https://github.com/sepandhaghighi/art',
         'Tracker': 'https://github.com/sepandhaghighi/art/issues',
     },
-    install_requires=get_requires(),
+    install_requires=[],
+    extras_require={
+        "dev": get_dev_requires()
+    },
     python_requires='>=2.7',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

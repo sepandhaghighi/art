@@ -5,6 +5,280 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `NON_ASCII_ARTS` list
+- 20 new fonts
+	1. scammer
+	2. strikethrough
+	3. drako
+	4. celtic
+	5. fasion
+	6. curly
+	7. russian
+	8. messletters
+	9. swirly
+	10. dotted
+	11. parenthesized
+	12. strange
+	13. wiggly
+	14. hazy
+	15. hyves
+	16. awcute
+	17. slammer
+	18. coptic1
+	19. coptic2
+	20. fancy108
+### Changed
+- `setup.py` modified
+- `coverage` dependency moved to `extras_require`
+- Test system modified
+- `random` mode modified
+- `test` parameter removed from `font_list` function
+- `mode` parameter added to `font_list` and `art_list` functions
+### Removed
+- `requirements.txt`
+## [4.5] - 2020-01-29
+### Added
+- 35 new fonts
+	1. smooth1
+	2. smooth2
+	3. carrier1
+	4. carrier2
+	5. cute1
+	6. cute2
+	7. cute3
+	8. cjk
+	9. malayalam
+	10. lilia
+	11. dwarf
+	12. awesome
+	13. lopioo
+	14. cranky
+	15. fancy87
+	16. fancy88
+	17. fancy89
+	18. fancy90
+	19. fancy91
+	20. fancy92
+	21. fancy93
+	22. fancy94
+	23. fancy95
+	24. fancy96
+	25. fancy97
+	26. fancy98
+	27. fancy99
+	28. fancy100
+	29. fancy101 
+	30. fancy102
+	31. fancy103
+	32. fancy104
+	33. fancy105
+	34. fancy106
+	35. fancy107
+- 43 new 1-line art
+	1. fish6
+	2. loch ness monster
+	3. mouse5
+	4. mouse6
+	5. mouse7
+	6. sheep
+	7. pie fight
+	8. rose5
+	9. rose6
+	10. rose7
+	11. concerned
+	12. happy4
+	13. happy5
+	14. coffee2
+	15. coffee3
+	16. coffee4
+	17. headphone3
+	18. carpet roll
+	19. infinity
+	20. computer mouse
+	21. volcano1
+	22. volcano2
+	23. volcano3
+	24. squigle with spirals
+	25. palm tree
+	26. crotch shot
+	27. vagina
+	28. stealth fighter
+	29. tent1
+	30. tent2
+	31. power lines
+	32. tree stump
+	33. hammer
+	34. arrow2
+	35. sword10
+	36. fish skeleton2
+	37. fork
+	38. pipe
+	39. dead guy
+	40. dead girl
+	41. dead child
+	42. dude glasses1
+	43. dude glasses2
+### Changed
+- `README.md` modified
+- `INSTALL.md` modified
+- `coffee` 1-line art renamed to `coffee1`
+- `arrow` 1-line art renamed to `arrow1`
+- `fish skeleton` 1-line art renamed to `fish skeleton1`
+## [4.4] - 2019-12-26
+### Added
+- 68 new 1-line art
+	1. smile
+	2. toungue out1
+	3. toungue out2
+	4. bad hair1
+	5. bad hair2
+	6. woops
+	7. screaming
+	8. full mouth
+	9. cussing
+	10. ready to cry
+	11. crying2
+	12. druling1
+	13. druling2
+	14. big kiss
+	15. french kiss
+	16. wink
+	17. big smile
+	18. smirk
+	19. confused1
+	20. confused2
+	21. pursing lips
+	22. shocked2
+	23. really sad
+	24. baseball fan
+	25. angel2
+	26. really mad
+	27. licking lips
+	28. buck teeth
+	29. surprised1
+	30. alien
+	31. sunglasses2
+	32. don king
+	33. devilish smile
+	34. devilish grin
+	35. clowning
+	36. bugs bunny
+	37. kitty2
+	38. fish skeleton
+	39. snowman2
+	40. marshmallows
+	41. nerd
+	42. mouse4
+	43. pistols3
+	44. rock on2
+	45. love in my eye2
+	46. love in my eye3
+	47. sad3
+	48. sad4
+	49. headphone2
+	50. cigarette1
+	51. spider3
+	52. barcode2
+	53. equalizer
+	54. boombox2
+	55. surprised2
+	56. playing cards
+	57. playing cards hearts
+	58. playing cards diamonds
+	59. playing cards spades
+	60. playing cards clubs
+	61. spade bold
+	62. heart bold
+	63. diamond bold
+	64. club bold
+	65. spade regular
+	66. heart regular
+	67. diamond regular
+	68. club regular
+- MATLAB examples
+### Changed
+- Bipartite art deprecated
+- `crying` 1-line art renamed to `crying1`
+- `shocked` 1-line art renamed to `shocked1`
+- `angel` 1-line art renamed to `angel1`
+- `sunglasses` 1-line art renamed to `sunglasses1`
+- `kitty` 1-line art renamed to `kitty1`
+- `snowman` 1-line art renamed to `snowman1`
+- `barcode` 1-line art renamed to `barcode1`
+- `cigaret` 1-line art renamed to `cigarette3`
+- `cigarette` 1-line art renamed to `cigarette2`
+- `headphone` 1-line art renamed to `headphone1`
+- `rock on` 1-line art renamed to `rock on1`
+- `boom box` 1-line art renamed to `boombox1`
+- `love in my eye` 1-line art renamed to `love in my eye1`
+- `CONTRIBUTING.md` modified
+- `TEST_FILTERED_FONTS` renamed to `NON_ASCII_FONTS`
+- `RANDOM_FILTERED_FONTS` and `NON_ASCII_FONTS` lists optimized
+- `README.md` modified
+- `appveyor.yml` modified
+- `INSTALL.md` modified
+- `wizard` mode modified
+## [4.3] - 2019-12-05
+### Added
+- 35 new 1-line art
+	1. cup1
+	2. cup2
+	3. gun2
+	4. gun3
+	5. fish3
+	6. fish4
+	7. fish5
+	8. sword6
+	9. sword7
+	10. sword8
+	11. sword9
+	12. knife2
+	13. barcode
+	14. loading1
+	15. loading3
+	16. loading4
+	17. loading5
+	18. loading6
+	19. bat2
+	20. band aid
+	21. mouse2
+	22. mouse3
+	23. cat3
+	24. needle2
+	25. rose4
+	26. electrocardiogram1
+	27. electrocardiogram2
+	28. electrocardiogram3
+	29. electrocardiogram4
+	30. snail2
+	31. american money2
+	32. american money3
+	33. american money4
+	34. american money5
+	35. cassette2
+- 10 new fonts
+	1. sarah
+	2. hippie
+	3. minion
+	4. greek_legends
+	5. funky_fresh
+	6. atlantic
+	7. foreign_friends
+	8. native_lands
+	9. sunday_cuddle
+	10. chinese_mafia
+### Changed
+- `gun` 1-line art renamed to `gun1`
+- `knife` 1-line art renamed to `knife1`
+- `loading` 1-line art renamed to `loading2`
+- `bat` 1-line art renamed to `bat1`
+- `mouse` 1-line art renamed to `mouse1`
+- `needle` 1-line art renamed to `needle2`
+- `snail` 1-line art renamed to `snail1`
+- `american money` 1-line art renamed to `american money1`
+- `cassette` 1-line art renamed to `cassette1`
+- Test system modified
 ## [4.2] - 2019-10-30
 ### Added
 - 14 new fonts
@@ -1117,7 +1391,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.2...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.5...dev
+[4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5
+[4.4]: https://github.com/sepandhaghighi/art/compare/v4.3...v4.4
+[4.3]: https://github.com/sepandhaghighi/art/compare/v4.2...v4.3
 [4.2]: https://github.com/sepandhaghighi/art/compare/v4.1...v4.2
 [4.1]: https://github.com/sepandhaghighi/art/compare/v4.0...v4.1
 [4.0]: https://github.com/sepandhaghighi/art/compare/v3.9...v4.0

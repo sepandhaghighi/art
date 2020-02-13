@@ -59,32 +59,41 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test", test=False):
+def font_list(text="test", mode="all"):
     """
     Print all fonts.
 
     :param text : input text
     :type text : str
-    :param test: test flag
-    :type test: bool
+    :param mode: fonts mode (all,ascii,non-ascii)
+    :type mode: str
     :return: None
     """
-    fonts = set(FONT_MAP.keys())
-    if test:
-        fonts = fonts - set(TEST_FILTERED_FONTS)
+    fonts = set(FONT_NAMES)
+    if mode.lower() == "ascii":
+        fonts = fonts - set(NON_ASCII_FONTS)
+    if mode.lower() == "non-ascii":
+        fonts = set(NON_ASCII_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
         tprint(text_temp, str(item))
 
 
-def art_list():
+def art_list(mode="all"):
     """
     Print all 1-Line arts.
 
+    :param mode: fonts mode (all,ascii,non-ascii)
+    :type mode: str
     :return: None
     """
-    for i in sorted(list(art_dic.keys())):
+    arts = set(ART_NAMES)
+    if mode.lower() == "ascii":
+        arts = arts - set(NON_ASCII_ARTS)
+    if mode.lower() == "non-ascii":
+        arts = set(NON_ASCII_ARTS)
+    for i in sorted(list(arts)):
         print(i)
         aprint(i)
         line()
@@ -341,7 +350,7 @@ def indirect_font(font, text):
         font = wizard_font(text)
         return font
     if font == "rnd-na" or font == "random-na" or font == "rand-na":
-        font = random.choice(TEST_FILTERED_FONTS)
+        font = random.choice(NON_ASCII_FONTS)
         return font
     if font not in fonts:
         distance_list = list(map(lambda x: distance_calc(font, x), fonts))
@@ -357,7 +366,7 @@ def mix_letters():
     """
     letters = fancy1_dic.copy()
     for i in letters.keys():
-        random_font = random.choice(TEST_FILTERED_FONTS)
+        random_font = random.choice(NON_ASCII_FONTS)
         letters[i] = get_font_dic(random_font)[i]
     return letters
 
