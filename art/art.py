@@ -213,6 +213,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
 def tsave(
         text,
         font=DEFAULT_FONT,
+        decoration=None,
         filename="art",
         chr_ignore=True,
         print_status=True,
@@ -224,6 +225,8 @@ def tsave(
     :param font: input font
     :type font:str
     :type text:str
+    :param decoration: text decoration
+    :type decoration:str
     :param filename: output file name
     :type filename:str
     :param chr_ignore: ignore not supported character
@@ -254,7 +257,7 @@ def tsave(
             else:
                 break
         file = codecs.open(test_name + extension, "w", encoding='utf-8')
-        result = text2art(text, font=font, chr_ignore=chr_ignore)
+        result = text2art(text, font=font, chr_ignore=chr_ignore, decoration=decoration)
         try:
             file.write(result)
         except UnicodeDecodeError:  # pragma: no cover
