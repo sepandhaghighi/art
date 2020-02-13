@@ -4573,7 +4573,7 @@ True
 >>> Data["Message"]
 'OK'
 >>> Data = tsave("test",font="fancy6",decoration="wave1", filename="test1.3.txt")
-Saved! 
+Saved!
 Filename: test1.3.txt
 >>> Data["Message"]
 'OK'

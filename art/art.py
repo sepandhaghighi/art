@@ -206,7 +206,11 @@ def tprint(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        result = text2art(text, font=font, decoration=decoration, chr_ignore=chr_ignore)
+        result = text2art(
+            text,
+            font=font,
+            decoration=decoration,
+            chr_ignore=chr_ignore)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
@@ -259,7 +263,11 @@ def tsave(
             else:
                 break
         file = codecs.open(test_name + extension, "w", encoding='utf-8')
-        result = text2art(text, font=font, decoration=decoration, chr_ignore=chr_ignore)
+        result = text2art(
+            text,
+            font=font,
+            decoration=decoration,
+            chr_ignore=chr_ignore)
         try:
             file.write(result)
         except UnicodeDecodeError:  # pragma: no cover
@@ -373,7 +381,8 @@ def indirect_decoration(decoration):
     """
     decorations = sorted(DECORATIONS_MAP.keys())
     if decoration not in decorations:
-        distance_list = list(map(lambda x: distance_calc(decoration, x), decorations))
+        distance_list = list(
+            map(lambda x: distance_calc(decoration, x), decorations))
         decoration = decorations[distance_list.index(min(distance_list))]
     return decoration
 
@@ -473,7 +482,7 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
         letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
-    if decoration != None:
+    if decoration is not None:
         decoration = indirect_decoration(decoration)
         result += DECORATIONS_MAP[decoration]
     for word in word_list:
@@ -482,7 +491,7 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
                                          font=font,
                                          chr_ignore=chr_ignore,
                                          letters=letters)
-    if decoration != None:
+    if decoration is not None:
         result = result.strip() + DECORATIONS_MAP[decoration][::-1]
     return result
 
