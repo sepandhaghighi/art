@@ -454,7 +454,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     word_list = text_temp.split("\n")
     result = ""
     if decoration is True:
-        #'▁ ▂ ▄ ▅ ▆ ▇ █' can be replaced by decoration dictionary element in future
+        # '▁ ▂ ▄ ▅ ▆ ▇ █' can be replaced by decoration dictionary element in future
         result += '▁ ▂ ▄ ▅ ▆ ▇ █'
     for word in word_list:
         if len(word) != 0:
@@ -463,7 +463,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
                                          chr_ignore=chr_ignore,
                                          letters=letters)
     if decoration is True:
-        #'█ ▇ ▆ ▅ ▄ ▂ ▁' can be replaced by decoration dictionary element in future
+        # '█ ▇ ▆ ▅ ▄ ▂ ▁' can be replaced by decoration dictionary element in future
         result += '█ ▇ ▆ ▅ ▄ ▂ ▁'
     return result
 
