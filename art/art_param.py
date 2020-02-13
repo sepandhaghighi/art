@@ -3,6 +3,7 @@
 from .text_dic1 import *
 from .text_dic2 import *
 from .text_dic3 import *
+from .decor_dic import *
 from .art_dic import *
 
 ART_VERSION = "4.5"  # pragma: no cover
@@ -1171,6 +1172,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "awcute": [awcute_dic, False],
             "slammer": [slammer_dic, False]
             }
+
+DECORATIONS_MAP = {"wave1": wave1, "chess1": chess1, "barcode1": barcode1}
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
