@@ -4451,6 +4451,12 @@ _/  _   _ _/
 /  (- _)  /
 <BLANKLINE>
 <BLANKLINE>
+>>> tprint("test",font="fancy6",decoration="wave1")
+▁ ▂ ▄ ▅ ▆ ▇ █ƭεรƭ█ ▇ ▆ ▅ ▄ ▂ ▁
+>>> tprint("test",font="fancy6",decoration="chess1")
+▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
+>>> tprint("test",font="fancy6",decoration="barcode1")
+▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
 >>> set_default(font=2)
 Traceback (most recent call last):
         ...
@@ -4566,6 +4572,13 @@ Filename: test1.2.txt
 True
 >>> Data["Message"]
 'OK'
+>>> Data = tsave("test",font="fancy6",decoration="wave1", filename="test1.3.txt")
+Saved! 
+Filename: test1.3.txt
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
@@ -4573,5 +4586,6 @@ True
 >>> os.remove("test.txt")
 >>> os.remove("test1.txt")
 >>> os.remove("test1.2.txt")
+>>> os.remove("test1.3.txt")
 
 '''
