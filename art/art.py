@@ -358,6 +358,21 @@ def indirect_font(font, text):
     return font
 
 
+def indirect_decoration(decoration):
+    """
+    Check input decoration for indirect modes.
+
+    :param decoration: input decoration
+    :type decoration : str
+    :return: decoration as str
+    """
+    decorations = sorted(DECORATIONS_MAP.keys())
+    if decoration not in decorations:
+        distance_list = list(map(lambda x: distance_calc(decoration, x), decorations))
+        decoration = decorations[distance_list.index(min(distance_list))]
+    return decoration
+
+
 def mix_letters():
     """
     Return letters list in mix mode.
