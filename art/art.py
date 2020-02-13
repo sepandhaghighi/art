@@ -483,7 +483,7 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
                                          chr_ignore=chr_ignore,
                                          letters=letters)
     if decoration != None:
-        result += DECORATIONS_MAP[decoration][::-1]
+        result = result.strip() + DECORATIONS_MAP[decoration][::-1]
     return result
 
 
