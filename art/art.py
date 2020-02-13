@@ -188,7 +188,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
+def tprint(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     r"""
     Print art text (support \n).
 
@@ -196,6 +196,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type text:str
     :param font: input font
     :type font:str
+    :param decoration: text decoration
+    :type decoration:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :return: None
@@ -204,7 +206,7 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        result = text2art(text, font=font, chr_ignore=chr_ignore)
+        result = text2art(text, font=font, decoration=decoration, chr_ignore=chr_ignore)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
@@ -257,7 +259,7 @@ def tsave(
             else:
                 break
         file = codecs.open(test_name + extension, "w", encoding='utf-8')
-        result = text2art(text, font=font, chr_ignore=chr_ignore, decoration=decoration)
+        result = text2art(text, font=font, decoration=decoration, chr_ignore=chr_ignore)
         try:
             file.write(result)
         except UnicodeDecodeError:  # pragma: no cover
