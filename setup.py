@@ -50,7 +50,7 @@ setup(
     },
     install_requires=[],
     extras_require={
-        "dev":  get_dev_requires()
+        "dev": get_dev_requires()
     },
     python_requires='>=2.7',
     classifiers=[
