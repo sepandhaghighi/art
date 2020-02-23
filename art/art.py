@@ -483,8 +483,7 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     word_list = text_temp.split("\n")
     result = ""
     if decoration is not None:
-        decoration = indirect_decoration(decoration)
-        result += DECORATIONS_MAP[decoration]
+        result += decor(decoration)
     for word in word_list:
         if len(word) != 0:
             result = result + __word2art(word=word,
@@ -492,7 +491,7 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
                                          chr_ignore=chr_ignore,
                                          letters=letters)
     if decoration is not None:
-        result = result.strip() + DECORATIONS_MAP[decoration][::-1]
+        result = result.strip() + decor(decoration, reversed=True)
     return result
 
 
