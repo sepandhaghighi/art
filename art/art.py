@@ -541,3 +541,20 @@ def get_font_dic(font_name):
     :return font's dictionary
     """
     return FONT_MAP[font_name][0]
+
+
+def decor(decoration, reversed=False):
+    """
+    Return given decoration part.
+
+    :param  decoration: decoration's name
+    :type decoration:str
+    :param reversed: true if second tail of decoration wanted
+    :type reversed:bool
+    :return decor's tail
+    """
+    decoration = indirect_decoration(decoration)
+    if reversed is True:
+        return DECORATIONS_MAP[decoration][-1]
+    else:
+        return DECORATIONS_MAP[decoration][0]
