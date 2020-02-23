@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `decoration` option added to `text2art`.
 - `decoration` flag added to `tprint`.
 - `decoration` flag added to `tsave`.
+- `decor` function added.
 - 3 new decorations
 	1. wave1
 	2. chess1
