@@ -496,13 +496,15 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     return result
 
 
-def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
+def set_default(font=DEFAULT_FONT, decoration=None, chr_ignore=True, filename="art",
                 print_status=True, overwrite=False):
     """
     Change text2art, tprint and tsave default values.
 
     :param font: input font
     :type font:str
+    :param decoration: input decoration
+    :type decoration:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :param filename: output file name (only tsave)
@@ -515,6 +517,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     """
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
+    if isinstance(decoration, str) is False:
+        raise artError(FONT_TYPE_ERROR)
     if isinstance(chr_ignore, bool) is False:
         raise artError(CHR_IGNORE_TYPE_ERROR)
     if isinstance(filename, str) is False:
@@ -523,9 +527,9 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(PRINT_STATUS_TYPE_ERROR)
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore)
-    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite)
-    text2art.__defaults__ = (font, chr_ignore)
+    tprint.__defaults__ = (font, decoration, chr_ignore)
+    tsave.__defaults__ = (font, decoration, filename, chr_ignore, print_status, overwrite)
+    text2art.__defaults__ = (font, decoration, chr_ignore)
 
 
 def get_font_dic(font_name):
