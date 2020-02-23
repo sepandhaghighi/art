@@ -516,7 +516,7 @@ def set_default(font=DEFAULT_FONT, decoration=None, chr_ignore=True, filename="a
     """
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
-    if isinstance(decoration, str) is False:
+    if isinstance(decoration, str) is False and decoration is not None:
         raise artError(DECORATION_TYPE_ERROR)
     if isinstance(chr_ignore, bool) is False:
         raise artError(CHR_IGNORE_TYPE_ERROR)
