@@ -491,7 +491,7 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
                                          chr_ignore=chr_ignore,
                                          letters=letters)
     if decoration is not None:
-        result = result.strip() + decor(decoration, reversed=True)
+        result = result.strip() + decor(decoration, reverse=True)
     return result
 
 
