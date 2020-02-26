@@ -10,10 +10,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `decoration` flag added to `tprint`.
 - `decoration` flag added to `tsave`.
 - `decor` function added.
-- 3 new decorations
-	1. wave1
-	2. chess1
-	3. barcode1
+- 10 new decorations
+	1. barcode1
+	2. champion1
+	3. chess1
+    4. lucky1
+    5. sad1
+    6. soccer1
+	7. star1
+    8. star2
+    9. wave1
+    10. wave2
 ### Added
 - `NON_ASCII_ARTS` list
 - 20 new fonts

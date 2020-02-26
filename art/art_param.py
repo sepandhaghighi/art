@@ -1174,7 +1174,16 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "slammer": [slammer_dic, False]
             }
 
-DECORATIONS_MAP = {"wave1": wave1, "chess1": chess1, "barcode1": barcode1}
+DECORATIONS_MAP = {"barcode1": barcode1,
+            "champion1": champion1,
+            "chess1": chess1,
+            "lucky1": lucky1,
+            "sad1": sad1,
+            "soccer1": soccer1,
+            "star1": star1,
+            "star2": star2,
+            "wave1": wave1,
+            "wave2": wave2}
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover

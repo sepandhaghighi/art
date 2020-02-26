@@ -1488,16 +1488,26 @@ Filename: antrophobia.txt
 >>> Data = tsave("test@34",font="fancy37",filename="fancy37.txt")
 Saved!
 Filename: fancy37.txt
->>> tprint("test",font="fancy6",decoration="wave1")
-▁ ▂ ▄ ▅ ▆ ▇ █ƭεรƭ█ ▇ ▆ ▅ ▄ ▂ ▁
+>>> tprint("test",font="fancy6",decoration="barcode1")
+▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
+>>> tprint("test",font="fancy6",decoration="champion1")
+◄[🏆]► ƭεรƭ ◄[🥇]►
 >>> tprint("test",font="fancy6",decoration="chess1")
 ▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
 >>> tprint("test",font="fancy6",decoration="ches1")
 ▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
->>> tprint("test",font="fancy6",decoration="barcod1")
-▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
->>> tprint("test",font="fancy6",decoration="barcod1")
-▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
+>>> tprint("test",font="fancy6",decoration="lucky1")
+🌈ꔣᨐ ƭεรƭ ᨐꔣ🌈
+>>> tprint("test",font="fancy6",decoration="sad1")
+(-_-) ƭεรƭ (-_-)
+>>> tprint("test",font="fancy6",decoration="star1")
+【★】 ƭεรƭ 【★】
+>>> tprint("test",font="fancy6",decoration="star2")
+★·.·´¯`·.·★ ƭεรƭ ★·.·´¯`·.·★
+>>> tprint("test",font="fancy6",decoration="wave1")
+▁ ▂ ▄ ▅ ▆ ▇ █ƭεรƭ█ ▇ ▆ ▅ ▄ ▂ ▁
+>>> tprint("test",font="fancy6",decoration="wave2")
+▉▇▆▅▄▃▂▂▂_ƭεรƭ_▂▂▃▄▅▆▇▉▉
 >>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",decoration="chess1")
 Saved!
 Filename: fancy6dec.txt
