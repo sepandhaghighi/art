@@ -188,7 +188,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
+def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     r"""
     Print art text (support \n).
 
@@ -196,10 +196,10 @@ def tprint(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     :type text:str
     :param font: input font
     :type font:str
-    :param decoration: text decoration
-    :type decoration:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
+    :param decoration: text decoration
+    :type decoration:str
     :return: None
     """
     try:
@@ -219,11 +219,11 @@ def tprint(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
 def tsave(
         text,
         font=DEFAULT_FONT,
-        decoration=None,
         filename="art",
         chr_ignore=True,
         print_status=True,
-        overwrite=False):
+        overwrite=False,
+        decoration=None):
     r"""
     Save ascii art (support \n).
 
@@ -231,8 +231,6 @@ def tsave(
     :param font: input font
     :type font:str
     :type text:str
-    :param decoration: text decoration
-    :type decoration:str
     :param filename: output file name
     :type filename:str
     :param chr_ignore: ignore not supported character
@@ -241,6 +239,8 @@ def tsave(
     :type print_status:bool
     :param overwrite : overwrite the saved file if true
     :type overwrite:bool
+    :param decoration: text decoration
+    :type decoration:str
     :return: None
     """
     try:
@@ -450,7 +450,7 @@ def __word2art(word, font, chr_ignore, letters):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
+def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     r"""
     Return art text (support \n).
 
@@ -458,10 +458,10 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     :type text:str
     :param font: input font
     :type font:str
-    :param decoration: text decoration
-    :type decoration:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
+    :param decoration: text decoration
+    :type decoration:str
     :return: ascii art text as str
     """
     letters = standard_dic
@@ -495,15 +495,13 @@ def text2art(text, font=DEFAULT_FONT, decoration=None, chr_ignore=True):
     return result
 
 
-def set_default(font=DEFAULT_FONT, decoration=None, chr_ignore=True, filename="art",
-                print_status=True, overwrite=False):
+def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
+                print_status=True, overwrite=False, decoration=None):
     """
     Change text2art, tprint and tsave default values.
 
     :param font: input font
     :type font:str
-    :param decoration: input decoration
-    :type decoration:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
     :param filename: output file name (only tsave)
@@ -512,6 +510,8 @@ def set_default(font=DEFAULT_FONT, decoration=None, chr_ignore=True, filename="a
     :type print_status:bool
     :param overwrite : overwrite the saved file if true (only tsave)
     :type overwrite:bool
+    :param decoration: input decoration
+    :type decoration:str
     :return: None
     """
     if isinstance(font, str) is False:
@@ -526,9 +526,9 @@ def set_default(font=DEFAULT_FONT, decoration=None, chr_ignore=True, filename="a
         raise artError(PRINT_STATUS_TYPE_ERROR)
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
-    tprint.__defaults__ = (font, decoration, chr_ignore)
-    tsave.__defaults__ = (font, decoration, filename, chr_ignore, print_status, overwrite)
-    text2art.__defaults__ = (font, decoration, chr_ignore)
+    tprint.__defaults__ = (font, chr_ignore, decoration)
+    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite, decoration)
+    text2art.__defaults__ = (font, chr_ignore, decoration)
 
 
 def get_font_dic(font_name):
