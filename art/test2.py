@@ -1511,7 +1511,7 @@ Filename: fancy37.txt
 >>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",decoration="chess1")
 Saved!
 Filename: fancy6dec.txt
->>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",decoration="bar1")
+>>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",overwrite=True,decoration="bar1")
 Saved!
 Filename: fancy6dec.txt
 >>> os.remove("antrophobia.txt")
