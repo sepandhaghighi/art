@@ -1488,6 +1488,16 @@ Filename: antrophobia.txt
 >>> Data = tsave("test@34",font="fancy37",filename="fancy37.txt")
 Saved!
 Filename: fancy37.txt
+>>> tprint("test",font="fancy6",decoration="wave1")
+▁ ▂ ▄ ▅ ▆ ▇ █ƭεรƭ█ ▇ ▆ ▅ ▄ ▂ ▁
+>>> tprint("test",font="fancy6",decoration="chess1")
+▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
+>>> tprint("test",font="fancy6",decoration="ches1")
+▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
+>>> tprint("test",font="fancy6",decoration="barcod1")
+▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
+>>> tprint("test",font="fancy6",decoration="barcod1")
+▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
 >>> os.remove("antrophobia.txt")
 >>> os.remove("fancy37.txt")
 

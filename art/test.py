@@ -4451,12 +4451,6 @@ _/  _   _ _/
 /  (- _)  /
 <BLANKLINE>
 <BLANKLINE>
->>> tprint("test",font="fancy6",decoration="wave1")
-▁ ▂ ▄ ▅ ▆ ▇ █ƭεรƭ█ ▇ ▆ ▅ ▄ ▂ ▁
->>> tprint("test",font="fancy6",decoration="chess1")
-▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
->>> tprint("test",font="fancy6",decoration="barcode1")
-▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
 >>> set_default(font=2)
 Traceback (most recent call last):
         ...
