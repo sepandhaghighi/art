@@ -4566,9 +4566,6 @@ Filename: test1.2.txt
 True
 >>> Data["Message"]
 'OK'
->>> Data = tsave("test",font="fancy6",decoration="wave1", filename="test1.3.txt")
-Saved!
-Filename: test1.3.txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
@@ -4580,6 +4577,5 @@ True
 >>> os.remove("test.txt")
 >>> os.remove("test1.txt")
 >>> os.remove("test1.2.txt")
->>> os.remove("test1.3.txt")
 
 '''

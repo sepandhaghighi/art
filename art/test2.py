@@ -1498,7 +1498,14 @@ Filename: fancy37.txt
 ▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
 >>> tprint("test",font="fancy6",decoration="barcod1")
 ▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
+>>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",decoration="chess1")
+Saved!
+Filename: fancy6dec.txt
+>>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",decoration="bar1")
+Saved!
+Filename: fancy6dec.txt
 >>> os.remove("antrophobia.txt")
 >>> os.remove("fancy37.txt")
+>>> os.remove("fancy6dec.txt")
 
 '''
