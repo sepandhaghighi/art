@@ -14,13 +14,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	1. barcode1
 	2. champion1
 	3. chess1
-    4. lucky1
-    5. sad1
-    6. soccer1
+	4. lucky1
+	5. sad1
+	6. soccer1
 	7. star1
-    8. star2
-    9. wave1
-    10. wave2
+	8. star2
+	9. wave1
+	10. wave2
 - `decor_list` function added.
 ### Added
 - `NON_ASCII_ARTS` list
