@@ -4562,10 +4562,6 @@ True
 >>> Data = tsave("test","standard",filename="test1.2.txt")
 Saved!
 Filename: test1.2.txt
->>> Data["Status"]
-True
->>> Data["Message"]
-'OK'
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
