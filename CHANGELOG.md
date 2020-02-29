@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     8. star2
     9. wave1
     10. wave2
+- `decor_list` function added.
 ### Added
 - `NON_ASCII_ARTS` list
 - 20 new fonts
