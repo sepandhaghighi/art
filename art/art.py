@@ -102,7 +102,7 @@ def art_list(mode="all"):
 def decor_list():
     """
     Print all decorations.
-    
+
     :return: None
     """
     decors = set(DECORATION_NAMES)
