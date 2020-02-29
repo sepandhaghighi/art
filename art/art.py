@@ -99,6 +99,18 @@ def art_list(mode="all"):
         line()
 
 
+def decor_list():
+    """
+    Print all decorations.
+    :return: None
+    """
+    decors = set(DECORATION_NAMES)
+    for decor in sorted(list(decors)):
+        print(decor)
+        tprint("test",font="fancy6",decoration=decor)
+        line()
+
+
 def help_func():
     """
     Print help page.
