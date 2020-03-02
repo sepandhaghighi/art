@@ -562,6 +562,8 @@ def decor(decoration, reverse=False):
     :type reverse:bool
     :return decor's tail
     """
+    if isinstance(decoration, str) is False:
+        raise artError(DECORATION_TYPE_ERROR)
     decoration = indirect_decoration(decoration)
     if reverse is True:
         return DECORATIONS_MAP[decoration][-1]
