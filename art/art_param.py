@@ -1190,4 +1190,5 @@ DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
 FONT_COUNTER = len(FONT_NAMES)  # pragma: no cover
 ART_COUNTER = len(ART_NAMES)  # pragma: no cover
+DECORATION_COUNTER = len(DECORATION_NAMES) # pragma: no cover
 DEFAULT_FONT = "standard"  # pragma: no cover
