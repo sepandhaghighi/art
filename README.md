@@ -375,7 +375,7 @@ Traceback (most recent call last):
 art.art.artError: The 'decoration' type must be str.
 ```
 
-* Note1 : Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
+* Note : Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
