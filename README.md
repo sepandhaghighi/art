@@ -25,6 +25,7 @@
    * [Usage](https://github.com/sepandhaghighi/art#usage)
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
+   		* [Decoration](https://github.com/sepandhaghighi/art#decoration)
    		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
@@ -732,7 +733,7 @@ _/  _   _ _/
 python -m art test
 ```
 
-- All fonts and arts :
+- All fonts, arts and decorations :
 ```
 python -m art test2
 ```
