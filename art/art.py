@@ -391,7 +391,7 @@ def indirect_decoration(decoration):
     :type decoration : str
     :return: decoration as str
     """
-    decorations = sorted(DECORATIONS_MAP.keys())
+    decorations = DECORATION_NAMES
     if decoration not in decorations:
         distance_list = list(
             map(lambda x: distance_calc(decoration, x), decorations))
