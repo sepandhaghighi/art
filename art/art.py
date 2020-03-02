@@ -105,8 +105,7 @@ def decor_list():
 
     :return: None
     """
-    decors = set(DECORATION_NAMES)
-    for decor in sorted(list(decors)):
+    for decor in DECORATION_NAMES:
         print(decor)
         tprint("test",font="fancy6",decoration=decor)
         line()
