@@ -247,7 +247,8 @@ dolor''', font="small")) # Multi-line print
 
 >>> print(text2art("test","white_bubble"))  # Non-ASCII font example
 ⓣⓔⓢⓣ
-
+>>> text2art("art",font="fancy5",decoration="barcode1") # decoration parameter is added in Version 4.6
+'▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌'
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -317,7 +318,8 @@ ___  ____ _    ____ ____
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
 
-
+>>> tprint("art",font="fancy5",decoration="barcode1") # decoration parameter is added in Version 4.6
+▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌
 ```
 #### 3. tsave				
 
@@ -338,12 +340,36 @@ True
 >>> Response=tsave("art",filename="test.txt",overwrite=True) # overwrite parameter is added in Version 4.0
 Saved! 
 Filename: test.txt
+>>> Response=tsave("art",filename="test.txt",decoration="barcode1") # decoration parameter is added in Version 4.6
+Saved! 
+Filename: test.txt
                         
 ```
 
 * Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
 * Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
+### Decoration
+
+⚠️ Some environments don't support all decorations
+
+#### 1. decor
+
+This function return decoration as `str` in normal mode and raise `artError` in exception.
+```pycon
+>>> decor("barcode1")
+'▌│█║▌║▌║ '
+>>> decor("barcode1",True)
+' ║▌║▌║█│▌'
+>>> decor("barcode1") + text2art("    art   ",font="fancy42") + decor("barcode1",True)
+'▌│█║▌║▌║     ąяţ    ║▌║▌║█│▌'
+>>> decor(None)
+Traceback (most recent call last):
+	...
+art.art.artError: The 'decoration' type must be str.
+```
+
+* Note1 : Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
@@ -546,7 +572,6 @@ Keywords : `random-na`, `rand-na` & `rnd-na`
 ```pycon
 >>> tprint("test","random-na")
 ₮Ɇ₴₮
-
 >>> tprint("test","random-na")
 ʇsǝʇ
 
@@ -563,10 +588,8 @@ Keywords : `mix`
 ```pycon
 >>> tprint("test","mix")
 †Ɛѕ†
-
 >>> tprint("test","mix")
 tᏋѕt
-
 >>> tprint("test","mix")
 ꓄єร꓄
 ```
@@ -623,7 +646,7 @@ ___ ____ ____ ___
 >>> help(set_default)
 Help on function set_default in module art.art:
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False)
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False, decoration=None)
     Change text2art, tprint and tsave default values.
     
     :param font: input font
@@ -636,6 +659,8 @@ set_default(font='standard', chr_ignore=True, filename='art', print_status=True,
     :type print_status:bool
     :param overwrite : overwrite the saved file if true (only tsave)
     :type overwrite:bool
+    :param decoration: input decoration
+    :type decoration:str
     :return: None
 
 >>> tprint("test")
@@ -661,6 +686,12 @@ _/  _   _ _/
 		<td align="center">Function</td>
 		<td align="center">Normal Output</td>
 		<td align="center">Error</td>
+	</tr>
+    <tr>
+		<td align="center">decor</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+
 	</tr>
 	<tr>
 		<td align="center">art</td>
