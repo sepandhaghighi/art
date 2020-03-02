@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `NON_ASCII_ARTS` list
+- `decor_dic.py` file
+- `decor` function
+- `decor_list` function
+- 10 new decorations
+	1. barcode1
+	2. champion1
+	3. chess1
+	4. lucky1
+	5. sad1
+	6. soccer1
+	7. star1
+	8. star2
+	9. wave1
+	10. wave2
 - 20 new fonts
 	1. scammer
 	2. strikethrough
@@ -35,6 +49,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `random` mode modified
 - `test` parameter removed from `font_list` function
 - `mode` parameter added to `font_list` and `art_list` functions
+- `decoration` parameter added to `text2art`, `tprint` and `tsave` functions
 ### Removed
 - `requirements.txt`
 ## [4.5] - 2020-01-29

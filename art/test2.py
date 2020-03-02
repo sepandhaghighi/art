@@ -1463,6 +1463,37 @@ zoidberg
 zombie
 'º_º'
 ******************************
+>>> decor_list()
+barcode1
+▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
+******************************
+champion1
+◄[🏆]► ƭεรƭ ◄[🥇]►
+******************************
+chess1
+▀▄▀▄▀▄ƭεรƭ▄▀▄▀▄▀
+******************************
+lucky1
+🌈ꔣᨐ ƭεรƭ ᨐꔣ🌈
+******************************
+sad1
+(-_-) ƭεรƭ (-_-)
+******************************
+soccer1
+●●--●●◄⚽️► ƭεรƭ ◄⚽️►●●--●●
+******************************
+star1
+【★】 ƭεรƭ 【★】
+******************************
+star2
+★·.·´¯`·.·★ ƭεรƭ ★·.·´¯`·.·★
+******************************
+wave1
+▁ ▂ ▄ ▅ ▆ ▇ █ƭεรƭ█ ▇ ▆ ▅ ▄ ▂ ▁
+******************************
+wave2
+▉▇▆▅▄▃▂▂▂_ƭεรƭ_▂▂▃▄▅▆▇▉▉
+******************************
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")
 >>> random.seed(45)
@@ -1488,7 +1519,22 @@ Filename: antrophobia.txt
 >>> Data = tsave("test@34",font="fancy37",filename="fancy37.txt")
 Saved!
 Filename: fancy37.txt
+>>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",decoration="chess1")
+Saved!
+Filename: fancy6dec.txt
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
+>>> Data = tsave("test",font="fancy6",filename="fancy6dec.txt",overwrite=True,decoration="bar1")
+Saved!
+Filename: fancy6dec.txt
+>>> Data["Message"]
+'OK'
+>>> Data["Status"]
+True
 >>> os.remove("antrophobia.txt")
 >>> os.remove("fancy37.txt")
+>>> os.remove("fancy6dec.txt")
 
 '''

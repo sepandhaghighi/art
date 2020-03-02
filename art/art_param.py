@@ -3,6 +3,7 @@
 from .text_dic1 import *
 from .text_dic2 import *
 from .text_dic3 import *
+from .decor_dic import *
 from .art_dic import *
 
 ART_VERSION = "4.5"  # pragma: no cover
@@ -19,6 +20,7 @@ ART_NAME_ERROR = "Invalid art name."
 NUMBER_TYPE_ERROR = "The 'number' type must be int."
 TEXT_TYPE_ERROR = "The 'text' type must be str."
 FONT_TYPE_ERROR = "The 'font' type must be str."
+DECORATION_TYPE_ERROR = "The 'decoration' type must be str."
 CHR_IGNORE_TYPE_ERROR = "The 'chr_ignore' type must be bool."
 FILE_TYPE_ERROR = "The 'filename' type must be str."
 PRINT_STATUS_TYPE_ERROR = "The 'print_status' type must be bool."
@@ -1172,8 +1174,21 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "slammer": [slammer_dic, False]
             }
 
+DECORATIONS_MAP = {"barcode1": barcode1,
+            "champion1": champion1,
+            "chess1": chess1,
+            "lucky1": lucky1,
+            "sad1": sad1,
+            "soccer1": soccer1,
+            "star1": star1,
+            "star2": star2,
+            "wave1": wave1,
+            "wave2": wave2}
+
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
+DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
 FONT_COUNTER = len(FONT_NAMES)  # pragma: no cover
 ART_COUNTER = len(ART_NAMES)  # pragma: no cover
+DECORATION_COUNTER = len(DECORATION_NAMES) # pragma: no cover
 DEFAULT_FONT = "standard"  # pragma: no cover

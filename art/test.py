@@ -4562,10 +4562,10 @@ True
 >>> Data = tsave("test","standard",filename="test1.2.txt")
 Saved!
 Filename: test1.2.txt
->>> Data["Status"]
-True
 >>> Data["Message"]
 'OK'
+>>> Data["Status"]
+True
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
