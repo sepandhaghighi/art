@@ -457,8 +457,6 @@ def __word2art(word, font, chr_ignore, letters):
     if "win32" != sys.platform:
         splitter = "\r\n"
     result = (splitter).join(result_list)
-    if result[-1] != "\n":
-        result += splitter
     return result
 
 
