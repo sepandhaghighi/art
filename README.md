@@ -766,7 +766,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
 
-* Open `FontList.ipynb` and `ArtList.ipynb`
+* Open `FontList.ipynb`, `ArtList.ipynb` and `DecorList.ipynb`
 * Edit and execute each part of the notes, step by step from the top panel by run button
 
 ### Screen record		
@@ -779,6 +779,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 
 * View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
 * View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
+* View full decoration list ([Link1](https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb "Full Decoration List"),[Link2](http://art.shaghighi.ir/DecorList.html "Full Decoration List"))
 
 ## Issues & bug reports			
 
