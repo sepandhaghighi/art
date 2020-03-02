@@ -5,11 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- `decor_dic.py` added.
-- `decoration` option added to `text2art`.
-- `decoration` flag added to `tprint`.
-- `decoration` flag added to `tsave`.
-- `decor` function added.
+### Added
+- `NON_ASCII_ARTS` list
+- `decor_dic.py` file
+- `decor` function
+- `decor_list` function
 - 10 new decorations
 	1. barcode1
 	2. champion1
@@ -21,9 +21,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. star2
 	9. wave1
 	10. wave2
-- `decor_list` function added.
-### Added
-- `NON_ASCII_ARTS` list
 - 20 new fonts
 	1. scammer
 	2. strikethrough
@@ -52,6 +49,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `random` mode modified
 - `test` parameter removed from `font_list` function
 - `mode` parameter added to `font_list` and `art_list` functions
+- `decoration` parameter added to `text2art`, `tprint` and `tsave` functions
 ### Removed
 - `requirements.txt`
 ## [4.5] - 2020-01-29
