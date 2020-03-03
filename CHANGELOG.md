@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `decor_dic.py` file
 - `decor` function
 - `decor_list` function
+- `DecorList.ipynb` notebook
 - 10 new decorations
 	1. barcode1
 	2. champion1
