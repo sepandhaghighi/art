@@ -416,7 +416,7 @@ def mix_letters():
     return letters
 
 
-def __word2art(word, font, chr_ignore, letters):
+def __word2art(word, font, chr_ignore, letters, next_word):
     """
     Return art word.
 
@@ -428,6 +428,8 @@ def __word2art(word, font, chr_ignore, letters):
     :type chr_ignore: bool
     :param letters: font letters table
     :type letters: dict
+    :param next_word: next word flag
+    :type next_word: bool
     :return: ascii art as str
     """
     split_list = []
@@ -461,6 +463,8 @@ def __word2art(word, font, chr_ignore, letters):
     if "win32" != sys.platform:
         splitter = "\r\n"
     result = (splitter).join(result_list)
+    if result[-1] != "\n" and next_word:
+        result += splitter
     return result
 
 
@@ -498,12 +502,16 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     result = ""
     if decoration is not None:
         result += decor(decoration)
-    for word in word_list:
+    next_word_flag = True
+    for index,word in enumerate(word_list):
+        if index == len(word_list)-1:
+            next_word_flag = False
         if len(word) != 0:
             result = result + __word2art(word=word,
                                          font=font,
                                          chr_ignore=chr_ignore,
-                                         letters=letters)
+                                         letters=letters,
+                                         next_word=next_word_flag)
     if decoration is not None:
         result = result + decor(decoration, reverse=True)
     return result
