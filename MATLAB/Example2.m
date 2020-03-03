@@ -7,7 +7,7 @@ catch e
     fprintf(2,'** Error : %s\n',e.message);
 end
 
-% Import art lib (version > 4.2)
+% Import art lib
 artlib = py.importlib.import_module('art');
 
 % art function

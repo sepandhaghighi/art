@@ -1494,6 +1494,18 @@ wave1
 wave2
 ▉▇▆▅▄▃▂▂▂_ƭεรƭ_▂▂▃▄▅▆▇▉▉
 ******************************
+>>> tprint("    test   ",font="fancy42",decoration="barcode1")
+▌│█║▌║▌║     ţ€$ţ    ║▌║▌║█│▌
+>>> decor("barcode1") + text2art("    test   ",font="fancy42") + decor("barcode1",True)
+'▌│█║▌║▌║     ţ€$ţ    ║▌║▌║█│▌'
+>>> decor("barcode1")
+'▌│█║▌║▌║ '
+>>> decor("barcode1",True)
+' ║▌║▌║█│▌'
+>>> decor(None)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'decoration' type must be str.
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")
 >>> random.seed(45)

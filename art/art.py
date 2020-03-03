@@ -99,15 +99,19 @@ def art_list(mode="all"):
         line()
 
 
-def decor_list():
+def decor_list(text="test", font="fancy6"):
     """
     Print all decorations.
 
+    :param text : input text
+    :type text : str
+    :param font: input font
+    :type font:str
     :return: None
     """
     for decor in DECORATION_NAMES:
         print(decor)
-        tprint("test",font="fancy6",decoration=decor)
+        tprint(text,font=font,decoration=decor)
         line()
 
 
@@ -457,8 +461,6 @@ def __word2art(word, font, chr_ignore, letters):
     if "win32" != sys.platform:
         splitter = "\r\n"
     result = (splitter).join(result_list)
-    if result[-1] != "\n":
-        result += splitter
     return result
 
 
@@ -503,7 +505,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
                                          chr_ignore=chr_ignore,
                                          letters=letters)
     if decoration is not None:
-        result = result.strip() + decor(decoration, reverse=True)
+        result = result + decor(decoration, reverse=True)
     return result
 
 
@@ -564,6 +566,8 @@ def decor(decoration, reverse=False):
     :type reverse:bool
     :return decor's tail
     """
+    if isinstance(decoration, str) is False:
+        raise artError(DECORATION_TYPE_ERROR)
     decoration = indirect_decoration(decoration)
     if reverse is True:
         return DECORATIONS_MAP[decoration][-1]
