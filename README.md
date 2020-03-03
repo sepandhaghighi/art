@@ -365,9 +365,9 @@ This function return decoration as `str` in normal mode and raise `artError` in 
 ```pycon
 >>> decor("barcode1")
 '▌│█║▌║▌║ '
->>> decor("barcode1",True)
+>>> decor("barcode1",reverse=True)
 ' ║▌║▌║█│▌'
->>> decor("barcode1") + text2art("    art   ",font="fancy42") + decor("barcode1",True)
+>>> decor("barcode1") + text2art("    art   ",font="fancy42") + decor("barcode1",reverse=True)
 '▌│█║▌║▌║     ąяţ    ║▌║▌║█│▌'
 >>> decor(None)
 Traceback (most recent call last):
