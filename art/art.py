@@ -99,17 +99,19 @@ def art_list(mode="all"):
         line()
 
 
-def decor_list(text="test"):
+def decor_list(text="test", font="fancy6"):
     """
     Print all decorations.
 
     :param text : input text
     :type text : str
+    :param font: input font
+    :type font:str
     :return: None
     """
     for decor in DECORATION_NAMES:
         print(decor)
-        tprint(text,font="fancy6",decoration=decor)
+        tprint(text,font=font,decoration=decor)
         line()
 
 
