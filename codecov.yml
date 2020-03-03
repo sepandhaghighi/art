@@ -1,0 +1,11 @@
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  precision: 2
+  round: up
+  range: "70...100"
+  status:
+    patch:
+      default:
+        enabled: no
