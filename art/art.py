@@ -437,7 +437,7 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     splitter = "\n"
     if "win32" != sys.platform:
         splitter = "\r\n"
-    if len(word) == 0:
+    if len(word) == 0 and next_word:
         return splitter
     for i in word:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
