@@ -1472,6 +1472,15 @@ zombie
 тεƨт2
 тεƨт3
 <BLANKLINE>
+>>> tprint("","fancy44")
+<BLANKLINE>
+>>> tprint("\n","fancy44")
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("\n\n","fancy44")
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 >>> decor_list()
 barcode1
 ▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌

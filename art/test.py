@@ -3658,6 +3658,15 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+>>> tprint("",font="lcd")
+<BLANKLINE>
+>>> tprint("\n",font="lcd")
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("\n\n",font="lcd")
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
 >>>
 >>> art_list(mode="ascii")
 alien
