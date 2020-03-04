@@ -435,6 +435,10 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     split_list = []
     result_list = []
     splitter = "\n"
+    if "win32" != sys.platform:
+        splitter = "\r\n"
+    if len(word) == 0:
+        return splitter
     for i in word:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
             continue
@@ -460,8 +464,6 @@ def __word2art(word, font, chr_ignore, letters, next_word):
                 temp = temp + " "
             temp = temp + split_list[j][i]
         result_list.append(temp)
-    if "win32" != sys.platform:
-        splitter = "\r\n"
     result = (splitter).join(result_list)
     if result[-1] != "\n" and next_word:
         result += splitter
@@ -506,12 +508,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     for index,word in enumerate(word_list):
         if index == len(word_list)-1:
             next_word_flag = False
-        if len(word) != 0:
-            result = result + __word2art(word=word,
-                                         font=font,
-                                         chr_ignore=chr_ignore,
-                                         letters=letters,
-                                         next_word=next_word_flag)
+        result = result + __word2art(word=word,font=font,chr_ignore=chr_ignore,letters=letters,next_word=next_word_flag)
     if decoration is not None:
         result = result + decor(decoration, reverse=True)
     return result
