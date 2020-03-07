@@ -3591,6 +3591,86 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+>>> tprint("test1\ntest2\ntest3")
+ _               _    _
+| |_   ___  ___ | |_ / |
+| __| / _ \/ __|| __|| |
+| |_ |  __/\__ \| |_ | |
+ \__| \___||___/ \__||_|
+<BLANKLINE>
+ _               _    ____
+| |_   ___  ___ | |_ |___ \
+| __| / _ \/ __|| __|  __) |
+| |_ |  __/\__ \| |_  / __/
+ \__| \___||___/ \__||_____|
+<BLANKLINE>
+ _               _    _____
+| |_   ___  ___ | |_ |___ /
+| __| / _ \/ __|| __|  |_ \
+| |_ |  __/\__ \| |_  ___) |
+ \__| \___||___/ \__||____/
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("\n\ntest1\ntest2\ntest3")
+<BLANKLINE>
+<BLANKLINE>
+ _               _    _
+| |_   ___  ___ | |_ / |
+| __| / _ \/ __|| __|| |
+| |_ |  __/\__ \| |_ | |
+ \__| \___||___/ \__||_|
+<BLANKLINE>
+ _               _    ____
+| |_   ___  ___ | |_ |___ \
+| __| / _ \/ __|| __|  __) |
+| |_ |  __/\__ \| |_  / __/
+ \__| \___||___/ \__||_____|
+<BLANKLINE>
+ _               _    _____
+| |_   ___  ___ | |_ |___ /
+| __| / _ \/ __|| __|  |_ \
+| |_ |  __/\__ \| |_  ___) |
+ \__| \___||___/ \__||____/
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("\n\ntest1\ntest2\ntest3\n\n\n",font="lcd")
+<BLANKLINE>
+<BLANKLINE>
+                         _
+  |                 |     |
+ -+-   -       -   -+-    +
+  |   |/       \    |     |
+   -   --      -     -   ---
+<BLANKLINE>
+                         ___
+  |                 |       |
+ -+-   -       -   -+-   -+-
+  |   |/       \    |   |
+   -   --      -     -   ---
+<BLANKLINE>
+                         ___
+  |                 |       |
+ -+-   -       -   -+-   -+-
+  |   |/       \    |       |
+   -   --      -     -   ---
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("",font="lcd")
+<BLANKLINE>
+>>> tprint("\n",font="lcd")
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("\n\n",font="lcd")
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+>>> text2art("")
+''
+>>> text2art("",font="lcd")
+''
 >>> art_list(mode="ascii")
 alien
 ::)

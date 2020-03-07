@@ -1463,6 +1463,26 @@ zoidberg
 zombie
 'º_º'
 ******************************
+>>> tprint("test1\ntest2\ntest3","fancy42")
+ţ€$ţ1
+ţ€$ţ2
+ţ€$ţ3
+>>> tprint("test1\ntest2\ntest3\n","fancy44")
+тεƨт1
+тεƨт2
+тεƨт3
+<BLANKLINE>
+>>> tprint("","fancy44")
+<BLANKLINE>
+>>> tprint("\n","fancy44")
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint("\n\n","fancy44")
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+>>> text2art("",font="fancy44")
+''
 >>> decor_list()
 barcode1
 ▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌
