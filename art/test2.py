@@ -1481,6 +1481,8 @@ zombie
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+>>> text2art("",font="fancy44")
+''
 >>> decor_list()
 barcode1
 ▌│█║▌║▌║ ƭεรƭ ║▌║▌║█│▌

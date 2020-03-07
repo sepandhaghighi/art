@@ -3667,7 +3667,10 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
->>>
+>>> text2art("")
+''
+>>> text2art("",font="lcd")
+''
 >>> art_list(mode="ascii")
 alien
 ::)
