@@ -5,7 +5,6 @@ from .art_param import *
 import os
 import sys
 import random
-import codecs
 
 
 class artError(Exception):  # pragma: no cover
@@ -278,18 +277,13 @@ def tsave(
                 index = index + 1
             else:
                 break
-        file = codecs.open(test_name + extension, "w", encoding='utf-8')
+        file = open(test_name + extension, "w", encoding='utf-8')
         result = text2art(
             text,
             font=font,
             decoration=decoration,
             chr_ignore=chr_ignore)
-        try:
-            file.write(result)
-        except UnicodeDecodeError:  # pragma: no cover
-            file.close()
-            file = codecs.open(test_name + extension, "w")
-            file.write(result)
+        file.write(result)
         file.close()
         if print_status:
             print("Saved! \nFilename: " + test_name + extension)
