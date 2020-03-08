@@ -4646,6 +4646,12 @@ Filename: test1.2.txt
 'OK'
 >>> Data["Status"]
 True
+>>> result = []
+>>> for i in FONT_NAMES:
+...	    t = tsave("save-test",font=i,filename="save_test.txt",print_status=False,overwrite=True)
+...	    result.append(t["Status"])
+>>> all(result)
+True
 >>> os.remove("art.txt")
 >>> os.remove("art2.txt")
 >>> os.remove("art3.txt")
@@ -4653,5 +4659,6 @@ True
 >>> os.remove("test.txt")
 >>> os.remove("test1.txt")
 >>> os.remove("test1.2.txt")
+>>> os.remove("save_test.txt")
 
 '''
