@@ -56,6 +56,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `mode` parameter added to `font_list` and `art_list` functions
 - `decoration` parameter added to `text2art`, `tprint` and `tsave` functions
 - `\n` support bug fixed
+- `tsave` bug in Windows fixed
 ### Removed
 - `requirements.txt`
 ## [4.5] - 2020-01-29
