@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.6] - 2020-03-30
 ### Added
 - `NON_ASCII_ARTS` list
 - `decor_dic.py` file
@@ -1413,7 +1414,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.5...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.6...dev
+[4.6]: https://github.com/sepandhaghighi/art/compare/v4.5...v4.6
 [4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5
 [4.4]: https://github.com/sepandhaghighi/art/compare/v4.3...v4.4
 [4.3]: https://github.com/sepandhaghighi/art/compare/v4.2...v4.3
