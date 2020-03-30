@@ -238,7 +238,18 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
         <span style="color: #333333">...</span>
 <span style="color: #FF0000">art.art.artError</span>: number should have int type
 </pre></td></tr></table></div>
-
+<li>randart</li>
+<p><code>randart</code> function is added in <code>Version 2.2</code> as <code>art("random")</code> shortcut.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>randart()
+<span style="color: #888888">&#39;ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ &#39;</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>randart()
+<span style="color: #888888">&#39;✌(◕‿-)✌ &#39;</span>
+</pre></td></tr></table></div>
+<p><span class="red">Note1</span> : Use <code>ART_NAMES</code> to access all arts name list (new in <code>Version 4.2</code>)</p>
+<p><span class="red">Note2</span> : Use <code>NON_ASCII_ARTS</code> to access all Non-ASCII arts name list (new in <code>Version 4.6</code>)</p>
 </ol>
 <h2 id="ascii-text">ASCII text</h2>
 <p>⚠️ Some fonts don't support all characters</p>
@@ -1037,7 +1048,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <h2 id="testing">Testing</h2>
     <ul>
         <li>Only ASCII fonts and arts <ul><li><code>python -m art test</code></li></ul></li>
-        <li>All fonts and arts and decorations<ul><li><code>python -m art test2</code></li></ul></li>
+        <li>All fonts, arts and decorations<ul><li><code>python -m art test2</code></li></ul></li>
     </ul>
 <h2 id="cli">CLI</h2>
     <ul>
