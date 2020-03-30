@@ -5,6 +5,61 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.6] - 2020-03-30
+### Added
+- `NON_ASCII_ARTS` list
+- `decor_dic.py` file
+- `codecov.yml` file
+- `decor` function
+- `decor_list` function
+- `DecorList.ipynb` notebook
+- 10 new decorations
+	1. barcode1
+	2. champion1
+	3. chess1
+	4. lucky1
+	5. sad1
+	6. soccer1
+	7. star1
+	8. star2
+	9. wave1
+	10. wave2
+- 20 new fonts
+	1. scammer
+	2. strikethrough
+	3. drako
+	4. celtic
+	5. fasion
+	6. curly
+	7. russian
+	8. messletters
+	9. swirly
+	10. dotted
+	11. parenthesized
+	12. strange
+	13. wiggly
+	14. hazy
+	15. hyves
+	16. awcute
+	17. slammer
+	18. coptic1
+	19. coptic2
+	20. fancy108
+### Changed
+- `README.md` modified
+- `CONTRIBUTING.md` modified
+- MATLAB examples updated
+- `setup.py` modified
+- `coverage` dependency moved to `extras_require`
+- Test system modified
+- `random` mode modified
+- `test` parameter removed from `font_list` function
+- `mode` parameter added to `font_list` and `art_list` functions
+- `decoration` parameter added to `text2art`, `tprint` and `tsave` functions
+- `\n` support bug fixed
+- `tsave` function bug in Windows fixed
+### Removed
+- `requirements.txt`
 ## [4.5] - 2020-01-29
 ### Added
 - 35 new fonts
@@ -1359,7 +1414,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.5...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.6...dev
+[4.6]: https://github.com/sepandhaghighi/art/compare/v4.5...v4.6
 [4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5
 [4.4]: https://github.com/sepandhaghighi/art/compare/v4.3...v4.4
 [4.3]: https://github.com/sepandhaghighi/art/compare/v4.2...v4.3

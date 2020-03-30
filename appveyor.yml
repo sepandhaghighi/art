@@ -2,12 +2,6 @@ build: false
 
 environment:
   matrix:
-    - PYTHON: "C:\\Python27"
-      PYTHON_VERSION: "2.7.2"
-      PYTHON_ARCH: "32"
-    - PYTHON: "C:\\Python27"
-      PYTHON_VERSION: "2.7.2"
-      PYTHON_ARCH: "64"
     - PYTHON: "C:\\Python35"
       PYTHON_VERSION: "3.5.5"
       PYTHON_ARCH: "32"
@@ -25,6 +19,12 @@ environment:
       PYTHON_ARCH: "64"
     - PYTHON: "C:\\Python37"
       PYTHON_VERSION: "3.7.0"
+      PYTHON_ARCH: "32"
+    - PYTHON: "C:\\Python38"
+      PYTHON_VERSION: "3.8.0"
+      PYTHON_ARCH: "64"
+    - PYTHON: "C:\\Python38"
+      PYTHON_VERSION: "3.8.0"
       PYTHON_ARCH: "32"
     - PYTHON: "C:\\Python34"
       PYTHON_VERSION: "3.4.6"
@@ -36,10 +36,9 @@ init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe install -r requirements.txt"
   - "%PYTHON%/python.exe setup.py install"
 
 test_script:
-  - "%PYTHON%/python.exe -m art testcov"
+  - "%PYTHON%/python.exe -m art test"
   - "%PYTHON%/python.exe otherfile/version_check.py"
   - "%PYTHON%/python.exe -m cProfile -s cumtime art_profile.py"

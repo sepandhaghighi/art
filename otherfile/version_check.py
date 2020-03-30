@@ -6,12 +6,14 @@ import codecs
 from art.art_param import *
 
 Failed = 0
-VERSION = "4.5"
+VERSION = "4.6"
 
 README_ITEMS = ['<td align="center">{0}</td>'.format(str(FONT_COUNTER)),
                 '<img src="https://img.shields.io/badge/Art List-{0}-orange.svg">'.format(str(ART_COUNTER)),
                 '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg">'.format(str(FONT_COUNTER)),
-                '<td align="center">{0}</td>'.format(str(ART_COUNTER))]
+                '<td align="center">{0}</td>'.format(str(ART_COUNTER)),
+                '<td align="center">{0}</td>'.format(str(DECORATION_COUNTER)),
+                '<img src="https://img.shields.io/badge/Decor List-{0}-green.svg">'.format(str(DECORATION_COUNTER))]
 
 SETUP_ITEMS = [
     "version='{0}'"]

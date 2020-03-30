@@ -7,13 +7,13 @@ catch e
     fprintf(2,'** Error : %s\n',e.message);
 end
 
-% Import art lib (version > 4.2)
+% Import art lib
 artlib = py.importlib.import_module('art');
 
 % text2art function
-% text2art(text, font=DEFAULT_FONT, chr_ignore=True)
+% text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None)
 % Note : There is no need to use 'chr_ignore' flag in MATLAB 
-% unsupported characters (out of 95 printable characters) will be displayed by a question mark ('?')
+% unsupported characters will be displayed by a question mark ('?')
 art1 = artlib.text2art('art1');
 disp(char(art1));
 
@@ -50,8 +50,11 @@ disp(char(art11));
 art12 = artlib.text2art('art12','mix');
 disp(char(art12));
 
+artdecor = artlib.text2art('art decoration','white_bubble',true,'chess1');
+disp(char(artdecor));
+
 % tprint function
-% tprint(text, font=DEFAULT_FONT, chr_ignore=True)
+% tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None)
 % Note : There is no need to use 'chr_ignore' flag in MATLAB 
 % unsupported characters (out of 95 printable characters) will be displayed by a question mark ('?')
 artlib.tprint('art13');
@@ -78,8 +81,10 @@ artlib.tprint('art23','random-na');
 
 artlib.tprint('art24','mix');
 
+artlib.tprint('art decoration','white_bubble',true,'chess1');
+
 % tsave function
-% tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True,overwrite=False)
+% tsave(text,font=DEFAULT_FONT,filename="art",chr_ignore=True,print_status=True,overwrite=False,decoration=None)
 % Note : There is no need to use 'chr_ignore' flag in MATLAB 
 % unsupported characters (out of 95 printable characters) will be displayed by a question mark ('?')
 response = artlib.tsave('art','standard','test.txt');
@@ -93,3 +98,7 @@ disp(char(response2{'Message'}))
 response3 = artlib.tsave('art3','block','art.txt',true,true,true);
 disp('art3 message :')
 disp(char(response3{'Message'}))
+
+response4 = artlib.tsave('art decoration','white_bubble','art.txt',true,true,true,'chess1');
+disp('art4 message :')
+disp(char(response4{'Message'}))

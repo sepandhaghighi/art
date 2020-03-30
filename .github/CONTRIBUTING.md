@@ -9,10 +9,11 @@ Please consider the following :
 3. Add your new features or fix detected bugs
 	- To add a new font visit [here](#font)
 	- To add a new 1-line art visit [here](#1-line-art)
+	- To add a new decoration visit [here](#decoration)
 4. Add standard `docstring` to your functions
 5. Add tests for new features (`doctest`)
-	- **Non-ASCII** fonts in `test2.py`
-	- Other in `test.py`
+	- **ASCII** fonts/arts in `test.py`
+	- Other in `test2.py`
 6. Update `README.md` (if needed)
 7. Pass all CI tests
 8. Update `CHANGELOG.md`
@@ -59,10 +60,28 @@ Please consider the following :
 4. If 1-line art is bipartite:
 	- Add as list (Example : ```"1-line art name": ["string1","string1"]```)
 	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list
-5. Add a test case to `test.py` (*Alphabetical order*)  
-6. Re-run `ArtList.ipynb`
+5. If 1-line art is **Non-ASCII**:
+	- Add 1-line art name to `NON_ASCII_ARTS` list
+	- Add a test case to `test2.py` (*Alphabetical order*)
+6. If 1-line art is **ASCII**:
+	- Add a test case to `test.py` (*Alphabetical order*)
+	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list to remove it from random mode (*Optional*)
+7. Re-run `ArtList.ipynb`
 	- Before this step you should re-install `art` package : ```python setup.py install```
-7. Update 2 art counters in `README.md`
+8. Update 2 art counters in `README.md`
 	- Badge section
 	- Overview section
-8. Update `Reference` section in `README.md`
+9. Update `Reference` section in `README.md`
+
+## Decoration
+
+1. Select a non-duplicate name
+2. Add new decoration data as a list to the end of `decor_dic.py`
+3. Map decoration name and data in `DECORATIONS_MAP` dictionary
+4. Add a test case to `test2.py` (*Alphabetical order*)
+5. Re-run `DecorList.ipynb`
+	- Before this step you should re-install `art` package : ```python setup.py install```
+6. Update 2 decor counters in `README.md`
+	- Badge section
+	- Overview section
+7. Update `Reference` section in `README.md`

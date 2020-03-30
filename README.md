@@ -11,8 +11,9 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-540-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-560-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-516-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-10-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -25,6 +26,7 @@
    * [Usage](https://github.com/sepandhaghighi/art#usage)
    		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
    		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
+   		* [Decoration](https://github.com/sepandhaghighi/art#decoration)
    		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
    		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
    		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
@@ -66,11 +68,15 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">540</td>
+		<td align="center">560</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
 		<td align="center">516</td>
+	</tr>
+    <tr>
+		<td align="center">Decor Counter</td>
+		<td align="center">10</td>
 	</tr>
 </table>
 
@@ -176,7 +182,8 @@ art.art.artError: number should have int type
 '✌(◕‿-)✌ '
 ```	
 
-* Note : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+* Note1 : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+* Note2 : Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
 
 ### ASCII text
 	
@@ -246,7 +253,8 @@ dolor''', font="small")) # Multi-line print
 
 >>> print(text2art("test","white_bubble"))  # Non-ASCII font example
 ⓣⓔⓢⓣ
-
+>>> text2art("art",font="fancy5",decoration="barcode1") # decoration parameter is added in Version 4.6
+'▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌'
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
@@ -316,7 +324,8 @@ ___  ____ _    ____ ____
 |  \ |  | |    |  | |__/ 
 |__/ |__| |___ |__| |  \ 
 
-
+>>> tprint("art",font="fancy5",decoration="barcode1") # decoration parameter is added in Version 4.6
+▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌
 ```
 #### 3. tsave				
 
@@ -337,12 +346,36 @@ True
 >>> Response=tsave("art",filename="test.txt",overwrite=True) # overwrite parameter is added in Version 4.0
 Saved! 
 Filename: test.txt
+>>> Response=tsave("art",filename="test.txt",decoration="barcode1") # decoration parameter is added in Version 4.6
+Saved! 
+Filename: test.txt
                         
 ```
 
 * Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
 * Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
+### Decoration
+
+⚠️ Some environments don't support all decorations
+
+#### 1. decor
+
+This function return decoration as `str` in normal mode and raise `artError` in exception.
+```pycon
+>>> decor("barcode1")
+'▌│█║▌║▌║ '
+>>> decor("barcode1",reverse=True)
+' ║▌║▌║█│▌'
+>>> decor("barcode1") + text2art("    art   ",font="fancy42") + decor("barcode1",reverse=True)
+'▌│█║▌║▌║     ąяţ    ║▌║▌║█│▌'
+>>> decor(None)
+Traceback (most recent call last):
+	...
+art.art.artError: The 'decoration' type must be str.
+```
+
+* Note : Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
@@ -545,7 +578,6 @@ Keywords : `random-na`, `rand-na` & `rnd-na`
 ```pycon
 >>> tprint("test","random-na")
 ₮Ɇ₴₮
-
 >>> tprint("test","random-na")
 ʇsǝʇ
 
@@ -562,10 +594,8 @@ Keywords : `mix`
 ```pycon
 >>> tprint("test","mix")
 †Ɛѕ†
-
 >>> tprint("test","mix")
 tᏋѕt
-
 >>> tprint("test","mix")
 ꓄єร꓄
 ```
@@ -622,7 +652,7 @@ ___ ____ ____ ___
 >>> help(set_default)
 Help on function set_default in module art.art:
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False)
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False, decoration=None)
     Change text2art, tprint and tsave default values.
     
     :param font: input font
@@ -635,6 +665,8 @@ set_default(font='standard', chr_ignore=True, filename='art', print_status=True,
     :type print_status:bool
     :param overwrite : overwrite the saved file if true (only tsave)
     :type overwrite:bool
+    :param decoration: input decoration
+    :type decoration:str
     :return: None
 
 >>> tprint("test")
@@ -660,6 +692,12 @@ _/  _   _ _/
 		<td align="center">Function</td>
 		<td align="center">Normal Output</td>
 		<td align="center">Error</td>
+	</tr>
+    <tr>
+		<td align="center">decor</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+
 	</tr>
 	<tr>
 		<td align="center">art</td>
@@ -700,7 +738,7 @@ _/  _   _ _/
 python -m art test
 ```
 
-- All fonts and arts :
+- All fonts, arts and decorations :
 ```
 python -m art test2
 ```
@@ -728,7 +766,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
 
-* Open `FontList.ipynb` and `ArtList.ipynb`
+* Open `FontList.ipynb`, `ArtList.ipynb` and `DecorList.ipynb`
 * Edit and execute each part of the notes, step by step from the top panel by run button
 
 ### Screen record		
@@ -741,6 +779,7 @@ ART can be used online in interactive Jupyter Notebooks via the Binder service! 
 
 * View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
 * View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
+* View full decoration list ([Link1](https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb "Full Decoration List"),[Link2](http://art.shaghighi.ir/DecorList.html "Full Decoration List"))
 
 ## Issues & bug reports			
 

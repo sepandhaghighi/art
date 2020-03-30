@@ -5,7 +5,6 @@ from .art_param import *
 import os
 import sys
 import random
-import codecs
 
 
 class artError(Exception):  # pragma: no cover
@@ -59,34 +58,59 @@ def line(char="*", number=30):
     print(char * number)
 
 
-def font_list(text="test", test=False):
+def font_list(text="test", mode="all"):
     """
     Print all fonts.
 
     :param text : input text
     :type text : str
-    :param test: test flag
-    :type test: bool
+    :param mode: fonts mode (all,ascii,non-ascii)
+    :type mode: str
     :return: None
     """
-    fonts = set(FONT_MAP.keys())
-    if test:
+    fonts = set(FONT_NAMES)
+    if mode.lower() == "ascii":
         fonts = fonts - set(NON_ASCII_FONTS)
+    if mode.lower() == "non-ascii":
+        fonts = set(NON_ASCII_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
         text_temp = text
         tprint(text_temp, str(item))
 
 
-def art_list():
+def art_list(mode="all"):
     """
     Print all 1-Line arts.
 
+    :param mode: fonts mode (all,ascii,non-ascii)
+    :type mode: str
     :return: None
     """
-    for i in sorted(list(art_dic.keys())):
+    arts = set(ART_NAMES)
+    if mode.lower() == "ascii":
+        arts = arts - set(NON_ASCII_ARTS)
+    if mode.lower() == "non-ascii":
+        arts = set(NON_ASCII_ARTS)
+    for i in sorted(list(arts)):
         print(i)
         aprint(i)
+        line()
+
+
+def decor_list(text="test", font="fancy6"):
+    """
+    Print all decorations.
+
+    :param text : input text
+    :type text : str
+    :param font: input font
+    :type font:str
+    :return: None
+    """
+    for decor in DECORATION_NAMES:
+        print(decor)
+        tprint(text,font=font,decoration=decor)
         line()
 
 
@@ -179,7 +203,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
+def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     r"""
     Print art text (support \n).
 
@@ -189,13 +213,19 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True):
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
+    :param decoration: text decoration
+    :type decoration:str
     :return: None
     """
     try:
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        result = text2art(text, font=font, chr_ignore=chr_ignore)
+        result = text2art(
+            text,
+            font=font,
+            decoration=decoration,
+            chr_ignore=chr_ignore)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
@@ -207,7 +237,8 @@ def tsave(
         filename="art",
         chr_ignore=True,
         print_status=True,
-        overwrite=False):
+        overwrite=False,
+        decoration=None):
     r"""
     Save ascii art (support \n).
 
@@ -223,6 +254,8 @@ def tsave(
     :type print_status:bool
     :param overwrite : overwrite the saved file if true
     :type overwrite:bool
+    :param decoration: text decoration
+    :type decoration:str
     :return: None
     """
     try:
@@ -244,14 +277,13 @@ def tsave(
                 index = index + 1
             else:
                 break
-        file = codecs.open(test_name + extension, "w", encoding='utf-8')
-        result = text2art(text, font=font, chr_ignore=chr_ignore)
-        try:
-            file.write(result)
-        except UnicodeDecodeError:  # pragma: no cover
-            file.close()
-            file = codecs.open(test_name + extension, "w")
-            file.write(result)
+        file = open(test_name + extension, "w", encoding='utf-8')
+        result = text2art(
+            text,
+            font=font,
+            decoration=decoration,
+            chr_ignore=chr_ignore)
+        file.write(result)
         file.close()
         if print_status:
             print("Saved! \nFilename: " + test_name + extension)
@@ -349,6 +381,22 @@ def indirect_font(font, text):
     return font
 
 
+def indirect_decoration(decoration):
+    """
+    Check input decoration for indirect modes.
+
+    :param decoration: input decoration
+    :type decoration : str
+    :return: decoration as str
+    """
+    decorations = DECORATION_NAMES
+    if decoration not in decorations:
+        distance_list = list(
+            map(lambda x: distance_calc(decoration, x), decorations))
+        decoration = decorations[distance_list.index(min(distance_list))]
+    return decoration
+
+
 def mix_letters():
     """
     Return letters list in mix mode.
@@ -362,7 +410,7 @@ def mix_letters():
     return letters
 
 
-def __word2art(word, font, chr_ignore, letters):
+def __word2art(word, font, chr_ignore, letters, next_word):
     """
     Return art word.
 
@@ -374,11 +422,17 @@ def __word2art(word, font, chr_ignore, letters):
     :type chr_ignore: bool
     :param letters: font letters table
     :type letters: dict
+    :param next_word: next word flag
+    :type next_word: bool
     :return: ascii art as str
     """
     split_list = []
     result_list = []
     splitter = "\n"
+    if "win32" != sys.platform:
+        splitter = "\r\n"
+    if len(word) == 0 and next_word:
+        return splitter
     for i in word:
         if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
             continue
@@ -404,15 +458,13 @@ def __word2art(word, font, chr_ignore, letters):
                 temp = temp + " "
             temp = temp + split_list[j][i]
         result_list.append(temp)
-    if "win32" != sys.platform:
-        splitter = "\r\n"
     result = (splitter).join(result_list)
-    if result[-1] != "\n":
+    if result[-1] != "\n" and next_word:
         result += splitter
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
+def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     r"""
     Return art text (support \n).
 
@@ -422,6 +474,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
     :type font:str
     :param chr_ignore: ignore not supported character
     :type chr_ignore:bool
+    :param decoration: text decoration
+    :type decoration:str
     :return: ascii art text as str
     """
     letters = standard_dic
@@ -442,17 +496,20 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True):
         letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
-    for word in word_list:
-        if len(word) != 0:
-            result = result + __word2art(word=word,
-                                         font=font,
-                                         chr_ignore=chr_ignore,
-                                         letters=letters)
+    if decoration is not None:
+        result += decor(decoration)
+    next_word_flag = True
+    for index,word in enumerate(word_list):
+        if index == len(word_list)-1:
+            next_word_flag = False
+        result = result + __word2art(word=word,font=font,chr_ignore=chr_ignore,letters=letters,next_word=next_word_flag)
+    if decoration is not None:
+        result = result + decor(decoration, reverse=True)
     return result
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True, overwrite=False):
+                print_status=True, overwrite=False, decoration=None):
     """
     Change text2art, tprint and tsave default values.
 
@@ -466,10 +523,14 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type print_status:bool
     :param overwrite : overwrite the saved file if true (only tsave)
     :type overwrite:bool
+    :param decoration: input decoration
+    :type decoration:str
     :return: None
     """
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
+    if isinstance(decoration, str) is False and decoration is not None:
+        raise artError(DECORATION_TYPE_ERROR)
     if isinstance(chr_ignore, bool) is False:
         raise artError(CHR_IGNORE_TYPE_ERROR)
     if isinstance(filename, str) is False:
@@ -478,9 +539,9 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(PRINT_STATUS_TYPE_ERROR)
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore)
-    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite)
-    text2art.__defaults__ = (font, chr_ignore)
+    tprint.__defaults__ = (font, chr_ignore, decoration)
+    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite, decoration)
+    text2art.__defaults__ = (font, chr_ignore, decoration)
 
 
 def get_font_dic(font_name):
@@ -492,3 +553,21 @@ def get_font_dic(font_name):
     :return font's dictionary
     """
     return FONT_MAP[font_name][0]
+
+
+def decor(decoration, reverse=False):
+    """
+    Return given decoration part.
+
+    :param  decoration: decoration's name
+    :type decoration:str
+    :param reverse: true if second tail of decoration wanted
+    :type reverse:bool
+    :return decor's tail
+    """
+    if isinstance(decoration, str) is False:
+        raise artError(DECORATION_TYPE_ERROR)
+    decoration = indirect_decoration(decoration)
+    if reverse is True:
+        return DECORATIONS_MAP[decoration][-1]
+    return DECORATIONS_MAP[decoration][0]
