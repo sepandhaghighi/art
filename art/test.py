@@ -4518,11 +4518,11 @@ art.art.artError: The 'text' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'artname' type must be str.
->>> aprint("woman",number="22",text="")
+>>> aprint("woman",number="22")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'number' type must be int.
->>> aprint("love_you",number=1,text="")
+>>> aprint("love_you",number=1)
 »-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> set_default(font="italic")
 >>> tprint("test")

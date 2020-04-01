@@ -142,20 +142,18 @@ def aprint(artname, number=1, text=""):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param text: text for bipartite art
-    :type text: str
     :return: None
     """
     try:
         if artname == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        print(art(artname=artname, number=number, text=text))
+        print(art(artname=artname, number=number))
     except UnicodeEncodeError:
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def art(artname, number=1, text=""):
+def art(artname, number=1):
     """
     Return 1-line art.
 
@@ -163,8 +161,6 @@ def art(artname, number=1, text=""):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param text: text for bipartite art
-    :type text: str
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
@@ -187,11 +183,7 @@ def art(artname, number=1, text=""):
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
         raise artError(NUMBER_TYPE_ERROR)
-    if isinstance(art_value, str):
-        return (art_value + " ") * number
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    return (art_value[0] + text + art_value[1] + " ") * number
+    return (art_value + " ") * number
 
 
 def randart():
