@@ -317,7 +317,6 @@ NON_ASCII_ARTS = [
     'love in my eye1',
     'love in my eye2',
     'love in my eye3',
-    'love you',
     'love2',
     'man spider',
     'man tears',
@@ -326,15 +325,12 @@ NON_ASCII_ARTS = [
     'med man',
     'meditation',
     'meep',
-    'message1',
-    'message2',
     'monocle',
     'monster',
     'monster2',
     'mouse2',
     'mouse3',
     'mouse4',
-    'musical',
     'myancat',
     'nathan',
     'needle1',
@@ -415,7 +411,6 @@ NON_ASCII_ARTS = [
     'table flip',
     'teddy',
     'telephone',
-    'text decoration',
     'this guy',
     'tie-fighter',
     'toungue out1',
@@ -439,12 +434,7 @@ NON_ASCII_ARTS = [
     'zoidberg',
     'zombie']
 
-RANDOM_FILTERED_ARTS = [
-    "message2",
-    "love you",
-    "text decoration",
-    "message1",
-    "musical"] + NON_ASCII_ARTS
+RANDOM_FILTERED_ARTS = [] + NON_ASCII_ARTS
 
 
 NON_ASCII_FONTS = [
