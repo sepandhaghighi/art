@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- `text` parameter removed from `art` and `aprint` functions
+- `README.md` modified
+- `CONTRIBUTING.md` modified
+- MATLAB examples updated
+### Removed
+- 5 bipartite 1-line art
+	1. love you
+	2. message1
+	3. message2
+	4. musical
+	5. text decoration
 ## [4.6] - 2020-03-30
 ### Added
 - `NON_ASCII_ARTS` list
