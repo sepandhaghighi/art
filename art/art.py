@@ -134,7 +134,7 @@ def help_func():
     print("     - all 'yourtext'  -->  Example : 'python -m art all exampletext'")
 
 
-def aprint(artname, number=1, text=""):
+def aprint(artname, number=1):
     """
     Print 1-line art.
 
