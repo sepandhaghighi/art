@@ -146,7 +146,7 @@ c[_]
 >>> art(22,number=1) # raise artError
 Traceback (most recent call last):
         ...
-art.art.artError: artname shoud have str type
+art.art.artError: The 'artname' type must be str.
 
 ```
 #### 2. aprint				
@@ -164,7 +164,7 @@ This function print 1-line art in normal mode (return None) and raise `artError`
 >>> aprint("woman",number="22") # raise artError
 Traceback (most recent call last):
         ...
-art.art.artError: number should have int type
+art.art.artError: The 'number' type must be int.
 ```
 
 #### 3. randart
@@ -253,7 +253,7 @@ dolor''', font="small")) # Multi-line print
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
-art.art.artError: س is invalid 
+art.art.artError: س is invalid.
   
 ```
 #### 2. tprint				
@@ -607,7 +607,7 @@ tᏋѕt
 >>> Art=art("birds2222222",number=1) # correct --> Art=art("birds",number=1), error >= |artname|/2
 Traceback (most recent call last):
 	...
-art.art.artError: Invalid art name
+art.art.artError: Invalid art name.
 >>> aprint("happi231")  # correct --> aprint("happy"), error < |artname|/2
 ⎦˚◡˚⎣ 
 >>> aprint("happi2312344") # correct --> aprint("happy"), error >= |artname|/2
