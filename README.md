@@ -303,7 +303,7 @@ ___ ____ ____ ___
 >>> tprint('testسس',chr_ignore=False) # raise artError in exception 
 Traceback (most recent call last):
        ...
-art.art.artError: س is invalid
+art.art.artError: س is invalid.
 >>> tprint('''Lorem  
 ipsum 
 dolor''', font="cybermedium") # Multi-line print
@@ -613,7 +613,7 @@ art.art.artError: Invalid art name.
 >>> aprint("happi2312344") # correct --> aprint("happy"), error >= |artname|/2
 Traceback (most recent call last):
 	...
-art.art.artError: Invalid art name
+art.art.artError: Invalid art name.
 >>> Art=text2art("test",font="black") # correct --> Art=text2art("test",font="block")
 >>> print(Art)
 
