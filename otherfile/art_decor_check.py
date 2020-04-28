@@ -65,12 +65,15 @@ if __name__ == "__main__":
     Decor_Keys = list(Decor_Dict.keys())
     Decor_Values = list(Decor_Dict.values())
     for decor_name in Decor_Keys:
-        if not is_utf8(Decor_Dict[decor_name][0]) and not is_utf8(Decor_Dict[decor_name][1]):
+        if not is_utf8(
+                Decor_Dict[decor_name][0]) and not is_utf8(
+                Decor_Dict[decor_name][1]):
             Failed3 += 1
             print("UTF-8 compatibility error in decor : " + decor_name)
         if Decor_Values.count(Decor_Dict[decor_name]) > 1:
             Failed4 += 1
             print("Decor duplication error : " + decor_name)
 
-    print_result([Failed1, Failed2, Failed3, Failed4], [Message1, Message2, Message3, Message4])
+    print_result([Failed1, Failed2, Failed3, Failed4], [
+                 Message1, Message2, Message3, Message4])
     sys.exit(Failed2 + Failed1 + Failed3 + Failed4)

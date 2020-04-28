@@ -110,7 +110,7 @@ def decor_list(text="test", font="fancy6"):
     """
     for decor in DECORATION_NAMES:
         print(decor)
-        tprint(text,font=font,decoration=decor)
+        tprint(text, font=font, decoration=decor)
         line()
 
 
@@ -491,10 +491,14 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     if decoration is not None:
         result += decor(decoration)
     next_word_flag = True
-    for index,word in enumerate(word_list):
-        if index == len(word_list)-1:
+    for index, word in enumerate(word_list):
+        if index == len(word_list) - 1:
             next_word_flag = False
-        result = result + __word2art(word=word,font=font,chr_ignore=chr_ignore,letters=letters,next_word=next_word_flag)
+        result = result + __word2art(word=word,
+                                     font=font,
+                                     chr_ignore=chr_ignore,
+                                     letters=letters,
+                                     next_word=next_word_flag)
     if decoration is not None:
         result = result + decor(decoration, reverse=True)
     return result
@@ -532,7 +536,13 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration)
-    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite, decoration)
+    tsave.__defaults__ = (
+        font,
+        filename,
+        chr_ignore,
+        print_status,
+        overwrite,
+        decoration)
     text2art.__defaults__ = (font, chr_ignore, decoration)
 
 
