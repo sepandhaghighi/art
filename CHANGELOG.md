@@ -5,11 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `art_decor_check.py` file
 ### Changed
 - `text` parameter removed from `art` and `aprint` functions
 - `README.md` modified
 - `CONTRIBUTING.md` modified
 - MATLAB examples updated
+- `kitty2` 1-line art renamed to `kitty`
 ### Removed
 - 5 bipartite 1-line art
 	1. love you
@@ -17,6 +20,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	3. message2
 	4. musical
 	5. text decoration
+- 12 duplicate 1-line art
+	1. dog
+	2. human
+	3. mis mujeres
+	4. 100$
+	5. worm2
+	6. stars in my eyes
+	7. chainsword
+	8. badass
+	9. aliens
+	10. this guy
+	11. kitty1
+	12. don fuller
 ## [4.6] - 2020-03-30
 ### Added
 - `NON_ASCII_ARTS` list
