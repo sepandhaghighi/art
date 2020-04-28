@@ -4447,10 +4447,6 @@ art.art.artError: Invalid art name.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'font' type must be str.
->>> art("love_you",number=2,text=2)
-Traceback (most recent call last):
-        ...
-art.art.artError: The 'text' type must be str.
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
@@ -4514,16 +4510,14 @@ False
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
->>> art(22,number=1,text="")
+>>> art(22,number=1)
 Traceback (most recent call last):
         ...
 art.art.artError: The 'artname' type must be str.
->>> aprint("woman",number="22",text="")
+>>> aprint("woman",number="22")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'number' type must be int.
->>> aprint("love_you",number=1,text="")
-»-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> set_default(font="italic")
 >>> tprint("test")
 <BLANKLINE>
