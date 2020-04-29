@@ -143,7 +143,6 @@ UPPERCASE_FONTS = [
     "zone7"]
 
 NON_ASCII_ARTS = [
-    '100$',
     '3',
     '5',
     '9/11 truth',
@@ -164,7 +163,6 @@ NON_ASCII_ARTS = [
     'arrow1',
     'arrowhead',
     'awkward',
-    'badass',
     'band aid',
     'barbell',
     'barcode1',
@@ -221,8 +219,6 @@ NON_ASCII_ARTS = [
     'dgaf',
     'diamond bold',
     'diamond regular',
-    'dog',
-    'don fuller',
     'drowning',
     'drunkenness',
     'dunno',
@@ -286,7 +282,6 @@ NON_ASCII_ARTS = [
     'house',
     'hug me',
     'huhu',
-    'human',
     'hybrix',
     'i dont care',
     'i kill you',
@@ -411,7 +406,6 @@ NON_ASCII_ARTS = [
     'table flip',
     'teddy',
     'telephone',
-    'this guy',
     'tie-fighter',
     'toungue out1',
     'train',
