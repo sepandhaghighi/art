@@ -203,7 +203,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, show_font_name=False,chr_ignore=True, decoration=None):
+def tprint(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decoration=None):
     r"""
     Print art text (support \n).
 
@@ -217,8 +217,6 @@ def tprint(text, font=DEFAULT_FONT, show_font_name=False,chr_ignore=True, decora
     :type decoration:str
     :return: None
     """
-    if show_font_name:
-        print("#font name : %s\n" % font)
     try:
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
@@ -226,6 +224,7 @@ def tprint(text, font=DEFAULT_FONT, show_font_name=False,chr_ignore=True, decora
         result = text2art(
             text,
             font=font,
+            show_font=show_font,
             decoration=decoration,
             chr_ignore=chr_ignore)
         print(result)
@@ -237,6 +236,7 @@ def tsave(
         text,
         font=DEFAULT_FONT,
         filename="art",
+        show_font=False,
         chr_ignore=True,
         print_status=True,
         overwrite=False,
@@ -283,6 +283,7 @@ def tsave(
         result = text2art(
             text,
             font=font,
+            show_font=show_font,
             decoration=decoration,
             chr_ignore=chr_ignore)
         file.write(result)
@@ -466,7 +467,7 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
+def text2art(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decoration=None):
     r"""
     Return art text (support \n).
 
@@ -489,6 +490,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     font = font.lower()
     if font != "mix":
         font = indirect_font(font, text)
+        if show_font:
+            print("#font name : %s\n" % font)
         letters = get_font_dic(font)
         if FONT_MAP[font][1]:
             text_temp = text.lower()
