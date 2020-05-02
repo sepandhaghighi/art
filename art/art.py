@@ -203,7 +203,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
+def tprint(text, font=DEFAULT_FONT, show_font_name=False,chr_ignore=True, decoration=None):
     r"""
     Print art text (support \n).
 
@@ -217,6 +217,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     :type decoration:str
     :return: None
     """
+    if show_font_name:
+        print("#font name : %s\n" % font)
     try:
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
