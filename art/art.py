@@ -203,7 +203,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decoration=None):
+def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None, show_font=False):
     r"""
     Print art text (support \n).
 
@@ -215,6 +215,8 @@ def tprint(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decoration
     :type chr_ignore:bool
     :param decoration: text decoration
     :type decoration:str
+    :param show_font: to print the font type
+    :type show_font:bool
     :return: None
     """
     try:
@@ -467,7 +469,7 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decoration=None):
+def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None, show_font=False):
     r"""
     Return art text (support \n).
 
@@ -479,6 +481,8 @@ def text2art(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decorati
     :type chr_ignore:bool
     :param decoration: text decoration
     :type decoration:str
+    :param show_font: to print the font type
+    :type show_font:bool
     :return: ascii art text as str
     """
     letters = standard_dic
@@ -491,7 +495,7 @@ def text2art(text, font=DEFAULT_FONT, show_font=False, chr_ignore=True, decorati
     if font != "mix":
         font = indirect_font(font, text)
         if show_font:
-            print("#font name : %s\n" % font)
+            print("#font name : {}\n".format(font))
         letters = get_font_dic(font)
         if FONT_MAP[font][1]:
             text_temp = text.lower()
