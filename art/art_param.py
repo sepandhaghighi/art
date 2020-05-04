@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "4.5"  # pragma: no cover
+ART_VERSION = "4.6"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -143,7 +143,6 @@ UPPERCASE_FONTS = [
     "zone7"]
 
 NON_ASCII_ARTS = [
-    '100$',
     '3',
     '5',
     '9/11 truth',
@@ -164,7 +163,6 @@ NON_ASCII_ARTS = [
     'arrow1',
     'arrowhead',
     'awkward',
-    'badass',
     'band aid',
     'barbell',
     'barcode1',
@@ -221,8 +219,6 @@ NON_ASCII_ARTS = [
     'dgaf',
     'diamond bold',
     'diamond regular',
-    'dog',
-    'don fuller',
     'drowning',
     'drunkenness',
     'dunno',
@@ -286,7 +282,6 @@ NON_ASCII_ARTS = [
     'house',
     'hug me',
     'huhu',
-    'human',
     'hybrix',
     'i dont care',
     'i kill you',
@@ -317,7 +312,6 @@ NON_ASCII_ARTS = [
     'love in my eye1',
     'love in my eye2',
     'love in my eye3',
-    'love you',
     'love2',
     'man spider',
     'man tears',
@@ -326,15 +320,12 @@ NON_ASCII_ARTS = [
     'med man',
     'meditation',
     'meep',
-    'message1',
-    'message2',
     'monocle',
     'monster',
     'monster2',
     'mouse2',
     'mouse3',
     'mouse4',
-    'musical',
     'myancat',
     'nathan',
     'needle1',
@@ -415,8 +406,6 @@ NON_ASCII_ARTS = [
     'table flip',
     'teddy',
     'telephone',
-    'text decoration',
-    'this guy',
     'tie-fighter',
     'toungue out1',
     'train',
@@ -439,12 +428,7 @@ NON_ASCII_ARTS = [
     'zoidberg',
     'zombie']
 
-RANDOM_FILTERED_ARTS = [
-    "message2",
-    "love you",
-    "text decoration",
-    "message1",
-    "musical"] + NON_ASCII_ARTS
+RANDOM_FILTERED_ARTS = [] + NON_ASCII_ARTS
 
 
 NON_ASCII_FONTS = [
@@ -1175,20 +1159,20 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             }
 
 DECORATIONS_MAP = {"barcode1": barcode1,
-            "champion1": champion1,
-            "chess1": chess1,
-            "lucky1": lucky1,
-            "sad1": sad1,
-            "soccer1": soccer1,
-            "star1": star1,
-            "star2": star2,
-            "wave1": wave1,
-            "wave2": wave2}
+                   "champion1": champion1,
+                   "chess1": chess1,
+                   "lucky1": lucky1,
+                   "sad1": sad1,
+                   "soccer1": soccer1,
+                   "star1": star1,
+                   "star2": star2,
+                   "wave1": wave1,
+                   "wave2": wave2}
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
 DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
 FONT_COUNTER = len(FONT_NAMES)  # pragma: no cover
 ART_COUNTER = len(ART_NAMES)  # pragma: no cover
-DECORATION_COUNTER = len(DECORATION_NAMES) # pragma: no cover
+DECORATION_COUNTER = len(DECORATION_NAMES)  # pragma: no cover
 DEFAULT_FONT = "standard"  # pragma: no cover
