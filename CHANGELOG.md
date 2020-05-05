@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `art_decor_check.py` file
+- Greeting GitHub actions
 - 190 new decorations:
 	1. angry1
 	2. angry2

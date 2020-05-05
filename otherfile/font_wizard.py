@@ -83,19 +83,6 @@ if __name__ == "__main__":
         print(Error4)
         sys.exit()
     if len(font_dic) == 95:
-        font_name = input("Please enter font name (string) : ")
-        text_dic_file = open("../art/text_dic3.py", "a+")
-        text_dic_file.write("\n")
-        text_dic_file.write(font_name + " = {\n")
-        letter_index = 0
-        for letter in Letters + " ":
-            text_dic_file.write("    " + "'" + letter + "': '" + font_dic[letter] + "'")
-            if letter_index < 94:
-                text_dic_file.write(",\n")
-            else:
-                text_dic_file.write("}\n")
-            letter_index += 1
-        text_dic_file.close()
         print("Done!")
         print("Font dictionary : \n")
         print(font_dic)

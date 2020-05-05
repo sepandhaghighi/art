@@ -11,3 +11,4 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Congratulations! You have made your first issue to `art`.<br>We will respond your issue and do our best to solve it as soon as possible, you can see more issues [here](https://github.com/sepandhaghighi/art/issues).'
         pr-message: 'Congratulations! You have made your first Pull request to `art`.<br>Changes and improvements are more than welcome! heart Feel free to fork and open a pull request.<hr>[Contribution Guidline](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)'
+        
