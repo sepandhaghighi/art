@@ -1158,16 +1158,16 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "slammer": [slammer_dic, False]
             }
 
-DECORATIONS_MAP = {"angry1" : angry1, # pragma: no cover
+DECORATIONS_MAP = {"angry1" : angry1,  # pragma: no cover
             "angry2" : angry2,
             "arrow1" : arrow1,
             "arrow2" : arrow2,
             "arrow3" : arrow3,
             "arrow4" : arrow4,
-            "arrow4" : arrow4,
             "arrow5" : arrow5,
             "arrow6" : arrow6,
             "arrow7" : arrow7,
+            "arrow8" : arrow8,
             "arrow_wave1" : arrow_wave1,
             "arrow_wave2" : arrow_wave2,
             "ball1" : ball1,
@@ -1185,7 +1185,6 @@ DECORATIONS_MAP = {"angry1" : angry1, # pragma: no cover
             "cat3" : cat3,
             "cell1" : cell1,
             "champion1" : champion1,
-            "chess1" : chess1,
             "chess1" : chess1,
             "confused1" : confused1,
             "confused2" : confused2,
@@ -1284,6 +1283,7 @@ DECORATIONS_MAP = {"angry1" : angry1, # pragma: no cover
             "fancy86" : fancy86,
             "fancy87" : fancy87,
             "fancy88" : fancy88,
+            "fancy89" : fancy89,
             "flame1" : flame1,
             "flower1" : flower1,
             "food1" : food1,
@@ -1353,11 +1353,11 @@ DECORATIONS_MAP = {"angry1" : angry1, # pragma: no cover
             "wave2" : wave2,
             "wave3" : wave3,
             "wave4" : wave4,
-            "wave4" : wave4,
             "wave5" : wave5,
             "wave6" : wave6,
             "wave7" : wave7,
-            "wave8" : wave8}
+            "wave8" : wave8,
+            "wave9" : wave9}
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
 DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
