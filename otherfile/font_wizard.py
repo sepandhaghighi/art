@@ -84,7 +84,6 @@ if __name__ == "__main__":
         sys.exit()
     if len(font_dic) == 95:
         font_name = input("Please enter font name (string) : ")
-        #TODO: Check if name is unique.
         text_dic_file = open("../art/text_dic3.py", "a+")
         text_dic_file.write("\n")
         text_dic_file.write(font_name + " = {\n")
