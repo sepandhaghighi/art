@@ -13,7 +13,7 @@
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-560-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-499-orange.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-10-green.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-195-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -76,7 +76,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
     <tr>
 		<td align="center">Decor Counter</td>
-		<td align="center">10</td>
+		<td align="center">195</td>
 	</tr>
 </table>
 
@@ -818,6 +818,7 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 17. [Hubpages](https://hubpages.com/technology/one-line-ascii-art-for-twitter)
 18. [ASCII-ART](http://www.ascii-art.de/ascii/mno/one_line.txt)
 19. [Messletters](https://www.messletters.com/en/)
+20. [Webestools](http://www.webestools.com/)
 
 ## Donate to our project
 								
