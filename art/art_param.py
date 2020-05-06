@@ -1159,7 +1159,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             }
 
 DECORATIONS_MAP = {"angry1" : angry1,  # pragma: no cover
-            "angry2" : angry2,
             "arrow1" : arrow1,
             "arrow2" : arrow2,
             "arrow3" : arrow3,
@@ -1173,7 +1172,6 @@ DECORATIONS_MAP = {"angry1" : angry1,  # pragma: no cover
             "ball1" : ball1,
             "ball2" : ball2,
             "ball3" : ball3,
-            "ball4" : ball4,
             "barcode1" : barcode1,
             "bazar1" : bazar1,
             "block1" : block1,
@@ -1281,9 +1279,6 @@ DECORATIONS_MAP = {"angry1" : angry1,  # pragma: no cover
             "fancy84" : fancy84,
             "fancy85" : fancy85,
             "fancy86" : fancy86,
-            "fancy87" : fancy87,
-            "fancy88" : fancy88,
-            "fancy89" : fancy89,
             "flame1" : flame1,
             "flower1" : flower1,
             "food1" : food1,
