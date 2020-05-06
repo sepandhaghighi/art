@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `art_decor_check.py` file
 - Greeting GitHub actions
-- 190 new decorations:
+- 185 new decorations:
 	1. angry1
 	2. arrow1
 	3. arrow2
@@ -42,91 +42,91 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	31. egypt1
 	32. emotions1
 	33. fancy1
-	34. fancy10
-	35. fancy11
-	36. fancy12
-	37. fancy13
-	38. fancy14
-	39. fancy15
-	40. fancy16
-	41. fancy17
-	42. fancy18
-	43. fancy19
-	44. fancy2
-	45. fancy20
-	46. fancy21
-	47. fancy22
-	48. fancy23
-	49. fancy24
-	50. fancy25
-	51. fancy26
-	52. fancy27
-	53. fancy28
-	54. fancy29
-	55. fancy3
-	56. fancy30
-	57. fancy31
-	58. fancy32
-	59. fancy33
-	60. fancy34
-	61. fancy35
-	62. fancy36
-	63. fancy37
-	64. fancy38
-	65. fancy39
-	66. fancy4
-	67. fancy40
-	68. fancy41
-	69. fancy42
-	70. fancy43
-	71. fancy44
-	72. fancy45
-	73. fancy46
-	74. fancy47
-	75. fancy48
-	76. fancy49
-	77. fancy5
-	78. fancy50
-	79. fancy51
-	80. fancy52
-	81. fancy53
-	82. fancy54
-	83. fancy55
-	84. fancy56
-	85. fancy57
-	86. fancy58
-	87. fancy59
-	88. fancy6
-	89. fancy60
-	90. fancy61
-	91. fancy62
-	92. fancy63
-	93. fancy64
-	94. fancy65
-	95. fancy66
-	96. fancy67
-	97. fancy68
-	98. fancy69
-	99. fancy7
-	100. fancy70
-	101. fancy71
-	102. fancy72
-	103. fancy73
-	104. fancy74
-	105. fancy75
-	106. fancy76
-	107. fancy77
-	108. fancy78
-	109. fancy79
-	110. fancy8
-	111. fancy80
-	112. fancy81
-	113. fancy82
-	114. fancy83
-	115. fancy84
-	116. fancy85
-	117. fancy86
-	118. fancy9
+	34. fancy2
+	35. fancy3
+	36. fancy4
+	37. fancy5
+	38. fancy6
+	39. fancy7
+	40. fancy8
+	41. fancy9
+	42. fancy10
+	43. fancy11
+	44. fancy12
+	45. fancy13
+	46. fancy14
+	47. fancy15
+	48. fancy16
+	49. fancy17
+	50. fancy18
+	51. fancy19
+	52. fancy20
+	53. fancy21
+	54. fancy22
+	55. fancy23
+	56. fancy24
+	57. fancy25
+	58. fancy26
+	59. fancy27
+	60. fancy28
+	61. fancy29
+	62. fancy30
+	63. fancy31
+	64. fancy32
+	65. fancy33
+	66. fancy34
+	67. fancy35
+	68. fancy36
+	69. fancy37
+	70. fancy38
+	71. fancy39
+	72. fancy40
+	73. fancy41
+	74. fancy42
+	75. fancy43
+	76. fancy44
+	77. fancy45
+	78. fancy46
+	79. fancy47
+	80. fancy48
+	81. fancy49
+	82. fancy50
+	83. fancy51
+	84. fancy52
+	85. fancy53
+	86. fancy54
+	87. fancy55
+	88. fancy56
+	89. fancy57
+	90. fancy58
+	91. fancy59
+	92. fancy60
+	93. fancy61
+	94. fancy62
+	95. fancy63
+	96. fancy64
+	97. fancy65
+	98. fancy66
+	99. fancy67
+	100. fancy68
+	101. fancy69
+	102. fancy70
+	103. fancy71
+	104. fancy72
+	105. fancy73
+	106. fancy74
+	107. fancy75
+	108. fancy76
+	109. fancy77
+	110. fancy78
+	111. fancy79
+	112. fancy80
+	113. fancy81
+	114. fancy82
+	115. fancy83
+	116. fancy84
+	117. fancy85
+	118. fancy86
 	119. flame1
 	120. flower1
 	121. food1
@@ -168,21 +168,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	157. smile1
 	158. snow1
 	159. snow2
-	160. star10
-	161. star11
-	162. star12
-	163. star13
-	164. star14
-	165. star15
-	166. star16
-	167. star17
-	168. star3
-	169. star4
-	170. star5
-	171. star6
-	172. star7
-	173. star8
-	174. star9
+	160. star3
+	161. star4
+	162. star5
+	163. star6
+	164. star7
+	165. star8
+	166. star9
+	167. star10
+	168. star11
+	169. star12
+	170. star13
+	171. star14
+	172. star15
+	173. star16
+	174. star17
 	175. temple1
 	176. title1
 	177. tree1
