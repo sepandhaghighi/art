@@ -548,9 +548,9 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(PRINT_STATUS_TYPE_ERROR)
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore, decoration)
+    tprint.__defaults__ = (font, chr_ignore, decoration, show_font)
     tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite, decoration)
-    text2art.__defaults__ = (font, chr_ignore, decoration)
+    text2art.__defaults__ = (font, chr_ignore, decoration, show_font)
 
 
 def get_font_dic(font_name):
