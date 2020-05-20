@@ -18,6 +18,7 @@ fi
  
 $PYTHON_COMMAND otherfile/version_check.py
 $PYTHON_COMMAND otherfile/font_check.py
+$PYTHON_COMMAND otherfile/art_decor_check.py
 $PYTHON_COMMAND -m art testcov2
 
 if [ "$IS_IN_TRAVIS" = 'false' ] || [ "$TRAVIS_PYTHON_VERSION" = '3.6' ]

@@ -3675,9 +3675,6 @@ _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
 alien
 ::)
 ******************************
-aliens
-(<>..<>)
-******************************
 american money1
 [($)]
 ******************************
@@ -3758,9 +3755,6 @@ cat3
 ******************************
 caterpillar
 ,/\,/\,/\,/\,/\,/\,o
-******************************
-chainsword
- |O/////[{:;:;:;:;:;:;:;:;>
 ******************************
 charly
 +:)
@@ -3987,10 +3981,7 @@ kiss
 kiss my ass
 (_x_)
 ******************************
-kitty1
-=^..^=
-******************************
-kitty2
+kitty
 =^. .^=
 ******************************
 knife1
@@ -4037,9 +4028,6 @@ metal
 ******************************
 mini penis
 =D
-******************************
-mis mujeres
-(-(-_(-_-)_-)-)
 ******************************
 monkey
 @('_')@
@@ -4227,9 +4215,6 @@ squigle with spirals
 star in my eyes
 <*_*>
 ******************************
-stars in my eyes
-<*_*>
-******************************
 stealth fighter
 -^-
 ******************************
@@ -4329,9 +4314,6 @@ woops
 worm
 _/\__/\__0>
 ******************************
-worm2
-~
-******************************
 yo
 __o000o__(o)(o)__o000o__
 ******************************
@@ -4345,11 +4327,11 @@ __o000o__(o)(o)__o000o__
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        _  _        __
-__   __| || |      / /_
-\ \ / /| || |_    | '_ \
- \ V / |__   _| _ | (_) |
-  \_/     |_|  (_) \___/
+        _  _       _____
+__   __| || |     |___  |
+\ \ / /| || |_       / /
+ \ V / |__   _| _   / /
+  \_/     |_|  (_) /_/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4447,10 +4429,6 @@ art.art.artError: Invalid art name.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'font' type must be str.
->>> art("love_you",number=2,text=2)
-Traceback (most recent call last):
-        ...
-art.art.artError: The 'text' type must be str.
 >>> Data=tsave("test file\nk",filename="test")
 Saved!
 Filename: test.txt
@@ -4514,16 +4492,14 @@ False
 Traceback (most recent call last):
         ...
 art.art.artError: The 'text' type must be str.
->>> art(22,number=1,text="")
+>>> art(22,number=1)
 Traceback (most recent call last):
         ...
 art.art.artError: The 'artname' type must be str.
->>> aprint("woman",number="22",text="")
+>>> aprint("woman",number="22")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'number' type must be int.
->>> aprint("love_you",number=1,text="")
-»-(¯`·.·´¯)-><-(¯`·.·´¯)-«
 >>> set_default(font="italic")
 >>> tprint("test")
 <BLANKLINE>

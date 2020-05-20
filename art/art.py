@@ -75,7 +75,7 @@ def font_list(text="test", mode="all"):
         fonts = set(NON_ASCII_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
-        text_temp = text
+        text_temp = text + "\n"
         tprint(text_temp, str(item))
 
 
@@ -110,7 +110,7 @@ def decor_list(text="test", font="fancy6"):
     """
     for decor in DECORATION_NAMES:
         print(decor)
-        tprint(text,font=font,decoration=decor)
+        tprint(text, font=font, decoration=decor)
         line()
 
 
@@ -134,7 +134,7 @@ def help_func():
     print("     - all 'yourtext'  -->  Example : 'python -m art all exampletext'")
 
 
-def aprint(artname, number=1, text=""):
+def aprint(artname, number=1):
     """
     Print 1-line art.
 
@@ -142,20 +142,18 @@ def aprint(artname, number=1, text=""):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param text: text for bipartite art
-    :type text: str
     :return: None
     """
     try:
         if artname == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        print(art(artname=artname, number=number, text=text))
+        print(art(artname=artname, number=number))
     except UnicodeEncodeError:
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def art(artname, number=1, text=""):
+def art(artname, number=1):
     """
     Return 1-line art.
 
@@ -163,8 +161,6 @@ def art(artname, number=1, text=""):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param text: text for bipartite art
-    :type text: str
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
@@ -187,11 +183,7 @@ def art(artname, number=1, text=""):
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
         raise artError(NUMBER_TYPE_ERROR)
-    if isinstance(art_value, str):
-        return (art_value + " ") * number
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    return (art_value[0] + text + art_value[1] + " ") * number
+    return (art_value + " ") * number
 
 
 def randart():
@@ -499,10 +491,14 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     if decoration is not None:
         result += decor(decoration)
     next_word_flag = True
-    for index,word in enumerate(word_list):
-        if index == len(word_list)-1:
+    for index, word in enumerate(word_list):
+        if index == len(word_list) - 1:
             next_word_flag = False
-        result = result + __word2art(word=word,font=font,chr_ignore=chr_ignore,letters=letters,next_word=next_word_flag)
+        result = result + __word2art(word=word,
+                                     font=font,
+                                     chr_ignore=chr_ignore,
+                                     letters=letters,
+                                     next_word=next_word_flag)
     if decoration is not None:
         result = result + decor(decoration, reverse=True)
     return result
@@ -540,7 +536,13 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration)
-    tsave.__defaults__ = (font, filename, chr_ignore, print_status, overwrite, decoration)
+    tsave.__defaults__ = (
+        font,
+        filename,
+        chr_ignore,
+        print_status,
+        overwrite,
+        decoration)
     text2art.__defaults__ = (font, chr_ignore, decoration)
 
 
