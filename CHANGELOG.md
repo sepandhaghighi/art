@@ -5,6 +5,105 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- 98 new art:
+	1. angry birds
+  	2. angry face
+  	3. angry troll
+  	4. at what cost
+  	5. barf
+  	6. basking in glory
+  	7. bear GTFO
+	8. bear squiting
+	9. boxing
+	10. breakdown
+	11. careless
+	12. chasing
+	13. cheers
+	14. chicken
+	15. confused scratch
+	16. crazy
+	17. creeper
+	18. cry face
+	19. cry troll
+	20. cute face
+	21. dance2
+	22. dancing
+	23. dear god why
+	24. devious smile
+	25. disagree
+	26. discombobulated
+	27. dislike1
+	28. dislike2
+	29. do you even lift bro?
+	30. double flip
+	31. dude glasses2
+	32. emo dance
+	33. excited
+	34. exorcism
+	35. eye roll
+	36. feel perky
+	37. fido
+	38. fight
+	39. fisticuffs
+	40. flip friend
+	41. fly away
+	42. flying
+	43. fuck you
+	44. happy face
+	45. happy hug
+	46. hitchhicking
+	47. hugger
+	48. im a hugger
+	49. injured
+	50. innocent face
+	51. japanese lion face
+	52. judgemental
+	53. judging
+	54. kissing
+	55. kitty emote
+	56. listening to headphones
+	57. looking down
+	58. love3
+	59. meow
+	60. no support
+	61. opera
+	62. peepers
+	63. pointing
+	64. pretty eyes
+	65. put the table back
+	66. resting my eyes
+	67. robot3
+	68. running
+	69. sad and confused
+	70. sad and crying
+	71. sad face
+	72. satisfied
+	73. seal
+	74. shark face
+	75. shy
+	76. sleepy
+	77. staring
+	78. stranger danger
+	79. strut
+	80. stunna shades
+	81. surprised2
+	82. taking a dump
+	83. tgif
+	84. things that can_t be unseen
+	85. tidy up
+	86. tired
+	87. touchy feely
+	88. tripping out
+	89. trolling
+	90. wave dance
+	91. whisling
+	92. winnie the pooh
+	93. winning
+	94. wizard2
+	95. worried
+	96. yun
+	97. zombie2
+	98. zoned
 ## [4.7] - 2020-05-20
 ### Added
 - `art_decor_check.py` file
