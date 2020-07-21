@@ -569,7 +569,7 @@ art_dic = {
     "winning": "(•̀ᴗ•́)و ̑̑",
     "zombie2": "[¬º-°]¬",
     "pointing": "(☞ﾟヮﾟ)☞",
-    "chasing": "''⌐(ಠ۾ಠ)¬'''",
+    "chasing": "''⌐(ಠ۾ಠ)¬''",
     "whisling": "(っ•́｡•́)♪♬",
     "injured": "(҂◡_◡)",
     "creeper": "ƪ(ړײ)‎ƪ​​",
