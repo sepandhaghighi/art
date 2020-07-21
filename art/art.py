@@ -75,7 +75,7 @@ def font_list(text="test", mode="all"):
         fonts = set(NON_ASCII_FONTS)
     for item in sorted(list(fonts)):
         print(str(item) + " : ")
-        text_temp = text
+        text_temp = text + "\n"
         tprint(text_temp, str(item))
 
 
