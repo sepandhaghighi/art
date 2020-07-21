@@ -480,6 +480,7 @@ NON_ASCII_ARTS = [
     'sunglasses1',
     'sunny day',
     'surprised2',
+    'surprised3',
     'sword2',
     'sword3',
     'sword8',

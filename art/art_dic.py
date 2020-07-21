@@ -477,7 +477,7 @@ art_dic = {
     "snowman2": '{ }( : ^ )( """" )( )',
     "marshmallows": "-()_)--()_)---",
     "nerd": "::(",
-    "surprised2": "(O_o)",
+    "surprised3": "(O_o)",
     "boombox2": "♫♪ |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ♫♪",
     "equalizer": "▇ ▅ █ ▅ ▇ ▂ ▃ ▁ ▁ ▅ ▃ ▅ ▅ ▄ ▅ ▇",
     "playing cards": "[♥]]] [♦]]] [♣]]] [♠]]]",
