@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 - 98 new art:
 	1. angry birds
-  	2. angry face
+	2. angry face2
   	3. angry troll
   	4. at what cost
   	5. barf

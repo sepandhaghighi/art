@@ -158,7 +158,7 @@ NON_ASCII_ARTS = [
     'american money5',
     'angry birds',
     'angry face',
-    'angry face',
+    'angry face2',
     'angry troll',
     'angry',
     'angry2',

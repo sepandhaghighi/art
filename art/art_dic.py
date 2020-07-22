@@ -455,7 +455,7 @@ art_dic = {
     "baseball fan": "q:o)",
     "basking in glory": "ヽ(´ー｀)ノ",
     "angel2": "O:-)",
-    "angry face": "(╬ ಠ益ಠ)",
+    "angry face2": "(╬ ಠ益ಠ)",
     "really mad": ">:-I",
     "licking lips": ":-9",
     "buck teeth": ":-B",
