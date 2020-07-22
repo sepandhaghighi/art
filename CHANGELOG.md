@@ -48,7 +48,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	40. flip friend
 	41. fly away
 	42. flying
-	43. fuck you
+	43. fuck you2
 	44. happy face
 	45. happy hug
 	46. hitchhicking

@@ -589,7 +589,7 @@ art_dic = {
     "stunna shades": "(っ▀¯▀)つ",
     "chicken": "ʚ(•｀",
     "barf": "(´ж｀ς)",
-    "fuck you" : "(° ͜ʖ͡°)╭∩╮",
+    "fuck you2" : "(° ͜ʖ͡°)╭∩╮",
     "exorcism": "ح(•̀ж•́)ง †",
     "taking a dump": "(⩾﹏⩽)",
     "wave dance": "~(^-^)~",
