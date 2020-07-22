@@ -293,7 +293,7 @@ NON_ASCII_ARTS = [
     'frown',
     'fu',
     'fuck you',
-    'fuck you2'
+    'fuck you2',
     'fuckall',
     'fungry',
     'ghost',
