@@ -68,42 +68,41 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	60. no support
 	61. opera
 	62. peepers
-	63. pointing
-	64. pretty eyes
-	65. put the table back
-	66. resting my eyes
-	67. robot3
-	68. running
-	69. sad and confused
-	70. sad and crying
-	71. sad face
-	72. satisfied
-	73. seal
-	74. shark face
-	75. shy
-	76. sleepy
-	77. staring
-	78. stranger danger
-	79. strut
-	80. stunna shades
-	81. surprised3
-	82. taking a dump
-	83. tgif
-	84. things that can_t be unseen
-	85. tidy up
-	86. tired
-	87. touchy feely
-	88. tripping out
-	89. trolling
-	90. wave dance
-	91. whisling
-	92. winnie the pooh
-	93. winning
-	94. wizard2
-	95. worried
-	96. yun
-	97. zombie2
-	98. zoned
+	63. pretty eyes
+	64. put the table back
+	65. resting my eyes
+	66. robot3
+	67. running
+	68. sad and confused
+	69. sad and crying
+	70. sad face
+	71. satisfied
+	72. seal
+	73. shark face
+	74. shy
+	75. sleepy
+	76. staring
+	77. stranger danger
+	78. strut
+	79. stunna shades
+	80. surprised3
+	81. taking a dump
+	82. tgif
+	83. things that can_t be unseen
+	84. tidy up
+	85. tired
+	86. touchy feely
+	87. tripping out
+	88. trolling
+	89. wave dance
+	90. whisling
+	91. winnie the pooh
+	92. winning
+	93. wizard2
+	94. worried
+	95. yun
+	96. zombie2
+	97. zoned
 ## [4.7] - 2020-05-20
 ### Added
 - `art_decor_check.py` file

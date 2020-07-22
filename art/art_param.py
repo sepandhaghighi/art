@@ -415,7 +415,6 @@ NON_ASCII_ARTS = [
     'playing cards',
     'playing in snow',
     'point',
-    'pointing',
     'polar bear',
     'pretty eyes',
     'professor',

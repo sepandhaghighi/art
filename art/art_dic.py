@@ -568,7 +568,6 @@ art_dic = {
     "dislike1": "(Ծ‸ Ծ)",
     "winning": "(•̀ᴗ•́)و ̑̑",
     "zombie2": "[¬º-°]¬",
-    "pointing": "(☞ﾟヮﾟ)☞",
     "chasing": "''⌐(ಠ۾ಠ)¬''",
     "whisling": "(っ•́｡•́)♪♬",
     "injured": "(҂◡_◡)",
