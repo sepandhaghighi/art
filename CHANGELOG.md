@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- 97 new art:
+- 96 new art:
 	1. angry birds
 	2. angry face2
   	3. angry troll
@@ -36,73 +36,74 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	28. dislike2
 	29. do you even lift bro?
 	30. double flip
-	31. dude glasses2
-	32. emo dance
-	33. excited
-	34. exorcism
-	35. eye roll
-	36. feel perky
-	37. fido
-	38. fight
-	39. fisticuffs
-	40. flip friend
-	41. fly away
-	42. flying
-	43. fuck you2
-	44. happy face
-	45. happy hug
-	46. hitchhicking
-	47. hugger
-	48. im a hugger
-	49. injured
-	50. innocent face
-	51. japanese lion face
-	52. judgemental
-	53. judging
-	54. kissing
-	55. kitty emote
-	56. listening to headphones
-	57. looking down
-	58. love3
-	59. meow
-	60. no support
-	61. opera
-	62. peepers
-	63. pretty eyes
-	64. put the table back
-	65. resting my eyes
-	66. robot3
-	67. running
-	68. sad and confused
-	69. sad and crying
-	70. sad face
-	71. satisfied
-	72. seal
-	73. shark face
-	74. shy
-	75. sleepy
-	76. staring
-	77. stranger danger
-	78. strut
-	79. stunna shades
-	80. surprised3
-	81. taking a dump
-	82. tgif
-	83. things that can_t be unseen
-	84. tidy up
-	85. tired
-	86. touchy feely
-	87. tripping out
-	88. trolling
-	89. wave dance
-	90. whisling
-	91. winnie the pooh
-	92. winning
-	93. wizard2
-	94. worried
-	95. yun
-	96. zombie2
-	97. zoned
+	31. emo dance
+	32. excited
+	33. exorcism
+	34. eye roll
+	35. feel perky
+	36. fido
+	37. fight
+	38. fisticuffs
+	39. flip friend
+	40. fly away
+	41. flying
+	42. fuck you2
+	43. happy face
+	44. happy hug
+	45. hitchhicking
+	46. hugger
+	47. im a hugger
+	48. injured
+	49. innocent face
+	50. japanese lion face
+	51. judgemental
+	52. judging
+	53. kissing
+	54. kitty emote
+	55. listening to headphones
+	56. looking down
+	57. love3
+	58. meow
+	59. no support
+	60. opera
+	61. peepers
+	62. pretty eyes
+	63. put the table back
+	64. resting my eyes
+	65. robot3
+	66. running
+	67. sad and confused
+	68. sad and crying
+	69. sad face
+	70. satisfied
+	71. seal
+	72. shark face
+	73. shy
+	74. sleepy
+	75. staring
+	76. stranger danger
+	77. strut
+	78. stunna shades
+	79. surprised2
+	80. taking a dump
+	81. tgif
+	82. things that can_t be unseen
+	83. tidy up
+	84. tired
+	85. touchy feely
+	86. tripping out
+	87. trolling
+	88. wave dance
+	89. whisling
+	90. winnie the pooh
+	91. winning
+	92. wizard2
+	93. worried
+	94. yun
+	95. zombie2
+	96. zoned
+### Changed
+- `surprised2` 1-line art renamed to `surprised3`
 ## [4.7] - 2020-05-20
 ### Added
 - `art_decor_check.py` file
