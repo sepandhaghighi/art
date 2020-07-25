@@ -33,6 +33,19 @@ def is_utf8(s):
     except Exception:
         return False
 
+def is_ascii(s):
+    """
+    Check input string for ASCII compatibility.
+
+    :param s: input string
+    :type s: str
+    :return: result as bool
+    """
+    for i in s:
+        if ord(i) > 127:
+            return False
+    return True
+
 
 if __name__ == "__main__":
     art.tprint("Font Wizard")

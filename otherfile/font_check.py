@@ -3,6 +3,7 @@
 import sys
 import art
 from art.art_param import NON_ASCII_FONTS
+from font_wizard import is_utf8,is_ascii
 
 Failed1 = 0
 Failed2 = 0
@@ -12,37 +13,6 @@ Message1 = "Font height test "
 Message2 = "Font duplication test "
 Message3 = "Font UTF-8 compatibility test "
 Message4 = "{0}-font duplication -- > {1},{2}"
-
-
-def is_utf8(s):
-    """
-    Check input string for UTF-8 compatibility.
-
-    :param s: input string
-    :type s: str
-    :return: result as bool
-    """
-    try:
-        if sys.version_info.major == 3:
-            _ = bytes(s, 'utf-8').decode('utf-8', 'strict')
-        else:
-            return True
-        return True
-    except Exception:
-        return False
-
-def is_ascii(s):
-    """
-    Check input string for ASCII compatibility.
-
-    :param s: input string
-    :type s: str
-    :return: result as bool
-    """
-    for i in s:
-        if ord(i) > 127:
-            return False
-    return True
 
 
 def print_result(flag_list, message_list):
