@@ -362,7 +362,6 @@ NON_ASCII_ARTS = [
     'loading4',
     'loading5',
     'loading6',
-    'looking down',
     'looking face',
     'love in my eye1',
     'love in my eye2',
