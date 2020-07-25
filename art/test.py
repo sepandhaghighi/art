@@ -1438,6 +1438,9 @@ fairligh :
    ###    #####    #####      ###
 <BLANKLINE>
 <BLANKLINE>
+fancy51 :
+7357
+<BLANKLINE>
 fantasy :
 ######    ### #   ### #  ######
   #      ##  #   ##  #     #
@@ -1864,6 +1867,9 @@ green_be :
    ##     ##  ##   ##  ##     ##
    ##     #  ###   ## ##      ##
 <BLANKLINE>
+<BLANKLINE>
+h4k3r :
+7357
 <BLANKLINE>
 hades :
 #######  #######   ######  #######

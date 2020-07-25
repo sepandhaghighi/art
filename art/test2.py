@@ -259,9 +259,6 @@ fancy5 :
 fancy50 :
 ҭἔṩҭ
 <BLANKLINE>
-fancy51 :
-7357
-<BLANKLINE>
 fancy52 :
 τEŠτ
 <BLANKLINE>
@@ -438,9 +435,6 @@ funky_fresh :
 <BLANKLINE>
 greek_legends :
 TΣST
-<BLANKLINE>
-h4k3r :
-7357
 <BLANKLINE>
 handwriting1 :
 𝓉𝑒𝓈𝓉
