@@ -501,7 +501,6 @@ NON_ASCII_ARTS = [
     'upsidedown',
     'wat',
     'wat-wat',
-    'wave dance',
     'waves',
     'weather',
     'what?',
