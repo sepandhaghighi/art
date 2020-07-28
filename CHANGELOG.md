@@ -106,6 +106,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `surprised2` 1-line art renamed to `surprised3`
 - `art_decor_check.py` script updated
 - `font_check.py` script updated 
+- `font_wizard.py` script updated
 ## [4.7] - 2020-05-20
 ### Added
 - `art_decor_check.py` file
