@@ -56,6 +56,7 @@ if __name__ == "__main__":
     if not is_utf8(font_data):
         print(Error5)
         sys.exit()
+    ascii_flag = "ASCII" if is_ascii(font_data) else "Non-ASCII"
     if len(font_data) == 0:
         print(Error1)
         sys.exit()
@@ -99,5 +100,6 @@ if __name__ == "__main__":
         print("Done!")
         print("Font dictionary : \n")
         print(font_dic)
+        print("\nThis font is {0}".format(ascii_flag))
     else:
         print(Error2)
