@@ -12,8 +12,8 @@
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-560-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-516-orange.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-10-green.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-499-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-195-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -72,11 +72,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">516</td>
+		<td align="center">499</td>
 	</tr>
     <tr>
 		<td align="center">Decor Counter</td>
-		<td align="center">10</td>
+		<td align="center">195</td>
 	</tr>
 </table>
 
@@ -125,7 +125,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 ⚠️ Some environments don't support all 1-Line arts
 
-⚠️ Bipartite art is **deprecated** and will be removed in a future release
+⚠️ **ART 4.6** is the last version to support **Bipartite art**
 
 
 #### 1. art					
@@ -139,17 +139,14 @@ c[_]
 >>> art_2=art("woman",number=2) # return multiple art as str
 >>> print(art_2)
 ▓⚗_⚗▓ ▓⚗_⚗▓ 
->>> art_3=art("love_you",number=1,text="test") # 2-part art
->>> print(art_3)
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
 >>> art("random") # random 1-line art mode
 '(っ◕‿◕)っ '
 >>> art("rand")   # random 1-line art mode
 't(-_-t) '
->>> art(22,number=1,text="") # raise artError
+>>> art(22,number=1) # raise artError
 Traceback (most recent call last):
         ...
-art.art.artError: artname shoud have str type
+art.art.artError: The 'artname' type must be str.
 
 ```
 #### 2. aprint				
@@ -160,16 +157,14 @@ This function print 1-line art in normal mode (return None) and raise `artError`
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy") # print art
  ۜ\(סּںסּَ` )/ۜ
->>> aprint("love_you",number=1,text="test")  # 2-part art
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
 >>> aprint("random") # random 1-line art mode
 '(っ◕‿◕)っ '
 >>> aprint("rand")   # random 1-line art mode
 't(-_-t) '
->>> aprint("woman",number="22",text="") # raise artError
+>>> aprint("woman",number="22") # raise artError
 Traceback (most recent call last):
         ...
-art.art.artError: number should have int type
+art.art.artError: The 'number' type must be int.
 ```
 
 #### 3. randart
@@ -258,7 +253,7 @@ dolor''', font="small")) # Multi-line print
 >>> text2art("seسسس",font=DEFAULT_FONT,chr_ignore=False) # raise artError in exception
 Traceback (most recent call last):
         ...
-art.art.artError: س is invalid 
+art.art.artError: س is invalid.
   
 ```
 #### 2. tprint				
@@ -308,7 +303,7 @@ ___ ____ ____ ___
 >>> tprint('testسس',chr_ignore=False) # raise artError in exception 
 Traceback (most recent call last):
        ...
-art.art.artError: س is invalid
+art.art.artError: س is invalid.
 >>> tprint('''Lorem  
 ipsum 
 dolor''', font="cybermedium") # Multi-line print
@@ -607,21 +602,18 @@ tᏋѕt
 <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (`Version` >0.9)
 
 ```pycon
->>> Art=art("loveyou",number=1,text="test") # correct --> art("love_you",number=1,text="test"), error < |artname|/2
->>> print(Art)
-»-(¯`·.·´¯)->test<-(¯`·.·´¯)-« 
 >>> aprint("happi")  # correct --> aprint("happy"), error < |artname|/2
  ۜ\(סּںסּَ` )/ۜ 
 >>> Art=art("birds2222222",number=1) # correct --> Art=art("birds",number=1), error >= |artname|/2
 Traceback (most recent call last):
 	...
-art.art.artError: Invalid art name
+art.art.artError: Invalid art name.
 >>> aprint("happi231")  # correct --> aprint("happy"), error < |artname|/2
 ⎦˚◡˚⎣ 
 >>> aprint("happi2312344") # correct --> aprint("happy"), error >= |artname|/2
 Traceback (most recent call last):
 	...
-art.art.artError: Invalid art name
+art.art.artError: Invalid art name.
 >>> Art=text2art("test",font="black") # correct --> Art=text2art("test",font="block")
 >>> print(Art)
 
@@ -826,6 +818,7 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 17. [Hubpages](https://hubpages.com/technology/one-line-ascii-art-for-twitter)
 18. [ASCII-ART](http://www.ascii-art.de/ascii/mno/one_line.txt)
 19. [Messletters](https://www.messletters.com/en/)
+20. [Webestools](http://www.webestools.com/)
 
 ## Donate to our project
 								
