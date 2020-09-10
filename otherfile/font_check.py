@@ -3,7 +3,7 @@
 import sys
 import art
 from art.art_param import NON_ASCII_FONTS
-from font_wizard import is_utf8,is_ascii
+from font_wizard import is_utf8, is_ascii
 
 Failed1 = 0
 Failed2 = 0
