@@ -2,6 +2,8 @@
 """Fonts height, duplication and UTF-8 compatibility testing script."""
 import sys
 import art
+from art.art_param import NON_ASCII_FONTS
+from font_wizard import is_utf8, is_ascii
 
 Failed1 = 0
 Failed2 = 0
@@ -11,24 +13,6 @@ Message1 = "Font height test "
 Message2 = "Font duplication test "
 Message3 = "Font UTF-8 compatibility test "
 Message4 = "{0}-font duplication -- > {1},{2}"
-
-
-def is_utf8(s):
-    """
-    Check input string for UTF-8 compatibility.
-
-    :param s: input string
-    :type s: str
-    :return: result as bool
-    """
-    try:
-        if sys.version_info.major == 3:
-            _ = bytes(s, 'utf-8').decode('utf-8', 'strict')
-        else:
-            return True
-        return True
-    except Exception:
-        return False
 
 
 def print_result(flag_list, message_list):
@@ -58,12 +42,17 @@ if __name__ == "__main__":
                 s.append(
                     len(art.get_font_dic(font)[letter].split("\n")))
             l += art.get_font_dic(font)[letter]
+        ascii_flag = is_ascii(l)
         if len(set(s)) != 1:
             print("Height error in font : " + font)
             Failed1 += 1
         if not is_utf8(l):
             Failed3 += 1
             print("UTF-8 compatibility error in font : " + font)
+        if ascii_flag and font in NON_ASCII_FONTS:
+            print("Font type warning : {0} is ASCII but imported as NON-ASCII".format(font))
+        if not ascii_flag and font not in NON_ASCII_FONTS:
+            print("Font type warning : {0} is NON-ASCII but imported as ASCII".format(font))
 
     for font1 in Font_List:
         for font2 in Font_List:
