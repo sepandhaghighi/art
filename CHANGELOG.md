@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.8] - 2020-09-16
 ### Added
 - 96 new art:
 	1. angry birds
@@ -1733,7 +1734,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.7...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.8...dev
+[4.8]: https://github.com/sepandhaghighi/art/compare/v4.7...v4.8
 [4.7]: https://github.com/sepandhaghighi/art/compare/v4.6...v4.7
 [4.6]: https://github.com/sepandhaghighi/art/compare/v4.5...v4.6
 [4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5
