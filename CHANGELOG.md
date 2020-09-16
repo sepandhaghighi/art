@@ -5,6 +5,110 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [4.8] - 2020-09-16
+### Added
+- 96 new art:
+	1. angry birds
+	2. angry face2
+  	3. angry troll
+  	4. at what cost
+  	5. barf
+  	6. basking in glory
+  	7. bear GTFO
+	8. bear squiting
+	9. boxing
+	10. breakdown
+	11. careless
+	12. chasing
+	13. cheers
+	14. chicken
+	15. confused scratch
+	16. crazy
+	17. creeper
+	18. cry face
+	19. cry troll
+	20. cute face
+	21. dance2
+	22. dancing
+	23. dear god why
+	24. devious smile
+	25. disagree
+	26. discombobulated
+	27. dislike1
+	28. dislike2
+	29. do you even lift bro?
+	30. double flip
+	31. emo dance
+	32. excited
+	33. exorcism
+	34. eye roll
+	35. feel perky
+	36. fido
+	37. fight
+	38. fisticuffs
+	39. flip friend
+	40. fly away
+	41. flying
+	42. fuck you2
+	43. happy face
+	44. happy hug
+	45. hitchhicking
+	46. hugger
+	47. im a hugger
+	48. injured
+	49. innocent face
+	50. japanese lion face
+	51. judgemental
+	52. judging
+	53. kissing
+	54. kitty emote
+	55. listening to headphones
+	56. looking down
+	57. love3
+	58. meow
+	59. no support
+	60. opera
+	61. peepers
+	62. pretty eyes
+	63. put the table back
+	64. resting my eyes
+	65. robot3
+	66. running
+	67. sad and confused
+	68. sad and crying
+	69. sad face
+	70. satisfied
+	71. seal
+	72. shark face
+	73. shy
+	74. sleepy
+	75. staring
+	76. stranger danger
+	77. strut
+	78. stunna shades
+	79. surprised2
+	80. taking a dump
+	81. tgif
+	82. things that can_t be unseen
+	83. tidy up
+	84. tired
+	85. touchy feely
+	86. tripping out
+	87. trolling
+	88. wave dance
+	89. whisling
+	90. winnie the pooh
+	91. winning
+	92. wizard2
+	93. worried
+	94. yun
+	95. zombie2
+	96. zoned
+### Changed
+- `surprised2` 1-line art renamed to `surprised3`
+- `art_decor_check.py` script updated
+- `font_check.py` script updated 
+- `font_wizard.py` script updated
 ## [4.7] - 2020-05-20
 ### Added
 - `art_decor_check.py` file
@@ -1630,7 +1734,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.7...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.8...dev
+[4.8]: https://github.com/sepandhaghighi/art/compare/v4.7...v4.8
 [4.7]: https://github.com/sepandhaghighi/art/compare/v4.6...v4.7
 [4.6]: https://github.com/sepandhaghighi/art/compare/v4.5...v4.6
 [4.5]: https://github.com/sepandhaghighi/art/compare/v4.4...v4.5

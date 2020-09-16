@@ -9,6 +9,9 @@ matrix:
           python: 3.4
         - os: linux
           python: 2.7
+        - os: linux
+          python: 3.9-dev
+          dist: xenial
     include:
         - os: linux
           python: 3.8
@@ -32,6 +35,9 @@ matrix:
           dist: xenial
         - os: linux
           python: 3.8-dev
+          dist: xenial
+        - os: linux
+          python: 3.9-dev
           dist: xenial
         - os: linux
           python: nightly

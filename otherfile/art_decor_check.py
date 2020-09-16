@@ -4,6 +4,8 @@ import sys
 import art
 from art.art_param import DECORATIONS_MAP as Decor_Dict
 from art.art_dic import art_dic as Art_Dict
+from art.art_param import NON_ASCII_ARTS
+from font_wizard import is_utf8,is_ascii
 
 Failed1 = 0
 Failed2 = 0
@@ -13,25 +15,6 @@ Message1 = "Art UTF-8 compatibility test "
 Message2 = "Art duplication test "
 Message3 = "Decor UTF-8 compatibility test "
 Message4 = "Decor duplication test "
-
-
-def is_utf8(s):
-    """
-    Check input string for UTF-8 compatibility.
-
-    :param s: input string
-    :type s: str
-    :return: result as bool
-    """
-    try:
-        if sys.version_info.major == 3:
-            _ = bytes(s, 'utf-8').decode('utf-8', 'strict')
-        else:
-            return True
-        return True
-    except Exception:
-        return False
-
 
 def print_result(flag_list, message_list):
     """
@@ -55,12 +38,17 @@ if __name__ == "__main__":
     Art_Keys = list(Art_Dict.keys())
     Art_Values = list(Art_Dict.values())
     for art_name in Art_Keys:
+        ascii_flag = is_ascii(Art_Dict[art_name])
         if not is_utf8(Art_Dict[art_name]):
             Failed1 += 1
             print("UTF-8 compatibility error in art : " + art_name)
         if Art_Values.count(Art_Dict[art_name]) > 1:
             Failed2 += 1
             print("Art duplication error : " + art_name)
+        if ascii_flag and art_name in NON_ASCII_ARTS:
+            print("Art type warning : {0} is ASCII but imported as NON-ASCII".format(art_name))
+        if not ascii_flag and art_name not in NON_ASCII_ARTS:
+            print("Art type warning : {0} is NON-ASCII but imported as ASCII".format(art_name))
 
     Decor_Keys = list(Decor_Dict.keys())
     Decor_Values = list(Decor_Dict.values())
