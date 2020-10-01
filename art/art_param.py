@@ -721,7 +721,8 @@ NON_ASCII_FONTS = [
     "hyves",
     "awcute",
     "slammer",
-    "sheqi"]
+    "sheqi",
+    "fari"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1262,6 +1263,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy112": [fancy112_dic, False],
             "fancy113": [fancy113_dic, False],
             "sheqi": [sheqi_dic, False]
+            "fari": [fari_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1" : angry1,  # pragma: no cover
