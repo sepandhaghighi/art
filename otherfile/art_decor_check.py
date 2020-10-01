@@ -5,7 +5,7 @@ import art
 from art.art_param import DECORATIONS_MAP as Decor_Dict
 from art.art_dic import art_dic as Art_Dict
 from art.art_param import NON_ASCII_ARTS
-from font_wizard import is_utf8,is_ascii
+from font_wizard import is_utf8, is_ascii
 
 Failed1 = 0
 Failed2 = 0
@@ -15,6 +15,7 @@ Message1 = "Art UTF-8 compatibility test "
 Message2 = "Art duplication test "
 Message3 = "Decor UTF-8 compatibility test "
 Message4 = "Decor duplication test "
+
 
 def print_result(flag_list, message_list):
     """
@@ -46,9 +47,11 @@ if __name__ == "__main__":
             Failed2 += 1
             print("Art duplication error : " + art_name)
         if ascii_flag and art_name in NON_ASCII_ARTS:
-            print("Art type warning : {0} is ASCII but imported as NON-ASCII".format(art_name))
+            print(
+                "Art type warning : {0} is ASCII but imported as NON-ASCII".format(art_name))
         if not ascii_flag and art_name not in NON_ASCII_ARTS:
-            print("Art type warning : {0} is NON-ASCII but imported as ASCII".format(art_name))
+            print(
+                "Art type warning : {0} is NON-ASCII but imported as ASCII".format(art_name))
 
     Decor_Keys = list(Decor_Dict.keys())
     Decor_Values = list(Decor_Dict.values())

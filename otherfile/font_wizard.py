@@ -33,6 +33,7 @@ def is_utf8(s):
     except Exception:
         return False
 
+
 def is_ascii(s):
     """
     Check input string for ASCII compatibility.
