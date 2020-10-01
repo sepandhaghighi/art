@@ -655,6 +655,7 @@ NON_ASCII_FONTS = [
     "fancy106",
     "fancy107",
     "fancy108",
+    "fancy109",
     "foxy",
     "white_square",
     "black_square",
@@ -1249,7 +1250,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "hyves": [hyves_dic, False],
             "awcute": [awcute_dic, False],
             "slammer": [slammer_dic, False],
-            "foxy": [foxy_dic, False]
+            "foxy": [foxy_dic, False],
+            "fancy109": [fancy109_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1" : angry1,  # pragma: no cover
