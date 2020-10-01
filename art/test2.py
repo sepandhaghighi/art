@@ -127,8 +127,23 @@ fancy107 :
 fancy108 :
 ƚЄ$ƚ
 <BLANKLINE>
+fancy109 :
+ᴛᴇꜱᴛ
+<BLANKLINE>
 fancy11 :
 ՇєรՇ
+<BLANKLINE>
+fancy110 :
+ₜₑₛₜ
+<BLANKLINE>
+fancy111 :
+ᵗᵉˢᵗ
+<BLANKLINE>
+fancy112 :
+тєѕт
+<BLANKLINE>
+fancy113 :
+էҽʂէ
 <BLANKLINE>
 fancy12 :
 tєѕt
@@ -415,6 +430,9 @@ fancy98 :
 fancy99 :
 тeѕт
 <BLANKLINE>
+fari :
+『t』『e』『s』『t』
+<BLANKLINE>
 fasion :
 ŧεşŧ
 <BLANKLINE>
@@ -423,6 +441,9 @@ flip :
 <BLANKLINE>
 foreign_friends :
 ṭєṡṭ
+<BLANKLINE>
+foxy :
+ｔｅｓｔ
 <BLANKLINE>
 fraktur2 :
 𝔱𝔢𝔰𝔱
@@ -507,6 +528,9 @@ sarah :
 <BLANKLINE>
 scammer :
 těst
+<BLANKLINE>
+sheqi :
+【t】【e】【s】【t】
 <BLANKLINE>
 slammer :
 ƮęsƮ

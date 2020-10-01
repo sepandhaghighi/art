@@ -1262,7 +1262,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy111": [fancy111_dic, False],
             "fancy112": [fancy112_dic, False],
             "fancy113": [fancy113_dic, False],
-            "sheqi": [sheqi_dic, False]
+            "sheqi": [sheqi_dic, False],
             "fari": [fari_dic, False]
             }
 
