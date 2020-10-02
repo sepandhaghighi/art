@@ -661,6 +661,7 @@ NON_ASCII_FONTS = [
     "fancy112",
     "fancy113",
     "fancy114",
+    "fancy115",
     "foxy",
     "white_square",
     "black_square",
@@ -1264,6 +1265,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy112": [fancy112_dic, False],
             "fancy113": [fancy113_dic, False],
             "fancy114": [fancy114_dic, False],
+            "fancy115": [fancy115_dic, False],
             "sheqi": [sheqi_dic, False],
             "fari": [fari_dic, False]
             }
