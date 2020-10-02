@@ -145,6 +145,12 @@ fancy112 :
 fancy113 :
 էҽʂէ
 <BLANKLINE>
+fancy114 :
+≋t≋e≋s≋t
+<BLANKLINE>
+fancy115 :
+░t░e░s░t
+<BLANKLINE>
 fancy12 :
 tєѕt
 <BLANKLINE>
