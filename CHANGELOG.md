@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 10 new fonts
+	1. foxy
+	2. fancy109
+	3. fancy110
+	4. fancy111
+	5. fancy112
+	6. fancy113
+	7. fancy114
+	8. fancy115
+	9. sheqi
+	10. fari
 ## [4.8] - 2020-09-16
 ### Added
 - 96 new art:

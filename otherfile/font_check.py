@@ -50,9 +50,11 @@ if __name__ == "__main__":
             Failed3 += 1
             print("UTF-8 compatibility error in font : " + font)
         if ascii_flag and font in NON_ASCII_FONTS:
-            print("Font type warning : {0} is ASCII but imported as NON-ASCII".format(font))
+            print(
+                "Font type warning : {0} is ASCII but imported as NON-ASCII".format(font))
         if not ascii_flag and font not in NON_ASCII_FONTS:
-            print("Font type warning : {0} is NON-ASCII but imported as ASCII".format(font))
+            print(
+                "Font type warning : {0} is NON-ASCII but imported as ASCII".format(font))
 
     for font1 in Font_List:
         for font2 in Font_List:
