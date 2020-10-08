@@ -14,7 +14,7 @@ Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
     art.__version__)
 Error4 = "[Error] All letters should have same height"
 Error5 = "[Error] Font should be compatible with UTF-8"
-Error6 = "[Error] Duplicate name"
+Error6 = "[Error] This font name is not available"
 
 
 def is_utf8(s):
