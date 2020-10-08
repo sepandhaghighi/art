@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. fancy115
 	9. sheqi
 	10. fari
+### Changed
+- `font_wizard.py` script updated
+- `README.md` modified
 ## [4.8] - 2020-09-16
 ### Added
 - 96 new art:
