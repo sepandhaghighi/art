@@ -754,12 +754,14 @@ Just send your text to one of these bots. 👇👇👇👇
 
 ### Try ART in your browser
 
-ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
+1. ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
 
 * Open `FontList.ipynb`, `ArtList.ipynb` and `DecorList.ipynb`
 * Edit and execute each part of the notes, step by step from the top panel by run button
+
+2. ART also can be used online in [ascii-generator.site](https://ascii-generator.site/), a Django website by [hermanTenuki](https://github.com/hermanTenuki)	
 
 ### Screen record		
 
