@@ -115,7 +115,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 <div align="center">
 
-<img src="https://github.com/sepandhaghighi/art/blob/master/otherfile/ART.gif">
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/ART.gif">
 <p>Quick Start</p>
 
 </div>				
