@@ -14,6 +14,7 @@ Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
     art.__version__)
 Error4 = "[Error] All letters should have same height"
 Error5 = "[Error] Font should be compatible with UTF-8"
+Error6 = "[Error] This font name is not available"
 
 
 def is_utf8(s):
@@ -32,6 +33,7 @@ def is_utf8(s):
         return True
     except Exception:
         return False
+
 
 def is_ascii(s):
     """
@@ -52,6 +54,12 @@ if __name__ == "__main__":
     print("Use this string as input for font resource : ")
     print(Letters)
     print("*" * 30)
+    while(True):
+        font_name = input("Please enter font name : ")
+        if font_name in Font_List:
+            print(Error6)
+        else:
+            break
     font_data = input("Please enter font data (string or list) : ")
     if not is_utf8(font_data):
         print(Error5)
@@ -99,7 +107,14 @@ if __name__ == "__main__":
     if len(font_dic) == 95:
         print("Done!")
         print("Font dictionary : \n")
-        print(font_dic)
-        print("\nThis font is {0}".format(ascii_flag))
+        print("{}_dic = ".format(font_name),font_dic)
+        print("- Add this dictionary to the end of text_dic3.py")
+        print("- This font is {0} : ".format(ascii_flag))
+        print('\t1. Add "{0}":[{0}_dic,False] to the end of FONT_MAP dictionary in art_param.py'.format(font_name))
+        if ascii_flag == "ASCII":
+            print("\t2. Add a new test case to test.py")
+        else:
+            print("\t2. Add a new test case to test2.py")
+            print('\t3. Add "{0}" to the end of NON_ASCII_FONTS list in art_param.py'.format(font_name))
     else:
         print(Error2)

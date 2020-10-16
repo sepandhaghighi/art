@@ -11,7 +11,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-560-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-570-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-595-orange.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-195-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
@@ -68,7 +68,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">560</td>
+		<td align="center">570</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -115,7 +115,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 <div align="center">
 
-<img src="https://github.com/sepandhaghighi/art/blob/master/otherfile/ART.gif">
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/ART.gif">
 <p>Quick Start</p>
 
 </div>				
@@ -754,12 +754,14 @@ Just send your text to one of these bots. 👇👇👇👇
 
 ### Try ART in your browser
 
-ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
+1. ART can be used online in interactive Jupyter Notebooks via the Binder service! Try it out now! :	
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sepandhaghighi/art/master)
 
 * Open `FontList.ipynb`, `ArtList.ipynb` and `DecorList.ipynb`
 * Edit and execute each part of the notes, step by step from the top panel by run button
+
+2. ART also can be used online in [ascii-generator.site](https://ascii-generator.site/), a Django website by [hermanTenuki](https://github.com/hermanTenuki)	
 
 ### Screen record		
 
@@ -820,6 +822,7 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 19. [Messletters](https://www.messletters.com/en/)
 20. [Webestools](http://www.webestools.com/)
 21. [ASCII-emoji](https://github.com/dysfunc/ascii-emoji)
+22. [Instagram Fonts2](https://www.instagramfonts.com/)
 
 ## Donate to our project
 								
