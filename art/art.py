@@ -382,6 +382,9 @@ def indirect_decoration(decoration):
     :return: decoration as str
     """
     decorations = DECORATION_NAMES
+    if decoration == "random" or decoration == "rand" or decoration == "rnd":
+        decoration = random.choice(decorations)
+        return decoration
     if decoration not in decorations:
         distance_list = list(
             map(lambda x: distance_calc(decoration, x), decorations))
@@ -569,6 +572,7 @@ def decor(decoration, reverse=False):
     """
     if isinstance(decoration, str) is False:
         raise artError(DECORATION_TYPE_ERROR)
+    decoration = decoration.lower()
     decoration = indirect_decoration(decoration)
     if reverse is True:
         return DECORATIONS_MAP[decoration][-1]
