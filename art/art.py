@@ -554,7 +554,7 @@ def get_font_dic(font_name):
 
     :param  font_name: font's name
     :type font_name:str
-    :return font's dictionary
+    :return: font's dictionary
     """
     return FONT_MAP[font_name][0]
 
@@ -567,9 +567,9 @@ def decor(decoration, reverse=False, both=False):
     :type decoration:str
     :param reverse: true if second tail of decoration wanted
     :type reverse:bool
-    :param both: return both tails flag
+    :param both: both tails returning flag
     :type bool: bool
-    :return decor's tail
+    :return: decor's tail or tails as str or list
     """
     if isinstance(decoration, str) is False:
         raise artError(DECORATION_TYPE_ERROR)
