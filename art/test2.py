@@ -2350,6 +2350,8 @@ wave9
 '▌│█║▌║▌║ '
 >>> decor("barcode1",True)
 ' ║▌║▌║█│▌'
+>>> decor("barcode1",both=True)
+['▌│█║▌║▌║ ', ' ║▌║▌║█│▌']
 >>> decor(None)
 Traceback (most recent call last):
         ...
