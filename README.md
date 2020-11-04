@@ -321,6 +321,8 @@ ___  ____ _    ____ ____
 
 >>> tprint("art",font="fancy5",decoration="barcode1") # decoration parameter is added in Version 4.6
 ▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌
+>>> tprint("art",font="fancy5",decoration="random") # decoration random mode is added in Version 5.0
+•]•·✦º✦·»ᏗᏒᏖ«·✦º✦·•[•
 ```
 #### 3. tsave				
 
