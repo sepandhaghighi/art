@@ -166,7 +166,7 @@ def art(artname, number=1):
     if isinstance(artname, str) is False:
         raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
-    arts = sorted(art_dic.keys())
+    arts = ART_NAMES
     if artname in ["random", "rand", "rnd"]:
         filtered_arts = list(set(arts) - set(RANDOM_FILTERED_ARTS))
         artname = random.choice(filtered_arts)
