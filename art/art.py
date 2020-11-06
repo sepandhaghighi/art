@@ -345,26 +345,26 @@ def indirect_font(font, text):
     :return: font as str
     """
     fonts = FONT_NAMES
-    if font == "rnd-small" or font == "random-small" or font == "rand-small":
+    if font in ["rnd-small", "random-small", "rand-small"]:
         font = random.choice(RND_SIZE_DICT["small_list"])
         return font
-    if font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
+    if font in ["rnd-medium", "random-medium", "rand-medium"]:
         font = random.choice(RND_SIZE_DICT["medium_list"])
         return font
-    if font == "rnd-large" or font == "random-large" or font == "rand-large":
+    if font in ["rnd-large", "random-large", "rand-large"]:
         font = random.choice(RND_SIZE_DICT["large_list"])
         return font
-    if font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
+    if font in ["rnd-xlarge", "random-xlarge", "rand-xlarge"]:
         font = random.choice(RND_SIZE_DICT["xlarge_list"])
         return font
-    if font == "random" or font == "rand" or font == "rnd":
+    if font in ["random", "rand", "rnd"]:
         filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
         font = random.choice(filtered_fonts)
         return font
-    if font == "wizard" or font == "wiz" or font == "magic":
+    if font in ["wizard", "wiz", "magic"]:
         font = wizard_font(text)
         return font
-    if font == "rnd-na" or font == "random-na" or font == "rand-na":
+    if font in ["rnd-na", "random-na", "rand-na"]:
         font = random.choice(NON_ASCII_FONTS)
         return font
     if font not in fonts:
