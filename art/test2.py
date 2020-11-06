@@ -2350,10 +2350,18 @@ wave9
 '▌│█║▌║▌║ '
 >>> decor("barcode1",True)
 ' ║▌║▌║█│▌'
+>>> decor("barcode1",both=True)
+['▌│█║▌║▌║ ', ' ║▌║▌║█│▌']
 >>> decor(None)
 Traceback (most recent call last):
         ...
 art.art.artError: The 'decoration' type must be str.
+>>> random.seed(24)
+>>> decor1 = decor("random")
+>>> random.seed(45)
+>>> decor2 = decor("random")
+>>> decor1 == decor2
+False
 >>> random.seed(24)
 >>> Art = text2art("test","rnd-na")
 >>> random.seed(45)

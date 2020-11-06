@@ -321,6 +321,8 @@ ___  ____ _    ____ ____
 
 >>> tprint("art",font="fancy5",decoration="barcode1") # decoration parameter is added in Version 4.6
 ▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌
+>>> tprint("art",font="fancy5",decoration="random") # decoration random mode is added in Version 5.0
+•]•·✦º✦·»ᏗᏒᏖ«·✦º✦·•[•
 ```
 #### 3. tsave				
 
@@ -364,6 +366,12 @@ This function return decoration as `str` in normal mode and raise `artError` in 
 ' ║▌║▌║█│▌'
 >>> decor("barcode1") + text2art("    art   ",font="fancy42") + decor("barcode1",reverse=True)
 '▌│█║▌║▌║     ąяţ    ║▌║▌║█│▌'
+>>> decor("barcode1",both=True) # both parameter is added in Version 5.0
+['▌│█║▌║▌║ ', ' ║▌║▌║█│▌']
+>>> decor("random",both=True) # random mode is added in Version 5.0
+['｢(◔ω◔「)三', '三三三ʅ(；◔౪◔)ʃ']
+>>> decor("rand",both=True) # random mode is added in Version 5.0
+['‹–…·´`·…–›', '‹–…·´`·…–›']
 >>> decor(None)
 Traceback (most recent call last):
 	...

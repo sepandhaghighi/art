@@ -382,6 +382,9 @@ def indirect_decoration(decoration):
     :return: decoration as str
     """
     decorations = DECORATION_NAMES
+    if decoration == "random" or decoration == "rand" or decoration == "rnd":
+        decoration = random.choice(decorations)
+        return decoration
     if decoration not in decorations:
         distance_list = list(
             map(lambda x: distance_calc(decoration, x), decorations))
@@ -488,8 +491,6 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
         letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
-    if decoration is not None:
-        result += decor(decoration)
     next_word_flag = True
     for index, word in enumerate(word_list):
         if index == len(word_list) - 1:
@@ -500,7 +501,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
                                      letters=letters,
                                      next_word=next_word_flag)
     if decoration is not None:
-        result = result + decor(decoration, reverse=True)
+        [decor1, decor2] = decor(decoration, both=True)
+        result = decor1 + result + decor2
     return result
 
 
@@ -552,12 +554,12 @@ def get_font_dic(font_name):
 
     :param  font_name: font's name
     :type font_name:str
-    :return font's dictionary
+    :return: font's dictionary
     """
     return FONT_MAP[font_name][0]
 
 
-def decor(decoration, reverse=False):
+def decor(decoration, reverse=False, both=False):
     """
     Return given decoration part.
 
@@ -565,11 +567,16 @@ def decor(decoration, reverse=False):
     :type decoration:str
     :param reverse: true if second tail of decoration wanted
     :type reverse:bool
-    :return decor's tail
+    :param both: both tails returning flag
+    :type bool: bool
+    :return: decor's tail as str or tails as list of str
     """
     if isinstance(decoration, str) is False:
         raise artError(DECORATION_TYPE_ERROR)
+    decoration = decoration.lower()
     decoration = indirect_decoration(decoration)
+    if both is True:
+        return DECORATIONS_MAP[decoration]
     if reverse is True:
         return DECORATIONS_MAP[decoration][-1]
     return DECORATIONS_MAP[decoration][0]
