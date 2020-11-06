@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `random` mode added to `decor` function
 - `both` parameter added to `decor` function
+- `art` function modified
+- `indirect_font` function modified
 ## [4.9] - 2020-10-16
 ### Added
 - 10 new fonts
