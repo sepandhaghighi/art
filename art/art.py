@@ -344,7 +344,7 @@ def indirect_font(font, text):
     :type text:str
     :return: font as str
     """
-    fonts = sorted(FONT_MAP.keys())
+    fonts = FONT_NAMES
     if font == "rnd-small" or font == "random-small" or font == "rand-small":
         font = random.choice(RND_SIZE_DICT["small_list"])
         return font
