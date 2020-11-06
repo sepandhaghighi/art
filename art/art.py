@@ -382,7 +382,7 @@ def indirect_decoration(decoration):
     :return: decoration as str
     """
     decorations = DECORATION_NAMES
-    if decoration == "random" or decoration == "rand" or decoration == "rnd":
+    if decoration in ["random", "rand", "rnd"]:
         decoration = random.choice(decorations)
         return decoration
     if decoration not in decorations:
