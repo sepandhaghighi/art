@@ -569,7 +569,7 @@ def decor(decoration, reverse=False, both=False):
     :type reverse:bool
     :param both: both tails returning flag
     :type bool: bool
-    :return: decor's tail or tails as str or list
+    :return: decor's tail as str or tails as list of str
     """
     if isinstance(decoration, str) is False:
         raise artError(DECORATION_TYPE_ERROR)
