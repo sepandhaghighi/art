@@ -166,8 +166,8 @@ def art(artname, number=1):
     if isinstance(artname, str) is False:
         raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
-    arts = sorted(art_dic.keys())
-    if artname == "random" or artname == "rand" or artname == "rnd":
+    arts = ART_NAMES
+    if artname in ["random", "rand", "rnd"]:
         filtered_arts = list(set(arts) - set(RANDOM_FILTERED_ARTS))
         artname = random.choice(filtered_arts)
     elif artname not in art_dic.keys():
@@ -344,27 +344,27 @@ def indirect_font(font, text):
     :type text:str
     :return: font as str
     """
-    fonts = sorted(FONT_MAP.keys())
-    if font == "rnd-small" or font == "random-small" or font == "rand-small":
+    fonts = FONT_NAMES
+    if font in ["rnd-small", "random-small", "rand-small"]:
         font = random.choice(RND_SIZE_DICT["small_list"])
         return font
-    if font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
+    if font in ["rnd-medium", "random-medium", "rand-medium"]:
         font = random.choice(RND_SIZE_DICT["medium_list"])
         return font
-    if font == "rnd-large" or font == "random-large" or font == "rand-large":
+    if font in ["rnd-large", "random-large", "rand-large"]:
         font = random.choice(RND_SIZE_DICT["large_list"])
         return font
-    if font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
+    if font in ["rnd-xlarge", "random-xlarge", "rand-xlarge"]:
         font = random.choice(RND_SIZE_DICT["xlarge_list"])
         return font
-    if font == "random" or font == "rand" or font == "rnd":
+    if font in ["random", "rand", "rnd"]:
         filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
         font = random.choice(filtered_fonts)
         return font
-    if font == "wizard" or font == "wiz" or font == "magic":
+    if font in ["wizard", "wiz", "magic"]:
         font = wizard_font(text)
         return font
-    if font == "rnd-na" or font == "random-na" or font == "rand-na":
+    if font in ["rnd-na", "random-na", "rand-na"]:
         font = random.choice(NON_ASCII_FONTS)
         return font
     if font not in fonts:
@@ -382,7 +382,7 @@ def indirect_decoration(decoration):
     :return: decoration as str
     """
     decorations = DECORATION_NAMES
-    if decoration == "random" or decoration == "rand" or decoration == "rnd":
+    if decoration in ["random", "rand", "rnd"]:
         decoration = random.choice(decorations)
         return decoration
     if decoration not in decorations:
