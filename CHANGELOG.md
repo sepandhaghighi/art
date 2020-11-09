@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 27 new art:
+- 45 new art:
 	1. hello2
 	2. dunno2
 	3. dunno3
@@ -34,6 +34,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	25. happy25
 	26. happy26
 	27. happy27
+	28. love4
+	29. kiss2
+	30. kiss3
+	31. kiss4
+	32. kissing2
+	33. kissing3
+	34. kissing4
+	35. kissing5
+	36. kissing6
+	37. cute face2
+	38. cute face3
+	39. cute face4
+	40. cute face5
+	41. cute face6
+	42. cute face7
+	43. cute face8
+	44. cute face9
+	45. cute face10
 ### Changed
 - `random` mode added to `decor` function
 - `both` parameter added to `decor` function
