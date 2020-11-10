@@ -391,7 +391,6 @@ NON_ASCII_ARTS = [
     'kissing6',
     'kiss2',
     'kiss3',
-    'kiss4',
     'kitty emote',
     'kokain',
     'kyubey',
