@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 5 new fonts
+	1. shasha
+	2. fancy116
+	3. fancy117
+	4. fancy118
+	5. fancy119
 - 60 new art:
 	1. hello2
 	2. dunno2
