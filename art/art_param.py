@@ -235,7 +235,7 @@ NON_ASCII_ARTS = [
     'cute face7',
     'cute face8',
     'cute face9',
-    'cute face10',
+    'upset',
     'dab',
     'dalek',
     'damnyou',
