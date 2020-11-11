@@ -1327,13 +1327,13 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy113": [fancy113_dic, False],
             "fancy114": [fancy114_dic, False],
             "fancy115": [fancy115_dic, False],
-            "fancy116":[fancy116_dic,False],
-            "fancy117":[fancy117_dic,False],
-            "fancy118":[fancy118_dic,False],
-            "fancy119":[fancy119_dic,False],
+            "fancy116": [fancy116_dic, False],
+            "fancy117": [fancy117_dic, False],
+            "fancy118": [fancy118_dic, False],
+            "fancy119": [fancy119_dic, False],
             "sheqi": [sheqi_dic, False],
             "fari": [fari_dic, False],
-            "shasha":[shasha_dic,False]
+            "shasha": [shasha_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
