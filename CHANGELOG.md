@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.0] - 2020-11-16
 ### Added
 - 5 new fonts
 	1. shasha
@@ -12,7 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	3. fancy117
 	4. fancy118
 	5. fancy119
-- 60 new art:
+- 60 new art
 	1. hello2
 	2. dunno2
 	3. dunno3
@@ -96,7 +97,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `README.md` modified
 ## [4.8] - 2020-09-16
 ### Added
-- 96 new art:
+- 96 new art
 	1. angry birds
 	2. angry face2
   	3. angry troll
@@ -202,7 +203,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `art_decor_check.py` file
 - Greeting GitHub actions
-- 185 new decorations:
+- 185 new decorations
 	1. angry1
 	2. arrow1
 	3. arrow2
@@ -1823,7 +1824,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.9...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.0...dev
+[5.0]: https://github.com/sepandhaghighi/art/compare/v4.9...v5.0
 [4.9]: https://github.com/sepandhaghighi/art/compare/v4.8...v4.9
 [4.8]: https://github.com/sepandhaghighi/art/compare/v4.7...v4.8
 [4.7]: https://github.com/sepandhaghighi/art/compare/v4.6...v4.7
