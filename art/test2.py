@@ -151,6 +151,18 @@ fancy114 :
 fancy115 :
 ░t░e░s░t
 <BLANKLINE>
+fancy116 :
+Ⲅ𐒢ᎴⲄ
+<BLANKLINE>
+fancy117 :
+ᏖᏋ𐒡Ꮦ
+<BLANKLINE>
+fancy118 :
+ᏖᏋᏕᏖ
+<BLANKLINE>
+fancy119 :
+ᎿᏋᎴᎿ
+<BLANKLINE>
 fancy12 :
 tєѕt
 <BLANKLINE>
@@ -534,6 +546,9 @@ sarah :
 <BLANKLINE>
 scammer :
 těst
+<BLANKLINE>
+shasha :
+†€∫†
 <BLANKLINE>
 sheqi :
 【t】【e】【s】【t】

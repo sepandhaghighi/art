@@ -718,6 +718,10 @@ NON_ASCII_FONTS = [
     "fancy113",
     "fancy114",
     "fancy115",
+    "fancy116",
+    "fancy117",
+    "fancy118",
+    "fancy119",
     "foxy",
     "white_square",
     "black_square",
@@ -780,7 +784,8 @@ NON_ASCII_FONTS = [
     "awcute",
     "slammer",
     "sheqi",
-    "fari"]
+    "fari",
+    "shasha"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1322,8 +1327,13 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy113": [fancy113_dic, False],
             "fancy114": [fancy114_dic, False],
             "fancy115": [fancy115_dic, False],
+            "fancy116": [fancy116_dic, False],
+            "fancy117": [fancy117_dic, False],
+            "fancy118": [fancy118_dic, False],
+            "fancy119": [fancy119_dic, False],
             "sheqi": [sheqi_dic, False],
-            "fari": [fari_dic, False]
+            "fari": [fari_dic, False],
+            "shasha": [shasha_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
