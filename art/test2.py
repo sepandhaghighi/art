@@ -166,6 +166,36 @@ fancy119 :
 fancy12 :
 tєѕt
 <BLANKLINE>
+fancy120 :
+Ŧ€ŞŦ
+<BLANKLINE>
+fancy121 :
+₮€$₮
+<BLANKLINE>
+fancy122 :
+tєรt
+<BLANKLINE>
+fancy123 :
+੮૯ς੮
+<BLANKLINE>
+fancy124 :
+ŤẸŜŤ
+<BLANKLINE>
+fancy125 :
+ţέşţ
+<BLANKLINE>
+fancy126 :
+ƭɛֆƭ
+<BLANKLINE>
+fancy127 :
+꓄ꍟꌗ꓄
+<BLANKLINE>
+fancy128 :
+ԵȝՏԵ
+<BLANKLINE>
+fancy129 :
+ｲ乇丂ｲ
+<BLANKLINE>
 fancy13 :
 tєรt
 <BLANKLINE>
