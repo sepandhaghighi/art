@@ -166,8 +166,8 @@ def art(artname, number=1):
     if isinstance(artname, str) is False:
         raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
-    arts = sorted(art_dic.keys())
-    if artname == "random" or artname == "rand" or artname == "rnd":
+    arts = ART_NAMES
+    if artname in ["random", "rand", "rnd"]:
         filtered_arts = list(set(arts) - set(RANDOM_FILTERED_ARTS))
         artname = random.choice(filtered_arts)
     elif artname not in art_dic.keys():
@@ -344,27 +344,27 @@ def indirect_font(font, text):
     :type text:str
     :return: font as str
     """
-    fonts = sorted(FONT_MAP.keys())
-    if font == "rnd-small" or font == "random-small" or font == "rand-small":
+    fonts = FONT_NAMES
+    if font in ["rnd-small", "random-small", "rand-small"]:
         font = random.choice(RND_SIZE_DICT["small_list"])
         return font
-    if font == "rnd-medium" or font == "random-medium" or font == "rand-medium":
+    if font in ["rnd-medium", "random-medium", "rand-medium"]:
         font = random.choice(RND_SIZE_DICT["medium_list"])
         return font
-    if font == "rnd-large" or font == "random-large" or font == "rand-large":
+    if font in ["rnd-large", "random-large", "rand-large"]:
         font = random.choice(RND_SIZE_DICT["large_list"])
         return font
-    if font == "rnd-xlarge" or font == "random-xlarge" or font == "rand-xlarge":
+    if font in ["rnd-xlarge", "random-xlarge", "rand-xlarge"]:
         font = random.choice(RND_SIZE_DICT["xlarge_list"])
         return font
-    if font == "random" or font == "rand" or font == "rnd":
+    if font in ["random", "rand", "rnd"]:
         filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
         font = random.choice(filtered_fonts)
         return font
-    if font == "wizard" or font == "wiz" or font == "magic":
+    if font in ["wizard", "wiz", "magic"]:
         font = wizard_font(text)
         return font
-    if font == "rnd-na" or font == "random-na" or font == "rand-na":
+    if font in ["rnd-na", "random-na", "rand-na"]:
         font = random.choice(NON_ASCII_FONTS)
         return font
     if font not in fonts:
@@ -382,6 +382,9 @@ def indirect_decoration(decoration):
     :return: decoration as str
     """
     decorations = DECORATION_NAMES
+    if decoration in ["random", "rand", "rnd"]:
+        decoration = random.choice(decorations)
+        return decoration
     if decoration not in decorations:
         distance_list = list(
             map(lambda x: distance_calc(decoration, x), decorations))
@@ -488,8 +491,6 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
         letters = mix_letters()
     word_list = text_temp.split("\n")
     result = ""
-    if decoration is not None:
-        result += decor(decoration)
     next_word_flag = True
     for index, word in enumerate(word_list):
         if index == len(word_list) - 1:
@@ -500,7 +501,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
                                      letters=letters,
                                      next_word=next_word_flag)
     if decoration is not None:
-        result = result + decor(decoration, reverse=True)
+        [decor1, decor2] = decor(decoration, both=True)
+        result = decor1 + result + decor2
     return result
 
 
@@ -552,12 +554,12 @@ def get_font_dic(font_name):
 
     :param  font_name: font's name
     :type font_name:str
-    :return font's dictionary
+    :return: font's dictionary
     """
     return FONT_MAP[font_name][0]
 
 
-def decor(decoration, reverse=False):
+def decor(decoration, reverse=False, both=False):
     """
     Return given decoration part.
 
@@ -565,11 +567,16 @@ def decor(decoration, reverse=False):
     :type decoration:str
     :param reverse: true if second tail of decoration wanted
     :type reverse:bool
-    :return decor's tail
+    :param both: both tails returning flag
+    :type bool: bool
+    :return: decor's tail as str or tails as list of str
     """
     if isinstance(decoration, str) is False:
         raise artError(DECORATION_TYPE_ERROR)
+    decoration = decoration.lower()
     decoration = indirect_decoration(decoration)
+    if both is True:
+        return DECORATIONS_MAP[decoration]
     if reverse is True:
         return DECORATIONS_MAP[decoration][-1]
     return DECORATIONS_MAP[decoration][0]

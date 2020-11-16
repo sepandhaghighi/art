@@ -5,6 +5,80 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.0] - 2020-11-16
+### Added
+- 5 new fonts
+	1. shasha
+	2. fancy116
+	3. fancy117
+	4. fancy118
+	5. fancy119
+- 60 new art
+	1. hello2
+	2. dunno2
+	3. dunno3
+	4. dunno4
+	5. dunno5
+	6. happy6
+	7. happy7
+	8. happy8
+	9. happy9
+	10. happy10
+	11. happy11
+	12. happy12
+	13. happy13
+	14. happy14
+	15. happy15
+	16. happy16
+	17. happy17
+	18. happy18
+	19. happy19
+	20. happy20
+	21. happy21
+	22. happy22
+	23. happy23
+	24. happy24
+	25. happy25
+	26. happy26
+	27. happy27
+	28. love4
+	29. kiss2
+	30. kiss3
+	31. kissing2
+	32. kissing3
+	33. kissing4
+	34. kissing5
+	35. kissing6
+	36. cute face2
+	37. cute face3
+	38. cute face4
+	39. cute face5
+	40. cute face6
+	41. cute face7
+	42. cute face8
+	43. cute face9
+	44. upset
+	45. pistols4
+	46. pistols5
+	47. mad
+	48. mad2
+	49. mad3
+	50. mad4
+	51. mad5
+	52. mad6
+	53. mad7
+	54. mad8
+	55. mad9
+	56. mad10
+	57. finger3
+	58. finger4
+	59. sad5
+	60. sad6
+### Changed
+- `random` mode added to `decor` function
+- `both` parameter added to `decor` function
+- `art` function modified
+- `indirect_font` function modified
 ## [4.9] - 2020-10-16
 ### Added
 - 10 new fonts
@@ -23,7 +97,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `README.md` modified
 ## [4.8] - 2020-09-16
 ### Added
-- 96 new art:
+- 96 new art
 	1. angry birds
 	2. angry face2
   	3. angry troll
@@ -129,7 +203,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `art_decor_check.py` file
 - Greeting GitHub actions
-- 185 new decorations:
+- 185 new decorations
 	1. angry1
 	2. arrow1
 	3. arrow2
@@ -1750,7 +1824,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v4.9...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.0...dev
+[5.0]: https://github.com/sepandhaghighi/art/compare/v4.9...v5.0
 [4.9]: https://github.com/sepandhaghighi/art/compare/v4.8...v4.9
 [4.8]: https://github.com/sepandhaghighi/art/compare/v4.7...v4.8
 [4.7]: https://github.com/sepandhaghighi/art/compare/v4.6...v4.7
