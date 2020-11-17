@@ -795,7 +795,12 @@ NON_ASCII_FONTS = [
     "slammer",
     "sheqi",
     "fari",
-    "shasha"]
+    "shasha",
+    "pin1",
+    "pin2",
+    "sign",
+    "bud1",
+    "bud2"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1353,7 +1358,12 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy129": [fancy129_dic, False],
             "sheqi": [sheqi_dic, False],
             "fari": [fari_dic, False],
-            "shasha": [shasha_dic, False]
+            "shasha": [shasha_dic, False],
+            "pin1":[pin1_dic,False],
+            "pin2":[pin2_dic,False],
+            "sign":[sign_dic,False],
+            "bud1":[bud1_dic,False],
+            "bud2":[bud2_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
