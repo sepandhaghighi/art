@@ -28,6 +28,12 @@ bold_fraktur :
 bold_script :
 𝓽𝓮𝓼𝓽
 <BLANKLINE>
+bud1 :
+tོeོsོtོ
+<BLANKLINE>
+bud2 :
+tཽeཽsཽtཽ
+<BLANKLINE>
 carrier1 :
 TᕮST
 <BLANKLINE>
@@ -565,6 +571,12 @@ tєst
 parenthesized :
 ⒯⒠⒮⒯
 <BLANKLINE>
+pin1 :
+t྇e྇s྇t྇
+<BLANKLINE>
+pin2 :
+t༙྇e༙྇s༙྇t༙྇
+<BLANKLINE>
 rusify :
 тё$т
 <BLANKLINE>
@@ -582,6 +594,9 @@ shasha :
 <BLANKLINE>
 sheqi :
 【t】【e】【s】【t】
+<BLANKLINE>
+sign :
+t⃠e⃠s⃠t⃠
 <BLANKLINE>
 slammer :
 ƮęsƮ
