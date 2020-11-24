@@ -611,7 +611,11 @@ NON_ASCII_ARTS = [
     'zoidberg',
     'zombie',
     'zombie2',
-    'zoned']
+    'zoned',
+    'swim',
+    'swim2',
+    'swim3',
+    'yawning']
 
 RANDOM_FILTERED_ARTS = [] + NON_ASCII_ARTS
 
