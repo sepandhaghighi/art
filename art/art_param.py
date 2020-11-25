@@ -150,7 +150,7 @@ NON_ASCII_ARTS = [
     'afraid',
     'airplane1',
     'airplane2',
-    'airplane3'
+    'airplane3',
     'ak-47',
     'almost cared',
     'american money2',
