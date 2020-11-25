@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. pin1
 	14. pin2
 	15. sign
-- 41 new art
+- 45 new art
 	1. surprised4
 	2. surprised5
 	3. surprised6
@@ -64,6 +64,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	39. swim2
 	40. swim3
 	41. yawning
+	42. boobs2
+	43. airplane3
+	44. gun4
+	45. cthulhu2
 ## [5.0] - 2020-11-16
 ### Added
 - 5 new fonts
