@@ -150,6 +150,7 @@ NON_ASCII_ARTS = [
     'afraid',
     'airplane1',
     'airplane2',
+    'airplane3'
     'ak-47',
     'almost cared',
     'american money2',
@@ -328,6 +329,7 @@ NON_ASCII_ARTS = [
     'gun1',
     'gun2',
     'gun3',
+    'gun4',
     'hairstyle',
     'happy birthday 1',
     'happy face',
@@ -615,7 +617,8 @@ NON_ASCII_ARTS = [
     'swim',
     'swim2',
     'swim3',
-    'yawning']
+    'yawning',
+    'boobs2']
 
 RANDOM_FILTERED_ARTS = [] + NON_ASCII_ARTS
 
