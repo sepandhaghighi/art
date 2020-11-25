@@ -516,7 +516,7 @@ art_dic = {
     "confused7": "(; ͡°_ʖ ͡°)",
     "confused8": "(´•_•`)",
     "confused9": "(ˇ_ˇ’!l)",
-    "confused10": "(*'﹏'*)",
+    "confused10": "(*'__'*)",
     "pursing lips": ':-"',
     "shocked2": ":-O",
     "really sad": ":-C",
