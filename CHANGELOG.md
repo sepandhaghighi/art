@@ -22,6 +22,52 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	13. pin1
 	14. pin2
 	15. sign
+- 45 new art
+	1. surprised4
+	2. surprised5
+	3. surprised6
+	4. surprised7
+	5. surprised8
+	6. surprised9
+	7. surprised10
+	8. surprised11
+	9. surprised12
+	10. surprised13
+	11. surprised14
+	12. surprised15
+	13. surprised16
+	14. surprised17
+	15. surprised18
+	16. surprised19
+	17. surprised20
+	18. confused3
+	19. confused4
+	20. confused5
+	21. confused6
+	22. confused7
+	23. confused8
+	24. confused9
+	25. confused10
+	26. table flip2
+	27. table flip3
+	28. table flip4
+	29. table flip5
+	30. table flip6
+	31. table flip7
+	32. table flip8
+	33. table flip9
+	34. table flip10
+	35. bear2
+	36. spider4
+	37. cat4
+	38. swim
+	39. swim2
+	40. swim3
+	41. yawning
+	42. boobs2
+	43. airplane3
+	44. gun4
+	45. cthulhu2
 ## [5.0] - 2020-11-16
 ### Added
 - 5 new fonts
