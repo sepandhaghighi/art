@@ -83,7 +83,7 @@ if __name__ == "__main__":
                 break
     except Exception as e:
         Failed += 1
-        print("Error in " + file_name + "\n" + "Message : " + str(e))
+        print("Error in README.md" + "\n" + "Message : " + str(e))
     if Failed == 0:
         print_result(False)
         sys.exit(0)
