@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.1] - 2020-11-30
 ### Added
 - 15 new fonts
 	1. fancy120
@@ -1887,7 +1888,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.0...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.1...dev
+[5.1]: https://github.com/sepandhaghighi/art/compare/v5.0...v5.1
 [5.0]: https://github.com/sepandhaghighi/art/compare/v4.9...v5.0
 [4.9]: https://github.com/sepandhaghighi/art/compare/v4.8...v4.9
 [4.8]: https://github.com/sepandhaghighi/art/compare/v4.7...v4.8
