@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "5.0"  # pragma: no cover
+ART_VERSION = "5.1"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -150,6 +150,7 @@ NON_ASCII_ARTS = [
     'afraid',
     'airplane1',
     'airplane2',
+    'airplane3',
     'ak-47',
     'almost cared',
     'american money2',
@@ -177,6 +178,7 @@ NON_ASCII_ARTS = [
     'bear GTFO',
     'bear squiting',
     'bear',
+    'bear2',
     'because',
     'bee',
     'being draged',
@@ -202,6 +204,7 @@ NON_ASCII_ARTS = [
     'cat face',
     'cat smile',
     'cat2',
+    'cat4',
     'catlenny',
     'chair',
     'chasing',
@@ -216,6 +219,12 @@ NON_ASCII_ARTS = [
     'club regular',
     'coffee now',
     'confused scratch',
+    'confused3',
+    'confused5',
+    'confused6',
+    'confused7',
+    'confused8',
+    'confused9',
     'crayons',
     'crazy',
     'creeper',
@@ -320,6 +329,7 @@ NON_ASCII_ARTS = [
     'gun1',
     'gun2',
     'gun3',
+    'gun4',
     'hairstyle',
     'happy birthday 1',
     'happy face',
@@ -416,6 +426,7 @@ NON_ASCII_ARTS = [
     'love3',
     'love4',
     'man spider',
+    'spider4',
     'man tears',
     'mango',
     'med man',
@@ -533,11 +544,35 @@ NON_ASCII_ARTS = [
     'sunglasses1',
     'sunny day',
     'surprised2',
+    "surprised4",
+    "surprised5",
+    "surprised6",
+    "surprised8",
+    "surprised9",
+    "surprised10",
+    "surprised11",
+    "surprised12",
+    "surprised13",
+    "surprised15",
+    "surprised16",
+    "surprised17",
+    "surprised18",
+    "surprised19",
+    "surprised20",
     'sword2',
     'sword3',
     'sword8',
     'sword9',
     'table flip',
+    'table flip2',
+    'table flip3',
+    'table flip4',
+    'table flip5',
+    'table flip6',
+    'table flip7',
+    'table flip8',
+    'table flip9',
+    'table flip10',
     'taking a dump',
     'teddy',
     'telephone',
@@ -576,7 +611,12 @@ NON_ASCII_ARTS = [
     'zoidberg',
     'zombie',
     'zombie2',
-    'zoned']
+    'zoned',
+    'swim',
+    'swim2',
+    'swim3',
+    'yawning',
+    'boobs2']
 
 RANDOM_FILTERED_ARTS = [] + NON_ASCII_ARTS
 
@@ -722,6 +762,16 @@ NON_ASCII_FONTS = [
     "fancy117",
     "fancy118",
     "fancy119",
+    "fancy120",
+    "fancy121",
+    "fancy122",
+    "fancy123",
+    "fancy124",
+    "fancy125",
+    "fancy126",
+    "fancy127",
+    "fancy128",
+    "fancy129",
     "foxy",
     "white_square",
     "black_square",
@@ -785,7 +835,12 @@ NON_ASCII_FONTS = [
     "slammer",
     "sheqi",
     "fari",
-    "shasha"]
+    "shasha",
+    "pin1",
+    "pin2",
+    "sign",
+    "bud1",
+    "bud2"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1331,9 +1386,24 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy117": [fancy117_dic, False],
             "fancy118": [fancy118_dic, False],
             "fancy119": [fancy119_dic, False],
+            "fancy120": [fancy120_dic, False],
+            "fancy121": [fancy121_dic, False],
+            "fancy122": [fancy122_dic, False],
+            "fancy123": [fancy123_dic, False],
+            "fancy124": [fancy124_dic, False],
+            "fancy125": [fancy125_dic, False],
+            "fancy126": [fancy126_dic, False],
+            "fancy127": [fancy127_dic, False],
+            "fancy128": [fancy128_dic, False],
+            "fancy129": [fancy129_dic, False],
             "sheqi": [sheqi_dic, False],
             "fari": [fari_dic, False],
-            "shasha": [shasha_dic, False]
+            "shasha": [shasha_dic, False],
+            "pin1": [pin1_dic, False],
+            "pin2": [pin2_dic, False],
+            "sign": [sign_dic, False],
+            "bud1": [bud1_dic, False],
+            "bud2": [bud2_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
