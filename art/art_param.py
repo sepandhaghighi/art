@@ -1409,11 +1409,11 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "sign": [sign_dic, False],
             "bud1": [bud1_dic, False],
             "bud2": [bud2_dic, False],
-            "old_italic":[old_italic_dic,False],
-            "ninja":[ninja_dic,False],
-            "tai_viet":[tai_viet_dic,False],
-            "subscript2":[subscript2_dic,False],
-            "fancy130":[fancy130_dic,False]
+            "old_italic": [old_italic_dic, False],
+            "ninja": [ninja_dic, False],
+            "tai_viet": [tai_viet_dic, False],
+            "subscript2": [subscript2_dic, False],
+            "fancy130": [fancy130_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
