@@ -5,8 +5,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 5 new fonts
+	1. old_italic
+	2. ninja
+	3. tai_viet
+	4. subscript2
+	5. fancy130
 ### Changed
 - Test system modified
+- `subscript` font renamed to `subscript1`
 ## [5.1] - 2020-11-30
 ### Added
 - 15 new fonts
