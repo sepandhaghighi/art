@@ -205,6 +205,9 @@ fancy129 :
 fancy13 :
 tєรt
 <BLANKLINE>
+fancy130 :
+𐨠𐌴Ⲋ𐨠
+<BLANKLINE>
 fancy14 :
 ȶɛֆȶ
 <BLANKLINE>
@@ -565,6 +568,12 @@ monospace :
 native_lands :
 ƬꍟꌗƬ
 <BLANKLINE>
+ninja :
+ⱦēꞩⱦ
+<BLANKLINE>
+old_italic :
+𐌕𐌄𐌔𐌕
+<BLANKLINE>
 paranormal :
 tєst
 <BLANKLINE>
@@ -622,8 +631,12 @@ strange :
 strikethrough :
 ŧɇsŧ
 <BLANKLINE>
-subscript :
+
+subscript1 :
 ₜₑₛₜ
+<BLANKLINE>
+subscript2 :
+𝑡ₑ𝑠𝑡
 <BLANKLINE>
 sunday_cuddle :
 тєѕт
@@ -636,6 +649,9 @@ swirly :
 <BLANKLINE>
 symbols :
 ☂€ⓢ☂
+<BLANKLINE>
+tai_viet :
+ꪻꫀᦓꪻ
 <BLANKLINE>
 thin2 :
 ｔｅｓｔ
