@@ -632,7 +632,7 @@ NON_ASCII_FONTS = [
     "white_bubble",
     "smallcaps2",
     "superscript",
-    "subscript",
+    "subscript1",
     "full_width",
     "antrophobia",
     "currency",
@@ -844,7 +844,7 @@ NON_ASCII_FONTS = [
     "old_italic",
     "ninja",
     "tai_viet",
-    "sub",
+    "subscript2",
     "fancy130"]
 
 RANDOM_FILTERED_FONTS = [
@@ -1197,7 +1197,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "white_bubble": [white_bubble_dic, False],
             "smallcaps2": [smallcaps2_dic, False],
             "superscript": [superscript_dic, False],
-            "subscript": [subscript_dic, False],
+            "subscript1": [subscript1_dic, False],
             "full_width": [full_width_dic, False],
             "antrophobia": [antrophobia_dic, False],
             "currency": [currency_dic, False],
@@ -1412,7 +1412,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "old_italic":[old_italic_dic,False],
             "ninja":[ninja_dic,False],
             "tai_viet":[tai_viet_dic,False],
-            "sub":[sub_dic,False],
+            "subscript2":[subscript2_dic,False],
             "fancy130":[fancy130_dic,False]
             }
 
