@@ -631,7 +631,6 @@ strange :
 strikethrough :
 ŧɇsŧ
 <BLANKLINE>
-
 subscript1 :
 ₜₑₛₜ
 <BLANKLINE>
