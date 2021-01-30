@@ -840,7 +840,12 @@ NON_ASCII_FONTS = [
     "pin2",
     "sign",
     "bud1",
-    "bud2"]
+    "bud2",
+    "old_italic",
+    "ninja",
+    "tai_viet",
+    "sub",
+    "fancy130"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1403,7 +1408,12 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "pin2": [pin2_dic, False],
             "sign": [sign_dic, False],
             "bud1": [bud1_dic, False],
-            "bud2": [bud2_dic, False]
+            "bud2": [bud2_dic, False],
+            "old_italic":[old_italic_dic,False],
+            "ninja":[ninja_dic,False],
+            "tai_viet":[tai_viet_dic,False],
+            "sub":[sub_dic,False],
+            "fancy130":[fancy130_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
