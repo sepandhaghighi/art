@@ -6,6 +6,30 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 23 new decorations
+	1. fancy87
+	2. fancy88
+	3. fancy89
+	4. fancy90
+	5. fancy91
+	6. fancy92
+	7. fancy93
+	8. fancy94
+	9. fancy95
+	10. heart10
+	11. heart11
+	12. heart12
+	13. heart13
+	14. heart14
+	15. heart15
+	16. star18
+	17. star19
+	18. star20
+	19. star21
+	20. star22
+	21. star23
+	22. star24
+	23. star25
 - 5 new fonts
 	1. old_italic
 	2. ninja
