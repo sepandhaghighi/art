@@ -6,7 +6,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- `requirements-splitter.py`
 - 23 new decorations
 	1. fancy87
 	2. fancy88
