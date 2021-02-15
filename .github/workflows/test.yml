@@ -50,7 +50,7 @@ jobs:
       run: |
         python -m art testcov2
         codecov
-      if: matrix.python-version == 3.7
+      if: matrix.python-version == 3.7 && matrix.os == 'ubuntu-latest'
     - name: Profile
       run: |
         python -m cProfile -s cumtime art_profile.py
