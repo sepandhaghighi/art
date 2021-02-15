@@ -33,6 +33,7 @@ jobs:
     - name: Version check
       run: |
         python otherfile/version_check.py
+      if: matrix.python-version == 3.7
     - name: Font check
       run: |
         python otherfile/font_check.py
@@ -44,10 +45,12 @@ jobs:
         python -m vulture art/ otherfile/ setup.py art_profile.py --min-confidence 65 --exclude=__init__.py --sort-by-size
         python -m bandit -r art -s B311
         python -m pydocstyle --match='(?!test).*\.py' -v
+      if: matrix.python-version == 3.7
     - name: Codecov
       run: |
         python -m art testcov2
         codecov
+      if: matrix.python-version == 3.7 && matrix.os == 'ubuntu-latest'
     - name: Profile
       run: |
         python -m cProfile -s cumtime art_profile.py
