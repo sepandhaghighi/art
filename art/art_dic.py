@@ -576,7 +576,7 @@ art_dic = {
     "playing cards clubs": "[♣]]]",
     "playing cards clubs waterfall": "🃏🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛🃜🃝🃞",
     "playing cards spades": "[♠]]]",
-    "playing cards spades waterfall": "🃠" + "🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂬🂭🂮",
+    "playing cards spades waterfall": "🃠🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂬🂭🂮",
     "spade bold": "♠",
     "heart bold": "♥",
     "diamond bold": "♦",
