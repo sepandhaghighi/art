@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 10 new 1-line-art
+	1. playing cards waterfall
+	2. playing cards waterfall (trump)
+	3. playing cards hearts waterfall
+	4. playing cards diamonds waterfall
+	5. playing cards clubs waterfall
+	6. playing cards spades waterfall
+	7. joker1
+	8. joker2
+	9. joker3
+	10. joker4
 - 23 new decorations
 	1. fancy87
 	2. fancy88
