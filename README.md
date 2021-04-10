@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://github.com/sepandhaghighi/art/raw/logo/otherfile/logo.png">
 <br/>
+<br/>
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
