@@ -1,11 +1,6 @@
 <div align="center">
-<pre>
- ______   ______  _______ 
-| |  | | | |  | \   | |   
-| |__| | | |__| |   | |   
-|_|  |_| |_|  \_\   |_|   
-         
-</pre>
+<img src="https://github.com/sepandhaghighi/art/raw/logo/otherfile/logo.png">
+<br/>
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
