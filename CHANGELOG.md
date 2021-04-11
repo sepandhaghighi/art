@@ -50,6 +50,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Test system modified
 - `subscript` font renamed to `subscript1`
+- Logo changed
 ## [5.1] - 2020-11-30
 ### Added
 - 15 new fonts
