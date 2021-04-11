@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/sepandhaghighi/art/raw/logo/otherfile/logo.png">
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/logo.png">
 <br/>
 <br/>
 <a href="https://codecov.io/gh/sepandhaghighi/art">
@@ -825,6 +825,9 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 23. [Emotiworld](http://en.emotiworld.com/)
 24. [Fancy Text Pro](https://www.fancytextpro.com/)
 25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
+
+
+* Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
 
 ## Donate to our project
 								
