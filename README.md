@@ -29,7 +29,7 @@
    		* [Testing](https://github.com/sepandhaghighi/art#testing)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
-   		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
+   		* [Try ART in Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
