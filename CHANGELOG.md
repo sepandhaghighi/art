@@ -5,6 +5,53 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.2] - 2021-05-05
+### Added
+- 10 new 1-line-art
+	1. playing cards waterfall
+	2. playing cards waterfall (trump)
+	3. playing cards hearts waterfall
+	4. playing cards diamonds waterfall
+	5. playing cards clubs waterfall
+	6. playing cards spades waterfall
+	7. joker1
+	8. joker2
+	9. joker3
+	10. joker4
+- 23 new decorations
+	1. fancy87
+	2. fancy88
+	3. fancy89
+	4. fancy90
+	5. fancy91
+	6. fancy92
+	7. fancy93
+	8. fancy94
+	9. fancy95
+	10. heart10
+	11. heart11
+	12. heart12
+	13. heart13
+	14. heart14
+	15. heart15
+	16. star18
+	17. star19
+	18. star20
+	19. star21
+	20. star22
+	21. star23
+	22. star24
+	23. star25
+- 5 new fonts
+	1. old_italic
+	2. ninja
+	3. tai_viet
+	4. subscript2
+	5. fancy130
+### Changed
+- Test system modified
+- `subscript` font renamed to `subscript1`
+- Logo changed
 ## [5.1] - 2020-11-30
 ### Added
 - 15 new fonts
@@ -1888,7 +1935,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.1...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.2...dev
+[5.2]: https://github.com/sepandhaghighi/art/compare/v5.1...v5.2
 [5.1]: https://github.com/sepandhaghighi/art/compare/v5.0...v5.1
 [5.0]: https://github.com/sepandhaghighi/art/compare/v4.9...v5.0
 [4.9]: https://github.com/sepandhaghighi/art/compare/v4.8...v4.9

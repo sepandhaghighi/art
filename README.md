@@ -1,19 +1,15 @@
 <div align="center">
-<pre>
- ______   ______  _______ 
-| |  | | | |  | \   | |   
-| |__| | | |__| |   | |   
-|_|  |_| |_|  \_\   |_|   
-         
-</pre>
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/logo.png">
+<br/>
+<br/>
 <a href="https://codecov.io/gh/sepandhaghighi/art">
   <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-590-blue.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-700-orange.svg"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-195-green.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-595-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
 </div>
@@ -33,7 +29,7 @@
    		* [Testing](https://github.com/sepandhaghighi/art#testing)
    		* [CLI](https://github.com/sepandhaghighi/art#cli)
    		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
-   		* [Try ART In Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
+   		* [Try ART in Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
@@ -41,7 +37,7 @@
    * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
    * [License](https://github.com/sepandhaghighi/art#license)
-   * [Donate](https://github.com/sepandhaghighi/art#donate-to-our-project)
+   * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
 
@@ -68,15 +64,15 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">590</td>
+		<td align="center">595</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
-		<td align="center">700</td>
+		<td align="center">710</td>
 	</tr>
     <tr>
 		<td align="center">Decor Counter</td>
-		<td align="center">195</td>
+		<td align="center">218</td>
 	</tr>
 </table>
 
@@ -89,14 +85,9 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 		<td align="center">dev</td>	
 	</tr>
 	<tr>
-		<td align="center">Travis</td>
-		<td align="center"><a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=master"></a></td>
-		<td align="center"><a href="https://travis-ci.org/sepandhaghighi/art"><img src="https://travis-ci.org/sepandhaghighi/art.svg?branch=dev"></a></td>
-	</tr>
-	<tr>
-		<td align="center">AppVeyor</td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3/branch/master?svg=true"></a></td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/art"><img src="https://ci.appveyor.com/api/projects/status/n350ntyjthc2gil3/branch/dev?svg=true"></a></td>
+		<td align="center">CI</td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/art/workflows/CI/badge.svg?branch=master"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/art/workflows/CI/badge.svg?branch=dev"></td>
 	</tr>
 </table>
 
@@ -832,15 +823,38 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 21. [ASCII-emoji](https://github.com/dysfunc/ascii-emoji)
 22. [Instagram Fonts2](https://www.instagramfonts.com/)
 23. [Emotiworld](http://en.emotiworld.com/)
+24. [Fancy Text Pro](https://www.fancytextpro.com/)
+25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
 
-## Donate to our project
+
+* Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
+
+## Show your support
 								
-<h3>Bitcoin :</h3>					
+<h3>Star this repo</h3>					
 
-```12Xm1qL4MXYWiY9sRMoa3VpfTfw6su3vNq```			
+Give a ⭐️ if this project helped you!
 
+<h3>Donate to our project</h3>	
 
+<h4>Bitcoin</h4>
+1KtNLEEeUbTEK9PdN6Ya3ZAKXaqoKUuxCy
+<h4>Ethereum</h4>
+0xcD4Db18B6664A9662123D4307B074aE968535388
+<h4>Litecoin</h4>
+Ldnz5gMcEeV8BAdsyf8FstWDC6uyYR6pgZ
+<h4>Doge</h4>
+DDUnKpFQbBqLpFVZ9DfuVysBdr249HxVDh
+<h4>Tron</h4>
+TCZxzPZLcJHr2qR3uPUB1tXB6L3FDSSAx7
+<h4>Ripple</h4>
+rN7ZuRG7HDGHR5nof8nu5LrsbmSB61V1qq
+<h4>Binance Coin</h4>
+bnb1zglwcf0ac3d0s2f6ck5kgwvcru4tlctt4p5qef
+<h4>Tether</h4>
+0xcD4Db18B6664A9662123D4307B074aE968535388
+<h4>Dash</h4>
+Xd3Yn2qZJ7VE8nbKw2fS98aLxR5M6WUU3s
+<h4>Stellar</h4>		
 
-<h3>Payping (For Iranian citizens)</h3>
-
-<a href="http://www.payping.net/sepandhaghighi" target="__blank"><img src="http://www.qpage.ir/images/payping.png" height=100px width=100px></a>	
+GALPOLPISRHIYHLQER2TLJRGUSZH52RYDK6C3HIU4PSMNAV65Q36EGNL
