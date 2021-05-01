@@ -1,0 +1,9 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "01:30"
+  open-pull-requests-limit: 10
+  target-branch: dev
