@@ -532,8 +532,8 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </div>
 <h2 id="decoration">Decoration</h2>
 <p>⚠️ Some environments don't support all decorations</p>
-<ol>
-<li>decor</li>
+<div class="indent">
+<h3>1. decor</h3>
 <p>This function return decoration as <code>str</code> in normal mode and raise <code>artError</code> in exception.</p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
  2
@@ -568,12 +568,12 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #FF0000">art.art.artError</span>: The &#39;decoration&#39; type must be str.
 </pre></td></tr></table></div>
 <p><span class="red">Note</span> : Use <code>DECORATION_NAMES</code> to access all decorations name list (new in <code>Version 4.6</code>)</p>
-</ol>
+</div>
 <h2 id="font-modes">Font modes</h2>
 <p>These modes are available for <code>text2art</code>, <code>tprint</code> & <code>tsave</code>.</p>
-<ol>
+<div class="indent">
 
-<li>Font name</li>
+<h3>1. Font name</h3>
 <p>⚠️ Some fonts don't support all characters</p>
     &nbsp;
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
@@ -604,7 +604,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 
 &nbsp;
-<li>Random</li>
+<h3>2. Random</h3>
 <p>Randomly select from all fonts.</p>
 <p>Keywords : <code>random</code>, <code>rand</code> & <code>rnd</code></p>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
@@ -620,7 +620,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 
 &nbsp;
 
-<li>Random small</li>
+<h3>3. Random small</h3>
 <p>Randomly select from small fonts.</p>
 <p>Keywords : <code>rnd-small</code>, <code>random-small</code> & <code>rand-small</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
@@ -635,7 +635,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">            </span>
 </pre></td></tr></table></div>
 &nbsp;
-<li>Random medium</li>
+<h3>4. Random medium</h3>
 <p>Randomly select from medium fonts.</p>
 <p>Keywords : <code>rnd-medium</code>, <code>random-medium</code> & <code>rand-medium</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
@@ -661,7 +661,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 &nbsp;
 
-<li>Random large</li>
+<h3>5. Random large</h3>
 <p>Randomly select from large fonts.</p>
 <p>Keywords : <code>rnd-large</code>, <code>random-large</code> & <code>rand-large</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
@@ -690,7 +690,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">      8 8888       8 888888888888  `Y8888P ,88P&#39;       8 8888       </span>
 </pre></td></tr></table></div>
 &nbsp;
-<li>Random xlarge</li>
+<h3>6. Random xlarge</h3>
 <p>Randomly select from xlarge fonts.</p>
 <p>Keywords : <code>rnd-xlarge</code>, <code>random-xlarge</code> & <code>rand-xlarge</code></p>
 <p><span class="red">Note</span> : New in <code>Version 2.8</code></p>
@@ -739,7 +739,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">                              \/____/                  \/____/                              </span>
 </pre></td></tr></table></div>
 &nbsp;
-<li>Wizard</li>
+<h3>7. Wizard</h3>
 <p>This mode consider length of input text to select font.</p>
 <p>☑️ Support of 95 ASCII characters guaranteed</p>
 <p>Keywords : <code>wizard</code>, <code>wiz</code> & <code>magic</code></p>
@@ -811,7 +811,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </span>
 </pre></td></tr></table></div>
 &nbsp;
-<li>Random Non-ASCII</li>
+<h3>8. Random Non-ASCII</h3>
 <p>Randomly select from Non-ASCII fonts.</p>
 <p>Keywords : <code>random-na</code>, <code>rand-na</code> & <code>rnd-na</code></p>
 <p><span class="red">Note</span> : New in <code>Version 3.4</code></p>
@@ -826,7 +826,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">ʇsǝʇ</span>
 </pre></td></tr></table></div>
 &nbsp;
-<li>Mix Non-ASCII</li>
+<h3>9. Mix Non-ASCII</h3>
 <p>Randomly mix Non-ASCII fonts.</p>
 <p>Keywords : <code>mix</code></p>
 <p><span class="red">Note</span> : New in <code>Version 3.7</code></p>
@@ -846,7 +846,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>,<span style="background-color: #fff0f0">&quot;mix&quot;</span>)
 <span style="color: #888888">꓄єร꓄</span>
 </pre></td></tr></table></div>
-</ol>
+</div>
 <p>⚠️ Non-ASCII fonts are only available in <code>Font name</code>, <code>Random Non-ASCII</code> and <code>Mix Non-ASCII</code> modes</p>
 <h2 id="typo-tolerance">Typo-tolerance</h2>
 <p><a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> used in this project. (><code>Version 0.9</code>)</p>
