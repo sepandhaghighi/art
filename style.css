@@ -9,6 +9,10 @@
 body {
     font-family: "open-sans";
 }
+
+.indent{
+    margin-left: 25px;
+}
 p{
     font-size: 18px;
 }
