@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "5.1"  # pragma: no cover
+ART_VERSION = "5.2"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -387,6 +387,10 @@ NON_ASCII_ARTS = [
     'jaymz',
     'jazz musician',
     'john lennon',
+    'joker1',
+    'joker2',
+    'joker3',
+    'joker4',
     'jokeranonimous',
     'jokeranonimous2',
     'judgemental',
@@ -472,10 +476,16 @@ NON_ASCII_ARTS = [
     'mad9',
     'mad10',
     'playing cards clubs',
+    'playing cards clubs waterfall',
     'playing cards diamonds',
+    'playing cards diamonds waterfall',
     'playing cards hearts',
+    'playing cards hearts waterfall',
     'playing cards spades',
+    'playing cards spades waterfall',
     'playing cards',
+    'playing cards waterfall',
+    'playing cards waterfall (trump)',
     'playing in snow',
     'point',
     'polar bear',
@@ -632,7 +642,7 @@ NON_ASCII_FONTS = [
     "white_bubble",
     "smallcaps2",
     "superscript",
-    "subscript",
+    "subscript1",
     "full_width",
     "antrophobia",
     "currency",
@@ -840,7 +850,12 @@ NON_ASCII_FONTS = [
     "pin2",
     "sign",
     "bud1",
-    "bud2"]
+    "bud2",
+    "old_italic",
+    "ninja",
+    "tai_viet",
+    "subscript2",
+    "fancy130"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1192,7 +1207,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "white_bubble": [white_bubble_dic, False],
             "smallcaps2": [smallcaps2_dic, False],
             "superscript": [superscript_dic, False],
-            "subscript": [subscript_dic, False],
+            "subscript1": [subscript1_dic, False],
             "full_width": [full_width_dic, False],
             "antrophobia": [antrophobia_dic, False],
             "currency": [currency_dic, False],
@@ -1403,7 +1418,12 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "pin2": [pin2_dic, False],
             "sign": [sign_dic, False],
             "bud1": [bud1_dic, False],
-            "bud2": [bud2_dic, False]
+            "bud2": [bud2_dic, False],
+            "old_italic": [old_italic_dic, False],
+            "ninja": [ninja_dic, False],
+            "tai_viet": [tai_viet_dic, False],
+            "subscript2": [subscript2_dic, False],
+            "fancy130": [fancy130_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
@@ -1527,6 +1547,15 @@ DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
                    "fancy84": fancy84,
                    "fancy85": fancy85,
                    "fancy86": fancy86,
+                   "fancy87": fancy87,
+                   "fancy88": fancy88,
+                   "fancy89": fancy89,
+                   "fancy90": fancy90,
+                   "fancy91": fancy91,
+                   "fancy92": fancy92,
+                   "fancy93": fancy93,
+                   "fancy94": fancy94,
+                   "fancy95": fancy95,
                    "flame1": flame1,
                    "flower1": flower1,
                    "food1": food1,
@@ -1545,6 +1574,12 @@ DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
                    "heart7": heart7,
                    "heart8": heart8,
                    "heart9": heart9,
+                   "heart10": heart10,
+                   "heart11": heart11,
+                   "heart12": heart12,
+                   "heart13": heart13,
+                   "heart14": heart14,
+                   "heart15": heart15,
                    "line1": line1,
                    "line2": line2,
                    "line3": line3,
@@ -1588,6 +1623,14 @@ DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
                    "star15": star15,
                    "star16": star16,
                    "star17": star17,
+                   "star18": star18,
+                   "star19": star19,
+                   "star20": star20,
+                   "star21": star21,
+                   "star22": star22,
+                   "star23": star23,
+                   "star24": star24,
+                   "star25": star25,
                    "temple1": temple1,
                    "title1": title1,
                    "tree1": tree1,
