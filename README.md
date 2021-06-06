@@ -825,6 +825,7 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 23. [Emotiworld](http://en.emotiworld.com/)
 24. [Fancy Text Pro](https://www.fancytextpro.com/)
 25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
+26. [Emoji Symbols](https://copypastemoji.text-generator.org/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
