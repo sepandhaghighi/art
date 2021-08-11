@@ -562,6 +562,9 @@ love2 :
 malayalam :
 ੮૯ട੮
 <BLANKLINE>
+manga :
+ㄒ乇丂ㄒ
+<BLANKLINE>
 messletters :
 ᴛєѕᴛ
 <BLANKLINE>
