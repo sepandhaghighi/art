@@ -670,6 +670,9 @@ tiny :
 tiny2 :
 ᴛᴇꜱᴛ
 <BLANKLINE>
+tiny_caps :
+ᴛᴇᴤᴛ
+<BLANKLINE>
 upside_down :
 ʇǝsʇ
 <BLANKLINE>

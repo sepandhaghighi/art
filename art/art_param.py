@@ -857,7 +857,8 @@ NON_ASCII_FONTS = [
     "subscript2",
     "fancy130",
     "smooth",
-    "flaky"]
+    "flaky",
+    "tiny_caps"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1426,8 +1427,9 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "tai_viet": [tai_viet_dic, False],
             "subscript2": [subscript2_dic, False],
             "fancy130": [fancy130_dic, False],
-            "smooth":[smooth_dic, False],
-            "flaky":[flaky_dic, False]
+            "smooth": [smooth_dic, False],
+            "flaky": [flaky_dic, False],
+            "tiny_caps": [tiny_caps_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
