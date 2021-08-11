@@ -688,6 +688,9 @@ tiny_caps :
 upside_down :
 ʇǝsʇ
 <BLANKLINE>
+upside_down1 :
+ʇǝsʇ
+<BLANKLINE>
 white_bubble :
 ⓣⓔⓢⓣ
 <BLANKLINE>

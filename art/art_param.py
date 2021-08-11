@@ -862,7 +862,8 @@ NON_ASCII_FONTS = [
     "high_above",
     "handwriting",
     "fantasy1",
-    "manga"]
+    "manga",
+    "upside_down1"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1437,7 +1438,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "high_above": [high_above_dic, False],
             "handwriting": [handwriting_dic, False],
             "fantasy1": [fantasy1_dic, False],
-            "manga": [manga_dic, False]
+            "manga": [manga_dic, False],
+            "upside_down1": [upside_down1_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
