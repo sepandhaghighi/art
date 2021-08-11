@@ -860,7 +860,8 @@ NON_ASCII_FONTS = [
     "flaky",
     "tiny_caps",
     "high_above",
-    "handwriting"]
+    "handwriting",
+    "fantasy1"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1433,7 +1434,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "flaky": [flaky_dic, False],
             "tiny_caps": [tiny_caps_dic, False],
             "high_above": [high_above_dic, False],
-            "handwriting": [handwriting_dic, False]
+            "handwriting": [handwriting_dic, False],
+            "fantasy1": [fantasy1_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

@@ -487,6 +487,9 @@ fancy98 :
 fancy99 :
 тeѕт
 <BLANKLINE>
+fantasy1 :
+ᡶꫀకᡶ
+<BLANKLINE>
 fari :
 『t』『e』『s』『t』
 <BLANKLINE>
