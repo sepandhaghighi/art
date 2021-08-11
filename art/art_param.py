@@ -855,7 +855,8 @@ NON_ASCII_FONTS = [
     "ninja",
     "tai_viet",
     "subscript2",
-    "fancy130"]
+    "fancy130",
+    "smooth"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1423,7 +1424,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "ninja": [ninja_dic, False],
             "tai_viet": [tai_viet_dic, False],
             "subscript2": [subscript2_dic, False],
-            "fancy130": [fancy130_dic, False]
+            "fancy130": [fancy130_dic, False],
+            "smooth":[smooth_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
