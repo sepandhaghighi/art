@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 9 new font
+	1. smooth
+	2. flaky
+	3. tiny_caps
+	4. high_above
+	5. handwriting
+	6. fantasy1
+	7. manga
+	8. upside_down1
+	9. cool1
 ## [5.2] - 2021-05-05
 ### Added
 - 10 new 1-line-art
