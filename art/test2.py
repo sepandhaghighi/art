@@ -634,13 +634,13 @@ smallcaps2 :
 smallcaps3 :
 ᴛᴇsᴛ
 <BLANKLINE>
-smooth :
-тєѕт
-<BLANKLINE>
 smooth1 :
 тєѕт
 <BLANKLINE>
 smooth2 :
+<BLANKLINE>
+тєѕт
+smooth3 :
 тєѕт
 <BLANKLINE>
 special :

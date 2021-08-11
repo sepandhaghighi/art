@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - 9 new font
-	1. smooth
+	1. smooth3
 	2. flaky
 	3. tiny_caps
 	4. high_above
