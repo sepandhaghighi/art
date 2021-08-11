@@ -526,6 +526,9 @@ handwriting2 :
 hazy :
 ŤƐらŤ
 <BLANKLINE>
+high_above :
+ᵗᵉˢᵗ
+<BLANKLINE>
 hippie :
 ⊥ε﹩⊥
 <BLANKLINE>
