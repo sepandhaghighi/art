@@ -517,6 +517,9 @@ funky_fresh :
 greek_legends :
 TΣST
 <BLANKLINE>
+handwriting :
+𝓉𝑒𝓈𝓉
+<BLANKLINE>
 handwriting1 :
 𝓉𝑒𝓈𝓉
 <BLANKLINE>
