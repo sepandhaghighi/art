@@ -493,6 +493,9 @@ fari :
 fasion :
 ŧεşŧ
 <BLANKLINE>
+flaky :
+丅ᗴᔕ丅
+<BLANKLINE>
 flip :
 ϝԍƨϝ
 <BLANKLINE>
