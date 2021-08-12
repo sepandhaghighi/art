@@ -864,7 +864,7 @@ NON_ASCII_FONTS = [
     "fantasy1",
     "manga",
     "upside_down1",
-    "cool1_dic"]
+    "cool1"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
