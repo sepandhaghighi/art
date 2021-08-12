@@ -61,7 +61,7 @@ contouring3 :
 contouring4 :
 (̲̅t)(̲̅e)(̲̅s)(̲̅t)
 <BLANKLINE>
-cool1: 
+cool: 
 Ꮏ𐒢ᎴᎿ
 <BLANKLINE>
 coptic1 :

@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	6. fantasy1
 	7. manga
 	8. upside_down1
-	9. cool1
+	9. cool
 ## [5.2] - 2021-05-05
 ### Added
 - 10 new 1-line-art
