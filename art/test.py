@@ -1441,7 +1441,7 @@ fairligh :
 fancy51 :
 7357
 <BLANKLINE>
-fantasy :
+fantasy1 :
 ######    ### #   ### #  ######
   #      ##  #   ##  #     #
  ##     ##       ##       ##
