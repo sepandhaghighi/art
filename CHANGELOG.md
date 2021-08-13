@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	5. handwriting3
 	6. fantasy2
 	7. manga
-	8. upside_down1
+	8. upside_down2
 	9. cool
 ## [5.2] - 2021-05-05
 ### Added

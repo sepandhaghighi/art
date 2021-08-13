@@ -691,7 +691,7 @@ tiny_caps :
 upside_down :
 ʇǝsʇ
 <BLANKLINE>
-upside_down1 :
+upside_down2 :
 ʇǝsʇ
 <BLANKLINE>
 white_bubble :

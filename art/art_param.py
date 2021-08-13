@@ -863,7 +863,7 @@ NON_ASCII_FONTS = [
     "handwriting3",
     "fantasy2",
     "manga",
-    "upside_down1",
+    "upside_down2",
     "cool"]
 
 RANDOM_FILTERED_FONTS = [
@@ -1440,7 +1440,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "handwriting3": [handwriting_dic, False],
             "fantasy2": [fantasy2_dic, False],
             "manga": [manga_dic, False],
-            "upside_down1": [upside_down1_dic, False],
+            "upside_down2": [upside_down2_dic, False],
             "cool": [cool_dic, False]
             }
 

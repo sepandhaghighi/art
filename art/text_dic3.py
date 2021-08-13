@@ -26144,7 +26144,7 @@ manga_dic =  {
     '8': '੪',
     '9': '੧',
     ' ': ' '}
-upside_down1_dic =  {
+upside_down2_dic =  {
     'a': 'ɐ',
     'b': 'q',
     'c': 'ɔ',
