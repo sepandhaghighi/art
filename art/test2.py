@@ -490,7 +490,7 @@ fancy98 :
 fancy99 :
 тeѕт
 <BLANKLINE>
-fantasy1 :
+fantasy2 :
 ᡶꫀకᡶ
 <BLANKLINE>
 fari :

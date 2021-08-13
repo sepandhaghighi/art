@@ -25952,7 +25952,7 @@ handwriting3_dic =  {
     '8': '8',
     '9': '9',
     ' ': ' '}
-fantasy1_dic =  {
+fantasy2_dic =  {
     'a': 'ꪖ',
     'b': 'ꪉ',
     'c': 'ᨶ',

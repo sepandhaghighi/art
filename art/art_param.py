@@ -861,7 +861,7 @@ NON_ASCII_FONTS = [
     "tiny_caps",
     "high_above",
     "handwriting3",
-    "fantasy1",
+    "fantasy2",
     "manga",
     "upside_down1",
     "cool"]
@@ -1438,7 +1438,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "tiny_caps": [tiny_caps_dic, False],
             "high_above": [high_above_dic, False],
             "handwriting3": [handwriting_dic, False],
-            "fantasy1": [fantasy1_dic, False],
+            "fantasy2": [fantasy2_dic, False],
             "manga": [manga_dic, False],
             "upside_down1": [upside_down1_dic, False],
             "cool": [cool_dic, False]

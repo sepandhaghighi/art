@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	3. tiny_caps
 	4. high_above
 	5. handwriting3
-	6. fantasy1
+	6. fantasy2
 	7. manga
 	8. upside_down1
 	9. cool
