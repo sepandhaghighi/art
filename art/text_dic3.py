@@ -25856,7 +25856,7 @@ high_above_dic =  {
     '8': '8',
     '9': '9',
     ' ': ' '}
-handwriting_dic =  {
+handwriting3_dic =  {
     'a': '𝒶',
     'b': '𝒷',
     'c': '𝒸',

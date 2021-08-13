@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	2. flaky
 	3. tiny_caps
 	4. high_above
-	5. handwriting
+	5. handwriting3
 	6. fantasy1
 	7. manga
 	8. upside_down1
