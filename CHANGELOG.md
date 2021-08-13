@@ -6,8 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- 1 font renamed:
+- 2 fonts renamed:
 	1. fantasy --> fantasy1
+	2. upside_down --> upside_down1
 ### Added
 - 9 new font
 	1. smooth3

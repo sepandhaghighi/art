@@ -688,7 +688,7 @@ tiny2 :
 tiny_caps :
 ᴛᴇᴤᴛ
 <BLANKLINE>
-upside_down :
+upside_down1 :
 ʇǝsʇ
 <BLANKLINE>
 upside_down2 :

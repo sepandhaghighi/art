@@ -15675,7 +15675,7 @@ tiny2_dic = {
     '8': '8',
     '9': '9',
     ' ': ' '}
-upside_down_dic = {
+upside_down1_dic = {
     'a': 'ɐ',
     'b': 'b',
     'c': 'ɔ',
