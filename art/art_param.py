@@ -1437,7 +1437,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "flaky": [flaky_dic, False],
             "tiny_caps": [tiny_caps_dic, False],
             "high_above": [high_above_dic, False],
-            "handwriting3": [handwriting_dic, False],
+            "handwriting3": [handwriting3_dic, False],
             "fantasy2": [fantasy2_dic, False],
             "manga": [manga_dic, False],
             "upside_down2": [upside_down2_dic, False],
