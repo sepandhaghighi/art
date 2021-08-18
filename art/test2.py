@@ -61,6 +61,9 @@ contouring3 :
 contouring4 :
 (̲̅t)(̲̅e)(̲̅s)(̲̅t)
 <BLANKLINE>
+cool : 
+Ꮏ𐒢ᎴᎿ
+<BLANKLINE>
 coptic1 :
 ⲧⲉ⳽ⲧ
 <BLANKLINE>
@@ -487,11 +490,17 @@ fancy98 :
 fancy99 :
 тeѕт
 <BLANKLINE>
+fantasy2 :
+ᡶꫀకᡶ
+<BLANKLINE>
 fari :
 『t』『e』『s』『t』
 <BLANKLINE>
 fasion :
 ŧεşŧ
+<BLANKLINE>
+flaky :
+丅ᗴᔕ丅
 <BLANKLINE>
 flip :
 ϝԍƨϝ
@@ -520,8 +529,14 @@ handwriting1 :
 handwriting2 :
 ƚҽʂƚ
 <BLANKLINE>
+handwriting3 :
+𝓉𝑒𝓈𝓉
+<BLANKLINE>
 hazy :
 ŤƐらŤ
+<BLANKLINE>
+high_above :
+ᵗᵉˢᵗ
 <BLANKLINE>
 hippie :
 ⊥ε﹩⊥
@@ -549,6 +564,9 @@ love2 :
 <BLANKLINE>
 malayalam :
 ੮૯ട੮
+<BLANKLINE>
+manga :
+ㄒ乇丂ㄒ
 <BLANKLINE>
 messletters :
 ᴛєѕᴛ
@@ -622,6 +640,9 @@ smooth1 :
 smooth2 :
 тєѕт
 <BLANKLINE>
+smooth3 :
+ƚҽʂƚ
+<BLANKLINE>
 special :
 TEᔕT
 <BLANKLINE>
@@ -664,7 +685,13 @@ tiny :
 tiny2 :
 ᴛᴇꜱᴛ
 <BLANKLINE>
-upside_down :
+tiny_caps :
+ᴛᴇᴤᴛ
+<BLANKLINE>
+upside_down1 :
+ʇǝsʇ
+<BLANKLINE>
+upside_down2 :
 ʇǝsʇ
 <BLANKLINE>
 white_bubble :

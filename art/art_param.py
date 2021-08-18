@@ -100,7 +100,7 @@ UPPERCASE_FONTS = [
     "faces_of",
     "fair_mea",
     "fairligh",
-    "fantasy",
+    "fantasy1",
     "fbr1",
     "fbr12",
     "fbr_stri",
@@ -799,7 +799,7 @@ NON_ASCII_FONTS = [
     "knight2",
     "thin3",
     "tiny2",
-    "upside_down",
+    "upside_down1",
     "chinese_mafia",
     "sunday_cuddle",
     "native_lands",
@@ -855,7 +855,16 @@ NON_ASCII_FONTS = [
     "ninja",
     "tai_viet",
     "subscript2",
-    "fancy130"]
+    "fancy130",
+    "smooth3",
+    "flaky",
+    "tiny_caps",
+    "high_above",
+    "handwriting3",
+    "fantasy2",
+    "manga",
+    "upside_down2",
+    "cool"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1174,7 +1183,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "faces_of": [faces_of_dic, False],
             "fair_mea": [fair_mea_dic, False],
             "fairligh": [fairligh_dic, False],
-            "fantasy": [fantasy_dic, False],
+            "fantasy1": [fantasy1_dic, False],
             "fbr_stri": [fbr_stri_dic, False],
             "fbr_tilt": [fbr_tilt_dic, False],
             "fbr1": [fbr1_dic, False],
@@ -1323,7 +1332,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "h4k3r": [h4k3r_dic, False],
             "thin3": [thin3_dic, False],
             "tiny2": [tiny2_dic, False],
-            "upside_down": [upside_down_dic, False],
+            "upside_down1": [upside_down1_dic, False],
             "chinese_mafia": [chinese_mafia_dic, False],
             "sunday_cuddle": [sunday_cuddle_dic, False],
             "native_lands": [native_lands_dic, False],
@@ -1345,7 +1354,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy93": [fancy93_dic, False],
             "fancy94": [fancy94_dic, False],
             "fancy95": [fancy95_dic, False],
-            "smooth1": [smooth_dic, False],
+            "smooth1": [smooth1_dic, False],
             "fancy96": [fancy96_dic, False],
             "fancy97": [fancy97_dic, False],
             "fancy98": [fancy98_dic, False],
@@ -1423,7 +1432,16 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "ninja": [ninja_dic, False],
             "tai_viet": [tai_viet_dic, False],
             "subscript2": [subscript2_dic, False],
-            "fancy130": [fancy130_dic, False]
+            "fancy130": [fancy130_dic, False],
+            "smooth3": [smooth3_dic, False],
+            "flaky": [flaky_dic, False],
+            "tiny_caps": [tiny_caps_dic, False],
+            "high_above": [high_above_dic, False],
+            "handwriting3": [handwriting3_dic, False],
+            "fantasy2": [fantasy2_dic, False],
+            "manga": [manga_dic, False],
+            "upside_down2": [upside_down2_dic, False],
+            "cool": [cool_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
