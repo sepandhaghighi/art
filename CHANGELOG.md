@@ -5,10 +5,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Changed
-- 2 fonts renamed:
-	1. fantasy --> fantasy1
-	2. upside_down --> upside_down1
 ### Added
 - 9 new font
 	1. smooth3
@@ -20,6 +16,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	7. manga
 	8. upside_down2
 	9. cool
+### Changed
+- `fantasy` font renamed to `fantasy1`
+- `upside_down` font renamed to `upside_down1`
 ## [5.2] - 2021-05-05
 ### Added
 - 10 new 1-line-art
