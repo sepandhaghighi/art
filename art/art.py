@@ -405,7 +405,7 @@ def mix_letters():
     return letters
 
 
-def __word2art(word, font, chr_ignore, letters, next_word):
+def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     """
     Return art word.
 
@@ -419,13 +419,15 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     :type letters: dict
     :param next_word: next word flag
     :type next_word: bool
+    :param sep: line separator char
+    :type sep: str
     :return: ascii art as str
     """
     split_list = []
     result_list = []
     splitter = "\n"
-    if "win32" != sys.platform:
-        splitter = "\r\n"
+    if isinstance(sep, str):
+        splitter = sep
     if len(word) == 0 and next_word:
         return splitter
     for i in word:
