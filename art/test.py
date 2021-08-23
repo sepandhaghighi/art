@@ -4596,6 +4596,10 @@ art.art.artError: The 'print_status' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'overwrite' type must be bool.
+>>> set_default(sep=True)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'sep' type must be str.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)
