@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `fantasy` font renamed to `fantasy1`
 - `upside_down` font renamed to `upside_down1`
+- `sep` parameter added to `text2art`, `tprint`, `tsave` and `set_default` functions
 ## [5.2] - 2021-05-05
 ### Added
 - 10 new 1-line-art

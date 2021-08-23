@@ -177,6 +177,8 @@ art.art.artError: The 'number' type must be int.
 
 ⚠️ From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
 
+⚠️ From `Version 5.3` `\n` is used as the default line separator instead of `\r\n` (Use `sep` parameter if needed)
+
 #### 1. text2art				
 
 This function return ASCII text as `str` in normal mode and raise `artError` in exception.
@@ -337,7 +339,9 @@ Filename: test.txt
 >>> Response=tsave("art",filename="test.txt",decoration="barcode1") # decoration parameter is added in Version 4.6
 Saved! 
 Filename: test.txt
-                        
+>>> Response=tsave("art",filename="test.txt",sep="\r\n") # sep parameter is added in Version 5.3
+Saved! 
+Filename: test.txt                        
 ```
 
 * Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
