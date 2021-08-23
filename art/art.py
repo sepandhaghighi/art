@@ -230,7 +230,8 @@ def tsave(
         chr_ignore=True,
         print_status=True,
         overwrite=False,
-        decoration=None):
+        decoration=None,
+        sep="\n"):
     r"""
     Save ascii art (support \n).
 
@@ -248,6 +249,8 @@ def tsave(
     :type overwrite:bool
     :param decoration: text decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
     """
     try:
@@ -274,7 +277,8 @@ def tsave(
             text,
             font=font,
             decoration=decoration,
-            chr_ignore=chr_ignore)
+            chr_ignore=chr_ignore,
+            sep=sep)
         file.write(result)
         file.close()
         if print_status:
