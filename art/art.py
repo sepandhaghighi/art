@@ -195,7 +195,12 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None, sep="\n"):
+def tprint(
+        text,
+        font=DEFAULT_FONT,
+        chr_ignore=True,
+        decoration=None,
+        sep="\n"):
     r"""
     Print art text (support \n).
 
@@ -468,7 +473,12 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None, sep="\n"):
+def text2art(
+        text,
+        font=DEFAULT_FONT,
+        chr_ignore=True,
+        decoration=None,
+        sep="\n"):
     r"""
     Return art text (support \n).
 
