@@ -461,7 +461,7 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
+def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None, sep="\n"):
     r"""
     Return art text (support \n).
 
@@ -473,6 +473,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     :type chr_ignore:bool
     :param decoration: text decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: ascii art text as str
     """
     letters = standard_dic
@@ -501,7 +503,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
                                      font=font,
                                      chr_ignore=chr_ignore,
                                      letters=letters,
-                                     next_word=next_word_flag)
+                                     next_word=next_word_flag,
+                                     sep=sep)
     if decoration is not None:
         [decor1, decor2] = decor(decoration, both=True)
         result = decor1 + result + decor2
