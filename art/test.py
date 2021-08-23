@@ -4503,16 +4503,40 @@ True
 True
 >>> file=open("test.txt","r")
 >>> data = file.read()
->>> (len(data)==282) or (len(data)==294)
-True
+>>> print(data)
+ _               _      __  _  _
+| |_   ___  ___ | |_   / _|(_)| |  ___
+| __| / _ \/ __|| __| | |_ | || | / _ \
+| |_ |  __/\__ \| |_  |  _|| || ||  __/
+\__| \___||___/ \__| |_|  |_||_| \___|
+<BLANKLINE>
+ _
+| | __
+| |/ /
+|   <
+|_|\_\
+<BLANKLINE>
+<BLANKLINE>
 >>> file=open("art.txt","r")
 >>> data = file.read()
->>> (len(data)==246) or (len(data)==252)
-True
+>>> print(data)
+ _               _                  _
+| |_   ___  ___ | |_    __ _  _ __ | |_
+| __| / _ \/ __|| __|  / _` || '__|| __|
+| |_ |  __/\__ \| |_  | (_| || |   | |_
+\__| \___||___/ \__|  \__,_||_|    \__|
+<BLANKLINE>
+<BLANKLINE>
 >>> file=open("art2.txt","r")
 >>> data = file.read()
->>> (len(data)==288) or (len(data)==294)
-True
+>>> print(data)
+ _               _                  _    ____
+| |_   ___  ___ | |_    __ _  _ __ | |_ |___ \
+| __| / _ \/ __|| __|  / _` || '__|| __|  __) |
+| |_ |  __/\__ \| |_  | (_| || |   | |_  / __/
+\__| \___||___/ \__|  \__,_||_|    \__||_____|
+<BLANKLINE>
+<BLANKLINE>
 >>> file.close()
 >>> Data=text2art(222)
 Traceback (most recent call last):
