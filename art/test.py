@@ -4529,6 +4529,8 @@ True
 \__| \___||___/ \__|  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
+>>> len(data)==246
+True
 >>> file=open("art2.txt","r")
 >>> data = file.read()
 >>> print(data)
@@ -4539,6 +4541,8 @@ True
 \__| \___||___/ \__|  \__,_||_|    \__||_____|
 <BLANKLINE>
 <BLANKLINE>
+>>> len(data)==288
+True
 >>> file.close()
 >>> Data=text2art(222)
 Traceback (most recent call last):
