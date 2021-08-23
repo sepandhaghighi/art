@@ -4517,6 +4517,8 @@ True
 |_|\_\
 <BLANKLINE>
 <BLANKLINE>
+>>> len(data)==282
+True
 >>> file=open("art.txt","r")
 >>> data = file.read()
 >>> print(data)
