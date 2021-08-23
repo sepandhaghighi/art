@@ -195,7 +195,7 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
+def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None, sep="\n"):
     r"""
     Print art text (support \n).
 
@@ -207,6 +207,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     :type chr_ignore:bool
     :param decoration: text decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
     """
     try:
@@ -217,7 +219,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
             text,
             font=font,
             decoration=decoration,
-            chr_ignore=chr_ignore)
+            chr_ignore=chr_ignore,
+            sep=sep)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
