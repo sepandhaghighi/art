@@ -842,6 +842,8 @@ Give a ⭐️ if this project helped you!
 
 <h3>Donate to our project</h3>	
 
+If you do like our project and we hope that you do, can you please support us? Our project is not and is never going to be working for profit. We need the money just so we can continue doing what we do ;-) .			
+
 <h4>Bitcoin</h4>
 1KtNLEEeUbTEK9PdN6Ya3ZAKXaqoKUuxCy
 <h4>Ethereum</h4>
