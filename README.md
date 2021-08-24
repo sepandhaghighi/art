@@ -830,6 +830,7 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 24. [Fancy Text Pro](https://www.fancytextpro.com/)
 25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
 26. [Text Generator](https://coolfonts.text-generator.org/)
+27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
