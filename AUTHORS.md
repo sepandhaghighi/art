@@ -6,3 +6,4 @@
 
 # Other Contributors #
 ----------
+- [@heidecjj](https://github.com/heidecjj)
