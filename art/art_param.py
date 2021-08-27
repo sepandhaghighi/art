@@ -865,7 +865,8 @@ NON_ASCII_FONTS = [
     "fantasy2",
     "manga",
     "upside_down2",
-    "cool"]
+    "cool",
+    "instagram"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1442,7 +1443,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fantasy2": [fantasy2_dic, False],
             "manga": [manga_dic, False],
             "upside_down2": [upside_down2_dic, False],
-            "cool": [cool_dic, False]
+            "cool": [cool_dic, False],
+            "instagram":[instagram_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

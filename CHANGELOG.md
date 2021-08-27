@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 9 new font
+- 10 new font
 	1. smooth3
 	2. flaky
 	3. tiny_caps
@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	7. manga
 	8. upside_down2
 	9. cool
+	10. instagram
 ### Changed
 - `fantasy` font renamed to `fantasy1`
 - `upside_down` font renamed to `upside_down1`

@@ -544,6 +544,9 @@ hippie :
 hyves :
 t€$t
 <BLANKLINE>
+instagram :
+🅣🅔🅢🅣
+<BLANKLINE>
 knight :
 ṮḕṠṮ
 <BLANKLINE>
