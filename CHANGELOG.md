@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.3] - 2021-09-01
 ### Added
 - 10 new font
 	1. smooth3
@@ -1953,7 +1954,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.2...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.3...dev
+[5.3]: https://github.com/sepandhaghighi/art/compare/v5.2...v5.3
 [5.2]: https://github.com/sepandhaghighi/art/compare/v5.1...v5.2
 [5.1]: https://github.com/sepandhaghighi/art/compare/v5.0...v5.1
 [5.0]: https://github.com/sepandhaghighi/art/compare/v4.9...v5.0
