@@ -97,7 +97,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
     <p>⚠️ <b>PyPI</b> support of these versions will be removed in a <b>future release</b></p>
     <h2>Source code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v5.2.zip">Version 5.2</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v5.3.zip">Version 5.3</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -106,7 +106,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 
 <ul>
     <li>Check <a href="https://packaging.python.org/installing/">Python Packaging User Guide</a></li>
-    <li><code>pip install art==5.2</code> or <code>pip3 install art==5.2</code> <span class="red"> Need root access </span></li>
+    <li><code>pip install art==5.3</code> or <code>pip3 install art==5.3</code> <span class="red"> Need root access </span></li>
     <li>On <code>--upgrade</code> error install latest version of <code>setuptools</code> : <code>pip install setuptools</code> and retry</li>
 </ul>
 
@@ -118,7 +118,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </ul>
 <h2>Easy install</h2>
 <ul>
-    <li>Run <code>easy_install "art==5.2"</code> <span class="red"> Need root access </span></li>
+    <li>Run <code>easy_install "art==5.3"</code> <span class="red"> Need root access </span></li>
 </ul>
 <h2>MATLAB</h2>
 <ul>
@@ -223,6 +223,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <h2 id="ascii-text">ASCII text</h2>
 <p>⚠️ Some fonts don't support all characters</p>
 <p>⚠️ From <code>Version 3.3</code> Non-ASCII fonts added (These fonts are not compatible with some environments)</p>
+<p>⚠️ From <code>Version 5.3</code> <code>\n</code> is used as the default line separator instead of <code>\r\n</code> (Use <code>sep</code> parameter if needed)</p>
 <div class="indent">
 <h3>1. text2art</h3>
 <p>This function return ASCII text as <b>str</b> in normal mode and raise <b>artError</b> in exception</p>
@@ -508,7 +509,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 15
 16
 17
-18</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True), return dict</span>
+18
+19
+20
+21</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True), return dict</span>
 <span style="color: #888888">Saved! </span>
 <span style="color: #888888">Filename: test.txt</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
@@ -526,6 +530,9 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,decoration<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;barcode1&quot;</span>) <span style="color: #888888"># decoration parameter is added in Version 4.6</span>
 <span style="color: #888888">Saved! </span>
 <span style="color: #888888">Filename: test.txt</span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,sep<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\r\n</span><span style="background-color: #fff0f0">&quot;</span>) <span style="color: #888888"># sep parameter is added in Version 5.3</span>
+<span style="color: #888888">Saved! </span>
+<span style="color: #888888">Filename: test.txt   </span>
 </pre></td></tr></table></div>
 <p><span class="red">Note1</span> : Use <code>FONT_NAMES</code> to access all fonts name list (new in <code>Version 4.2</code>)</p>
 <p><span class="red">Note2</span> : Use <code>NON_ASCII_FONTS</code> to access all Non-ASCII fonts name list (new in <code>Version 4.4</code>)</p>
@@ -1086,7 +1093,9 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
         <li><a href="https://www.instagramfonts.com/">Instagram Fonts2</a></li>
         <li><a href="http://en.emotiworld.com/">Emotiworld</a></li>
         <li><a href="https://www.fancytextpro.com/">Fancy Text Pro</a></li>
-        <li><a href="https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode">Playing cards in Unicode</a></li>  
+        <li><a href="https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode">Playing cards in Unicode</a></li>
+        <li><a href="https://coolfonts.text-generator.org/"></a>Text Generator</li>
+        <li><a href="https://instafontsgen.codesdetail.com/"></a>GOGOTEXT</li>
     </ol>
 <p>* Logo designed by <a href="https://www.linkedin.com/in/artakhanalizadeh">Arta Khanalizadeh</a></p>
 <h1 id="support">Show your support</h1>
