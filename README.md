@@ -7,7 +7,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-595-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-605-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
@@ -64,7 +64,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">595</td>
+		<td align="center">605</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -176,6 +176,8 @@ art.art.artError: The 'number' type must be int.
 ⚠️ Some fonts don't support all characters		
 
 ⚠️ From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
+
+⚠️ From `Version 5.3` `\n` is used as the default line separator instead of `\r\n` (Use `sep` parameter if needed)
 
 #### 1. text2art				
 
@@ -337,7 +339,9 @@ Filename: test.txt
 >>> Response=tsave("art",filename="test.txt",decoration="barcode1") # decoration parameter is added in Version 4.6
 Saved! 
 Filename: test.txt
-                        
+>>> Response=tsave("art",filename="test.txt",sep="\r\n") # sep parameter is added in Version 5.3
+Saved! 
+Filename: test.txt                        
 ```
 
 * Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
@@ -825,6 +829,8 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 23. [Emotiworld](http://en.emotiworld.com/)
 24. [Fancy Text Pro](https://www.fancytextpro.com/)
 25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
+26. [Text Generator](https://coolfonts.text-generator.org/)
+27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
@@ -836,6 +842,8 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 Give a ⭐️ if this project helped you!
 
 <h3>Donate to our project</h3>	
+
+If you do like our project and we hope that you do, can you please support us? Our project is not and is never going to be working for profit. We need the money just so we can continue doing what we do ;-) .			
 
 <h4>Bitcoin</h4>
 1KtNLEEeUbTEK9PdN6Ya3ZAKXaqoKUuxCy

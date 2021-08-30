@@ -5,6 +5,25 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.3] - 2021-08-30
+### Added
+- 10 new font
+	1. smooth3
+	2. flaky
+	3. tiny_caps
+	4. high_above
+	5. handwriting3
+	6. fantasy2
+	7. manga
+	8. upside_down2
+	9. cool
+	10. instagram
+### Changed
+- `fantasy` font renamed to `fantasy1`
+- `upside_down` font renamed to `upside_down1`
+- `sep` parameter added to `text2art`, `tprint`, `tsave` and `set_default` functions
+- `__word2art` function modified
+- Escaped `\ ` in string literals
 ## [5.2] - 2021-05-05
 ### Added
 - 10 new 1-line-art
@@ -1935,7 +1954,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.2...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.3...dev
+[5.3]: https://github.com/sepandhaghighi/art/compare/v5.2...v5.3
 [5.2]: https://github.com/sepandhaghighi/art/compare/v5.1...v5.2
 [5.1]: https://github.com/sepandhaghighi/art/compare/v5.0...v5.1
 [5.0]: https://github.com/sepandhaghighi/art/compare/v4.9...v5.0

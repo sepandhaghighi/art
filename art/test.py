@@ -1441,7 +1441,7 @@ fairligh :
 fancy51 :
 7357
 <BLANKLINE>
-fantasy :
+fantasy1 :
 ######    ### #   ### #  ######
   #      ##  #   ##  #     #
  ##     ##       ##       ##
@@ -4366,11 +4366,11 @@ __o000o__(o)(o)__o000o__
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      ____
-__   __| ___|    |___ \
-\ \ / /|___ \      __) |
- \ V /  ___) | _  / __/
-  \_/  |____/ (_)|_____|
+        ____      _____
+__   __| ___|    |___ /
+\ \ / /|___ \      |_ \
+ \ V /  ___) | _  ___) |
+  \_/  |____/ (_)|____/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4503,15 +4503,45 @@ True
 True
 >>> file=open("test.txt","r")
 >>> data = file.read()
->>> (len(data)==282) or (len(data)==294)
+>>> print(data)
+ _               _      __  _  _
+| |_   ___  ___ | |_   / _|(_)| |  ___
+| __| / _ \/ __|| __| | |_ | || | / _ \
+| |_ |  __/\__ \| |_  |  _|| || ||  __/
+\__| \___||___/ \__| |_|  |_||_| \___|
+<BLANKLINE>
+ _
+| | __
+| |/ /
+|   <
+|_|\_\
+<BLANKLINE>
+<BLANKLINE>
+>>> len(data)==282
 True
 >>> file=open("art.txt","r")
 >>> data = file.read()
->>> (len(data)==246) or (len(data)==252)
+>>> print(data)
+ _               _                  _
+| |_   ___  ___ | |_    __ _  _ __ | |_
+| __| / _ \/ __|| __|  / _` || '__|| __|
+| |_ |  __/\__ \| |_  | (_| || |   | |_
+\__| \___||___/ \__|  \__,_||_|    \__|
+<BLANKLINE>
+<BLANKLINE>
+>>> len(data)==246
 True
 >>> file=open("art2.txt","r")
 >>> data = file.read()
->>> (len(data)==288) or (len(data)==294)
+>>> print(data)
+ _               _                  _    ____
+| |_   ___  ___ | |_    __ _  _ __ | |_ |___ \
+| __| / _ \/ __|| __|  / _` || '__|| __|  __) |
+| |_ |  __/\__ \| |_  | (_| || |   | |_  / __/
+\__| \___||___/ \__|  \__,_||_|    \__||_____|
+<BLANKLINE>
+<BLANKLINE>
+>>> len(data)==288
 True
 >>> file.close()
 >>> Data=text2art(222)
@@ -4566,6 +4596,10 @@ art.art.artError: The 'print_status' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'overwrite' type must be bool.
+>>> set_default(sep=True)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'sep' type must be str.
 >>> random.seed(200)
 >>> Art = text2art("test","rnd-small")
 >>> random.seed(800)

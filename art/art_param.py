@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "5.2"  # pragma: no cover
+ART_VERSION = "5.3"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -25,6 +25,7 @@ CHR_IGNORE_TYPE_ERROR = "The 'chr_ignore' type must be bool."
 FILE_TYPE_ERROR = "The 'filename' type must be str."
 PRINT_STATUS_TYPE_ERROR = "The 'print_status' type must be bool."
 OVERWRITE_TYPE_ERROR = "The 'overwrite' type must be bool."
+SEP_TYPE_ERROR = "The 'sep' type must be str."
 ART_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
 FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
@@ -100,7 +101,7 @@ UPPERCASE_FONTS = [
     "faces_of",
     "fair_mea",
     "fairligh",
-    "fantasy",
+    "fantasy1",
     "fbr1",
     "fbr12",
     "fbr_stri",
@@ -799,7 +800,7 @@ NON_ASCII_FONTS = [
     "knight2",
     "thin3",
     "tiny2",
-    "upside_down",
+    "upside_down1",
     "chinese_mafia",
     "sunday_cuddle",
     "native_lands",
@@ -855,7 +856,17 @@ NON_ASCII_FONTS = [
     "ninja",
     "tai_viet",
     "subscript2",
-    "fancy130"]
+    "fancy130",
+    "smooth3",
+    "flaky",
+    "tiny_caps",
+    "high_above",
+    "handwriting3",
+    "fantasy2",
+    "manga",
+    "upside_down2",
+    "cool",
+    "instagram"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1174,7 +1185,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "faces_of": [faces_of_dic, False],
             "fair_mea": [fair_mea_dic, False],
             "fairligh": [fairligh_dic, False],
-            "fantasy": [fantasy_dic, False],
+            "fantasy1": [fantasy1_dic, False],
             "fbr_stri": [fbr_stri_dic, False],
             "fbr_tilt": [fbr_tilt_dic, False],
             "fbr1": [fbr1_dic, False],
@@ -1323,7 +1334,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "h4k3r": [h4k3r_dic, False],
             "thin3": [thin3_dic, False],
             "tiny2": [tiny2_dic, False],
-            "upside_down": [upside_down_dic, False],
+            "upside_down1": [upside_down1_dic, False],
             "chinese_mafia": [chinese_mafia_dic, False],
             "sunday_cuddle": [sunday_cuddle_dic, False],
             "native_lands": [native_lands_dic, False],
@@ -1345,7 +1356,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy93": [fancy93_dic, False],
             "fancy94": [fancy94_dic, False],
             "fancy95": [fancy95_dic, False],
-            "smooth1": [smooth_dic, False],
+            "smooth1": [smooth1_dic, False],
             "fancy96": [fancy96_dic, False],
             "fancy97": [fancy97_dic, False],
             "fancy98": [fancy98_dic, False],
@@ -1423,7 +1434,17 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "ninja": [ninja_dic, False],
             "tai_viet": [tai_viet_dic, False],
             "subscript2": [subscript2_dic, False],
-            "fancy130": [fancy130_dic, False]
+            "fancy130": [fancy130_dic, False],
+            "smooth3": [smooth3_dic, False],
+            "flaky": [flaky_dic, False],
+            "tiny_caps": [tiny_caps_dic, False],
+            "high_above": [high_above_dic, False],
+            "handwriting3": [handwriting3_dic, False],
+            "fantasy2": [fantasy2_dic, False],
+            "manga": [manga_dic, False],
+            "upside_down2": [upside_down2_dic, False],
+            "cool": [cool_dic, False],
+            "instagram":[instagram_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

@@ -195,7 +195,12 @@ def randart():
     return art("random")
 
 
-def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
+def tprint(
+        text,
+        font=DEFAULT_FONT,
+        chr_ignore=True,
+        decoration=None,
+        sep="\n"):
     r"""
     Print art text (support \n).
 
@@ -207,6 +212,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     :type chr_ignore:bool
     :param decoration: text decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
     """
     try:
@@ -217,7 +224,8 @@ def tprint(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
             text,
             font=font,
             decoration=decoration,
-            chr_ignore=chr_ignore)
+            chr_ignore=chr_ignore,
+            sep=sep)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
@@ -230,7 +238,8 @@ def tsave(
         chr_ignore=True,
         print_status=True,
         overwrite=False,
-        decoration=None):
+        decoration=None,
+        sep="\n"):
     r"""
     Save ascii art (support \n).
 
@@ -248,6 +257,8 @@ def tsave(
     :type overwrite:bool
     :param decoration: text decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
     """
     try:
@@ -274,7 +285,8 @@ def tsave(
             text,
             font=font,
             decoration=decoration,
-            chr_ignore=chr_ignore)
+            chr_ignore=chr_ignore,
+            sep=sep)
         file.write(result)
         file.close()
         if print_status:
@@ -405,7 +417,7 @@ def mix_letters():
     return letters
 
 
-def __word2art(word, font, chr_ignore, letters, next_word):
+def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     """
     Return art word.
 
@@ -419,13 +431,15 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     :type letters: dict
     :param next_word: next word flag
     :type next_word: bool
+    :param sep: line separator char
+    :type sep: str
     :return: ascii art as str
     """
     split_list = []
     result_list = []
     splitter = "\n"
-    if "win32" != sys.platform:
-        splitter = "\r\n"
+    if isinstance(sep, str):
+        splitter = sep
     if len(word) == 0 and next_word:
         return splitter
     for i in word:
@@ -445,13 +459,13 @@ def __word2art(word, font, chr_ignore, letters, next_word):
         return ""
     for i in range(len(split_list[0])):
         temp = ""
-        for j in range(len(split_list)):
+        for j,item in enumerate(split_list):
             if j > 0 and (
                     i == 1 or i == len(
                         split_list[0]) -
                     2) and font == "block":
                 temp = temp + " "
-            temp = temp + split_list[j][i]
+            temp = temp + item[i]
         result_list.append(temp)
     result = (splitter).join(result_list)
     if result[-1] != "\n" and next_word:
@@ -459,7 +473,12 @@ def __word2art(word, font, chr_ignore, letters, next_word):
     return result
 
 
-def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
+def text2art(
+        text,
+        font=DEFAULT_FONT,
+        chr_ignore=True,
+        decoration=None,
+        sep="\n"):
     r"""
     Return art text (support \n).
 
@@ -471,6 +490,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
     :type chr_ignore:bool
     :param decoration: text decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: ascii art text as str
     """
     letters = standard_dic
@@ -499,7 +520,8 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
                                      font=font,
                                      chr_ignore=chr_ignore,
                                      letters=letters,
-                                     next_word=next_word_flag)
+                                     next_word=next_word_flag,
+                                     sep=sep)
     if decoration is not None:
         [decor1, decor2] = decor(decoration, both=True)
         result = decor1 + result + decor2
@@ -507,7 +529,7 @@ def text2art(text, font=DEFAULT_FONT, chr_ignore=True, decoration=None):
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True, overwrite=False, decoration=None):
+                print_status=True, overwrite=False, decoration=None, sep="\n"):
     """
     Change text2art, tprint and tsave default values.
 
@@ -523,6 +545,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type overwrite:bool
     :param decoration: input decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
     """
     if isinstance(font, str) is False:
@@ -537,15 +561,18 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(PRINT_STATUS_TYPE_ERROR)
     if isinstance(overwrite, bool) is False:
         raise artError(OVERWRITE_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore, decoration)
+    if isinstance(sep, str) is False:
+        raise artError(SEP_TYPE_ERROR)
+    tprint.__defaults__ = (font, chr_ignore, decoration, sep)
     tsave.__defaults__ = (
         font,
         filename,
         chr_ignore,
         print_status,
         overwrite,
-        decoration)
-    text2art.__defaults__ = (font, chr_ignore, decoration)
+        decoration,
+        sep)
+    text2art.__defaults__ = (font, chr_ignore, decoration, sep)
 
 
 def get_font_dic(font_name):
