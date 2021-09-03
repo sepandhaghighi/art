@@ -4601,27 +4601,27 @@ Traceback (most recent call last):
         ...
 art.art.artError: The 'sep' type must be str.
 >>> random.seed(200)
->>> Art = text2art("test","rnd-small")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-small")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> Art == Art2
 False
 >>> random.seed(200)
->>> Art = text2art("test","rnd-medium")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-medium")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-medium")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-medium")
 >>> Art == Art2
 False
 >>> random.seed(200)
->>> Art = text2art("test","rnd-large")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-large")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-large")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-large")
 >>> Art == Art2
 False
 >>> random.seed(200)
->>> Art = text2art("test","rnd-xlarge")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-xlarge")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-xlarge")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-xlarge")
 >>> Art == Art2
 False
 >>> Art = text2art("te","wizard")
