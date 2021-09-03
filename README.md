@@ -647,7 +647,7 @@ ___ ____ ____ ___
 >>> help(set_default)
 Help on function set_default in module art.art:
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False, decoration=None)
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False, decoration=None, sep='\n')
     Change text2art, tprint and tsave default values.
     
     :param font: input font
@@ -662,6 +662,8 @@ set_default(font='standard', chr_ignore=True, filename='art', print_status=True,
     :type overwrite:bool
     :param decoration: input decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
 
 >>> tprint("test")

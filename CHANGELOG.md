@@ -6,8 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- `greetings.yml` removed.
-- `test.py` modified.
+- `test.py` modified
+### Removed
+- `greetings.yml`
 ## [5.3] - 2021-08-30
 ### Added
 - 10 new font
@@ -25,6 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `fantasy` font renamed to `fantasy1`
 - `upside_down` font renamed to `upside_down1`
 - `sep` parameter added to `text2art`, `tprint`, `tsave` and `set_default` functions
+- Default line separator changed from `\r\n` to `\n`
 - `__word2art` function modified
 - Escaped `\ ` in string literals
 ## [5.2] - 2021-05-05
