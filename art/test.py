@@ -4624,10 +4624,10 @@ False
 >>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-xlarge")
 >>> Art == Art2
 False
->>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"","wizard")
->>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","wizard")
->>> Art3 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789"*2,"wizard")
->>> Art4 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789"*5,"wizard")
+>>> Art = text2art("te","wizard")
+>>> Art2 = text2art("test","wizard")
+>>> Art3 = text2art("test"*2,"wizard")
+>>> Art4 = text2art("test"*5,"wizard")
 >>> Art == Art2
 False
 >>> Art == Art3
