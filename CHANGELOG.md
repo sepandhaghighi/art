@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Changed
 - `test.py` modified
+- `font_wizard.py` modified
 ### Removed
 - `greetings.yml`
 ## [5.3] - 2021-08-30
