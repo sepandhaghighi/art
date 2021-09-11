@@ -9,14 +9,24 @@ Letters = string.ascii_letters + string.punctuation + string.digits
 Font_List = list(art.art_param.FONT_MAP.keys())
 
 INVALID_FONT_NAME = [
+    "mix",
     "wizard",
     "wiz",
+    "magic",
+    "random",
+    "random-na",
     "random-xlarge",
     "random-large",
     "random-medium",
-    "random-small"
-    "random",
+    "random-small",
+    "rand",
+    "rand-na",
+    "rand-xlarge",
+    "rand-large",
+    "rand-medium",
+    "rand-small",
     "rnd",
+    "rnd-na",
     "rnd-xlarge",
     "rnd-large",
     "rnd-medium",
