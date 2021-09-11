@@ -83,7 +83,7 @@ if __name__ == "__main__":
         font_name = input("Please enter font name : ")
         if font_name in Font_List:
             print(Error6)
-        elif font_name in INVALID_FONT_NAME:
+        elif font_name.lower() in INVALID_FONT_NAME:
             print(Error7)
         else: 
             break
