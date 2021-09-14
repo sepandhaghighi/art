@@ -39,7 +39,6 @@ Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
 Error4 = "[Error] All letters should have same height"
 Error5 = "[Error] Font should be compatible with UTF-8"
 Error6 = "[Error] This font name is not available"
-Error7 = "[Error] Do not use these font names : {}".format(INVALID_FONT_NAME)
 
 
 def is_utf8(s):
@@ -81,11 +80,9 @@ if __name__ == "__main__":
     print("*" * 30)
     while(True):
         font_name = input("Please enter font name : ")
-        if font_name in Font_List:
+        if font_name in Font_List or font_name.lower() in INVALID_FONT_NAME:
             print(Error6)
-        elif font_name.lower() in INVALID_FONT_NAME:
-            print(Error7)
-        else: 
+        else:
             break
     font_data = input("Please enter font data (string or list) : ")
     if not is_utf8(font_data):
