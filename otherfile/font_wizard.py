@@ -8,6 +8,30 @@ import art
 Letters = string.ascii_letters + string.punctuation + string.digits
 Font_List = list(art.art_param.FONT_MAP.keys())
 
+INVALID_FONT_NAME = [
+    "mix",
+    "wizard",
+    "wiz",
+    "magic",
+    "random",
+    "random-na",
+    "random-xlarge",
+    "random-large",
+    "random-medium",
+    "random-small",
+    "rand",
+    "rand-na",
+    "rand-xlarge",
+    "rand-large",
+    "rand-medium",
+    "rand-small",
+    "rnd",
+    "rnd-na",
+    "rnd-xlarge",
+    "rnd-large",
+    "rnd-medium",
+    "rnd-small"]
+
 Error1 = "[Error] Font data is empty!"
 Error2 = "[Error] Font should support 95 printable ASCII characters, please check font data!"
 Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
@@ -56,7 +80,7 @@ if __name__ == "__main__":
     print("*" * 30)
     while(True):
         font_name = input("Please enter font name : ")
-        if font_name in Font_List:
+        if font_name in Font_List or font_name.lower() in INVALID_FONT_NAME:
             print(Error6)
         else:
             break

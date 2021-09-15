@@ -1444,7 +1444,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "manga": [manga_dic, False],
             "upside_down2": [upside_down2_dic, False],
             "cool": [cool_dic, False],
-            "instagram":[instagram_dic, False]
+            "instagram": [instagram_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

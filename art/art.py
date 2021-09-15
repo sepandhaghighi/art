@@ -459,7 +459,7 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
         return ""
     for i in range(len(split_list[0])):
         temp = ""
-        for j,item in enumerate(split_list):
+        for j, item in enumerate(split_list):
             if j > 0 and (
                     i == 1 or i == len(
                         split_list[0]) -
