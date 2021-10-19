@@ -56,7 +56,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">PyPI Counter</td>
-		<td align="center"><a href="http://pepy.tech/count/art"><img src="http://pepy.tech/badge/art"></a></td>
+		<td align="center"><a href="http://pepy.tech/project/art"><img src="http://pepy.tech/badge/art"></a></td>
 	</tr>
 	<tr>
 		<td align="center">Github Stars</td>
@@ -866,5 +866,10 @@ bnb1zglwcf0ac3d0s2f6ck5kgwvcru4tlctt4p5qef
 <h4>Dash</h4>
 Xd3Yn2qZJ7VE8nbKw2fS98aLxR5M6WUU3s
 <h4>Stellar</h4>		
-
 GALPOLPISRHIYHLQER2TLJRGUSZH52RYDK6C3HIU4PSMNAV65Q36EGNL
+<h4>Zilliqa</h4>
+zil1knmz8zj88cf0exr2ry7nav9elehxfcgqu3c5e5
+<h4>Coffeete</h4>
+<a href="http://www.coffeete.ir/opensource">
+<img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
+</a>
