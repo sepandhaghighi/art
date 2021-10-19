@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `font_wizard.py` modified
 - `AUTHORS.md` updated
 - License updated
+- `README.md` modified
 ### Removed
 - `greetings.yml`
 ## [5.3] - 2021-08-30
