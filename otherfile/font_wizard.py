@@ -102,8 +102,11 @@ if __name__ == "__main__":
             print(Error2)
             sys.exit()
     font_dic = dict(zip(Letters, font_data))
+    font_split_list = list(map(lambda x: x.split("\n"), font_dic.values()))
+    font_height = len(font_split_list[0])
     if " " not in font_dic.keys():
-        font_dic[" "] = " "
+        _ = [" "] * font_height
+        font_dic[" "] = "\n".join(_)
     for font2 in Font_List:
         if len(font_dic) == len(art.get_font_dic(font2)):
             if font_dic == art.get_font_dic(font2):
