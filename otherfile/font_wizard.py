@@ -102,8 +102,14 @@ if __name__ == "__main__":
             print(Error2)
             sys.exit()
     font_dic = dict(zip(Letters, font_data))
+    font_height_list = list(map(lambda x: len(x.split("\n")), font_dic.values()))
+    if len(set(font_height_list)) != 1:
+        print(Error4)
+        sys.exit()
+    font_height = font_height_list[0]
     if " " not in font_dic.keys():
-        font_dic[" "] = " "
+        _ = [" "] * font_height
+        font_dic[" "] = "\n".join(_)
     for font2 in Font_List:
         if len(font_dic) == len(art.get_font_dic(font2)):
             if font_dic == art.get_font_dic(font2):
@@ -121,13 +127,6 @@ if __name__ == "__main__":
             if font1_map == font2_map:
                 print(Error3 + font2)
                 sys.exit()
-    s = []
-    for letter in font_dic.keys():
-        if len(font_dic[letter]) != 0:
-            s.append(len(font_dic[letter].split("\n")))
-    if len(set(s)) != 1:
-        print(Error4)
-        sys.exit()
     if len(font_dic) == 95:
         print("Done!")
         print("Font dictionary : \n")
