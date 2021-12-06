@@ -12,6 +12,7 @@
 <a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
+<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
 </div>
 	
 ----------
