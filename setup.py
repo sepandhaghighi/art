@@ -47,6 +47,7 @@ setup(
         'Webpage': 'https://www.4r7.ir',
         'Source': 'https://github.com/sepandhaghighi/art',
         'Tracker': 'https://github.com/sepandhaghighi/art/issues',
+        'Discord': 'https://discord.com/invite/FAAyq3QJqP',
     },
     install_requires=[],
     extras_require={
