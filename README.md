@@ -36,7 +36,7 @@
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
    * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/art#license)
+   * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
    * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
@@ -799,10 +799,6 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 		<td align="center"><a href="https://requires.io/github/sepandhaghighi/art/requirements/?branch=dev"><img src="https://requires.io/github/sepandhaghighi/art/requirements.svg?branch=dev" alt="Requirements Status" /></a></td>
 	</tr>
 </table>
-
-## License
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_large)
 
 ## Reference    
 
