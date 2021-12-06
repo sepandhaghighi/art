@@ -12,6 +12,7 @@
 <a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
+<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
 </div>
 	
 ----------
@@ -782,10 +783,11 @@ Just send your text to one of these bots. 👇👇👇👇
 
 ## Issues & bug reports			
 
-Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir"). 
-
-* Please complete the issue template 
+1. Fill an issue and describe it. We'll check it ASAP!
+    - Please complete the issue template
+2. Discord : [https://discord.com/invite/FAAyq3QJqP](https://discord.com/invite/FAAyq3QJqP)
+3. Website : [https://www.4r7.ir](https://www.4r7.ir)
+4. Email : [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir")
 
 ## Dependencies
 
