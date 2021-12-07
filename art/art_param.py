@@ -783,6 +783,13 @@ NON_ASCII_FONTS = [
     "fancy127",
     "fancy128",
     "fancy129",
+    "fancy131",
+    "fancy132",
+    "fancy133",
+    "fancy134",
+    "fancy135",
+    "fancy136",
+    "fancy137",
     "foxy",
     "white_square",
     "black_square",
@@ -1444,7 +1451,14 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "manga": [manga_dic, False],
             "upside_down2": [upside_down2_dic, False],
             "cool": [cool_dic, False],
-            "instagram": [instagram_dic, False]
+            "instagram": [instagram_dic, False],
+            "fancy131": [fancy131_dic, False],
+            "fancy132": [fancy132_dic, False],
+            "fancy133": [fancy133_dic, False],
+            "fancy134": [fancy134_dic, False],
+            "fancy135": [fancy135_dic, False],
+            "famcy136": [fancy136_dic, False],
+            "fancy137": [fancy137_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
