@@ -211,6 +211,27 @@ tєรt
 fancy130 :
 𐨠𐌴Ⲋ𐨠
 <BLANKLINE>
+fancy131 :
+ᵗᵉˢᵗ
+<BLANKLINE>
+fancy132 :
+𝕥𝕖𝕤𝕥
+<BLANKLINE>
+fancy133 :
+𝙩𝙚𝙨𝙩
+<BLANKLINE>
+fancy134 :
+𝒕𝒆𝒔𝒕
+<BLANKLINE>
+fancy135 :
+𝐭𝐞𝐬𝐭
+<BLANKLINE>
+fancy136 :
+𝘁𝗲𝘀𝘁
+<BLANKLINE>
+fancy137 :
+𝖙𝖊𝖘𝖙
+<BLANKLINE>
 fancy14 :
 ȶɛֆȶ
 <BLANKLINE>
