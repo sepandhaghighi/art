@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 7 new font
+	1. fancy131
+	2. fancy132
+	3. fancy133
+	4. fancy134
+	5. fancy135
+	6. fancy136
+	7. fancy137
 - Discord badge
 ### Changed
 - `test.py` modified
