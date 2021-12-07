@@ -39,6 +39,7 @@ Please consider the following :
 6. If font is **Non-ASCII**:
 	- Add font name to `NON_ASCII_FONTS` list
 	- Add a test case to `test2.py` (*Alphabetical order*)
+	- Add font name to `MIX_FILTERED_FONTS` list to remove it from mix mode (*Optional*)
 7. If font is **ASCII**:
 	- Add a test case to `test.py` (*Alphabetical order*)  
 	- Add font name to `RANDOM_FILTERED_FONTS` list to remove it from random modes (*Optional*)
