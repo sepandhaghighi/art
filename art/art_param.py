@@ -873,7 +873,10 @@ NON_ASCII_FONTS = [
     "manga",
     "upside_down2",
     "cool",
-    "instagram"]
+    "instagram",
+    "tarty1",
+    "tarty2",
+    "tarty3"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1458,7 +1461,10 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy134": [fancy134_dic, False],
             "fancy135": [fancy135_dic, False],
             "fancy136": [fancy136_dic, False],
-            "fancy137": [fancy137_dic, False]
+            "fancy137": [fancy137_dic, False],
+            "tarty1": [tarty1_dic, False],
+            "tarty2": [tarty2_dic, False],
+            "tarty3": [tarty3_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
