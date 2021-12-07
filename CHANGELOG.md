@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `test.py` modified
 - `font_wizard.py` modified
+- `mix_letters` function modified
 - `AUTHORS.md` updated
 - License updated
 - `README.md` modified
