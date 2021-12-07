@@ -1457,7 +1457,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy133": [fancy133_dic, False],
             "fancy134": [fancy134_dic, False],
             "fancy135": [fancy135_dic, False],
-            "famcy136": [fancy136_dic, False],
+            "fancy136": [fancy136_dic, False],
             "fancy137": [fancy137_dic, False]
             }
 
