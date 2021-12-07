@@ -897,6 +897,8 @@ RANDOM_FILTERED_FONTS = [
     'moscow',
     'dwhistled'] + NON_ASCII_FONTS
 
+MIX_FILTERED_FONTS = ["tarty1", "tarty2", "tarty3"]
+
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.

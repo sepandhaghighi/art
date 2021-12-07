@@ -411,8 +411,9 @@ def mix_letters():
     :return: letters as list
     """
     letters = fancy1_dic.copy()
+    fonts = list(set(NON_ASCII_FONTS) - set(MIX_FILTERED_FONTS))
     for i in letters.keys():
-        random_font = random.choice(NON_ASCII_FONTS)
+        random_font = random.choice(fonts)
         letters[i] = get_font_dic(random_font)[i]
     return letters
 
