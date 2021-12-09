@@ -90,5 +90,5 @@ if __name__ == "__main__":
                     if font1_map == font2_map:
                         Failed2 += 1
                         print(Message4.format(str(Failed2), font1, font2))
-    print_result([Failed1, Failed2, Failed3, Failed4], [Message1, Message2, Message3, Message4])
+    print_result([Failed1, Failed2, Failed3, Failed4], [Message1, Message2, Message3, Message5])
     sys.exit(Failed2 + Failed1 + Failed3 + Failed4)
