@@ -39,18 +39,23 @@ if __name__ == "__main__":
     for font in Font_List:
         height_list = []
         l = ""
-        first_line_list = list(map(lambda x: x.split("\n")[0] in ["", " "], art.get_font_dic(font).values()))
-        last_line_list = list(map(lambda x: x.split("\n")[-1] in ["", " "], art.get_font_dic(font).values()))
+        first_line_list = list(map(lambda x: x.split("\n")[0] in [
+                               "", " "], art.get_font_dic(font).values()))
+        last_line_list = list(map(lambda x: x.split(
+            "\n")[-1] in ["", " "], art.get_font_dic(font).values()))
         for letter in art.get_font_dic(font).keys():
             letter_data = art.get_font_dic(font)[letter]
             letter_data_split = letter_data.split("\n")
             width_list = list(map(len, letter_data_split))
             if letter_data_split[-1] in ["", " "] and all(last_line_list):
                 width_list = width_list[:-1]
-            if len(width_list) > 0 and letter_data_split[0] in ["", " "] and all(first_line_list):
+            if len(width_list) > 0 and letter_data_split[0] in [
+                    "", " "] and all(first_line_list):
                 width_list = width_list[1:]
             if len(set(width_list)) > 1:
-                print("Width error in font {0}, letter {1}".format(font, letter))
+                print(
+                    "Width error in font {0}, letter {1}".format(
+                        font, letter))
                 Failed4 += 1
             if len(letter_data) != 0:
                 height_list.append(len(letter_data_split))
@@ -90,5 +95,6 @@ if __name__ == "__main__":
                     if font1_map == font2_map:
                         Failed2 += 1
                         print(Message4.format(str(Failed2), font1, font2))
-    print_result([Failed1, Failed2, Failed3, Failed4], [Message1, Message2, Message3, Message5])
+    print_result([Failed1, Failed2, Failed3, Failed4], [
+                 Message1, Message2, Message3, Message5])
     sys.exit(Failed2 + Failed1 + Failed3 + Failed4)
