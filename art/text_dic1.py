@@ -14958,7 +14958,7 @@ filter_dic = {
     't': u"888888888 \n   '88d   \n  '888    \n'88p      \n          \n",
     'w': u'8d8   d88 \n888,o.d88 \n888P`Y8b8 \n88P   YP8 \n          \n',
     'v': u"d88   88 \nd88   88 \nd88_o8P' \nY88P'    \n         \n",
-    'y': u'888   88 \n888ooo88 \n      88 \nPPPPPP8P \n          \n',
+    'y': u'888   88 \n888ooo88 \n      88 \nPPPPPP8P \n         \n',
     'x': u'88b  d88 \n  88od88 \n  d8PY8d \nY88  Y8P \n         \n',
     '{': u'{\n \n \n \n \n',
     'z': u"PPPPP88p'\n    ,dP' \n  ,dP'   \nYPPPPPPP \n         \n",
