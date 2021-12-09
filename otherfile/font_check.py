@@ -52,10 +52,9 @@ if __name__ == "__main__":
             if len(set(width_list)) > 1:
                 print("Width error in font {0}, letter {1}".format(font, letter))
                 Failed4 += 1
-            if len(art.get_font_dic(font)[letter]) != 0:
-                s.append(
-                    len(art.get_font_dic(font)[letter].split("\n")))
-            l += art.get_font_dic(font)[letter]
+            if len(letter_data) != 0:
+                s.append(len(letter_data_split))
+            l += letter_data
         ascii_flag = is_ascii(l)
         if len(set(s)) != 1:
             print("Height error in font : " + font)
