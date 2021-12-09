@@ -37,7 +37,7 @@ def print_result(flag_list, message_list):
 
 if __name__ == "__main__":
     for font in Font_List:
-        s = []
+        height_list = []
         l = ""
         first_line_list = list(map(lambda x: x.split("\n")[0] in ["", " "], art.get_font_dic(font).values()))
         last_line_list = list(map(lambda x: x.split("\n")[-1] in ["", " "], art.get_font_dic(font).values()))
@@ -53,10 +53,10 @@ if __name__ == "__main__":
                 print("Width error in font {0}, letter {1}".format(font, letter))
                 Failed4 += 1
             if len(letter_data) != 0:
-                s.append(len(letter_data_split))
+                height_list.append(len(letter_data_split))
             l += letter_data
         ascii_flag = is_ascii(l)
-        if len(set(s)) != 1:
+        if len(set(height_list)) != 1:
             print("Height error in font : " + font)
             Failed1 += 1
         if not is_utf8(l):
