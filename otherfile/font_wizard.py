@@ -102,7 +102,8 @@ if __name__ == "__main__":
             print(Error2)
             sys.exit()
     font_dic = dict(zip(Letters, font_data))
-    font_height_list = list(map(lambda x: len(x.split("\n")), font_dic.values()))
+    font_height_list = list(
+        map(lambda x: len(x.split("\n")), font_dic.values()))
     if len(set(font_height_list)) != 1:
         print(Error4)
         sys.exit()

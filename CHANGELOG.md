@@ -6,13 +6,26 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 10 new font
+	1. fancy131
+	2. fancy132
+	3. fancy133
+	4. fancy134
+	5. fancy135
+	6. fancy136
+	7. fancy137
+	8. tarty1
+	9. tarty2
+	10. tarty3
 - Discord badge
 ### Changed
 - `test.py` modified
 - `font_wizard.py` modified
+- `mix_letters` function modified
 - `AUTHORS.md` updated
 - License updated
 - `README.md` modified
+- `CONTRIBUTING.md` modified
 - `Python 3.10` added to `test.yml`
 ### Removed
 - `greetings.yml`
