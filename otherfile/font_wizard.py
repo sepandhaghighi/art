@@ -39,6 +39,7 @@ Error3 = "[Error] Font duplication (art version : {}) -- > ".format(
 Error4 = "[Error] All letters should have same height"
 Error5 = "[Error] Font should be compatible with UTF-8"
 Error6 = "[Error] This font name is not available"
+Error7 = "[Error] All lines in a letter should have same width (letter : {0})"
 
 
 def is_utf8(s):
@@ -128,6 +129,22 @@ if __name__ == "__main__":
             if font1_map == font2_map:
                 print(Error3 + font2)
                 sys.exit()
+    first_line_list = list(map(lambda x: x.split(
+        "\n")[0] in ["", " "], font_dic.values()))
+    last_line_list = list(map(lambda x: x.split(
+        "\n")[-1] in ["", " "], font_dic.values()))
+    for letter in font_dic.keys():
+        letter_data = font_dic[letter]
+        letter_data_split = letter_data.split("\n")
+        width_list = list(map(len, letter_data_split))
+        if letter_data_split[-1] in ["", " "] and all(last_line_list):
+            width_list = width_list[:-1]
+        if len(width_list) > 0 and letter_data_split[0] in [
+                "", " "] and all(first_line_list):
+            width_list = width_list[1:]
+        if len(set(width_list)) > 1:
+            print(Error7.format(letter))
+            sys.exit()
     if len(font_dic) == 95:
         print("Done!")
         print("Font dictionary : \n")
