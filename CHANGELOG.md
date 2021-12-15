@@ -19,8 +19,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	10. tarty3
 - Discord badge
 ### Changed
+- Some fonts width bug fixed
 - `test.py` modified
 - `font_wizard.py` modified
+- `font_check.py` modified
+- `art_decor_check.py` modified
+- `__word2art` function modified
 - `mix_letters` function modified
 - `AUTHORS.md` updated
 - License updated

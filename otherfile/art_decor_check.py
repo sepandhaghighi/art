@@ -27,7 +27,9 @@ def print_result(flag_list, message_list):
     :type message_list: list
     :return: None
     """
-    print("art version : {}\n".format(art.__version__))
+    print("Art version : {}".format(art.__version__))
+    print("Number of arts : {}".format(art.ART_COUNTER))
+    print("Number of decors : {}".format(art.DECORATION_COUNTER))
     for index, flag in enumerate(flag_list):
         if flag == 0:
             print(message_list[index] + "passed!")

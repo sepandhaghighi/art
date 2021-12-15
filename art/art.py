@@ -461,11 +461,6 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     for i in range(len(split_list[0])):
         temp = ""
         for j, item in enumerate(split_list):
-            if j > 0 and (
-                    i == 1 or i == len(
-                        split_list[0]) -
-                    2) and font == "block":
-                temp = temp + " "
             temp = temp + item[i]
         result_list.append(temp)
     result = (splitter).join(result_list)

@@ -8,11 +8,13 @@ from font_wizard import is_utf8, is_ascii
 Failed1 = 0
 Failed2 = 0
 Failed3 = 0
+Failed4 = 0
 Font_List = list(art.art_param.FONT_MAP.keys())
 Message1 = "Font height test "
 Message2 = "Font duplication test "
 Message3 = "Font UTF-8 compatibility test "
 Message4 = "{0}-font duplication -- > {1},{2}"
+Message5 = "Font width test "
 
 
 def print_result(flag_list, message_list):
@@ -25,7 +27,8 @@ def print_result(flag_list, message_list):
     :type message_list: list
     :return: None
     """
-    print("art version : {}\n".format(art.__version__))
+    print("Art version : {}".format(art.__version__))
+    print("Number of fonts : {}".format(art.FONT_COUNTER))
     for index, flag in enumerate(flag_list):
         if flag == 0:
             print(message_list[index] + "passed!")
@@ -35,15 +38,31 @@ def print_result(flag_list, message_list):
 
 if __name__ == "__main__":
     for font in Font_List:
-        s = []
+        height_list = []
         l = ""
+        first_line_list = list(map(lambda x: x.split("\n")[0] in [
+                               "", " "], art.get_font_dic(font).values()))
+        last_line_list = list(map(lambda x: x.split(
+            "\n")[-1] in ["", " "], art.get_font_dic(font).values()))
         for letter in art.get_font_dic(font).keys():
-            if len(art.get_font_dic(font)[letter]) != 0:
-                s.append(
-                    len(art.get_font_dic(font)[letter].split("\n")))
-            l += art.get_font_dic(font)[letter]
+            letter_data = art.get_font_dic(font)[letter]
+            letter_data_split = letter_data.split("\n")
+            width_list = list(map(len, letter_data_split))
+            if letter_data_split[-1] in ["", " "] and all(last_line_list):
+                width_list = width_list[:-1]
+            if len(width_list) > 0 and letter_data_split[0] in [
+                    "", " "] and all(first_line_list):
+                width_list = width_list[1:]
+            if len(set(width_list)) > 1:
+                print(
+                    "Width error in font {0}, letter {1}".format(
+                        font, letter))
+                Failed4 += 1
+            if len(letter_data) != 0:
+                height_list.append(len(letter_data_split))
+            l += letter_data
         ascii_flag = is_ascii(l)
-        if len(set(s)) != 1:
+        if len(set(height_list)) != 1:
             print("Height error in font : " + font)
             Failed1 += 1
         if not is_utf8(l):
@@ -77,5 +96,6 @@ if __name__ == "__main__":
                     if font1_map == font2_map:
                         Failed2 += 1
                         print(Message4.format(str(Failed2), font1, font2))
-    print_result([Failed1, Failed2, Failed3], [Message1, Message2, Message3])
-    sys.exit(Failed2 + Failed1 + Failed3)
+    print_result([Failed1, Failed2, Failed3, Failed4], [
+                 Message1, Message2, Message3, Message5])
+    sys.exit(Failed2 + Failed1 + Failed3 + Failed4)
