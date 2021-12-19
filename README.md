@@ -831,6 +831,7 @@ Just send your text to one of these bots. 👇👇👇👇
 25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
 26. [Text Generator](https://coolfonts.text-generator.org/)
 27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
+28. [Fsymbols](https://fsymbols.com/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
