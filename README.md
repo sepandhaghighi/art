@@ -882,12 +882,14 @@ zil1knmz8zj88cf0exr2ry7nav9elehxfcgqu3c5e5
 * Contact us at the email first	
 
 <h4>Corporate sponsor</h4>
+
 - **$250** a month
 - Your company's logo can be featured on **Readme**
 - Intended for small companies
 
 
 <h4>Mega corporate sponsor</h4>
+
 - **$500** a month
 - Your company's logo can be featured on **Readme** and **Website**
 - Intended for medium-sized companies
