@@ -5,6 +5,35 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.4] - 2021-12-22
+### Added
+- 10 new font
+	1. fancy131
+	2. fancy132
+	3. fancy133
+	4. fancy134
+	5. fancy135
+	6. fancy136
+	7. fancy137
+	8. tarty1
+	9. tarty2
+	10. tarty3
+- Discord badge
+### Changed
+- Some fonts width bug fixed
+- `test.py` modified
+- `font_wizard.py` modified
+- `font_check.py` modified
+- `art_decor_check.py` modified
+- `__word2art` function modified
+- `mix_letters` function modified
+- `AUTHORS.md` updated
+- License updated
+- `README.md` modified
+- `CONTRIBUTING.md` modified
+- `Python 3.10` added to `test.yml`
+### Removed
+- `greetings.yml`
 ## [5.3] - 2021-08-30
 ### Added
 - 10 new font
@@ -22,6 +51,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `fantasy` font renamed to `fantasy1`
 - `upside_down` font renamed to `upside_down1`
 - `sep` parameter added to `text2art`, `tprint`, `tsave` and `set_default` functions
+- Default line separator changed from `\r\n` to `\n`
 - `__word2art` function modified
 - Escaped `\ ` in string literals
 ## [5.2] - 2021-05-05
@@ -1954,7 +1984,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.3...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.4...dev
+[5.4]: https://github.com/sepandhaghighi/art/compare/v5.3...v5.4
 [5.3]: https://github.com/sepandhaghighi/art/compare/v5.2...v5.3
 [5.2]: https://github.com/sepandhaghighi/art/compare/v5.1...v5.2
 [5.1]: https://github.com/sepandhaghighi/art/compare/v5.0...v5.1

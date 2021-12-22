@@ -35,7 +35,7 @@ def read_description():
 setup(
     name='art',
     packages=['art'],
-    version='5.3',
+    version='5.4',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',
@@ -47,6 +47,7 @@ setup(
         'Webpage': 'https://www.4r7.ir',
         'Source': 'https://github.com/sepandhaghighi/art',
         'Tracker': 'https://github.com/sepandhaghighi/art/issues',
+        'Discord': 'https://discord.com/invite/FAAyq3QJqP',
     },
     install_requires=[],
     extras_require={
@@ -69,6 +70,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Topic :: Text Processing :: Fonts',
         'Topic :: Text Editors',
         'Topic :: Text Processing :: General',

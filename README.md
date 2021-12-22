@@ -7,11 +7,12 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-605-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-615-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
 <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg"></a>
+<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
 </div>
 	
 ----------
@@ -36,7 +37,7 @@
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
    * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/art#license)
+   * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
    * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
@@ -56,7 +57,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">PyPI Counter</td>
-		<td align="center"><a href="http://pepy.tech/count/art"><img src="http://pepy.tech/badge/art"></a></td>
+		<td align="center"><a href="http://pepy.tech/project/art"><img src="http://pepy.tech/badge/art"></a></td>
 	</tr>
 	<tr>
 		<td align="center">Github Stars</td>
@@ -64,7 +65,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">605</td>
+		<td align="center">615</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -647,7 +648,7 @@ ___ ____ ____ ___
 >>> help(set_default)
 Help on function set_default in module art.art:
 
-set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False, decoration=None)
+set_default(font='standard', chr_ignore=True, filename='art', print_status=True, overwrite=False, decoration=None, sep='\n')
     Change text2art, tprint and tsave default values.
     
     :param font: input font
@@ -662,6 +663,8 @@ set_default(font='standard', chr_ignore=True, filename='art', print_status=True,
     :type overwrite:bool
     :param decoration: input decoration
     :type decoration:str
+    :param sep: line separator char
+    :type sep: str
     :return: None
 
 >>> tprint("test")
@@ -780,10 +783,11 @@ Just send your text to one of these bots. 👇👇👇👇
 
 ## Issues & bug reports			
 
-Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir"). 
-
-* Please complete the issue template 
+1. Fill an issue and describe it. We'll check it ASAP!
+    - Please complete the issue template
+2. Discord : [https://discord.com/invite/FAAyq3QJqP](https://discord.com/invite/FAAyq3QJqP)
+3. Website : [https://www.4r7.ir](https://www.4r7.ir)
+4. Email : [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir")
 
 ## Dependencies
 
@@ -797,10 +801,6 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 		<td align="center"><a href="https://requires.io/github/sepandhaghighi/art/requirements/?branch=dev"><img src="https://requires.io/github/sepandhaghighi/art/requirements.svg?branch=dev" alt="Requirements Status" /></a></td>
 	</tr>
 </table>
-
-## License
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsepandhaghighi%2Fart?ref=badge_large)
 
 ## Reference    
 
@@ -831,6 +831,7 @@ or send an email to [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir").
 25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
 26. [Text Generator](https://coolfonts.text-generator.org/)
 27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
+28. [Fsymbols](https://fsymbols.com/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
@@ -864,5 +865,32 @@ bnb1zglwcf0ac3d0s2f6ck5kgwvcru4tlctt4p5qef
 <h4>Dash</h4>
 Xd3Yn2qZJ7VE8nbKw2fS98aLxR5M6WUU3s
 <h4>Stellar</h4>		
-
 GALPOLPISRHIYHLQER2TLJRGUSZH52RYDK6C3HIU4PSMNAV65Q36EGNL
+<h4>Zilliqa</h4>
+zil1knmz8zj88cf0exr2ry7nav9elehxfcgqu3c5e5
+<h4>Coffeete</h4>
+<a href="http://www.coffeete.ir/opensource">
+<img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
+</a>
+<h4>Gitcoin</h4>
+<a href="https://gitcoin.co/grants/3408/ascii-art-library-for-python">
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/gitcoin_btn.png" style="width:260px;" />
+</a>
+
+<h3>Become a sponsor to ART</h3>
+
+* Contact us at the email first	
+
+<h4>Corporate sponsor</h4>
+
+- **$250** a month
+- Your company's logo can be featured on **Readme**
+- Intended for small companies
+
+
+<h4>Mega corporate sponsor</h4>
+
+- **$500** a month
+- Your company's logo can be featured on **Readme** and **Website**
+- Intended for medium-sized companies
+

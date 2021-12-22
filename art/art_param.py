@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "5.3"  # pragma: no cover
+ART_VERSION = "5.4"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -783,6 +783,13 @@ NON_ASCII_FONTS = [
     "fancy127",
     "fancy128",
     "fancy129",
+    "fancy131",
+    "fancy132",
+    "fancy133",
+    "fancy134",
+    "fancy135",
+    "fancy136",
+    "fancy137",
     "foxy",
     "white_square",
     "black_square",
@@ -866,7 +873,10 @@ NON_ASCII_FONTS = [
     "manga",
     "upside_down2",
     "cool",
-    "instagram"]
+    "instagram",
+    "tarty1",
+    "tarty2",
+    "tarty3"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -886,6 +896,8 @@ RANDOM_FILTERED_FONTS = [
     'flyn_sh',
     'moscow',
     'dwhistled'] + NON_ASCII_FONTS
+
+MIX_FILTERED_FONTS = ["tarty1", "tarty2", "tarty3"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -1444,7 +1456,17 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "manga": [manga_dic, False],
             "upside_down2": [upside_down2_dic, False],
             "cool": [cool_dic, False],
-            "instagram":[instagram_dic, False]
+            "instagram": [instagram_dic, False],
+            "fancy131": [fancy131_dic, False],
+            "fancy132": [fancy132_dic, False],
+            "fancy133": [fancy133_dic, False],
+            "fancy134": [fancy134_dic, False],
+            "fancy135": [fancy135_dic, False],
+            "fancy136": [fancy136_dic, False],
+            "fancy137": [fancy137_dic, False],
+            "tarty1": [tarty1_dic, False],
+            "tarty2": [tarty2_dic, False],
+            "tarty3": [tarty3_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

@@ -411,8 +411,9 @@ def mix_letters():
     :return: letters as list
     """
     letters = fancy1_dic.copy()
+    fonts = list(set(NON_ASCII_FONTS) - set(MIX_FILTERED_FONTS))
     for i in letters.keys():
-        random_font = random.choice(NON_ASCII_FONTS)
+        random_font = random.choice(fonts)
         letters[i] = get_font_dic(random_font)[i]
     return letters
 
@@ -459,12 +460,7 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
         return ""
     for i in range(len(split_list[0])):
         temp = ""
-        for j,item in enumerate(split_list):
-            if j > 0 and (
-                    i == 1 or i == len(
-                        split_list[0]) -
-                    2) and font == "block":
-                temp = temp + " "
+        for j, item in enumerate(split_list):
             temp = temp + item[i]
         result_list.append(temp)
     result = (splitter).join(result_list)
