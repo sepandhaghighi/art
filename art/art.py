@@ -460,7 +460,7 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
         return ""
     for i in range(len(split_list[0])):
         temp = ""
-        for j, item in enumerate(split_list):
+        for item in split_list:
             temp = temp + item[i]
         result_list.append(temp)
     result = (splitter).join(result_list)
