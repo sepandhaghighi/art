@@ -6,8 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 1 new font
+- 2 new font
 	1. tarty4
+	2. tarty5
 ### Changed
 - `__word2art` function modified
 ## [5.4] - 2021-12-22

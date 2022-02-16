@@ -724,6 +724,10 @@ tarty4 :
 ░░█░░ █▀▀ ▀▀█ ░░█░░
 ░░▀░░ ▀▀▀ ▀▀▀ ░░▀░░
 <BLANKLINE>
+tarty5 :
+<BLANKLINE>
+▜▛ █☰ ▟▛ ▜▛ 
+<BLANKLINE>
 thin2 :
 ｔｅｓｔ
 <BLANKLINE>
