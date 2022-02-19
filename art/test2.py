@@ -232,8 +232,17 @@ fancy136 :
 fancy137 :
 𝖙𝖊𝖘𝖙
 <BLANKLINE>
+fancy138 :
+𝓉ℯ𝓈𝓉
+<BLANKLINE>
+fancy139 :
+𝓽𝓮𝓼𝓽
+<BLANKLINE>
 fancy14 :
 ȶɛֆȶ
+<BLANKLINE>
+fancy140 :
+ⲧⲉ𝛓ⲧ
 <BLANKLINE>
 fancy15 :
 ✞ƎƧ✞
