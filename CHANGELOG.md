@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 5 new font
+	1. tarty4
+	2. tarty5
+	3. fancy138
+	4. fancy139
+	5. fancy140
 ### Changed
 - `__word2art` function modified
 ## [5.4] - 2021-12-22
