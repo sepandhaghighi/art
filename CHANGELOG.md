@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	5. fancy140
 ### Changed
 - `__word2art` function modified
+- `font_wizard.py` modified
 ## [5.4] - 2021-12-22
 ### Added
 - 10 new font
