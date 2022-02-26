@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	3. fancy138
 	4. fancy139
 	5. fancy140
+- Anaconda workflow
 ### Changed
 - `__word2art` function modified
 - `font_wizard.py` modified
