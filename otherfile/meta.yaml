@@ -1,0 +1,37 @@
+{% set name = "art" %}
+{% set version = "5.4" %}
+
+package:
+    name: {{ name|lower }}
+    version: {{ version }}
+source:
+    git_url: https://github.com/sepandhaghighi/art
+    git_rev: v{{ version }}
+build:
+    noarch: python
+    number: 0
+    script: {{ PYTHON }} -m pip install . -vv
+requirements:
+    host:
+        - pip
+        - setuptools
+        - python >=3.5
+    run:
+        - python >=3.5
+about:
+    home: https://github.com/sepandhaghighi/art
+    license: MIT
+    license_family: MIT
+    summary: ASCII art library for Python
+    description: |
+        ASCII art is also known as "computer text art".
+        It involves the smart placement of typed special characters or
+        letters to make a visual shape that is spread over multiple lines of text.
+        ART is a Python lib for text converting to ASCII art fancy.
+
+        Website: https://www.4r7.ir
+
+        Repo: https://github.com/sepandhaghighi/art
+extra:
+    recipe-maintainers:
+        - sepandhaghighi

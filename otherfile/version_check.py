@@ -29,6 +29,8 @@ CHANGELOG_ITEMS = [
 ART_LIST_ITEMS = ["### Version : {0}"]
 FONT_LIST_ITEMS = ["### Version : {0}"]
 PARAMS_ITEMS = ['ART_VERSION = "{0}"']
+META_ITEMS = ['% set version = "{0}" %']
+
 FILES = {
     "setup.py": SETUP_ITEMS,
     "INSTALL.md": INSTALL_ITEMS,
@@ -37,7 +39,8 @@ FILES = {
     "ArtList.ipynb": ART_LIST_ITEMS,
     os.path.join(
         "art",
-        "art_param.py"): PARAMS_ITEMS}
+        "art_param.py"): PARAMS_ITEMS,
+    os.path.join("otherfile", "meta.yaml"): META_ITEMS}
 
 TEST_NUMBER = len(FILES.keys()) + 1
 
