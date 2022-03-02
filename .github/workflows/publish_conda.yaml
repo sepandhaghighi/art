@@ -1,0 +1,18 @@
+name: publish_conda
+
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - '*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: publish-to-conda
+        uses: sepandhaghighi/conda-package-publish-action@v1.2
+        with:
+          subDir: 'otherfile'
+          AnacondaToken: ${{ secrets.ANACONDA_TOKEN }}

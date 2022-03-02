@@ -4366,11 +4366,11 @@ __o000o__(o)(o)__o000o__
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      _  _
-__   __| ___|    | || |
-\ \ / /|___ \    | || |_
- \ V /  ___) | _ |__   _|
-  \_/  |____/ (_)   |_|
+        ____      ____
+__   __| ___|    | ___|
+\ \ / /|___ \    |___ \
+ \ V /  ___) | _  ___) |
+  \_/  |____/ (_)|____/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4405,11 +4405,11 @@ True
 >>> random.seed(3)
 >>> Art = art("random")
 >>> random.seed(40)
->>> Text = text2art("test","random")
+>>> Text = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","random")
 >>> random.seed(55)
 >>> Art3 = randart()
 >>> random.seed(19)
->>> Text2 = text2art("test","random")
+>>> Text2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","random")
 >>> random.seed(39)
 >>> Art2 =  art("random")
 >>> random.seed(119)
