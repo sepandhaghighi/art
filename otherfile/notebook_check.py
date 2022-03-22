@@ -14,6 +14,7 @@ EXTENSION = ".ipynb"
 
 if __name__ == "__main__":
     tprint("ART", "bulbhead")
+    tprint("Notebook Check", "bulbhead")
     print("Processing ...")
     for index, notebook in enumerate(NOTEBOOKS_LIST):
         ep = ExecutePreprocessor(timeout=6000, kernel_name='python3')
