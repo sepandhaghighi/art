@@ -40,6 +40,11 @@ jobs:
     - name: ART-Decor check
       run: |
         python otherfile/art_decor_check.py
+    - name: Notebook check
+      run: |
+        pip install notebook>=5.2.2
+        python otherfile/notebook_check.py
+      if: matrix.python-version == 3.7 && matrix.os == 'ubuntu-latest'
     - name: Other tests
       run: |
         python -m vulture art/ otherfile/ setup.py art_profile.py --min-confidence 65 --exclude=__init__.py --sort-by-size
