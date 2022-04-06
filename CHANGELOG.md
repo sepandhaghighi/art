@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 3 new font
+	1. fancy141
+	2. fancy142
+	3. fancy143
 ### Changed
 - Test system modified
 ## [5.5] - 2022-03-02
