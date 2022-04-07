@@ -746,6 +746,12 @@ tarty5 :
 <BLANKLINE>
 ▜▛ █☰ ▟▛ ▜▛ 
 <BLANKLINE>
+tarty6 :
+<BLANKLINE>
+█─▄─▄─██▄─▄▄─██─▄▄▄▄██─▄─▄─█
+███─█████─▄█▀██▄▄▄▄─████─███
+▀▀▄▄▄▀▀▀▄▄▄▄▄▀▀▄▄▄▄▄▀▀▀▄▄▄▀▀
+<BLANKLINE>
 thin2 :
 ｔｅｓｔ
 <BLANKLINE>

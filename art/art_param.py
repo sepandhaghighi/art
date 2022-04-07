@@ -884,7 +884,8 @@ NON_ASCII_FONTS = [
     "tarty2",
     "tarty3",
     "tarty4",
-    "tarty5"]
+    "tarty5",
+    "tarty6"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -905,7 +906,7 @@ RANDOM_FILTERED_FONTS = [
     'moscow',
     'dwhistled'] + NON_ASCII_FONTS
 
-MIX_FILTERED_FONTS = ["tarty1", "tarty2", "tarty3", "tarty4", "tarty5"]
+MIX_FILTERED_FONTS = ["tarty1", "tarty2", "tarty3", "tarty4", "tarty5", "tarty6"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -1482,7 +1483,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "tarty2": [tarty2_dic, False],
             "tarty3": [tarty3_dic, False],
             "tarty4": [tarty4_dic, False],
-            "tarty5": [tarty5_dic, False]
+            "tarty5": [tarty5_dic, False],
+            "tarty6":[tarty6_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
