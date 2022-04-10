@@ -6,11 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 4 new font
+- 5 new font
 	1. fancy141
 	2. fancy142
 	3. fancy143
 	4. tarty6
+	5. tarty7
 ### Changed
 - Test system modified
 ## [5.5] - 2022-03-02
