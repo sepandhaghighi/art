@@ -5,7 +5,7 @@
 ⚠️ **PyPI** support of these versions will be removed in a **future release**
 
 ### Source code
-- Download [Version 5.6](https://github.com/sepandhaghighi/art/archive/v5.6.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 5.6](https://github.com/sepandhaghighi/art/archive/v5.6.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
