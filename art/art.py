@@ -78,6 +78,19 @@ def font_list(text="test", mode="all"):
         text_temp = text + "\n"
         tprint(text_temp, str(item))
 
+def ascii_font_list():
+    """
+    Returns a list of ascii fonts
+    :type text : str
+    :type mode: str
+    :return: list
+    """
+    ascii_font_list = []
+    fonts = set(FONT_NAMES) - set(NON_ASCII_FONTS)
+    for item in sorted(list(fonts)):
+        ascii_font_list.append(str(item))
+    return ascii_font_list
+
 
 def art_list(mode="all"):
     """
