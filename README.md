@@ -171,6 +171,7 @@ art.art.artError: The 'number' type must be int.
 
 * Note1 : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
 * Note2 : Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
+* Note3 : Use `ASCII_ARTS` to access all ASCII arts name list.
 
 ### ASCII text
 	
@@ -347,6 +348,7 @@ Filename: test.txt
 
 * Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
 * Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
+* Note3 : Use `ASCII_FONTS` to access all ASCII fonts name list.
 
 ### Decoration
 
