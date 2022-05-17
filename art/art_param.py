@@ -1722,8 +1722,10 @@ DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
                    "wave9": wave9}
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
+ASCII_FONTS = sorted(set(FONT_NAMES) - set(NON_ASCII_FONTS))
 DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
+ASCII_ARTS = sorted(set(ART_NAMES) - set(NON_ASCII_ARTS))
 FONT_COUNTER = len(FONT_NAMES)  # pragma: no cover
 ART_COUNTER = len(ART_NAMES)  # pragma: no cover
 DECORATION_COUNTER = len(DECORATION_NAMES)  # pragma: no cover
