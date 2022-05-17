@@ -3008,6 +3008,10 @@ Filename: fancy6dec.txt
 'OK'
 >>> Data["Status"]
 True
+>>> FONT_COUNTER == (len(ASCII_FONTS) + len(NON_ASCII_FONTS))
+True
+>>> ART_COUNTER == (len(ASCII_ARTS) + len(NON_ASCII_ARTS))
+True
 >>> os.remove("antrophobia.txt")
 >>> os.remove("fancy37.txt")
 >>> os.remove("fancy6dec.txt")
