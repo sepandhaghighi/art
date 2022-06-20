@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 3 new font
+	1. fancy144
+	2. fancy145
+	3. fancy146
 - `ASCII_FONTS` list
 - `ASCII_ARTS` list
 ## [5.6] - 2022-04-20
