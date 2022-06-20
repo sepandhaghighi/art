@@ -253,6 +253,15 @@ fancy142 :
 fancy143 :
 🆃🅴🆂🆃
 <BLANKLINE>
+fancy144 :
+🅣🅔🅢🅣
+<BLANKLINE>
+fancy145 :
+ⓣⓔⓢⓣ
+<BLANKLINE>
+fancy146 :
+セ🝗丂セ
+<BLANKLINE>
 fancy15 :
 ✞ƎƧ✞
 <BLANKLINE>
