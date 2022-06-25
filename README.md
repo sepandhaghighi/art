@@ -808,7 +808,7 @@ Just send your text to one of these bots. 👇👇👇👇
 
 1. [FIGlet](http://www.figlet.org/)
 2. [1 Line Art](http://1lineart.kulaone.com/#/)
-3. [Text To ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
+3. [Text to ASCII](http://patorjk.com/software/taag/#p=display&f=Blocks&t=ART)
 4. [ASCII Generator](http://www.network-science.de/ascii/)
 5. [Asky](https://asky.io/)
 6. [Flipyourtext](https://www.flipyourtext.com/)
@@ -830,10 +830,11 @@ Just send your text to one of these bots. 👇👇👇👇
 22. [Instagram Fonts2](https://www.instagramfonts.com/)
 23. [Emotiworld](http://en.emotiworld.com/)
 24. [Fancy Text Pro](https://www.fancytextpro.com/)
-25. [Playing cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
+25. [Playing Cards in Unicode](https://en.m.wikipedia.org/wiki/Playing_cards_in_Unicode)
 26. [Text Generator](https://coolfonts.text-generator.org/)
 27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
 28. [Fsymbols](https://fsymbols.com/)
+29. [Font Copy and Paste](https://www.fontcopypaste.com/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
