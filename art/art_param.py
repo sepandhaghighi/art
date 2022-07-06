@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "5.6"  # pragma: no cover
+ART_VERSION = "5.7"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -796,6 +796,11 @@ NON_ASCII_FONTS = [
     "fancy141",
     "fancy142",
     "fancy143",
+    "fancy144",
+    "fancy145",
+    "fancy146",
+    "fancy147",
+    "fancy148",
     "foxy",
     "white_square",
     "black_square",
@@ -1491,6 +1496,11 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fancy141": [fancy141_dic, False],
             "fancy142": [fancy142_dic, False],
             "fancy143": [fancy143_dic, False],
+            "fancy144": [fancy144_dic, False],
+            "fancy145": [fancy145_dic, False],
+            "fancy146": [fancy146_dic, False],
+            "fancy147": [fancy147_dic, False],
+            "fancy148": [fancy148_dic, False],
             "tarty1": [tarty1_dic, False],
             "tarty2": [tarty2_dic, False],
             "tarty3": [tarty3_dic, False],
@@ -1722,8 +1732,10 @@ DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
                    "wave9": wave9}
 
 FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
+ASCII_FONTS = sorted(set(FONT_NAMES) - set(NON_ASCII_FONTS))
 DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
 ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
+ASCII_ARTS = sorted(set(ART_NAMES) - set(NON_ASCII_ARTS))
 FONT_COUNTER = len(FONT_NAMES)  # pragma: no cover
 ART_COUNTER = len(ART_NAMES)  # pragma: no cover
 DECORATION_COUNTER = len(DECORATION_NAMES)  # pragma: no cover

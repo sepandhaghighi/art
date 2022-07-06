@@ -253,6 +253,21 @@ fancy142 :
 fancy143 :
 🆃🅴🆂🆃
 <BLANKLINE>
+fancy144 :
+🅣🅔🅢🅣
+<BLANKLINE>
+fancy145 :
+ⓣⓔⓢⓣ
+<BLANKLINE>
+fancy146 :
+セ🝗丂セ
+<BLANKLINE>
+fancy147 :
+ƚҽʂƚ
+<BLANKLINE>
+fancy148 :
+𝚝ₑ𝘴𝚝
+<BLANKLINE>
 fancy15 :
 ✞ƎƧ✞
 <BLANKLINE>
@@ -3007,6 +3022,10 @@ Filename: fancy6dec.txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
+True
+>>> FONT_COUNTER == (len(ASCII_FONTS) + len(NON_ASCII_FONTS))
+True
+>>> ART_COUNTER == (len(ASCII_ARTS) + len(NON_ASCII_ARTS))
 True
 >>> os.remove("antrophobia.txt")
 >>> os.remove("fancy37.txt")
