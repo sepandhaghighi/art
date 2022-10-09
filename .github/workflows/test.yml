@@ -33,7 +33,7 @@ jobs:
     - name: Version check
       run: |
         python otherfile/version_check.py
-      if: matrix.python-version == 3.7
+      if: matrix.python-version == 3.8
     - name: Font check
       run: |
         python otherfile/font_check.py
@@ -44,18 +44,18 @@ jobs:
       run: |
         pip install notebook>=5.2.2
         python otherfile/notebook_check.py
-      if: matrix.python-version == 3.7 && matrix.os == 'ubuntu-latest'
+      if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-latest'
     - name: Other tests
       run: |
         python -m vulture art/ otherfile/ setup.py art_profile.py --min-confidence 65 --exclude=__init__.py --sort-by-size
         python -m bandit -r art -s B311
         python -m pydocstyle --match='(?!test).*\.py' -v
-      if: matrix.python-version == 3.7
+      if: matrix.python-version == 3.8
     - name: Codecov
       run: |
         python -m art testcov2
         codecov
-      if: matrix.python-version == 3.7 && matrix.os == 'ubuntu-latest'
+      if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-latest'
     - name: Profile
       run: |
         python -m cProfile -s cumtime art_profile.py
