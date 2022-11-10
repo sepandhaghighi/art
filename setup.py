@@ -71,6 +71,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Text Processing :: Fonts',
         'Topic :: Text Editors',
         'Topic :: Text Processing :: General',
