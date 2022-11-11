@@ -898,7 +898,8 @@ NON_ASCII_FONTS = [
     "got",
     "vip",
     "crazy",
-    "cruse"]
+    "cruse",
+    "drippy"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1519,7 +1520,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "got":[got_dic,False],
             "vip":[vip_dic,False],
             "crazy":[crazy_dic,False],
-            "cruse":[cruse_dic,False]
+            "cruse":[cruse_dic,False],
+            "drippy":[drippy_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
