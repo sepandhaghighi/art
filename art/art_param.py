@@ -894,7 +894,8 @@ NON_ASCII_FONTS = [
     "tarty6",
     "tarty7",
     "tarty8",
-    "tarty9"]
+    "tarty9",
+    "got"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1511,7 +1512,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "tarty6": [tarty6_dic, False],
             "tarty7": [tarty7_dic, False],
             "tarty8": [tarty8_dic, False],
-            "tarty9": [tarty9_dic, False]
+            "tarty9": [tarty9_dic, False],
+            "got":[got_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
