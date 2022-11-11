@@ -5,6 +5,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 8 new font
+	1. russian2
+	2. got
+	3. vip
+	4. crazy
+	5. cruse
+	6. drippy
+	7. stylish
+	8. ayda
 ### Changed
 - Test system modified
 - `Python 3.11` added to `test.yml`
