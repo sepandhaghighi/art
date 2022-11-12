@@ -16,6 +16,9 @@ téśt
 awesome :
 тεƨт
 <BLANKLINE>
+ayda :
+Ť∈ᏕŤ
+<BLANKLINE>
 black_bubble :
 🅣🅔🅢🅣
 <BLANKLINE>
@@ -73,6 +76,12 @@ coptic2 :
 cranky :
 †εš†
 <BLANKLINE>
+crazy :
+ɬєʂɬ
+<BLANKLINE>
+cruse :
+ᖶᘿSᖶ
+<BLANKLINE>
 curly :
 էҽʂէ
 <BLANKLINE>
@@ -99,6 +108,9 @@ dotted :
 <BLANKLINE>
 drako :
 ϮꂅᏕϮ
+<BLANKLINE>
+drippy :
+ȶᵉˢȶ
 <BLANKLINE>
 dwarf :
 ᵗᵉˢᵗ
@@ -574,6 +586,9 @@ full_width :
 funky_fresh :
 тḙṧт
 <BLANKLINE>
+got :
+ＴＥＳＴ
+<BLANKLINE>
 greek_legends :
 TΣST
 <BLANKLINE>
@@ -667,6 +682,9 @@ rusify :
 russian :
 TΞST
 <BLANKLINE>
+russian2 :
+ƬƎƧƬ
+<BLANKLINE>
 sarah :
 ᏆℰЅᏆ
 <BLANKLINE>
@@ -708,6 +726,9 @@ strange :
 <BLANKLINE>
 strikethrough :
 ŧɇsŧ
+<BLANKLINE>
+stylish :
+ȶєᏕȶ
 <BLANKLINE>
 subscript1 :
 ₜₑₛₜ
@@ -826,6 +847,9 @@ upside_down1 :
 <BLANKLINE>
 upside_down2 :
 ʇǝsʇ
+<BLANKLINE>
+vip :
+ƬΣƧƬ
 <BLANKLINE>
 white_bubble :
 ⓣⓔⓢⓣ
