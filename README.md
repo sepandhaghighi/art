@@ -835,6 +835,8 @@ Just send your text to one of these bots. 👇👇👇👇
 27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
 28. [Fsymbols](https://fsymbols.com/)
 29. [Font Copy and Paste](https://www.fontcopypaste.com/)
+30. [Mega Cool Text](http://megacooltext.com/)
+31. [ToolCalculator](https://www.toolcalculator.com/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
