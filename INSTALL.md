@@ -18,8 +18,14 @@
 
 ### Conda
 
+#### Conda-Forge
+- Check [Conda-Forge](https://conda-forge.org)
+- `conda install -c conda-forge ascii-art ` (Need root access)
+
+#### Private channel
 - Check [Conda Managing Package](https://conda.io)
 - `conda install -c sepandhaghighi art ` (Need root access)
+
 
 ### Easy install
 
