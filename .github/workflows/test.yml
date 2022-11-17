@@ -24,8 +24,6 @@ jobs:
         python setup.py install
         python -m art test
         python -m art test2
-        python -m art testcov
-        python -m art testcov2
     - name: Install dev-requirements
       run: |
         python -m pip install --upgrade pip
