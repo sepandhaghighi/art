@@ -4600,6 +4600,10 @@ art.art.artError: The 'overwrite' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'sep' type must be str.
+>>> set_default(decoration=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'decoration' type must be str.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
