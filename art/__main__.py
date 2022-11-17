@@ -7,6 +7,7 @@ import doctest
 import os
 import zipfile
 
+
 def select_test(test_name="TEST"):
     """
     Select proper test mode.
