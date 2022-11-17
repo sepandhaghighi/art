@@ -53,7 +53,7 @@ jobs:
       if: matrix.python-version == 3.8
     - name: Codecov
       run: |
-        python -m art testcov2
+        coverage run -m art test2
         codecov
       if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-latest'
     - name: Profile
