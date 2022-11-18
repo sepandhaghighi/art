@@ -1,5 +1,8 @@
 [run]
 branch = True
+omit =
+    art/__main__.py
+    art/__init__.py
 
 [report]
 exclude_lines =

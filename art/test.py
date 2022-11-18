@@ -19,6 +19,46 @@
 | '--------------' |
  '----------------'
 <BLANKLINE>
+>>> tprint("\t\t2","block",sep=2)
+<BLANKLINE>
+ .----------------.
+| .--------------. |
+| |    _____     | |
+| |   / ___ `.   | |
+| |  |_/___) |   | |
+| |   .'____.'   | |
+| |  / /____     | |
+| |  |_______|   | |
+| |              | |
+| '--------------' |
+ '----------------'
+<BLANKLINE>
+>>> tprint("\t\t2","block",sep="\n\n")
+<BLANKLINE>
+<BLANKLINE>
+ .----------------.
+<BLANKLINE>
+| .--------------. |
+<BLANKLINE>
+| |    _____     | |
+<BLANKLINE>
+| |   / ___ `.   | |
+<BLANKLINE>
+| |  |_/___) |   | |
+<BLANKLINE>
+| |   .'____.'   | |
+<BLANKLINE>
+| |  / /____     | |
+<BLANKLINE>
+| |  |_______|   | |
+<BLANKLINE>
+| |              | |
+<BLANKLINE>
+| '--------------' |
+<BLANKLINE>
+ '----------------'
+<BLANKLINE>
+<BLANKLINE>
 >>> tprint(" ","block")
 <BLANKLINE>
 >>> tprint("123","alpha")
@@ -4600,6 +4640,10 @@ art.art.artError: The 'overwrite' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'sep' type must be str.
+>>> set_default(decoration=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'decoration' type must be str.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)

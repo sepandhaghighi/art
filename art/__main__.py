@@ -1,16 +1,11 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, PACKAGE_LOAD_WARNING
+from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
 import sys
 import doctest
 import os
 import zipfile
-COVERAGE_INSTALL = True
-try:
-    import coverage
-except ImportError:
-    COVERAGE_INSTALL = False
 
 
 def select_test(test_name="TEST"):
@@ -22,27 +17,17 @@ def select_test(test_name="TEST"):
     :return: None
     """
     error_flag_2 = 0
-    if test_name == "TESTCOV" or test_name == "TESTCOV2":
-        if COVERAGE_INSTALL:
-            cov = coverage.Coverage()
-            cov.start()
-        else:
-            print(PACKAGE_LOAD_WARNING)
     error_flag_1 = doctest.testfile(
         "test.py",
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
         | doctest.IGNORE_EXCEPTION_DETAIL,
         verbose=False)[0]
-    if test_name == "TESTCOV2" or test_name == "TEST2":
+    if test_name == "TEST2":
         error_flag_2 = doctest.testfile(
             "test2.py",
             optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
             verbose=False)[0]
     error_flag = error_flag_1 + error_flag_2
-    if (test_name == "TESTCOV" or test_name == "TESTCOV2") and COVERAGE_INSTALL:
-        cov.stop()
-        cov.report()
-        cov.save()
     if error_flag == 0:
         print("\n" + test_name + " Passed")
         sys.exit(error_flag)
@@ -54,14 +39,10 @@ def select_test(test_name="TEST"):
 if __name__ == "__main__":
     args = sys.argv
     if len(args) > 1:
-        if args[1].upper() == "TESTCOV":
-            select_test("TESTCOV")
-        elif args[1].upper() == "TEST":
+        if args[1].upper() == "TEST":
             select_test("TEST")
         elif args[1].upper() == "TEST2":
             select_test("TEST2")
-        elif args[1].upper() == "TESTCOV2":
-            select_test("TESTCOV2")
         elif args[1].upper() in ["LIST", "ARTS"]:
             art_list()
         elif args[1].upper() == "FONTS":

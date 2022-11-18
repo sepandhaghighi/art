@@ -24,8 +24,6 @@ jobs:
         python setup.py install
         python -m art test
         python -m art test2
-        python -m art testcov
-        python -m art testcov2
     - name: Install dev-requirements
       run: |
         python -m pip install --upgrade pip
@@ -53,7 +51,7 @@ jobs:
       if: matrix.python-version == 3.8
     - name: Codecov
       run: |
-        python -m art testcov2
+        coverage run -m art test2
         codecov
       if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-latest'
     - name: Profile
