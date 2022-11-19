@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Test system modified
 - `Python 3.11` added to `test.yml`
 - `Conda-Forge` installing section added to `INSTALL.md`
+- Website changed to https://www.ascii-art.site
 ### Removed
 - `testcov` and `testcov2` modes
 ## [5.7] - 2022-07-06
