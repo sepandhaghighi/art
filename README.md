@@ -788,8 +788,8 @@ Just send your text to one of these bots. 👇👇👇👇
 1. Fill an issue and describe it. We'll check it ASAP!
     - Please complete the issue template
 2. Discord : [https://discord.com/invite/FAAyq3QJqP](https://discord.com/invite/FAAyq3QJqP)
-3. Website : [https://www.4r7.ir](https://www.4r7.ir)
-4. Email : [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir")
+3. Website : [https://www.ascii-art.site](https://www.ascii-art.site)
+4. Email : [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site")
 
 ## Dependencies
 

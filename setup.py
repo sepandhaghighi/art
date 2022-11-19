@@ -40,11 +40,11 @@ setup(
     long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
-    author_email='info@4r7.ir',
+    author_email='info@ascii-art.site',
     url='https://github.com/sepandhaghighi/art',
     keywords="ascii art python3 python text font non-ascii printing",
     project_urls={
-        'Webpage': 'https://www.4r7.ir',
+        'Webpage': 'https://www.ascii-art.site',
         'Source': 'https://github.com/sepandhaghighi/art',
         'Tracker': 'https://github.com/sepandhaghighi/art/issues',
         'Discord': 'https://discord.com/invite/FAAyq3QJqP',
