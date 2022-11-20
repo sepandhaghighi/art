@@ -1,5 +1,5 @@
 {% set name = "art" %}
-{% set version = "5.7" %}
+{% set version = "5.8" %}
 
 package:
     name: {{ name|lower }}
