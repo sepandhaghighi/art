@@ -7,7 +7,7 @@
 </a>
 <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI version" height="18"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-632-blue.svg"></a>
+<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-640-blue.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg"></a>
 <a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg"></a>
 <a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg"></a>
@@ -65,7 +65,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">Font Counter</td>
-		<td align="center">632</td>
+		<td align="center">640</td>
 	</tr>
 	<tr>
 		<td align="center">1-Line-Art Counter</td>
@@ -788,8 +788,8 @@ Just send your text to one of these bots. 👇👇👇👇
 1. Fill an issue and describe it. We'll check it ASAP!
     - Please complete the issue template
 2. Discord : [https://discord.com/invite/FAAyq3QJqP](https://discord.com/invite/FAAyq3QJqP)
-3. Website : [https://www.4r7.ir](https://www.4r7.ir)
-4. Email : [info@4r7.ir](mailto:info@4r7.ir "info@4r7.ir")
+3. Website : [https://www.ascii-art.site](https://www.ascii-art.site)
+4. Email : [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site")
 
 ## Dependencies
 
@@ -835,6 +835,8 @@ Just send your text to one of these bots. 👇👇👇👇
 27. [GOGOTEXT](https://instafontsgen.codesdetail.com)
 28. [Fsymbols](https://fsymbols.com/)
 29. [Font Copy and Paste](https://www.fontcopypaste.com/)
+30. [Mega Cool Text](http://megacooltext.com/)
+31. [ToolCalculator](https://www.toolcalculator.com/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	

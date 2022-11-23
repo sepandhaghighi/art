@@ -5,6 +5,24 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [5.8] - 2022-11-23
+### Added
+- 8 new font
+	1. russian2
+	2. got
+	3. vip
+	4. crazy
+	5. cruse
+	6. drippy
+	7. stylish
+	8. ayda
+### Changed
+- Test system modified
+- `Python 3.11` added to `test.yml`
+- `Conda-Forge` installing section added to `INSTALL.md`
+- Website changed to https://www.ascii-art.site
+### Removed
+- `testcov` and `testcov2` modes
 ## [5.7] - 2022-07-06
 ### Added
 - 5 new font
@@ -2018,7 +2036,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.7...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.8...dev
+[5.8]: https://github.com/sepandhaghighi/art/compare/v5.7...v5.8
 [5.7]: https://github.com/sepandhaghighi/art/compare/v5.6...v5.7
 [5.6]: https://github.com/sepandhaghighi/art/compare/v5.5...v5.6
 [5.5]: https://github.com/sepandhaghighi/art/compare/v5.4...v5.5

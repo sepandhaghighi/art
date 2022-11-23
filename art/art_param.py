@@ -6,7 +6,7 @@ from .text_dic3 import *
 from .decor_dic import *
 from .art_dic import *
 
-ART_VERSION = "5.7"  # pragma: no cover
+ART_VERSION = "5.8"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -850,6 +850,7 @@ NON_ASCII_FONTS = [
     "fasion",
     "curly",
     "russian",
+    "russian2",
     "messletters",
     "coptic1",
     "swirly",
@@ -893,7 +894,14 @@ NON_ASCII_FONTS = [
     "tarty6",
     "tarty7",
     "tarty8",
-    "tarty9"]
+    "tarty9",
+    "got",
+    "vip",
+    "crazy",
+    "cruse",
+    "drippy",
+    "stylish",
+    "ayda"]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1425,6 +1433,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fasion": [fasion_dic, False],
             "curly": [curly_dic, False],
             "russian": [russian_dic, False],
+            "russian2": [russian2_dic, False],
             "messletters": [messletters_dic, False],
             "coptic1": [coptic1_dic, False],
             "swirly": [swirly_dic, False],
@@ -1509,7 +1518,14 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "tarty6": [tarty6_dic, False],
             "tarty7": [tarty7_dic, False],
             "tarty8": [tarty8_dic, False],
-            "tarty9": [tarty9_dic, False]
+            "tarty9": [tarty9_dic, False],
+            "got": [got_dic, False],
+            "vip": [vip_dic, False],
+            "crazy": [crazy_dic, False],
+            "cruse": [cruse_dic, False],
+            "drippy": [drippy_dic, False],
+            "stylish": [stylish_dic, False],
+            "ayda": [ayda_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

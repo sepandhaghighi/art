@@ -19,6 +19,46 @@
 | '--------------' |
  '----------------'
 <BLANKLINE>
+>>> tprint("\t\t2","block",sep=2)
+<BLANKLINE>
+ .----------------.
+| .--------------. |
+| |    _____     | |
+| |   / ___ `.   | |
+| |  |_/___) |   | |
+| |   .'____.'   | |
+| |  / /____     | |
+| |  |_______|   | |
+| |              | |
+| '--------------' |
+ '----------------'
+<BLANKLINE>
+>>> tprint("\t\t2","block",sep="\n\n")
+<BLANKLINE>
+<BLANKLINE>
+ .----------------.
+<BLANKLINE>
+| .--------------. |
+<BLANKLINE>
+| |    _____     | |
+<BLANKLINE>
+| |   / ___ `.   | |
+<BLANKLINE>
+| |  |_/___) |   | |
+<BLANKLINE>
+| |   .'____.'   | |
+<BLANKLINE>
+| |  / /____     | |
+<BLANKLINE>
+| |  |_______|   | |
+<BLANKLINE>
+| |              | |
+<BLANKLINE>
+| '--------------' |
+<BLANKLINE>
+ '----------------'
+<BLANKLINE>
+<BLANKLINE>
 >>> tprint(" ","block")
 <BLANKLINE>
 >>> tprint("123","alpha")
@@ -4366,11 +4406,11 @@ __o000o__(o)(o)__o000o__
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      _____
-__   __| ___|    |___  |
-\ \ / /|___ \       / /
- \ V /  ___) | _   / /
-  \_/  |____/ (_) /_/
+        ____       ___
+__   __| ___|     ( _ )
+\ \ / /|___ \     / _ \
+ \ V /  ___) | _ | (_) |
+  \_/  |____/ (_) \___/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4378,7 +4418,7 @@ It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 ART is a Python lib for text converting to ASCII art fancy.
 <BLANKLINE>
-Webpage : https://www.4r7.ir
+Webpage : https://www.ascii-art.site
 <BLANKLINE>
 Help :
 <BLANKLINE>
@@ -4600,6 +4640,10 @@ art.art.artError: The 'overwrite' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'sep' type must be str.
+>>> set_default(decoration=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'decoration' type must be str.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
