@@ -33,7 +33,6 @@
    		* [Try ART in Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
    		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
-   * [Dependencies](https://github.com/sepandhaghighi/art#dependencies)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
    * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
@@ -779,9 +778,9 @@ Just send your text to one of these bots. 👇👇👇👇
 <p>Screen Record</p>
 </div>
 
-* View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
-* View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
-* View full decoration list ([Link1](https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb "Full Decoration List"),[Link2](http://art.shaghighi.ir/DecorList.html "Full Decoration List"))
+* View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](https://www.ascii-art.site/FontList.html "Full Font List"))					
+* View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](https://www.ascii-art.site/ArtList.html "Full Art List"))
+* View full decoration list ([Link1](https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb "Full Decoration List"),[Link2](https://www.ascii-art.site/DecorList.html "Full Decoration List"))
 
 ## Issues & bug reports			
 
@@ -790,19 +789,6 @@ Just send your text to one of these bots. 👇👇👇👇
 2. Discord : [https://discord.com/invite/FAAyq3QJqP](https://discord.com/invite/FAAyq3QJqP)
 3. Website : [https://www.ascii-art.site](https://www.ascii-art.site)
 4. Email : [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site")
-
-## Dependencies
-
-<table>
-	<tr> 
-		<td align="center">master</td>	
-		<td align="center">dev</td>	
-	</tr>
-	<tr>
-		<td align="center"><a href="https://requires.io/github/sepandhaghighi/art/requirements/?branch=master"><img src="https://requires.io/github/sepandhaghighi/art/requirements.svg?branch=master" alt="Requirements Status" /></a></td>
-		<td align="center"><a href="https://requires.io/github/sepandhaghighi/art/requirements/?branch=dev"><img src="https://requires.io/github/sepandhaghighi/art/requirements.svg?branch=dev" alt="Requirements Status" /></a></td>
-	</tr>
-</table>
 
 ## Reference    
 
