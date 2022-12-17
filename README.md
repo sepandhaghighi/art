@@ -778,9 +778,9 @@ Just send your text to one of these bots. 👇👇👇👇
 <p>Screen Record</p>
 </div>
 
-* View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](http://art.shaghighi.ir/FontList.html "Full Font List"))					
-* View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](http://art.shaghighi.ir/ArtList.html "Full Art List"))
-* View full decoration list ([Link1](https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb "Full Decoration List"),[Link2](http://art.shaghighi.ir/DecorList.html "Full Decoration List"))
+* View full font list ([Link1](https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb "Full Font List"),[Link2](https://www.ascii-art.site/FontList.html "Full Font List"))					
+* View full art list ([Link1](https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb "Full Art List"),[Link2](https://www.ascii-art.site/ArtList.html "Full Art List"))
+* View full decoration list ([Link1](https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb "Full Decoration List"),[Link2](https://www.ascii-art.site/DecorList.html "Full Decoration List"))
 
 ## Issues & bug reports			
 
