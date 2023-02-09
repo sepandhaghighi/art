@@ -908,7 +908,6 @@ NON_ASCII_FONTS = [
     "cross_jesus",
     "german",
     "dark_tattoo",
-    "xname",
     "lucifer",
     "ascii_roman",
 ]
@@ -1542,7 +1541,6 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "cross_jesus": [cross_jesus_dic, False],
             "german": [german_dic, False],
             "dark_tattoo": [dark_tattoo_dic, False],
-            "xname": [xname_dic, False],
             "lucifer": [lucifer_dic, False],
             "ascii_roman": [ascii_roman_dic, False],
             }

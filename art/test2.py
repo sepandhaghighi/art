@@ -884,9 +884,6 @@ white_square :
 wiggly :
 ⊥ÈS⊥
 <BLANKLINE>
-xname :
-test
-<BLANKLINE>
 >>> art_list(mode="non-ascii")
 3
 ᕙ༼ ,,ԾܫԾ,, ༽ᕗ
