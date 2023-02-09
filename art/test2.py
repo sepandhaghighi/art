@@ -694,6 +694,9 @@ sarah :
 scammer :
 těst
 <BLANKLINE>
+scary :
+SᘿᖇS
+<BLANKLINE>
 shasha :
 †€∫†
 <BLANKLINE>
