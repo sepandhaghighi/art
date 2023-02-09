@@ -592,6 +592,9 @@ full_width :
 funky_fresh :
 тḙṧт
 <BLANKLINE>
+german :
+test
+<BLANKLINE>
 got :
 ＴＥＳＴ
 <BLANKLINE>
