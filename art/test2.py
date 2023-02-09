@@ -31,6 +31,9 @@ bold_fraktur :
 bold_script :
 𝓽𝓮𝓼𝓽
 <BLANKLINE>
+boom :
+✞ɛֆ✞
+<BLANKLINE>
 bud1 :
 tོeོsོtོ
 <BLANKLINE>
