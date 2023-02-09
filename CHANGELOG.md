@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 9 new font
+	1. small_fancy
+	2. boom
+	3. scary
+	4. cross_jesus
+	5. german
+	6. dark_tattoo
+	7. xname
+	8. lucifer
+	9. ascii_roman
 ### Changed
 - Test system modified
 - `README.md` modified
