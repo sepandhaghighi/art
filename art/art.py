@@ -274,7 +274,7 @@ def tsave(
             extension = ".txt"
         index = 2
         test_name = name
-        while(overwrite is False):
+        while overwrite is False:
             if test_name + extension in files_list:
                 test_name = name + str(index)
                 index = index + 1

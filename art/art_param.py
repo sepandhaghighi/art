@@ -911,7 +911,7 @@ NON_ASCII_FONTS = [
     "xname",
     "lucifer",
     "ascii_roman",
-    ]
+]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
