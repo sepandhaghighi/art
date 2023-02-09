@@ -7,6 +7,9 @@
 antrophobia :
 тєѕт
 <BLANKLINE>
+ascii_roman :
+τεsτ
+<BLANKLINE>
 atlantic :
 ϯεςϯ
 <BLANKLINE>
