@@ -705,6 +705,7 @@ slammer :
 <BLANKLINE>
 small_fancy :
 ₜₑₛₜ
+<BLANKLINE>
 smallcaps2 :
 ᴛᴇsᴛ
 <BLANKLINE>
