@@ -908,6 +908,7 @@ NON_ASCII_FONTS = [
     "cross_jesus",
     "german",
     "dark_tattoo",
+    "xname",
     ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1539,6 +1540,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "cross_jesus": [cross_jesus_dic, False],
             "german": [german_dic, False],
             "dark_tattoo": [dark_tattoo_dic, False],
+            "xname": [xname_dic, False],
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
