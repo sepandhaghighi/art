@@ -82,6 +82,9 @@ cranky :
 crazy :
 ɬєʂɬ
 <BLANKLINE>
+cross_jesus :
+†ҽŞ†
+<BLANKLINE>
 cruse :
 ᖶᘿSᖶ
 <BLANKLINE>
