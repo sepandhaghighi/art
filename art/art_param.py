@@ -901,7 +901,9 @@ NON_ASCII_FONTS = [
     "cruse",
     "drippy",
     "stylish",
-    "ayda"]
+    "ayda",
+    "small_fancy",
+    ]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1525,7 +1527,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "cruse": [cruse_dic, False],
             "drippy": [drippy_dic, False],
             "stylish": [stylish_dic, False],
-            "ayda": [ayda_dic, False]
+            "ayda": [ayda_dic, False],
+            "small_fancy":[small_fancy_dic, False],
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

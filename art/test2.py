@@ -703,6 +703,8 @@ t⃠e⃠s⃠t⃠
 slammer :
 ƮęsƮ
 <BLANKLINE>
+small_fancy :
+ₜₑₛₜ
 smallcaps2 :
 ᴛᴇsᴛ
 <BLANKLINE>
