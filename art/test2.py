@@ -646,6 +646,9 @@ love1 :
 love2 :
 тєsт
 <BLANKLINE>
+lucifer :
+ᏆᎬsᏆ
+<BLANKLINE>
 malayalam :
 ੮૯ട੮
 <BLANKLINE>
