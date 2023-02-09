@@ -103,6 +103,9 @@ cute2 :
 cute3 :
 եҽsե
 <BLANKLINE>
+dark_tattoo :
+𝔱𝔢𝔰𝔱
+<BLANKLINE>
 dirty :
 ẗệṩẗ
 <BLANKLINE>
