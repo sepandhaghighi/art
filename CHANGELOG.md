@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	2. boom
 	3. scary
 	4. cross_jesus
-	5. german
+	5. xname
 	6. dark_tattoo
 	7. lucifer
 	8. ascii_roman

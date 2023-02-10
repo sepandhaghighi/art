@@ -30216,7 +30216,7 @@ cross_jesus_dic = {
     '9': '9',
     ' ': ' '}
 
-german_dic = {
+xname_dic = {
     'a': 'a',
     'b': 'b',
     'c': 'c',
