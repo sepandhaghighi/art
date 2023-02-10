@@ -3484,9 +3484,6 @@ xhelvi :
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
-xname :
-test
-<BLANKLINE>
 xsans :
 <BLANKLINE>
 <BLANKLINE>
