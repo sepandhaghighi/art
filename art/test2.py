@@ -598,9 +598,6 @@ full_width :
 funky_fresh :
 тḙṧт
 <BLANKLINE>
-xname :
-test
-<BLANKLINE>
 got :
 ＴＥＳＴ
 <BLANKLINE>

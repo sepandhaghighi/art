@@ -906,7 +906,6 @@ NON_ASCII_FONTS = [
     "boom",
     "scary",
     "cross_jesus",
-    "xname",
     "dark_tattoo",
     "lucifer",
     "ascii_roman",
