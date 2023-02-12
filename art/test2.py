@@ -7,6 +7,9 @@
 antrophobia :
 тєѕт
 <BLANKLINE>
+ascii_roman :
+τεsτ
+<BLANKLINE>
 atlantic :
 ϯεςϯ
 <BLANKLINE>
@@ -30,6 +33,9 @@ bold_fraktur :
 <BLANKLINE>
 bold_script :
 𝓽𝓮𝓼𝓽
+<BLANKLINE>
+boom :
+✞ɛֆ✞
 <BLANKLINE>
 bud1 :
 tོeོsོtོ
@@ -79,6 +85,9 @@ cranky :
 crazy :
 ɬєʂɬ
 <BLANKLINE>
+cross_jesus :
+†ҽŞ†
+<BLANKLINE>
 cruse :
 ᖶᘿSᖶ
 <BLANKLINE>
@@ -96,6 +105,9 @@ cute2 :
 <BLANKLINE>
 cute3 :
 եҽsե
+<BLANKLINE>
+dark_tattoo :
+𝔱𝔢𝔰𝔱
 <BLANKLINE>
 dirty :
 ẗệṩẗ
@@ -634,6 +646,9 @@ love1 :
 love2 :
 тєsт
 <BLANKLINE>
+lucifer :
+ᏆᎬsᏆ
+<BLANKLINE>
 malayalam :
 ੮૯ട੮
 <BLANKLINE>
@@ -702,6 +717,9 @@ t⃠e⃠s⃠t⃠
 <BLANKLINE>
 slammer :
 ƮęsƮ
+<BLANKLINE>
+small_fancy :
+ₜₑₛₜ
 <BLANKLINE>
 smallcaps2 :
 ᴛᴇsᴛ

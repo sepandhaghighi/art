@@ -79,7 +79,7 @@ if __name__ == "__main__":
     print("Use this string as input for font resource : ")
     print(Letters)
     print("*" * 30)
-    while(True):
+    while True:
         font_name = input("Please enter font name : ")
         if font_name in Font_List or font_name.lower() in INVALID_FONT_NAME:
             print(Error6)

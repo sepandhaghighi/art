@@ -901,7 +901,14 @@ NON_ASCII_FONTS = [
     "cruse",
     "drippy",
     "stylish",
-    "ayda"]
+    "ayda",
+    "small_fancy",
+    "boom",
+    "cross_jesus",
+    "dark_tattoo",
+    "lucifer",
+    "ascii_roman",
+]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -1525,7 +1532,13 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "cruse": [cruse_dic, False],
             "drippy": [drippy_dic, False],
             "stylish": [stylish_dic, False],
-            "ayda": [ayda_dic, False]
+            "ayda": [ayda_dic, False],
+            "small_fancy": [small_fancy_dic, False],
+            "boom": [boom_dic, False],
+            "cross_jesus": [cross_jesus_dic, False],
+            "dark_tattoo": [dark_tattoo_dic, False],
+            "lucifer": [lucifer_dic, False],
+            "ascii_roman": [ascii_roman_dic, False],
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
