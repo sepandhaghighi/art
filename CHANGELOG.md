@@ -6,14 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- 7 new font
+- 6 new font
 	1. small_fancy
 	2. boom
-	3. scary
-	4. cross_jesus
-	5. dark_tattoo
-	6. lucifer
-	7. ascii_roman
+	3. cross_jesus
+	4. dark_tattoo
+	5. lucifer
+	6. ascii_roman
 ### Changed
 - Test system modified
 - `README.md` modified
