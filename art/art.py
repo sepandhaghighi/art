@@ -121,7 +121,7 @@ def help_func():
     """
     tprint("art")
     tprint("v" + ART_VERSION)
-    print(DESCRIPTION + "\n")
+    print(DESCRIPTION)
     print(CLI_HELP)
 
 

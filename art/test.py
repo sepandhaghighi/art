@@ -4428,13 +4428,14 @@ Help :
 <BLANKLINE>
      - test --> (run tests)
 <BLANKLINE>
-     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'
+     - text 'yourtext' 'font(optional)' --> (text art) Example : 'art text exampletext block'
 <BLANKLINE>
-     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'
+     - shape 'shapename' --> (shape art) Example : 'art shape butterfly'
 <BLANKLINE>
-     - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'
+     - save 'yourtext' 'font(optional)'  -->  Example : 'art save exampletext block'
 <BLANKLINE>
-     - all 'yourtext'  -->  Example : 'python -m art all exampletext'
+     - all 'yourtext'  -->  Example : 'art all exampletext'
+<BLANKLINE>
 >>> tprint('طط')
 <BLANKLINE>
 >>> art1 = "MonSter"

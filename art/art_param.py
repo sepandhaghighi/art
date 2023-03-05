@@ -48,7 +48,6 @@ Help :
 \t- save 'yourtext' 'font(optional)'  -->  Example : 'art save exampletext block'
 
 \t- all 'yourtext'  -->  Example : 'art all exampletext'
-
 """
 
 SMALL_WIZARD_FONT = [
