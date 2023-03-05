@@ -123,15 +123,7 @@ def help_func():
     tprint("art")
     tprint("v" + ART_VERSION)
     print(DESCRIPTION + "\n")
-    print("Webpage : https://www.ascii-art.site\n")
-    print("Help : \n")
-    print("     - list --> (list of arts)\n")
-    print("     - fonts --> (list of fonts)\n")
-    print("     - test --> (run tests)\n")
-    print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'art text exampletext block'\n")
-    print("     - shape 'shapename' --> (shape art) Example : 'art shape butterfly'\n")
-    print("     - save 'yourtext' 'font(optional)'  -->  Example : 'art save exampletext block'\n")
-    print("     - all 'yourtext'  -->  Example : 'art all exampletext'")
+    print(CLI_HELP)
 
 
 def aprint(artname, number=1):
