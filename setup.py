@@ -80,5 +80,9 @@ setup(
         'Topic :: Printing',
     ],
     license='MIT',
-    include_package_data=True
+    include_package_data=True,
+    entry_points={
+        'console_scripts': [
+            'art = art.__main__:main',
+        ]}
 )
