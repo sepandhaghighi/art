@@ -128,10 +128,10 @@ def help_func():
     print("     - list --> (list of arts)\n")
     print("     - fonts --> (list of fonts)\n")
     print("     - test --> (run tests)\n")
-    print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'\n")
-    print("     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'\n")
-    print("     - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'\n")
-    print("     - all 'yourtext'  -->  Example : 'python -m art all exampletext'")
+    print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'art text exampletext block'\n")
+    print("     - shape 'shapename' --> (shape art) Example : 'art shape butterfly'\n")
+    print("     - save 'yourtext' 'font(optional)'  -->  Example : 'art save exampletext block'\n")
+    print("     - all 'yourtext'  -->  Example : 'art all exampletext'")
 
 
 def aprint(artname, number=1):
