@@ -22,8 +22,9 @@ jobs:
     - name: First test
       run: |
         python setup.py install
-        python -m art test
-        python -m art test2
+        art
+        art test
+        art test2
     - name: Install dev-requirements
       run: |
         python -m pip install --upgrade pip

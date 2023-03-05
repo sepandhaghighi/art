@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Test system modified
 - `README.md` modified
+- `help_func` function modified
+- CLI mode updated
 ## [5.8] - 2022-11-23
 ### Added
 - 8 new font

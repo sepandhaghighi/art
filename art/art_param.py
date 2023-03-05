@@ -30,6 +30,26 @@ ART_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment.
 FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
 
+CLI_HELP = """
+Webpage : https://www.ascii-art.site
+
+Help :
+
+\t- list --> (list of arts)
+
+\t- fonts --> (list of fonts)
+
+\t- test --> (run tests)
+
+\t- text [yourtext] [font(optional)] --> (text art) Example : 'art text exampletext block'
+
+\t- shape [shapename] --> (shape art) Example : 'art shape butterfly'
+
+\t- save [yourtext] [font(optional)]  -->  Example : 'art save exampletext block'
+
+\t- all [yourtext]  -->  Example : 'art all exampletext'
+"""
+
 SMALL_WIZARD_FONT = [
     "contessa",
     "avatar",

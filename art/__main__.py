@@ -36,7 +36,12 @@ def select_test(test_name="TEST"):
         sys.exit(error_flag)
 
 
-if __name__ == "__main__":
+def main():
+    """
+    CLI main function.
+
+    :return: None
+    """
     args = sys.argv
     if len(args) > 1:
         if args[1].upper() == "TEST":
@@ -103,3 +108,7 @@ if __name__ == "__main__":
             help_func()
     else:
         help_func()
+
+
+if __name__ == "__main__":
+    main()

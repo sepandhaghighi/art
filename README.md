@@ -734,21 +734,23 @@ _/  _   _ _/
 ### Testing
 - Only ASCII fonts and arts :
 ```
-python -m art test
+art test
 ```
 
 - All fonts, arts and decorations :
 ```
-python -m art test2
+art test2
 ```
 
-### CLI			
-- List of arts :  `python -m art list` or `python -m art arts`
-- List of fonts : `python -m art fonts`
-- Text : `python -m art text yourtext fontname(optional)`
-- Art : `python -m art shape art_name` or `python -m art art art_name`
-- Save :  `python -m art save yourtext fontname(optional)`
-- All  :  `python -m art all yourtext`
+### CLI	
+⚠️ You can use `art` or `python -m art` to run this mode
+		
+- List of arts :  `art list` or `art arts`
+- List of fonts : `art fonts`
+- Text : `art text [yourtext] [fontname(optional)]`
+- Art : `art shape [artname]` or `art art [artname]`
+- Save :  `art save [yourtext] [fontname(optional)]`
+- All  :  `art all [yourtext]`
 
 ### Telegram bot			
 

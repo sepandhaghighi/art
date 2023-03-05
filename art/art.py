@@ -3,7 +3,6 @@
 from .art_dic import *
 from .art_param import *
 import os
-import sys
 import random
 
 
@@ -122,16 +121,8 @@ def help_func():
     """
     tprint("art")
     tprint("v" + ART_VERSION)
-    print(DESCRIPTION + "\n")
-    print("Webpage : https://www.ascii-art.site\n")
-    print("Help : \n")
-    print("     - list --> (list of arts)\n")
-    print("     - fonts --> (list of fonts)\n")
-    print("     - test --> (run tests)\n")
-    print("     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'\n")
-    print("     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'\n")
-    print("     - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'\n")
-    print("     - all 'yourtext'  -->  Example : 'python -m art all exampletext'")
+    print(DESCRIPTION)
+    print(CLI_HELP)
 
 
 def aprint(artname, number=1):
