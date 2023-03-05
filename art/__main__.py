@@ -35,6 +35,7 @@ def select_test(test_name="TEST"):
         print("\n" + test_name + " Failed")
         sys.exit(error_flag)
 
+
 def main():
     """
     CLI main function.
@@ -111,4 +112,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
