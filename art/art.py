@@ -3,7 +3,6 @@
 from .art_dic import *
 from .art_param import *
 import os
-import sys
 import random
 
 
