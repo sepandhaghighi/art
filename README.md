@@ -747,10 +747,10 @@ art test2
 		
 - List of arts :  `art list` or `art arts`
 - List of fonts : `art fonts`
-- Text : `art text yourtext fontname(optional)`
-- Art : `art shape art_name` or `art art art_name`
-- Save :  `art save yourtext fontname(optional)`
-- All  :  `art all yourtext`
+- Text : `art text [yourtext] [fontname(optional)]`
+- Art : `art shape [artname]` or `art art [artname]`
+- Save :  `art save [yourtext] [fontname(optional)]`
+- All  :  `art all [yourtext]`
 
 ### Telegram bot			
 

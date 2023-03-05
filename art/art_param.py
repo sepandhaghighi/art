@@ -41,13 +41,13 @@ Help :
 
 \t- test --> (run tests)
 
-\t- text 'yourtext' 'font(optional)' --> (text art) Example : 'art text exampletext block'
+\t- text [yourtext] [font(optional)] --> (text art) Example : 'art text exampletext block'
 
-\t- shape 'shapename' --> (shape art) Example : 'art shape butterfly'
+\t- shape [shapename] --> (shape art) Example : 'art shape butterfly'
 
-\t- save 'yourtext' 'font(optional)'  -->  Example : 'art save exampletext block'
+\t- save [yourtext] [font(optional)]  -->  Example : 'art save exampletext block'
 
-\t- all 'yourtext'  -->  Example : 'art all exampletext'
+\t- all [yourtext]  -->  Example : 'art all exampletext'
 """
 
 SMALL_WIZARD_FONT = [
