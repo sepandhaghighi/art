@@ -4407,10 +4407,10 @@ __o000o__(o)(o)__o000o__
 <BLANKLINE>
 <BLANKLINE>
         ____       ___
-__   __| ___|     ( _ )
-\ \ / /|___ \     / _ \
- \ V /  ___) | _ | (_) |
-  \_/  |____/ (_) \___/
+__   __| ___|     / _ \
+\ \ / /|___ \    | (_) |
+ \ V /  ___) | _  \__, |
+  \_/  |____/ (_)   /_/
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
