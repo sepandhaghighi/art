@@ -743,6 +743,8 @@ art test2
 ```
 
 ### CLI	
+⚠️ [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure**
+
 ⚠️ You can use `art` or `python -m art` to run this mode
 		
 - List of arts :  `art list` or `art arts`
