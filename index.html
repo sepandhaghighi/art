@@ -29,7 +29,7 @@
         <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18"></a>
         <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg" alt="Anaconda"></a>
         <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="Built with Python3" /></a>
-        <a href="FontList.html" target="_blank"><img src="https://img.shields.io/badge/Font%20List-632-blue.svg" alt="Font List"></a>
+        <a href="FontList.html" target="_blank"><img src="https://img.shields.io/badge/Font%20List-646-blue.svg" alt="Font List"></a>
         <a href="ArtList.html" target="_blank"><img src="https://img.shields.io/badge/Art%20List-710-orange.svg" alt="Art List"></a>
         <a href="DecorList.html" target="_blank"><img src="https://img.shields.io/badge/Decor%20List-218-green.svg" alt="Decor List"></a>
         <a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/badge/Github-Repo-green.svg" alt="Github Repo"></a>
@@ -81,7 +81,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 	</tr>
 	<tr>
 		<td>Font Counter</td>
-		<td>632</td>
+		<td>646</td>
 	</tr>
 	<tr>
 		<td>1-Line-Art Counter</td>
@@ -98,7 +98,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
     <p>⚠️ <b>PyPI</b> support of these versions will be removed in a <b>future release</b></p>
     <h2>Source code</h2>
     <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v5.8.zip">Version 5.8</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v5.9.zip">Version 5.9</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
         <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
     </ul>
 				
@@ -107,7 +107,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 
 <ul>
     <li>Check <a href="https://packaging.python.org/installing/">Python Packaging User Guide</a></li>
-    <li><code>pip install art==5.8</code> or <code>pip3 install art==5.8</code> <span class="red"> Need root access </span></li>
+    <li><code>pip install art==5.9</code> or <code>pip3 install art==5.9</code> <span class="red"> Need root access </span></li>
     <li>On <code>--upgrade</code> error install latest version of <code>setuptools</code> : <code>pip install setuptools</code> and retry</li>
 </ul>
 
@@ -119,7 +119,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </ul>
 <h2>Easy install</h2>
 <ul>
-    <li>Run <code>easy_install "art==5.8"</code> <span class="red"> Need root access </span></li>
+    <li>Run <code>easy_install "art==5.9"</code> <span class="red"> Need root access </span></li>
 </ul>
 <h2>MATLAB</h2>
 <ul>
@@ -1041,17 +1041,20 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </table>
 <h2 id="testing">Testing</h2>
     <ul>
-        <li>Only ASCII fonts and arts <ul><li><code>python -m art test</code></li></ul></li>
-        <li>All fonts, arts and decorations<ul><li><code>python -m art test2</code></li></ul></li>
+        <li>Only ASCII fonts and arts <ul><li><code>art test</code></li></ul></li>
+        <li>All fonts, arts and decorations<ul><li><code>art test2</code></li></ul></li>
     </ul>
 <h2 id="cli">CLI</h2>
+    <p>⚠️ [Backward Compatibility] <strong>ART 5.9</strong> is the last version to support this <strong>CLI structure</strong></p>
+
+    <p>⚠️ You can use <code>art</code> or <code>python -m art</code> to run this mode</p>
     <ul>
-        <li>List of arts :  <code>python -m art list</code> or <code>python -m art arts</code></li>
-        <li>List of fonts : <code>python -m art fonts</code></li>
-        <li>Text : <code>python -m art text yourtext fontname(optional)</code></li>
-        <li>Art : <code>python -m art shape art_name</code> or <code>python -m art art art_name</code></li>
-        <li>Save :  <code>python -m art save yourtext fontname(optional)</code></li>
-        <li>All  :  <code>python -m art all yourtext</code></li>
+        <li>List of arts :  <code>art list</code> or <code>art arts</code></li>
+        <li>List of fonts : <code>art fonts</code></li>
+        <li>Text : <code>art text [yourtext] [fontname(optional)]</code></li>
+        <li>Art : <code>art shape [artname]</code> or <code>art art [artname]</code></li>
+        <li>Save :  <code>art save [yourtext] [fontname(optional)]</code></li>
+        <li>All  :  <code>art all [yourtext]</code></li>
     </ul>
 <h2 id="mybinder"> Try ART in your browser</h2>
 <div class="indent">
@@ -1156,7 +1159,7 @@ zil1knmz8zj88cf0exr2ry7nav9elehxfcgqu3c5e5
 - Intended for medium-sized companies
             </div>
             <div id="login-footer" class="abs">
-                <p> &#169; 2017-2022 &nbsp; Art Development Team</p>
+                <p> &#169; 2017-2023 &nbsp; Art Development Team</p>
     </div>
             </div>
     </div>
