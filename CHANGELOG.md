@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- `char_space` parameter added to `tprint` function
+- `char_space` parameter added to `text2art` function
 ## [5.9] - 2023-03-16
 ### Added
 - 6 new font
