@@ -63,6 +63,22 @@
 <BLANKLINE>
 >>> tprint("123","alpha")
 <BLANKLINE>
+>>> tprint('HEY')
+ _   _  _____ __   __
+| | | || ____|\ \ / /
+| |_| ||  _|   \ V / 
+|  _  || |___   | |  
+|_| |_||_____|  |_|  
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint('HEY', space=6)
+ _   _        _____       __   __
+| | | |      | ____|      \ \ / /
+| |_| |      |  _|         \ V / 
+|  _  |      | |___         | |  
+|_| |_|      |_____|        |_|  
+<BLANKLINE>
+<BLANKLINE>                      
 >>> font_list(mode="ascii")
 1943 :
 #### ##  ### ###   ## ##   #### ##
