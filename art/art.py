@@ -191,7 +191,8 @@ def tprint(
         font=DEFAULT_FONT,
         chr_ignore=True,
         decoration=None,
-        sep="\n"):
+        sep="\n",
+        char_space=0):
     r"""
     Print art text (support \n).
 
@@ -205,6 +206,8 @@ def tprint(
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param char_space: space between characters
+    :type char_space: int
     :return: None
     """
     try:
@@ -216,7 +219,8 @@ def tprint(
             font=font,
             decoration=decoration,
             chr_ignore=chr_ignore,
-            sep=sep)
+            sep=sep,
+            char_space=char_space)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
@@ -465,7 +469,8 @@ def text2art(
         font=DEFAULT_FONT,
         chr_ignore=True,
         decoration=None,
-        sep="\n"):
+        sep="\n",
+        char_space=0):
     r"""
     Return art text (support \n).
 
@@ -479,14 +484,17 @@ def text2art(
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param char_space: space between characters
+    :type char_space: int
     :return: ascii art text as str
     """
     letters = standard_dic
-    text_temp = text
     if isinstance(text, str) is False:
         raise artError(TEXT_TYPE_ERROR)
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
+    text = (' ' * char_space).join(text)
+    text_temp = text
     font = font.lower()
     if font != "mix":
         font = indirect_font(font, text)
