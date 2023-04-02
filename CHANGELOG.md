@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- `char_space` parameter added to `tprint` function
-- `char_space` parameter added to `text2art` function
+- `space` parameter added to `tprint` function
+- `space` parameter added to `text2art` function
 ## [5.9] - 2023-03-16
 ### Added
 - 6 new font
