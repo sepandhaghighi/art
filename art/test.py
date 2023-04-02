@@ -71,7 +71,7 @@
 |_| |_||_____|  |_|  
 <BLANKLINE>
 <BLANKLINE>
->>> tprint('HEY', space=6)
+>>> tprint('HEY', char_space=6)
  _   _        _____       __   __
 | | | |      | ____|      \ \ / /
 | |_| |      |  _|         \ V / 
@@ -4661,6 +4661,10 @@ art.art.artError: The 'sep' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'decoration' type must be str.
+>>> set_default(char_space='test')
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'char_space' type must be int.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)

@@ -524,7 +524,7 @@ def text2art(
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True, overwrite=False, decoration=None, sep="\n"):
+                print_status=True, overwrite=False, decoration=None, sep="\n", char_space=0):
     """
     Change text2art, tprint and tsave default values.
 
@@ -542,6 +542,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param char_space: space between characters
+    :type char_space: int
     :return: None
     """
     if isinstance(font, str) is False:
@@ -558,7 +560,9 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(OVERWRITE_TYPE_ERROR)
     if isinstance(sep, str) is False:
         raise artError(SEP_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore, decoration, sep)
+    if isinstance(char_space, int) is False:
+        raise artError(CHAR_SPACE_TYPE)
+    tprint.__defaults__ = (font, chr_ignore, decoration, sep, char_space)
     tsave.__defaults__ = (
         font,
         filename,
@@ -567,7 +571,7 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         overwrite,
         decoration,
         sep)
-    text2art.__defaults__ = (font, chr_ignore, decoration, sep)
+    text2art.__defaults__ = (font, chr_ignore, decoration, sep, char_space)
 
 
 def get_font_dic(font_name):
