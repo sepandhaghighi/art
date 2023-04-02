@@ -234,7 +234,8 @@ def tsave(
         print_status=True,
         overwrite=False,
         decoration=None,
-        sep="\n"):
+        sep="\n",
+        space=0):
     r"""
     Save ascii art (support \n).
 
@@ -254,6 +255,8 @@ def tsave(
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param space: space between characters
+    :type space: int
     :return: None
     """
     try:
@@ -281,7 +284,8 @@ def tsave(
             font=font,
             decoration=decoration,
             chr_ignore=chr_ignore,
-            sep=sep)
+            sep=sep,
+            space=space)
         file.write(result)
         file.close()
         if print_status:
@@ -570,7 +574,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         print_status,
         overwrite,
         decoration,
-        sep)
+        sep,
+        space)
     text2art.__defaults__ = (font, chr_ignore, decoration, sep, space)
 
 
