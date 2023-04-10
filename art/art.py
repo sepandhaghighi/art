@@ -565,7 +565,7 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     if isinstance(sep, str) is False:
         raise artError(SEP_TYPE_ERROR)
     if isinstance(space, int) is False:
-        raise artError(SPACE_TYPE)
+        raise artError(SPACE_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration, sep, space)
     tsave.__defaults__ = (
         font,
