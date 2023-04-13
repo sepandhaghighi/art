@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `space` parameter added to `tsave` function
 - `space` parameter added to `tprint` function
 - `space` parameter added to `text2art` function
+- Test system modified
+- `codecov` removed from `dev-requirements.txt`
 ## [5.9] - 2023-03-16
 ### Added
 - 6 new font
