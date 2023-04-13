@@ -221,6 +221,13 @@ ___ ____ ____ ___
  |  |___ [__   |  
  |  |___ ___]  | 
 
+>>> print(text2art("test", space=10))
+ _                                             _   
+| |_             ___            ___           | |_ 
+| __|           / _ \          / __|          | __|
+| |_           |  __/          \__ \          | |_ 
+ \__|           \___|          |___/           \__|
+                                                   
 >>> print(text2art('''Lorem  
 ipsum 
 dolor''', font="small")) # Multi-line print
@@ -293,7 +300,13 @@ ___ ____ ____ ___
  |  |___ [__   |  
  |  |___ ___]  |  
                   
-
+>>> tprint("test", space=10)
+ _                                             _   
+| |_             ___            ___           | |_ 
+| __|           / _ \          / __|          | __|
+| |_           |  __/          \__ \          | |_ 
+ \__|           \___|          |___/           \__|
+                                                   
 >>> tprint('testسس',chr_ignore=False) # raise artError in exception 
 Traceback (most recent call last):
        ...
@@ -341,6 +354,9 @@ Filename: test.txt
 Saved! 
 Filename: test.txt
 >>> Response=tsave("art",filename="test.txt",sep="\r\n") # sep parameter is added in Version 5.3
+Saved! 
+Filename: test.txt                        
+>>> Response=tsave("art",filename="test.txt",space=5) # space parameter is added in Version 6.0
 Saved! 
 Filename: test.txt                        
 ```

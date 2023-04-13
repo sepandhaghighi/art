@@ -191,7 +191,8 @@ def tprint(
         font=DEFAULT_FONT,
         chr_ignore=True,
         decoration=None,
-        sep="\n"):
+        sep="\n",
+        space=0):
     r"""
     Print art text (support \n).
 
@@ -205,6 +206,8 @@ def tprint(
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param space: space between characters
+    :type space: int
     :return: None
     """
     try:
@@ -216,7 +219,8 @@ def tprint(
             font=font,
             decoration=decoration,
             chr_ignore=chr_ignore,
-            sep=sep)
+            sep=sep,
+            space=space)
         print(result)
     except UnicodeEncodeError:
         print(FONT_ENVIRONMENT_WARNING.format(font))
@@ -230,7 +234,8 @@ def tsave(
         print_status=True,
         overwrite=False,
         decoration=None,
-        sep="\n"):
+        sep="\n",
+        space=0):
     r"""
     Save ascii art (support \n).
 
@@ -250,6 +255,8 @@ def tsave(
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param space: space between characters
+    :type space: int
     :return: None
     """
     try:
@@ -277,7 +284,8 @@ def tsave(
             font=font,
             decoration=decoration,
             chr_ignore=chr_ignore,
-            sep=sep)
+            sep=sep,
+            space=space)
         file.write(result)
         file.close()
         if print_status:
@@ -465,7 +473,8 @@ def text2art(
         font=DEFAULT_FONT,
         chr_ignore=True,
         decoration=None,
-        sep="\n"):
+        sep="\n",
+        space=0):
     r"""
     Return art text (support \n).
 
@@ -479,14 +488,17 @@ def text2art(
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param space: space between characters
+    :type space: int
     :return: ascii art text as str
     """
     letters = standard_dic
-    text_temp = text
     if isinstance(text, str) is False:
         raise artError(TEXT_TYPE_ERROR)
     if isinstance(font, str) is False:
         raise artError(FONT_TYPE_ERROR)
+    text = (' ' * space).join(text)
+    text_temp = text
     font = font.lower()
     if font != "mix":
         font = indirect_font(font, text)
@@ -516,7 +528,7 @@ def text2art(
 
 
 def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True, overwrite=False, decoration=None, sep="\n"):
+                print_status=True, overwrite=False, decoration=None, sep="\n", space=0):
     """
     Change text2art, tprint and tsave default values.
 
@@ -534,6 +546,8 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
     :type decoration:str
     :param sep: line separator char
     :type sep: str
+    :param space: space between characters
+    :type space: int
     :return: None
     """
     if isinstance(font, str) is False:
@@ -550,7 +564,9 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         raise artError(OVERWRITE_TYPE_ERROR)
     if isinstance(sep, str) is False:
         raise artError(SEP_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore, decoration, sep)
+    if isinstance(space, int) is False:
+        raise artError(SPACE_TYPE_ERROR)
+    tprint.__defaults__ = (font, chr_ignore, decoration, sep, space)
     tsave.__defaults__ = (
         font,
         filename,
@@ -558,8 +574,9 @@ def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
         print_status,
         overwrite,
         decoration,
-        sep)
-    text2art.__defaults__ = (font, chr_ignore, decoration, sep)
+        sep,
+        space)
+    text2art.__defaults__ = (font, chr_ignore, decoration, sep, space)
 
 
 def get_font_dic(font_name):

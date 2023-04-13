@@ -63,6 +63,22 @@
 <BLANKLINE>
 >>> tprint("123","alpha")
 <BLANKLINE>
+>>> tprint('HEY')
+ _   _  _____ __   __
+| | | || ____|\ \ / /
+| |_| ||  _|   \ V /
+|  _  || |___   | |
+|_| |_||_____|  |_|
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint('HEY', space=6)
+ _   _        _____       __   __
+| | | |      | ____|      \ \ / /
+| |_| |      |  _|         \ V /
+|  _  |      | |___         | |
+|_| |_|      |_____|        |_|
+<BLANKLINE>
+<BLANKLINE>
 >>> font_list(mode="ascii")
 1943 :
 #### ##  ### ###   ## ##   #### ##
@@ -4645,6 +4661,10 @@ art.art.artError: The 'sep' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'decoration' type must be str.
+>>> set_default(space='test')
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
