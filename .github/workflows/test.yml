@@ -50,10 +50,15 @@ jobs:
         python -m bandit -r art -s B311
         python -m pydocstyle --match='(?!test).*\.py' -v
       if: matrix.python-version == 3.8
-    - name: Codecov
+    - name: Coverage
       run: |
         coverage run -m art test2
-        codecov
+      if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-20.04'
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
       if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-20.04'
     - name: Profile
       run: |
