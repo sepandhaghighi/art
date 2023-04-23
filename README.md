@@ -859,7 +859,7 @@ If you do like our project and we hope that you do, can you please support us? O
 
 <h4>Buy me a coffee</h4>
 <a href="https://www.buymeacoffee.com/asciiart">
-<img src="https://github.com/sepandhaghighi/art/raw/buy_me_a_coffee/otherfile/buymeacoffee_btn.svg" style="width:260px;" />
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/buymeacoffee_btn.svg" style="width:260px;" />
 </a>
 <h4>Coffeete</h4>
 <a href="http://www.coffeete.ir/opensource">
