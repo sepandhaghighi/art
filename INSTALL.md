@@ -12,6 +12,10 @@
 
 * Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
 
+#### Source code
+- Download [Version 5.9](https://github.com/sepandhaghighi/art/archive/v5.9.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- `pip install .`
+
 ### Conda
 
 #### Conda-Forge
@@ -21,11 +25,6 @@
 #### Private channel
 - Check [Conda Managing Package](https://conda.io)
 - `conda install -c sepandhaghighi art ` (Need root access)
-
-
-### Easy install
-
-- Run `easy_install "art==5.9"` (Need root access)
 
 ### MATLAB
 
