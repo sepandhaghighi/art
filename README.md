@@ -857,6 +857,18 @@ Give a ⭐️ if this project helped you!
 
 If you do like our project and we hope that you do, can you please support us? Our project is not and is never going to be working for profit. We need the money just so we can continue doing what we do ;-) .			
 
+<h4>Buy me a coffee</h4>
+<a href="https://www.buymeacoffee.com/asciiart">
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/buymeacoffee_btn.svg" style="width:260px;" />
+</a>
+<h4>Coffeete</h4>
+<a href="http://www.coffeete.ir/opensource">
+<img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
+</a>
+<h4>Gitcoin</h4>
+<a href="https://gitcoin.co/grants/3408/ascii-art-library-for-python">
+<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/gitcoin_btn.png" style="width:260px;" />
+</a>
 <h4>Bitcoin</h4>
 1KtNLEEeUbTEK9PdN6Ya3ZAKXaqoKUuxCy
 <h4>Ethereum</h4>
@@ -879,14 +891,6 @@ Xd3Yn2qZJ7VE8nbKw2fS98aLxR5M6WUU3s
 GALPOLPISRHIYHLQER2TLJRGUSZH52RYDK6C3HIU4PSMNAV65Q36EGNL
 <h4>Zilliqa</h4>
 zil1knmz8zj88cf0exr2ry7nav9elehxfcgqu3c5e5
-<h4>Coffeete</h4>
-<a href="http://www.coffeete.ir/opensource">
-<img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
-</a>
-<h4>Gitcoin</h4>
-<a href="https://gitcoin.co/grants/3408/ascii-art-library-for-python">
-<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/gitcoin_btn.png" style="width:260px;" />
-</a>
 
 <h3>Become a sponsor to ART</h3>
 
