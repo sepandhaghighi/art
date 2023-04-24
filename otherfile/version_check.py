@@ -20,8 +20,7 @@ SETUP_ITEMS = [
 INSTALL_ITEMS = [
     "[Version {0}](https://github.com/sepandhaghighi/art/archive/v{0}.zip)",
     "pip install art=={0}",
-    "pip3 install art=={0}",
-    'easy_install "art=={0}"']
+    "pip3 install art=={0}"]
 CHANGELOG_ITEMS = [
     "## [{0}]",
     "https://github.com/sepandhaghighi/art/compare/v{0}...dev",
