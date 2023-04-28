@@ -10,8 +10,6 @@
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
 - `pip install art==5.9` (Need root access)
 
-* Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
-
 ### Source code
 - Download [Version 5.9](https://github.com/sepandhaghighi/art/archive/v5.9.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `pip install .`
