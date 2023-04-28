@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Test system modified
 - `codecov` removed from `dev-requirements.txt`
 - `README.md` modified
+- `INSTALL.md` modified
 ## [5.9] - 2023-03-16
 ### Added
 - 6 new font

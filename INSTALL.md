@@ -4,17 +4,17 @@
 
 ⚠️ **PyPI** support of these versions will be removed in a **future release**
 
-### Source code
-- Download [Version 5.9](https://github.com/sepandhaghighi/art/archive/v5.9.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
-- `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
-
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
 - `pip install art==5.9` or `pip3 install art==5.9` (Need root access)
 
 * Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
+
+### Source code
+- Download [Version 5.9](https://github.com/sepandhaghighi/art/archive/v5.9.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- `pip install .`
 
 ### Conda
 
@@ -25,11 +25,6 @@
 #### Private channel
 - Check [Conda Managing Package](https://conda.io)
 - `conda install -c sepandhaghighi art ` (Need root access)
-
-
-### Easy install
-
-- Run `easy_install "art==5.9"` (Need root access)
 
 ### MATLAB
 
