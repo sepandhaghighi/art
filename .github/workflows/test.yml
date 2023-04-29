@@ -36,7 +36,7 @@ jobs:
     - name: Version check
       run: |
         python otherfile/version_check.py
-      if: matrix.python-version == $TEST_PYTHON_VERSION
+      if: matrix.python-version == env.TEST_PYTHON_VERSION
     - name: Font check
       run: |
         python otherfile/font_check.py
@@ -47,22 +47,22 @@ jobs:
       run: |
         pip install notebook>=5.2.2
         python otherfile/notebook_check.py
-      if: matrix.python-version == $TEST_PYTHON_VERSION && matrix.os == $TEST_OS
+      if: matrix.python-version == env.TEST_PYTHON_VERSION && matrix.os == env.TEST_OS
     - name: Other tests
       run: |
         python -m vulture art/ otherfile/ setup.py art_profile.py --min-confidence 65 --exclude=__init__.py --sort-by-size
         python -m bandit -r art -s B311
         python -m pydocstyle --match='(?!test).*\.py' -v
-      if: matrix.python-version == $TEST_PYTHON_VERSION
+      if: matrix.python-version == env.TEST_PYTHON_VERSION
     - name: Coverage
       run: |
         coverage run -m art test2
-      if: matrix.python-version == $TEST_PYTHON_VERSION && matrix.os == $TEST_OS
+      if: matrix.python-version == env.TEST_PYTHON_VERSION && matrix.os == env.TEST_OS
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
           fail_ci_if_error: true
-      if: matrix.python-version == $TEST_PYTHON_VERSION && matrix.os == $TEST_OS
+      if: matrix.python-version == env.TEST_PYTHON_VERSION && matrix.os == env.TEST_OS
     - name: Profile
       run: |
         python -m cProfile -s cumtime art_profile.py
