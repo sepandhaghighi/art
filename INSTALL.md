@@ -8,9 +8,7 @@
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==5.9` or `pip3 install art==5.9` (Need root access)
-
-* Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
+- `pip install art==5.9` (Need root access)
 
 ### Source code
 - Download [Version 5.9](https://github.com/sepandhaghighi/art/archive/v5.9.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
@@ -32,7 +30,7 @@
 - Download and install [Python3.x](https://www.python.org/downloads/) (>=3.5, 64/32 bit) 
 	- [x] Select `Add to PATH` option
 	- [x] Select `Install pip` option
-- Run `pip install art` or `pip3 install art` (Need root access)
+- Run `pip install art` (Need root access)
 - Configure Python interpreter
 ```matlab
 >> pyversion PYTHON_EXECUTABLE_FULL_PATH
