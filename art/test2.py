@@ -676,9 +676,6 @@ mirror_flip :
 monospace :
 𝚝𝚎𝚜𝚝
 <BLANKLINE>
-musical :
-Ƭ៩នƬ
-<BLANKLINE>
 native_lands :
 ƬꍟꌗƬ
 <BLANKLINE>
@@ -752,7 +749,7 @@ squiggle1 :
 ԵҽsԵ
 <BLANKLINE>
 squiggle2 :
-ԵҽsԵ
+ԵeՏԵ
 <BLANKLINE>
 strange :
 τεȘτ
