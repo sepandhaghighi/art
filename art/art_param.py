@@ -929,6 +929,7 @@ NON_ASCII_FONTS = [
     "dark_tattoo",
     "lucifer",
     "ascii_roman",
+    "squiggle1"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1560,6 +1561,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "dark_tattoo": [dark_tattoo_dic, False],
             "lucifer": [lucifer_dic, False],
             "ascii_roman": [ascii_roman_dic, False],
+            "squiggle1":[squiggle1_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
