@@ -933,6 +933,7 @@ NON_ASCII_FONTS = [
     "ascii_roman",
     "squiggle1",
     "squiggle2",
+    "musical"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1568,6 +1569,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "ascii_roman": [ascii_roman_dic, False],
             "squiggle1":[squiggle1_dic,False],
             "squiggle2":[squiggle2_dic,False],
+            "musical":[musical_dic,False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
