@@ -82,8 +82,14 @@ coptic2 :
 cranky :
 †εš†
 <BLANKLINE>
-crazy :
+crazy1 :
 ɬєʂɬ
+<BLANKLINE>
+crazy2 :
+☂€ⓢ☂
+<BLANKLINE>
+crazy3 :
+Ƭ៩នƬ
 <BLANKLINE>
 cross_jesus :
 †ҽŞ†
@@ -670,6 +676,9 @@ mirror_flip :
 monospace :
 𝚝𝚎𝚜𝚝
 <BLANKLINE>
+musical :
+Ƭ៩នƬ
+<BLANKLINE>
 native_lands :
 ƬꍟꌗƬ
 <BLANKLINE>
@@ -738,6 +747,12 @@ smooth3 :
 <BLANKLINE>
 special :
 TEᔕT
+<BLANKLINE>
+squiggle1 :
+ԵҽsԵ
+<BLANKLINE>
+squiggle2 :
+ԵҽsԵ
 <BLANKLINE>
 strange :
 τεȘτ
@@ -865,6 +880,9 @@ upside_down1 :
 <BLANKLINE>
 upside_down2 :
 ʇǝsʇ
+<BLANKLINE>
+vaporwave :
+ｔｅｓｔ
 <BLANKLINE>
 vip :
 ƬΣƧƬ
