@@ -1571,7 +1571,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "squiggle1": [squiggle1_dic, False],
             "squiggle2": [squiggle2_dic, False],
             "vaporwave": [vaporwave_dic, False],
-            "emoji":[emoji_dic,False]
+            "emoji": [emoji_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
