@@ -82,8 +82,14 @@ coptic2 :
 cranky :
 †εš†
 <BLANKLINE>
-crazy :
+crazy1 :
 ɬєʂɬ
+<BLANKLINE>
+crazy2 :
+☂€ⓢ☂
+<BLANKLINE>
+crazy3 :
+Ƭ៩នƬ
 <BLANKLINE>
 cross_jesus :
 †ҽŞ†
@@ -126,6 +132,9 @@ drippy :
 <BLANKLINE>
 dwarf :
 ᵗᵉˢᵗ
+<BLANKLINE>
+emoji :
+🌴🎗💲🌴
 <BLANKLINE>
 fancy1 :
 тεsт
@@ -739,6 +748,12 @@ smooth3 :
 special :
 TEᔕT
 <BLANKLINE>
+squiggle1 :
+ԵҽsԵ
+<BLANKLINE>
+squiggle2 :
+ԵeՏԵ
+<BLANKLINE>
 strange :
 τεȘτ
 <BLANKLINE>
@@ -865,6 +880,9 @@ upside_down1 :
 <BLANKLINE>
 upside_down2 :
 ʇǝsʇ
+<BLANKLINE>
+vaporwave :
+ｔｅｓｔ
 <BLANKLINE>
 vip :
 ƬΣƧƬ

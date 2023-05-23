@@ -918,7 +918,9 @@ NON_ASCII_FONTS = [
     "tarty9",
     "got",
     "vip",
-    "crazy",
+    "crazy1",
+    "crazy2",
+    "crazy3",
     "cruse",
     "drippy",
     "stylish",
@@ -929,6 +931,10 @@ NON_ASCII_FONTS = [
     "dark_tattoo",
     "lucifer",
     "ascii_roman",
+    "squiggle1",
+    "squiggle2",
+    "vaporwave",
+    "emoji"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1549,7 +1555,9 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "tarty9": [tarty9_dic, False],
             "got": [got_dic, False],
             "vip": [vip_dic, False],
-            "crazy": [crazy_dic, False],
+            "crazy1": [crazy1_dic, False],
+            "crazy2": [crazy2_dic, False],
+            "crazy3": [crazy3_dic, False],
             "cruse": [cruse_dic, False],
             "drippy": [drippy_dic, False],
             "stylish": [stylish_dic, False],
@@ -1560,6 +1568,10 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "dark_tattoo": [dark_tattoo_dic, False],
             "lucifer": [lucifer_dic, False],
             "ascii_roman": [ascii_roman_dic, False],
+            "squiggle1": [squiggle1_dic, False],
+            "squiggle2": [squiggle2_dic, False],
+            "vaporwave": [vaporwave_dic, False],
+            "emoji": [emoji_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover

@@ -527,8 +527,15 @@ def text2art(
     return result
 
 
-def set_default(font=DEFAULT_FONT, chr_ignore=True, filename="art",
-                print_status=True, overwrite=False, decoration=None, sep="\n", space=0):
+def set_default(
+        font=DEFAULT_FONT,
+        chr_ignore=True,
+        filename="art",
+        print_status=True,
+        overwrite=False,
+        decoration=None,
+        sep="\n",
+        space=0):
     """
     Change text2art, tprint and tsave default values.
 
