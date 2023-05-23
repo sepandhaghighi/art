@@ -5,11 +5,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 6 new font
+	1. vaporwave
+	2. squiggle1
+	3. squiggle2
+	4. crazy2
+	5. crazy3
+	6. emoji
 ### Changed
 - Drop Python 2.7 and 3.4 support
 - `space` parameter added to `tsave` function
 - `space` parameter added to `tprint` function
 - `space` parameter added to `text2art` function
+- `crazy` font renamed to `crazy1`
 - Test system modified
 - `codecov` removed from `dev-requirements.txt`
 - `README.md` modified
