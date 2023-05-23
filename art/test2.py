@@ -133,6 +133,9 @@ drippy :
 dwarf :
 ᵗᵉˢᵗ
 <BLANKLINE>
+emoji :
+🌴🎗💲🌴
+<BLANKLINE>
 fancy1 :
 тεsт
 <BLANKLINE>
