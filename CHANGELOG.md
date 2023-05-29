@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	5. crazy3
 	6. emoji
 ### Changed
+- `font_wizard.py` modified
 - Drop Python 2.7 and 3.4 support
 - `space` parameter added to `tsave` function
 - `space` parameter added to `tprint` function
