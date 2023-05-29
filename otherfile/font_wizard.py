@@ -149,7 +149,12 @@ if __name__ == "__main__":
     if len(font_dic) == 95:
         print("Done!")
         print("Font dictionary : \n")
-        print("{}_dic =".format(font_name), json.dumps(font_dic, ensure_ascii=False, indent=4))
+        print(
+            "{}_dic =".format(font_name),
+            json.dumps(
+                font_dic,
+                ensure_ascii=False,
+                indent=4))
         print("- Add this dictionary to the end of `text_dic3.py`")
         print("- This font is {0} : ".format(ascii_flag))
         print('\t1. Add "{0}": [{0}_dic, False] to the end of `FONT_MAP` dictionary in `art_param.py`'.format(
