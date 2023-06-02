@@ -162,11 +162,11 @@ if __name__ == "__main__":
         if ascii_flag == "ASCII":
             print("\t2. Add a new test case to `test.py`")
         else:
-            print("\t2. Add a new test case to test2.py")
-            print('\t3. Add "{0}" to the end of NON_ASCII_FONTS list in art_param.py'.format(
+            print("\t2. Add a new test case to `test2.py`")
+            print('\t3. Add "{0}" to the end of `NON_ASCII_FONTS` list in `art_param.py`'.format(
                 font_name))
             if font_height > 1:
-                print('\t4. Add "{0}" to the end of MIX_FILTERED_FONTS list in art_param.py'.format(
+                print('\t4. Add "{0}" to the end of `MIX_FILTERED_FONTS` list in `art_param.py`'.format(
                     font_name))
     else:
         print(Error2)
