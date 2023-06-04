@@ -4,6 +4,7 @@ import string
 import sys
 import ast
 import art
+import json
 
 Letters = string.ascii_letters + string.punctuation + string.digits
 Font_List = list(art.art_param.FONT_MAP.keys())
@@ -148,19 +149,24 @@ if __name__ == "__main__":
     if len(font_dic) == 95:
         print("Done!")
         print("Font dictionary : \n")
-        print("{}_dic = ".format(font_name), font_dic)
-        print("- Add this dictionary to the end of text_dic3.py")
+        print(
+            "{}_dic =".format(font_name),
+            json.dumps(
+                font_dic,
+                ensure_ascii=False,
+                indent=4))
+        print("- Add this dictionary to the end of `text_dic3.py`")
         print("- This font is {0} : ".format(ascii_flag))
-        print('\t1. Add "{0}":[{0}_dic,False] to the end of FONT_MAP dictionary in art_param.py'.format(
+        print('\t1. Add "{0}": [{0}_dic, False] to the end of `FONT_MAP` dictionary in `art_param.py`'.format(
             font_name))
         if ascii_flag == "ASCII":
-            print("\t2. Add a new test case to test.py")
+            print("\t2. Add a new test case to `test.py`")
         else:
-            print("\t2. Add a new test case to test2.py")
-            print('\t3. Add "{0}" to the end of NON_ASCII_FONTS list in art_param.py'.format(
+            print("\t2. Add a new test case to `test2.py`")
+            print('\t3. Add "{0}" to the end of `NON_ASCII_FONTS` list in `art_param.py`'.format(
                 font_name))
             if font_height > 1:
-                print('\t4. Add "{0}" to the end of MIX_FILTERED_FONTS list in art_param.py'.format(
+                print('\t4. Add "{0}" to the end of `MIX_FILTERED_FONTS` list in `art_param.py`'.format(
                     font_name))
     else:
         print(Error2)
