@@ -29,7 +29,7 @@
         <a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18"></a>
         <a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg" alt="Anaconda"></a>
         <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="Built with Python3" /></a>
-        <a href="FontList.html" target="_blank"><img src="https://img.shields.io/badge/Font%20List-646-blue.svg" alt="Font List"></a>
+        <a href="FontList.html" target="_blank"><img src="https://img.shields.io/badge/Font%20List-652-blue.svg" alt="Font List"></a>
         <a href="ArtList.html" target="_blank"><img src="https://img.shields.io/badge/Art%20List-710-orange.svg" alt="Art List"></a>
         <a href="DecorList.html" target="_blank"><img src="https://img.shields.io/badge/Decor%20List-218-green.svg" alt="Decor List"></a>
         <a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/badge/Github-Repo-green.svg" alt="Github Repo"></a>
@@ -81,7 +81,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 	</tr>
 	<tr>
 		<td>Font Counter</td>
-		<td>646</td>
+		<td>652</td>
 	</tr>
 	<tr>
 		<td>1-Line-Art Counter</td>
@@ -96,30 +96,30 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
         <hr/> 
     <p>⚠️ <b>ART 4.4</b> is the last version to support <b>Python 2.7</b> & <b>Python 3.4</b> officially</p>
     <p>⚠️ <b>PyPI</b> support of these versions will be removed in a <b>future release</b></p>
-    <h2>Source code</h2>
-    <ul>
-        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v5.9.zip">Version 5.9</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
-        <li><code>python3 setup.py install</code> or <code>python setup.py install</code> <span class="red"> Need root access</span></li>
-    </ul>
-				
-
-<h2>PyPI </h2>
+    
+    <h2>PyPI</h2>
 
 <ul>
     <li>Check <a href="https://packaging.python.org/installing/">Python Packaging User Guide</a></li>
-    <li><code>pip install art==5.9</code> or <code>pip3 install art==5.9</code> <span class="red"> Need root access </span></li>
-    <li>On <code>--upgrade</code> error install latest version of <code>setuptools</code> : <code>pip install setuptools</code> and retry</li>
+    <li><code>pip install art==6.0</code> <span class="red"> Need root access </span></li>
 </ul>
+    
+    <h2>Source code</h2>
+    <ul>
+        <li>Download <a href="https://github.com/sepandhaghighi/art/archive/v6.0.zip">Version 6.0</a> or <a href="https://github.com/sepandhaghighi/art/archive/dev.zip">Latest Source</a></li>
+        <li><code>pip install .</code></li>
+    </ul>
 
-<h2>Conda </h2>
-
+<h2>Conda</h2>
+<h3>Conda-Forge</h3>
+<ul>
+    <li>Check <a href="https://conda-forge.org/">Conda-Forge</a></li>
+    <li><code>conda install -c conda-forge ascii-art</code></li>
+</ul>
+<h3>Private channel</h3>
 <ul>
     <li>Check <a href="https://conda.io">Check Conda Managing Package</a></li>
     <li><code>conda install -c sepandhaghighi art</code></li>
-</ul>
-<h2>Easy install</h2>
-<ul>
-    <li>Run <code>easy_install "art==5.9"</code> <span class="red"> Need root access </span></li>
 </ul>
 <h2>MATLAB</h2>
 <ul>
@@ -292,7 +292,13 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 62
 63
 64
-65</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># Return ASCII text (default font) and default chr_ignore=True </span>
+65
+66
+67
+68
+69
+70
+71</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Art<span style="color: #333333">=</span>text2art(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># Return ASCII text (default font) and default chr_ignore=True </span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(Art)
 <span style="color: #888888">              _   </span>
 <span style="color: #888888">  __ _  _ __ | |_ </span>
@@ -329,6 +335,13 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888"> |  |___ [__   |  </span>
 <span style="color: #888888"> |  |___ ___]  | </span>
 
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(text2art(<span style="background-color: #fff0f0">&quot;test&quot;</span>, space<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">10</span>))
+<span style="color: #888888"> _                                             _   </span>
+<span style="color: #888888">| |_             ___            ___           | |_ </span>
+<span style="color: #888888">| __|           / _ \          / __|          | __|</span>
+<span style="color: #888888">| |_           |  __/          \__ \          | |_ </span>
+<span style="color: #888888"> \__|           \___|          |___/           \__|</span>
+<span style="color: #888888">                                                   </span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span><span style="color: #008800; font-weight: bold">print</span>(text2art(<span style="background-color: #fff0f0">&#39;&#39;&#39;Lorem  </span>
 <span style="color: #888888">ipsum </span>
 <span style="color: #888888">dolor&#39;&#39;&#39;, font=&quot;small&quot;)) # Multi-line print</span>
@@ -355,9 +368,9 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>text2art(<span style="background-color: #fff0f0">&quot;seسسس&quot;</span>,font<span style="color: #333333">=</span>DEFAULT_FONT,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception</span>
 <span style="color: #0044DD">Traceback (most recent call last):</span>
         <span style="color: #333333">...</span>
-<span style="color: #FF0000">art.art.artError</span>: س is invalid 
-<span style="color: #888888">  </span>
+<span style="color: #FF0000">art.art.artError</span>: س is invalid.
 </pre></td></tr></table></div>
+
 
     &nbsp;
 <h3>2. tprint</h3>
@@ -424,7 +437,13 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 60
 61
 62
-63</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># print ASCII text (default font) </span>
+63
+64
+65
+66
+67
+68
+69</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;art&quot;</span>) <span style="color: #888888"># print ASCII text (default font) </span>
 <span style="color: #888888">              _   </span>
 <span style="color: #888888">  __ _  _ __ | |_ </span>
 <span style="color: #888888"> / _` || &#39;__|| __|</span>
@@ -463,7 +482,13 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888"> |  |___ [__   |  </span>
 <span style="color: #888888"> |  |___ ___]  |  </span>
 <span style="color: #888888">                  </span>
-
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&quot;test&quot;</span>, space<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">10</span>)
+<span style="color: #888888"> _                                             _   </span>
+<span style="color: #888888">| |_             ___            ___           | |_ </span>
+<span style="color: #888888">| __|           / _ \          / __|          | __|</span>
+<span style="color: #888888">| |_           |  __/          \__ \          | |_ </span>
+<span style="color: #888888"> \__|           \___|          |___/           \__|</span>
+<span style="color: #888888">                                                   </span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>tprint(<span style="background-color: #fff0f0">&#39;testسس&#39;</span>,chr_ignore<span style="color: #333333">=</span><span style="color: #007020">False</span>) <span style="color: #888888"># raise artError in exception </span>
 <span style="color: #0044DD">Traceback (most recent call last):</span>
        <span style="color: #333333">...</span>
@@ -490,6 +515,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 
 
+
 &nbsp;
 <h3>3. tsave</h3>
 <p>This function return <b>dict</b> in normal and exception mode</p>
@@ -513,7 +539,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 18
 19
 20
-21</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True), return dict</span>
+21
+22
+23
+24</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>) <span style="color: #888888"># save ASCII text in test.txt file with save message (print_status==True), return dict</span>
 <span style="color: #888888">Saved! </span>
 <span style="color: #888888">Filename: test.txt</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response[<span style="background-color: #fff0f0">&quot;Message&quot;</span>]
@@ -533,7 +562,10 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 <span style="color: #888888">Filename: test.txt</span>
 <span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,sep<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\r\n</span><span style="background-color: #fff0f0">&quot;</span>) <span style="color: #888888"># sep parameter is added in Version 5.3</span>
 <span style="color: #888888">Saved! </span>
-<span style="color: #888888">Filename: test.txt   </span>
+<span style="color: #888888">Filename: test.txt                        </span>
+<span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>Response<span style="color: #333333">=</span>tsave(<span style="background-color: #fff0f0">&quot;art&quot;</span>,filename<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;test.txt&quot;</span>,space<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">5</span>) <span style="color: #888888"># space parameter is added in Version 6.0</span>
+<span style="color: #888888">Saved! </span>
+<span style="color: #888888">Filename: test.txt    </span>
 </pre></td></tr></table></div>
 <p><span class="red">Note1</span> : Use <code>FONT_NAMES</code> to access all fonts name list (new in <code>Version 4.2</code>)</p>
 <p><span class="red">Note2</span> : Use <code>NON_ASCII_FONTS</code> to access all Non-ASCII fonts name list (new in <code>Version 4.4</code>)</p>
