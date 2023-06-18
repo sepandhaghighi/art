@@ -443,9 +443,9 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     if len(word) == 0 and next_word:
         return splitter
     for i in word:
-        if (ord(i) == 9) or (ord(i) == 32 and font == "block"):
+        if ord(i) == 9:
             continue
-        if (i not in letters.keys()):
+        if i not in letters.keys():
             if (chr_ignore):
                 continue
             else:
