@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- `sapce` bug some fonts fixed for
+- `__word2art` function modified
+- `sapce` bug fixed
 ## [6.0] - 2023-06-14
 ### Added
 - 6 new font
