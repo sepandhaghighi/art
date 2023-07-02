@@ -2394,7 +2394,7 @@ nscript_dic = {
     '}': u'          \n          \n          \n          \n          \n,gg,   ,gg\nP""8b,dP" \n   ,88"   \n ,dP"Y8,  \ndP"   "Y88\n          \n          \n          \n          \n          \n          \n'}
 
 nvscript_dic = {
-    ' ': u'',
+    ' ': u'        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n',
     '$': u'',
     '(': u'',
     ',': u'',
