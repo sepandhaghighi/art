@@ -5,7 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `font_handler` decorator
+- `decor_handler` decorator
 ### Changed
+- `indirect_font` function removed
+- `indirect_decoration` function removed
 - `__word2art` function modified
 - `sapce` bug fixed
 ## [6.0] - 2023-06-14
