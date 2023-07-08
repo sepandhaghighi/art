@@ -22,7 +22,7 @@ def font_handler(func):
     :return: inner function
     """
     @wraps(func)
-    def inner_function(text, font, *args, **kwargs):
+    def inner_function(text, *args, **kwargs):
         """
         Inner function.
 
@@ -36,6 +36,7 @@ def font_handler(func):
         :type kwargs: dict
         :return: modified function result
         """
+        font = kwargs['font']
         if isinstance(text, str) is False:
             raise artError(TEXT_TYPE_ERROR)
         if isinstance(font, str) is False:
@@ -58,7 +59,8 @@ def font_handler(func):
         elif font not in FONT_NAMES:
             distance_list = list(map(lambda x: distance_calc(font, x), FONT_NAMES))
             font = FONT_NAMES[distance_list.index(min(distance_list))]
-        return func(text, font, *args, **kwargs)
+        kwargs['font'] = font
+        return func(text, *args, **kwargs)
     return inner_function
 
 
