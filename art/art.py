@@ -270,6 +270,7 @@ def randart():
     return art("random")
 
 
+@font_handler
 def tprint(
         text,
         font=DEFAULT_FONT,
@@ -310,6 +311,7 @@ def tprint(
         print(FONT_ENVIRONMENT_WARNING.format(font))
 
 
+@font_handler
 def tsave(
         text,
         font=DEFAULT_FONT,
@@ -494,6 +496,7 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     return result
 
 
+@font_handler
 def text2art(
         text,
         font=DEFAULT_FONT,
@@ -519,15 +522,10 @@ def text2art(
     :return: ascii art text as str
     """
     letters = standard_dic
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    if isinstance(font, str) is False:
-        raise artError(FONT_TYPE_ERROR)
     text = (' ' * space).join(text)
     text_temp = text
     font = font.lower()
     if font != "mix":
-        font = indirect_font(font, text)
         letters = get_font_dic(font)
         if FONT_MAP[font][1]:
             text_temp = text.lower()
