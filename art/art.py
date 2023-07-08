@@ -43,6 +43,10 @@ def font_handler(func):
         if len(args) != 0:
             font = args[0]
             args = args[1:]
+        if isinstance(text, str) is False:
+            raise artError(TEXT_TYPE_ERROR)
+        if isinstance(font, str) is False:
+            raise artError(FONT_TYPE_ERROR)
         
         if font in ["rnd-small", "random-small", "rand-small"]:
             font = random.choice(RND_SIZE_DICT["small_list"])
@@ -315,7 +319,6 @@ def tprint(
         print(FONT_ENVIRONMENT_WARNING.format(font))
 
 
-@font_handler
 def tsave(
         text,
         font=DEFAULT_FONT,
@@ -526,10 +529,6 @@ def text2art(
     :return: ascii art text as str
     """
     letters = standard_dic
-    if isinstance(text, str) is False:
-        raise artError(TEXT_TYPE_ERROR)
-    if isinstance(font, str) is False:
-        raise artError(FONT_TYPE_ERROR)
     text = (' ' * space).join(text)
     text_temp = text
     font = font.lower()
