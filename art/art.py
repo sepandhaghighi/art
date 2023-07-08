@@ -36,11 +36,16 @@ def font_handler(func):
         :type kwargs: dict
         :return: modified function result
         """
-        font = kwargs['font']
+        font = DEFAULT_FONT
+        if 'font' in kwargs:
+            font = kwargs['font']
+        if len(args) != 0:
+            font = args[0]
         if isinstance(text, str) is False:
             raise artError(TEXT_TYPE_ERROR)
         if isinstance(font, str) is False:
             raise artError(FONT_TYPE_ERROR)
+        
         if font in ["rnd-small", "random-small", "rand-small"]:
             font = random.choice(RND_SIZE_DICT["small_list"])
         elif font in ["rnd-medium", "random-medium", "rand-medium"]:
