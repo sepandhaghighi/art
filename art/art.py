@@ -2,6 +2,7 @@
 """Art module."""
 from .art_dic import *
 from .art_param import *
+from functools import wraps
 import os
 import random
 
@@ -10,6 +11,89 @@ class artError(Exception):  # pragma: no cover
     """Art error class."""
 
     pass
+
+
+def font_handler(func):
+    """
+    Handle fonts for the given function.
+
+    :param func: input function
+    :type func: function
+    :return: inner function
+    """
+    @wraps(func)
+    def inner_function(text, font, *args, **kwargs):
+        """
+        Inner function.
+
+        :param text: input text
+        :type text: str
+        :param font: input font
+        :type font: str
+        :param args: non-keyword arguments
+        :type args: list
+        :param kwargs: keyword arguments
+        :type kwargs: dict
+        :return: modified function result
+        """
+        if isinstance(text, str) is False:
+            raise artError(TEXT_TYPE_ERROR)
+        if isinstance(font, str) is False:
+            raise artError(FONT_TYPE_ERROR)
+        if font in ["rnd-small", "random-small", "rand-small"]:
+            font = random.choice(RND_SIZE_DICT["small_list"])
+        elif font in ["rnd-medium", "random-medium", "rand-medium"]:
+            font = random.choice(RND_SIZE_DICT["medium_list"])
+        elif font in ["rnd-large", "random-large", "rand-large"]:
+            font = random.choice(RND_SIZE_DICT["large_list"])
+        elif font in ["rnd-xlarge", "random-xlarge", "rand-xlarge"]:
+            font = random.choice(RND_SIZE_DICT["xlarge_list"])
+        elif font in ["random", "rand", "rnd"]:
+            filtered_fonts = list(set(FONT_NAMES) - set(RANDOM_FILTERED_FONTS))
+            font = random.choice(filtered_fonts)
+        elif font in ["wizard", "wiz", "magic"]:
+            font = wizard_font(text)
+        elif font in ["rnd-na", "random-na", "rand-na"]:
+            font = random.choice(NON_ASCII_FONTS)
+        elif font not in FONT_NAMES:
+            distance_list = list(map(lambda x: distance_calc(font, x), FONT_NAMES))
+            font = FONT_NAMES[distance_list.index(min(distance_list))]
+        return func(text, font, *args, **kwargs)
+    return inner_function
+
+
+def decor_handler(func):
+    """
+    Handle decoration for the given function.
+
+    :param func: input function
+    :type func: function
+    :return: inner function
+    """
+    @wraps(func)
+    def inner_function(decoration, *args, **kwargs):
+        """
+        Inner function.
+
+        :param  decoration: decoration's name
+        :type decoration:str
+        :param args: non-keyword arguments
+        :type args: list
+        :param kwargs: keyword arguments
+        :type kwargs: dict
+        :return: modified function result
+        """
+        if isinstance(decoration, str) is False:
+            raise artError(DECORATION_TYPE_ERROR)
+        decoration = decoration.lower()
+        if decoration in ["random", "rand", "rnd"]:
+            decoration = random.choice(DECORATION_NAMES)
+        elif decoration not in DECORATION_NAMES:
+            distance_list = list(
+                map(lambda x: distance_calc(decoration, x), DECORATION_NAMES))
+            decoration = DECORATION_NAMES[distance_list.index(min(distance_list))]
+        return func(decoration, *args, **kwargs)
+    return inner_function
 
 
 def font_size_splitter(font_map):
@@ -345,64 +429,6 @@ def wizard_font(text):
     return font
 
 
-def indirect_font(font, text):
-    """
-    Check input font for indirect modes.
-
-    :param font: input font
-    :type font : str
-    :param text: input text
-    :type text:str
-    :return: font as str
-    """
-    fonts = FONT_NAMES
-    if font in ["rnd-small", "random-small", "rand-small"]:
-        font = random.choice(RND_SIZE_DICT["small_list"])
-        return font
-    if font in ["rnd-medium", "random-medium", "rand-medium"]:
-        font = random.choice(RND_SIZE_DICT["medium_list"])
-        return font
-    if font in ["rnd-large", "random-large", "rand-large"]:
-        font = random.choice(RND_SIZE_DICT["large_list"])
-        return font
-    if font in ["rnd-xlarge", "random-xlarge", "rand-xlarge"]:
-        font = random.choice(RND_SIZE_DICT["xlarge_list"])
-        return font
-    if font in ["random", "rand", "rnd"]:
-        filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
-        font = random.choice(filtered_fonts)
-        return font
-    if font in ["wizard", "wiz", "magic"]:
-        font = wizard_font(text)
-        return font
-    if font in ["rnd-na", "random-na", "rand-na"]:
-        font = random.choice(NON_ASCII_FONTS)
-        return font
-    if font not in fonts:
-        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
-        font = fonts[distance_list.index(min(distance_list))]
-    return font
-
-
-def indirect_decoration(decoration):
-    """
-    Check input decoration for indirect modes.
-
-    :param decoration: input decoration
-    :type decoration : str
-    :return: decoration as str
-    """
-    decorations = DECORATION_NAMES
-    if decoration in ["random", "rand", "rnd"]:
-        decoration = random.choice(decorations)
-        return decoration
-    if decoration not in decorations:
-        distance_list = list(
-            map(lambda x: distance_calc(decoration, x), decorations))
-        decoration = decorations[distance_list.index(min(distance_list))]
-    return decoration
-
-
 def mix_letters():
     """
     Return letters list in mix mode.
@@ -597,6 +623,7 @@ def get_font_dic(font_name):
     return FONT_MAP[font_name][0]
 
 
+@decor_handler
 def decor(decoration, reverse=False, both=False):
     """
     Return given decoration part.
@@ -609,10 +636,6 @@ def decor(decoration, reverse=False, both=False):
     :type bool: bool
     :return: decor's tail as str or tails as list of str
     """
-    if isinstance(decoration, str) is False:
-        raise artError(DECORATION_TYPE_ERROR)
-    decoration = decoration.lower()
-    decoration = indirect_decoration(decoration)
     if both is True:
         return DECORATIONS_MAP[decoration]
     if reverse is True:
