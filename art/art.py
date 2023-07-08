@@ -39,8 +39,10 @@ def font_handler(func):
         font = DEFAULT_FONT
         if 'font' in kwargs:
             font = kwargs['font']
+            del kwargs["font"]
         if len(args) != 0:
             font = args[0]
+            args = args[1:]
         if isinstance(text, str) is False:
             raise artError(TEXT_TYPE_ERROR)
         if isinstance(font, str) is False:
@@ -64,8 +66,7 @@ def font_handler(func):
         elif font not in FONT_NAMES:
             distance_list = list(map(lambda x: distance_calc(font, x), FONT_NAMES))
             font = FONT_NAMES[distance_list.index(min(distance_list))]
-        kwargs['font'] = font
-        return func(text, *args, **kwargs)
+        return func(text, font, *args, **kwargs)
     return inner_function
 
 
