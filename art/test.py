@@ -4665,6 +4665,10 @@ art.art.artError: The 'decoration' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'space' type must be int.
+>>> set_default(__font_return='test')
+Traceback (most recent call last):
+        ...
+art.art.artError: The '__font_return' type must be bool.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
