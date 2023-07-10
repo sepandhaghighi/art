@@ -565,7 +565,7 @@ def set_default(
     :type sep: str
     :param space: space between characters
     :type space: int
-    :param __detailed_return: flag for returning the font
+    :param __detailed_return: flag for returning the font and the decoration
     :type __detailed_return: bool
     :return: None
     """
