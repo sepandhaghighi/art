@@ -214,16 +214,20 @@ def tprint(
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        result = text2art(
+        result, font, decoration = text2art(
             text,
             font=font,
             decoration=decoration,
             chr_ignore=chr_ignore,
             sep=sep,
-            space=space)
+            space=space,
+            __detailed_return=True)
         print(result)
     except UnicodeEncodeError:
-        print(FONT_ENVIRONMENT_WARNING.format(font))
+        if decoration is not None:
+            print(FONT_OR_DECOR_ENVIRONMENT_WARNING.format(font, decoration))
+        else:
+            print(FONT_ENVIRONMENT_WARNING.format(font))
 
 
 def tsave(
@@ -474,7 +478,8 @@ def text2art(
         chr_ignore=True,
         decoration=None,
         sep="\n",
-        space=0):
+        space=0,
+        __detailed_return=False):
     r"""
     Return art text (support \n).
 
@@ -490,6 +495,8 @@ def text2art(
     :type sep: str
     :param space: space between characters
     :type space: int
+    :param __detailed_return: flag for returning the font and the decoration
+    :type __detailed_return: bool
     :return: ascii art text as str
     """
     letters = standard_dic
@@ -524,6 +531,8 @@ def text2art(
     if decoration is not None:
         [decor1, decor2] = decor(decoration, both=True)
         result = decor1 + result + decor2
+    if __detailed_return:
+        return (result, font, decoration)
     return result
 
 
@@ -535,7 +544,8 @@ def set_default(
         overwrite=False,
         decoration=None,
         sep="\n",
-        space=0):
+        space=0,
+        __detailed_return=False):
     """
     Change text2art, tprint and tsave default values.
 
@@ -555,6 +565,8 @@ def set_default(
     :type sep: str
     :param space: space between characters
     :type space: int
+    :param __detailed_return: flag for returning the font and the decoration
+    :type __detailed_return: bool
     :return: None
     """
     if isinstance(font, str) is False:
@@ -573,6 +585,8 @@ def set_default(
         raise artError(SEP_TYPE_ERROR)
     if isinstance(space, int) is False:
         raise artError(SPACE_TYPE_ERROR)
+    if isinstance(__detailed_return, bool) is False:
+        raise artError(DETAILED_RETURN_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration, sep, space)
     tsave.__defaults__ = (
         font,
@@ -583,7 +597,13 @@ def set_default(
         decoration,
         sep,
         space)
-    text2art.__defaults__ = (font, chr_ignore, decoration, sep, space)
+    text2art.__defaults__ = (
+        font,
+        chr_ignore,
+        decoration,
+        sep,
+        space,
+        __detailed_return)
 
 
 def get_font_dic(font_name):
