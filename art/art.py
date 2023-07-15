@@ -144,7 +144,7 @@ def aprint(artname, number=1):
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def art(artname, number=1):
+def art(artname, number=1, __detailed_return=False):
     """
     Return 1-line art.
 
@@ -152,6 +152,8 @@ def art(artname, number=1):
     :type artname : str
     :param number: number of repeats
     :type number: int
+    :param __detailed_return: flag for returning the art name
+    :type __detailed_return: bool
     :return: ascii art as str
     """
     if isinstance(artname, str) is False:
@@ -174,7 +176,10 @@ def art(artname, number=1):
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
         raise artError(NUMBER_TYPE_ERROR)
-    return (art_value + " ") * number
+    result = (art_value + " ") * number
+    if __detailed_return:
+        return (result, artname)
+    return result
 
 
 def randart():
