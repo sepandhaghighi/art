@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
+- `__detailed_return` parameter added to `art` function
 - `__detailed_return` parameter added to `text2art` function
 - `__word2art` function modified
 - `sapce` bug fixed
