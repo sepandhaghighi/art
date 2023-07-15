@@ -139,7 +139,9 @@ def aprint(artname, number=1):
         if artname == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
-        print(art(artname=artname, number=number))
+        result, artname = art(
+            artname=artname, number=number, __detailed_return=True)
+        print(result)
     except UnicodeEncodeError:
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
