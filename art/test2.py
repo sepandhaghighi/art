@@ -3060,7 +3060,7 @@ False
 тεsт
 <BLANKLINE>
 >>> aprint("UnicodeEncodeError")
-[Warning] 'UnicodeEncodeError' is not printable in this environment.
+[Warning] 'UnicodeEncodeError' art is not printable in this environment.
 >>> tprint("test","UnicodeEncodeError")
 [Warning] 'UnicodeEncodeError' font is not printable in this environment.
 >>> tprint("test","UnicodeEncodeError",decoration="angry1")
