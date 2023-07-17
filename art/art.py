@@ -125,7 +125,7 @@ def help_func():
     print(CLI_HELP)
 
 
-def aprint(artname, number=1,space=1):
+def aprint(artname, number=1, space=1):
     """
     Print 1-line art.
 
@@ -142,13 +142,13 @@ def aprint(artname, number=1,space=1):
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
         result, artname = art(
-            artname=artname, number=number, __detailed_return=True,space=space)
+            artname=artname, number=number, __detailed_return=True, space=space)
         print(result)
     except UnicodeEncodeError:
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def art(artname, number=1, __detailed_return=False,space=1):
+def art(artname, number=1, __detailed_return=False, space=1):
     """
     Return 1-line art.
 
@@ -182,7 +182,7 @@ def art(artname, number=1, __detailed_return=False,space=1):
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
         raise artError(NUMBER_TYPE_ERROR)
-    result = (art_value + " "*space) * number
+    result = (art_value + " " * space) * number
     if __detailed_return:
         return (result, artname)
     return result
