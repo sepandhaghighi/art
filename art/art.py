@@ -133,7 +133,7 @@ def aprint(artname, number=1, space=1):
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param space: space between characters
+    :param space: space between arts
     :type space: int
     :return: None
     """
@@ -158,7 +158,7 @@ def art(artname, number=1, __detailed_return=False, space=1):
     :type number: int
     :param __detailed_return: flag for returning the art name
     :type __detailed_return: bool
-    :param space: space between characters
+    :param space: space between arts
     :type space: int
     :return: ascii art as str
     """
