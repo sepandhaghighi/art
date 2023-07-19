@@ -182,7 +182,11 @@ def art(artname, number=1, space=1, __detailed_return=False):
     art_value = art_dic[artname]
     if isinstance(number, int) is False:
         raise artError(NUMBER_TYPE_ERROR)
-    result = (art_value + " " * space) * number
+    result = ""
+    for i in range(number):
+        result += art_value
+        if i != number - 1:
+            result += " " * space
     if __detailed_return:
         return (result, artname)
     return result
