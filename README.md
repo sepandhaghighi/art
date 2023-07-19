@@ -130,6 +130,8 @@ c[_]
 >>> art_2=art("woman",number=2) # return multiple art as str
 >>> print(art_2)
 ▓⚗_⚗▓ ▓⚗_⚗▓ 
+>>> art("coffee", number=3, space=5) 
+c[_]     c[_]     c[_] 
 >>> art("random") # random 1-line art mode
 '(っ◕‿◕)っ '
 >>> art("rand")   # random 1-line art mode
@@ -148,6 +150,8 @@ This function print 1-line art in normal mode (return None) and raise `artError`
 Ƹ̵̡Ӝ̵̨̄Ʒ 
 >>> aprint("happy") # print art
  ۜ\(סּںסּَ` )/ۜ
+>>> aprint("coffee", number=3, space=5) 
+c[_]     c[_]     c[_] 
 >>> aprint("random") # random 1-line art mode
 '(っ◕‿◕)っ '
 >>> aprint("rand")   # random 1-line art mode
