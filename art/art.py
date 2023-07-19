@@ -164,6 +164,10 @@ def art(artname, number=1, space=1, __detailed_return=False):
     """
     if isinstance(artname, str) is False:
         raise artError(ART_TYPE_ERROR)
+    if isinstance(number, int) is False:
+        raise artError(NUMBER_TYPE_ERROR)
+    if isinstance(space, int) is False:
+        raise artError(SPACE_TYPE_ERROR)
     artname = artname.lower()
     arts = ART_NAMES
     if artname in ["random", "rand", "rnd"]:
@@ -180,8 +184,6 @@ def art(artname, number=1, space=1, __detailed_return=False):
         else:
             raise artError(ART_NAME_ERROR)
     art_value = art_dic[artname]
-    if isinstance(number, int) is False:
-        raise artError(NUMBER_TYPE_ERROR)
     result = ""
     for i in range(number):
         result += art_value
