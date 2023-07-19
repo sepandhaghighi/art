@@ -4630,10 +4630,18 @@ art.art.artError: The 'text' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'artname' type must be str.
+>>> art("woman",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> aprint("woman",number="22")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'number' type must be int.
+>>> aprint("woman",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> set_default(font="italic")
 >>> tprint("test")
 <BLANKLINE>
