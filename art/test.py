@@ -4414,6 +4414,10 @@ __o000o__(o)(o)__o000o__
 ******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~
+>>> aprint(artname = "awesame", number=2)
+<:3 )~~~ <:3 )~~~
+>>> aprint(artname = "awesame", number=2, space=5)
+<:3 )~~~     <:3 )~~~
 >>> help_func()
               _
   __ _  _ __ | |_
@@ -4482,7 +4486,11 @@ Traceback (most recent call last):
         ...
 art.art.artError: Invalid art name.
 >>> art("coffee")
-'c[_] '
+'c[_]'
+>>> art("coffee", number=2)
+'c[_] c[_]'
+>>> art("coffee", number=2, space=5)
+'c[_]     c[_]'
 >>> tprint("test 2")
  _               _     ____
 | |_   ___  ___ | |_  |___ \
