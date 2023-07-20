@@ -7,7 +7,7 @@ import art
 import json
 
 Letters = string.ascii_letters + string.punctuation + string.digits
-Font_List = list(art.art_param.FONT_MAP.keys())
+Font_List = list(art.art_param.FONT_MAP)
 
 INVALID_FONT_NAME = [
     "mix",
@@ -91,7 +91,7 @@ if __name__ == "__main__":
         print(Error5)
         sys.exit()
     ascii_flag = "ASCII" if is_ascii(font_data) else "Non-ASCII"
-    if len(font_data) == 0:
+    if not font_data:
         print(Error1)
         sys.exit()
     if len(font_data) != len(Letters):
@@ -104,13 +104,12 @@ if __name__ == "__main__":
             print(Error2)
             sys.exit()
     font_dic = dict(zip(Letters, font_data))
-    font_height_list = list(
-        map(lambda x: len(x.split("\n")), font_dic.values()))
+    font_height_list = [len(x.split("\n")) for x in font_dic.values()]
     if len(set(font_height_list)) != 1:
         print(Error4)
         sys.exit()
     font_height = font_height_list[0]
-    if " " not in font_dic.keys():
+    if " " not in font_dic:
         _ = [" "] * font_height
         font_dic[" "] = "\n".join(_)
     for font2 in Font_List:
@@ -119,8 +118,8 @@ if __name__ == "__main__":
                 print(Error3 + font2)
                 sys.exit()
         else:
-            font1_keys = set(font_dic.keys())
-            font2_keys = set(art.get_font_dic(font2).keys())
+            font1_keys = set(font_dic)
+            font2_keys = set(art.get_font_dic(font2))
             inter_keys = list(font1_keys.intersection(font2_keys))
             font1_map = []
             font2_map = []
@@ -130,18 +129,14 @@ if __name__ == "__main__":
             if font1_map == font2_map:
                 print(Error3 + font2)
                 sys.exit()
-    first_line_list = list(map(lambda x: x.split(
-        "\n")[0] in ["", " "], font_dic.values()))
-    last_line_list = list(map(lambda x: x.split(
-        "\n")[-1] in ["", " "], font_dic.values()))
-    for letter in font_dic.keys():
-        letter_data = font_dic[letter]
+    first_line_list = [x.split("\n")[0] in ["", " "] for x in font_dic.values()]
+    last_line_list = [x.split("\n")[-1] in ["", " "] for x in font_dic.values()]
+    for letter, letter_data in font_dic.items():
         letter_data_split = letter_data.split("\n")
-        width_list = list(map(len, letter_data_split))
+        width_list = [len(x) for x in letter_data_split]
         if letter_data_split[-1] in ["", " "] and all(last_line_list):
             width_list = width_list[:-1]
-        if len(width_list) > 0 and letter_data_split[0] in [
-                "", " "] and all(first_line_list):
+        if width_list and letter_data_split[0] in ["", " "] and all(first_line_list):
             width_list = width_list[1:]
         if len(set(width_list)) > 1:
             print(Error7.format(letter))

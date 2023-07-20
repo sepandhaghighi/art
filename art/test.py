@@ -4730,7 +4730,7 @@ True
 True
 >>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == (FONT_COUNTER - len(RANDOM_FILTERED_FONTS))
 True
->>> for font in FONT_MAP.keys():
+>>> for font in FONT_MAP:
 ...     for letter in string.ascii_letters + string.punctuation + string.digits + " ":
 ...         Data = text2art(letter,font,chr_ignore=False)
 >>> file = open("art.txt","r")
