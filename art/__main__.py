@@ -63,7 +63,7 @@ def main():
                     'w',
                     zipfile.ZIP_DEFLATED)
                 print("Generating . . . ")
-                for font in FONT_MAP.keys():
+                for font in FONT_MAP:
                     tsave(
                         args[2],
                         filename=os.path.join(

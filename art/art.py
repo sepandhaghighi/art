@@ -24,14 +24,14 @@ def font_size_splitter(font_map):
     medium_font = []
     large_font = []
     xlarge_font = []
-    fonts = set(font_map.keys()) - set(RANDOM_FILTERED_FONTS)
+    fonts = set(font_map) - set(RANDOM_FILTERED_FONTS)
     for font in fonts:
-        length = max(map(len, font_map[font][0].values()))
+        length = max(len(x) for x in font_map[font][0].values())
         if length <= FONT_SMALL_THRESHOLD:
             small_font.append(font)
-        elif length > FONT_SMALL_THRESHOLD and length <= FONT_MEDIUM_THRESHOLD:
+        elif length <= FONT_MEDIUM_THRESHOLD:
             medium_font.append(font)
-        elif length > FONT_MEDIUM_THRESHOLD and length <= FONT_LARGE_THRESHOLD:
+        elif length <= FONT_LARGE_THRESHOLD:
             large_font.append(font)
         else:
             xlarge_font.append(font)
@@ -72,7 +72,7 @@ def font_list(text="test", mode="all"):
         fonts = fonts - set(NON_ASCII_FONTS)
     if mode.lower() == "non-ascii":
         fonts = set(NON_ASCII_FONTS)
-    for item in sorted(list(fonts)):
+    for item in sorted(fonts):
         print(str(item) + " : ")
         text_temp = text + "\n"
         tprint(text_temp, str(item))
@@ -91,7 +91,7 @@ def art_list(mode="all"):
         arts = arts - set(NON_ASCII_ARTS)
     if mode.lower() == "non-ascii":
         arts = set(NON_ASCII_ARTS)
-    for i in sorted(list(arts)):
+    for i in sorted(arts):
         print(i)
         aprint(i)
         line()
@@ -162,25 +162,23 @@ def art(artname, number=1, __detailed_return=False, space=1):
     :type space: int
     :return: ascii art as str
     """
-    if isinstance(artname, str) is False:
+    if not isinstance(artname, str):
         raise artError(ART_TYPE_ERROR)
     artname = artname.lower()
     arts = ART_NAMES
     if artname in ["random", "rand", "rnd"]:
         filtered_arts = list(set(arts) - set(RANDOM_FILTERED_ARTS))
         artname = random.choice(filtered_arts)
-    elif artname not in art_dic.keys():
-        distance_list = list(map(lambda x: distance_calc(artname, x),
-                                 arts))
-        min_distance = min(distance_list)
-        selected_art = arts[distance_list.index(min_distance)]
+    elif artname not in art_dic:
+        selected_art = min(arts, key=lambda x: distance_calc(artname, x))
+        min_distance = distance_calc(artname, selected_art)
         threshold = max(len(artname), len(selected_art)) / 2
         if min_distance < threshold:
             artname = selected_art
         else:
             raise artError(ART_NAME_ERROR)
     art_value = art_dic[artname]
-    if isinstance(number, int) is False:
+    if not isinstance(number, int):
         raise artError(NUMBER_TYPE_ERROR)
     result = (art_value + " " * space) * number
     if __detailed_return:
@@ -275,7 +273,7 @@ def tsave(
     :return: None
     """
     try:
-        if isinstance(text, str) is False:
+        if not isinstance(text, str):
             raise Exception(TEXT_TYPE_ERROR)
         files_list = os.listdir(os.getcwd())
         splitted_filename = filename.split(".")
@@ -287,7 +285,7 @@ def tsave(
             extension = ".txt"
         index = 2
         test_name = name
-        while overwrite is False:
+        while not overwrite:
             if test_name + extension in files_list:
                 test_name = name + str(index)
                 index = index + 1
@@ -351,9 +349,9 @@ def wizard_font(text):
     text_length = len(text)
     if text_length <= TEXT_XLARGE_THRESHOLD:
         font = random.choice(XLARGE_WIZARD_FONT)
-    elif text_length > TEXT_XLARGE_THRESHOLD and text_length <= TEXT_LARGE_THRESHOLD:
+    elif text_length <= TEXT_LARGE_THRESHOLD:
         font = random.choice(LARGE_WIZARD_FONT)
-    elif text_length > TEXT_LARGE_THRESHOLD and text_length <= TEXT_MEDIUM_THRESHOLD:
+    elif text_length <= TEXT_MEDIUM_THRESHOLD:
         font = random.choice(MEDIUM_WIZARD_FONT)
     else:
         font = random.choice(SMALL_WIZARD_FONT)
@@ -394,8 +392,7 @@ def indirect_font(font, text):
         font = random.choice(NON_ASCII_FONTS)
         return font
     if font not in fonts:
-        distance_list = list(map(lambda x: distance_calc(font, x), fonts))
-        font = fonts[distance_list.index(min(distance_list))]
+        font = min(fonts, key=lambda x: distance_calc(font, x))
     return font
 
 
@@ -412,9 +409,7 @@ def indirect_decoration(decoration):
         decoration = random.choice(decorations)
         return decoration
     if decoration not in decorations:
-        distance_list = list(
-            map(lambda x: distance_calc(decoration, x), decorations))
-        decoration = decorations[distance_list.index(min(distance_list))]
+        decoration = min(decorations, key=lambda x: distance_calc(decoration, x))
     return decoration
 
 
@@ -426,7 +421,7 @@ def mix_letters():
     """
     letters = fancy1_dic.copy()
     fonts = list(set(NON_ASCII_FONTS) - set(MIX_FILTERED_FONTS))
-    for i in letters.keys():
+    for i in letters:
         random_font = random.choice(fonts)
         letters[i] = get_font_dic(random_font)[i]
     return letters
@@ -455,22 +450,21 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
     splitter = "\n"
     if isinstance(sep, str):
         splitter = sep
-    if len(word) == 0 and next_word:
+    if not word and next_word:
         return splitter
     for i in word:
         if ord(i) == 9:
             continue
-        if i not in letters.keys():
+        if i not in letters:
             if (chr_ignore):
                 continue
             else:
                 raise artError(str(i) + " is invalid.")
-        if len(letters[i]) == 0:
-            continue
-        split_list.append(letters[i].split("\n"))
+        if letters[i]:
+            split_list.append(letters[i].split("\n"))
     if font in ["mirror", "mirror_flip"]:
         split_list.reverse()
-    if len(split_list) == 0:
+    if not split_list:
         return ""
     for i in range(len(split_list[0])):
         temp = ""
@@ -511,9 +505,9 @@ def text2art(
     :return: ascii art text as str
     """
     letters = standard_dic
-    if isinstance(text, str) is False:
+    if not isinstance(text, str):
         raise artError(TEXT_TYPE_ERROR)
-    if isinstance(font, str) is False:
+    if not isinstance(font, str):
         raise artError(FONT_TYPE_ERROR)
     text = (' ' * space).join(text)
     text_temp = text
@@ -580,23 +574,23 @@ def set_default(
     :type __detailed_return: bool
     :return: None
     """
-    if isinstance(font, str) is False:
+    if not isinstance(font, str):
         raise artError(FONT_TYPE_ERROR)
-    if isinstance(decoration, str) is False and decoration is not None:
+    if not isinstance(decoration, str) and decoration is not None:
         raise artError(DECORATION_TYPE_ERROR)
-    if isinstance(chr_ignore, bool) is False:
+    if not isinstance(chr_ignore, bool):
         raise artError(CHR_IGNORE_TYPE_ERROR)
-    if isinstance(filename, str) is False:
+    if not isinstance(filename, str):
         raise artError(FILE_TYPE_ERROR)
-    if isinstance(print_status, bool) is False:
+    if not isinstance(print_status, bool):
         raise artError(PRINT_STATUS_TYPE_ERROR)
-    if isinstance(overwrite, bool) is False:
+    if not isinstance(overwrite, bool):
         raise artError(OVERWRITE_TYPE_ERROR)
-    if isinstance(sep, str) is False:
+    if not isinstance(sep, str):
         raise artError(SEP_TYPE_ERROR)
-    if isinstance(space, int) is False:
+    if not isinstance(space, int):
         raise artError(SPACE_TYPE_ERROR)
-    if isinstance(__detailed_return, bool) is False:
+    if not isinstance(__detailed_return, bool):
         raise artError(DETAILED_RETURN_TYPE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration, sep, space)
     tsave.__defaults__ = (
@@ -640,12 +634,12 @@ def decor(decoration, reverse=False, both=False):
     :type bool: bool
     :return: decor's tail as str or tails as list of str
     """
-    if isinstance(decoration, str) is False:
+    if not isinstance(decoration, str):
         raise artError(DECORATION_TYPE_ERROR)
     decoration = decoration.lower()
     decoration = indirect_decoration(decoration)
-    if both is True:
+    if both:
         return DECORATIONS_MAP[decoration]
-    if reverse is True:
+    if reverse:
         return DECORATIONS_MAP[decoration][-1]
     return DECORATIONS_MAP[decoration][0]

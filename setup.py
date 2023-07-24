@@ -15,7 +15,7 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
 def get_dev_requires():
     """Read dev-requirements.txt."""
     requirements = open("dev-requirements.txt", "r").read()
-    return list(filter(lambda x: x != "", requirements.split()))
+    return [x for x in requirements.split() if x]
 
 
 def read_description():

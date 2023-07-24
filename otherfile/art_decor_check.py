@@ -38,7 +38,7 @@ def print_result(flag_list, message_list):
 
 
 if __name__ == "__main__":
-    Art_Keys = list(Art_Dict.keys())
+    Art_Keys = list(Art_Dict)
     Art_Values = list(Art_Dict.values())
     for art_name in Art_Keys:
         ascii_flag = is_ascii(Art_Dict[art_name])
@@ -55,7 +55,7 @@ if __name__ == "__main__":
             print(
                 "Art type warning : {0} is NON-ASCII but imported as ASCII".format(art_name))
 
-    Decor_Keys = list(Decor_Dict.keys())
+    Decor_Keys = list(Decor_Dict)
     Decor_Values = list(Decor_Dict.values())
     for decor_name in Decor_Keys:
         if not is_utf8(
