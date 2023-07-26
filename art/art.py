@@ -164,6 +164,10 @@ def art(artname, number=1, space=1, __detailed_return=False):
     """
     if not isinstance(artname, str):
         raise artError(ART_TYPE_ERROR)
+    if not isinstance(number, int):
+        raise artError(NUMBER_TYPE_ERROR)
+    if not isinstance(space, int):
+        raise artError(SPACE_TYPE_ERROR)
     artname = artname.lower()
     arts = ART_NAMES
     if artname in ["random", "rand", "rnd"]:
@@ -178,8 +182,6 @@ def art(artname, number=1, space=1, __detailed_return=False):
         else:
             raise artError(ART_NAME_ERROR)
     art_value = art_dic[artname]
-    if not isinstance(number, int):
-        raise artError(NUMBER_TYPE_ERROR)
     result = (art_value + " " * space) * number
     result = result.strip()
     if __detailed_return:
