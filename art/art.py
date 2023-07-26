@@ -181,6 +181,7 @@ def art(artname, number=1, space=1, __detailed_return=False):
     if not isinstance(number, int):
         raise artError(NUMBER_TYPE_ERROR)
     result = (art_value + " " * space) * number
+    result = result.strip()
     if __detailed_return:
         return (result, artname)
     return result
