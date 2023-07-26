@@ -4414,6 +4414,10 @@ __o000o__(o)(o)__o000o__
 ******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~
+>>> aprint(artname = "awesame", number=2)
+<:3 )~~~ <:3 )~~~
+>>> aprint(artname = "awesame", number=2, space=5)
+<:3 )~~~     <:3 )~~~
 >>> help_func()
               _
   __ _  _ __ | |_
@@ -4482,7 +4486,11 @@ Traceback (most recent call last):
         ...
 art.art.artError: Invalid art name.
 >>> art("coffee")
-'c[_] '
+'c[_]'
+>>> art("coffee", number=2)
+'c[_] c[_]'
+>>> art("coffee", number=2, space=5)
+'c[_]     c[_]'
 >>> tprint("test 2")
  _               _     ____
 | |_   ___  ___ | |_  |___ \
@@ -4622,10 +4630,18 @@ art.art.artError: The 'text' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'artname' type must be str.
+>>> art("woman",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> aprint("woman",number="22")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'number' type must be int.
+>>> aprint("woman",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> set_default(font="italic")
 >>> tprint("test")
 <BLANKLINE>

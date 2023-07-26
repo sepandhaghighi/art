@@ -129,7 +129,7 @@ def aprint(artname, number=1, space=1):
     """
     Print 1-line art.
 
-    :param artname: artname
+    :param artname: art name
     :type artname : str
     :param number: number of repeats
     :type number: int
@@ -142,28 +142,32 @@ def aprint(artname, number=1, space=1):
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
         result, artname = art(
-            artname=artname, number=number, __detailed_return=True, space=space)
+            artname=artname, number=number, space=space, __detailed_return=True)
         print(result)
     except UnicodeEncodeError:
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def art(artname, number=1, __detailed_return=False, space=1):
+def art(artname, number=1, space=1, __detailed_return=False):
     """
     Return 1-line art.
 
-    :param artname: artname
+    :param artname: art name
     :type artname : str
     :param number: number of repeats
     :type number: int
-    :param __detailed_return: flag for returning the art name
-    :type __detailed_return: bool
     :param space: space between arts
     :type space: int
+    :param __detailed_return: flag for returning the art name
+    :type __detailed_return: bool
     :return: ascii art as str
     """
     if not isinstance(artname, str):
         raise artError(ART_TYPE_ERROR)
+    if not isinstance(number, int):
+        raise artError(NUMBER_TYPE_ERROR)
+    if not isinstance(space, int):
+        raise artError(SPACE_TYPE_ERROR)
     artname = artname.lower()
     arts = ART_NAMES
     if artname in ["random", "rand", "rnd"]:
@@ -178,9 +182,8 @@ def art(artname, number=1, __detailed_return=False, space=1):
         else:
             raise artError(ART_NAME_ERROR)
     art_value = art_dic[artname]
-    if not isinstance(number, int):
-        raise artError(NUMBER_TYPE_ERROR)
     result = (art_value + " " * space) * number
+    result = result.strip()
     if __detailed_return:
         return (result, artname)
     return result

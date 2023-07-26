@@ -131,7 +131,7 @@ c[_]
 >>> print(art_2)
 ▓⚗_⚗▓ ▓⚗_⚗▓ 
 >>> art("coffee", number=3, space=5) 
-c[_]     c[_]     c[_] 
+'c[_]     c[_]     c[_]'
 >>> art("random") # random 1-line art mode
 '(っ◕‿◕)っ '
 >>> art("rand")   # random 1-line art mode
