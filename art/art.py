@@ -129,7 +129,7 @@ def aprint(artname, number=1, space=1):
     """
     Print 1-line art.
 
-    :param artname: artname
+    :param artname: art name
     :type artname : str
     :param number: number of repeats
     :type number: int
@@ -152,7 +152,7 @@ def art(artname, number=1, space=1, __detailed_return=False):
     """
     Return 1-line art.
 
-    :param artname: artname
+    :param artname: art name
     :type artname : str
     :param number: number of repeats
     :type number: int
