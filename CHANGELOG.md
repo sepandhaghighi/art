@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `space` parameter added to `art` function
 - `space` parameter added to `aprint` function
 - `font_check.py` modified
+- `README.md` modified
+- `INSTALL.md` modified
 ## [6.0] - 2023-06-14
 ### Added
 - 6 new font
