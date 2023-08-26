@@ -1,5 +1,7 @@
 ## Installation	
 
+⚠️ **ART 6.1** is the last version to support **Python 3.5** officially	
+
 ⚠️ **ART 4.4** is the last version to support **Python 2.7** & **Python 3.4** officially		
 
 ⚠️ **PyPI** support of these versions will be removed in a **future release**
