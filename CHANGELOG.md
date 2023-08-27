@@ -8,12 +8,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `__detailed_return` parameter added to `art` function
 - `__detailed_return` parameter added to `text2art` function
+- Random mode name bug fixed
 - `__word2art` function modified
 - `art` function tail space bug fixed
 - `space` parameter bug fixed
 - `space` parameter added to `art` function
 - `space` parameter added to `aprint` function
 - `font_check.py` modified
+- `README.md` modified
+- `INSTALL.md` modified
 ## [6.0] - 2023-06-14
 ### Added
 - 6 new font

@@ -763,7 +763,7 @@ art test2
 ```
 
 ### CLI	
-⚠️ [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure**
+⚠️ [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure** officially
 
 ⚠️ You can use `art` or `python -m art` to run this mode
 		
