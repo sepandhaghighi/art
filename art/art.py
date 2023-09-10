@@ -20,12 +20,9 @@ def font_size_splitter(font_map):
     :type font_map : dict
     :return: splitted fonts as dict
     """
-    small_font = []
-    medium_font = []
-    large_font = []
-    xlarge_font = []
+    small_font, medium_font, large_font, xlarge_font = [], [], [], []
     fonts = set(font_map) - set(RANDOM_FILTERED_FONTS)
-    for font in fonts:
+    for font in sorted(fonts):
         length = max(len(x) for x in font_map[font][0].values())
         if length <= FONT_SMALL_THRESHOLD:
             small_font.append(font)
