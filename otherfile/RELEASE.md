@@ -13,44 +13,54 @@
 	6. `ArtList.ipynb`
 	7. `DecorList.ipynb`
 	8. `FontList.ipynb`
-3. Update all font counters in `README.md`
+3. Update `help_func` function output in `test.py`
+4. Update all font counters in `README.md`
 	1. `<img src="https://img.shields.io/badge/Font List-{font_counter}-blue.svg">`
 	2. ``
-4. Update all art counters in `README.md`
+5. Update all art counters in `README.md`
 	1. `<img src="https://img.shields.io/badge/Art List-{art_counter}-orange.svg">`
 	2. ``
-5. Update all decor counters in `README.md`
+6. Update all decor counters in `README.md`
 	1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg">`
 	2. ``
-6. Update `CHANGELOG.md`
+7. Update `CHANGELOG.md`
 	1. Add a new header under `Unreleased` section (Example: `## [0.2] - 2022-08-17`)
 	2. Add a new compare link to the end of the file (Example: `[0.2]: https://github.com/sepandhaghighi/art/compare/v0.1...v0.2`)
 	3. Update `dev` compare link (Example: `[Unreleased]: https://github.com/sepandhaghighi/art/compare/v0.2...dev`)
-7. Update Document
+8. Update Document
 	1. Run `otherfile/doc_run.bat`
-8. Create a PR from `release` to `dev`
+9. Create a PR from `release` to `dev`
 	1. Title: `Version x.x` (Example: `Version 0.1`)
 	2. Tag all related issues
 	3. Labels: `release`
 	4. Set milestone
 	5. Wait for all CI pass
 	6. Need review (**1** reviewers)
-9. Merge `dev` branch into `master`
+10. Merge `dev` branch into `master`
 	1. Checkout to `master`
 	2. `git merge dev`
 	3. `git push origin master`
 	4. Wait for all CI pass
-10. Create a new release
+11. Create a new release
 	1. Target branch: `master`
 	2. Tag: `vx.x` (Example: `v0.1`)
 	3. Title: `Version x.x` (Example: `Version 0.1`)
 	4. Copy changelogs
 	5. Tag all related issues
-11. Bump!!
-12. Close this version issues
-13. Close milestone
-14. Close project
-15. Generate HTML files
+12. Bump!!
+13. Close this version issues
+14. Close milestone
+15. Close project
+16. Generate HTML files
 	1. Run `otherfile/doc_to_html.bat`
 	2. Copy `doc_html` folder for the next steps
-16. Update website
+17. Update website
+	1. `git checkout gh-pages`
+	2. Update all version tags
+		1. `index.html`
+	3. Update fonts list
+		1. Update `FontList.html` (Step **16.2**)
+	4. Update arts list
+		1. Update `ArtList.html` (Step **16.2**)
+	5. Update decors list
+		1. Update `DecorList.html` (Step **16.2**)
