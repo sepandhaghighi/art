@@ -73,3 +73,10 @@
 	8. Update all decor counters in `index.html` (**If needed**)
 		1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg">`
 		2. `<td id="decor_counter">{decor_counter}</td>`
+
+	9. Update `Reference` section (**If needed**)
+	10. Update code examples (**If needed**)
+		1. [http://www.hilite.me](http://www.hilite.me)
+		2. Python console session
+		3. Colorful
+		4. Line numbers
