@@ -16,13 +16,13 @@
 3. Update `help_func` function output in `test.py`
 4. Update all font counters in `README.md`
 	1. `<img src="https://img.shields.io/badge/Font List-{font_counter}-blue.svg">`
-	2. ``
+	2. `<td id="font_counter">{font_counter}</td>`
 5. Update all art counters in `README.md`
 	1. `<img src="https://img.shields.io/badge/Art List-{art_counter}-orange.svg">`
-	2. ``
+	2. `<td id="art_counter">{art_counter}</td>`
 6. Update all decor counters in `README.md`
 	1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg">`
-	2. ``
+	2. `<td id="decor_counter">{decor_counter}</td>`
 7. Update `CHANGELOG.md`
 	1. Add a new header under `Unreleased` section (Example: `## [0.2] - 2022-08-17`)
 	2. Add a new compare link to the end of the file (Example: `[0.2]: https://github.com/sepandhaghighi/art/compare/v0.1...v0.2`)
@@ -64,3 +64,12 @@
 		1. Update `ArtList.html` (Step **16.2**)
 	5. Update decors list
 		1. Update `DecorList.html` (Step **16.2**)
+	6. Update all font counters in `index.html`
+		1. `<img src="https://img.shields.io/badge/Font List-{font_counter}-blue.svg">`
+		2. `<td id="font_counter">{font_counter}</td>`
+	7. Update all art counters in `index.html`
+		1. `<img src="https://img.shields.io/badge/Art List-{art_counter}-orange.svg">`
+		2. `<td id="art_counter">{art_counter}</td>`
+	8. Update all decor counters in `index.html`
+		1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg">`
+		2. `<td id="decor_counter">{decor_counter}</td>`
