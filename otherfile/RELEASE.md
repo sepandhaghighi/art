@@ -14,13 +14,13 @@
 	7. `DecorList.ipynb`
 	8. `FontList.ipynb`
 3. Update `help_func` function output in `test.py`
-4. Update all font counters in `README.md`
+4. Update all font counters in `README.md` (**If needed**)
 	1. `<img src="https://img.shields.io/badge/Font List-{font_counter}-blue.svg">`
 	2. `<td id="font_counter">{font_counter}</td>`
-5. Update all art counters in `README.md`
+5. Update all art counters in `README.md` (**If needed**)
 	1. `<img src="https://img.shields.io/badge/Art List-{art_counter}-orange.svg">`
 	2. `<td id="art_counter">{art_counter}</td>`
-6. Update all decor counters in `README.md`
+6. Update all decor counters in `README.md` (**If needed**)
 	1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg">`
 	2. `<td id="decor_counter">{decor_counter}</td>`
 7. Update `CHANGELOG.md`
@@ -64,12 +64,12 @@
 		1. Update `ArtList.html` (Step **16.2**)
 	5. Update decors list
 		1. Update `DecorList.html` (Step **16.2**)
-	6. Update all font counters in `index.html`
+	6. Update all font counters in `index.html` (**If needed**)
 		1. `<img src="https://img.shields.io/badge/Font List-{font_counter}-blue.svg">`
 		2. `<td id="font_counter">{font_counter}</td>`
-	7. Update all art counters in `index.html`
+	7. Update all art counters in `index.html` (**If needed**)
 		1. `<img src="https://img.shields.io/badge/Art List-{art_counter}-orange.svg">`
 		2. `<td id="art_counter">{art_counter}</td>`
-	8. Update all decor counters in `index.html`
+	8. Update all decor counters in `index.html` (**If needed**)
 		1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg">`
 		2. `<td id="decor_counter">{decor_counter}</td>`
