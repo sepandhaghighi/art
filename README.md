@@ -50,29 +50,29 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 
 <table>
-	<tr> 
-		<td align="center">Open Hub</td>
-		<td align="center"><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>	
+	<tr align="center"> 
+		<td>Open Hub</td>
+		<td><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>	
 	</tr>
-	<tr>
-		<td align="center">PyPI Counter</td>
-		<td align="center"><a href="http://pepy.tech/project/art"><img src="http://pepy.tech/badge/art"></a></td>
+	<tr align="center">
+		<td>PyPI Counter</td>
+		<td><a href="http://pepy.tech/project/art"><img src="http://pepy.tech/badge/art"></a></td>
 	</tr>
-	<tr>
-		<td align="center">Github Stars</td>
-		<td align="center"><a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars"></a></td>
+	<tr align="center">
+		<td>Github Stars</td>
+		<td><a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars"></a></td>
 	</tr>
-	<tr>
-		<td align="center">Font Counter</td>
-		<td align="center">652</td>
+	<tr align="center">
+		<td>Font Counter</td>
+		<td id="font_counter">652</td>
 	</tr>
-	<tr>
-		<td align="center">1-Line-Art Counter</td>
-		<td align="center">710</td>
+	<tr align="center">
+		<td>1-Line-Art Counter</td>
+		<td id="art_counter">710</td>
 	</tr>
-    <tr>
-		<td align="center">Decor Counter</td>
-		<td align="center">218</td>
+    <tr align="center">
+		<td>Decor Counter</td>
+		<td id="decor_counter">218</td>
 	</tr>
 </table>
 
