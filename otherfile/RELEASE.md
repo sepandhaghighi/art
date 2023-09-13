@@ -34,8 +34,9 @@
 	2. Tag all related issues
 	3. Labels: `release`
 	4. Set milestone
-	5. Wait for all CI pass
-	6. Need review (**1** reviewers)
+	5. Set project
+	6. Wait for all CI pass
+	7. Need review (**1** reviewer)
 10. Merge `dev` branch into `master`
 	1. Checkout to `master`
 	2. `git merge dev`
