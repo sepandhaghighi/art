@@ -10,10 +10,10 @@
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==6.0` (Need root access)
+- `pip install art==6.1` (Need root access)
 
 ### Source code
-- Download [Version 6.0](https://github.com/sepandhaghighi/art/archive/v6.0.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 6.1](https://github.com/sepandhaghighi/art/archive/v6.1.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `pip install .`
 
 ### Conda

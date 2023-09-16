@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [6.1] - 2023-09-20
 ### Changed
 - `font_size_splitter` function modified
 - `__detailed_return` parameter added to `art` function
@@ -2083,7 +2084,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.0...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.1...dev
+[6.1]: https://github.com/sepandhaghighi/art/compare/v6.0...v6.1
 [6.0]: https://github.com/sepandhaghighi/art/compare/v5.9...v6.0
 [5.9]: https://github.com/sepandhaghighi/art/compare/v5.8...v5.9
 [5.8]: https://github.com/sepandhaghighi/art/compare/v5.7...v5.8
