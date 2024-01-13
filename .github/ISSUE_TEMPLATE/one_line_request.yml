@@ -1,0 +1,20 @@
+name: 1-Line art Request
+description: Suggest a new 1-Line art to be added to the package
+title: "[1-Line Art]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Write the 1-Line art you want to add
+      placeholder: >
+        ex: (っ◕‿◕)っ 
+    validations:
+      required: false
+  - type: textarea
+    id: aditional-context
+    attributes:
+      label: Additional context
+      placeholder: >
+        If you have any additional context or information about the 1-line art (like the link to the source of it), please write it down here.
+    validations:
+      required: false

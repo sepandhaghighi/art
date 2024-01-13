@@ -1,0 +1,157 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Provide a clear and concise description of what the bug is.
+      placeholder: >
+        Tell us a description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: step-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide details of how to reproduce the bug.
+      placeholder: >
+        ex. 1. Go to '...'
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: >
+        ex. I expected '...' to happen
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What did actually happen?
+      placeholder: >
+        ex. Instead '...' happened
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      description: Which operating system are you using?
+      options:
+        - Windows
+        - macOS
+        - Linux
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: python-version
+    attributes:
+      label: Python version
+      description: Which version of Python are you using?
+      options:
+        - Python 3.12
+        - Python 3.11
+        - Python 3.10
+        - Python 3.9
+        - Python 3.8
+        - Python 3.7
+        - Python 3.6
+        - Python 3.5
+      default: 1
+    validations:
+      required: true
+  - type: dropdown
+    id: Art-version
+    attributes:
+      label: Art version
+      description: Which version of Art are you using?
+      options:
+        - Art 6.1
+        - Art 6.0
+        - Art 5.9
+        - Art 5.8
+        - Art 5.7
+        - Art 5.6
+        - Art 5.5
+        - Art 5.4
+        - Art 5.3
+        - Art 5.2
+        - Art 5.1
+        - Art 5.0
+        - Art 4.9
+        - Art 4.8
+        - Art 4.7
+        - Art 4.6
+        - Art 4.5
+        - Art 4.4
+        - Art 4.3
+        - Art 4.2
+        - Art 4.1
+        - Art 4.0
+        - Art 3.9
+        - Art 3.8
+        - Art 3.7
+        - Art 3.6
+        - Art 3.5
+        - Art 3.4
+        - Art 3.3
+        - Art 3.2
+        - Art 3.1
+        - Art 3.0
+        - Art 2.9
+        - Art 2.8
+        - Art 2.7
+        - Art 2.6
+        - Art 2.5
+        - Art 2.4
+        - Art 2.3
+        - Art 2.2
+        - Art 2.1
+        - Art 2.0
+        - Art 1.9
+        - Art 1.8
+        - Art 1.7
+        - Art 1.6
+        - Art 1.5
+        - Art 1.4
+        - Art 1.3
+        - Art 1.2
+        - Art 1.1
+        - Art 1.0
+        - Art 0.9
+        - Art 0.8
+        - Art 0.7
+        - Art 0.6
+        - Art 0.5
+        - Art 0.4
+        - Art 0.3
+        - Art 0.2
+        - Art 0.1
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell

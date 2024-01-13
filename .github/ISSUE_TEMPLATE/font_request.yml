@@ -1,0 +1,20 @@
+name: Font Request
+description: Suggest a new font to be added to the package
+title: "[Font]: "
+body:
+  - type: textarea
+    id: link-to-font
+    attributes:
+      label: Link to font
+      placeholder: >
+        Add a link to the font you want to be added to the package.
+    validations:
+      required: true
+  - type: textarea
+    id: aditional-context
+    attributes:
+      label: Additional context
+      placeholder: >
+        If you have any additional context or information about the font (like examples of it), please write it down here.
+    validations:
+      required: false

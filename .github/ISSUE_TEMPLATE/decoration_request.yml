@@ -1,0 +1,20 @@
+name: Decoration Request
+description: Suggest a new decoration to be added to the package
+title: "[Decoration]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Write the decoration you want to add
+      placeholder: >
+        ex: ▌│█║▌║▌║ 
+    validations:
+      required: false
+  - type: textarea
+    id: aditional-context
+    attributes:
+      label: Additional context
+      placeholder: >
+        If you have any additional context or information about the 1-line art (like the link to the source of it), please write it down here.
+    validations:
+      required: false
