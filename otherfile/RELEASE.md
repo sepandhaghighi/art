@@ -1,7 +1,7 @@
 
 # Art Release Instructions
 
-#### Last Update: 2023-09-13
+#### Last Update: 2024-01-12
 
 1. Create the `release` branch under `dev`
 2. Update all version tags
@@ -27,9 +27,11 @@
 	1. Add a new header under `Unreleased` section (Example: `## [0.2] - 2022-08-17`)
 	2. Add a new compare link to the end of the file (Example: `[0.2]: https://github.com/sepandhaghighi/art/compare/v0.1...v0.2`)
 	3. Update `dev` compare link (Example: `[Unreleased]: https://github.com/sepandhaghighi/art/compare/v0.2...dev`)
-8. Update Document
+8. Update `.github/ISSUE_TEMPLATE/bug_report.yml`
+   1. Add new version tag to `Art version` dropbox options
+9.  Update Document
 	1. Run `otherfile/doc_run.bat`
-9. Create a PR from `release` to `dev`
+10. Create a PR from `release` to `dev`
 	1. Title: `Version x.x` (Example: `Version 0.1`)
 	2. Tag all related issues
 	3. Labels: `release`
@@ -37,25 +39,25 @@
 	5. Set project
 	6. Wait for all CI pass
 	7. Need review (**1** reviewer)
-10. Merge `dev` branch into `master`
+11. Merge `dev` branch into `master`
 	1. Checkout to `master`
 	2. `git merge dev`
 	3. `git push origin master`
 	4. Wait for all CI pass
-11. Create a new release
+12. Create a new release
 	1. Target branch: `master`
 	2. Tag: `vx.x` (Example: `v0.1`)
 	3. Title: `Version x.x` (Example: `Version 0.1`)
 	4. Copy changelogs
 	5. Tag all related issues
-12. Bump!!
-13. Close this version issues
-14. Close milestone
-15. Close project
-16. Generate HTML files
+13. Bump!!
+14. Close this version issues
+15. Close milestone
+16. Close project
+17. Generate HTML files
 	1. Run `otherfile/doc_to_html.bat`
 	2. Copy `doc_html` folder for the next steps
-17. Update website
+18. Update website
 	1. `git checkout gh-pages`
 	2. Update all version tags
 		1. `index.html`
