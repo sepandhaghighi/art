@@ -15,6 +15,6 @@ body:
     attributes:
       label: Additional context
       placeholder: >
-        If you have any additional context or information about the 1-line art (like the link to the source of it), please write it down here.
+        If you have any additional context or information about the decoration art (like the link to the source of it), please write it down here.
     validations:
       required: false
