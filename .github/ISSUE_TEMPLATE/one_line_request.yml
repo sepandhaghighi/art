@@ -9,7 +9,7 @@ body:
       placeholder: >
         ex: (っ◕‿◕)っ 
     validations:
-      required: false
+      required: true
   - type: textarea
     id: aditional-context
     attributes:
