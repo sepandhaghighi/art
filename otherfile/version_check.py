@@ -28,6 +28,7 @@ ART_LIST_ITEMS = ["### Version : {0}"]
 FONT_LIST_ITEMS = ["### Version : {0}"]
 PARAMS_ITEMS = ['ART_VERSION = "{0}"']
 META_ITEMS = ['% set version = "{0}" %']
+ISSUE_TEMPLATE_ITEMS = ["- Art {0}"]
 
 FILES = {
     "setup.py": SETUP_ITEMS,
@@ -38,7 +39,9 @@ FILES = {
     os.path.join(
         "art",
         "art_param.py"): PARAMS_ITEMS,
-    os.path.join("otherfile", "meta.yaml"): META_ITEMS}
+    os.path.join("otherfile", "meta.yaml"): META_ITEMS,
+    os.path.join(".github", "ISSUE_TEMPLATE", "bug_report.yml"): ISSUE_TEMPLATE_ITEMS,
+    }
 
 TEST_NUMBER = len(FILES) + 1
 

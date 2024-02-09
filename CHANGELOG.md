@@ -5,7 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `decoration_request.yml` template
+- `font_request.yml` template
+- `one_line_request.yml` template
+- `feature_request.yml` template
+- `config.yml` for issue template
 ### Changed
+- Bug report template modified
 - Test system modified
 - `Python 3.12` added to `test.yml`
 ## [6.1] - 2023-09-20

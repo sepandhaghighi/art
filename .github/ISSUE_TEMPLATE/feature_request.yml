@@ -1,0 +1,36 @@
+name: Feature Request
+description: Suggest a feature for this project
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature you want to add
+      placeholder: >
+        I'd like to be able to [...]
+    validations:
+      required: true
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Describe your proposed solution
+      placeholder: >
+        I think this could be done by [...]
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered, if relevant
+      placeholder: >
+        Another way to do this would be [...]
+    validations:
+      required: false
+  - type: textarea
+    id: aditional-context
+    attributes:
+      label: Additional context
+      placeholder: >
+        Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
