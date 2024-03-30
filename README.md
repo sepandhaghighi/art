@@ -38,7 +38,7 @@
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
    * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
    * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
-   * [Supporters](https://github.com/sepandhaghighi/art#supporters)
+   * [Acknowledgments](https://github.com/sepandhaghighi/art#acknowledgments)
    * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
 
@@ -881,8 +881,8 @@ If you do like our project and we hope that you do, can you please support us? O
 - Your company's logo can be featured on **Readme** and **Website**
 - Intended for medium-sized companies
 
-## Supporters
-Parts of infrastructure for this project is supported by:</p>
+## Acknowledgments
+Some parts of the infrastructure for this project are supported by:</p>
 <p>
   <a href="https://www.digitalocean.com/">
     <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
