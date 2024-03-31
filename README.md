@@ -876,6 +876,6 @@ If you do like our project and we hope that you do, can you please support us? O
 Some parts of the infrastructure for this project are supported by:
 <p>
   <a href="https://www.digitalocean.com/">
-    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px" alt="DigitalOcean">
   </a>
 </p>
