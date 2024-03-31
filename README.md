@@ -17,31 +17,6 @@
 	
 ----------
 
-## Table of contents					
-   * [Overview](https://github.com/sepandhaghighi/art#overview)
-   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
-   * [Usage](https://github.com/sepandhaghighi/art#usage)
-   		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
-   		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
-   		* [Decoration](https://github.com/sepandhaghighi/art#decoration)
-   		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
-   		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
-   		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
-   		* [Testing](https://github.com/sepandhaghighi/art#testing)
-   		* [CLI](https://github.com/sepandhaghighi/art#cli)
-   		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
-   		* [Try ART in Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
-   		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
-   * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
-   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
-   * [Reference](https://github.com/sepandhaghighi/art#reference)
-   * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
-   * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
-   * [Acknowledgments](https://github.com/sepandhaghighi/art#acknowledgments)
-   * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
-   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
-
 ## Overview	
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
