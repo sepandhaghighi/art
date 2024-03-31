@@ -1,18 +1,34 @@
 <div align="center">
-<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/logo.png" alt="Logo">
-<br/>
-<br/>
-<a href="https://codecov.io/gh/sepandhaghighi/art">
-  <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
-</a>
-<a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18"></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-652-blue.svg" alt="Font List"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg" alt="Art List"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg" alt="Decor List"></a>
-<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot"></a>
-<a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg" alt="Anaconda"></a>
-<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
+	<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/logo.png" alt="Logo">
+	<br/>
+	<br/>
+	<a href="https://codecov.io/gh/sepandhaghighi/art">
+		<img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
+	</a>
+	<a href="https://badge.fury.io/py/art">
+		<img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18">
+	</a>
+	<a href="https://www.python.org/">
+		<img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3">
+	</a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb">
+		<img src="https://img.shields.io/badge/Font List-652-blue.svg" alt="Font List">
+	</a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb">
+		<img src="https://img.shields.io/badge/Art List-710-orange.svg" alt="Art List">
+	</a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb">
+		<img src="https://img.shields.io/badge/Decor List-218-green.svg" alt="Decor List">
+	</a>
+	<a href="https://t.me/artlib_bot" target="__blank">
+		<img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot">
+	</a>
+	<a href="https://anaconda.org/sepandhaghighi/art">
+		<img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg" alt="Anaconda">
+	</a>
+	<a href="https://discord.com/invite/FAAyq3QJqP">
+		<img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel">
+	</a>
 </div>
 	
 ----------
@@ -46,7 +62,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 		<td>1-Line-Art Counter</td>
 		<td id="art_counter">710</td>
 	</tr>
-    <tr align="center">
+	<tr align="center">
 		<td>Decor Counter</td>
 		<td id="decor_counter">218</td>
 	</tr>
