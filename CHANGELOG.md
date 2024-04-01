@@ -11,10 +11,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `one_line_request.yml` template
 - `feature_request.yml` template
 - `config.yml` for issue template
-- [DigitalOcean](https://digitalocean.com/) logo added to `README.md`
 ### Changed
 - Bug report template modified
 - Test system modified
+- `README.md` modified
+- [DigitalOcean](https://digitalocean.com/) logo added to `README.md`
 - `Python 3.12` added to `test.yml`
 ## [6.1] - 2023-09-20
 ### Changed

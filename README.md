@@ -1,46 +1,37 @@
 <div align="center">
-<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/logo.png" alt="Logo">
-<br/>
-<br/>
-<a href="https://codecov.io/gh/sepandhaghighi/art">
-  <img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
-</a>
-<a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18"></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-652-blue.svg" alt="Font List"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg" alt="Art List"></a>
-<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg" alt="Decor List"></a>
-<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot"></a>
-<a href="https://anaconda.org/sepandhaghighi/art"><img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg" alt="Anaconda"></a>
-<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
+	<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/logo.png" alt="Logo">
+	<br/>
+	<br/>
+	<a href="https://codecov.io/gh/sepandhaghighi/art">
+		<img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov" />
+	</a>
+	<a href="https://badge.fury.io/py/art">
+		<img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18">
+	</a>
+	<a href="https://www.python.org/">
+		<img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3">
+	</a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb">
+		<img src="https://img.shields.io/badge/Font List-652-blue.svg" alt="Font List">
+	</a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb">
+		<img src="https://img.shields.io/badge/Art List-710-orange.svg" alt="Art List">
+	</a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb">
+		<img src="https://img.shields.io/badge/Decor List-218-green.svg" alt="Decor List">
+	</a>
+	<a href="https://t.me/artlib_bot" target="__blank">
+		<img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot">
+	</a>
+	<a href="https://anaconda.org/sepandhaghighi/art">
+		<img src="https://anaconda.org/sepandhaghighi/art/badges/version.svg" alt="Anaconda">
+	</a>
+	<a href="https://discord.com/invite/FAAyq3QJqP">
+		<img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel">
+	</a>
 </div>
 	
 ----------
-
-## Table of contents					
-   * [Overview](https://github.com/sepandhaghighi/art#overview)
-   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
-   * [Usage](https://github.com/sepandhaghighi/art#usage)
-   		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
-   		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
-   		* [Decoration](https://github.com/sepandhaghighi/art#decoration)
-   		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
-   		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
-   		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
-   		* [Testing](https://github.com/sepandhaghighi/art#testing)
-   		* [CLI](https://github.com/sepandhaghighi/art#cli)
-   		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
-   		* [Try ART in Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
-   		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
-   * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
-   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
-   * [Reference](https://github.com/sepandhaghighi/art#reference)
-   * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
-   * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
-   * [Acknowledgments](https://github.com/sepandhaghighi/art#acknowledgments)
-   * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
-   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
 
 ## Overview	
 ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
@@ -71,7 +62,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 		<td>1-Line-Art Counter</td>
 		<td id="art_counter">710</td>
 	</tr>
-    <tr align="center">
+	<tr align="center">
 		<td>Decor Counter</td>
 		<td id="decor_counter">218</td>
 	</tr>
@@ -882,9 +873,9 @@ If you do like our project and we hope that you do, can you please support us? O
 - Intended for medium-sized companies
 
 ## Acknowledgments
-Some parts of the infrastructure for this project are supported by:</p>
+Some parts of the infrastructure for this project are supported by:
 <p>
   <a href="https://www.digitalocean.com/">
-    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px" alt="DigitalOcean">
   </a>
 </p>
