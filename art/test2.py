@@ -649,6 +649,9 @@ knight2 :
 lilia :
 test
 <BLANKLINE>
+livia :
+եᥱsե
+<BLANKLINE>
 lopioo :
 ȶɛֆȶ
 <BLANKLINE>
@@ -694,6 +697,9 @@ ninja :
 old_italic :
 𐌕𐌄𐌔𐌕
 <BLANKLINE>
+ozana :
+𝙩𝒆𝙨𝙩
+<BLANKLINE>
 paranormal :
 tєst
 <BLANKLINE>
@@ -720,6 +726,9 @@ sarah :
 <BLANKLINE>
 scammer :
 těst
+<BLANKLINE>
+shanna :
+ṬЄꕷṬ
 <BLANKLINE>
 shasha :
 †€∫†
