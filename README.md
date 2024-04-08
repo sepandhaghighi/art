@@ -839,6 +839,7 @@ Just send your text to one of these bots. 👇👇👇👇
 29. [Font Copy and Paste](https://www.fontcopypaste.com/)
 30. [Mega Cool Text](http://megacooltext.com/)
 31. [ToolCalculator](https://www.toolcalculator.com/)
+32. [Copy Paste Fonts](https://copy-paste-fonts.top/)
 
 
 * Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
