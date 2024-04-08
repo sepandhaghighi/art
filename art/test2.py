@@ -4,6 +4,9 @@
 >>> import random
 >>> from art import *
 >>> font_list(mode="non-ascii")
+alissa :
+ꞎᥱടꞎ
+<BLANKLINE>
 antrophobia :
 тєѕт
 <BLANKLINE>
@@ -666,6 +669,9 @@ manga :
 <BLANKLINE>
 messletters :
 ᴛєѕᴛ
+<BLANKLINE>
+milka :
+ƭҽʂƭ
 <BLANKLINE>
 minion :
 ᴛᴇsᴛ
