@@ -129,14 +129,17 @@ if __name__ == "__main__":
             if font1_map == font2_map:
                 print(Error3 + font2)
                 sys.exit()
-    first_line_list = [x.split("\n")[0] in ["", " "] for x in font_dic.values()]
-    last_line_list = [x.split("\n")[-1] in ["", " "] for x in font_dic.values()]
+    first_line_list = [x.split("\n")[0] in ["", " "]
+                       for x in font_dic.values()]
+    last_line_list = [x.split("\n")[-1] in ["", " "]
+                      for x in font_dic.values()]
     for letter, letter_data in font_dic.items():
         letter_data_split = letter_data.split("\n")
         width_list = [len(x) for x in letter_data_split]
         if letter_data_split[-1] in ["", " "] and all(last_line_list):
             width_list = width_list[:-1]
-        if width_list and letter_data_split[0] in ["", " "] and all(first_line_list):
+        if width_list and letter_data_split[0] in [
+                "", " "] and all(first_line_list):
             width_list = width_list[1:]
         if len(set(width_list)) > 1:
             print(Error7.format(letter))
