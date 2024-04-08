@@ -938,7 +938,10 @@ NON_ASCII_FONTS = [
     "vaporwave",
     "emoji",
     "alissa",
-    "milka"
+    "milka",
+    "ozana",
+    "shanna",
+    "livia"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1577,7 +1580,10 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "vaporwave": [vaporwave_dic, False],
             "emoji": [emoji_dic, False],
             "alissa": [alissa_dic, False],
-            "milka": [milka_dic, False]
+            "milka": [milka_dic, False],
+            "ozana": [ozana_dic, False],
+            "shanna": [shanna_dic, False],
+            "livia": [livia_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
