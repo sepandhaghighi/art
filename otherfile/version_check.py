@@ -41,7 +41,7 @@ FILES = {
         "art_param.py"): PARAMS_ITEMS,
     os.path.join("otherfile", "meta.yaml"): META_ITEMS,
     os.path.join(".github", "ISSUE_TEMPLATE", "bug_report.yml"): ISSUE_TEMPLATE_ITEMS,
-    }
+}
 
 TEST_NUMBER = len(FILES) + 1
 

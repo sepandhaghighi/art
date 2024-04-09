@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- 5 new font
+	1. alissa
+	2. milka
+	3. ozana
+	4. shanna
+	5. livia
 - `decoration_request.yml` template
 - `font_request.yml` template
 - `one_line_request.yml` template
