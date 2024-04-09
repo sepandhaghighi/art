@@ -409,11 +409,7 @@ def indirect_decoration(decoration):
         decoration = random.choice(decorations)
         return decoration
     if decoration not in decorations:
-        decoration = min(
-            decorations,
-            key=lambda x: distance_calc(
-                decoration,
-                x))
+        decoration = min(decorations, key=lambda x: distance_calc(decoration, x))
     return decoration
 
 
