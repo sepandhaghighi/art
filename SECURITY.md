@@ -1,13 +1,13 @@
-# Security Policy
+# Security policy
 
-## Supported Versions
+## Supported versions
 
 | Version       | Supported          |
 | ------------- | ------------------ |
-| 4.2           | :white_check_mark: |
-| < 4.2         | :x:                |
+| 6.2           | :white_check_mark: |
+| < 6.1         | :x:                |
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
 Please report security vulnerabilities by email to [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site").
 
