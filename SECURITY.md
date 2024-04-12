@@ -12,5 +12,5 @@
 Please report security vulnerabilities by email to [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site").
 
 If the security vulnerability is accepted, a patch will be crafted privately
-in order to prepare a dedicated bugfix release as timely as possible (depending
+in order to prepare a dedicated bugfix release as soon as possible (depending
 on the complexity of the fix).
