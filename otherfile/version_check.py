@@ -29,11 +29,13 @@ FONT_LIST_ITEMS = ["### Version : {0}"]
 PARAMS_ITEMS = ['ART_VERSION = "{0}"']
 META_ITEMS = ['% set version = "{0}" %']
 ISSUE_TEMPLATE_ITEMS = ["- Art {0}"]
+SECURITY_ITEMS = ["| {0}           | :white_check_mark: |", "| < {0}         | :x:                |"]
 
 FILES = {
     "setup.py": SETUP_ITEMS,
     "INSTALL.md": INSTALL_ITEMS,
     "CHANGELOG.md": CHANGELOG_ITEMS,
+    "SECURITY.md": SECURITY_ITEMS,
     "FontList.ipynb": FONT_LIST_ITEMS,
     "ArtList.ipynb": ART_LIST_ITEMS,
     os.path.join(
