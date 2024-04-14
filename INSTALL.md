@@ -10,7 +10,7 @@
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==6.2` (Need root access)
+- `pip install art==6.2`
 
 ### Source code
 - Download [Version 6.2](https://github.com/sepandhaghighi/art/archive/v6.2.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
@@ -20,11 +20,11 @@
 
 #### Conda-Forge
 - Check [Conda-Forge](https://conda-forge.org)
-- `conda install -c conda-forge ascii-art ` (Need root access)
+- `conda install -c conda-forge ascii-art `
 
 #### Private channel
 - Check [Conda Managing Package](https://conda.io)
-- `conda install -c sepandhaghighi art ` (Need root access)
+- `conda install -c sepandhaghighi art `
 
 ### MATLAB
 
@@ -32,7 +32,7 @@
 - Download and install [Python3.x](https://www.python.org/downloads/) (>=3.5, 64/32 bit) 
 	- [x] Select `Add to PATH` option
 	- [x] Select `Install pip` option
-- Run `pip install art` (Need root access)
+- Run `pip install art`
 - Configure Python interpreter
 ```matlab
 >> pyversion PYTHON_EXECUTABLE_FULL_PATH
