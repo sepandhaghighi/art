@@ -6,7 +6,7 @@ import codecs
 from art.art_param import *
 
 Failed = 0
-VERSION = "6.1"
+VERSION = "6.2"
 
 README_ITEMS = ['<td id="font_counter">{0}</td>'.format(str(FONT_COUNTER)),
                 '<img src="https://img.shields.io/badge/Font List-{0}-blue.svg" alt="Font List">'.format(str(FONT_COUNTER)),

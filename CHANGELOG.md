@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [6.2] - 2024-04-22
 ### Added
 - 5 new font
 	1. alissa
@@ -2103,7 +2104,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.1...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.2...dev
+[6.2]: https://github.com/sepandhaghighi/art/compare/v6.1...v6.2
 [6.1]: https://github.com/sepandhaghighi/art/compare/v6.0...v6.1
 [6.0]: https://github.com/sepandhaghighi/art/compare/v5.9...v6.0
 [5.9]: https://github.com/sepandhaghighi/art/compare/v5.8...v5.9

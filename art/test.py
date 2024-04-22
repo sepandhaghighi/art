@@ -4426,11 +4426,11 @@ __o000o__(o)(o)__o000o__
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-         __       _
-__   __ / /_     / |
-\ \ / /| '_ \    | |
- \ V / | (_) | _ | |
-  \_/   \___/ (_)|_|
+         __       ____
+__   __ / /_     |___ \
+\ \ / /| '_ \      __) |
+ \ V / | (_) | _  / __/
+  \_/   \___/ (_)|_____|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
