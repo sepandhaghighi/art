@@ -15,9 +15,9 @@ requirements:
     host:
         - pip
         - setuptools
-        - python >=3.5
+        - python >=3.6
     run:
-        - python >=3.5
+        - python >=3.6
 about:
     home: https://github.com/sepandhaghighi/art
     license: MIT

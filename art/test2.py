@@ -4,6 +4,9 @@
 >>> import random
 >>> from art import *
 >>> font_list(mode="non-ascii")
+akila :
+ŦЄ$Ŧ
+<BLANKLINE>
 alissa :
 ꞎᥱടꞎ
 <BLANKLINE>
@@ -16,6 +19,9 @@ ascii_roman :
 atlantic :
 ϯεςϯ
 <BLANKLINE>
+awa :
+тєѕт
+<BLANKLINE>
 awcute :
 téśt
 <BLANKLINE>
@@ -24,6 +30,12 @@ awesome :
 <BLANKLINE>
 ayda :
 Ť∈ᏕŤ
+<BLANKLINE>
+batman :
+էεรէ
+<BLANKLINE>
+bianca :
+եɛsե
 <BLANKLINE>
 black_bubble :
 🅣🅔🅢🅣
@@ -45,6 +57,9 @@ tོeོsོtོ
 <BLANKLINE>
 bud2 :
 tཽeཽsཽtཽ
+<BLANKLINE>
+callian :
+ŧɇsŧ
 <BLANKLINE>
 carrier1 :
 TᕮST
@@ -640,11 +655,17 @@ t€$t
 instagram :
 🅣🅔🅢🅣
 <BLANKLINE>
+kesia :
+TΣST
+<BLANKLINE>
 knight :
 ṮḕṠṮ
 <BLANKLINE>
 knight2 :
 ṮḕṠṮ
+<BLANKLINE>
+laurine :
+ŤƐらŤ
 <BLANKLINE>
 lilia :
 test
@@ -652,8 +673,14 @@ test
 livia :
 եᥱsե
 <BLANKLINE>
+lolie :
+тєѕт
+<BLANKLINE>
 lopioo :
 ȶɛֆȶ
+<BLANKLINE>
+lord_of_the_ring :
+тєѕт
 <BLANKLINE>
 love1 :
 ƬƐSƬ
@@ -910,6 +937,9 @@ white_square :
 <BLANKLINE>
 wiggly :
 ⊥ÈS⊥
+<BLANKLINE>
+zakia :
+Ꚍ୧ઽꚌ
 <BLANKLINE>
 >>> art_list(mode="non-ascii")
 3
