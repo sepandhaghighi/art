@@ -943,7 +943,8 @@ NON_ASCII_FONTS = [
     "shanna",
     "livia",
     "lolie",
-    "zakia"
+    "zakia",
+    "batman"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1587,7 +1588,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "shanna": [shanna_dic, False],
             "livia": [livia_dic, False],
             "lolie": [lolie_dic, False],
-            "zakia": [zakia_dic, False]
+            "zakia": [zakia_dic, False],
+            "batman": [batman_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
