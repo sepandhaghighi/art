@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	8. bianca
 	9. callian
 	10. awa
+### Changed
+- `Python 3.5` support dropped
+- Test system modified
 ## [6.2] - 2024-04-22
 ### Added
 - 5 new font
