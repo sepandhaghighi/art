@@ -3,7 +3,7 @@
 import sys
 import art
 from art.params import DECORATIONS_MAP as Decor_Dict
-from art.art_dic import art_dic as Art_Dict
+from art.data.arts import art_dic as Art_Dict
 from art.params import NON_ASCII_ARTS
 from font_wizard import is_utf8, is_ascii
 

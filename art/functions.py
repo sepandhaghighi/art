@@ -3,9 +3,10 @@
 import os
 import random
 
-from .utils import distance_calc, indirect_font, indirect_decoration, mix_letters, line
+from .utils import distance_calc, indirect_font, indirect_decoration, line
 from .params import art_dic, standard_dic
-from .params import DEFAULT_FONT
+from .params import fancy1_dic
+from .params import DEFAULT_FONT, MIX_FILTERED_FONTS
 from .params import FONT_MAP, DECORATIONS_MAP
 from .params import ART_NAMES, DECORATION_NAMES, FONT_NAMES, UPPERCASE_FONTS, NON_ASCII_FONTS, RANDOM_FILTERED_ARTS
 from .params import NON_ASCII_ARTS
@@ -474,3 +475,17 @@ def art_list(mode="all"):
         print(i)
         aprint(i)
         line()
+
+
+def mix_letters():
+    """
+    Return letters list in mix mode.
+
+    :return: letters as list
+    """
+    letters = fancy1_dic.copy()
+    fonts = list(set(NON_ASCII_FONTS) - set(MIX_FILTERED_FONTS))
+    for i in letters:
+        random_font = random.choice(fonts)
+        letters[i] = get_font_dic(random_font)[i]
+    return letters

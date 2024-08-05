@@ -2,10 +2,9 @@
 """Art utility module."""
 import random
 
-from .params import fancy1_dic
 from .params import FONT_MAP
 from .params import DECORATION_NAMES, FONT_NAMES, NON_ASCII_FONTS
-from .params import RANDOM_FILTERED_FONTS, MIX_FILTERED_FONTS
+from .params import RANDOM_FILTERED_FONTS
 from .params import XLARGE_WIZARD_FONT, LARGE_WIZARD_FONT, MEDIUM_WIZARD_FONT, SMALL_WIZARD_FONT
 from .params import FONT_SMALL_THRESHOLD, FONT_MEDIUM_THRESHOLD, FONT_LARGE_THRESHOLD, TEXT_XLARGE_THRESHOLD
 from .params import TEXT_LARGE_THRESHOLD, TEXT_MEDIUM_THRESHOLD
@@ -114,20 +113,6 @@ def indirect_decoration(decoration):
     if decoration not in decorations:
         decoration = min(decorations, key=lambda x: distance_calc(decoration, x))
     return decoration
-
-
-def mix_letters():
-    """
-    Return letters list in mix mode.
-
-    :return: letters as list
-    """
-    letters = fancy1_dic.copy()
-    fonts = list(set(NON_ASCII_FONTS) - set(MIX_FILTERED_FONTS))
-    for i in letters:
-        random_font = random.choice(fonts)
-        letters[i] = get_font_dic(random_font)[i]
-    return letters
 
 
 def font_size_splitter(font_map):

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Art parameters."""
-from .text_dic1 import *
-from .text_dic2 import *
-from .text_dic3 import *
-from .decor_dic import *
-from .art_dic import *
+from .data.fonts1 import *
+from .data.fonts2 import *
+from .data.fonts3 import *
+from .data.arts import art_dic
+from .data.decorations import *
 
 ART_VERSION = "6.2"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover

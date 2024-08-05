@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .functions import tprint, tsave, aprint, art_list, font_list
+from .errors import artError
 from .params import FONT_MAP
 from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
 from .params import ART_VERSION, DESCRIPTION, CLI_HELP
