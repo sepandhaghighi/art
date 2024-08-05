@@ -18,13 +18,13 @@ def select_test(test_name="TEST"):
     """
     error_flag_2 = 0
     error_flag_1 = doctest.testfile(
-        "test.py",
+        os.path.join("tests", "test.py"),
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
         | doctest.IGNORE_EXCEPTION_DETAIL,
         verbose=False)[0]
     if test_name == "TEST2":
         error_flag_2 = doctest.testfile(
-            "test2.py",
+            os.path.join("tests", "test2.py"),
             optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
             verbose=False)[0]
     error_flag = error_flag_1 + error_flag_2
