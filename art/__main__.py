@@ -1,11 +1,25 @@
 # -*- coding: utf-8 -*-
 """Art main."""
-from .art import *
-from .params import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
+from .functions import tprint, tsave, aprint, art_list, font_list
+from .params import FONT_MAP
+from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
+from .params import ART_VERSION, DESCRIPTION, CLI_HELP
 import sys
 import doctest
 import os
 import zipfile
+
+
+def help_func():
+    """
+    Print help page.
+
+    :return: None
+    """
+    tprint("art")
+    tprint("v" + ART_VERSION)
+    print(DESCRIPTION)
+    print(CLI_HELP)
 
 
 def select_test(test_name="TEST"):
