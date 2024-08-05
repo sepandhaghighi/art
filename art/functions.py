@@ -10,6 +10,7 @@ from .params import DEFAULT_FONT, MIX_FILTERED_FONTS
 from .params import FONT_MAP, DECORATIONS_MAP
 from .params import ART_NAMES, DECORATION_NAMES, FONT_NAMES, UPPERCASE_FONTS, NON_ASCII_FONTS, RANDOM_FILTERED_ARTS
 from .params import NON_ASCII_ARTS
+from .params import DESCRIPTION, CLI_HELP, ART_VERSION
 from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, FONT_OR_DECOR_ENVIRONMENT_WARNING
 from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR_IGNORE_TYPE_ERROR, FILE_TYPE_ERROR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, DECORATION_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
@@ -489,3 +490,15 @@ def mix_letters():
         random_font = random.choice(fonts)
         letters[i] = get_font_dic(random_font)[i]
     return letters
+
+
+def help_func():
+    """
+    Print help page.
+
+    :return: None
+    """
+    tprint("art")
+    tprint("v" + ART_VERSION)
+    print(DESCRIPTION)
+    print(CLI_HELP)
