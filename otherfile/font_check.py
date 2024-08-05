@@ -3,14 +3,14 @@
 import itertools as it
 import sys
 import art
-from art.art_param import NON_ASCII_FONTS
+from art.params import NON_ASCII_FONTS
 from font_wizard import is_utf8, is_ascii
 
 Failed1 = 0
 Failed2 = 0
 Failed3 = 0
 Failed4 = 0
-Font_List = list(art.art_param.FONT_MAP)
+Font_List = list(art.params.FONT_MAP)
 Message1 = "Font height test "
 Message2 = "Font duplication test "
 Message3 = "Font UTF-8 compatibility test "

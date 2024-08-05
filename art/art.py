@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art module."""
 from .art_dic import *
-from .art_param import *
+from .params import *
 import os
 import random
 

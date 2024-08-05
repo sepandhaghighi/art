@@ -10,7 +10,7 @@
 	3. `SECURITY.md`
 	4. `otherfile/version_check.py`
 	5. `otherfile/meta.yaml`
-	6. `art/art_param.py`
+	6. `art/params.py`
 	7. `ArtList.ipynb`
 	8. `DecorList.ipynb`
 	9. `FontList.ipynb`

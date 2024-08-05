@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Art main."""
 from .art import *
-from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
+from .params import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
 import sys
 import doctest
 import os
