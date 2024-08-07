@@ -404,100 +404,100 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 96 new art
 	1. angry birds
 	2. angry face2
-  	1. angry troll
-  	2. at what cost
-  	3. barf
-  	4. basking in glory
-  	5. bear GTFO
-	3. bear squiting
-	4. boxing
-	5.  breakdown
-	6.  careless
-	7.  chasing
-	8.  cheers
-	9.  chicken
-	10. confused scratch
-	11. crazy
-	12. creeper
-	13. cry face
-	14. cry troll
-	15. cute face
-	16. dance2
-	17. dancing
-	18. dear god why
-	19. devious smile
-	20. disagree
-	21. discombobulated
-	22. dislike1
-	23. dislike2
-	24. do you even lift bro?
-	25. double flip
-	26. emo dance
-	27. excited
-	28. exorcism
-	29. eye roll
-	30. feel perky
-	31. fido
-	32. fight
-	33. fisticuffs
-	34. flip friend
-	35. fly away
-	36. flying
-	37. fuck you2
-	38. happy face
-	39. happy hug
-	40. hitchhicking
-	41. hugger
-	42. im a hugger
-	43. injured
-	44. innocent face
-	45. japanese lion face
-	46. judgemental
-	47. judging
-	48. kissing
-	49. kitty emote
-	50. listening to headphones
-	51. looking down
-	52. love3
-	53. meow
-	54. no support
-	55. opera
-	56. peepers
-	57. pretty eyes
-	58. put the table back
-	59. resting my eyes
-	60. robot3
-	61. running
-	62. sad and confused
-	63. sad and crying
-	64. sad face
-	65. satisfied
-	66. seal
-	67. shark face
-	68. shy
-	69. sleepy
-	70. staring
-	71. stranger danger
-	72. strut
-	73. stunna shades
-	74. surprised2
-	75. taking a dump
-	76. tgif
-	77. things that can_t be unseen
-	78. tidy up
-	79. tired
-	80. touchy feely
-	81. tripping out
-	82. trolling
-	83. wave dance
-	84. whisling
-	85. winnie the pooh
-	86. winning
-	87. wizard2
-	88. worried
-	89. yun
-	90. zombie2
-	91. zoned
+  	3. angry troll
+  	4. at what cost
+  	5. barf
+  	6. basking in glory
+  	7. bear GTFO
+	8. bear squiting
+	9. boxing
+	10. breakdown
+	11. careless
+	12. chasing
+	13. cheers
+	14. chicken
+	15. confused scratch
+	16. crazy
+	17. creeper
+	18. cry face
+	19. cry troll
+	20. cute face
+	21. dance2
+	22. dancing
+	23. dear god why
+	24. devious smile
+	25. disagree
+	26. discombobulated
+	27. dislike1
+	28. dislike2
+	29. do you even lift bro?
+	30. double flip
+	31. emo dance
+	32. excited
+	33. exorcism
+	34. eye roll
+	35. feel perky
+	36. fido
+	37. fight
+	38. fisticuffs
+	39. flip friend
+	40. fly away
+	41. flying
+	42. fuck you2
+	43. happy face
+	44. happy hug
+	45. hitchhicking
+	46. hugger
+	47. im a hugger
+	48. injured
+	49. innocent face
+	50. japanese lion face
+	51. judgemental
+	52. judging
+	53. kissing
+	54. kitty emote
+	55. listening to headphones
+	56. looking down
+	57. love3
+	58. meow
+	59. no support
+	60. opera
+	61. peepers
+	62. pretty eyes
+	63. put the table back
+	64. resting my eyes
+	65. robot3
+	66. running
+	67. sad and confused
+	68. sad and crying
+	69. sad face
+	70. satisfied
+	71. seal
+	72. shark face
+	73. shy
+	74. sleepy
+	75. staring
+	76. stranger danger
+	77. strut
+	78. stunna shades
+	79. surprised2
+	80. taking a dump
+	81. tgif
+	82. things that can_t be unseen
+	83. tidy up
+	84. tired
+	85. touchy feely
+	86. tripping out
+	87. trolling
+	88. wave dance
+	89. whisling
+	90. winnie the pooh
+	91. winning
+	92. wizard2
+	93. worried
+	94. yun
+	95. zombie2
+	96. zoned
 ### Changed
 - `surprised2` 1-line art renamed to `surprised3`
 - `art_decor_check.py` script updated
