@@ -29,6 +29,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Tests moved to `tests` directory
 - `Python 3.5` support dropped
 - Test system modified
+- `CONTRIBUTING.md` updated
+- `README.md` modified
 ## [6.2] - 2024-04-22
 ### Added
 - 5 new font
