@@ -7,7 +7,7 @@ import art
 import json
 
 Letters = string.ascii_letters + string.punctuation + string.digits
-Font_List = list(art.art_param.FONT_MAP)
+Font_List = list(art.params.FONT_MAP)
 
 INVALID_FONT_NAME = [
     "mix",
@@ -152,16 +152,16 @@ if __name__ == "__main__":
                 indent=4))
         print("- Add this dictionary to the end of `text_dic3.py`")
         print("- This font is {0} : ".format(ascii_flag))
-        print('\t1. Add "{0}": [{0}_dic, False] to the end of `FONT_MAP` dictionary in `art_param.py`'.format(
+        print('\t1. Add "{0}": [{0}_dic, False] to the end of `FONT_MAP` dictionary in `params.py`'.format(
             font_name))
         if ascii_flag == "ASCII":
             print("\t2. Add a new test case to `test.py`")
         else:
             print("\t2. Add a new test case to `test2.py`")
-            print('\t3. Add "{0}" to the end of `NON_ASCII_FONTS` list in `art_param.py`'.format(
+            print('\t3. Add "{0}" to the end of `NON_ASCII_FONTS` list in `params.py`'.format(
                 font_name))
             if font_height > 1:
-                print('\t4. Add "{0}" to the end of `MIX_FILTERED_FONTS` list in `art_param.py`'.format(
+                print('\t4. Add "{0}" to the end of `MIX_FILTERED_FONTS` list in `params.py`'.format(
                     font_name))
     else:
         print(Error2)

@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """Art main."""
-from .art import *
-from .art_param import FONT_MAP, ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
+from .functions import tprint, tsave, aprint, art_list, font_list, help_func
+from .errors import artError
+from .params import FONT_MAP
+from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING
 import sys
 import doctest
 import os
@@ -18,13 +20,13 @@ def select_test(test_name="TEST"):
     """
     error_flag_2 = 0
     error_flag_1 = doctest.testfile(
-        "test.py",
+        os.path.join("tests", "test.py"),
         optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
         | doctest.IGNORE_EXCEPTION_DETAIL,
         verbose=False)[0]
     if test_name == "TEST2":
         error_flag_2 = doctest.testfile(
-            "test2.py",
+            os.path.join("tests", "test2.py"),
             optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL,
             verbose=False)[0]
     error_flag = error_flag_1 + error_flag_2

@@ -4733,8 +4733,8 @@ True
 >>> Art6 = text2art(text2,"double")
 >>> text2 == text2_copy
 True
->>> from art.art import font_size_splitter
->>> from art.art_param import FONT_MAP,RANDOM_FILTERED_FONTS
+>>> from art.utils import font_size_splitter
+>>> from art.params import FONT_MAP,RANDOM_FILTERED_FONTS
 >>> font_dicts = font_size_splitter(FONT_MAP)
 >>> len(font_dicts["small_list"])>0
 True

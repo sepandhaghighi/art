@@ -1,7 +1,7 @@
 
 # Art Release Instructions
 
-#### Last Update: 2024-04-12
+#### Last Update: 2024-08-06
 
 1. Create the `release` branch under `dev`
 2. Update all version tags
@@ -10,11 +10,11 @@
 	3. `SECURITY.md`
 	4. `otherfile/version_check.py`
 	5. `otherfile/meta.yaml`
-	6. `art/art_param.py`
+	6. `art/params.py`
 	7. `ArtList.ipynb`
 	8. `DecorList.ipynb`
 	9. `FontList.ipynb`
-3. Update `help_func` function output in `test.py`
+3. Update `help_func` function output in `tests/test.py`
 4. Update all font counters in `README.md` (**If needed**)
 	1. `<img src="https://img.shields.io/badge/Font List-{font_counter}-blue.svg" alt="Font List">`
 	2. `<td id="font_counter">{font_counter}</td>`
