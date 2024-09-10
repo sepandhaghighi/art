@@ -22,10 +22,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `art_param` module changed to `params`
 - `art` module split into `errors`, `utils`, and `functions` modules
-- `text_dic1`, `text_dic2`, and `text_dic1` renamed to `fonts1`, `fonts2`, and `fonts3`
+- `text_dic1`, `text_dic2`, and `text_dic3` renamed to `fonts1`, `fonts2`, and `fonts3`
 - `art_dic` renamed to `arts`
 - `decor_dic` renamed to `decorations`
-- Fonts, art, and decorations moved to `data`
+- Fonts, arts, and decorations moved to `data` directory
 - Tests moved to `tests` directory
 - `Python 3.5` support dropped
 - Test system modified
