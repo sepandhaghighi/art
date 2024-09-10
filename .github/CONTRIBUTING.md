@@ -1,4 +1,4 @@
-# Contribution	
+# Contribution
 
 **Last Update: 2024-09-10**		
 
@@ -46,7 +46,7 @@ Please consider the following :
 	- Add a test case to `tests/test.py` (*Alphabetical order*)  
 	- Add font name to `RANDOM_FILTERED_FONTS` list to remove it from random modes (*Optional*)
 8. Re-run `FontList.ipynb`
-	- Before this step you should re-install `art` package : ```python setup.py install```
+	- Before this step you should re-install `art` package : ```pip install .```
 9. Update 2 font counters in `README.md`
 	- Badge section
 	- Overview section
@@ -66,7 +66,7 @@ Please consider the following :
 	- Add a test case to `tests/test.py` (*Alphabetical order*)
 	- Add 1-line art name to `RANDOM_FILTERED_ARTS` list to remove it from random mode (*Optional*)
 5. Re-run `ArtList.ipynb`
-	- Before this step you should re-install `art` package : ```python setup.py install```
+	- Before this step you should re-install `art` package : ```pip install .```
 6. Update 2 art counters in `README.md`
 	- Badge section
 	- Overview section
@@ -79,7 +79,7 @@ Please consider the following :
 3. Map decoration name and data in `DECORATIONS_MAP` dictionary
 4. Add a test case to `tests/test2.py` (*Alphabetical order*)
 5. Re-run `DecorList.ipynb`
-	- Before this step you should re-install `art` package : ```python setup.py install```
+	- Before this step you should re-install `art` package : ```pip install .```
 6. Update 2 decor counters in `README.md`
 	- Badge section
 	- Overview section
