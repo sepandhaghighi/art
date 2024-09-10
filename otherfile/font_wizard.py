@@ -150,14 +150,14 @@ if __name__ == "__main__":
                 font_dic,
                 ensure_ascii=False,
                 indent=4))
-        print("- Add this dictionary to the end of `text_dic3.py`")
+        print("- Add this dictionary to the end of `data/fonts3.py`")
         print("- This font is {0} : ".format(ascii_flag))
         print('\t1. Add "{0}": [{0}_dic, False] to the end of `FONT_MAP` dictionary in `params.py`'.format(
             font_name))
         if ascii_flag == "ASCII":
-            print("\t2. Add a new test case to `test.py`")
+            print("\t2. Add a new test case to `tests/test.py`")
         else:
-            print("\t2. Add a new test case to `test2.py`")
+            print("\t2. Add a new test case to `tests/test2.py`")
             print('\t3. Add "{0}" to the end of `NON_ASCII_FONTS` list in `params.py`'.format(
                 font_name))
             if font_height > 1:
