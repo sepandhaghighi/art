@@ -3,7 +3,7 @@
 from .data.fonts1 import *
 from .data.fonts2 import *
 from .data.fonts3 import *
-from .data.arts import art_dic
+from .data.arts import *
 from .data.decorations import *
 
 ART_VERSION = "6.2"  # pragma: no cover
