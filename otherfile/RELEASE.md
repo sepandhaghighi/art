@@ -41,7 +41,7 @@
 	6. Wait for all CI pass
 	7. Need review (**1** reviewer)
 11. Merge `dev` branch into `master`
-	1. Checkout to `master`
+	1. `git checkout master`
 	2. `git merge dev`
 	3. `git push origin master`
 	4. Wait for all CI pass
