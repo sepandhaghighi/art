@@ -863,6 +863,6 @@ Some parts of the infrastructure for this project are supported by:
   </a>
 </p>
 
-[Python Software Foundation (PSF)](https://www.python.org/psf/) grants ART library from version **3.6** to **4.0**. [PSF](https://www.python.org/psf/) is the organization behind Python. Their mission is to promote, protect, and advance the Python programming language and to support and facilitate the growth of a diverse and international community of Python programmers.
+[Python Software Foundation (PSF)](https://www.python.org/psf/) grants ART library from version **6.4** to **6.6**. [PSF](https://www.python.org/psf/) is the organization behind Python. Their mission is to promote, protect, and advance the Python programming language and to support and facilitate the growth of a diverse and international community of Python programmers.
 
 <a href="https://www.python.org/psf/"><img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/PSF.png" height="55px" alt="Python Software Foundation"></a>
