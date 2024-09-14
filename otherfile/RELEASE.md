@@ -1,7 +1,7 @@
 
 # Art Release Instructions
 
-**Last Update: 2024-09-10**
+**Last Update: 2024-09-14**
 
 1. Create the `release` branch under `dev`
 2. Update all version tags
@@ -78,7 +78,7 @@
 		1. `<img src="https://img.shields.io/badge/Decor List-{decor_counter}-green.svg" alt="Decor List">`
 		2. `<td id="decor_counter">{decor_counter}</td>`
 
-	9. Update `Reference` section (**If needed**)
+	9. Update `References` section (**If needed**)
 	10. Update code examples (**If needed**)
 		1. [http://www.hilite.me](http://www.hilite.me)
 		2. Python console session

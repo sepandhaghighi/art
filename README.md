@@ -788,7 +788,7 @@ Just send your text to one of these bots. 👇👇👇👇
 3. Website : [https://www.ascii-art.site](https://www.ascii-art.site)
 4. Email : [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site")
 
-## Reference    
+## References   
 
 1. [FIGlet](http://www.figlet.org/)
 2. [1 Line Art](http://1lineart.kulaone.com/#/)
