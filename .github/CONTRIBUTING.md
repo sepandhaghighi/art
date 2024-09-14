@@ -1,6 +1,6 @@
 # Contribution
 
-**Last Update: 2024-09-10**		
+**Last Update: 2024-09-14**		
 
 Changes and improvements are more than welcome! ❤️ Feel free to fork and open a pull request.
 
@@ -50,7 +50,7 @@ Please consider the following :
 9. Update 2 font counters in `README.md`
 	- Badge section
 	- Overview section
-10. Update `Reference` section in `README.md`
+10. Update `References` section in `README.md`
 11. Run `autopep8.bat`/`autopep8.sh` (*Optional*, need to install latest version of `autopep8` package)
 
 
@@ -70,7 +70,7 @@ Please consider the following :
 6. Update 2 art counters in `README.md`
 	- Badge section
 	- Overview section
-7. Update `Reference` section in `README.md`
+7. Update `References` section in `README.md`
 
 ## Decoration
 
@@ -83,4 +83,4 @@ Please consider the following :
 6. Update 2 decor counters in `README.md`
 	- Badge section
 	- Overview section
-7. Update `Reference` section in `README.md`
+7. Update `References` section in `README.md`
