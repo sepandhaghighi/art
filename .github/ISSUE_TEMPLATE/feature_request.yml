@@ -27,7 +27,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: aditional-context
+    id: additional-context
     attributes:
       label: Additional context
       placeholder: >
