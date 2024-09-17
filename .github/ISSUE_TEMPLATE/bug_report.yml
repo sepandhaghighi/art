@@ -85,6 +85,7 @@ body:
       label: Art version
       description: Which version of Art are you using?
       options:
+        - Art 6.3
         - Art 6.2
         - Art 6.1
         - Art 6.0

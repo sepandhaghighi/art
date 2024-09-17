@@ -1,4 +1,4 @@
-## Installation	
+## Installation
 
 ⚠️ **ART 6.1** is the last version to support **Python 3.5** officially	
 
@@ -10,10 +10,10 @@
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==6.2`
+- `pip install art==6.3`
 
 ### Source code
-- Download [Version 6.2](https://github.com/sepandhaghighi/art/archive/v6.2.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 6.3](https://github.com/sepandhaghighi/art/archive/v6.3.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `pip install .`
 
 ### Conda
