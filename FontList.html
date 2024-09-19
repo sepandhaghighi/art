@@ -13038,6 +13038,8 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
+}div#notebook-container{
+  padding: 6ex 12ex 8ex 12ex;
 }@media print {
   div.cell {
     display: block;
@@ -13083,23 +13085,21 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="ART">ART<a class="anchor-link" href="#ART">&#182;</a></h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Version-:-6.2">Version : 6.2<a class="anchor-link" href="#Version-:-6.2">&#182;</a></h3>
+<h3 id="Version-:-6.3">Version : 6.3<a class="anchor-link" href="#Version-:-6.3">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">art</span> <span class="k">import</span> <span class="o">*</span>
@@ -13110,8 +13110,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Font-Counter">Font Counter<a class="anchor-link" href="#Font-Counter">&#182;</a></h2>
 </div>
@@ -13119,7 +13118,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">FONT_COUNTER</span>
@@ -13132,16 +13131,12 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>657</pre>
+<pre>667</pre>
 </div>
 
 </div>
@@ -13150,24 +13145,21 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>⚠️ Some fonts don't support all characters</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>⚠️ From <code>Version 3.3</code> Non-ASCII fonts added (These fonts are not compatible with some environments)</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Font-List-(ASCII)">Font List (ASCII)<a class="anchor-link" href="#Font-List-(ASCII)">&#182;</a></h2>
 </div>
@@ -13175,7 +13167,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">font_list</span><span class="p">(</span><span class="s2">&quot;TEST123&quot;</span><span class="p">,</span><span class="s2">&quot;ascii&quot;</span><span class="p">)</span>
@@ -13188,11 +13180,7 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1943 : 
@@ -16774,8 +16762,7 @@ zone7 :
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Font-List-(Non-ASCII)">Font List (Non-ASCII)<a class="anchor-link" href="#Font-List-(Non-ASCII)">&#182;</a></h2>
 </div>
@@ -16783,7 +16770,7 @@ zone7 :
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">font_list</span><span class="p">(</span><span class="s2">&quot;TEST123&quot;</span><span class="p">,</span><span class="s2">&quot;non-ascii&quot;</span><span class="p">)</span>
@@ -16796,14 +16783,13 @@ zone7 :
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>alissa : 
+<pre>akila : 
+TEST123
+
+alissa : 
 ꞎᥱടꞎ123
 
 antrophobia : 
@@ -16815,6 +16801,9 @@ ascii_roman :
 atlantic : 
 ϯεςϯ123
 
+awa : 
+ƬƐSƬ123
+
 awcute : 
 TÉśT123
 
@@ -16823,6 +16812,12 @@ TEST123
 
 ayda : 
 Ť∈ᏕŤ123
+
+batman : 
+TEST123
+
+bianca : 
+TƐST123
 
 black_bubble : 
 🅣🅔🅢🅣➊➋➌
@@ -16844,6 +16839,9 @@ TོEོSོTོ1ོ2ོ3ོ
 
 bud2 : 
 TཽEཽSཽTཽ1ཽ2ཽ3ཽ
+
+callian : 
+ŦɆSŦ1ƻ3
 
 carrier1 : 
 TᕮST123
@@ -17439,11 +17437,17 @@ T£§T123
 instagram : 
 🅣🅔🅢🅣❶❷❸
 
+kesia : 
+TEST123
+
 knight : 
 ṮḕṠṮ123
 
 knight2 : 
 ṮḔṠṮ123
+
+laurine : 
+TEST123
 
 lilia : 
 TEST123
@@ -17451,7 +17455,13 @@ TEST123
 livia : 
 Ʈᗴ𐒖Ʈ123
 
+lolie : 
+ƬƐSƬ123
+
 lopioo : 
+TEST123
+
+lord_of_the_ring : 
 TEST123
 
 love1 : 
@@ -17709,6 +17719,9 @@ white_square :
 
 wiggly : 
 TEST123
+
+zakia : 
+Ꚍ୧ઽꚌ123
 
 </pre>
 </div>
