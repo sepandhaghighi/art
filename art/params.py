@@ -954,7 +954,8 @@ NON_ASCII_FONTS = [
     "awa",
     "neva",
     "smila",
-    "clay"
+    "clay",
+    "orinda"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1609,7 +1610,8 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "awa": [awa_dic, False],
             "neva": [neva_dic, False],
             "smila": [smila_dic, False],
-            "clay": [clay_dic, False]
+            "clay": [clay_dic, False],
+            "orinda": [orinda_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
