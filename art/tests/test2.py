@@ -726,7 +726,6 @@ native_lands :
 <BLANKLINE>
 neva :
 ੮૯ട੮
-
 <BLANKLINE>
 ninja :
 ⱦēꞩⱦ
