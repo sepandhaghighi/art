@@ -4,6 +4,9 @@
 >>> import random
 >>> from art import *
 >>> font_list(mode="non-ascii")
+abby :
+ТΞꚂТ
+<BLANKLINE>
 akila :
 ŦЄ$Ŧ
 <BLANKLINE>
@@ -75,6 +78,9 @@ chinese_mafia :
 <BLANKLINE>
 cjk :
 イモらイ
+<BLANKLINE>
+clay :
+Ł୧ꚂŁ
 <BLANKLINE>
 contouring1 :
 ⓣⓔⓢⓣ
@@ -718,11 +724,18 @@ monospace :
 native_lands :
 ƬꍟꌗƬ
 <BLANKLINE>
+neva :
+੮૯ട੮
+
+<BLANKLINE>
 ninja :
 ⱦēꞩⱦ
 <BLANKLINE>
 old_italic :
 𐌕𐌄𐌔𐌕
+<BLANKLINE>
+orinda :
+ꞎ𝚎𐒖ꞎ
 <BLANKLINE>
 ozana :
 𝙩𝒆𝙨𝙩
@@ -777,6 +790,9 @@ smallcaps2 :
 <BLANKLINE>
 smallcaps3 :
 ᴛᴇsᴛ
+<BLANKLINE>
+smila :
+𝑡୧𐍃𝑡
 <BLANKLINE>
 smooth1 :
 тєѕт
