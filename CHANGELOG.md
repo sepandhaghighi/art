@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- 5 new font
+	1. abby
+	2. clay
+	3. neva
+	4. orinda
+	5. smila
 ## [6.3] - 2024-09-19
 ### Added
 - `data` directory
