@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	3. neva
 	4. orinda
 	5. smila
+### Changed
+- `Python 3.13` added to `test.yml`
 ## [6.3] - 2024-09-19
 ### Added
 - `data` directory
