@@ -15,6 +15,7 @@ from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, FONT_OR_D
 from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR_IGNORE_TYPE_ERROR, FILE_TYPE_ERROR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
+from .params import LENGTH_TYPE_ERROR, LENGTH_RANGE_ERROR, HEIGHT_TYPE_ERROR, HEIGHT_RANGE_ERROR, CHAR_TYPE_ERROR
 from .errors import artError
 
 
@@ -258,6 +259,33 @@ def lprint(length=15, height=1, char='#'):
     except artError as e:
         print(str(e))
 
+
+def line(length=15, height=1, char='#'):
+    """
+    Generate a grid (length X height) of the given character.
+
+    :param length: the grid length
+    :type length: int
+    :param height: the grid height
+    :type height: int
+    :param char: target character to generate a grid of
+    :type char: str
+    :return: generated grid as str
+    """
+    if not isinstance(length, int):
+        raise artError(LENGTH_TYPE_ERROR)
+    if not isinstance(height, int):
+        raise artError(HEIGHT_TYPE_ERROR)
+    if not isinstance(char, str) or len(char) != 1:
+        raise artError(CHAR_TYPE_ERROR)
+    
+    if length < 1:
+        raise artError(LENGTH_RANGE_ERROR)
+    if height < 1:
+        raise artError(HEIGHT_RANGE_ERROR)
+
+    line_str = char * length
+    return "\n".join([line_str for _ in range(height)])
 
 
 def decor(decoration, reverse=False, both=False):
