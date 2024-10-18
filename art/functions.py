@@ -278,7 +278,7 @@ def line(length=15, height=1, char='#'):
         raise artError(HEIGHT_TYPE_ERROR)
     if not isinstance(char, str) or len(char) != 1:
         raise artError(CHAR_TYPE_ERROR)
-    
+
     if length < 1:
         raise artError(LENGTH_RANGE_ERROR)
     if height < 1:
