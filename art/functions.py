@@ -240,6 +240,26 @@ def aprint(artname, number=1, space=1):
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
+def lprint(length=15, height=1, char='#'):
+    """
+    Print a grid (length X height) of the given character.
+
+    :param length: the grid length
+    :type length: int
+    :param height: the grid height
+    :type height: int
+    :param char: target character to print a grid of
+    :type char: str
+    :return: None
+    """
+    try:
+        grid = line(length, height, char)
+        print(grid)
+    except artError as e:
+        print(str(e))
+
+
+
 def decor(decoration, reverse=False, both=False):
     """
     Return given decoration part.
