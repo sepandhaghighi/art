@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- `line` function
+- `lprint` function
 - 5 new font
 	1. abby
 	2. clay
