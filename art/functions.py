@@ -3,7 +3,7 @@
 import os
 import random
 
-from .utils import distance_calc, indirect_font, indirect_decoration, line
+from .utils import distance_calc, indirect_font, indirect_decoration
 from .params import art_dic, standard_dic
 from .params import fancy1_dic
 from .params import DEFAULT_FONT, MIX_FILTERED_FONTS
@@ -483,7 +483,7 @@ def decor_list(text="test", font="fancy6"):
     for decor in DECORATION_NAMES:
         print(decor)
         tprint(text, font=font, decoration=decor)
-        line()
+        lprint(length=30, char="*")
 
 
 def font_list(text="test", mode="all"):
@@ -523,7 +523,7 @@ def art_list(mode="all"):
     for i in sorted(arts):
         print(i)
         aprint(i)
-        line()
+        lprint(length=30, char="*")
 
 
 def mix_letters():

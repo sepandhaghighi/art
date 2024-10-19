@@ -142,16 +142,4 @@ def font_size_splitter(font_map):
         "xlarge_list": xlarge_font}
 
 
-def line(char="*", number=30):
-    """
-    Print line of chars.
-
-    :param char: input character
-    :type char:str
-    :param number: number of characters
-    :return: None
-    """
-    print(char * number)
-
-
 RND_SIZE_DICT = font_size_splitter(FONT_MAP)  # pragma: no cover
