@@ -249,7 +249,7 @@ def lprint(length=15, height=1, char='#'):
     :type length: int
     :param height: the grid height
     :type height: int
-    :param char: target character to print a grid of
+    :param char: target character
     :type char: str
     :return: None
     """
@@ -268,7 +268,7 @@ def line(length=15, height=1, char='#'):
     :type length: int
     :param height: the grid height
     :type height: int
-    :param char: target character to generate a grid of
+    :param char: target character
     :type char: str
     :return: generated grid as str
     """
