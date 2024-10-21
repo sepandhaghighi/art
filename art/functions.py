@@ -276,7 +276,7 @@ def line(length=15, height=1, char='#'):
         raise artError(LENGTH_TYPE_ERROR)
     if not isinstance(height, int):
         raise artError(HEIGHT_TYPE_ERROR)
-    if not isinstance(char, str) or len(char) != 1:
+    if not isinstance(char, str):
         raise artError(CHAR_TYPE_ERROR)
 
     if length < 1:
@@ -285,7 +285,7 @@ def line(length=15, height=1, char='#'):
         raise artError(HEIGHT_RANGE_ERROR)
 
     line_str = char * length
-    return "\n".join([line_str for _ in range(height)])
+    return "\n".join([line_str] * height)
 
 
 def decor(decoration, reverse=False, both=False):
