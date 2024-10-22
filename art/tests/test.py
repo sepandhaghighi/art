@@ -5,6 +5,15 @@
 >>> import sys
 >>> from art import *
 >>> import string
+>>> lprint(length=10, height=1, char="#")
+##########
+>>> lprint(length=15, height=2, char="*")
+***************
+***************
+>>> line(length=10, height=1, char="#")
+'##########'
+>>> line(length=15, height=2, char="*")
+'***************\n***************'
 >>> tprint("\t\t2","block")
 <BLANKLINE>
  .----------------.

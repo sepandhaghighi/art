@@ -3,7 +3,7 @@
 import os
 import random
 
-from .utils import distance_calc, indirect_font, indirect_decoration, line
+from .utils import distance_calc, indirect_font, indirect_decoration
 from .params import art_dic, standard_dic
 from .params import fancy1_dic
 from .params import DEFAULT_FONT, MIX_FILTERED_FONTS
@@ -15,6 +15,7 @@ from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, FONT_OR_D
 from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR_IGNORE_TYPE_ERROR, FILE_TYPE_ERROR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
+from .params import LENGTH_TYPE_ERROR, LENGTH_RANGE_ERROR, HEIGHT_TYPE_ERROR, HEIGHT_RANGE_ERROR, CHAR_TYPE_ERROR
 from .errors import artError
 
 
@@ -240,6 +241,53 @@ def aprint(artname, number=1, space=1):
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
+def lprint(length=15, height=1, char='#'):
+    """
+    Print a grid (length X height) of the given character.
+
+    :param length: the grid length
+    :type length: int
+    :param height: the grid height
+    :type height: int
+    :param char: target character
+    :type char: str
+    :return: None
+    """
+    try:
+        grid = line(length, height, char)
+        print(grid)
+    except artError as e:
+        print(str(e))
+
+
+def line(length=15, height=1, char='#'):
+    """
+    Generate a grid (length X height) of the given character.
+
+    :param length: the grid length
+    :type length: int
+    :param height: the grid height
+    :type height: int
+    :param char: target character
+    :type char: str
+    :return: generated grid as str
+    """
+    if not isinstance(length, int):
+        raise artError(LENGTH_TYPE_ERROR)
+    if not isinstance(height, int):
+        raise artError(HEIGHT_TYPE_ERROR)
+    if not isinstance(char, str):
+        raise artError(CHAR_TYPE_ERROR)
+
+    if length < 1:
+        raise artError(LENGTH_RANGE_ERROR)
+    if height < 1:
+        raise artError(HEIGHT_RANGE_ERROR)
+
+    line_str = char * length
+    return "\n".join([line_str] * height)
+
+
 def decor(decoration, reverse=False, both=False):
     """
     Return given decoration part.
@@ -435,7 +483,7 @@ def decor_list(text="test", font="fancy6"):
     for decor in DECORATION_NAMES:
         print(decor)
         tprint(text, font=font, decoration=decor)
-        line()
+        lprint(length=30, char="*")
 
 
 def font_list(text="test", mode="all"):
@@ -475,7 +523,7 @@ def art_list(mode="all"):
     for i in sorted(arts):
         print(i)
         aprint(i)
-        line()
+        lprint(length=30, char="*")
 
 
 def mix_letters():
