@@ -343,7 +343,9 @@ Filename: test.txt
 * Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 * Note3 : Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
 
-### 4. lprint
+## Line
+
+### 1. lprint
 
 This function prints a grid (`length` by `height`) of any given character.
 ```pycon
@@ -354,6 +356,18 @@ This function prints a grid (`length` by `height`) of any given character.
 
 * Note1: This feature has been added since `Version 6.4`.
 * Note2: The default values are `length=15`, `height=1`, `char='#'`.
+
+### 2. line
+
+This function return a grid (`length` by `height`) of any given character as `str` in and raise `artError` in exception.
+```pycon	
+>>> line(length=15, height=2, char="*")
+'***************\n***************'
+```
+
+* Note1: This feature has been added since `Version 6.4`.
+* Note2: The default values are `length=15`, `height=1`, `char='#'`.
+
 
 ### Decoration
 
