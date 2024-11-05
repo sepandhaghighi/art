@@ -359,7 +359,7 @@ This function prints a grid (`length` by `height`) of any given character.
 
 #### 2. line
 
-This function return a grid (`length` by `height`) of any given character as `str` in and raise `artError` in exception.
+This function returns a grid (`length` by `height`) of any given character as `str` in normal mode and raise `artError` in exception.
 ```pycon	
 >>> line(length=15, height=2, char="*")
 '***************\n***************'
