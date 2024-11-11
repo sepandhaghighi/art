@@ -30,7 +30,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr align="center">
 		<td>PyPI Counter</td>
-		<td><a href="http://pepy.tech/project/art"><img src="http://pepy.tech/badge/art"></a></td>
+		<td><a href="https://pepy.tech/projects/art"><img src="https://static.pepy.tech/badge/art" alt="PyPI Downloads"></a></td>
 	</tr>
 	<tr align="center">
 		<td>Github Stars</td>
