@@ -15,7 +15,7 @@ from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, FONT_OR_D
 from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR_IGNORE_TYPE_ERROR, FILE_TYPE_ERROR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
-from .params import LENGTH_TYPE_ERROR, LENGTH_RANGE_ERROR, HEIGHT_TYPE_ERROR, HEIGHT_RANGE_ERROR, CHAR_TYPE_ERROR
+from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR
 from .errors import artError
 
 
@@ -272,17 +272,12 @@ def line(length=15, height=1, char='#'):
     :type char: str
     :return: generated grid as str
     """
-    if not isinstance(length, int):
-        raise artError(LENGTH_TYPE_ERROR)
-    if not isinstance(height, int):
-        raise artError(HEIGHT_TYPE_ERROR)
+    if not isinstance(length, int) or length < 1:
+        raise artError(LINE_LENGTH_ERROR)
+    if not isinstance(height, int) or height < 1:
+        raise artError(LINE_HEIGHT_ERROR)
     if not isinstance(char, str):
         raise artError(CHAR_TYPE_ERROR)
-
-    if length < 1:
-        raise artError(LENGTH_RANGE_ERROR)
-    if height < 1:
-        raise artError(HEIGHT_RANGE_ERROR)
 
     line_str = char * length
     return "\n".join([line_str] * height)

@@ -32,10 +32,8 @@ ART_ENVIRONMENT_WARNING = "[Warning] '{0}' art is not printable in this environm
 FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' font is not printable in this environment."
 FONT_OR_DECOR_ENVIRONMENT_WARNING = "[Warning] '{0}' font or '{1}' decoration is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
-HEIGHT_TYPE_ERROR = "The 'height' type must be int."
-HEIGHT_RANGE_ERROR = "The 'height' parameter should be >= 1."
-LENGTH_TYPE_ERROR = "The 'length' type must be int."
-LENGTH_RANGE_ERROR = "The 'length' parameter should be >= 1."
+LINE_LENGTH_ERROR = "The 'length' must be an int higher than 0."
+LINE_HEIGHT_ERROR = "The 'height' must be an int higher than 0."
 CHAR_TYPE_ERROR = "The 'char' type must be str."
 
 CLI_HELP = """
