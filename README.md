@@ -347,7 +347,7 @@ Filename: test.txt
 
 #### 1. lprint
 
-This function prints a grid (`length` by `height`) of any given character.
+This function prints a grid (`length` by `height`) of any given character in normal mode and raise `artError` in exception.
 ```pycon
 >>> lprint(length=15, height=2, char="*")
 ***************
