@@ -743,7 +743,17 @@ _/  _   _ _/
 		<td align="center">text2art</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-	</tr>	
+	</tr>
+	<tr>
+		<td align="center">lprint</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center">line</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+	</tr>
 	<tr>
 		<td align="center">set_default</td>
 		<td align="center">None</td>
