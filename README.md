@@ -354,8 +354,8 @@ This function prints a grid (`length` by `height`) of any given character in nor
 ***************
 ```
 
-* Note1: This feature has been added since `Version 6.4`
-* Note2: The default values are `length=15`, `height=1`, `char='#'`
+* Note1 : New in `Version 6.4`
+* Note2 : The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
 
@@ -365,8 +365,8 @@ This function returns a grid (`length` by `height`) of any given character as `s
 '***************\n***************'
 ```
 
-* Note1: This feature has been added since `Version 6.4`
-* Note2: The default values are `length=15`, `height=1`, `char='#'`
+* Note1 : New in `Version 6.4`
+* Note2 : The default values are `length=15`, `height=1`, `char='#'`
 
 
 ### Decoration
