@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - PyPI badge in `README.md`
 - GitHub actions are limited to the `dev` and `master` branches
 - `Python 3.13` added to `test.yml`
+- `README.md` modified
 ## [6.3] - 2024-09-19
 ### Added
 - `data` directory

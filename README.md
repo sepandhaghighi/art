@@ -347,15 +347,15 @@ Filename: test.txt
 
 #### 1. lprint
 
-This function prints a grid (`length` by `height`) of any given character.
+This function prints a grid (`length` by `height`) of any given character in normal mode and raise `artError` in exception.
 ```pycon
 >>> lprint(length=15, height=2, char="*")
 ***************
 ***************
 ```
 
-* Note1: This feature has been added since `Version 6.4`
-* Note2: The default values are `length=15`, `height=1`, `char='#'`
+* Note1 : New in `Version 6.4`
+* Note2 : The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
 
@@ -365,8 +365,8 @@ This function returns a grid (`length` by `height`) of any given character as `s
 '***************\n***************'
 ```
 
-* Note1: This feature has been added since `Version 6.4`
-* Note2: The default values are `length=15`, `height=1`, `char='#'`
+* Note1 : New in `Version 6.4`
+* Note2 : The default values are `length=15`, `height=1`, `char='#'`
 
 
 ### Decoration
@@ -743,7 +743,17 @@ _/  _   _ _/
 		<td align="center">text2art</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-	</tr>	
+	</tr>
+	<tr>
+		<td align="center">lprint</td>
+		<td align="center">None</td>
+		<td align="center">raise artError</td>
+	</tr>
+	<tr>
+		<td align="center">line</td>
+		<td align="center">str</td>
+		<td align="center">raise artError</td>
+	</tr>
 	<tr>
 		<td align="center">set_default</td>
 		<td align="center">None</td>

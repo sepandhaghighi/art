@@ -11,7 +11,17 @@
 ***************
 ***************
 >>> lprint(length=0, height=1, char="#")
-The 'length' must be an int higher than 0.
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'length' must be an int higher than 0.
+>>> lprint(length=15, height='test', char="#")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'height' must be an int higher than 0.
+>>> lprint(length=15, height=2, char=4)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'char' type must be str.
 >>> line(length=10, height=1, char="#")
 '##########'
 >>> line(length=15, height=2, char="*")

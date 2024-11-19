@@ -253,11 +253,8 @@ def lprint(length=15, height=1, char='#'):
     :type char: str
     :return: None
     """
-    try:
-        grid = line(length, height, char)
-        print(grid)
-    except artError as e:
-        print(str(e))
+    grid = line(length, height, char)
+    print(grid)
 
 
 def line(length=15, height=1, char='#'):
