@@ -3,7 +3,7 @@
 	<br/>
 	<br/>
 	<a href="https://codecov.io/gh/sepandhaghighi/art"><img src="https://codecov.io/gh/sepandhaghighi/art/branch/master/graph/badge.svg" alt="Codecov"></a>
-	<a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI" height="18"></a>
+	<a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI"></a>
 	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
 	<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-672-blue.svg" alt="Font List"></a>
 	<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-710-orange.svg" alt="Art List"></a>
@@ -146,9 +146,11 @@ art.art.artError: The 'number' type must be int.
 '✌(◕‿-)✌ '
 ```	
 
-* Note1 : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
-* Note2 : Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
-* Note3 : Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
+ℹ️ Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+
+ℹ️ Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
+
+ℹ️ Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
 
 ### ASCII text
 	
@@ -339,9 +341,11 @@ Saved!
 Filename: test.txt                        
 ```
 
-* Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
-* Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
-* Note3 : Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
+ℹ️ Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+
+ℹ️ Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
+
+ℹ️ Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
 
 ### Line
 
@@ -354,8 +358,9 @@ This function prints a grid (`length` by `height`) of any given character in nor
 ***************
 ```
 
-* Note1 : New in `Version 6.4`
-* Note2 : The default values are `length=15`, `height=1`, `char='#'`
+ℹ️ New in `Version 6.4`
+
+ℹ️ The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
 
@@ -365,8 +370,9 @@ This function returns a grid (`length` by `height`) of any given character as `s
 '***************\n***************'
 ```
 
-* Note1 : New in `Version 6.4`
-* Note2 : The default values are `length=15`, `height=1`, `char='#'`
+ℹ️ New in `Version 6.4`
+
+ℹ️ The default values are `length=15`, `height=1`, `char='#'`
 
 
 ### Decoration
@@ -395,7 +401,7 @@ Traceback (most recent call last):
 art.art.artError: The 'decoration' type must be str.
 ```
 
-* Note : Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
+ℹ️ Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
@@ -447,7 +453,7 @@ Randomly select from small fonts.
 
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-small")
@@ -463,7 +469,7 @@ Randomly select from medium fonts.
 
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-medium")
@@ -484,7 +490,7 @@ Randomly select from large fonts.
 
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-large")
@@ -509,7 +515,7 @@ Randomly select from xlarge fonts.
 
 Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test","rnd-xlarge")
@@ -545,7 +551,7 @@ This mode consider length of input text to select font
 
 Keywords : `wizard`, `wiz` & `magic`
 
-* Note : New in `Version 2.9`
+ℹ️ New in `Version 2.9`
 
 ```pycon
 >>> tprint("1","wizard")
@@ -593,7 +599,7 @@ Randomly select from Non-ASCII fonts.
 
 Keywords : `random-na`, `rand-na` & `rnd-na`
 
-* Note : New in `Version 3.4`
+ℹ️ New in `Version 3.4`
 
 ```pycon
 >>> tprint("test","random-na")
@@ -609,7 +615,7 @@ Randomly mix Non-ASCII fonts.
 
 Keywords : `mix`
 
-* Note : New in `Version 3.7`
+ℹ️ New in `Version 3.7`
 
 ```pycon
 >>> tprint("test","mix")
@@ -704,25 +710,25 @@ _/  _   _ _/
              
 
 ```
-* Note : Functions error response updated in `Version 0.8`
 
-	<table>
+ℹ️ Functions error response updated in `Version 0.8`
+
+
+<table>
 	<tr>
 		<td align="center">Function</td>
 		<td align="center">Normal Output</td>
 		<td align="center">Error</td>
 	</tr>
-    <tr>
+	<tr>
 		<td align="center">decor</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-
 	</tr>
 	<tr>
 		<td align="center">art</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-
 	</tr>
 	<tr>
 		<td align="center">aprint</td>
@@ -759,7 +765,7 @@ _/  _   _ _/
 		<td align="center">None</td>
 		<td align="center">raise artError</td>
 	</tr>	
-	</table> 
+</table> 
 
 ### Testing
 - Only ASCII fonts and arts :
@@ -859,8 +865,6 @@ Just send your text to one of these bots. 👇👇👇👇
 31. [ToolCalculator](https://www.toolcalculator.com/)
 32. [Copy Paste Fonts](https://copy-paste-fonts.top/)
 
-
-* Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
 
 ## Show your support
 								
