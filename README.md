@@ -147,7 +147,9 @@ art.art.artError: The 'number' type must be int.
 ```	
 
 ℹ️ Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+
 ℹ️ Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
+
 ℹ️ Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
 
 ### ASCII text
@@ -340,7 +342,9 @@ Filename: test.txt
 ```
 
 ℹ️ Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+
 ℹ️ Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
+
 ℹ️ Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
 
 ### Line
@@ -355,6 +359,7 @@ This function prints a grid (`length` by `height`) of any given character in nor
 ```
 
 ℹ️ New in `Version 6.4`
+
 ℹ️ The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
@@ -366,6 +371,7 @@ This function returns a grid (`length` by `height`) of any given character as `s
 ```
 
 ℹ️ New in `Version 6.4`
+
 ℹ️ The default values are `length=15`, `height=1`, `char='#'`
 
 
