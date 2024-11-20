@@ -146,9 +146,9 @@ art.art.artError: The 'number' type must be int.
 '✌(◕‿-)✌ '
 ```	
 
-* Note1 : Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
-* Note2 : Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
-* Note3 : Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
+ℹ️ Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+ℹ️ Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
+ℹ️ Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
 
 ### ASCII text
 	
@@ -339,9 +339,9 @@ Saved!
 Filename: test.txt                        
 ```
 
-* Note1 : Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
-* Note2 : Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
-* Note3 : Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
+ℹ️ Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+ℹ️ Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
+ℹ️ Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
 
 ### Line
 
@@ -354,8 +354,8 @@ This function prints a grid (`length` by `height`) of any given character in nor
 ***************
 ```
 
-* Note1 : New in `Version 6.4`
-* Note2 : The default values are `length=15`, `height=1`, `char='#'`
+ℹ️ New in `Version 6.4`
+ℹ️ The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
 
@@ -365,8 +365,8 @@ This function returns a grid (`length` by `height`) of any given character as `s
 '***************\n***************'
 ```
 
-* Note1 : New in `Version 6.4`
-* Note2 : The default values are `length=15`, `height=1`, `char='#'`
+ℹ️ New in `Version 6.4`
+ℹ️ The default values are `length=15`, `height=1`, `char='#'`
 
 
 ### Decoration
@@ -395,7 +395,7 @@ Traceback (most recent call last):
 art.art.artError: The 'decoration' type must be str.
 ```
 
-* Note : Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
+ℹ️ Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
@@ -447,7 +447,7 @@ Randomly select from small fonts.
 
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-small")
@@ -463,7 +463,7 @@ Randomly select from medium fonts.
 
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-medium")
@@ -484,7 +484,7 @@ Randomly select from large fonts.
 
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-large")
@@ -509,7 +509,7 @@ Randomly select from xlarge fonts.
 
 Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
-* Note : New in `Version 2.8`
+ℹ️ New in `Version 2.8`
 
 ```pycon
 >>> tprint("test","rnd-xlarge")
@@ -545,7 +545,7 @@ This mode consider length of input text to select font
 
 Keywords : `wizard`, `wiz` & `magic`
 
-* Note : New in `Version 2.9`
+ℹ️ New in `Version 2.9`
 
 ```pycon
 >>> tprint("1","wizard")
@@ -593,7 +593,7 @@ Randomly select from Non-ASCII fonts.
 
 Keywords : `random-na`, `rand-na` & `rnd-na`
 
-* Note : New in `Version 3.4`
+ℹ️ New in `Version 3.4`
 
 ```pycon
 >>> tprint("test","random-na")
@@ -609,7 +609,7 @@ Randomly mix Non-ASCII fonts.
 
 Keywords : `mix`
 
-* Note : New in `Version 3.7`
+ℹ️ New in `Version 3.7`
 
 ```pycon
 >>> tprint("test","mix")
@@ -704,7 +704,7 @@ _/  _   _ _/
              
 
 ```
-* Note : Functions error response updated in `Version 0.8`
+ℹ️ Functions error response updated in `Version 0.8`
 
 	<table>
 	<tr>
