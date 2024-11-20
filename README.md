@@ -710,9 +710,11 @@ _/  _   _ _/
              
 
 ```
+
 ℹ️ Functions error response updated in `Version 0.8`
 
-	<table>
+
+<table>
 	<tr>
 		<td align="center">Function</td>
 		<td align="center">Normal Output</td>
@@ -765,7 +767,7 @@ _/  _   _ _/
 		<td align="center">None</td>
 		<td align="center">raise artError</td>
 	</tr>	
-	</table> 
+</table> 
 
 ### Testing
 - Only ASCII fonts and arts :
