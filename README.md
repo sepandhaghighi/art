@@ -730,7 +730,6 @@ _/  _   _ _/
 		<td align="center">art</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-
 	</tr>
 	<tr>
 		<td align="center">aprint</td>
