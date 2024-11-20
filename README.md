@@ -724,7 +724,6 @@ _/  _   _ _/
 		<td align="center">decor</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
-
 	</tr>
 	<tr>
 		<td align="center">art</td>
