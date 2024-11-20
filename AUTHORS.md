@@ -6,7 +6,7 @@
 
 # Other Contributors
 ----------
-- [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh) ++
+- [Arta Khanali](https://www.linkedin.com/in/artakhanali/) ++
 - [@heidecjj](https://github.com/heidecjj)
 - [@noobkoder](https://github.com/n00bkoder)
 - [@codewithnick](https://github.com/codewithnick)
