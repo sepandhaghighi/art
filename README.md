@@ -720,7 +720,7 @@ _/  _   _ _/
 		<td align="center">Normal Output</td>
 		<td align="center">Error</td>
 	</tr>
-    <tr>
+	<tr>
 		<td align="center">decor</td>
 		<td align="center">str</td>
 		<td align="center">raise artError</td>
