@@ -6,7 +6,11 @@
 
 # Other Contributors
 ----------
+- [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh) ++
 - [@heidecjj](https://github.com/heidecjj)
 - [@noobkoder](https://github.com/n00bkoder)
 - [@codewithnick](https://github.com/codewithnick)
 - [@eumiro](https://github.com/eumiro)
+
+
+++ **Graphic designer**

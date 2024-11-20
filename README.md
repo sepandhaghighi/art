@@ -860,8 +860,6 @@ Just send your text to one of these bots. 👇👇👇👇
 32. [Copy Paste Fonts](https://copy-paste-fonts.top/)
 
 
-* Logo designed by [Arta Khanalizadeh](https://www.linkedin.com/in/artakhanalizadeh)	
-
 ## Show your support
 								
 <h3>Star this repo</h3>					
