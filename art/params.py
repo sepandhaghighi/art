@@ -6,7 +6,7 @@ from .data.fonts3 import *
 from .data.arts import *
 from .data.decorations import *
 
-ART_VERSION = "6.3"  # pragma: no cover
+ART_VERSION = "6.4"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover

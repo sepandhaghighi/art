@@ -35,7 +35,7 @@ def read_description():
 setup(
     name='art',
     packages=['art', 'art.data', 'art.tests'],
-    version='6.3',
+    version='6.4',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',
