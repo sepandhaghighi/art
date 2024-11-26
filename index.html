@@ -52,6 +52,7 @@
             <ol>
                 <li><a href="#1-Line-art">1-Line Art</a></li>
                 <li><a href="#ascii-text">ASCII Text</a></li>
+                <li><a href="#line">Line</a></li>
                 <li><a href="#decoration">Decoration</a></li>
                 <li><a href="#font-modes">Font Modes</a></li>
                 <li><a href="#typo-tolerance">Typo-Tolerance</a></li>
@@ -580,6 +581,27 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)</p>
 </pre></td></tr></table></div>
 <p><span class="red">Note1</span> : Use <code>FONT_NAMES</code> to access all fonts name list (new in <code>Version 4.2</code>)</p>
 <p><span class="red">Note2</span> : Use <code>NON_ASCII_FONTS</code> to access all Non-ASCII fonts name list (new in <code>Version 4.4</code>)</p>
+</div>
+<h2 id="line">Line</h2>
+<div class="indent">
+<h3>1. lprint</h3>
+<p>This function prints a grid (<i>length</i> by <i>height</i>) of any given character in normal mode and raise <b>artError</b> in exception.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>lprint(length<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">15</span>, height<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">2</span>, char<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;*&quot;</span>)
+<span style="color: #888888">***************</span>
+<span style="color: #888888">***************</span>
+</pre></td></tr></table></div>
+<p>⚠️ New in <code>Version 6.4</code></p>
+<p>⚠️ The default values are <code>length=15</code>, <code>height=1</code>, <code>char='#'</code></p>
+<h3>2. line</h3>
+<p>This function returns a grid (<i>length</i> by <i>height</i>) of any given character as <b>str</b> in normal mode and raise <b>artError</b> in exception.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #c65d09; font-weight: bold">&gt;&gt;&gt; </span>line(length<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">15</span>, height<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">2</span>, char<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;*&quot;</span>)
+<span style="color: #888888">&#39;***************\n***************&#39;</span>
+</pre></td></tr></table></div>
+<p>⚠️ New in <code>Version 6.4</code></p>
+<p>⚠️ The default values are <code>length=15</code>, <code>height=1</code>, <code>char='#'</code></p>
 </div>
 <h2 id="decoration">Decoration</h2>
 <p>⚠️ Some environments don't support all decorations</p>
