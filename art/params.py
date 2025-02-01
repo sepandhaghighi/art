@@ -653,7 +653,8 @@ NON_ASCII_ARTS = [
     'swim2',
     'swim3',
     'yawning',
-    'boobs2']
+    'boobs2',
+    'bored']
 
 RANDOM_FILTERED_ARTS = [] + NON_ASCII_ARTS
 
