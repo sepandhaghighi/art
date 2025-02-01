@@ -12,6 +12,7 @@
 - [@codewithnick](https://github.com/codewithnick)
 - [@eumiro](https://github.com/eumiro)
 - [@AHReccese](https://github.com/AHReccese)
+- [@wcupped](https://github.com/wcupped)
 
 
 ++ **Graphic designer**
