@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - 1 new 1-line-art
 	1. bored
+### Changed
+- `README.md` modified
 ## [6.4] - 2024-11-26
 ### Added
 - `line` function
