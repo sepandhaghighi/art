@@ -61,8 +61,8 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr>
 		<td align="center">CI</td>
-		<td align="center"><img src="https://github.com/sepandhaghighi/art/workflows/CI/badge.svg?branch=master"></td>
-		<td align="center"><img src="https://github.com/sepandhaghighi/art/workflows/CI/badge.svg?branch=dev"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/art/actions/workflows/test.yml/badge.svg?branch=master"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/art/actions/workflows/test.yml/badge.svg?branch=dev"></td>
 	</tr>
 </table>
 
