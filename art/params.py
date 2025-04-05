@@ -960,7 +960,12 @@ NON_ASCII_FONTS = [
     "smila",
     "clay",
     "orinda",
-    "abby"
+    "abby",
+    "youna",
+    "samya",
+    "veronika",
+    "hisoka",
+    "hideki"
 ]
 
 RANDOM_FILTERED_FONTS = [
@@ -1617,7 +1622,12 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "smila": [smila_dic, False],
             "clay": [clay_dic, False],
             "orinda": [orinda_dic, False],
-            "abby": [abby_dic, False]
+            "abby": [abby_dic, False],
+            "youna": [youna_dic, False],
+            "samya": [samya_dic, False],
+            "veronika": [veronika_dic, False],
+            "hisoka": [hisoka_dic, False],
+            "hideki": [hideki_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
