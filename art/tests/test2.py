@@ -838,6 +838,9 @@ subscript2 :
 sunday_cuddle :
 тєѕт
 <BLANKLINE>
+sunny :
+тḙṧт
+<BLANKLINE>
 superscript :
 ᵗᵉˢᵗ
 <BLANKLINE>
