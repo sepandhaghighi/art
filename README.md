@@ -6,7 +6,7 @@
 	<a href="https://badge.fury.io/py/art"><img src="https://badge.fury.io/py/art.svg" alt="PyPI"></a>
 	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
 	<a href="https://github.com/sepandhaghighi/art"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/sepandhaghighi/art"></a>
-	<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-677-blue.svg" alt="Font List"></a>
+	<a href="https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb"><img src="https://img.shields.io/badge/Font List-676-blue.svg" alt="Font List"></a>
 	<a href="https://github.com/sepandhaghighi/art/blob/master/ArtList.ipynb"><img src="https://img.shields.io/badge/Art List-711-orange.svg" alt="Art List"></a>
 	<a href="https://github.com/sepandhaghighi/art/blob/master/DecorList.ipynb"><img src="https://img.shields.io/badge/Decor List-218-green.svg" alt="Decor List"></a>
 	<a href="https://t.me/artlib_bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot"></a>
@@ -39,7 +39,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 	<tr align="center">
 		<td>Font Counter</td>
-		<td id="font_counter">677</td>
+		<td id="font_counter">676</td>
 	</tr>
 	<tr align="center">
 		<td>1-Line-Art Counter</td>
