@@ -8,12 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - 1 new 1-line-art
 	1. bored
-- 5 new font
+- 4 new font
 	1. hideki
 	2. hisoka
 	3. samya
 	4. veronika
-	5. youna
 ### Changed
 - `README.md` modified
 ## [6.4] - 2024-11-26

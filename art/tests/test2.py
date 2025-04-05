@@ -965,9 +965,6 @@ white_square :
 wiggly :
 ⊥ÈS⊥
 <BLANKLINE>
-youna :
-TᏋꚂT
-<BLANKLINE>
 zakia :
 Ꚍ୧ઽꚌ
 <BLANKLINE>
