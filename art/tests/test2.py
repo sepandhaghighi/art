@@ -649,11 +649,17 @@ handwriting3 :
 hazy :
 ŤƐらŤ
 <BLANKLINE>
+hideki :
+丁乇丂丁
+<BLANKLINE>
 high_above :
 ᵗᵉˢᵗ
 <BLANKLINE>
 hippie :
 ⊥ε﹩⊥
+<BLANKLINE>
+hisoka :
+ｲ乇らｲ
 <BLANKLINE>
 hyves :
 t€$t
@@ -759,6 +765,9 @@ TΞST
 <BLANKLINE>
 russian2 :
 ƬƎƧƬ
+<BLANKLINE>
+samya :
+ꞎ୧𐒖ꞎ
 <BLANKLINE>
 sarah :
 ᏆℰЅᏆ
@@ -941,6 +950,9 @@ upside_down2 :
 vaporwave :
 ｔｅｓｔ
 <BLANKLINE>
+veronika :
+TᏋꚂT
+<BLANKLINE>
 vip :
 ƬΣƧƬ
 <BLANKLINE>
@@ -952,6 +964,9 @@ white_square :
 <BLANKLINE>
 wiggly :
 ⊥ÈS⊥
+<BLANKLINE>
+youna :
+TᏋꚂT
 <BLANKLINE>
 zakia :
 Ꚍ୧ઽꚌ
