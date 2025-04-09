@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	5. sunny
 ### Changed
 - `README.md` modified
+- `Python 3.6` support dropped
+- Test system modified
 ## [6.4] - 2024-11-26
 ### Added
 - `line` function
