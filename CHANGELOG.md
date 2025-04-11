@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	4. veronika
 	5. sunny
 ### Changed
+- Python typing features added to all modules
 - `README.md` modified
 - `Python 3.6` support dropped
 - Test system modified
