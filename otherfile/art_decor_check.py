@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Art and decors duplication and UTF-8 compatibility testing script."""
+from typing import List
 import sys
 import art
 from art.params import DECORATIONS_MAP as Decor_Dict
@@ -17,15 +18,12 @@ Message3 = "Decor UTF-8 compatibility test "
 Message4 = "Decor duplication test "
 
 
-def print_result(flag_list, message_list):
+def print_result(flag_list: List[int], message_list: List[str]) -> None:
     """
     Print final result.
 
     :param flag_list: list of test flags
-    :type flag_list: list
     :param message_list: list of test messages
-    :type message_list: list
-    :return: None
     """
     print("Art version : {}".format(art.__version__))
     print("Number of arts : {}".format(art.ART_COUNTER))
