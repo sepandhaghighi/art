@@ -286,7 +286,7 @@ def tsave(
         decoration: Optional[str] = None,
         sep: str = "\n",
         space: int = 0) -> Dict[str, Any]:
-    """
+    r"""
     Save ascii art (support \n).
 
     :param text: input text
