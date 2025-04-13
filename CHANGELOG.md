@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Python typing features added to all modules
 ## [6.5] - 2025-04-12
 ### Added
 - 1 new 1-line-art
@@ -16,7 +18,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 	4. veronika
 	5. sunny
 ### Changed
-- Python typing features added to all modules
 - `README.md` modified
 - `Python 3.6` support dropped
 - Test system modified
