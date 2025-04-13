@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Setup module."""
+from typing import List
 try:
     from setuptools import setup
 except ImportError:
@@ -12,13 +13,13 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
     ART is a Python lib for text converting to ASCII art fancy.'''
 
 
-def get_dev_requires():
+def get_dev_requires() -> List[str]:
     """Read dev-requirements.txt."""
     requirements = open("dev-requirements.txt", "r").read()
     return [x for x in requirements.split() if x]
 
 
-def read_description():
+def read_description() -> str:
     """Read README.md and CHANGELOG.md."""
     try:
         with open("README.md") as r:

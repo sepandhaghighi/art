@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Art utility module."""
+from typing import Dict, List
 import random
 
 from .params import FONT_MAP
@@ -10,14 +11,12 @@ from .params import FONT_SMALL_THRESHOLD, FONT_MEDIUM_THRESHOLD, FONT_LARGE_THRE
 from .params import TEXT_LARGE_THRESHOLD, TEXT_MEDIUM_THRESHOLD
 
 
-def distance_calc(s1, s2):
+def distance_calc(s1: str, s2: str) -> int:
     """
     Calculate Levenshtein distance between two words.
 
     :param s1: first word
-    :type s1 : str
     :param s2: second word
-    :type s2 : str
     :return: distance between two word
 
     References :
@@ -40,13 +39,11 @@ def distance_calc(s1, s2):
     return distances[-1]
 
 
-def wizard_font(text):
+def wizard_font(text: str) -> str:
     """
     Check input text length for wizard mode.
 
     :param text: input text
-    :type text:str
-    :return: font as str
     """
     text_length = len(text)
     if text_length <= TEXT_XLARGE_THRESHOLD:
@@ -60,15 +57,12 @@ def wizard_font(text):
     return font
 
 
-def indirect_font(font, text):
+def indirect_font(font: str, text: str) -> str:
     """
     Check input font for indirect modes.
 
     :param font: input font
-    :type font : str
     :param text: input text
-    :type text:str
-    :return: font as str
     """
     fonts = FONT_NAMES
     if font in ["rnd-small", "random-small", "rand-small"]:
@@ -98,13 +92,11 @@ def indirect_font(font, text):
     return font
 
 
-def indirect_decoration(decoration):
+def indirect_decoration(decoration: str) -> str:
     """
     Check input decoration for indirect modes.
 
     :param decoration: input decoration
-    :type decoration : str
-    :return: decoration as str
     """
     decorations = DECORATION_NAMES
     if decoration in ["random", "rand", "rnd"]:
@@ -115,13 +107,11 @@ def indirect_decoration(decoration):
     return decoration
 
 
-def font_size_splitter(font_map):
+def font_size_splitter(font_map: Dict[str, List]) -> Dict[str, List[str]]:
     """
-    Split fonts to 4 category (small,medium,large,xlarge) by maximum length of letter in each font.
+    Split fonts to 4 category (small, medium, large, xlarge) by maximum length of letter in each font.
 
     :param font_map: input fontmap
-    :type font_map : dict
-    :return: splitted fonts as dict
     """
     small_font, medium_font, large_font, xlarge_font = [], [], [], []
     fonts = set(font_map) - set(RANDOM_FILTERED_FONTS)
