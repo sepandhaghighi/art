@@ -12,10 +12,10 @@
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==6.4`
+- `pip install art==6.5`
 
 ### Source code
-- Download [Version 6.4](https://github.com/sepandhaghighi/art/archive/v6.4.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- Download [Version 6.5](https://github.com/sepandhaghighi/art/archive/v6.5.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
 - `pip install .`
 
 ### Conda

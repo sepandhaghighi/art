@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [6.5] - 2025-04-12
 ### Added
 - 1 new 1-line-art
 	1. bored
@@ -2160,7 +2161,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.4...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.5...dev
+[6.5]: https://github.com/sepandhaghighi/art/compare/v6.4...v6.5
 [6.4]: https://github.com/sepandhaghighi/art/compare/v6.3...v6.4
 [6.3]: https://github.com/sepandhaghighi/art/compare/v6.2...v6.3
 [6.2]: https://github.com/sepandhaghighi/art/compare/v6.1...v6.2
