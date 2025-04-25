@@ -43,13 +43,11 @@ Error6 = "[Error] This font name is not available"
 Error7 = "[Error] All lines in a letter should have same width (letter : {0})"
 
 
-def is_utf8(s):
+def is_utf8(s: str) -> bool:
     """
     Check input string for UTF-8 compatibility.
 
     :param s: input string
-    :type s: str
-    :return: result as bool
     """
     try:
         if sys.version_info.major == 3:
@@ -61,13 +59,11 @@ def is_utf8(s):
         return False
 
 
-def is_ascii(s):
+def is_ascii(s: str) -> bool:
     """
     Check input string for ASCII compatibility.
 
     :param s: input string
-    :type s: str
-    :return: result as bool
     """
     for i in s:
         if ord(i) > 127:

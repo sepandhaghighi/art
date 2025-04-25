@@ -10,13 +10,11 @@ import os
 import zipfile
 
 
-def select_test(test_name="TEST"):
+def select_test(test_name: str = "TEST") -> None:
     """
     Select proper test mode.
 
     :param test_name: test name
-    :type test_name: str
-    :return: None
     """
     error_flag_2 = 0
     error_flag_1 = doctest.testfile(
@@ -38,12 +36,8 @@ def select_test(test_name="TEST"):
         sys.exit(error_flag)
 
 
-def main():
-    """
-    CLI main function.
-
-    :return: None
-    """
+def main() -> None:
+    """CLI main function."""
     args = sys.argv
     if len(args) > 1:
         if args[1].upper() == "TEST":

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Art function module."""
+from typing import List, Dict, Optional, Union, Any
 import os
 import random
 
@@ -19,23 +20,22 @@ from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR
 from .errors import artError
 
 
-def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
+def __word2art(
+        word: str,
+        font: str,
+        chr_ignore: bool,
+        letters: Dict[str, str],
+        next_word: bool,
+        sep: str = "\n") -> str:
     """
-    Return art word.
+    Return ascii art word.
 
     :param word: input word
-    :type word: str
     :param font: input font
-    :type font: str
     :param chr_ignore: ignore not supported character
-    :type chr_ignore: bool
     :param letters: font letters table
-    :type letters: dict
     :param next_word: next word flag
-    :type next_word: bool
     :param sep: line separator char
-    :type sep: str
-    :return: ascii art as str
     """
     split_list = []
     result_list = []
@@ -70,31 +70,23 @@ def __word2art(word, font, chr_ignore, letters, next_word, sep="\n"):
 
 
 def text2art(
-        text,
-        font=DEFAULT_FONT,
-        chr_ignore=True,
-        decoration=None,
-        sep="\n",
-        space=0,
-        __detailed_return=False):
+        text: str,
+        font: str = DEFAULT_FONT,
+        chr_ignore: bool = True,
+        decoration: str = None,
+        sep: str = "\n",
+        space: int = 0,
+        __detailed_return: bool = False) -> str:
     r"""
-    Return art text (support \n).
+    Return ascii art text (support \n).
 
     :param text: input text
-    :type text:str
     :param font: input font
-    :type font:str
     :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
     :param decoration: text decoration
-    :type decoration:str
     :param sep: line separator char
-    :type sep: str
     :param space: space between characters
-    :type space: int
     :param __detailed_return: flag for returning the font and the decoration
-    :type __detailed_return: bool
-    :return: ascii art text as str
     """
     letters = standard_dic
     if not isinstance(text, str):
@@ -134,28 +126,21 @@ def text2art(
 
 
 def tprint(
-        text,
-        font=DEFAULT_FONT,
-        chr_ignore=True,
-        decoration=None,
-        sep="\n",
-        space=0):
+        text: str,
+        font: str = DEFAULT_FONT,
+        chr_ignore: bool = True,
+        decoration: Optional[str] = None,
+        sep: str = "\n",
+        space: int = 0) -> None:
     r"""
     Print art text (support \n).
 
     :param text: input text
-    :type text:str
     :param font: input font
-    :type font:str
     :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
     :param decoration: text decoration
-    :type decoration:str
     :param sep: line separator char
-    :type sep: str
     :param space: space between characters
-    :type space: int
-    :return: None
     """
     try:
         if font == "UnicodeEncodeError":
@@ -177,19 +162,18 @@ def tprint(
             print(FONT_ENVIRONMENT_WARNING.format(font))
 
 
-def art(artname, number=1, space=1, __detailed_return=False):
+def art(
+        artname: str,
+        number: int = 1,
+        space: int = 1,
+        __detailed_return: bool = False) -> str:
     """
-    Return 1-line art.
+    Return 1-line ascii art.
 
     :param artname: art name
-    :type artname : str
     :param number: number of repeats
-    :type number: int
     :param space: space between arts
-    :type space: int
     :param __detailed_return: flag for returning the art name
-    :type __detailed_return: bool
-    :return: ascii art as str
     """
     if not isinstance(artname, str):
         raise artError(ART_TYPE_ERROR)
@@ -218,17 +202,13 @@ def art(artname, number=1, space=1, __detailed_return=False):
     return result
 
 
-def aprint(artname, number=1, space=1):
+def aprint(artname: str, number: int = 1, space: int = 1) -> None:
     """
     Print 1-line art.
 
     :param artname: art name
-    :type artname : str
     :param number: number of repeats
-    :type number: int
     :param space: space between arts
-    :type space: int
-    :return: None
     """
     try:
         if artname == "UnicodeEncodeError":
@@ -241,33 +221,25 @@ def aprint(artname, number=1, space=1):
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def lprint(length=15, height=1, char='#'):
+def lprint(length: int = 15, height: int = 1, char: str = '#') -> None:
     """
     Print a grid (length X height) of the given character.
 
     :param length: the grid length
-    :type length: int
     :param height: the grid height
-    :type height: int
     :param char: target character
-    :type char: str
-    :return: None
     """
     grid = line(length, height, char)
     print(grid)
 
 
-def line(length=15, height=1, char='#'):
+def line(length: int = 15, height: int = 1, char: str = '#') -> str:
     """
     Generate a grid (length X height) of the given character.
 
     :param length: the grid length
-    :type length: int
     :param height: the grid height
-    :type height: int
     :param char: target character
-    :type char: str
-    :return: generated grid as str
     """
     if not isinstance(length, int) or length < 1:
         raise artError(LINE_LENGTH_ERROR)
@@ -280,17 +252,13 @@ def line(length=15, height=1, char='#'):
     return "\n".join([line_str] * height)
 
 
-def decor(decoration, reverse=False, both=False):
+def decor(decoration: str, reverse: bool = False, both: bool = False) -> Union[str, List[str]]:
     """
     Return given decoration part.
 
     :param  decoration: decoration's name
-    :type decoration:str
     :param reverse: true if second tail of decoration wanted
-    :type reverse:bool
     :param both: both tails returning flag
-    :type bool: bool
-    :return: decor's tail as str or tails as list of str
     """
     if not isinstance(decoration, str):
         raise artError(DECORATION_TYPE_ERROR)
@@ -303,47 +271,33 @@ def decor(decoration, reverse=False, both=False):
     return DECORATIONS_MAP[decoration][0]
 
 
-def randart():
-    """
-    Return random 1-line art.
-
-    :return: ascii art as str
-    """
+def randart() -> str:
+    """Return random 1-line ascii art."""
     return art("random")
 
 
 def tsave(
-        text,
-        font=DEFAULT_FONT,
-        filename="art",
-        chr_ignore=True,
-        print_status=True,
-        overwrite=False,
-        decoration=None,
-        sep="\n",
-        space=0):
+        text: str,
+        font: str = DEFAULT_FONT,
+        filename: str = "art",
+        chr_ignore: bool = True,
+        print_status: bool = True,
+        overwrite: bool = False,
+        decoration: Optional[str] = None,
+        sep: str = "\n",
+        space: int = 0) -> Dict[str, Any]:
     r"""
     Save ascii art (support \n).
 
     :param text: input text
     :param font: input font
-    :type font:str
-    :type text:str
     :param filename: output file name
-    :type filename:str
     :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
     :param print_status : save message print flag
-    :type print_status:bool
     :param overwrite : overwrite the saved file if true
-    :type overwrite:bool
     :param decoration: text decoration
-    :type decoration:str
     :param sep: line separator char
-    :type sep: str
     :param space: space between characters
-    :type space: int
-    :return: None
     """
     try:
         if not isinstance(text, str):
@@ -382,37 +336,27 @@ def tsave(
 
 
 def set_default(
-        font=DEFAULT_FONT,
-        chr_ignore=True,
-        filename="art",
-        print_status=True,
-        overwrite=False,
-        decoration=None,
-        sep="\n",
-        space=0,
-        __detailed_return=False):
+        font: str = DEFAULT_FONT,
+        chr_ignore: bool = True,
+        filename: str = "art",
+        print_status: bool = True,
+        overwrite: bool = False,
+        decoration: Optional[str] = None,
+        sep: str = "\n",
+        space: int = 0,
+        __detailed_return: bool = False) -> None:
     """
     Change text2art, tprint and tsave default values.
 
     :param font: input font
-    :type font:str
     :param chr_ignore: ignore not supported character
-    :type chr_ignore:bool
     :param filename: output file name (only tsave)
-    :type filename:str
     :param print_status : save message print flag (only tsave)
-    :type print_status:bool
     :param overwrite : overwrite the saved file if true (only tsave)
-    :type overwrite:bool
     :param decoration: input decoration
-    :type decoration:str
     :param sep: line separator char
-    :type sep: str
     :param space: space between characters
-    :type space: int
     :param __detailed_return: flag for returning the font and the decoration
-    :type __detailed_return: bool
-    :return: None
     """
     if not isinstance(font, str):
         raise artError(FONT_TYPE_ERROR)
@@ -451,26 +395,21 @@ def set_default(
         __detailed_return)
 
 
-def get_font_dic(font_name):
+def get_font_dic(font_name: str) -> Dict[str, str]:
     """
     Return given font's dictionary.
 
     :param  font_name: font's name
-    :type font_name:str
-    :return: font's dictionary
     """
     return FONT_MAP[font_name][0]
 
 
-def decor_list(text="test", font="fancy6"):
+def decor_list(text: str = "test", font: str = "fancy6") -> None:
     """
     Print all decorations.
 
     :param text : input text
-    :type text : str
     :param font: input font
-    :type font:str
-    :return: None
     """
     for decor in DECORATION_NAMES:
         print(decor)
@@ -478,15 +417,12 @@ def decor_list(text="test", font="fancy6"):
         lprint(length=30, char="*")
 
 
-def font_list(text="test", mode="all"):
+def font_list(text: str = "test", mode: str = "all") -> None:
     """
     Print all fonts.
 
     :param text : input text
-    :type text : str
-    :param mode: fonts mode (all,ascii,non-ascii)
-    :type mode: str
-    :return: None
+    :param mode: fonts mode (all, ascii, non-ascii)
     """
     fonts = set(FONT_NAMES)
     if mode.lower() == "ascii":
@@ -499,13 +435,11 @@ def font_list(text="test", mode="all"):
         tprint(text_temp, str(item))
 
 
-def art_list(mode="all"):
+def art_list(mode: str = "all") -> None:
     """
     Print all 1-Line arts.
 
-    :param mode: fonts mode (all,ascii,non-ascii)
-    :type mode: str
-    :return: None
+    :param mode: fonts mode (all, ascii, non-ascii)
     """
     arts = set(ART_NAMES)
     if mode.lower() == "ascii":
@@ -518,12 +452,8 @@ def art_list(mode="all"):
         lprint(length=30, char="*")
 
 
-def mix_letters():
-    """
-    Return letters list in mix mode.
-
-    :return: letters as list
-    """
+def mix_letters() -> Dict[str, str]:
+    """Return letters in mix mode."""
     letters = fancy1_dic.copy()
     fonts = list(set(NON_ASCII_FONTS) - set(MIX_FILTERED_FONTS))
     for i in letters:
@@ -532,12 +462,8 @@ def mix_letters():
     return letters
 
 
-def help_func():
-    """
-    Print help page.
-
-    :return: None
-    """
+def help_func() -> None:
+    """Print help page."""
     tprint("art")
     tprint("v" + ART_VERSION)
     print(DESCRIPTION)
