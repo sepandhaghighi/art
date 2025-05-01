@@ -3,8 +3,9 @@
 from typing import List, Dict, Optional, Union, Any
 import os
 import random
+import time
 
-from .utils import distance_calc, indirect_font, indirect_decoration
+from .utils import distance_calc, indirect_font, indirect_decoration, move_back_cursor
 from .params import art_dic, standard_dic
 from .params import fancy1_dic
 from .params import DEFAULT_FONT, MIX_FILTERED_FONTS
@@ -17,6 +18,7 @@ from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
 from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR
+from .params import DEFAULT_DELAY, PrintingMode
 from .errors import artError
 
 
@@ -131,7 +133,9 @@ def tprint(
         chr_ignore: bool = True,
         decoration: Optional[str] = None,
         sep: str = "\n",
-        space: int = 0) -> None:
+        space: int = 0,
+        mode: PrintingMode = PrintingMode.DEFAULT,
+        delay: float = DEFAULT_DELAY) -> None:
     r"""
     Print art text (support \n).
 
@@ -141,20 +145,42 @@ def tprint(
     :param decoration: text decoration
     :param sep: line separator char
     :param space: space between characters
+    :param mode: printing effect mode
+    :param delay: delay between effects
     """
     try:
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
         result, font, decoration = text2art(
-            text,
-            font=font,
-            decoration=decoration,
-            chr_ignore=chr_ignore,
-            sep=sep,
-            space=space,
-            __detailed_return=True)
-        print(result)
+                text,
+                font=font,
+                decoration=decoration,
+                chr_ignore=chr_ignore,
+                sep=sep,
+                space=space,
+                __detailed_return=True)
+        if mode == PrintingMode.LINE:
+            for line in result.split("\n"):
+                print(line, flush=True)
+                time.sleep(delay)
+        elif mode == PrintingMode.CHAR:
+            result_height = result.count("\n")
+            for i in range(len(text)):
+                partial_result, font, decoration = text2art(
+                    text[:i+1],
+                    font=font,
+                    decoration=decoration,
+                    chr_ignore=chr_ignore,
+                    sep=sep,
+                    space=space,
+                    __detailed_return=True)
+                if i != 0:
+                    move_back_cursor(result_height)
+                print(partial_result, end="", flush=True)
+                time.sleep(delay)
+        else:
+            print(result)
     except UnicodeEncodeError:
         if decoration is not None:
             print(FONT_OR_DECOR_ENVIRONMENT_WARNING.format(font, decoration))
