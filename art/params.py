@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Art parameters."""
+from enum import Enum
 from .data.fonts1 import *
 from .data.fonts2 import *
 from .data.fonts3 import *
@@ -14,6 +15,16 @@ FONT_LARGE_THRESHOLD = 200  # pragma: no cover
 TEXT_XLARGE_THRESHOLD = 3  # pragma: no cover
 TEXT_LARGE_THRESHOLD = 7  # pragma: no cover
 TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
+
+DEFAULT_DELAY = 0.5  # pragma: no cover
+class PrintingMode(Enum):
+    """Printing effect modes."""
+    
+    INSTANT = 1
+    LINE = 2
+    CHAR = 3
+
+    DEFAULT = INSTANT
 
 ART_TYPE_ERROR = "The 'artname' type must be str."
 ART_NAME_ERROR = "Invalid art name."
