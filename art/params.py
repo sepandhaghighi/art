@@ -17,17 +17,22 @@ TEXT_LARGE_THRESHOLD = 7  # pragma: no cover
 TEXT_MEDIUM_THRESHOLD = 10  # pragma: no cover
 
 DEFAULT_DELAY = 0.5  # pragma: no cover
+
+
 class PrintingMode(Enum):
     """Printing effect modes."""
-    
+
     INSTANT = 1
     LINE = 2
     CHAR = 3
 
     DEFAULT = INSTANT
 
+
 ART_TYPE_ERROR = "The 'artname' type must be str."
 ART_NAME_ERROR = "Invalid art name."
+PRINT_MODE_ERROR = "Invalid printing mode."
+DELAY_ERROR = "The 'delay' type must be int or float."
 NUMBER_TYPE_ERROR = "The 'number' type must be int."
 TEXT_TYPE_ERROR = "The 'text' type must be str."
 FONT_TYPE_ERROR = "The 'font' type must be str."

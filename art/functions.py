@@ -17,7 +17,7 @@ from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, FONT_OR_D
 from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR_IGNORE_TYPE_ERROR, FILE_TYPE_ERROR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
-from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR
+from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR, PRINT_MODE_ERROR, DELAY_ERROR
 from .params import DEFAULT_DELAY, PrintingMode
 from .errors import artError
 
@@ -153,13 +153,13 @@ def tprint(
             raise UnicodeEncodeError(
                 'test', u"", 42, 43, 'test unicode-encode-error')
         result, font, decoration = text2art(
-                text,
-                font=font,
-                decoration=decoration,
-                chr_ignore=chr_ignore,
-                sep=sep,
-                space=space,
-                __detailed_return=True)
+            text,
+            font=font,
+            decoration=decoration,
+            chr_ignore=chr_ignore,
+            sep=sep,
+            space=space,
+            __detailed_return=True)
         if mode == PrintingMode.LINE:
             for line in result.split("\n"):
                 print(line, flush=True)
@@ -168,7 +168,7 @@ def tprint(
             result_height = result.count("\n")
             for i in range(len(text)):
                 partial_result, font, decoration = text2art(
-                    text[:i+1],
+                    text[:i + 1],
                     font=font,
                     decoration=decoration,
                     chr_ignore=chr_ignore,
@@ -370,6 +370,8 @@ def set_default(
         decoration: Optional[str] = None,
         sep: str = "\n",
         space: int = 0,
+        mode: PrintingMode = PrintingMode.DEFAULT,
+        delay: float = DEFAULT_DELAY,
         __detailed_return: bool = False) -> None:
     """
     Change text2art, tprint and tsave default values.
@@ -382,6 +384,8 @@ def set_default(
     :param decoration: input decoration
     :param sep: line separator char
     :param space: space between characters
+    :param mode: printing effect mode (only tprint)
+    :param delay: delay between effects (only tprint)
     :param __detailed_return: flag for returning the font and the decoration
     """
     if not isinstance(font, str):
@@ -402,7 +406,11 @@ def set_default(
         raise artError(SPACE_TYPE_ERROR)
     if not isinstance(__detailed_return, bool):
         raise artError(DETAILED_RETURN_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore, decoration, sep, space)
+    if not isinstance(mode, PrintingMode):
+        raise artError(PRINT_MODE_ERROR)
+    if not isinstance(delay, (int, float)):
+        raise artError(DELAY_ERROR)
+    tprint.__defaults__ = (font, chr_ignore, decoration, sep, space, mode, delay)
     tsave.__defaults__ = (
         font,
         filename,
