@@ -311,6 +311,13 @@ ___  ____ _    ____ ____
 ▌│█║▌║▌║ ᏗᏒᏖ ║▌║▌║█│▌
 >>> tprint("art",font="fancy5",decoration="random") # decoration random mode is added in Version 5.0
 •]•·✦º✦·»ᏗᏒᏖ«·✦º✦·•[•
+>>> tprint("sadcadx", mode=PrintingMode.LINE, delay=0.1) # this would print art line-by-line with 0.1 seconds delay
+        _                _ 
+  __ _ | |__    ___   __| |
+ / _` || '_ \  / __| / _` |
+| (_| || |_) || (__ | (_| |
+ \__,_||_.__/  \___| \__,_|
+                           
 ```
 #### 3. tsave				
 
