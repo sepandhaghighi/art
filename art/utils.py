@@ -2,6 +2,7 @@
 """Art utility module."""
 from typing import Dict, List
 import random
+import sys
 
 from .params import FONT_MAP
 from .params import DECORATION_NAMES, FONT_NAMES, NON_ASCII_FONTS
@@ -131,5 +132,14 @@ def font_size_splitter(font_map: Dict[str, List]) -> Dict[str, List[str]]:
         "large_list": large_font,
         "xlarge_list": xlarge_font}
 
+
+def move_back_cursor(n: int) -> None:
+    """
+    Clear n lines from the console.
+
+    :param n: number of lines to clear
+    """
+    for _ in range(n):
+        sys.stdout.write("\033[F\033[K")
 
 RND_SIZE_DICT = font_size_splitter(FONT_MAP)  # pragma: no cover
