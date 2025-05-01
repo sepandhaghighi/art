@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Changed
 - Python typing features added to all modules
+- `mode` parameter added to `tprint` function
+- `delay` parameter added to `tprint` function
 ## [6.5] - 2025-04-12
 ### Added
 - 1 new 1-line-art
