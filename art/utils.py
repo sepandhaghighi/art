@@ -2,7 +2,6 @@
 """Art utility module."""
 from typing import Dict, List
 import random
-import sys
 
 from .params import FONT_MAP
 from .params import DECORATION_NAMES, FONT_NAMES, NON_ASCII_FONTS
