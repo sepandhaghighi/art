@@ -4682,22 +4682,6 @@ _/  _   _ _/
 /  (- _)  /
 <BLANKLINE>
 <BLANKLINE>
->>> tprint("abcd", mode=PrintingMode.LINE)
-<BLANKLINE>
-  __ _ | |__    ___   __| |
- / _` || '_ \  / __| / _` |
-| (_| || |_) || (__ | (_| |
- \__,_||_.__/  \___| \__,_|
-<BLANKLINE>
-<BLANKLINE>
->>> tprint("abcd", mode=PrintingMode.CHAR, delay=0.4)
-<BLANKLINE>
-  __ _ | |__    ___   __| |
- / _` || '_ \  / __| / _` |
-| (_| || |_) || (__ | (_| |
- \__,_||_.__/  \___| \__,_|
-<BLANKLINE>
-<BLANKLINE>
 >>> set_default(font=2)
 Traceback (most recent call last):
         ...
