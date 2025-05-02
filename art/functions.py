@@ -18,7 +18,7 @@ from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
 from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR, PRINT_MODE_ERROR, DELAY_ERROR
-from .params import DEFAULT_DELAY, PrintingMode
+from .params import DEFAULT_DELAY
 from .errors import artError
 
 
@@ -134,7 +134,7 @@ def tprint(
         decoration: Optional[str] = None,
         sep: str = "\n",
         space: int = 0,
-        mode: PrintingMode = PrintingMode.DEFAULT,
+        mode: str = "instant",
         delay: float = DEFAULT_DELAY) -> None:
     r"""
     Print art text (support \n).
@@ -160,12 +160,11 @@ def tprint(
             sep=sep,
             space=space,
             __detailed_return=True)
-        if mode == PrintingMode.LINE:
+        if mode == "line":
             for line in result.split("\n"):
                 print(line, flush=True)
                 time.sleep(delay)
-        elif mode == PrintingMode.CHAR:
-            result_height = result.count("\n")
+        elif mode == "char":
             for i in range(len(text)):
                 partial_result, font, decoration = text2art(
                     text[:i + 1],
@@ -368,7 +367,7 @@ def set_default(
         decoration: Optional[str] = None,
         sep: str = "\n",
         space: int = 0,
-        mode: PrintingMode = PrintingMode.DEFAULT,
+        mode: str = "instant",
         delay: float = DEFAULT_DELAY,
         __detailed_return: bool = False) -> None:
     """
@@ -404,7 +403,7 @@ def set_default(
         raise artError(SPACE_TYPE_ERROR)
     if not isinstance(__detailed_return, bool):
         raise artError(DETAILED_RETURN_TYPE_ERROR)
-    if not isinstance(mode, PrintingMode):
+    if not isinstance(mode, str) and mode not in ["instant", "line", "char"]:
         raise artError(PRINT_MODE_ERROR)
     if not isinstance(delay, (int, float)):
         raise artError(DELAY_ERROR)
