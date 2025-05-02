@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Art parameters."""
-from enum import Enum
 from .data.fonts1 import *
 from .data.fonts2 import *
 from .data.fonts3 import *
