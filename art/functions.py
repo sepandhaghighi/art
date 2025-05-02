@@ -5,7 +5,7 @@ import os
 import random
 import time
 
-from .utils import distance_calc, indirect_font, indirect_decoration, move_back_cursor
+from .utils import distance_calc, indirect_font, indirect_decoration
 from .params import art_dic, standard_dic
 from .params import fancy1_dic
 from .params import DEFAULT_FONT, MIX_FILTERED_FONTS
@@ -175,8 +175,6 @@ def tprint(
                     sep=sep,
                     space=space,
                     __detailed_return=True)
-                if i != 0:
-                    move_back_cursor(result_height)
                 print(partial_result, end="", flush=True)
                 time.sleep(delay)
         else:

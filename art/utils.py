@@ -133,15 +133,4 @@ def font_size_splitter(font_map: Dict[str, List]) -> Dict[str, List[str]]:
         "xlarge_list": xlarge_font}
 
 
-def move_back_cursor(n: int) -> None:
-    """
-    Clear n lines from the console.
-
-    :param n: number of lines to clear
-    """
-    for _ in range(n):
-        sys.stdout.write("\033[F\033[K")
-        sys.stdout.flush()
-
-
 RND_SIZE_DICT = font_size_splitter(FONT_MAP)  # pragma: no cover
