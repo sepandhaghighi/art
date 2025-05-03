@@ -168,18 +168,6 @@ def tprint(
             for i in result:
                 print(i, end="", flush=True)
                 time.sleep(delay)
-        elif mode == "letter":
-            for i in range(len(text)):
-                partial_result, font, decoration = text2art(
-                    text[:i + 1],
-                    font=font,
-                    decoration=decoration,
-                    chr_ignore=chr_ignore,
-                    sep=sep,
-                    space=space,
-                    __detailed_return=True)
-                print(partial_result, end="", flush=True)
-                time.sleep(delay)
         else:
             print(result)
     except UnicodeEncodeError:
