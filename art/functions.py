@@ -165,6 +165,10 @@ def tprint(
                 print(line, flush=True)
                 time.sleep(delay)
         elif mode == "char":
+            for i in result:
+                print(i, end="", flush=True)
+                time.sleep(delay)
+        elif mode == "letter":
             for i in range(len(text)):
                 partial_result, font, decoration = text2art(
                     text[:i + 1],
