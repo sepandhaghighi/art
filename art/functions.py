@@ -3,6 +3,7 @@
 from typing import List, Dict, Optional, Union, Any
 import os
 import random
+import time
 
 from .utils import distance_calc, indirect_font, indirect_decoration
 from .params import art_dic, standard_dic
@@ -16,7 +17,8 @@ from .params import ART_ENVIRONMENT_WARNING, FONT_ENVIRONMENT_WARNING, FONT_OR_D
 from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR_IGNORE_TYPE_ERROR, FILE_TYPE_ERROR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
-from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR
+from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR, PRINT_MODE_ERROR, DELAY_ERROR
+from .params import DEFAULT_DELAY
 from .errors import artError
 
 
@@ -131,7 +133,9 @@ def tprint(
         chr_ignore: bool = True,
         decoration: Optional[str] = None,
         sep: str = "\n",
-        space: int = 0) -> None:
+        space: int = 0,
+        mode: str = "instant",
+        delay: float = DEFAULT_DELAY) -> None:
     r"""
     Print art text (support \n).
 
@@ -141,6 +145,8 @@ def tprint(
     :param decoration: text decoration
     :param sep: line separator char
     :param space: space between characters
+    :param mode: printing effect mode
+    :param delay: delay between effects
     """
     try:
         if font == "UnicodeEncodeError":
@@ -154,7 +160,16 @@ def tprint(
             sep=sep,
             space=space,
             __detailed_return=True)
-        print(result)
+        if mode == "line":
+            for line in result.split("\n"):
+                print(line, flush=True)
+                time.sleep(delay)
+        elif mode == "char":
+            for i in result:
+                print(i, end="", flush=True)
+                time.sleep(delay)
+        else:
+            print(result)
     except UnicodeEncodeError:
         if decoration is not None:
             print(FONT_OR_DECOR_ENVIRONMENT_WARNING.format(font, decoration))
@@ -344,6 +359,8 @@ def set_default(
         decoration: Optional[str] = None,
         sep: str = "\n",
         space: int = 0,
+        mode: str = "instant",
+        delay: float = DEFAULT_DELAY,
         __detailed_return: bool = False) -> None:
     """
     Change text2art, tprint and tsave default values.
@@ -356,6 +373,8 @@ def set_default(
     :param decoration: input decoration
     :param sep: line separator char
     :param space: space between characters
+    :param mode: printing effect mode (only tprint)
+    :param delay: delay between effects (only tprint)
     :param __detailed_return: flag for returning the font and the decoration
     """
     if not isinstance(font, str):
@@ -376,7 +395,11 @@ def set_default(
         raise artError(SPACE_TYPE_ERROR)
     if not isinstance(__detailed_return, bool):
         raise artError(DETAILED_RETURN_TYPE_ERROR)
-    tprint.__defaults__ = (font, chr_ignore, decoration, sep, space)
+    if not isinstance(mode, str) and mode not in ["instant", "line", "char"]:
+        raise artError(PRINT_MODE_ERROR)
+    if not isinstance(delay, (int, float)):
+        raise artError(DELAY_ERROR)
+    tprint.__defaults__ = (font, chr_ignore, decoration, sep, space, mode, delay)
     tsave.__defaults__ = (
         font,
         filename,
