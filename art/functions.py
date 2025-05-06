@@ -395,7 +395,7 @@ def set_default(
         raise artError(SPACE_TYPE_ERROR)
     if not isinstance(__detailed_return, bool):
         raise artError(DETAILED_RETURN_TYPE_ERROR)
-    if not isinstance(mode, str) and mode not in ["instant", "line", "char"]:
+    if mode not in ["instant", "line", "char"]:
         raise artError(PRINT_MODE_ERROR)
     if not isinstance(delay, (int, float)):
         raise artError(DELAY_ERROR)
