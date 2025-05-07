@@ -112,6 +112,30 @@ art.art.artError: The 'char' type must be str.
 |_| |_|      |_____|        |_|
 <BLANKLINE>
 <BLANKLINE>
+>>> tprint('HEY', space=6, mode="instant")
+ _   _        _____       __   __
+| | | |      | ____|      \ \ / /
+| |_| |      |  _|         \ V /
+|  _  |      | |___         | |
+|_| |_|      |_____|        |_|
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint('HEY', space=6, mode="line")
+ _   _        _____       __   __
+| | | |      | ____|      \ \ / /
+| |_| |      |  _|         \ V /
+|  _  |      | |___         | |
+|_| |_|      |_____|        |_|
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint('HEY', space=6, mode="char", delay=0.3)
+ _   _        _____       __   __
+| | | |      | ____|      \ \ / /
+| |_| |      |  _|         \ V /
+|  _  |      | |___         | |
+|_| |_|      |_____|        |_|
+<BLANKLINE>
+<BLANKLINE>
 >>> font_list(mode="ascii")
 1943 :
 #### ##  ### ###   ## ##   #### ##
@@ -4718,6 +4742,14 @@ art.art.artError: The 'space' type must be int.
 Traceback (most recent call last):
         ...
 art.art.artError: The '__detailed_return' type must be bool.
+>>> set_default(mode="custom")
+Traceback (most recent call last):
+        ...
+art.art.artError: Invalid printing mode. It should be 'instant', or 'line', or 'char'.
+>>> set_default(delay="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'delay' type must be int or float.
 >>> random.seed(200)
 >>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
