@@ -69,7 +69,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 <table>
 	<tr> 
 		<td align="center">Code Quality</td>
-		<td align="center"><a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/art?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/art&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a></td>	
+		<td align="center"><a href="https://app.codacy.com/gh/sepandhaghighi/art/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/405020450bc94088ad1450461831a587"/></a></td>	
 		<td align="center"><a href="https://www.codefactor.io/repository/github/sepandhaghighi/art"><img src="https://www.codefactor.io/repository/github/sepandhaghighi/art/badge" alt="CodeFactor" /></a></td>
 	</tr>
 </table>
