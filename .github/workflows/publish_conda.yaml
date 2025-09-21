@@ -10,7 +10,7 @@ jobs:
   publish:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: publish-to-conda
         uses: sepandhaghighi/conda-package-publish-action@v1.2
         with:
