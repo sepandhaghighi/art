@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Python typing features added to all modules
 - `mode` parameter added to `tprint` function
 - `delay` parameter added to `tprint` function
+- `Python 3.14` added to `test.yml`
 - Test system modified
 ## [6.5] - 2025-04-12
 ### Added
