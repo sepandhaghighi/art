@@ -29,7 +29,6 @@ __all__ = [
     "art_list",
     "font_list",
     "decor_list",
-    "ART_VERSION",
     "FONT_NAMES",
     "ART_NAMES",
     "DECORATION_NAMES",
