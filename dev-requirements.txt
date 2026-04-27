@@ -1,5 +1,5 @@
 coverage>=4.1
-vulture>=1.0
+vulture>=2.16
 bandit>=1.5.1
 pydocstyle>=3.0.0
 
