@@ -1,6 +1,5 @@
 ## Installation
 
-⚠️ **ART 6.4** is the last version to support **Python 3.6** officially	
 
 ⚠️ **ART 6.1** is the last version to support **Python 3.5** officially	
 
@@ -31,7 +30,7 @@
 ### MATLAB
 
 - Download and install [MATLAB](https://www.mathworks.com/products/matlab.html) (>=8.5, 64/32 bit)
-- Download and install [Python3.x](https://www.python.org/downloads/) (>=3.7, 64/32 bit) 
+- Download and install [Python3.x](https://www.python.org/downloads/) (>=3.8, 64/32 bit) 
 	- [x] Select `Add to PATH` option
 	- [x] Select `Install pip` option
 - Run `pip install art`
