@@ -333,7 +333,6 @@ def tsave(
                 index = index + 1
             else:
                 break
-        file = open(test_name + extension, "w", encoding='utf-8')
         result = text2art(
             text,
             font=font,
@@ -341,8 +340,8 @@ def tsave(
             chr_ignore=chr_ignore,
             sep=sep,
             space=space)
-        file.write(result)
-        file.close()
+        with open(test_name + extension, "w", encoding="utf-8") as file:
+            file.write(result)
         if print_status:
             print("Saved! \nFilename: " + test_name + extension)
         return {"Status": True, "Message": "OK"}
