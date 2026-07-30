@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Art function module."""
+from pathlib import Path
 from typing import List, Dict, Optional, Union, Any
 import os
 import random
 import time
-
 from .utils import distance_calc, indirect_font, indirect_decoration
 from .params import art_dic, standard_dic
 from .params import fancy1_dic
@@ -317,18 +317,17 @@ def tsave(
     try:
         if not isinstance(text, str):
             raise Exception(TEXT_TYPE_ERROR)
-        files_list = os.listdir(os.getcwd())
-        splitted_filename = filename.split(".")
-        if len(splitted_filename) > 1:
-            name = filename[:-1 * filename[::-1].find('.') - 1]
-            extension = "." + splitted_filename[-1]
+        path = Path(filename)
+        if path.suffix:
+            name = str(path.with_suffix(""))
+            extension = path.suffix
         else:
             name = filename
             extension = ".txt"
         index = 2
         test_name = name
         while not overwrite:
-            if test_name + extension in files_list:
+            if Path(test_name + extension).exists():
                 test_name = name + str(index)
                 index = index + 1
             else:
