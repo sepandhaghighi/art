@@ -317,7 +317,6 @@ def tsave(
     try:
         if not isinstance(text, str):
             raise Exception(TEXT_TYPE_ERROR)
-        files_list = os.listdir(os.getcwd())
         path = Path(filename)
         if path.suffix:
             name = str(path.with_suffix(""))
