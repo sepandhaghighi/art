@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 """Setup module."""
 from typing import List
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup
 
 
 MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
@@ -14,8 +11,8 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
 
 
 def get_dev_requires() -> List[str]:
-    """Read dev-requirements.txt."""
-    requirements = open("dev-requirements.txt", "r").read()
+    """Read requirements-dev.txt."""
+    requirements = open("requirements-dev.txt", "r").read()
     return [x for x in requirements.split() if x]
 
 
@@ -43,7 +40,7 @@ setup(
     author='Sepand Haghighi',
     author_email='info@ascii-art.site',
     url='https://github.com/sepandhaghighi/art',
-    keywords="ascii art python3 python text font non-ascii printing",
+    keywords='ascii art python3 python text font non-ascii printing',
     project_urls={
         'Webpage': 'https://www.ascii-art.site',
         'Source': 'https://github.com/sepandhaghighi/art',
@@ -52,7 +49,7 @@ setup(
     },
     install_requires=[],
     extras_require={
-        "dev": get_dev_requires()
+        'dev': get_dev_requires()
     },
     python_requires='>=3.7',
     classifiers=[

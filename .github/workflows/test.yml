@@ -41,9 +41,9 @@ jobs:
         art
         art test
         art test2
-    - name: Test requirements installation
+    - name: Dev requirements installation
       run: |
-        pip install --upgrade --upgrade-strategy=only-if-needed -r dev-requirements.txt
+        pip install --upgrade --upgrade-strategy=only-if-needed -r requirements-dev.txt
     - name: Version check
       run: |
         python otherfile/version_check.py

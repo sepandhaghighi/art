@@ -2,8 +2,11 @@ version: 2
 updates:
 - package-ecosystem: pip
   directory: "/"
+  exclude-paths:
+      - "requirements-dev.txt"
+      - "setup.py"
   schedule:
     interval: weekly
     time: "01:30"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 5
   target-branch: dev

@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `mode` parameter added to `tprint` function
 - `delay` parameter added to `tprint` function
 - `Python 3.14` added to `test.yml`
+- Dependencies structure modified
 - Test system modified
 - `tsave` function modified
 ## [6.5] - 2025-04-12
