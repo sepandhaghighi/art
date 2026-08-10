@@ -36,8 +36,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install .
-    - name: First test
+    - name: Smoke test
       run: |
+        python -c "from art import *"
+        python -m art
+        python -m art test
+        python -m art test2
         art
         art test
         art test2
@@ -78,3 +82,23 @@ jobs:
     - name: Profile
       run: |
         python -m cProfile -s cumtime art_profile.py
+    - name: Build package
+      run: |
+        python -m build
+    - name: Check package metadata
+      run: |
+        twine check dist/*
+    - name: Wheel smoke test
+      shell: bash
+      run: |
+        pip uninstall -y art
+        pip install dist/*.whl
+        mkdir wheel_test
+        cd wheel_test
+        python -c "from art import *"
+        python -m art
+        python -m art test
+        python -m art test2
+        art
+        art test
+        art test2
