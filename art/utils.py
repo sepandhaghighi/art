@@ -65,28 +65,15 @@ def indirect_font(font: str, text: str) -> str:
     :param text: input text
     """
     fonts = FONT_NAMES
-    if font in ["rnd-small", "random-small", "rand-small"]:
-        font = random.choice(RND_SIZE_DICT["small_list"])
-        return font
-    if font in ["rnd-medium", "random-medium", "rand-medium"]:
-        font = random.choice(RND_SIZE_DICT["medium_list"])
-        return font
-    if font in ["rnd-large", "random-large", "rand-large"]:
-        font = random.choice(RND_SIZE_DICT["large_list"])
-        return font
-    if font in ["rnd-xlarge", "random-xlarge", "rand-xlarge"]:
-        font = random.choice(RND_SIZE_DICT["xlarge_list"])
-        return font
-    if font in ["random", "rand", "rnd"]:
+    if font in FONT_SIZE_ALIASES:
+        return random.choice(RND_SIZE_DICT[FONT_SIZE_ALIASES[font]])
+    if font in RANDOM_FONT_ALIASES:
         filtered_fonts = list(set(fonts) - set(RANDOM_FILTERED_FONTS))
-        font = random.choice(filtered_fonts)
-        return font
-    if font in ["wizard", "wiz", "magic"]:
-        font = wizard_font(text)
-        return font
-    if font in ["rnd-na", "random-na", "rand-na"]:
-        font = random.choice(NON_ASCII_FONTS)
-        return font
+        return random.choice(filtered_fonts)
+    if font in WIZARD_FONT_ALIASES:
+        return wizard_font(text)
+    if font in NON_ASCII_FONT_ALIASES:
+        return random.choice(NON_ASCII_FONTS)
     if font not in fonts:
         font = min(fonts, key=lambda x: distance_calc(font, x))
     return font

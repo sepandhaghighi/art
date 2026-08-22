@@ -60,6 +60,25 @@ Help :
 \t- all [yourtext]  -->  Example : 'art all exampletext'
 """
 
+FONT_SIZE_ALIASES = {
+    "rnd-small": "small_list",
+    "random-small": "small_list",
+    "rand-small": "small_list",
+    "rnd-medium": "medium_list",
+    "random-medium": "medium_list",
+    "rand-medium": "medium_list",
+    "rnd-large": "large_list",
+    "random-large": "large_list",
+    "rand-large": "large_list",
+    "rnd-xlarge": "xlarge_list",
+    "random-xlarge": "xlarge_list",
+    "rand-xlarge": "xlarge_list",
+}
+
+RANDOM_FONT_ALIASES = ["random", "rand", "rnd"]
+WIZARD_FONT_ALIASES = ["wizard", "wiz", "magic"]
+NON_ASCII_FONT_ALIASES = ["rnd-na", "random-na", "rand-na"]
+
 SMALL_WIZARD_FONT = [
     "contessa",
     "avatar",
