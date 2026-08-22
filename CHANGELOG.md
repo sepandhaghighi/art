@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Dependencies structure modified
 - Test system modified
 - `tsave` function modified
+- `indirect_font` function modified
 ## [6.5] - 2025-04-12
 ### Added
 - 1 new 1-line-art
