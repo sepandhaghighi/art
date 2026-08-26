@@ -95,6 +95,14 @@ def text2art(
         raise artError(TEXT_TYPE_ERROR)
     if not isinstance(font, str):
         raise artError(FONT_TYPE_ERROR)
+    if not isinstance(chr_ignore, bool):
+        raise artError(CHR_IGNORE_TYPE_ERROR)
+    if decoration is not None and not isinstance(decoration, str):
+        raise artError(DECORATION_TYPE_ERROR)
+    if not isinstance(sep, str):
+        raise artError(SEP_TYPE_ERROR)
+    if not isinstance(space, int):
+        raise artError(SPACE_TYPE_ERROR)
     text = (' ' * space).join(text)
     text_temp = text
     font = font.lower()

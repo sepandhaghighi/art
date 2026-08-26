@@ -53,19 +53,9 @@ art.art.artError: The 'char' type must be str.
  '----------------'
 <BLANKLINE>
 >>> tprint("\t\t2","block",sep=2)
-<BLANKLINE>
- .----------------.
-| .--------------. |
-| |    _____     | |
-| |   / ___ `.   | |
-| |  |_/___) |   | |
-| |   .'____.'   | |
-| |  / /____     | |
-| |  |_______|   | |
-| |              | |
-| '--------------' |
- '----------------'
-<BLANKLINE>
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'sep' type must be str.
 >>> tprint("\t\t2","block",sep="\n\n")
 <BLANKLINE>
 <BLANKLINE>
@@ -4674,6 +4664,22 @@ art.art.artError: The 'text' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: س is invalid.
+>>> text2art("test",chr_ignore="yes")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'chr_ignore' type must be bool.
+>>> text2art("test",decoration=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'decoration' type must be str.
+>>> text2art("test",sep=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'sep' type must be str.
+>>> text2art("test",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> Data=tsave(22,filename="art",chr_ignore=True,print_status=True)
 >>> Data["Message"]
 "The 'text' type must be str."
