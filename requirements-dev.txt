@@ -2,6 +2,6 @@ coverage>=4.1
 vulture>=1.0
 bandit>=1.5.1
 pydocstyle>=6.3.0
-build>=1.1.1
+build>=1.6.0
 twine>=4.0.2
 
