@@ -156,11 +156,14 @@ art.art.artError: The 'number' type must be int.
 
 ### ASCII text
 	
-⚠️ Some fonts don't support all characters		
+> [!WARNING]
+> Some fonts don't support all characters
 
-⚠️ From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
+> [!WARNING]
+> From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
 
-⚠️ From `Version 5.3` `\n` is used as the default line separator instead of `\r\n` (Use `sep` parameter if needed)
+> [!WARNING]
+> From `Version 5.3` `\n` is used as the default line separator instead of `\r\n` (Use `sep` parameter if needed)
 
 #### 1. text2art				
 
