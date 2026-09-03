@@ -421,7 +421,8 @@ Traceback (most recent call last):
 art.art.artError: The 'decoration' type must be str.
 ```
 
-ℹ️ Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
+> [!NOTE]
+> Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
@@ -429,7 +430,8 @@ These modes are available for `text2art`, `tprint` & `tsave`.
 
 #### 1. Font name	
 
-⚠️ Some fonts don't support all characters
+> [!WARNING]
+> Some fonts don't support all characters
 			
 ```pycon
 
@@ -473,7 +475,8 @@ Randomly select from small fonts.
 
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-small")
@@ -489,7 +492,8 @@ Randomly select from medium fonts.
 
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-medium")
@@ -510,7 +514,8 @@ Randomly select from large fonts.
 
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-large")
@@ -535,7 +540,8 @@ Randomly select from xlarge fonts.
 
 Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test","rnd-xlarge")
