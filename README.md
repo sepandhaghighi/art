@@ -148,11 +148,14 @@ art.art.artError: The 'number' type must be int.
 '✌(◕‿-)✌ '
 ```	
 
-ℹ️ Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+> [!NOTE]
+> Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
 
-ℹ️ Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
+> [!NOTE]
+> Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
 
-ℹ️ Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
+> [!NOTE]
+> Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
 
 ### ASCII text
 	
@@ -742,7 +745,8 @@ _/  _   _ _/
 
 ```
 
-ℹ️ Functions error response updated in `Version 0.8`
+> [!NOTE]
+> Functions error response updated in `Version 0.8`
 
 
 <table>
@@ -810,9 +814,12 @@ art test2
 ```
 
 ### CLI	
-⚠️ [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure** officially
 
-⚠️ You can use `art` or `python -m art` to run this mode
+> [!WARNING]
+> [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure** officially
+
+> [!WARNING]
+> You can use `art` or `python -m art` to run this mode
 		
 - List of arts :  `art list` or `art arts`
 - List of fonts : `art fonts`
