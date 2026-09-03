@@ -627,7 +627,8 @@ Randomly select from Non-ASCII fonts.
 
 Keywords : `random-na`, `rand-na` & `rnd-na`
 
-ℹ️ New in `Version 3.4`
+> [!NOTE]
+> New in `Version 3.4`
 
 ```pycon
 >>> tprint("test","random-na")
@@ -643,7 +644,8 @@ Randomly mix Non-ASCII fonts.
 
 Keywords : `mix`
 
-ℹ️ New in `Version 3.7`
+> [!NOTE]
+> New in `Version 3.7`
 
 ```pycon
 >>> tprint("test","mix")
@@ -654,7 +656,8 @@ tᏋѕt
 ꓄єร꓄
 ```
 
-⚠️ Non-ASCII fonts are only available in `Font name`, `Random Non-ASCII` and `Mix` modes	
+> [!WARNING]
+> Non-ASCII fonts are only available in `Font name`, `Random Non-ASCII` and `Mix` modes	
 
 
 ### Typo-tolerance			
