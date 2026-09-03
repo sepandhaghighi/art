@@ -353,11 +353,14 @@ Saved!
 Filename: test.txt                        
 ```
 
-ℹ️ Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+> [!NOTE]
+> Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
 
-ℹ️ Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
+> [!NOTE]
+> Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
-ℹ️ Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
+> [!NOTE]
+> Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
 
 ### Line
 
