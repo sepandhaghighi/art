@@ -373,9 +373,11 @@ This function prints a grid (`length` by `height`) of any given character in nor
 ***************
 ```
 
-ℹ️ New in `Version 6.4`
+> [!NOTE]
+> New in `Version 6.4`
 
-ℹ️ The default values are `length=15`, `height=1`, `char='#'`
+> [!NOTE]
+> The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
 
@@ -385,9 +387,11 @@ This function returns a grid (`length` by `height`) of any given character as `s
 '***************\n***************'
 ```
 
-ℹ️ New in `Version 6.4`
+> [!NOTE]
+> New in `Version 6.4`
 
-ℹ️ The default values are `length=15`, `height=1`, `char='#'`
+> [!NOTE]
+> The default values are `length=15`, `height=1`, `char='#'`
 
 
 ### Decoration
