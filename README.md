@@ -396,7 +396,8 @@ This function returns a grid (`length` by `height`) of any given character as `s
 
 ### Decoration
 
-⚠️ Some environments don't support all decorations
+> [!WARNING]
+> Some environments don't support all decorations
 
 #### 1. decor
 
