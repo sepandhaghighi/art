@@ -573,11 +573,13 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
 This mode consider length of input text to select font
 
-☑️ Support of 95 ASCII characters guaranteed
+> [!NOTE]
+> Support of 95 ASCII characters guaranteed
 
 Keywords : `wizard`, `wiz` & `magic`
 
-ℹ️ New in `Version 2.9`
+> [!NOTE]
+> New in `Version 2.9`
 
 ```pycon
 >>> tprint("1","wizard")
