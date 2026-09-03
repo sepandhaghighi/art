@@ -88,9 +88,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 ### 1-Line art
 
-⚠️ Some environments don't support all 1-Line arts
+> [!WARNING]
+> Some environments don't support all 1-Line arts
 
-⚠️ **ART 4.6** is the last version to support **Bipartite art**
+> [!WARNING]
+> **ART 4.6** is the last version to support **Bipartite art**
 
 
 #### 1. art					
