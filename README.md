@@ -88,9 +88,11 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 
 ### 1-Line art
 
-⚠️ Some environments don't support all 1-Line arts
+> [!WARNING]
+> Some environments don't support all 1-Line arts
 
-⚠️ **ART 4.6** is the last version to support **Bipartite art**
+> [!WARNING]
+> **ART 4.6** is the last version to support **Bipartite art**
 
 
 #### 1. art					
@@ -146,19 +148,25 @@ art.art.artError: The 'number' type must be int.
 '✌(◕‿-)✌ '
 ```	
 
-ℹ️ Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
+> [!NOTE]
+> Use `ART_NAMES` to access all arts name list (new in `Version 4.2`)
 
-ℹ️ Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
+> [!NOTE]
+> Use `NON_ASCII_ARTS` to access all Non-ASCII arts name list (new in `Version 4.6`)
 
-ℹ️ Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
+> [!NOTE]
+> Use `ASCII_ARTS` to access all ASCII arts name list (new in `Version 5.7`)
 
 ### ASCII text
 	
-⚠️ Some fonts don't support all characters		
+> [!WARNING]
+> Some fonts don't support all characters
 
-⚠️ From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
+> [!WARNING]
+> From `Version 3.3` Non-ASCII fonts added (These fonts are not compatible with some environments)
 
-⚠️ From `Version 5.3` `\n` is used as the default line separator instead of `\r\n` (Use `sep` parameter if needed)
+> [!WARNING]
+> From `Version 5.3` `\n` is used as the default line separator instead of `\r\n` (Use `sep` parameter if needed)
 
 #### 1. text2art				
 
@@ -348,11 +356,14 @@ Saved!
 Filename: test.txt                        
 ```
 
-ℹ️ Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
+> [!NOTE]
+> Use `FONT_NAMES` to access all fonts name list (new in `Version 4.2`)
 
-ℹ️ Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
+> [!NOTE]
+> Use `NON_ASCII_FONTS` to access all Non-ASCII fonts name list (new in `Version 4.4`)
 
-ℹ️ Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
+> [!NOTE]
+> Use `ASCII_FONTS` to access all ASCII fonts name list (new in `Version 5.7`)
 
 ### Line
 
@@ -365,9 +376,11 @@ This function prints a grid (`length` by `height`) of any given character in nor
 ***************
 ```
 
-ℹ️ New in `Version 6.4`
+> [!NOTE]
+> New in `Version 6.4`
 
-ℹ️ The default values are `length=15`, `height=1`, `char='#'`
+> [!NOTE]
+> The default values are `length=15`, `height=1`, `char='#'`
 
 #### 2. line
 
@@ -377,14 +390,17 @@ This function returns a grid (`length` by `height`) of any given character as `s
 '***************\n***************'
 ```
 
-ℹ️ New in `Version 6.4`
+> [!NOTE]
+> New in `Version 6.4`
 
-ℹ️ The default values are `length=15`, `height=1`, `char='#'`
+> [!NOTE]
+> The default values are `length=15`, `height=1`, `char='#'`
 
 
 ### Decoration
 
-⚠️ Some environments don't support all decorations
+> [!WARNING]
+> Some environments don't support all decorations
 
 #### 1. decor
 
@@ -408,7 +424,8 @@ Traceback (most recent call last):
 art.art.artError: The 'decoration' type must be str.
 ```
 
-ℹ️ Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
+> [!NOTE]
+> Use `DECORATION_NAMES` to access all decorations name list (new in `Version 4.6`)
 
 ### Font modes
 
@@ -416,7 +433,8 @@ These modes are available for `text2art`, `tprint` & `tsave`.
 
 #### 1. Font name	
 
-⚠️ Some fonts don't support all characters
+> [!WARNING]
+> Some fonts don't support all characters
 			
 ```pycon
 
@@ -460,7 +478,8 @@ Randomly select from small fonts.
 
 Keywords : `rnd-small`, `random-small` & `rand-small`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-small")
@@ -476,7 +495,8 @@ Randomly select from medium fonts.
 
 Keywords : `rnd-medium`, `random-medium` & `rand-medium`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-medium")
@@ -497,7 +517,8 @@ Randomly select from large fonts.
 
 Keywords : `rnd-large`, `random-large` & `rand-large`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test",font="rnd-large")
@@ -522,7 +543,8 @@ Randomly select from xlarge fonts.
 
 Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
-ℹ️ New in `Version 2.8`
+> [!NOTE]
+> New in `Version 2.8`
 
 ```pycon
 >>> tprint("test","rnd-xlarge")
@@ -554,11 +576,13 @@ Keywords : `rnd-xlarge`, `random-xlarge` & `rand-xlarge`
 
 This mode consider length of input text to select font
 
-☑️ Support of 95 ASCII characters guaranteed
+> [!NOTE]
+> Support of 95 ASCII characters guaranteed
 
 Keywords : `wizard`, `wiz` & `magic`
 
-ℹ️ New in `Version 2.9`
+> [!NOTE]
+> New in `Version 2.9`
 
 ```pycon
 >>> tprint("1","wizard")
@@ -606,7 +630,8 @@ Randomly select from Non-ASCII fonts.
 
 Keywords : `random-na`, `rand-na` & `rnd-na`
 
-ℹ️ New in `Version 3.4`
+> [!NOTE]
+> New in `Version 3.4`
 
 ```pycon
 >>> tprint("test","random-na")
@@ -622,7 +647,8 @@ Randomly mix Non-ASCII fonts.
 
 Keywords : `mix`
 
-ℹ️ New in `Version 3.7`
+> [!NOTE]
+> New in `Version 3.7`
 
 ```pycon
 >>> tprint("test","mix")
@@ -633,7 +659,8 @@ tᏋѕt
 ꓄єร꓄
 ```
 
-⚠️ Non-ASCII fonts are only available in `Font name`, `Random Non-ASCII` and `Mix` modes	
+> [!WARNING]
+> Non-ASCII fonts are only available in `Font name`, `Random Non-ASCII` and `Mix` modes	
 
 
 ### Typo-tolerance			
@@ -718,7 +745,8 @@ _/  _   _ _/
 
 ```
 
-ℹ️ Functions error response updated in `Version 0.8`
+> [!NOTE]
+> Functions error response updated in `Version 0.8`
 
 
 <table>
@@ -786,9 +814,12 @@ art test2
 ```
 
 ### CLI	
-⚠️ [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure** officially
 
-⚠️ You can use `art` or `python -m art` to run this mode
+> [!WARNING]
+> [Backward Compatibility] **ART 5.9** is the last version to support this **CLI structure** officially
+
+> [!NOTE]
+> You can use `art` or `python -m art` to run this mode
 		
 - List of arts :  `art list` or `art arts`
 - List of fonts : `art fonts`

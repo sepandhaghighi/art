@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `Python 3.14` added to `test.yml`
 - Dependencies structure modified
 - Test system modified
+- `README.md` modified
 - `tsave` function modified
 - `indirect_font` function modified
 - Parameter validation added to `text2art` function
