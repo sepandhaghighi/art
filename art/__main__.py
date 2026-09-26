@@ -89,7 +89,7 @@ def main():
                     except artError as e:
                         print(str(e))
                     except UnicodeEncodeError:
-                        print(FONT_ENVIRONMENT_WARNING)
+                        print(FONT_ENVIRONMENT_WARNING.format(args[3]))
                 else:
                     tprint(args[2])
             elif args[1].upper() == "SAVE":
@@ -103,7 +103,7 @@ def main():
                 except artError as e:
                     print(str(e))
                 except UnicodeEncodeError:
-                    print(ART_ENVIRONMENT_WARNING)
+                    print(ART_ENVIRONMENT_WARNING.format(args[2]))
             else:
                 help_func()
         else:
