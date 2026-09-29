@@ -6,6 +6,7 @@
 
 # Other Contributors
 ----------
+- [@GreedyC](https://github.com/GreedyC)
 - [Arta Khanali](https://www.linkedin.com/in/artakhanali/) ++
 - [@heidecjj](https://github.com/heidecjj)
 - [@noobkoder](https://github.com/n00bkoder)
