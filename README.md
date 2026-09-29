@@ -388,6 +388,8 @@ This function returns a grid (`length` by `height`) of any given character as `s
 ```pycon	
 >>> line(length=15, height=2, char="*")
 '***************\n***************'
+>>> line(length=3, height=2, char="*", hspace=2, vspace=1)
+'*  *  *\n\n*  *  *'
 ```
 
 > [!NOTE]
@@ -396,6 +398,19 @@ This function returns a grid (`length` by `height`) of any given character as `s
 > [!NOTE]
 > The default values are `length=15`, `height=1`, `char='#'`
 
+
+`line` and `lprint` also accept `hspace` and `vspace` (both default to `0`).
+`hspace` inserts spaces between characters; `vspace` inserts blank lines between
+rows. Both must be non-negative integers. `length` and `height` still count
+characters and rows, not the added spacing. No extra spacing is added before
+the first or after the last character or row.
+
+```pycon
+>>> lprint(length=3, height=2, char="*", hspace=1, vspace=1)
+* * *
+
+* * *
+```
 
 ### Decoration
 

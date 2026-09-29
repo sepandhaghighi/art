@@ -18,6 +18,7 @@ from .params import DECORATION_TYPE_ERROR, TEXT_TYPE_ERROR, FONT_TYPE_ERROR, CHR
 from .params import PRINT_STATUS_TYPE_ERROR, OVERWRITE_TYPE_ERROR, SEP_TYPE_ERROR, SPACE_TYPE_ERROR
 from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERROR, ART_NAME_ERROR
 from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR, PRINT_MODE_ERROR, DELAY_ERROR
+from .params import LINE_HSPACE_ERROR, LINE_VSPACE_ERROR
 from .params import DEFAULT_DELAY
 from .errors import artError
 
@@ -244,25 +245,29 @@ def aprint(artname: str, number: int = 1, space: int = 1) -> None:
         print(ART_ENVIRONMENT_WARNING.format(artname))
 
 
-def lprint(length: int = 15, height: int = 1, char: str = '#') -> None:
+def lprint(length: int = 15, height: int = 1, char: str = '#', hspace: int = 0, vspace: int = 0) -> None:
     """
     Print a grid (length X height) of the given character.
 
     :param length: the grid length
     :param height: the grid height
     :param char: target character
+    :param hspace: number of spaces between characters
+    :param vspace: number of blank lines between rows
     """
-    grid = line(length, height, char)
+    grid = line(length, height, char, hspace, vspace)
     print(grid)
 
 
-def line(length: int = 15, height: int = 1, char: str = '#') -> str:
+def line(length: int = 15, height: int = 1, char: str = '#', hspace: int = 0, vspace: int = 0) -> str:
     """
     Generate a grid (length X height) of the given character.
 
     :param length: the grid length
     :param height: the grid height
     :param char: target character
+    :param hspace: number of spaces between characters
+    :param vspace: number of blank lines between rows
     """
     if not isinstance(length, int) or length < 1:
         raise artError(LINE_LENGTH_ERROR)
@@ -270,9 +275,13 @@ def line(length: int = 15, height: int = 1, char: str = '#') -> str:
         raise artError(LINE_HEIGHT_ERROR)
     if not isinstance(char, str):
         raise artError(CHAR_TYPE_ERROR)
+    if not isinstance(hspace, int) or hspace < 0:
+        raise artError(LINE_HSPACE_ERROR)
+    if not isinstance(vspace, int) or vspace < 0:
+        raise artError(LINE_VSPACE_ERROR)
 
-    line_str = char * length
-    return "\n".join([line_str] * height)
+    line_str = (" " * hspace).join([char] * length)
+    return ("\n" * (vspace + 1)).join([line_str] * height)
 
 
 def decor(decoration: str, reverse: bool = False, both: bool = False) -> Union[str, List[str]]:
