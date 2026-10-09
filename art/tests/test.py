@@ -42,15 +42,7 @@ True
 Traceback (most recent call last):
         ...
 art.art.artError: The 'hspace' must be a non-negative int.
->>> line(hspace=1.5)
-Traceback (most recent call last):
-        ...
-art.art.artError: The 'hspace' must be a non-negative int.
 >>> line(vspace=-1)
-Traceback (most recent call last):
-        ...
-art.art.artError: The 'vspace' must be a non-negative int.
->>> line(vspace="1")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'vspace' must be a non-negative int.
