@@ -4788,6 +4788,14 @@ art.art.artError: The '__detailed_return' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: Invalid printing mode. It should be 'instant', or 'line', or 'char'.
+>>> tprint("test", mode="custom")
+Traceback (most recent call last):
+        ...
+art.art.artError: Invalid printing mode. It should be 'instant', or 'line', or 'char'.
+>>> tprint("test", mode="line", delay="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'delay' type must be int or float.
 >>> set_default(delay="22")
 Traceback (most recent call last):
         ...

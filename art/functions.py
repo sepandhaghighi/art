@@ -157,6 +157,10 @@ def tprint(
     :param mode: printing effect mode
     :param delay: delay between effects
     """
+    if mode not in ["instant", "line", "char"]:
+        raise artError(PRINT_MODE_ERROR)
+    if not isinstance(delay, (int, float)):
+        raise artError(DELAY_ERROR)
     try:
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
