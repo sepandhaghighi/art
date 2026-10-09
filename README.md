@@ -374,13 +374,17 @@ This function prints a grid (`length` by `height`) of any given character in nor
 >>> lprint(length=15, height=2, char="*")
 ***************
 ***************
+>>> lprint(length=3, height=2, char="*", hspace=1, vspace=1)
+* * *
+
+* * *
 ```
 
 > [!NOTE]
 > New in `Version 6.4`
 
 > [!NOTE]
-> The default values are `length=15`, `height=1`, `char='#'`
+> The default values are `length=15`, `height=1`, `char='#'`, `hspace=0`, `vspace=0`
 
 #### 2. line
 
@@ -396,21 +400,8 @@ This function returns a grid (`length` by `height`) of any given character as `s
 > New in `Version 6.4`
 
 > [!NOTE]
-> The default values are `length=15`, `height=1`, `char='#'`
+> The default values are `length=15`, `height=1`, `char='#'`, `hspace=0`, `vspace=0`
 
-
-`line` and `lprint` also accept `hspace` and `vspace` (both default to `0`).
-`hspace` inserts spaces between characters; `vspace` inserts blank lines between
-rows. Both must be non-negative integers. `length` and `height` still count
-characters and rows, not the added spacing. No extra spacing is added before
-the first or after the last character or row.
-
-```pycon
->>> lprint(length=3, height=2, char="*", hspace=1, vspace=1)
-* * *
-
-* * *
-```
 
 ### Decoration
 
