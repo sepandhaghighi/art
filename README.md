@@ -374,13 +374,17 @@ This function prints a grid (`length` by `height`) of any given character in nor
 >>> lprint(length=15, height=2, char="*")
 ***************
 ***************
+>>> lprint(length=3, height=2, char="*", hspace=1, vspace=1)
+* * *
+
+* * *
 ```
 
 > [!NOTE]
 > New in `Version 6.4`
 
 > [!NOTE]
-> The default values are `length=15`, `height=1`, `char='#'`
+> The default values are `length=15`, `height=1`, `char='#'`, `hspace=0`, `vspace=0`
 
 #### 2. line
 
@@ -388,13 +392,15 @@ This function returns a grid (`length` by `height`) of any given character as `s
 ```pycon	
 >>> line(length=15, height=2, char="*")
 '***************\n***************'
+>>> line(length=3, height=2, char="*", hspace=2, vspace=1)
+'*  *  *\n\n*  *  *'
 ```
 
 > [!NOTE]
 > New in `Version 6.4`
 
 > [!NOTE]
-> The default values are `length=15`, `height=1`, `char='#'`
+> The default values are `length=15`, `height=1`, `char='#'`, `hspace=0`, `vspace=0`
 
 
 ### Decoration
