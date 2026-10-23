@@ -865,6 +865,7 @@ Just send your text to one of these bots. 👇👇👇👇
 30. [Mega Cool Text](http://megacooltext.com/)
 31. [ToolCalculator](https://www.toolcalculator.com/)
 32. [Copy Paste Fonts](https://copy-paste-fonts.top/)
+33. [Copy Paste Fonts](https://copypaste-fonts.me/)
 
 
 ## Show your support
