@@ -26,6 +26,34 @@ art.art.artError: The 'char' type must be str.
 '##########'
 >>> line(length=15, height=2, char="*")
 '***************\n***************'
+>>> line(length=3, height=2, char="*", hspace=2, vspace=1)
+'*  *  *\n\n*  *  *'
+>>> line(3, 2, "*", hspace=0, vspace=0) == line(3, 2, "*")
+True
+>>> line(length=1, height=1, char="*", hspace=3, vspace=2)
+'*'
+>>> line(length=2, height=2, char="ab", hspace=1, vspace=2)
+'ab ab\n\n\nab ab'
+>>> lprint(length=3, height=2, char="*", hspace=1, vspace=1)
+* * *
+<BLANKLINE>
+* * *
+>>> line(hspace=-1)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'hspace' must be a non-negative int.
+>>> line(vspace=-1)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'vspace' must be a non-negative int.
+>>> lprint(hspace="1")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'hspace' must be a non-negative int.
+>>> lprint(vspace=None)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'vspace' must be a non-negative int.
 >>> line(length=0, height=1, char="#")
 Traceback (most recent call last):
         ...

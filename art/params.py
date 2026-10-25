@@ -37,6 +37,8 @@ FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' font is not printable in this enviro
 FONT_OR_DECOR_ENVIRONMENT_WARNING = "[Warning] '{0}' font or '{1}' decoration is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
 LINE_LENGTH_ERROR = "The 'length' must be an int higher than 0."
+LINE_HSPACE_ERROR = "The 'hspace' must be a non-negative int."
+LINE_VSPACE_ERROR = "The 'vspace' must be a non-negative int."
 LINE_HEIGHT_ERROR = "The 'height' must be an int higher than 0."
 CHAR_TYPE_ERROR = "The 'char' type must be str."
 
