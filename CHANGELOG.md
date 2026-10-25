@@ -5,9 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Fixed
-- Font and art names in CLI Unicode environment warnings
 ### Changed
+- CLI Unicode environment warnings bug fixed
 - Python typing features added to all modules
 - `mode` parameter added to `tprint` function
 - `delay` parameter added to `tprint` function
