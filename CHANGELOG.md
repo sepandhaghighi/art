@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- CLI Unicode environment warnings bug fixed
+- CLI warning message bug fixed
 - Python typing features added to all modules
 - `mode` parameter added to `tprint` function
 - `delay` parameter added to `tprint` function

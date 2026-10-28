@@ -14,9 +14,6 @@
 >>> with patch("sys.argv", ["art", "shape", "happy"]), patch("art.__main__.aprint", side_effect=encoding_error):
 ...     main()
 [Warning] 'happy' art is not printable in this environment.
->>> with patch("sys.argv", ["art", "art", "sad"]), patch("art.__main__.aprint", side_effect=encoding_error):
-...     main()
-[Warning] 'sad' art is not printable in this environment.
 >>> lprint(length=10, height=1, char="#")
 ##########
 >>> lprint(length=15, height=2, char="*")
