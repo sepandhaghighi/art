@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `vspace` parameter added to `line` function
 - `vspace` parameter added to `lprint` function
 - `Python 3.14` added to `test.yml`
+- `Python 3.15` added to `test.yml`
 - Dependencies structure modified
 - Test system modified
 - `README.md` modified
