@@ -4911,4 +4911,42 @@ True
 >>> os.remove("test1.2.txt")
 >>> os.remove("save_test.txt")
 
+Invalid numeric animation delays must fail before output or default changes.
+>>> import contextlib
+>>> import io
+>>> invalid_delays = [-1, -0.1, float("nan"), float("inf")]
+>>> failures = []
+>>> for invalid_delay in invalid_delays:
+...     output = io.StringIO()
+...     try:
+...         with contextlib.redirect_stdout(output):
+...             tprint("A", font="block", mode="char", delay=invalid_delay)
+...     except Exception as error:
+...         failures.append((type(error).__name__, output.getvalue() == ""))
+>>> failures
+[('artError', True), ('artError', True), ('artError', True), ('artError', True)]
+>>> original_defaults = (tprint.__defaults__, text2art.__defaults__, tsave.__defaults__)
+>>> failures = []
+>>> try:
+...     for invalid_delay in invalid_delays:
+...         error_name = None
+...         try:
+...             set_default(delay=invalid_delay)
+...         except Exception as error:
+...             error_name = type(error).__name__
+...         current_defaults = (tprint.__defaults__, text2art.__defaults__, tsave.__defaults__)
+...         failures.append((error_name, current_defaults == original_defaults))
+... finally:
+...     tprint.__defaults__, text2art.__defaults__, tsave.__defaults__ = original_defaults
+>>> failures
+[('artError', True), ('artError', True), ('artError', True), ('artError', True)]
+>>> zero_delay_output = io.StringIO()
+>>> instant_output = io.StringIO()
+>>> with contextlib.redirect_stdout(zero_delay_output):
+...     tprint("A", font="block", mode="char", delay=0)
+>>> with contextlib.redirect_stdout(instant_output):
+...     tprint("A", font="block", mode="instant")
+>>> zero_delay_output.getvalue() + chr(10) == instant_output.getvalue()
+True
+
 '''

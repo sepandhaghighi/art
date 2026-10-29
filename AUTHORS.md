@@ -6,6 +6,7 @@
 
 # Other Contributors
 ----------
+- [@jwalith4418-Mj](https://github.com/jwalith4418-Mj)
 - [Arta Khanali](https://www.linkedin.com/in/artakhanali/) ++
 - [@heidecjj](https://github.com/heidecjj)
 - [@noobkoder](https://github.com/n00bkoder)

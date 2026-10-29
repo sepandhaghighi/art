@@ -3,6 +3,7 @@
 from pathlib import Path
 from typing import List, Dict, Optional, Union, Any
 import os
+import math
 import random
 import time
 from .utils import distance_calc, indirect_font, indirect_decoration
@@ -20,6 +21,7 @@ from .params import DETAILED_RETURN_TYPE_ERROR, ART_TYPE_ERROR, NUMBER_TYPE_ERRO
 from .params import LINE_LENGTH_ERROR, LINE_HEIGHT_ERROR, CHAR_TYPE_ERROR, PRINT_MODE_ERROR, DELAY_ERROR
 from .params import LINE_HSPACE_ERROR, LINE_VSPACE_ERROR
 from .params import DEFAULT_DELAY
+from .params import DELAY_VALUE_ERROR
 from .errors import artError
 
 
@@ -155,12 +157,14 @@ def tprint(
     :param sep: line separator char
     :param space: space between characters
     :param mode: printing effect mode
-    :param delay: delay between effects
+    :param delay: finite, non-negative delay between effects
     """
     if mode not in ["instant", "line", "char"]:
         raise artError(PRINT_MODE_ERROR)
     if not isinstance(delay, (int, float)):
         raise artError(DELAY_ERROR)
+    if delay < 0 or (isinstance(delay, float) and not math.isfinite(delay)):
+        raise artError(DELAY_VALUE_ERROR)
     try:
         if font == "UnicodeEncodeError":
             raise UnicodeEncodeError(
@@ -393,7 +397,7 @@ def set_default(
     :param sep: line separator char
     :param space: space between characters
     :param mode: printing effect mode (only tprint)
-    :param delay: delay between effects (only tprint)
+    :param delay: finite, non-negative delay between effects (only tprint)
     :param __detailed_return: flag for returning the font and the decoration
     """
     if not isinstance(font, str):
@@ -418,6 +422,8 @@ def set_default(
         raise artError(PRINT_MODE_ERROR)
     if not isinstance(delay, (int, float)):
         raise artError(DELAY_ERROR)
+    if delay < 0 or (isinstance(delay, float) and not math.isfinite(delay)):
+        raise artError(DELAY_VALUE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration, sep, space, mode, delay)
     tsave.__defaults__ = (
         font,
