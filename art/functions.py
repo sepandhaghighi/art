@@ -67,7 +67,7 @@ def __word2art(
             temp = temp + item[i]
         result_list.append(temp)
     result = (splitter).join(result_list)
-    if result[-1] != "\n" and next_word:
+    if not result.endswith("\n") and next_word:
         result += splitter
     return result
 

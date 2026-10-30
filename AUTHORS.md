@@ -6,6 +6,7 @@
 
 # Other Contributors
 ----------
+- [@2031814001yuyue-tech](https://github.com/2031814001yuyue-tech)
 - [Arta Khanali](https://www.linkedin.com/in/artakhanali/) ++
 - [@heidecjj](https://github.com/heidecjj)
 - [@noobkoder](https://github.com/n00bkoder)
