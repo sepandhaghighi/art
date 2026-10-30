@@ -5,6 +5,10 @@
 >>> import sys
 >>> from art import *
 >>> import string
+>>> text2art("@", font="tarty1", sep="")
+''
+>>> text2art("@\n@", font="tarty1", sep="")
+''
 >>> from unittest.mock import patch
 >>> from art.__main__ import main
 >>> encoding_error = UnicodeEncodeError("ascii", "\u2603", 0, 1, "test")
