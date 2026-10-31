@@ -16,6 +16,7 @@
 - [@ChrisJr404](https://github.com/ChrisJr404)
 - [@GreedyC](https://github.com/GreedyC)
 - [@Master-Norna](https://github.com/Master-Norna)
+- [@jwalith4418-Mj](https://github.com/jwalith4418-Mj)
 
 
 ++ **Graphic designer**
