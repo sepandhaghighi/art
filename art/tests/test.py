@@ -4911,7 +4911,6 @@ True
 >>> os.remove("test1.2.txt")
 >>> os.remove("save_test.txt")
 
-Invalid numeric animation delays must fail before output or default changes.
 >>> import contextlib
 >>> import io
 >>> invalid_delays = [-1, -0.1, float("nan"), float("inf")]

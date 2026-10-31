@@ -5,8 +5,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Fixed
-- Reject negative and non-finite animation delays before printing or changing defaults.
 ### Changed
 - CLI warning message bug fixed
 - Python typing features added to all modules

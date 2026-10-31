@@ -6,7 +6,6 @@
 
 # Other Contributors
 ----------
-- [@jwalith4418-Mj](https://github.com/jwalith4418-Mj)
 - [Arta Khanali](https://www.linkedin.com/in/artakhanali/) ++
 - [@heidecjj](https://github.com/heidecjj)
 - [@noobkoder](https://github.com/n00bkoder)
@@ -17,6 +16,7 @@
 - [@ChrisJr404](https://github.com/ChrisJr404)
 - [@GreedyC](https://github.com/GreedyC)
 - [@Master-Norna](https://github.com/Master-Norna)
+- [@jwalith4418-Mj](https://github.com/jwalith4418-Mj)
 
 
 ++ **Graphic designer**

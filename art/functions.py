@@ -163,7 +163,7 @@ def tprint(
         raise artError(PRINT_MODE_ERROR)
     if not isinstance(delay, (int, float)):
         raise artError(DELAY_ERROR)
-    if delay < 0 or (isinstance(delay, float) and not math.isfinite(delay)):
+    if not 0 <= delay < math.inf:
         raise artError(DELAY_VALUE_ERROR)
     try:
         if font == "UnicodeEncodeError":
@@ -422,7 +422,7 @@ def set_default(
         raise artError(PRINT_MODE_ERROR)
     if not isinstance(delay, (int, float)):
         raise artError(DELAY_ERROR)
-    if delay < 0 or (isinstance(delay, float) and not math.isfinite(delay)):
+    if not 0 <= delay < math.inf:
         raise artError(DELAY_VALUE_ERROR)
     tprint.__defaults__ = (font, chr_ignore, decoration, sep, space, mode, delay)
     tsave.__defaults__ = (
